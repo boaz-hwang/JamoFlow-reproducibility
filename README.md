@@ -10,9 +10,10 @@ The current experiment does **not** implement a Jamo-level representation, Korea
 - DOI representing all deposit versions: [10.5281/zenodo.21973008](https://doi.org/10.5281/zenodo.21973008)
 - Public source snapshot: [boaz-hwang/JamoFlow-reproducibility](https://github.com/boaz-hwang/JamoFlow-reproducibility)
 - Public release: [v0.1.0](https://github.com/boaz-hwang/JamoFlow-reproducibility/releases/tag/v0.1.0)
+- Hugging Face research-artifact mirror: [boaz-hwang/JamoFlow-reproducibility](https://huggingface.co/datasets/boaz-hwang/JamoFlow-reproducibility)
 - Author: Gyeongchan Hwang, Priming Water ([ORCID 0009-0007-5840-3274](https://orcid.org/0009-0007-5840-3274))
 
-The Zenodo record and GitHub release are public. The arXiv submission remains pending only because a first-time `cs.CL` author endorsement is required; it must not yet be cited as an arXiv identifier. The public package deliberately contains no raw corpus, model checkpoint, record identifier, raw generated output, or per-sequence loss array. The paper is CC BY 4.0 and the released code is Apache-2.0. See the [publication release record](docs/202-publication-release-record.md) for exact hashes and status boundaries.
+The Zenodo record, GitHub release, and Hugging Face artifact mirror are public. The arXiv submission remains pending only because a first-time `cs.CL` author endorsement is required; it must not yet be cited as an arXiv identifier. The public package deliberately contains no raw corpus, model checkpoint, record identifier, raw generated output, or per-sequence loss array. The paper is CC BY 4.0 and the released code is Apache-2.0. See the [publication release record](docs/202-publication-release-record.md) for exact hashes and status boundaries.
 
 ## Current status
 

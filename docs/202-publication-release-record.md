@@ -14,6 +14,7 @@
 - Concept DOI: [`10.5281/zenodo.21973008`](https://doi.org/10.5281/zenodo.21973008)
 - Public repository: <https://github.com/boaz-hwang/JamoFlow-reproducibility>
 - Immutable GitHub release: <https://github.com/boaz-hwang/JamoFlow-reproducibility/releases/tag/v0.1.0>
+- Hugging Face research-artifact mirror: <https://huggingface.co/datasets/boaz-hwang/JamoFlow-reproducibility>
 
 The Zenodo resource type is `Publication / Preprint`, version `v0.1.0`, with publication
 date `2026-08-17`. The record is public under CC BY 4.0. Released code is Apache-2.0.
@@ -26,9 +27,9 @@ date `2026-08-17`. The record is public under CC BY 4.0. Released code is Apache
 | `jamoflow-arxiv-source.tar.gz` | 66,919 | `ee94268cfc6f28853a7aca33249cede5b20622e565c2e875113d20a72d1eb5ba` |
 | `jamoflow-reproducibility-v1.tar.gz` | 2,612,983 | `0f48cb350593843958754fa1cddf37b5dd15f642a8e5afdc7f7300681b5bb93b` |
 
-The three files were downloaded again from the published Zenodo API endpoint and their
-SHA-256 values matched the local release inputs exactly. The deposit also contains
-`CITATION.cff` and `SHA256SUMS`.
+The three files were downloaded again from both the published Zenodo endpoint and the
+public Hugging Face mirror without authenticated cookies. Their SHA-256 values matched the
+local release inputs exactly. Both mirrors also contain `CITATION.cff` and `SHA256SUMS`.
 
 ## Claim boundary
 
@@ -55,8 +56,8 @@ would contradict the result.
 
 - arXiv account, email verification, and ORCID linking are complete; submission `7958327`
   is blocked only by the first-time `cs.CL` endorsement requirement;
-- the Hugging Face research-artifact mirror is in account-activation/upload progress and will
-  not contain model weights;
+- the Hugging Face account, email verification, public research-artifact mirror, and independent
+  public-download hash check are complete; the mirror intentionally contains no model weights;
 - OpenReview profile `~Gyeongchan_Hwang1` is awaiting moderation;
 - the target peer-review route is the 2026-10-12 ARR cycle, with the public preprint disclosed.
 
