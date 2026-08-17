@@ -154,12 +154,11 @@ severely undertrained screen이다. 둘 다 positive 10% gate나 scale-amplifica
 - arXiv account와 ORCID linking은 완료됐으며 submission `7958327`은 첫 `cs.CL`
   endorsement 대기 중이다.
 
-현재 checklist 초안은 정확한 한계를 보존하기 위해 세 항목을 자동으로 `Yes` 처리하지
-않는다. 모든 탐색 실험을 합친 총 accelerator-hour는 단일 authoritative schema로 남아
-있지 않고, HPLT 원문의 content-level PII/offensive-content audit를 수행하지 않았으며,
-repository license도 저자가 아직 선택하지 않았다. 논문은 이 세 사실과 raw text
-비재배포·aggregate-only 추적·연구용 사용 범위를 명시한다. License가 정해져 anonymous
-software archive를 첨부하면 B2/C4 응답을 다시 검토한다.
+초기 checklist 초안은 정확한 한계를 보존하기 위해 세 항목을 자동으로 `Yes` 처리하지
+않았다. 모든 탐색 실험을 합친 총 accelerator-hour는 단일 authoritative schema로 남아
+있지 않고, HPLT 원문의 content-level PII/offensive-content audit를 수행하지 않았다.
+Repository license는 이후 Apache-2.0으로 확정했다. 논문은 남은 두 사실과 raw text
+비재배포·aggregate-only 추적·연구용 사용 범위를 명시한다.
 
 ARR는 첫 제출 뒤 author list 변경을 제한한다. 따라서 이름과 순서를 임시값으로 넣어
 먼저 올리지 않는다. 또한 ARR submission form에서 `no non-anonymous preprint` 선택을
@@ -171,22 +170,25 @@ ARR는 첫 제출 뒤 author list 변경을 제한한다. 따라서 이름과 �
 1. GitHub public repository와 `v0.1.0` release는 게시 완료했다.
 2. Named preprint와 재현성 bundle은 Zenodo DOI
    [`10.5281/zenodo.21973009`](https://doi.org/10.5281/zenodo.21973009)로 게시 완료했다.
-3. Hugging Face에는 model weights가 아니라 동일한 연구 artifact mirror만 게시한다.
+3. Hugging Face에는 model weights가 아니라 동일한 공개
+   [연구 artifact mirror](https://huggingface.co/datasets/boaz-hwang/JamoFlow-reproducibility)를
+   게시했고, public re-download SHA-256 검증까지 완료했다.
 4. arXiv `cs.CL` endorsement가 승인되면 submission `7958327`에 이미 검증한 source archive를
    올리고 generated PDF를 다시 확인한 뒤 제출한다.
 5. OpenReview moderation이 끝나면 reviewer registration과 profile completeness를 확인한다.
 6. 2026-10-12 ARR cycle에서 anonymous long paper를 제출하고 existing named preprint를
    disclose한다.
 
-기계적으로도 이 순서를 강제한다. 현재 license가 없으므로 named reproducibility archive는
-audit만 가능하고 build는 실패해야 정상이다. 저자 JSON은 `paper/private/` 아래에서만
-읽으며 Git에서 무시된다. ArXiv builder는 placeholder/Anonymous 저자, ACL review mode,
-누락된 `.bbl`/style/figure를 거부하고, 어떤 외부 서비스에도 자동 업로드하지 않는다.
+기계적으로도 이 순서를 강제했다. Pre-license audit 시점에는 named reproducibility archive
+build가 의도적으로 실패했고, Apache-2.0 선택 후에만 public package를 만들었다. 저자 JSON은
+`paper/private/` 아래에서만 읽으며 Git에서 무시된다. ArXiv builder는 placeholder/Anonymous
+저자, ACL review mode, 누락된 `.bbl`/style/figure를 거부하고, 어떤 외부 서비스에도 자동
+업로드하지 않는다.
 
 Release-builder commit `0d8d0fa50d7dedf025b1cfdb397c0e2d2c7a4022`에 대한 clean-HEAD
 audit은 regular tracked file 902개, 12,689,885 bytes를 선택했고 금지된 local path,
-private identifier, credential-prefix finding은 0개였다. `license_path=null`이므로
-`public_release_ready=false`이고, 공개 project/package identity가 검색 가능하므로
+private identifier, credential-prefix finding은 0개였다. 해당 historical audit은
+`license_path=null`이어서 `public_release_ready=false`였고, 공개 project/package identity가 검색 가능하므로
 `anonymous_arr_attachment_ready=false`다. 이는 실패가 아니라 임의 license 선택과
 익명성 누출을 막는 의도한 상태다.
 

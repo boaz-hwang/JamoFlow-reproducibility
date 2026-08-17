@@ -84,7 +84,7 @@ authoritative artifact로 완성되지 않았으므로 해당 positive claim과 
 Official ACL style의 A4/two-column PDF, tracked-evidence figure rendering, captioned table,
 embedded font, citation, abstract/page-limit, byte-reproducible build 검증은 완료했다.
 Author/affiliation, funding/conflict, license와 preprint 공개 결정은 확정됐다. Named PDF와
-재현성 archive는 GitHub Release 및 Zenodo에 게시했다. OpenReview 계정은 생성 후 moderation
+재현성 archive는 GitHub Release, Zenodo, Hugging Face artifact mirror에 게시했다. OpenReview 계정은 생성 후 moderation
 대기 중이고, arXiv는 첫 `cs.CL` 제출자 endorsement만 남아 있다. 외부 reviewer feedback과
 ARR review submission은 아직 남아 있다. 이는 과학적 결과를 바꾸는 추가 실험이 아니라
 외부 심사·계정 절차다.
@@ -108,6 +108,10 @@ read-only full-checkpoint verifier가 통과했다. Public snapshot과 exact che
 ### Hugging Face
 
 새 model upload는 하지 않는다.
+
+대신 논문, arXiv source, 재현성 archive, 인용 메타데이터와 체크섬만 담은 공개
+[research-artifact mirror](https://huggingface.co/datasets/boaz-hwang/JamoFlow-reproducibility)를
+게시했고, 인증 쿠키 없이 세 핵심 파일을 재다운로드해 SHA-256 일치를 확인했다.
 
 - Trained 188.6M W80 checkpoint가 존재하지만 one-seed, 0.6785 byte/parameter의 severe-
   undertraining screen이다. Scale-amplification gate도 실패했으므로 이를 useful Korean model
