@@ -1,0 +1,196 @@
+{
+  "cases": {
+    "continuation_bytes": 128,
+    "continuations_array_sha256": "eb2718698f32dd4b78324b1a5bc537a38bf639f2d660c710b165d10e6956951a",
+    "observed_bytes_per_trial": 255,
+    "offsets_array_sha256": "4f90d68d269a0ded7da93643264c99580583ff304324534cbda54245086a25df",
+    "prompt_bytes": 128,
+    "prompt_count": 32,
+    "prompt_selection": "first 32 prompts in the preexisting model-free domain-separated bottom-hash calibration order",
+    "prompt_source_path": "artifacts/hangul-draft-acceptance-v1/free-target.npz",
+    "prompt_source_sha256": "03808c1dd66d3d9cf30e702899a61188a486a3d8ea40ae96636927923450a9f1",
+    "prompts_array_sha256": "43a66d0d67aac8c37eb95794a603c1d29213552b0a804b5ab3990d8bfd3e5851"
+  },
+  "decision_rule": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260901,
+    "candidate_selection": "first passing candidate in fixed order",
+    "maximum_parameter_relative_difference": 0.0025,
+    "minimum_analytical_flop_reduction": 0.2,
+    "minimum_bootstrap_lower_bound": 0.15,
+    "minimum_point_reduction": 0.2,
+    "minimum_positive_prompts": 24,
+    "pass_authorizes": "one Korean train/calibration seed for the selected static control",
+    "stop_rule": "if no candidate passes every fixed gate, terminate the static geometry branch without training"
+  },
+  "geometry": {
+    "baseline": "baseline_w72",
+    "candidate_order": [
+      "thin128_e1_d2_g384x9",
+      "thin160_e1_d1_g384x9",
+      "thin128_e1_d1_g384x9"
+    ],
+    "geometries": {
+      "baseline_w72": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 2,
+        "global_ffn": 1152,
+        "global_heads": 8,
+        "global_layers": 8,
+        "global_width": 384,
+        "hash_group_size": 3,
+        "hash_vocabulary": 8192,
+        "local_ffn": 576,
+        "local_heads": 6,
+        "local_width": 192,
+        "patch_count": 72,
+        "patch_stride": 6,
+        "router_ffn": 576,
+        "router_heads": 6,
+        "router_layers": 4,
+        "router_width": 192,
+        "sequence_length": 512,
+        "vocab_size": 256
+      },
+      "thin128_e1_d1_g384x9": {
+        "cross_attention_k": 2,
+        "decoder_layers": 1,
+        "encoder_layers": 1,
+        "global_ffn": 1192,
+        "global_heads": 8,
+        "global_layers": 9,
+        "global_width": 384,
+        "hash_group_size": 3,
+        "hash_vocabulary": 8192,
+        "local_ffn": 384,
+        "local_heads": 8,
+        "local_width": 128,
+        "patch_count": 72,
+        "patch_stride": 6,
+        "router_ffn": 576,
+        "router_heads": 6,
+        "router_layers": 4,
+        "router_width": 192,
+        "sequence_length": 512,
+        "vocab_size": 256
+      },
+      "thin128_e1_d2_g384x9": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 1,
+        "global_ffn": 1168,
+        "global_heads": 8,
+        "global_layers": 9,
+        "global_width": 384,
+        "hash_group_size": 3,
+        "hash_vocabulary": 8192,
+        "local_ffn": 384,
+        "local_heads": 8,
+        "local_width": 128,
+        "patch_count": 72,
+        "patch_stride": 6,
+        "router_ffn": 576,
+        "router_heads": 6,
+        "router_layers": 4,
+        "router_width": 192,
+        "sequence_length": 512,
+        "vocab_size": 256
+      },
+      "thin160_e1_d1_g384x9": {
+        "cross_attention_k": 2,
+        "decoder_layers": 1,
+        "encoder_layers": 1,
+        "global_ffn": 1128,
+        "global_heads": 8,
+        "global_layers": 9,
+        "global_width": 384,
+        "hash_group_size": 3,
+        "hash_vocabulary": 8192,
+        "local_ffn": 480,
+        "local_heads": 8,
+        "local_width": 160,
+        "patch_count": 72,
+        "patch_stride": 6,
+        "router_ffn": 576,
+        "router_heads": 6,
+        "router_layers": 4,
+        "router_width": 192,
+        "sequence_length": 512,
+        "vocab_size": 256
+      }
+    }
+  },
+  "geometry_measurements": {
+    "baseline_w72": {
+      "analytical_dense_matmul_flops": 5640155136,
+      "parameter_count": 19596096
+    },
+    "thin128_e1_d1_g384x9": {
+      "analytical_dense_matmul_flops": 3587538432,
+      "parameter_count": 19575680
+    },
+    "thin128_e1_d2_g384x9": {
+      "analytical_dense_matmul_flops": 3984926208,
+      "parameter_count": 19605888
+    },
+    "thin160_e1_d1_g384x9": {
+      "analytical_dense_matmul_flops": 3889040896,
+      "parameter_count": 19571872
+    }
+  },
+  "implementation_sha256": {
+    "docs/104-static-local-global-geometry-preflight.md": "aee61b8f9181385389250bbf970f696d6dcd4231fac3d9767b969c7e7a2d6616",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/run_static_geometry_preflight.py": "f4fd68e250dd4dfe165fb070ae037077f2bf5554f4eb4a8e887cec9dfb4474d6",
+    "scripts/static_geometry_preflight_core.py": "dd05577b51c71ea223151531a41cf4ef8383394574447e017794949b113d95f4",
+    "src/jamoflow/cost.py": "9d1c841ac02e64e47bdc434e783d285f626ef9c13315097f405a0fda1270974e",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/incremental_blt.py": "d82ca95a6509490e443258c84788bab17817e47bd62481880bd8ed08f64e0ef7",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/patching.py": "81879191040901ddcf3d6e885c802512ee7b6df328719d82e6c72862cdeda7f6",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "src/jamoflow/phase3.py": "c17d76e959d7402f4bc6b010e5eefc5d19757d4a6b7ab3b04291ee063ba593a2",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_static_geometry_preflight.py": "51a367094aac5f82dbde97c0148bb8e2a12166cdac469c7777d9e3a560c444b5"
+  },
+  "input": {
+    "byte_limit": 1000000,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "split": "calibration",
+    "stream_bytes": 999936,
+    "stream_sha256": "69f6aa9347f7e265d6df5097e4219c944b4da7cf6d8522a831a26c670a4c39ec"
+  },
+  "kind": "static_geometry_preflight_plan_v1",
+  "output": {
+    "raw_artifact_path": "artifacts/static-geometry-preflight-v1/raw.npz",
+    "summary_path": "results/static-geometry-preflight-v1/summary.json"
+  },
+  "protocol_id": "jamoflow-static-geometry-preflight-v1",
+  "schema_version": 1,
+  "status": "sealed_before_random_weight_actual_timing",
+  "threat_model": {
+    "calibration_only": true,
+    "case_selected_by_model_output": false,
+    "final_test_or_final_timing_read": false,
+    "quality_evidence_from_random_weights": false,
+    "static_geometry_novelty_claimed": false,
+    "timing_used_only_as_one_seed_training_feasibility": true
+  },
+  "timing": {
+    "ac_power_required": true,
+    "device": "mps",
+    "global_position_limit": 1032,
+    "model_seed": 20260813,
+    "process_exclusion": "shared publication MPS flock and known-entrypoint inventory",
+    "repetitions": 3,
+    "role_order": "cyclic position-balanced within prompt x repetition",
+    "scope": "fresh runtime construction, 128-byte parallel prefill, 127 controlled feedback bytes, final synchronization",
+    "torch_inference_mode": true,
+    "warmup_prompts": 4
+  }
+}

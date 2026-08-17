@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "dataset_id": "leipzig-wikipedia-100k-controls",
+  "description": "Comparable 100,000-sentence Wikipedia samples for Korean, Chinese, and English.",
+  "accessed_at": "2026-08-10",
+  "distribution_terms": {
+    "label": "CC BY (version unspecified by the download terms page)",
+    "url": "https://www.wortschatz.uni-leipzig.de/en/usage",
+    "attribution": "Leipzig Corpora Collection, Leipzig University / Saxon Academy of Sciences and Humanities / InfAI"
+  },
+  "underlying_source_terms": {
+    "label": "Wikipedia text: CC BY-SA and GFDL; page-level exceptions may apply",
+    "url": "https://dumps.wikimedia.org/legal.html"
+  },
+  "citation": {
+    "title": "Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages",
+    "authors": "Dirk Goldhahn, Thomas Eckart, Uwe Quasthoff",
+    "venue": "LREC 2012",
+    "url": "https://aclanthology.org/L12-1154/"
+  },
+  "sources": [
+    {
+      "language": "ko",
+      "language_name": "Korean",
+      "snapshot_year": 2021,
+      "archive": "kor_wikipedia_2021_100K.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/kor_wikipedia_2021_100K.tar.gz",
+      "expected_bytes": 21536996,
+      "expected_records": 100000,
+      "sha256": "c4c694b82ad438cc4553494eeb0c15507c9c7d3316cca46834faa03c3d7437e5",
+      "expected_output_bytes": 18871262,
+      "expected_output_sha256": "3af6a49206946465683afe4b2c99fc929346cda0ac206738febae78054005757"
+    },
+    {
+      "language": "zh",
+      "language_name": "Chinese",
+      "snapshot_year": 2018,
+      "archive": "zho_wikipedia_2018_100K.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/zho_wikipedia_2018_100K.tar.gz",
+      "expected_bytes": 24202817,
+      "expected_records": 100000,
+      "sha256": "c1ed4a20df92993b8d6b13cb072b5ac090c77c81b7487f12159869ddb37f9884",
+      "expected_output_bytes": 15166745,
+      "expected_output_sha256": "abd707c3139d4b8f892729a1fe5a397d15b1dddf72bd6bf228efabeab47fc196"
+    },
+    {
+      "language": "en",
+      "language_name": "English",
+      "snapshot_year": 2016,
+      "archive": "eng_wikipedia_2016_100K.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng_wikipedia_2016_100K.tar.gz",
+      "expected_bytes": 25566797,
+      "expected_records": 100000,
+      "sha256": "04aa301072a612e0368f1a0abe5f6b011ab03df84961c29b80bd126883a5a6f0",
+      "expected_output_bytes": 17356561,
+      "expected_output_sha256": "b445dcc2fc5d97e38ee3d9ced008c2adc1f1a7512c11d7a2fd4de7f2b26b535c"
+    }
+  ]
+}

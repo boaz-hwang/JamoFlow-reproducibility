@@ -1,0 +1,38 @@
+{
+  "case_source": "exact v5r3 sealed cases; profiling is post-outcome exploratory",
+  "checkpoint_roles": [
+    "candidate",
+    "reference"
+  ],
+  "component_cases": 4,
+  "decode_observed_bytes": 127,
+  "device": "mps",
+  "mps_event_used": false,
+  "profile_kind": "two_by_two_checkpoint_x_runtime_schedule",
+  "protocol_id": "jamoflow-exploratory-component-profile-v1",
+  "repetitions": 3,
+  "schedules": {
+    "C86": {
+      "patch_count": 86,
+      "policy": "causal_codepoint_grid"
+    },
+    "W72": {
+      "patch_count": 72,
+      "policy": "causal_whitespace_grid"
+    }
+  },
+  "seeds": [
+    1729,
+    2718,
+    31415,
+    57721,
+    65537
+  ],
+  "synchronization_contract": {
+    "component_measurement": "explicit pre/post MPS synchronize; diagnostic only",
+    "step_measurement": "one post-consume MPS synchronize per byte; diagnostic only",
+    "whole_trial": "same prefill/decode synchronization boundaries as controlled v5r3"
+  },
+  "warmup_cases": 4,
+  "whole_trial_cases": 16
+}

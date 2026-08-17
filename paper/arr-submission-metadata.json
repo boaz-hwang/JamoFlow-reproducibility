@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source": "paper/arr-submission.md",
+  "title": "Causal Whitespace Patching for Korean Byte-Latent Language Models: Quality-Preserving Latency and the Limits of Scale Amplification",
+  "tldr": "Causal whitespace relocation improves same-rate Korean byte-model quality and yields repeatable 2.5--2.9% matched-quality latency reductions, while random-weight scale headroom does not amplify in a trained 188.6M bridge.",
+  "abstract": "Byte-latent language models amortize global Transformer compute by grouping raw bytes into patches, but fewer patches need not preserve quality or reduce end-to-end latency. We test causal whitespace-informed patching on Korean in an identical byte-latent graph, separating boundary placement, patch rate, learned router cost, and cached autoregressive time-to-output. Calibration-only selection chose a 72-patch whitespace policy (W72). On a separately sealed 32MB final stream and five model seeds, W72 was noninferior to an 86-patch codepoint baseline at +0.003682 bits per byte and improved on the same-rate codepoint policy by 0.010781. Five fresh-process Apple-MPS sessions measured 2.628% controlled and 2.531% free-running latency reductions, but failed a predefined 10% efficiency threshold. A post-result random-weight curve rose from 3.572% at 49.8M parameters to 10.217% at 1.618B, exposing systems headroom without trained quality evidence. At 188.6M, unchanged W72 failed quality; one presealed W80 rescue restored noninferiority and reproduced only 2.887% controlled and 2.475% free-running reductions. Thus the small effect replicates across two trained scales but does not amplify. Quality-constrained patch density and an unchanged byte-sequential local path prevent random-weight headroom from becoming an automatic trained-model speedup.",
+  "paper_type": "long",
+  "primary_area_recommendation": "Efficient Methods for NLP",
+  "contribution_type_recommendations": [
+    "NLP engineering experiment",
+    "Model analysis & interpretability",
+    "Data analysis"
+  ],
+  "resubmission": false,
+  "previous_url": null,
+  "preferred_venue": "NAACL 2027",
+  "preprint_choice": "named_preprint",
+  "existing_preprints": [],
+  "software_archive": {
+    "attach": false,
+    "status": "named_public_archive_released_separately_under_Apache-2.0",
+    "maximum_bytes": 200000000
+  },
+  "data_archive": {
+    "attach": false,
+    "reason": "No raw HPLT text, record identifiers, URLs, per-sequence losses, or raw model outputs are redistributed."
+  },
+  "consent_to_share_anonymized_metadata": false,
+  "consent_to_review": true,
+  "external_author_inputs_required": []
+}

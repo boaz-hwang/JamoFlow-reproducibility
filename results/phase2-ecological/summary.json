@@ -1,0 +1,1289 @@
+{
+  "claim_guardrail": "This one-user convenience sample is an ecological stress check, not representative Korean-corpus or independent benchmark evidence.",
+  "contrasts": {
+    "codepoint_minus_fixed": {
+      "analysis_status": "preregistered_diagnostic",
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": 0.005883542142163505,
+        "mean": 0.011810469497839196,
+        "median": 0.01192691334489457,
+        "repetitions": 10000,
+        "seed": 20260811,
+        "upper": 0.017107684434339392
+      },
+      "left_policy": "causal_codepoint_grid",
+      "paired_differences_bpb": [
+        0.013314949761929817,
+        0.02044712851738506,
+        0.0012659041408058513,
+        0.013222451063318985,
+        0.010909958451637891
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": 0.0032554812362741506,
+        "mean": 0.011832078387015521,
+        "sample_standard_deviation": 0.006907341670621503,
+        "standard_error": 0.0030890571038653283,
+        "upper": 0.020408675537756892
+      },
+      "right_policy": "fixed_byte_6",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "exploratory_whitespace_minus_fixed": {
+      "analysis_status": "post_result_contextual_contrast_added_after_initial_ecological_run",
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.011526723796494182,
+        "mean": -0.003285917942251065,
+        "median": -0.0032135195906073553,
+        "repetitions": 10000,
+        "seed": 20260812,
+        "upper": 0.004344351645801547
+      },
+      "left_policy": "causal_whitespace_grid",
+      "paired_differences_bpb": [
+        -0.0021026739050915566,
+        -0.017152065421729645,
+        0.005781712604101763,
+        -0.009244713049479714,
+        0.0063312192845979
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.015754146141375013,
+        "mean": -0.0032773040975202505,
+        "sample_standard_deviation": 0.010048485366930253,
+        "standard_error": 0.004493819270273592,
+        "upper": 0.009199537946334511
+      },
+      "right_policy": "fixed_byte_6",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "whitespace_minus_codepoint": {
+      "analysis_status": "preregistered_primary_ecological_contrast",
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.027732544116472187,
+        "mean": -0.015108835171851706,
+        "median": -0.015031153314617084,
+        "repetitions": 10000,
+        "seed": 20260810,
+        "upper": -0.002986974852029956
+      },
+      "left_policy": "causal_whitespace_grid",
+      "paired_differences_bpb": [
+        -0.015417623667021374,
+        -0.037599193939114706,
+        0.004515808463295912,
+        -0.0224671641127987,
+        -0.004578739167039991
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.03528466562268544,
+        "mean": -0.015109382484535772,
+        "sample_standard_deviation": 0.016248585713820346,
+        "standard_error": 0.007266588438866847,
+        "upper": 0.005065900653613892
+      },
+      "right_policy": "causal_codepoint_grid",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    }
+  },
+  "corpus_aggregate": {
+    "discarded_tail_bytes": 40,
+    "discovered_markdown_files": 1265,
+    "duplicate_nonempty_records": 8,
+    "invalid_test_records": 0,
+    "joined_test_bytes": 590632,
+    "nonempty_records": 1235,
+    "selected_stream_bytes": 590592,
+    "sequence_count": 2307,
+    "sequence_length": 256,
+    "test_partition_records": 119,
+    "unique_records": 1227,
+    "valid_test_records": 119
+  },
+  "decision_gate_e_ecological_component": {
+    "all_policy_rates_exact": true,
+    "bootstrap_upper_at_or_below_margin": true,
+    "every_seed_at_or_below_margin": true,
+    "mean_at_or_below_margin": true,
+    "paired_t_upper_at_or_below_margin": true,
+    "pass": true,
+    "regression_margin_bpb": 0.02,
+    "status": "pass"
+  },
+  "design": {
+    "bootstrap_repetitions": 10000,
+    "model_parameters": 1251136,
+    "patch_count": 43,
+    "policies": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_whitespace_grid"
+    ],
+    "seeds": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ],
+    "sequence_length": 256,
+    "targets_per_sequence": 255,
+    "test_partition": "existing deterministic content-hash test split"
+  },
+  "environment": {
+    "device": "mps",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "versions": {
+      "mps_available": true,
+      "numpy": "2.5.2",
+      "python_torch": "2.13.0",
+      "transformers": "5.14.1"
+    }
+  },
+  "generated_at": "2026-08-10T06:55:08.692244+00:00",
+  "patch_integrity": {
+    "all_policies_exactly_43": true,
+    "by_policy": {
+      "causal_codepoint_grid": {
+        "data_patches": 99201,
+        "examples": 2307,
+        "internal_codepoint_boundaries": 0,
+        "internal_codepoint_boundary_rate": 0.0,
+        "maximum_data_patches": 43,
+        "maximum_patch_length": 9,
+        "mean_bytes_per_patch": 5.953488372093023,
+        "mean_data_patches": 43.0,
+        "median_patch_length": 6.0,
+        "minimum_data_patches": 43,
+        "p95_patch_length": 7.0,
+        "padded_data_width": 43,
+        "padding_slot_rate": 0.0,
+        "padding_slots": 0,
+        "total_noninitial_boundaries": 96894
+      },
+      "causal_whitespace_grid": {
+        "data_patches": 99201,
+        "examples": 2307,
+        "internal_codepoint_boundaries": 0,
+        "internal_codepoint_boundary_rate": 0.0,
+        "maximum_data_patches": 43,
+        "maximum_patch_length": 12,
+        "mean_bytes_per_patch": 5.953488372093023,
+        "mean_data_patches": 43.0,
+        "median_patch_length": 6.0,
+        "minimum_data_patches": 43,
+        "p95_patch_length": 10.0,
+        "padded_data_width": 43,
+        "padding_slot_rate": 0.0,
+        "padding_slots": 0,
+        "total_noninitial_boundaries": 96894
+      },
+      "fixed_byte_6": {
+        "data_patches": 99201,
+        "examples": 2307,
+        "internal_codepoint_boundaries": 34996,
+        "internal_codepoint_boundary_rate": 0.36117819472825974,
+        "maximum_data_patches": 43,
+        "maximum_patch_length": 6,
+        "mean_bytes_per_patch": 5.953488372093023,
+        "mean_data_patches": 43.0,
+        "median_patch_length": 6.0,
+        "minimum_data_patches": 43,
+        "p95_patch_length": 6.0,
+        "padded_data_width": 43,
+        "padding_slot_rate": 0.0,
+        "padding_slots": 0,
+        "total_noninitial_boundaries": 96894
+      }
+    }
+  },
+  "privacy": {
+    "paths_or_filenames_serialized": false,
+    "primary_evidence": false,
+    "private_content_hash_serialized": false,
+    "raw_text_serialized": false,
+    "read_only": true,
+    "record_or_sequence_metrics_serialized": false
+  },
+  "quality": {
+    "causal_codepoint_grid": {
+      "bpb": {
+        "count": 5,
+        "maximum": 4.5970953877803185,
+        "mean": 4.57841337521535,
+        "minimum": 4.565027935497352,
+        "sample_standard_deviation": 0.013259031686196795,
+        "values": [
+          4.567380956947922,
+          4.576988520215904,
+          4.565027935497352,
+          4.58557407563525,
+          4.5970953877803185
+        ]
+      },
+      "evaluation_seconds": {
+        "count": 5,
+        "maximum": 1.1117412919411436,
+        "mean": 1.1041949417674914,
+        "minimum": 1.0942605829332024,
+        "sample_standard_deviation": 0.006452594926282482,
+        "values": [
+          1.0942605829332024,
+          1.1037627089535818,
+          1.103769125067629,
+          1.1074409999419004,
+          1.1117412919411436
+        ]
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "causal_whitespace_grid": {
+      "bpb": {
+        "count": 5,
+        "maximum": 4.5925166486132785,
+        "mean": 4.563303992730813,
+        "minimum": 4.5393893262767895,
+        "sample_standard_deviation": 0.019955415483562045,
+        "values": [
+          4.5519633332809,
+          4.5393893262767895,
+          4.569543743960648,
+          4.563106911522452,
+          4.5925166486132785
+        ]
+      },
+      "evaluation_seconds": {
+        "count": 5,
+        "maximum": 1.1031905410345644,
+        "mean": 1.10133820802439,
+        "minimum": 1.1001123329624534,
+        "sample_standard_deviation": 0.0013615507585623254,
+        "values": [
+          1.100961000076495,
+          1.1001123329624534,
+          1.102287832996808,
+          1.1031905410345644,
+          1.1001393330516294
+        ]
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "fixed_byte_6": {
+      "bpb": {
+        "count": 5,
+        "maximum": 4.586185429328681,
+        "mean": 4.566581296828334,
+        "minimum": 4.554066007185992,
+        "sample_standard_deviation": 0.013067125936940803,
+        "values": [
+          4.554066007185992,
+          4.556541391698519,
+          4.563762031356546,
+          4.572351624571931,
+          4.586185429328681
+        ]
+      },
+      "evaluation_seconds": {
+        "count": 5,
+        "maximum": 1.1887012079823762,
+        "mean": 1.1338057747809216,
+        "minimum": 1.0995765409898013,
+        "sample_standard_deviation": 0.041075992845666404,
+        "values": [
+          1.1887012079823762,
+          1.1025808328995481,
+          1.0995765409898013,
+          1.1667714170180261,
+          1.1113988750148565
+        ]
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scope": "Phase 2c read-only private ecological diagnostic",
+  "source_label": "user-authorized private Korean Markdown convenience sample",
+  "strata": {
+    "contrasts": {
+      "codepoint_minus_fixed": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            0.014041816425796558,
+            0.01792944385524706,
+            -0.0008433049647286876,
+            0.00824330837271242,
+            0.007759410759664718
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0005752126941849425,
+            "mean": 0.009426134889738414,
+            "sample_standard_deviation": 0.007128275075796297,
+            "standard_error": 0.003187861526359597,
+            "upper": 0.018277057085291884
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5990463805808409,
+          "sequences": 1382,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            0.001954187433422893,
+            0.0026287987449162414,
+            -0.0014925558499107375,
+            -0.0027952089232197016,
+            -2.4467488133931653e-06
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.002769688034158925,
+            "mean": 5.855493127906032e-05,
+            "sample_standard_deviation": 0.002277784550965326,
+            "standard_error": 0.0010186562188114606,
+            "upper": 0.002886797896717046
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.306458604247941,
+          "sequences": 707,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            0.014653507297472662,
+            0.022729217311004066,
+            0.0018689864076878128,
+            0.01506120401618601,
+            0.012571869796808036
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0040642167072914275,
+            "mean": 0.013376956965831716,
+            "sample_standard_deviation": 0.007500209899672082,
+            "standard_error": 0.0033541958362367304,
+            "upper": 0.022689697224372002
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.9024707412223667,
+          "sequences": 2082,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            0.01619893299922887,
+            0.026200820805500416,
+            0.003705073100265864,
+            0.019270868487833836,
+            0.015002419578895799
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.005932537510567926,
+            "mean": 0.016075622994344955,
+            "sample_standard_deviation": 0.008168945771775338,
+            "standard_error": 0.0036532636100398276,
+            "upper": 0.026218708478121983
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.64629388816645,
+          "sequences": 1491,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            0.008045162261434195,
+            0.009933877452374852,
+            -0.003190755757622998,
+            0.0021708878733869503,
+            0.0034320630876363656
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.002341251658022919,
+            "mean": 0.004078246983441873,
+            "sample_standard_deviation": 0.005170077326863247,
+            "standard_error": 0.0023121288703593238,
+            "upper": 0.010497745624906664
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.35370611183355005,
+          "sequences": 816,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            0.018036295522212885,
+            0.024558441434169156,
+            0.005426795551615626,
+            0.009452921361245554,
+            -0.0010737164565572327
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.001324072898831635,
+            "mean": 0.011280147482537197,
+            "sample_standard_deviation": 0.010151072171834499,
+            "standard_error": 0.004539697484145673,
+            "upper": 0.023884367863906027
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            0.007558760842936012,
+            0.0175988614468388,
+            0.004184290778078492,
+            0.008070107115575936,
+            0.014284616390210666
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0035659529642650158,
+            "mean": 0.01033932731472798,
+            "sample_standard_deviation": 0.005455078521162377,
+            "standard_error": 0.0024395852791836196,
+            "upper": 0.017112701665190945
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            0.004683611199945898,
+            0.012585228632473381,
+            -0.0011165680318608855,
+            0.004156170413641769,
+            0.007844642985818457
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0006352925717508888,
+            "mean": 0.0056306170400037235,
+            "sample_standard_deviation": 0.005046381193487582,
+            "standard_error": 0.0022568102778029505,
+            "upper": 0.011896526651758336
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            0.022997691531459814,
+            0.027057338782743523,
+            -0.0034387669506488515,
+            0.031242034132372743,
+            0.022604379873454216
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0031893511822900927,
+            "mean": 0.020092535473876287,
+            "sample_standard_deviation": 0.013613332557350626,
+            "standard_error": 0.0060880673997094105,
+            "upper": 0.03699571976546248
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24967490247074123,
+          "sequences": 576,
+          "status": "estimated"
+        }
+      },
+      "exploratory_whitespace_minus_fixed": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            -0.000386458170543302,
+            -0.015802538350337174,
+            0.003762327103982036,
+            -0.01011291957856021,
+            0.008567744917303707
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.015221241372893952,
+            "mean": -0.0027943688156309883,
+            "sample_standard_deviation": 0.010008241397098317,
+            "standard_error": 0.0044758216198278605,
+            "upper": 0.009632503741631975
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5990463805808409,
+          "sequences": 1382,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -0.013970848541190576,
+            -0.01773606845505521,
+            -2.4223765675026933e-05,
+            -0.021080788247194743,
+            -0.0012044741940091949
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.022778248347463694,
+            "mean": -0.010803280640624949,
+            "sample_standard_deviation": 0.009644290386035457,
+            "standard_error": 0.004313057779584593,
+            "upper": 0.001171687066213796
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.306458604247941,
+          "sequences": 707,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            -0.000613014114605761,
+            -0.016979827430650195,
+            0.006793063692350494,
+            -0.00806610905183964,
+            0.007751071224862482
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.01517545006753266,
+            "mean": -0.0022229631359765244,
+            "sample_standard_deviation": 0.010431555912916404,
+            "standard_error": 0.004665133626474191,
+            "upper": 0.01072952379557961
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.9024707412223667,
+          "sequences": 2082,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            0.001846906898297387,
+            -0.017717529714599754,
+            0.008960298286621537,
+            -0.006315248716682286,
+            0.0070489276452294905
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.01483067660354826,
+            "mean": -0.001235329120226725,
+            "sample_standard_deviation": 0.010949297086899845,
+            "standard_error": 0.004896674518429695,
+            "upper": 0.01236001836309481
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.64629388816645,
+          "sequences": 1491,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.009319699568890392,
+            -0.016118913659789857,
+            -2.593114868907731e-05,
+            -0.01459752601024229,
+            0.005019739000148463
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.018445421363646804,
+            "mean": -0.007008466277492631,
+            "sample_standard_deviation": 0.009210990683500916,
+            "standard_error": 0.004119280261685059,
+            "upper": 0.0044284888086615435
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.35370611183355005,
+          "sequences": 816,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            0.01449867437948824,
+            -0.0029993080465355046,
+            0.009380917668202942,
+            0.004241129074047229,
+            0.0029803815974732786
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0026191059323790993,
+            "mean": 0.005620358934535238,
+            "sample_standard_deviation": 0.006635825143534888,
+            "standard_error": 0.0029676312215492612,
+            "upper": 0.013859823801449575
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.0043826420588773925,
+            -0.0125655107137231,
+            0.013397683488478458,
+            -0.008872801310048039,
+            0.011177157377166668
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.014940033373689427,
+            "mean": -0.000249222643400681,
+            "sample_standard_deviation": 0.01183155129581496,
+            "standard_error": 0.005291230595343595,
+            "upper": 0.014441588086888066
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.008738021652598085,
+            -0.01767041778744903,
+            0.0061996290460344695,
+            -0.0169037520711815,
+            0.004665939731553506
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.020700590890164856,
+            "mean": -0.006489324546728128,
+            "sample_standard_deviation": 0.011445340206731774,
+            "standard_error": 0.005118511745572749,
+            "upper": 0.0077219417967086005
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            -0.009802515309542572,
+            -0.03540475497019002,
+            -0.005871169963445542,
+            -0.015454300756400703,
+            0.0065015814751470365
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0310852234617814,
+            "mean": -0.012006231904886361,
+            "sample_standard_deviation": 0.015365664388583913,
+            "standard_error": 0.006871734018464274,
+            "upper": 0.007072759652008679
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24967490247074123,
+          "sequences": 576,
+          "status": "estimated"
+        }
+      },
+      "whitespace_minus_codepoint": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            -0.014428274596339863,
+            -0.03373198220558424,
+            0.004605632068710724,
+            -0.01835622795127263,
+            0.0008083341576389893
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.03143758040322683,
+            "mean": -0.012220503705369406,
+            "sample_standard_deviation": 0.015476874141298093,
+            "standard_error": 0.006921468531830244,
+            "upper": 0.006996572992488015
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5990463805808409,
+          "sequences": 1382,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -0.01592503597461347,
+            -0.020364867199971447,
+            0.0014683320842357106,
+            -0.01828557932397504,
+            -0.001202027445195802
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.023530467015888387,
+            "mean": -0.01086183557190401,
+            "sample_standard_deviation": 0.010202946966585108,
+            "standard_error": 0.004562896597621915,
+            "upper": 0.0018067958720803662
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.306458604247941,
+          "sequences": 707,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            -0.015266521412078425,
+            -0.039709044741654265,
+            0.004924077284662681,
+            -0.02312731306802565,
+            -0.004820798571945555
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.036885012151792754,
+            "mean": -0.015599920101808246,
+            "sample_standard_deviation": 0.017142393503601083,
+            "standard_error": 0.007666311434220561,
+            "upper": 0.005685171948176259
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.9024707412223667,
+          "sequences": 2082,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "descriptive_only_below_50_windows"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            -0.014352026100931486,
+            -0.04391835052010017,
+            0.005255225186355674,
+            -0.02558611720451612,
+            -0.007953491933666307
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.04039038952712824,
+            "mean": -0.017310952114571683,
+            "sample_standard_deviation": 0.018587507023163908,
+            "standard_error": 0.008312585847209852,
+            "upper": 0.005768485297984873
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.64629388816645,
+          "sequences": 1491,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.017364861830324586,
+            -0.026052791112164707,
+            0.0031648246089339203,
+            -0.01676841388362924,
+            0.0015876759125120984
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.027029248426209043,
+            "mean": -0.011086713260934505,
+            "sample_standard_deviation": 0.01283965371661773,
+            "standard_error": 0.005742067703583013,
+            "upper": 0.004855821904340033
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.35370611183355005,
+          "sequences": 816,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            -0.0035376211427246428,
+            -0.02755774948070466,
+            0.003954122116587315,
+            -0.005211792287198326,
+            0.004054098054030511
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.021741755852682926,
+            "mean": -0.0056597885480019604,
+            "sample_standard_deviation": 0.012951948302666078,
+            "standard_error": 0.005792287369164874,
+            "upper": 0.010422178756679007
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.011941402901813404,
+            -0.030164372160561895,
+            0.009213392710399969,
+            -0.016942908425623977,
+            -0.0031074590130439972
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.028937307556611905,
+            "mean": -0.01058854995812866,
+            "sample_standard_deviation": 0.014777555216427601,
+            "standard_error": 0.006608723601037746,
+            "upper": 0.007760207640354582
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.013421632852543981,
+            -0.03025564641992241,
+            0.007316197077895356,
+            -0.02105992248482327,
+            -0.003178703254264951
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.030413224051754086,
+            "mean": -0.01211994158673185,
+            "sample_standard_deviation": 0.014732877158882905,
+            "standard_error": 0.006588742966283229,
+            "upper": 0.006173340878290388
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            -0.03280020684100239,
+            -0.06246209375293354,
+            -0.002432403012796691,
+            -0.04669633488877344,
+            -0.01610279839830718
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.06168762702915105,
+            "mean": -0.032098767378762647,
+            "sample_standard_deviation": 0.023830006196762097,
+            "standard_error": 0.010657102752040255,
+            "upper": -0.002509907728374245
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24967490247074123,
+          "sequences": 576,
+          "status": "estimated"
+        }
+      }
+    },
+    "definitions_and_counts": {
+      "classification_decode_errors": "ignored only at incomplete chunk edges",
+      "sequence_count": 2307,
+      "strata": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "sequence_fraction": 0.5990463805808409,
+          "sequences": 1382
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "sequence_fraction": 0.306458604247941,
+          "sequences": 707
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "sequence_fraction": 0.002600780234070221,
+          "sequences": 6
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "sequence_fraction": 0.9024707412223667,
+          "sequences": 2082
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "sequence_fraction": 0.64629388816645,
+          "sequences": 1491
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "sequence_fraction": 0.35370611183355005,
+          "sequences": 816
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "sequence_fraction": 0.25010836584308627,
+          "sequences": 577
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "sequence_fraction": 0.24967490247074123,
+          "sequences": 576
+        }
+      },
+      "whitespace_density": {
+        "maximum": 0.5182926829268293,
+        "median": 0.22549019607843138,
+        "minimum": 0.0211864406779661,
+        "quartile_assignment": "stable rank by (density, sequence index)"
+      }
+    },
+    "minimum_interpreted_windows": 50
+  }
+}

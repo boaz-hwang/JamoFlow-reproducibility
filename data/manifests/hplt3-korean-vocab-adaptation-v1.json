@@ -1,0 +1,75 @@
+{
+  "dataset_id": "hplt3-korean-vocab-adaptation-v1",
+  "final_test": {
+    "manifest_path": "data/manifests/hplt3-korean-final-test-v1.json",
+    "manifest_sha256": "ea36dbbac63be8b9370cfee029758030cdd138aa1510bc02aeb8cbe4b95590ff",
+    "output_bytes": 32103596,
+    "output_path": "data/processed/hplt3-korean-final-test-v1/ko.jsonl",
+    "output_sha256": "098ae8b833a1498689dae1d60341aa870fce51c7f9dde6d961c867f751ee3dc2",
+    "payload_sha256": "97cf90d1e6e7191e7f8336647f278ae6c0e82d70540bf0f5c43f9cb426e75dc8",
+    "seal_path": "data/seals/hplt3-korean-final-test-v1.json",
+    "seal_sha256": "ce42e8a0b2d8161cc59e0b30d5d121b547e22d28709fe48284aa777df4a2290b",
+    "selected_document_count": 1482
+  },
+  "predecessor": {
+    "integrity_path": "data/processed/hplt3-korean-phase3/integrity.json",
+    "integrity_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "manifest_path": "data/manifests/hplt3-korean-phase3.json",
+    "manifest_sha256": "873a303e9762906e0046cdf59f850b8d6dbeb4483cfff8ad5a6f124e00002d9e",
+    "output_bytes": 152461842,
+    "output_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "output_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "summary_path": "results/phase3-data/summary.json",
+    "summary_sha256": "5d2890a0154c0e98fe27c4d8801d5ffacea9217e25440d2631f7354e2c37f9ba",
+    "unique_records": 6911
+  },
+  "privacy": {
+    "tracked_individual_digests": false,
+    "tracked_model_metrics": false,
+    "tracked_text": false
+  },
+  "protocol_version": 1,
+  "purpose": "fresh disjoint Korean train and calibration streams for optimizer-aware vocabulary adaptation",
+  "schema_version": 1,
+  "selection": {
+    "expected_rank_key_hex": {
+      "calibration": "ad43eca68c804fc4ad61649c20c704d05f62ef490bd5de17104a83310c291517",
+      "train": "260a778765602de9fd0c621e632b34eea2aabc883c03ef2c9c85cdbd550624ef"
+    },
+    "maximum_document_bytes": 262144,
+    "minimum_document_bytes": 256,
+    "normalized_exclusion_algorithm": "unicode-nfkc-casefold-whitespace-collapse-sha256-v1",
+    "order": [
+      "rank_digest",
+      "document_digest"
+    ],
+    "quotas": {
+      "calibration": 8000000,
+      "train": 128000000
+    },
+    "rank_algorithm": "sha256-domain-separated-derived-key-v1",
+    "record_digest": "sha256-exact-utf8-v1",
+    "reserve_stream_bytes": {
+      "calibration": 8262145,
+      "train": 128262145
+    },
+    "sequence_length": 512,
+    "split_algorithm": {
+      "calibration_cut": 9000,
+      "name": "sha256-prefix-mod-10000-v1",
+      "required_splits": [
+        "train",
+        "calibration"
+      ],
+      "train_cut": 8000
+    }
+  },
+  "source": {
+    "etag": "\"6f00793d-63be01a95c540\"",
+    "expected_bytes": 1862302013,
+    "expected_sha256": "de4dfa43fd9f6c62cc81781e09c1f401cc77e7a956e07ecc80ac13477e699ca4",
+    "filename": "10_1.jsonl.zst",
+    "last_modified": "Fri, 08 Aug 2025 20:06:05 GMT",
+    "url": "https://data.hplt-project.org/three/sorted/kor_Hang/10_1.jsonl.zst"
+  }
+}

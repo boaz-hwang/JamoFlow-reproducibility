@@ -1,0 +1,123 @@
+{
+  "batch": {
+    "effective_batch_size": 32,
+    "first_batch_indices_sha256": "5cde9966335b0a68746f02a02ed3add67d8066a0bac3751ef60244c3aaac23a5",
+    "sequence_count": 53590,
+    "training_order_prefix_sha256": "f9b65287d977cac9b3308e195c0d96892f4a9e35c899dda1ae259c6856c0185a"
+  },
+  "claim_boundary": {
+    "actual_inference_evidence": false,
+    "development_training_batch": true,
+    "model_quality_evidence": false,
+    "optimizer_mechanism_audit_only": true,
+    "publication_claim": false
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit_before_plan": "8ae129eb85d598b35d69f55d068d6d83fa3e4856",
+  "implementation_sha256": {
+    "docs/141-foldable-jamo-residual-result-and-multihash-pivot.md": "ab55d6e8e29ff3a30b7e8c5656b96e2ef07973af9dc3aadd5192913597bc4011",
+    "docs/142-fable5-final-retrospective-and-current-direction.md": "e31d854c4619d321e1a3985567c64da7d0cd4e9f8fe6ebdf5d6ed8c55283b9bd",
+    "docs/143-foldable-vocabulary-reparameterization-literature-audit.md": "be0da05efa965b15d96770df3763645feeb1ec7f17237579212fe44f95522b67",
+    "docs/144-foldable-multihash-update-audit-protocol.md": "6269c92abc4cfe0cb5122de042457387a348a312831f4e681cbe11e4917b0dd2",
+    "docs/145-foldable-multihash-update-audit-v1-invalidation-and-v2-correction.md": "c239fb29dd99cf4eaebf4cb3762eea3b3739598b3aa08ff4c803fd2348aedaa0",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/foldable_jamo_residual_core.py": "7a1521f04478c9d1f1e3ac1c4bbc432a45cb2dd52267ed02503b8698b13e2ce4",
+    "scripts/foldable_jamo_residual_protocol.py": "19883516e0eab3d75bad666745e03c59b60d9ab3c18fb7fa61b3573d23e1ccc6",
+    "scripts/foldable_multihash_update_audit_core.py": "acb02e8fb8de79478a594227dd97c903d8a41d143d5b5ed8f2e0051001d443a7",
+    "scripts/run_foldable_jamo_residual.py": "8f75c53e0827512febcd21b85aacd20f67c487ed62a4575ebd0b2a845e0d7549",
+    "scripts/run_foldable_multihash_update_audit.py": "2db6cb8c164184dfbb9eca70cbe1ac7c2277428cb9cf1a38f715cefdba52179e",
+    "scripts/run_vocabulary_transfer_baseline.py": "601f3d150dcafa136975ef2b8452ec3b9698b11aacafb68a7169d35ee68140b1",
+    "scripts/seal_foldable_multihash_update_audit_plan.py": "e6e410835ff6a3cd26bd39244069646fc4b6a39efbdbdf741c17c5e976753cca",
+    "scripts/vocabulary_transfer_probe_core.py": "57a3f7390f589f73d0b8e5244d8270d02fb53e4bffa10d86dba9f5ce4b5fe430",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "tests/test_foldable_multihash_update_audit.py": "3902f112f94ba09379cdb4929532abcea5718e009c0c67e688a092697541bc7c"
+  },
+  "kind": "foldable_multihash_update_audit_plan_v2",
+  "metric": {
+    "control_multiplier_open_interval": [
+      1.0,
+      16.0
+    ],
+    "control_multiplier_source": "projection_multiplier",
+    "matrices": [
+      "input",
+      "output"
+    ],
+    "projection": "dot(multihash,dense)/dot(dense,dense)",
+    "quality_metric_used": false,
+    "row_scope": "new_target_rows_2048_through_8191"
+  },
+  "optimizer": {
+    "adamw_beta1": 0.9,
+    "adamw_beta2": 0.95,
+    "adamw_epsilon": 1e-08,
+    "body_learning_rate": 3e-05,
+    "checkpoint_steps": [
+      0,
+      32,
+      128,
+      512
+    ],
+    "effective_batch_size": 32,
+    "evaluation_batch_size": 16,
+    "final_probe_step": 512,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "head_and_residual_minimum_learning_rate": 3e-05,
+    "head_and_residual_peak_learning_rate": 0.0003,
+    "model_seed": 20260824,
+    "optimizer": "AdamW",
+    "order_seed": 20260827,
+    "residual_schedule": "all dense and residual parameters open from step zero",
+    "sequence_count": 53590,
+    "train_microbatch_size": 8,
+    "training_order_prefix_sha256": "f9b65287d977cac9b3308e195c0d96892f4a9e35c899dda1ae259c6856c0185a",
+    "training_schedule_token_count": 8388608,
+    "warmup_steps": 26,
+    "weight_decay_for_matrix_parameters": 0.1,
+    "weight_decay_for_vector_parameters": 0.0
+  },
+  "output_path": "results/foldable-multihash-update-audit-v2/summary.json",
+  "parent": {
+    "plan_artifact_sha256": "082d3c64baae907513ecf850941528a387be62da735ce3b5ded0ec06eaa2da93",
+    "plan_path": "data/manifests/foldable-jamo-residual-v1.json",
+    "plan_payload_sha256": "97a66252174080004633edf143c2b243f988c2eedafdecd33b4cd5e0e8f615c1",
+    "result_artifact_sha256": "a8be97af68870798f9b1f3509da5419f9ecdc72ad5ac8300e9a9bfe452ba40ea",
+    "result_path": "results/foldable-jamo-residual-v1/summary.json",
+    "result_payload_sha256": "e9145e70537ec04b8df7575f98d80e4c330fb83cbdc8439cac052ea5353b34ec",
+    "step_zero_checkpoint_artifact_sha256": "41ec7dfc01065a4c571f895f47029b8f2278fa94ca150ce1dc19e4fd5bedf42a",
+    "step_zero_checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0000.pt",
+    "step_zero_checkpoint_state_sha256": "6a91bc0176ca12a902c8547b47895340f7d40c389cf37cc8663b1ef85031a709",
+    "worker_artifact_sha256": "f9449f6938d9c266ef9709febc7603895ef021b42f94eaeb51148bf1071bebf7",
+    "worker_path": "artifacts/foldable-jamo-residual-v1/workers/untied_generic_surface.json",
+    "worker_payload_sha256": "1766a5fb10f295e2a17c0e60b39a3b5f2ad376accc7cbd50ff68bba526dc8fd9"
+  },
+  "plan_sha256": "5fcc724a7ed63b612fdda8d0107ce97a464332aaa19aa6b3000947ddff910605",
+  "protocol_id": "jamoflow-foldable-multihash-update-audit-v2",
+  "role": "untied_generic_surface",
+  "schema_version": 1,
+  "status": "first_update_geometry_sealed_before_update_observation"
+}

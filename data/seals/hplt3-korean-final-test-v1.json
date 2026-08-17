@@ -1,0 +1,70 @@
+{
+  "payload": {
+    "dataset_id": "hplt3-korean-final-test-v1",
+    "manifest": {
+      "schema_version": 1,
+      "sha256": "ea36dbbac63be8b9370cfee029758030cdd138aa1510bc02aeb8cbe4b95590ff"
+    },
+    "output": {
+      "evaluation_stream_bytes": 32000000,
+      "evaluation_stream_sha256": "562fd60c2abc85e2139feb4ed2f248a4556ace925686f9b94bbeff056ae73f99",
+      "full_jsonl_bytes": 32103596,
+      "full_jsonl_sha256": "098ae8b833a1498689dae1d60341aa870fce51c7f9dde6d961c867f751ee3dc2",
+      "sequence_count": 62500,
+      "sequence_length": 512
+    },
+    "predecessor": {
+      "document_count": 6911,
+      "exclusion_commitment_sha256": "9c0c6503ee4e614f99ea851127dd0463543d6ee1afd1958cccada9f9fdbc4e47",
+      "legacy_reconstruction_verified": true,
+      "normalized_exclusion_commitment_sha256": "9e53a1f3cde744ceb098e0b47ef3caaa5b43b97704b01e80b3246ced538dc17f",
+      "normalized_unique_document_count": 6911
+    },
+    "preparation_git_commit": "5928bbcc8660db0f4ed85762f88808974b32fae2",
+    "privacy": {
+      "individual_document_digests_tracked": false,
+      "model_metrics_tracked": false,
+      "raw_text_tracked": false
+    },
+    "protocol_version": 1,
+    "scan": {
+      "eligible_records": 273362,
+      "eligible_text_bytes": 6107283275,
+      "empty_text": 0,
+      "exact_duplicates": 0,
+      "invalid_json": 0,
+      "invalid_utf8": 0,
+      "missing_text": 0,
+      "normalized_predecessor_exclusions": 0,
+      "normalized_source_duplicates": 0,
+      "parsed_records": 273839,
+      "post_exclusion_test_records": 26704,
+      "post_exclusion_test_text_bytes": 592679745,
+      "predecessor_records_found": 6911,
+      "source_lines": 273839,
+      "too_long": 477,
+      "too_short": 0
+    },
+    "selection": {
+      "all_records_stable_test": true,
+      "intersection_commitment_sha256": "ffbdd555a26004d989293ae2960e8052233aba2bc357f7fd8118f5f60934141e",
+      "intersection_count": 0,
+      "normalized_intersection_commitment_sha256": "e5a8578440b814144e02a7b207eb43191f502e6dd6ead163ca912d1456e7523f",
+      "normalized_intersection_count": 0,
+      "normalized_overlap_audit_sha256": "99e8b9bc081999b70bd023be05d661f5c53d682b56fff493f198b8127cf9acd7",
+      "normalized_selected_set_commitment_sha256": "e0b0f7f5947873e4bab118f2f6143a7af954fc80db91756f57dc109179d4764c",
+      "normalized_selected_unique_document_count": 1482,
+      "ordered_selection_sha256": "b551c307d70b2adcc260c5dc4825179f02129a060bb9e125eb6736a4f63b35e7",
+      "overlap_audit_sha256": "37cfa48c02b93293f6ca705d1dba03c682ddb15414677e2a25aaaa7eb82ab0b9",
+      "overshoot_stream_bytes": 14689,
+      "selected_document_count": 1482,
+      "selected_document_raw_bytes": 32013208,
+      "selected_set_commitment_sha256": "eb140d98961a3213b2d7caf949fa99e5edcf0c3abb81c3074f8fa08d2d802465"
+    },
+    "source": {
+      "bytes": 1862302013,
+      "sha256": "de4dfa43fd9f6c62cc81781e09c1f401cc77e7a956e07ecc80ac13477e699ca4"
+    }
+  },
+  "payload_sha256": "97cf90d1e6e7191e7f8336647f278ae6c0e82d70540bf0f5c43f9cb426e75dc8"
+}

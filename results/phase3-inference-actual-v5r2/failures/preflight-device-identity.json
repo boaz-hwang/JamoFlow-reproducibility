@@ -1,0 +1,17 @@
+{
+  "disposition": "implementation_ineligible_plan_never_reused_as_evidence",
+  "exception": "ValueError: actual timing comparison device/contract differs",
+  "failure_stage": "single_case_dry_run_before_any_timing_session",
+  "kind": "phase3_inference_actual_preflight_failure_v5r2",
+  "latency_metrics_inspected": false,
+  "observed_parameter_device": "mps:0",
+  "output_artifact_published": false,
+  "plan_artifact_sha256": "0134e8ff3d42ba3c46d3950e86216abf1baae1eafbced0a5c469cf3e257f9401",
+  "plan_sha256": "db85c5be1de538155e06865a63e28e0f42cc2e2cfae361902f503a9f3b66cd4d",
+  "receipt_published": false,
+  "root_cause": "PyTorch canonicalizes the requested mps device as mps:0 while the new contract guard compared it to the literal mps string",
+  "run_git_commit": "2deaf45816c66df637a312bbf335d2cceb83cac9",
+  "schema_version": 1,
+  "timing_artifact_published": false,
+  "tolerance_or_statistical_contract_changed": false
+}

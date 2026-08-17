@@ -1,0 +1,114 @@
+{
+  "cases": {
+    "block_bytes": 3,
+    "case_order": "domain-separated SHA-256 rank then byte offset",
+    "micro_cases_per_stratum": 32,
+    "micro_follow_bytes": 1,
+    "micro_strata": [
+      "no_new_patch",
+      "one_new_patch"
+    ],
+    "minimum_prompt_hangul_share": 0.79,
+    "nonoverlap": true,
+    "prompt_bytes": 128,
+    "whole_cases": 16,
+    "whole_continuation_bytes": [
+      255,
+      258
+    ],
+    "whole_grouping": "complete precomposed Hangul scalars as three-byte blocks; every other byte singly"
+  },
+  "decision_rule": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260829,
+    "minimum_independent_projected_lower_bound": 0.1,
+    "minimum_independent_projected_reduction": 0.2,
+    "minimum_micro_target_block_lower_bound": 0.2,
+    "minimum_micro_target_block_reduction": 0.3,
+    "minimum_perfect_hangul_whole_lower_bound": 0.1,
+    "minimum_perfect_hangul_whole_reduction": 0.2,
+    "pass_authorizes": "calibration-only exact speculative rollback prototype",
+    "stop_rule": "if any correctness, micro, perfect-whole, or fixed-head projection gate fails, terminate the multi-byte branch without head retuning"
+  },
+  "fixed_independent_head": {
+    "acceptance_artifact_path": "results/hangul-draft-acceptance-v1/summary.json",
+    "acceptance_artifact_sha256": "0e31dada00ca04835432f8f35b2e438b225dbed58e4ee12f262aff081fcd3591",
+    "architecture": "generic_independent_utf8",
+    "complete_pair_acceptance": 0.2437942033005131,
+    "first_continuation_acceptance": 0.42372763833032867,
+    "head_latency_ms": 1.0049584999999999,
+    "head_seed": 20260813,
+    "selection_rationale": "the already measured median-acceptance seed, with the slowest isolated median latency among the three independent-head seeds; fixed before target-kernel timing"
+  },
+  "implementation_sha256": {
+    "scripts/incremental_block_kernel.py": "b374a58dd923aaa4be0bb2b4b6eb89558cb393d53a93322aeefa40cdb2f3dccc",
+    "scripts/run_target_block_kernel_preflight.py": "c6c1e9873979d4c90eb646f0cf55a19ad27cf14637e1e0d0cf7a3564c309d6a4",
+    "scripts/target_block_kernel_core.py": "bf10791b76f79f7ac17ff109cef0a4344eff8971709358acfa00937e38bb31a9"
+  },
+  "input": {
+    "byte_limit": 1000000,
+    "sequence_length": 512,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "split": "calibration",
+    "stream_bytes": 999936,
+    "stream_sha256": "69f6aa9347f7e265d6df5097e4219c944b4da7cf6d8522a831a26c670a4c39ec"
+  },
+  "kind": "target_block_kernel_plan_v1",
+  "model": {
+    "authorization_artifact_path": "results/phase3-inference-final-v2/post-confirmation-authorization.json",
+    "authorization_artifact_sha256": "bdedf1cb11a412887687b500d9e76118522d96bde30d0c244e891792a6369474",
+    "authorization_sha256": "d27eff96f21ea96ceed6cc9ec7d210d8423cbb74422c321628a87a3bf6aa6515",
+    "candidate_identity_sha256": "ccc7f076dc30a1e8db294a37a8b4edba0c0c0f92dd5f61c69b850db268c8ad16",
+    "checkpoint": {
+      "artifact_sha256": "ace22440cbddd319d07666c71299972a6b4c4792711431eba209e6b1ddebebb6",
+      "path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.pt",
+      "state_sha256": "774191164214fd993685b52012c729821f8efc679d492d2db69c86507909745f"
+    },
+    "descriptor": {
+      "model_family": "compute_conversion",
+      "patch_count": 72,
+      "policy": "causal_whitespace_grid_72",
+      "requires_entropy_router": false,
+      "runtime_policy": "causal_whitespace_grid"
+    },
+    "patching_horizon": 512,
+    "seed": 1729,
+    "selection_artifact_path": "results/phase3-inference-selection-v2/selection-lock.json",
+    "selection_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251"
+  },
+  "output": {
+    "case_artifact_path": "artifacts/target-block-kernel-v1/cases.npz",
+    "raw_timing_artifact_path": "artifacts/target-block-kernel-v1/timings.npz",
+    "summary_path": "results/target-block-kernel-v1/summary.json"
+  },
+  "protocol_id": "jamoflow-target-block-kernel-v1",
+  "schema_version": 1,
+  "status": "sealed_before_target_kernel_timing",
+  "threat_model": {
+    "actual_speculative_rollback_implemented": false,
+    "calibration_only": true,
+    "final_quality_claimed": false,
+    "generic_or_korean_novelty_claimed": false,
+    "head_executed_in_whole_timing": false,
+    "head_latency_included_in_projection": true,
+    "perfect_draft_upper_bound": true,
+    "post_acceptance_result_exploratory": true
+  },
+  "timing": {
+    "ac_power_required": true,
+    "correctness_atol": 0.0001,
+    "correctness_rtol": 0.00002,
+    "device": "mps",
+    "micro_repetitions": 5,
+    "micro_scope": "prefill outside timer; three sequential consume calls versus one three-byte block call; final MPS synchronization inside timer",
+    "modes": [
+      "sequential_three",
+      "block_three"
+    ],
+    "process_exclusion": "shared publication MPS flock and known-entrypoint inventory",
+    "role_order": "exact parity-balanced within each fixed case x repetition grid",
+    "whole_repetitions": 3,
+    "whole_scope": "fresh runtime construction, 128-byte parallel prefill, 254-257 observed continuation bytes, and final MPS synchronization inside timer"
+  }
+}

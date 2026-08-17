@@ -1,0 +1,214 @@
+{
+  "artifacts": {
+    "candidate_checkpoint_path": "artifacts/static-geometry-one-seed-v1/candidate.pt",
+    "candidate_nll_path": "artifacts/static-geometry-one-seed-v1/candidate-calibration-nll.npz",
+    "training_receipt_path": "artifacts/static-geometry-one-seed-v1/training-receipt.json"
+  },
+  "baseline": {
+    "calibration_nll_array_sha256": "245a6b6d17c3d7ea3a4157f1397d8e3bad5f0a15ca50dbbfbd75031cb2fbb268",
+    "calibration_nll_path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72-calibration-nll.npz",
+    "calibration_nll_sha256": "308c4dd0bc05b3e73d8e7dce317e0d68699b2d5c75b42d66c6b3b2c83020b3f2",
+    "checkpoint_path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.pt",
+    "checkpoint_sha256": "ace22440cbddd319d07666c71299972a6b4c4792711431eba209e6b1ddebebb6",
+    "parameter_count": 19596096,
+    "report_path": "runs/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.json",
+    "report_sha256": "9fb009875615a6c1744a0f8a0ab30c155c7036a82434639eb48d50cc3dddc119",
+    "state_sha256": "774191164214fd993685b52012c729821f8efc679d492d2db69c86507909745f"
+  },
+  "candidate": {
+    "geometry": "thin160_e1_d1_g384x9",
+    "initial_state_sha256": "3d52df3b248ef97803cd3d235f8b171a685b447c55efce106ed5aa3e2c3c3af7",
+    "model_spec": {
+      "cross_attention_k": 2,
+      "decoder_layers": 1,
+      "encoder_layers": 1,
+      "global_ffn": 1128,
+      "global_heads": 8,
+      "global_layers": 9,
+      "global_width": 384,
+      "hash_group_size": 3,
+      "hash_vocabulary": 8192,
+      "local_ffn": 480,
+      "local_heads": 8,
+      "local_width": 160,
+      "patch_count": 72,
+      "patch_stride": 6,
+      "router_ffn": 576,
+      "router_heads": 6,
+      "router_layers": 4,
+      "router_width": 192,
+      "sequence_length": 512,
+      "vocab_size": 256
+    },
+    "parameter_count": 19571872
+  },
+  "cases": {
+    "continuation_bytes": 128,
+    "continuations_array_sha256": "b9938bb6995caaa71768d553d67a8505e2a431b7c7af171e928528268416b06b",
+    "free_maximum_output_bytes": 131,
+    "offsets_array_sha256": "3782da3c84838e8766303d6c72e42511b8d836f54037f40b526176fc590aeef9",
+    "prompt_bytes": 128,
+    "prompt_count": 64,
+    "prompt_selection": "first 64 prompts in the preexisting model-free domain-separated bottom-hash calibration order",
+    "prompt_source_path": "artifacts/hangul-draft-acceptance-v1/free-target.npz",
+    "prompt_source_sha256": "03808c1dd66d3d9cf30e702899a61188a486a3d8ea40ae96636927923450a9f1",
+    "prompts_array_sha256": "73c7ee6be116a78240d63600e466b4b025e0779e967b7e5125bed216d61ee4c3"
+  },
+  "claim_boundary": {
+    "calibration_only": true,
+    "one_model_seed_screen": true,
+    "publication_quality_or_efficiency_claimed": false,
+    "static_geometry_novelty_claimed": false,
+    "test_or_final_evidence_read": false
+  },
+  "data": {
+    "calibration_document_map": {
+      "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+      "document_count": 386,
+      "eligible_document_count": 386,
+      "eligible_sequence_count": 15240,
+      "eligible_sequence_fraction": 0.97536,
+      "eligible_sequence_fraction_pass": true,
+      "excluded_index": -1,
+      "excluded_sequence_count": 385,
+      "layout_sha256": "1c060b3b79c9bdc28366a15fb26d0eea86eab5f273a1323dfbfbbc9d80be0aed",
+      "minimum_required_eligible_sequence_fraction": 0.95,
+      "sequence_count": 15625,
+      "sequence_length": 512
+    },
+    "primary_summary_path": "results/phase3-primary-five-seed/summary.json",
+    "primary_summary_sha256": "c374c06303334f06577c118d37c7e703a031c2a91af12b10ffcd384bb803bd33",
+    "source_bytes": 152461842,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "streams": {
+      "calibration": {
+        "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+        "byte_limit": 8000000,
+        "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+        "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+        "sequence_count": 15625,
+        "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+        "whitespace_sha256": "3e689ac27d96acf3a8e72d322685581fe05c9c0e581065f5ba4908da41be4ae1"
+      },
+      "train": {
+        "boundaries_sha256": "702f15b957e6742de52cc3887063a3dba93378b020c273b7ed5626b8b8e67021",
+        "byte_limit": 128000000,
+        "inputs_sha256": "f8a25025aa8763ef7a8b0f5c63568cda6dda99d4af71a579b3f845d5d2ea21be",
+        "matrix_sha256": "789b66010f7cb2a1c69a9576834e7c169e3aff228df2836090af3582a3f359f8",
+        "sequence_count": 250000,
+        "stream_sha256": "335d1e9ef24f4357747273562fd70ab1954532bc407fd565d97950328bef1512",
+        "whitespace_sha256": "b93687077ce33d61d665d9c86f518a410d99a7abefcc6b2e259f21912fcd4b4e"
+      }
+    }
+  },
+  "decision_rule": {
+    "overall_pass": "quality and controlled-replay latency and free-running latency must all pass",
+    "quality": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 20261001,
+      "margin_bpb": 0.01,
+      "minimum_document_coverage": 0.95,
+      "requirements": "full-stream mean and document-bootstrap one-sided 95% upper must both be <= margin"
+    },
+    "timing": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 20261002,
+      "minimum_bootstrap_lower_bound": 0.1,
+      "minimum_point_reduction": 0.15,
+      "minimum_positive_prompts": 48,
+      "modes": [
+        "controlled_replay",
+        "free_running_utf8_greedy"
+      ],
+      "repetitions": 5,
+      "warmup_prompts": 8
+    }
+  },
+  "implementation_sha256": {
+    "docs/106-static-geometry-one-seed-protocol.md": "71df82db3dfa9369647f89584d11185fc52a9a168d22044960f41593161000c3",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/run_static_geometry_one_seed.py": "0d8e710f1be7e536aa988539b4236ad9a5f06f80260b6f066157dc801fc6bf13",
+    "scripts/static_geometry_one_seed_core.py": "e10af2330b63c2b2e00823c6f995bdc1b8f965e215485c8cd3a517538ebbfb35",
+    "scripts/static_geometry_preflight_core.py": "dd05577b51c71ea223151531a41cf4ef8383394574447e017794949b113d95f4",
+    "src/jamoflow/compute_conversion.py": "10136ecdb97ac1af084b66d9715c228e0f61b7745bd6f0d2f3ce4beb2dd2d08a",
+    "src/jamoflow/document_inference.py": "390cf3e8784c15cac99d56bbd59e7701ecf148d1235573467694622f6451c312",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/incremental_blt.py": "d82ca95a6509490e443258c84788bab17817e47bd62481880bd8ed08f64e0ef7",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/inference_initial_model_identity_v2.py": "e226f406075e1cde175d41ca68f2c8015185d5f8764686a4611e863e8ad552f2",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/neural_training.py": "8834d32f9d5647d5a121f9bbc631349590c6333d6cfec6b9d8878b7fb65a6549",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "src/jamoflow/phase3.py": "c17d76e959d7402f4bc6b010e5eefc5d19757d4a6b7ab3b04291ee063ba593a2",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_static_geometry_one_seed.py": "717e6c726135de664dfc85e821e1025c4c18053fa933a79237454bcfebd6eaff"
+  },
+  "kind": "static_geometry_one_seed_plan_v1",
+  "output": {
+    "summary_path": "results/static-geometry-one-seed-v1/summary.json",
+    "timing_artifact_path": "artifacts/static-geometry-one-seed-v1/timing.npz"
+  },
+  "protocol_id": "jamoflow-static-geometry-one-seed-v1",
+  "runtime_environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "mac_ver": "26.5.2",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python_implementation": "CPython",
+    "python_version": "3.13.11",
+    "sys_version_info": [
+      3,
+      13,
+      11
+    ],
+    "torch_runtime": {
+      "git_version": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+      "mps_available": true,
+      "mps_built": true,
+      "version": "2.13.0"
+    }
+  },
+  "schema_version": 1,
+  "static_preflight": {
+    "artifact_path": "results/static-geometry-preflight-v1/summary.json",
+    "artifact_sha256": "0735291749e1305835a9dd09a4a22293e240cf9cc9f3e656fe1a69a001b0c352",
+    "selected_candidate": "thin160_e1_d1_g384x9",
+    "status": "one_seed_static_control_authorized"
+  },
+  "status": "sealed_before_candidate_training",
+  "training": {
+    "device": "mps",
+    "global_position_limit": 1032,
+    "optimization_spec": {
+      "batch_size": 32,
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "epsilon": 1e-08,
+      "evaluation_batch_size": 64,
+      "gradient_clip": 1.0,
+      "learning_rate": 0.0003,
+      "minimum_learning_rate": 3e-05,
+      "router_batch_size": 64,
+      "warmup_steps": 500,
+      "weight_decay": 0.1
+    },
+    "patch_policy": "causal_whitespace_grid_72",
+    "seed": 1729,
+    "test_split_evaluated": false,
+    "training_order_sha256": "2691425529b67f9a17ca69c7a7516cc7e1b853731caa53871781e2f89a35aff1"
+  }
+}

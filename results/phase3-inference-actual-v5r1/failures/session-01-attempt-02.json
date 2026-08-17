@@ -1,0 +1,43 @@
+{
+  "active_sentinel_sha256": "873777236cce5eb7918b59b288fe66bd5bb42d3cb232acd5fcf0a7be1c9e8a7b",
+  "correctness_diagnosis": {
+    "cpu_original_contract_audit": {
+      "all_argmax_exact": true,
+      "all_bundles_passed": true,
+      "bundle_count": 10,
+      "maximum_normalized_tolerance_ratio": 0.8876652717590332
+    },
+    "failed_bundle": {
+      "case_index": 66,
+      "logit_index": 17,
+      "observed_byte_position": 126,
+      "role": "reference",
+      "seed": 65537
+    },
+    "mps_failed_row": {
+      "absolute_logit_error": 2.1284446120262146e-05,
+      "argmax_equal": true,
+      "maximum_probability_absolute_error": 1.1920928955078125e-07,
+      "normalized_tolerance_ratio": 1.0507920980453491,
+      "probability_total_variation": 1.172570307739428e-07
+    },
+    "same_bundle_case_cpu": {
+      "absolute_logit_error": 8.763745427131653e-06,
+      "argmax_equal": true,
+      "normalized_tolerance_ratio": 0.4326504170894623
+    }
+  },
+  "disposition": "numerically_ineligible_attempt_never_reused_as_evidence",
+  "exception": "AssertionError: actual timing equivalence tolerance ratio differs",
+  "failure_stage": "controlled_correctness_gate_before_any_timing_trial",
+  "kind": "phase3_inference_actual_correctness_failure_v5r1",
+  "latency_metrics_inspected": false,
+  "output_artifact_published": false,
+  "plan_artifact_sha256": "ec828b72e9b328178a109595d2e4601e7d94e2a2401645c88ba451ee2adda048",
+  "plan_sha256": "840887bd917c4754428dc180a51ceb1c7bab51b904035e3232a0ba525e06402f",
+  "receipt_published": false,
+  "run_git_commit": "f90164dd3ab1ab5cb352cfd808c2d6d7ff42fce5",
+  "schema_version": 1,
+  "session_id": "session-01",
+  "timing_artifact_published": false
+}

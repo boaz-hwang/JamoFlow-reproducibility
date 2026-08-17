@@ -1,0 +1,354 @@
+{
+  "cases": {
+    "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "candidate_document_windows": 15240,
+    "candidate_rows": 996,
+    "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+    "continuation_length_bytes": 128,
+    "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+    "measured_cases": 36,
+    "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4",
+    "prompt_length_bytes": 128,
+    "selected_cases": 42,
+    "selected_unique_clusters": 42,
+    "unique_candidate_clusters": 330,
+    "unique_candidate_prompts": 996,
+    "warmup_cases": 6
+  },
+  "claim_boundary": {
+    "actual_model_graph_timing": true,
+    "calibration_development_only": true,
+    "free_running_generation": false,
+    "matched_quality": false,
+    "new_tokenizer_method": false,
+    "random_weights_only": true,
+    "tokenization_inside_model_timer": false
+  },
+  "dependencies": {
+    "git_commit_before_plan": "412e362bf50fef9f3f5b3cd27bc517c232994bd2",
+    "integrity_path": "data/processed/hplt3-korean-phase3/integrity.json",
+    "integrity_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "prior_scalar_opportunity_path": "results/scalar-representation-opportunity-v1/summary.json",
+    "prior_scalar_opportunity_sha256": "5bd1fce05e209842189580e32328ec383c0741d15cbc22519fb023268ccb8c0a",
+    "prior_scalar_runtime_path": "results/scalar-runtime-preflight-v1/summary.json",
+    "prior_scalar_runtime_sha256": "7cf8e90164634f737f3df325c2f1b3bc12e8047f4d3a8c38565b6efa209c4a56",
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+  },
+  "environment": {
+    "device": "mps",
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin"
+  },
+  "experiment": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260815,
+    "continuation_bytes": 128,
+    "depths": [
+      8,
+      12,
+      16
+    ],
+    "measured_cases": 36,
+    "model_seed": 20260814,
+    "mps_atol": 0.0001,
+    "mps_rtol": 2e-05,
+    "parameter_relative_tolerance": 0.005,
+    "parameter_target": 19596096,
+    "prompt_bytes": 128,
+    "repetitions": 3,
+    "roles": [
+      "byte_bpe_v2048_d8",
+      "byte_bpe_v2048_d12",
+      "byte_bpe_v2048_d16",
+      "byte_bpe_v4096_d8",
+      "byte_bpe_v4096_d12",
+      "byte_bpe_v4096_d16",
+      "byte_bpe_v8192_d8",
+      "byte_bpe_v8192_d12",
+      "byte_bpe_v8192_d16",
+      "byte_bpe_v16000_d8",
+      "byte_bpe_v16000_d12",
+      "byte_bpe_v16000_d16",
+      "byte_bpe_v32000_d8",
+      "byte_bpe_v32000_d12",
+      "byte_bpe_v32000_d16",
+      "byte_bpe_v64000_d8",
+      "byte_bpe_v64000_d12",
+      "byte_bpe_v64000_d16"
+    ],
+    "vocabulary_sizes": [
+      2048,
+      4096,
+      8192,
+      16000,
+      32000,
+      64000
+    ],
+    "warmup_cases": 6
+  },
+  "implementation_sha256": {
+    "docs/114-latest-tokenizer-frontier-reassessment.md": "c52634dd5374b527a3623a3b42094daeb56cc799936753457a7f3062fd34e6a4",
+    "docs/115-korean-bpe-systems-frontier-protocol.md": "e9ef40f9e1c8c1ae63917c64ecef185a38d9794dbfc0e4b55239fb38237f4dde",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/benchmark_token_frontier_runtime.py": "46457eb4a07b1893279c2da80ca885c59e37d3304823fda6c16ad1c93efe001e",
+    "scripts/run_token_frontier_opportunity.py": "62f3d4e1a8fdadbdd5160819c20be7671065eb7e7f49070e53a85f91357d63f6",
+    "scripts/scalar_representation_core.py": "12bda2255c38e118ccb7d46e2c98d5d003ca4743d27a97dc3795a34d3a4f1333",
+    "scripts/scalar_runtime_core.py": "6260d9f0b974865d22af7a54d73a3e4fe892a2ed390ec49b973b95bc85534998",
+    "scripts/seal_token_frontier_plan.py": "823bdd79b6e30579fd0929ed5b2e63ad7f569f4aa1c450129e9c53f81e63772a",
+    "scripts/summarize_token_frontier.py": "d451fd21e3bbd634d4b487340b0480591f978c2a313c945df2e4bcf80934b9a4",
+    "scripts/token_frontier_core.py": "cc578b9b02206159762f6ea7adb0ef611d248e0286457e4ea1792fcc3befe4ed",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "src/jamoflow/actual_inference_protocol.py": "ffe7cb87a2beaed149b8cc791a49d8ac992ecddde94df722e0f40dcd0b1154aa",
+    "src/jamoflow/corpus.py": "af2c69d18424266bcee4cd3067432afc10b69bac345873f7cbf4e338654b16ba",
+    "src/jamoflow/document_inference.py": "390cf3e8784c15cac99d56bbd59e7701ecf148d1235573467694622f6451c312",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_benchmark.py": "750d33a7eb454ffbcca85d073905420e9cbde2d7a8311049f0b7b4482a0f4114",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "tests/test_token_frontier_core.py": "64f3e93af2f41b1e260955f26af5d93316379794de65323b245ad5e7ba6d12b0",
+    "tests/test_token_frontier_protocol.py": "7bf99b328d3f0f6e53daa23ae8ae404740a184fb0d89de950b1b270433d00a96"
+  },
+  "kind": "korean_bpe_systems_frontier_plan_v1",
+  "known_preseal_engineering_anchors": {
+    "interpretation": "disclosed prior engineering observations; used to motivate the grid, not to select a quality comparator",
+    "new_outcomes_unobserved_at_seal": [
+      "2K/4K/8K/64K calibration token counts",
+      "all 18 parameter-matched graph runtimes"
+    ],
+    "prior_byte_bpe_16000": {
+      "calibration_token_count": 1533938,
+      "random_weight_end_to_end_median_ms": 67.6335205
+    },
+    "prior_byte_bpe_32000": {
+      "calibration_token_count": 1388745,
+      "random_weight_end_to_end_median_ms": 92.8866045
+    }
+  },
+  "model_specs": {
+    "byte_bpe_v16000_d12": {
+      "attention_heads": 5,
+      "expected_parameters": 19627840,
+      "hidden_size": 320,
+      "intermediate_size": 832,
+      "key_value_heads": 5,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 16000
+    },
+    "byte_bpe_v16000_d16": {
+      "attention_heads": 4,
+      "expected_parameters": 19540752,
+      "hidden_size": 272,
+      "intermediate_size": 800,
+      "key_value_heads": 4,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 16000
+    },
+    "byte_bpe_v16000_d8": {
+      "attention_heads": 8,
+      "expected_parameters": 19605344,
+      "hidden_size": 352,
+      "intermediate_size": 1184,
+      "key_value_heads": 8,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 16000
+    },
+    "byte_bpe_v2048_d12": {
+      "attention_heads": 5,
+      "expected_parameters": 19586880,
+      "hidden_size": 320,
+      "intermediate_size": 1216,
+      "key_value_heads": 5,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 2048
+    },
+    "byte_bpe_v2048_d16": {
+      "attention_heads": 4,
+      "expected_parameters": 19621152,
+      "hidden_size": 288,
+      "intermediate_size": 992,
+      "key_value_heads": 4,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 2048
+    },
+    "byte_bpe_v2048_d8": {
+      "attention_heads": 6,
+      "expected_parameters": 19667328,
+      "hidden_size": 384,
+      "intermediate_size": 1536,
+      "key_value_heads": 6,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 2048
+    },
+    "byte_bpe_v32000_d12": {
+      "attention_heads": 4,
+      "expected_parameters": 19601664,
+      "hidden_size": 256,
+      "intermediate_size": 896,
+      "key_value_heads": 4,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 32000
+    },
+    "byte_bpe_v32000_d16": {
+      "attention_heads": 4,
+      "expected_parameters": 19676384,
+      "hidden_size": 224,
+      "intermediate_size": 864,
+      "key_value_heads": 4,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 32000
+    },
+    "byte_bpe_v32000_d8": {
+      "attention_heads": 4,
+      "expected_parameters": 19616544,
+      "hidden_size": 288,
+      "intermediate_size": 1120,
+      "key_value_heads": 4,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 32000
+    },
+    "byte_bpe_v4096_d12": {
+      "attention_heads": 6,
+      "expected_parameters": 19577040,
+      "hidden_size": 336,
+      "intermediate_size": 1056,
+      "key_value_heads": 6,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 4096
+    },
+    "byte_bpe_v4096_d16": {
+      "attention_heads": 4,
+      "expected_parameters": 19645200,
+      "hidden_size": 272,
+      "intermediate_size": 1056,
+      "key_value_heads": 4,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 4096
+    },
+    "byte_bpe_v4096_d8": {
+      "attention_heads": 6,
+      "expected_parameters": 19569024,
+      "hidden_size": 384,
+      "intermediate_size": 1440,
+      "key_value_heads": 6,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 4096
+    },
+    "byte_bpe_v64000_d12": {
+      "attention_heads": 3,
+      "expected_parameters": 19591872,
+      "hidden_size": 192,
+      "intermediate_size": 800,
+      "key_value_heads": 3,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 64000
+    },
+    "byte_bpe_v64000_d16": {
+      "attention_heads": 3,
+      "expected_parameters": 19667136,
+      "hidden_size": 192,
+      "intermediate_size": 544,
+      "key_value_heads": 3,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 64000
+    },
+    "byte_bpe_v64000_d8": {
+      "attention_heads": 4,
+      "expected_parameters": 19558112,
+      "hidden_size": 224,
+      "intermediate_size": 672,
+      "key_value_heads": 4,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 64000
+    },
+    "byte_bpe_v8192_d12": {
+      "attention_heads": 4,
+      "expected_parameters": 19618848,
+      "hidden_size": 288,
+      "intermediate_size": 1280,
+      "key_value_heads": 4,
+      "layers": 12,
+      "maximum_positions": 512,
+      "vocabulary_size": 8192
+    },
+    "byte_bpe_v8192_d16": {
+      "attention_heads": 4,
+      "expected_parameters": 19621152,
+      "hidden_size": 288,
+      "intermediate_size": 864,
+      "key_value_heads": 4,
+      "layers": 16,
+      "maximum_positions": 512,
+      "vocabulary_size": 8192
+    },
+    "byte_bpe_v8192_d8": {
+      "attention_heads": 8,
+      "expected_parameters": 19560288,
+      "hidden_size": 352,
+      "intermediate_size": 1504,
+      "key_value_heads": 8,
+      "layers": 8,
+      "maximum_positions": 512,
+      "vocabulary_size": 8192
+    }
+  },
+  "plan_sha256": "71d8cd9614161035c79201f4b31e508e3463c80b83e0f67da1e5a539f22f8212",
+  "protocol_id": "jamoflow-korean-bpe-systems-frontier-v1",
+  "schema_version": 1,
+  "status": "sealed_after_known_16k_32k_anchors_before_new_grid_counts_and_runtime",
+  "tokenizer": {
+    "add_prefix_space": false,
+    "byte_fallback": false,
+    "diagnostic_calibration_encode_repetitions": 5,
+    "dropout": null,
+    "initial_alphabet": "complete ByteLevel alphabet",
+    "minimum_frequency": 2,
+    "normalizer": null,
+    "replicate_training_for_exact_json_determinism": true,
+    "tokenizers_version": "0.22.2",
+    "train_split_only": true,
+    "use_regex": true,
+    "vocabulary_sizes": [
+      2048,
+      4096,
+      8192,
+      16000,
+      32000,
+      64000
+    ]
+  }
+}

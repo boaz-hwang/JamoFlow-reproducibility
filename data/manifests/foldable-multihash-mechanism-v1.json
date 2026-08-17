@@ -1,0 +1,334 @@
+{
+  "assignment_audits": {
+    "balanced_random_multihash": {
+      "assignment_kind": "balanced_random_multihash",
+      "assignment_sha256": "dc5195095d3d09f77f402f42b3536c09fcac293a6a87d10a6d172ddcb2a55663",
+      "changed_new_row_count_vs_generic": 6144,
+      "changed_new_row_fraction_vs_generic": 1.0,
+      "changed_new_token_exposure_fraction_vs_generic": 1.0,
+      "construction": {
+        "occupancy_per_bucket": 48,
+        "occupancy_sha256": "72e920936c3ad98e0fe7ecff69f11c366026352da32345cf9fb01c4aaaef49be",
+        "seed": 20260835
+      },
+      "new_row_count": 6144,
+      "slot_entropy_bits": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "slot_occupancy_sha256": [
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0",
+        "53a1594e5fe334ac29afc0907797f0d703eb2b69a575d3a7a79f9bf8c51e4fa0"
+      ],
+      "slot_unique_counts": [
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "unique_new_code_vector_count": 6144
+    },
+    "stratified_generic_shuffle": {
+      "assignment_kind": "stratified_generic_shuffle",
+      "assignment_sha256": "47fb08a87878417dcd2754ce44b05bf75789a70008c7408b3fea7b4d9e91f910",
+      "changed_new_row_count_vs_generic": 4231,
+      "changed_new_row_fraction_vs_generic": 0.6886393229166666,
+      "changed_new_token_exposure_fraction_vs_generic": 0.5806358414224894,
+      "construction": {
+        "maximum_stratum_size": 15,
+        "median_stratum_size": 1.0,
+        "minimum_stratum_size": 1,
+        "non_singleton_row_count": 4231,
+        "seed": 20260834,
+        "singleton_stratum_count": 1913,
+        "source_row_mapping_sha256": "b65c999b1d15ac781375f9709fa2ca564dc200a3a1cb18b30401ae30bd683fd9",
+        "stratum_count": 3181
+      },
+      "new_row_count": 6144,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.98376680297688,
+        6.985682913026527,
+        6.982032364628784,
+        6.9876311369142385,
+        6.985829629094051,
+        6.985731850921669,
+        2.754325955625469
+      ],
+      "slot_occupancy_sha256": [
+        "b4478bdac06a8efac2152537d8e75d6728c57ead38714520d87d8cdf0c5492fb",
+        "c77b380a5c46ce809e54a976a0d51221a91c39fe0708ba127d93fe7f9a19a41e",
+        "91679acb6fffb05dc866b6334463e60a99a4f3e855609dc7261e54001fc09dd6",
+        "2469268a352be9496e360997abf43af3192bc24026bd36e791a5eadd58387316",
+        "3e3c5bf2a3a8cdab9ac9387a42f1d86d48122ae52e64721ff8d3073287b99272",
+        "2eb62bfa87b9b11e56bf12bad16347c272a7e4d5eeb3c394834545df74399294",
+        "cffdb35d4313064c7f17728bbf566cb8cd8dfb610c28e1790c3448dc2a47e772",
+        "6eb7cfcb519e04326dfc46e679c706183bca3dcc233c41c39f206bf71056e602",
+        "da285c8c951bb3775505a018620904aa5fea1b68018dabb0f0f6c2f2192f0953",
+        "7a3673fb2ce1b43974d623aec3674da5146a6bafb870d249fe45d356ee47ca1f",
+        "afd0066e412e762e9c5588bbe13dbe03a39e698222ce4a214bff957eecb1c916",
+        "64da1fe9b66c213a10c66f6f278fe5b6e5eb11c86e1de5bcea862d2ac2c40133",
+        "de26b6ce0549df4f154f656f4be7b7f8a11b4bb6d0a202e6b95260cbdc6ad720"
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        15
+      ],
+      "unique_new_code_vector_count": 6144
+    }
+  },
+  "claim_boundary": {
+    "actual_inference_evidence": false,
+    "development_data": true,
+    "fresh_stage_requires_primary_gate": true,
+    "model_seed_count": 1,
+    "publication_claim": false
+  },
+  "dependencies": {
+    "parent_plan": {
+      "artifact_sha256": "082d3c64baae907513ecf850941528a387be62da735ce3b5ded0ec06eaa2da93",
+      "path": "data/manifests/foldable-jamo-residual-v1.json",
+      "payload_sha256": "97a66252174080004633edf143c2b243f988c2eedafdecd33b4cd5e0e8f615c1"
+    },
+    "parent_result": {
+      "artifact_sha256": "a8be97af68870798f9b1f3509da5419f9ecdc72ad5ac8300e9a9bfe452ba40ea",
+      "path": "results/foldable-jamo-residual-v1/summary.json",
+      "payload_sha256": "e9145e70537ec04b8df7575f98d80e4c330fb83cbdc8439cac052ea5353b34ec"
+    },
+    "update_audit_plan": {
+      "artifact_sha256": "453124374dbd303a7a17a79964dacc6aa70e3cda4bfe98213c0483004a2a8b8c",
+      "path": "data/manifests/foldable-multihash-update-audit-v4.json",
+      "payload_sha256": "652c88a3788f0b63131cc5e1c178c6b62eadabe7d2c29e93a92983bed4e134b0"
+    },
+    "update_audit_result": {
+      "artifact_sha256": "9d3f2841617d2486ce2207a43bb3b801df5ab761995c8833743cfd77e53f9e02",
+      "path": "results/foldable-multihash-update-audit-v4/summary.json",
+      "payload_sha256": "f1d9c0082f539932f7ef9df79273cf62940abda11df3671cb9a3aac5aedd347f"
+    }
+  },
+  "document_common": {
+    "document_count": 385,
+    "ordered_document_commitment_sha256": "39ab3ab27524ad5fc1f27623e1cdae1cc88b13a86e595598830957680df195fc",
+    "raw_bytes": 7977011,
+    "source_limit_bytes": 8000000,
+    "truncated_next_document_excluded": true
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit_before_plan": "5739f12c6a16bcf7d0bbbc1516e63aaf6063fda2",
+  "implementation_sha256": {
+    "docs/141-foldable-jamo-residual-result-and-multihash-pivot.md": "ab55d6e8e29ff3a30b7e8c5656b96e2ef07973af9dc3aadd5192913597bc4011",
+    "docs/143-foldable-vocabulary-reparameterization-literature-audit.md": "be0da05efa965b15d96770df3763645feeb1ec7f17237579212fe44f95522b67",
+    "docs/148-foldable-multihash-update-audit-result-and-mechanism-decision.md": "2f1193ed09d1d9d548c9f336e37e7bb5f478b17bccc23a918198fff7450cd99e",
+    "docs/149-foldable-multihash-mechanism-control-protocol.md": "46fa5d13502d2787f788bf66df66e90fd384dbdff40237b5da0a368f50a99649",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/foldable_jamo_residual_core.py": "7a1521f04478c9d1f1e3ac1c4bbc432a45cb2dd52267ed02503b8698b13e2ce4",
+    "scripts/foldable_jamo_residual_protocol.py": "19883516e0eab3d75bad666745e03c59b60d9ab3c18fb7fa61b3573d23e1ccc6",
+    "scripts/foldable_multihash_mechanism_core.py": "5ccfd62b5807688e17059778b427ae28431b6d4c5bfd9390dc4d826490aa65e5",
+    "scripts/foldable_multihash_mechanism_protocol.py": "014c01bb76827cab8e2d9deffbd878eb6b33cae27650ec95bb406c2400fca99c",
+    "scripts/foldable_multihash_update_audit_core.py": "46cc8b40f3c01de3ee5772e99dcded7d29ae7b343a0cfa686fefc819d306e16a",
+    "scripts/run_compositional_quality.py": "66f169e601c95594360bff1fb4e61252aa0cb4e2808792894d7a167b34262f60",
+    "scripts/run_foldable_jamo_residual.py": "8f75c53e0827512febcd21b85aacd20f67c487ed62a4575ebd0b2a845e0d7549",
+    "scripts/run_foldable_multihash_mechanism.py": "d0876f9a815801b47ba2331744d4a53a6b8e3016e3242872dfb57f600068978f",
+    "scripts/seal_foldable_multihash_mechanism_plan.py": "f121425e96fb33e18bcbb78937b2917652782316e0fc33cd29dabae79ca11a5a",
+    "scripts/summarize_foldable_multihash_mechanism.py": "0b639aec3bf113b3ef3594ba0a4178429d728b617049e3186d00eb0af53c04de",
+    "scripts/vocabulary_transfer_baseline_core.py": "706805ed8566f2370c53c334516cb59de490d70dd360740dc22a2c6c71e80f06",
+    "scripts/vocabulary_transfer_probe_core.py": "57a3f7390f589f73d0b8e5244d8270d02fb53e4bffa10d86dba9f5ce4b5fe430",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "tests/test_foldable_multihash_mechanism_core.py": "d4ff23b83a72abba7ebd45d7d16f8db3f502d416bd738193d456ac6911de57ab",
+    "tests/test_foldable_multihash_mechanism_protocol.py": "c597614558300ca5832fce0ff8fab7ee158575d5f7ee1887cd7129f6787245e3"
+  },
+  "initialization": {
+    "balanced_random_multihash_state_sha256": "b732359c41d6f52cad2c53b7011447774e96e5c3e8de5132d9c9ac82f39713be",
+    "source_role": "untied_generic_surface",
+    "step_zero_checkpoint_artifact_sha256": "41ec7dfc01065a4c571f895f47029b8f2278fa94ca150ce1dc19e4fd5bedf42a",
+    "step_zero_checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0000.pt",
+    "step_zero_checkpoint_state_sha256": "6a91bc0176ca12a902c8547b47895340f7d40c389cf37cc8663b1ef85031a709",
+    "stratified_generic_shuffle_state_sha256": "3da45bff5705b51d0758feb80f1d30e42ac3cf5849d10074fc9a45ef0b64cef4",
+    "update_matched_dense_state_sha256": "001703824b1d8df92cd81026276f76306e90f7b1df664ce7b3a828b4bc2ebd5b"
+  },
+  "inventories": {
+    "8192": {
+      "calibration": {
+        "complete_utf8_bytes": 7999999,
+        "dropped_token_count": 181,
+        "first_batch_sha256": "a2df0559eb43a4113ad83f0bd7c833ff810f66db73ad9d99620556c7418586cd",
+        "first_batch_token_count": 8192,
+        "full_sequence_count": 3343,
+        "predicted_target_raw_bytes": 7983653,
+        "raw_stream_bytes": 8000000,
+        "token_count": 1711797,
+        "token_ids_sha256": "db7fedbc7980b368294a123f44e1de7be86b753dbc96406de7a6966c5517e538",
+        "trailing_incomplete_utf8_bytes": 1
+      },
+      "documents": {
+        "chunk_count": 3530,
+        "chunk_schedule_sha256": "c5141bd4c3fd0c3752ef1c4ca04d8c62499f9f3bf5d89e89870300461d461e30",
+        "document_count": 385,
+        "document_lengths_sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+        "maximum_document_tokens_including_prefix": 30982,
+        "raw_bytes": 7977011,
+        "token_count_excluding_prefix": 1706822
+      },
+      "train": {
+        "complete_utf8_bytes": 127999999,
+        "dropped_token_count": 254,
+        "first_batch_sha256": "f69f23ba4da4c587838c1283fd8d41aca8e2d662fc21f40b5679451b00fb6273",
+        "first_batch_token_count": 16384,
+        "full_sequence_count": 53590,
+        "predicted_target_raw_bytes": 127749513,
+        "raw_stream_bytes": 128000000,
+        "token_count": 27438334,
+        "token_ids_sha256": "12ea20596b5d7547599432936f5b11299c68d2c71cbb6db41b0f5418cec9066a",
+        "trailing_incomplete_utf8_bytes": 1
+      }
+    }
+  },
+  "kind": "foldable_multihash_mechanism_plan_v1",
+  "output_path": "results/foldable-multihash-mechanism-v1/summary.json",
+  "plan_sha256": "dbce7518f09c78caf531fd23e424dd11cf7ab732d6690938d8fc3be2af5536c3",
+  "protocol_id": "jamoflow-foldable-multihash-mechanism-v1",
+  "roles": {
+    "balanced_random_multihash": {
+      "assignment_kind": "balanced_random_multihash",
+      "deployed_graph": "ordinary_untied_dense_bpe_8192",
+      "post_adamw_new_row_input_multiplier": null,
+      "post_adamw_new_row_output_multiplier": null,
+      "role": "balanced_random_multihash",
+      "training_graph": "untied_foldable_13x128_residual"
+    },
+    "stratified_generic_shuffle": {
+      "assignment_kind": "stratified_generic_shuffle",
+      "deployed_graph": "ordinary_untied_dense_bpe_8192",
+      "post_adamw_new_row_input_multiplier": null,
+      "post_adamw_new_row_output_multiplier": null,
+      "role": "stratified_generic_shuffle",
+      "training_graph": "untied_foldable_13x128_residual"
+    },
+    "update_matched_dense": {
+      "assignment_kind": null,
+      "deployed_graph": "ordinary_untied_dense_bpe_8192",
+      "post_adamw_new_row_input_multiplier": 1.485414522979104,
+      "post_adamw_new_row_output_multiplier": 2.170601418278963,
+      "role": "update_matched_dense",
+      "training_graph": "ordinary_untied_dense_bpe_8192"
+    }
+  },
+  "schema_version": 1,
+  "selection_rule": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260836,
+    "maximum_anchor_gap_bpb": 0.05,
+    "minimum_advantage_bpb": 0.002,
+    "primary_candidate": "untied_generic_surface",
+    "primary_control": "update_matched_dense",
+    "random_role_fallback": null,
+    "surface_support_requires_both_random_controls": true
+  },
+  "status": "development_mechanism_controls_sealed_before_new_training",
+  "training": {
+    "adamw_beta1": 0.9,
+    "adamw_beta2": 0.95,
+    "adamw_epsilon": 1e-08,
+    "body_learning_rate": 3e-05,
+    "checkpoint_steps": [
+      0,
+      32,
+      128,
+      512
+    ],
+    "effective_batch_size": 32,
+    "evaluation_batch_size": 16,
+    "final_probe_step": 512,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "head_and_residual_minimum_learning_rate": 3e-05,
+    "head_and_residual_peak_learning_rate": 0.0003,
+    "model_seed": 20260824,
+    "optimizer": "AdamW",
+    "order_seed": 20260827,
+    "residual_schedule": "all dense and residual parameters open from step zero",
+    "sequence_count": 53590,
+    "train_microbatch_size": 8,
+    "training_order_prefix_sha256": "f9b65287d977cac9b3308e195c0d96892f4a9e35c899dda1ae259c6856c0185a",
+    "training_schedule_token_count": 8388608,
+    "warmup_steps": 26,
+    "weight_decay_for_matrix_parameters": 0.1,
+    "weight_decay_for_vector_parameters": 0.0
+  },
+  "update_control": {
+    "input_multiplier": 1.485414522979104,
+    "output_multiplier": 2.170601418278963,
+    "quality_metric_used": false,
+    "source": "foldable_multihash_update_audit_v4_projection"
+  }
+}

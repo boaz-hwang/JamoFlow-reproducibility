@@ -1,0 +1,72 @@
+{
+  "payload": {
+    "dataset_id": "hplt3-korean-vocab-adaptation-v1",
+    "exclusions": {
+      "exact_commitment_sha256": "0ef15f27f7878f44b5b170f9e3597ea78e38113837387866edfd17b62177b18f",
+      "exact_count": 8393,
+      "final_exact_count": 1482,
+      "normalized_commitment_sha256": "6d42ae8863b853c824d7b20d703e64bf6fa8fb9c5a350e56b7733cfe3c01aaa4",
+      "normalized_count": 8393,
+      "predecessor_exact_count": 6911
+    },
+    "manifest_sha256": "7325c2562e4e02c3b0f71fde5ac3ab7f3bb383ce17bb0756728c6cb59506859f",
+    "output": {
+      "bytes": 136470910,
+      "sha256": "7817d3be0d67099735e6a26c741314ba27fe12b9cb7dd7d3b7022af40ea3b2c5"
+    },
+    "preparation_git_commit": "f4924888785648f9c1114accc590a78c9370b30a",
+    "privacy": {
+      "individual_document_digests_tracked": false,
+      "model_metrics_tracked": false,
+      "raw_text_tracked": false
+    },
+    "protocol_version": 1,
+    "scan": {
+      "candidate_calibration_records": 26932,
+      "candidate_train_records": 212815,
+      "eligible_records": 273362,
+      "empty_text": 0,
+      "exact_duplicates": 0,
+      "excluded_exact_records": 8393,
+      "excluded_normalized_records": 0,
+      "invalid_json": 0,
+      "invalid_utf8": 0,
+      "missing_text": 0,
+      "normalized_source_duplicates": 0,
+      "parsed_records": 273839,
+      "source_lines": 273839,
+      "stable_test_records_ignored": 25222,
+      "too_long": 477,
+      "too_short": 0
+    },
+    "source": {
+      "bytes": 1862302013,
+      "sha256": "de4dfa43fd9f6c62cc81781e09c1f401cc77e7a956e07ecc80ac13477e699ca4"
+    },
+    "splits": {
+      "calibration": {
+        "available_stream_bytes": 8035141,
+        "normalized_selected_set_commitment_sha256": "66bd77927e779ffbf82102c80260edbb07e2c25814446af6f7e0fae3db6fe1c2",
+        "overshoot_stream_bytes": 35141,
+        "selected_document_count": 384,
+        "selected_document_raw_bytes": 8034758,
+        "selected_set_commitment_sha256": "00340bdbae3cd06d7cae08a59399518400bcdd10b89f6b11df4dffc8fe666686",
+        "sequence_count": 15625,
+        "stream_bytes": 8000000,
+        "stream_sha256": "8272123a3ee9bc5bba218d43248aaf600434a35659a8c36ed47b04809bb9e630"
+      },
+      "train": {
+        "available_stream_bytes": 128064198,
+        "normalized_selected_set_commitment_sha256": "1d2f8a03a8a26fc1823a6e24300e3a17e374fb72d93043b63678226ba8ee7151",
+        "overshoot_stream_bytes": 64198,
+        "selected_document_count": 5692,
+        "selected_document_raw_bytes": 128058507,
+        "selected_set_commitment_sha256": "9251b897369b3c5dedc5d020710b0d8dd7448228ef8ef1a3d4fb979eeaa8d8d3",
+        "sequence_count": 250000,
+        "stream_bytes": 128000000,
+        "stream_sha256": "f1d3cba694a5929e3c46891dd0e70139e12731482555f82534b8043de6e7857b"
+      }
+    }
+  },
+  "payload_sha256": "351a1ae05e35198e53f7576eace5e3426fe88150392e1f8f661e388e8599657a"
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jamoflow"
+version = "0.1.0"
+description = "Reproducible Phase 0 audits for orthography-aware byte-level patching"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "JamoFlow contributors" }]
+dependencies = []
+
+[project.optional-dependencies]
+research = [
+    "numpy==2.5.2",
+    "torch==2.13.0",
+    "tokenizers==0.22.2",
+    "transformers==5.14.1",
+    "zstandard==0.25.0",
+]
+
+[project.scripts]
+jamoflow = "jamoflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

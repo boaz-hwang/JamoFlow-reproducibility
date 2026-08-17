@@ -1,0 +1,21 @@
+{
+  "decision": {
+    "full_speculative_runtime_authorized": false,
+    "publication_or_engineering_claim_authorized": false,
+    "required_action": "seal and execute target-block-kernel-v2 under torch.inference_mode"
+  },
+  "invalidated_result": {
+    "artifact_path": "results/target-block-kernel-v1/summary.json",
+    "artifact_sha256": "3fec9807b873f9fb1b6c2f6b58ba31d3d0f0d2ee27414a576b1f9b34ad0bfb4a",
+    "internal_summary_sha256": "b28ccddd2963244646b3349e9b3799483bee0134d5d99625c08b8fd7b780f922",
+    "reported_status": "full_speculative_runtime_authorized"
+  },
+  "kind": "target_block_kernel_invalidation_v1",
+  "reason": {
+    "diagnostic_inconsistency": "v1 implied 6.6967 ms per sequential byte versus approximately 2.36 ms in the earlier inference-mode component profile",
+    "observed_warning": "PyTorch warned that the compared logits required gradients",
+    "root_cause": "the v1 measurement runner did not enter torch.inference_mode around model execution",
+    "scientific_effect": "autograd graph construction contaminated both latency paths and could affect them unequally, so v1 reductions are not valid inference measurements"
+  },
+  "schema_version": 1
+}

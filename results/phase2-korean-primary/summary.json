@@ -1,0 +1,6555 @@
+{
+  "contrasts": {
+    "causal_codepoint_minus_entropy_full": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.007989032922084935,
+        "mean": -0.0027437449958459467,
+        "median": -0.002622984661900864,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260813,
+        "upper": 0.0006944797482147182
+      },
+      "left_policy": "causal_codepoint_grid",
+      "negative_seed_count": 3,
+      "paired_differences_bpb": [
+        0.00012757688270337297,
+        -0.00027741450712825966,
+        0.0012724352986195342,
+        -0.012910040959595914,
+        -0.0018252047162103935
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.009926642523747076,
+        "mean": -0.0027225296003223322,
+        "sample_standard_deviation": 0.005801982828531617,
+        "standard_error": 0.0025947256017766402,
+        "upper": 0.004481583323102411
+      },
+      "right_policy": "entropy_threshold_full",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "causal_codepoint_minus_fixed_byte": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.007090591994195924,
+        "mean": -0.006539874827126638,
+        "median": -0.0065467491927371346,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260810,
+        "upper": -0.005954614161139637
+      },
+      "left_policy": "causal_codepoint_grid",
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.006497896902728506,
+        -0.006669328598554181,
+        -0.005704011545857313,
+        -0.007003753982594674,
+        -0.006811315054989553
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.007159958276824565,
+        "mean": -0.006537261216944845,
+        "sample_standard_deviation": 0.0005015020846011037,
+        "standard_error": 0.00022427855040518368,
+        "upper": -0.0059145641570651246
+      },
+      "right_policy": "fixed_byte_6",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "causal_eojeol_minus_causal_codepoint": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.008479528364034402,
+        "mean": -0.007071583630160257,
+        "median": -0.007115833299924576,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260811,
+        "upper": -0.005343353519266953
+      },
+      "left_policy": "causal_eojeol_grid",
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.007873488935190132,
+        -0.008053116229128854,
+        -0.00394206739823888,
+        -0.008779051251176728,
+        -0.006749602300211155
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.00943692187000517,
+        "mean": -0.00707946522278915,
+        "sample_standard_deviation": 0.0018986269553993539,
+        "standard_error": 0.0008490917872372832,
+        "upper": -0.0047220085755731315
+      },
+      "right_policy": "causal_codepoint_grid",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "causal_eojeol_minus_entropy_full": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.016188255896994314,
+        "mean": -0.00982664632953384,
+        "median": -0.009672191141306047,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260814,
+        "upper": -0.0051563778731612345
+      },
+      "left_policy": "causal_eojeol_grid",
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.007745912052486759,
+        -0.008330530736257113,
+        -0.0026696320996193457,
+        -0.021689092210772642,
+        -0.008574807016421548
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.01858347285342938,
+        "mean": -0.009801994823111481,
+        "sample_standard_deviation": 0.0070723467667149105,
+        "standard_error": 0.0031628496261650774,
+        "upper": -0.0010205167927935833
+      },
+      "right_policy": "entropy_threshold_full",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "entropy_codepoint_minus_entropy_full": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": 0.00786635753466089,
+        "mean": 0.011844477345491178,
+        "median": 0.011947497033532397,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260812,
+        "upper": 0.01454061786426078
+      },
+      "left_policy": "entropy_threshold_codepoint",
+      "negative_seed_count": 0,
+      "paired_differences_bpb": [
+        0.012483391227136487,
+        0.014100183803506194,
+        0.013344820516037359,
+        0.004275876680241986,
+        0.014978993817992503
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": 0.006465252568579218,
+        "mean": 0.011836653208982906,
+        "sample_standard_deviation": 0.004325969708144246,
+        "standard_error": 0.001934632467203092,
+        "upper": 0.017208053849386597
+      },
+      "right_policy": "entropy_threshold_full",
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    }
+  },
+  "decision_gates": {
+    "gate_d_causal_replication": {
+      "aligned_packing_direction": null,
+      "primary_arbitrary_packing": {
+        "enough_negative_seeds": true,
+        "maximum_allowed_mean_bpb": -0.003,
+        "mean_at_or_below_threshold": true,
+        "mean_effect_bpb": -0.006537261216944845,
+        "negative_seed_count": 5,
+        "paired_t_upper_bpb": -0.0059145641570651246,
+        "paired_t_upper_is_negative": true,
+        "primary_effect_pass": true,
+        "required_negative_seed_count": 4
+      },
+      "status": "pending_aligned_packing_control"
+    },
+    "gate_e_korean_eojeol_value": {
+      "exact_patch_count_match": true,
+      "external_regression_check": null,
+      "primary_effect": {
+        "enough_negative_seeds": true,
+        "maximum_allowed_mean_bpb": -0.003,
+        "mean_at_or_below_threshold": true,
+        "mean_effect_bpb": -0.00707946522278915,
+        "negative_seed_count": 5,
+        "paired_t_upper_bpb": -0.0047220085755731315,
+        "paired_t_upper_is_negative": true,
+        "primary_effect_pass": true,
+        "required_negative_seed_count": 4
+      },
+      "status": "pending_ecological_or_external_diagnostic"
+    },
+    "gate_f_parameter_free_pareto": {
+      "analytical_cost_component": null,
+      "batch1_latency_component": null,
+      "padding_aware_component": null,
+      "quality_component": {
+        "causal_codepoint_grid": {
+          "mean_difference_vs_entropy_full_bpb": -0.0027225296003223322,
+          "within_0_015_harm_margin": true
+        },
+        "causal_eojeol_grid": {
+          "mean_difference_vs_entropy_full_bpb": -0.009801994823111481,
+          "within_0_015_harm_margin": true
+        }
+      },
+      "status": "pending_cost_benchmark"
+    },
+    "gate_g_normalization_robustness": {
+      "status": "pending_normalization_experiment"
+    },
+    "gate_h_scale_up": {
+      "status": "pending_duplicate_alignment_validity_and_cost_controls"
+    }
+  },
+  "design": {
+    "language": "ko",
+    "policies": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_eojeol_grid",
+      "entropy_threshold_full",
+      "entropy_threshold_codepoint"
+    ],
+    "predicted_bytes_per_sequence": 255,
+    "seeds": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ],
+    "test_sequences": 3906
+  },
+  "generated_at": "2026-08-10T11:18:51.117111+00:00",
+  "integrity": {
+    "all_seeds_have_identical_initialization_across_policies": true,
+    "all_seeds_have_identical_training_order_across_policies": true,
+    "by_seed": {
+      "1729": {
+        "identical_initialization_across_policies": true,
+        "identical_training_order_across_policies": true,
+        "initialization_sha256": [
+          "9aea977a4b05046c17f2259d102aa284b0aedeec5b39164ee4a4a27413cc8d02"
+        ],
+        "training_order_sha256": [
+          "b85bf2439592fa5da9065ac985641644d94ffa24cd2cc142abe2f6b8408eb9a7"
+        ]
+      },
+      "2718": {
+        "identical_initialization_across_policies": true,
+        "identical_training_order_across_policies": true,
+        "initialization_sha256": [
+          "8b7f2b1b3d3489c505eaa614d22ee28edb9d8cb9a0621911328044b3da77b594"
+        ],
+        "training_order_sha256": [
+          "73e266a569532122495aaeea8d5f0c756f0199fa6c766ada08cacd43d28bf1d8"
+        ]
+      },
+      "31415": {
+        "identical_initialization_across_policies": true,
+        "identical_training_order_across_policies": true,
+        "initialization_sha256": [
+          "923debb41924cd07c31c566ecf21c75ed8f1feb176d17fb05cce5aa34d25e7e8"
+        ],
+        "training_order_sha256": [
+          "39c863db9dbd38acd6d85fc348cb4f37b38cc6930f0a79d4304a8bcb7d3372ce"
+        ]
+      },
+      "57721": {
+        "identical_initialization_across_policies": true,
+        "identical_training_order_across_policies": true,
+        "initialization_sha256": [
+          "e94ef12fa9dcd8a4d4452e3bfbc633a708bcd936debefd47a0c27781917ac2a6"
+        ],
+        "training_order_sha256": [
+          "472fb3cf7082dbc05719128ebb39903d855b46422398f7974e15ca2438f550fd"
+        ]
+      },
+      "65537": {
+        "identical_initialization_across_policies": true,
+        "identical_training_order_across_policies": true,
+        "initialization_sha256": [
+          "dcf31d120992440c1447c869ad0413a47694a8e446344cb4201a3b1cd108395e"
+        ],
+        "training_order_sha256": [
+          "965480d3f27437f303d700de38d8c3595ba435968039e4d2382476e9a89e5fea"
+        ]
+      }
+    },
+    "structural_matrices_are_seed_independent": true,
+    "structural_patch_hashes": {
+      "causal_codepoint_grid": {
+        "calibration": [
+          "ed1fa12d392c065fdfa85027245bb2a36d176d16491d887d161f708e20389e2a"
+        ],
+        "test": [
+          "c9206c1418e1cf6f41b1155b48c94f48dfd18c7196c52f6caba95efada516a3b"
+        ],
+        "train": [
+          "26356120447588ea51f7290486f3f119d1cd1000e8e15b690eff4de72a2f7a4a"
+        ]
+      },
+      "causal_eojeol_grid": {
+        "calibration": [
+          "7e4c631968a049972bc5c3dcff8d04fd1011633570fc3afcb6f0c2dc87647848"
+        ],
+        "test": [
+          "8e8784b9538736246a275d4b952263f8a1b3e5195c8841e54a5fac21be5fefec"
+        ],
+        "train": [
+          "b7393abb6254a083fcdcac0ecab764726db639fb1d7da4ccdb3909c08047088a"
+        ]
+      },
+      "fixed_byte_6": {
+        "calibration": [
+          "ae10394869e16642afd6843fbd42baff2da3a1ec84d470936c2a06a0ea584206"
+        ],
+        "test": [
+          "ae10394869e16642afd6843fbd42baff2da3a1ec84d470936c2a06a0ea584206"
+        ],
+        "train": [
+          "db685008bb35d24beafc8066e17e18d4c62c2a4f3c64f6655dade8bc56e40661"
+        ]
+      }
+    }
+  },
+  "korean_test_strata": {
+    "contrasts": {
+      "causal_codepoint_minus_entropy_full": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "paired_seed_effects_bpb": [
+            0.010405762405088703,
+            -0.009009613989802103,
+            0.019411470028170032,
+            -0.013647528812053287,
+            -0.009775067627844612
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.018588006754538092,
+            "mean": -0.0005229955992882531,
+            "sample_standard_deviation": 0.014549034091232007,
+            "standard_error": 0.006506525846991329,
+            "upper": 0.017542015555961587
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8,
+          "status": "estimated"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            0.010912351901474543,
+            0.009956510648945554,
+            0.005388860310760542,
+            -0.0016247806476553264,
+            0.006296694316622132
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 3.3387453835654994e-05,
+            "mean": 0.006185927306029489,
+            "sample_standard_deviation": 0.004955076489461136,
+            "standard_error": 0.0022159775728292238,
+            "upper": 0.012338467158223322
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -4.414192398182517e-05,
+            -0.0003996539682209609,
+            0.0012208046682764845,
+            -0.013043745118098027,
+            -0.0018698227682001274
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.010049247659875771,
+            "mean": -0.0028273118220448912,
+            "sample_standard_deviation": 0.005816336884948827,
+            "standard_error": 0.00260114493095699,
+            "upper": 0.004394624015785989
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "paired_seed_effects_bpb": [
+            0.025454818457822406,
+            0.007487876336971287,
+            -0.0030701160165753976,
+            0.009768854757301715,
+            0.007236331661758968
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0033739194689890693,
+            "mean": 0.009375553039455795,
+            "sample_standard_deviation": 0.010268054006525423,
+            "standard_error": 0.004592013351045983,
+            "upper": 0.02212502554790066
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31,
+          "status": "estimated"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            0.01666783091061819,
+            0.012633346909989721,
+            0.00907558629348198,
+            0.0028337145228766606,
+            0.018770955521710615
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.004128395040218901,
+            "mean": 0.011996286831735434,
+            "sample_standard_deviation": 0.006336571005528138,
+            "standard_error": 0.0028338007025230224,
+            "upper": 0.019864178623251967
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "empty_in_primary_test"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            0.0007919198725371825,
+            -0.0007686716828806369,
+            0.001546485295217465,
+            -0.012856240422947455,
+            -0.0013515177650018299
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.009841184650978618,
+            "mean": -0.0025276049406150547,
+            "sample_standard_deviation": 0.00589014419202835,
+            "standard_error": 0.002634152562130193,
+            "upper": 0.004785974769748508
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.00031991983333947175,
+            5.345815707715897e-05,
+            0.0010878556760002128,
+            -0.012946294920435034,
+            -0.0021442511436348104
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.010007454546059754,
+            "mean": -0.002853830412866389,
+            "sample_standard_deviation": 0.00576132062666589,
+            "standard_error": 0.0025765409122793233,
+            "upper": 0.0042997937203269766
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            -0.001690790792310406,
+            -0.0010008885712173364,
+            -0.0020793265085579846,
+            -0.01052092267566427,
+            -0.0030563376818667862
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.008513869112657486,
+            "mean": -0.0036696532459233565,
+            "sample_standard_deviation": 0.0039013904383845446,
+            "standard_error": 0.0017447548453991093,
+            "upper": 0.001174562620810773
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.001210533690608459,
+            -0.002236100739162064,
+            -0.00024862462289326943,
+            -0.014016762963061067,
+            -0.0038101903581977637
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.011242039715253343,
+            "mean": -0.0043044424747845245,
+            "sample_standard_deviation": 0.0055873388560563,
+            "standard_error": 0.00249873389909356,
+            "upper": 0.002633154765684294
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.0006960063912951824,
+            -2.2578099111149104e-05,
+            0.002183651566996833,
+            -0.015078743246003291,
+            -0.0027024923219492415
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.011745756211297474,
+            "mean": -0.003263233698272406,
+            "sample_standard_deviation": 0.006831576696025457,
+            "standard_error": 0.0030551739771632674,
+            "upper": 0.005219288814752662
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            0.004110759637633149,
+            0.0021526580267447575,
+            0.005239031104411186,
+            -0.012025092225445594,
+            0.002271477772068648
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.008388991742189744,
+            "mean": 0.0003497668630824295,
+            "sample_standard_deviation": 0.007037941785394572,
+            "standard_error": 0.0031474632507657,
+            "upper": 0.009088525468354603
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        }
+      },
+      "causal_codepoint_minus_fixed_byte": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "paired_seed_effects_bpb": [
+            -0.00615155638907311,
+            -0.014199491955057689,
+            -0.0029844857568079677,
+            -0.016009197271468448,
+            -0.017928151363241406
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.019550443611824578,
+            "mean": -0.011454576547129725,
+            "sample_standard_deviation": 0.00652017565392413,
+            "standard_error": 0.0029159111974826992,
+            "upper": -0.003358709482434873
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8,
+          "status": "estimated"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            -0.005945053697380956,
+            -0.0050640119007149195,
+            -0.005188505775908834,
+            -0.007858679232055871,
+            -0.006769763162706456
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007614334138438989,
+            "mean": -0.006165202753753407,
+            "sample_standard_deviation": 0.0011670882313481305,
+            "standard_error": 0.0005219377242068841,
+            "upper": -0.0047160713690678245
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -0.006503542094079658,
+            -0.006645866103727132,
+            -0.005651130301348843,
+            -0.006980065954452323,
+            -0.0068151794069548815
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007161301054882183,
+            "mean": -0.006519156772112568,
+            "sample_standard_deviation": 0.000517164311785649,
+            "standard_error": 0.00023128291133792136,
+            "upper": -0.005877012489342953
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "paired_seed_effects_bpb": [
+            -0.010738948125791133,
+            -0.0019390728202521835,
+            -0.01448149668316028,
+            -0.007201243284869463,
+            -0.015107100164765621
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.016679333322056435,
+            "mean": -0.009893572215767737,
+            "sample_standard_deviation": 0.005465054453711744,
+            "standard_error": 0.0024440466518474875,
+            "upper": -0.00310781110947904
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31,
+          "status": "estimated"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            -0.0038543203264537165,
+            -0.003988242772263659,
+            -0.005263950001915094,
+            -0.006763240162552361,
+            -0.005695619032254793
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.006625520637943142,
+            "mean": -0.005113074459087924,
+            "sample_standard_deviation": 0.0012180801234060363,
+            "standard_error": 0.000544741991595446,
+            "upper": -0.0036006282802327066
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "empty_in_primary_test"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            -0.006027116535378294,
+            -0.00661375810805295,
+            -0.005272982316098564,
+            -0.006820452261974703,
+            -0.007164557298424303
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007303580011508171,
+            "mean": -0.006379773303985763,
+            "sample_standard_deviation": 0.0007440070291651269,
+            "standard_error": 0.00033273005859017844,
+            "upper": -0.005455966596463355
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.00681498716190809,
+            -0.006706745663881711,
+            -0.0059943162654608785,
+            -0.007127201562197127,
+            -0.006573401052567836
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007160423489442918,
+            "mean": -0.006643330341203129,
+            "sample_standard_deviation": 0.00041645176841736194,
+            "standard_error": 0.00018624289270624425,
+            "upper": -0.006126237192963341
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            -0.00632066000611102,
+            -0.007233620699704505,
+            -0.006240609674609088,
+            -0.006687548552197252,
+            -0.006502694835303289
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0070881343848796345,
+            "mean": -0.006597026753585031,
+            "sample_standard_deviation": 0.0003955237895379291,
+            "standard_error": 0.00017688361602502593,
+            "upper": -0.006105919122290427
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.007042489474883792,
+            -0.006284284143290277,
+            -0.005633580030431785,
+            -0.00715254290828798,
+            -0.00728157059626903
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007549866101552672,
+            "mean": -0.006678893430632572,
+            "sample_standard_deviation": 0.0007014560341450659,
+            "standard_error": 0.0003137006751151562,
+            "upper": -0.005807920759712472
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.006938830097905125,
+            -0.006701057045674416,
+            -0.005757265082900763,
+            -0.007959636499838376,
+            -0.006842070834220007
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007812514257583295,
+            "mean": -0.006839771912107736,
+            "sample_standard_deviation": 0.0007834183674000142,
+            "standard_error": 0.0003503553448656674,
+            "upper": -0.005867029566632178
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            -0.005689254109652485,
+            -0.006458142845466209,
+            -0.005184106866553847,
+            -0.00621543526768033,
+            -0.006618764005093697
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.006766650176196049,
+            "mean": -0.006033140618889314,
+            "sample_standard_deviation": 0.0005907472441498525,
+            "standard_error": 0.00026419019908794706,
+            "upper": -0.005299631061582579
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        }
+      },
+      "causal_eojeol_minus_causal_codepoint": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "paired_seed_effects_bpb": [
+            -0.01196755371861807,
+            -0.018409994144501087,
+            -0.016381597038136717,
+            -0.013363745298177828,
+            0.0013332149050226372
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.021368384243701657,
+            "mean": -0.011757935058882212,
+            "sample_standard_deviation": 0.007739976002248817,
+            "standard_error": 0.003461422497049084,
+            "upper": -0.0021474858740627677
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8,
+          "status": "estimated"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            -0.005638701844677568,
+            -0.006636594948827868,
+            -0.0025682728623576886,
+            -0.005325541508662354,
+            -0.004445455699254173
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.006824673303985614,
+            "mean": -0.00492291337275593,
+            "sample_standard_deviation": 0.0015316220861983218,
+            "standard_error": 0.000684962220115898,
+            "upper": -0.0030211534415262465
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -0.007850649595648202,
+            -0.008048531614467773,
+            -0.0039274967637170114,
+            -0.008781199990754808,
+            -0.006706744542095892
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.009427159459082304,
+            "mean": -0.007062924501336737,
+            "sample_standard_deviation": 0.0019040860093754546,
+            "standard_error": 0.0008515331503939636,
+            "upper": -0.004698689543591169
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "paired_seed_effects_bpb": [
+            -0.02944365400345408,
+            -0.029591855054351354,
+            -0.022358096540230948,
+            -0.02255274791862957,
+            -0.018174358984937158
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.030592951143988,
+            "mean": -0.02442414250032062,
+            "sample_standard_deviation": 0.004968178900510737,
+            "standard_error": 0.0022218371491844347,
+            "upper": -0.018255333856653243
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31,
+          "status": "estimated"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            -0.0031080609259448856,
+            -0.005871255889014142,
+            -0.0019302742797287144,
+            -0.004804957700810442,
+            -0.007008256584937968
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007088893003615232,
+            "mean": -0.004544561076087231,
+            "sample_standard_deviation": 0.0020491308660087553,
+            "standard_error": 0.000916399182237718,
+            "upper": -0.00200022914855923
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "empty_in_primary_test"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            -0.008002752456936492,
+            -0.008097110436721329,
+            -0.0036866361875293914,
+            -0.009017684445805902,
+            -0.006949149562795252
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.009721516588718329,
+            "mean": -0.007150666617957673,
+            "sample_standard_deviation": 0.002070487726057665,
+            "standard_error": 0.0009259502604087803,
+            "upper": -0.004579816647197017
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.007786396207319613,
+            -0.008023516904175047,
+            -0.004114092880495517,
+            -0.008618338342231177,
+            -0.006615159879237602
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.00924889027709418,
+            "mean": -0.00703150084269179,
+            "sample_standard_deviation": 0.0017858208997165639,
+            "standard_error": 0.0007986433854812143,
+            "upper": -0.0048141114082894
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            -0.006305380471939107,
+            -0.006722396302551281,
+            -0.004504834905883208,
+            -0.008322512962151361,
+            -0.005090294077113291
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.008040527142318671,
+            "mean": -0.006189083743927649,
+            "sample_standard_deviation": 0.001491098615422078,
+            "standard_error": 0.0006668395730479165,
+            "upper": -0.0043376403455366265
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.007393509473400219,
+            -0.0075572202071187864,
+            -0.003740484961074979,
+            -0.008349485640487153,
+            -0.006568269362886414
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.008935152835892886,
+            "mean": -0.006721793928993511,
+            "sample_standard_deviation": 0.0017825748301989169,
+            "standard_error": 0.0007971916990609846,
+            "upper": -0.004508435022094135
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.007921944890428224,
+            -0.007998222352694482,
+            -0.0025437438549268674,
+            -0.007737758337392483,
+            -0.005849583379727882
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.00931116214889487,
+            "mean": -0.0064102505630339885,
+            "sample_standard_deviation": 0.0023363097423869912,
+            "standard_error": 0.0010448294800944667,
+            "upper": -0.003509338977173107
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            -0.009875145410382865,
+            -0.009936573478169073,
+            -0.004978804669514314,
+            -0.010707384085554869,
+            -0.009492045503443212
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.011840988306880091,
+            "mean": -0.008997990629412866,
+            "sample_standard_deviation": 0.0022896675665070756,
+            "standard_error": 0.0010239704649172682,
+            "upper": -0.006154992951945642
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        }
+      },
+      "causal_eojeol_minus_entropy_full": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "paired_seed_effects_bpb": [
+            -0.0015617913135293675,
+            -0.027419608134303188,
+            0.003029872990033315,
+            -0.027011274110231114,
+            -0.008441852722821974
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.029952536882673318,
+            "mean": -0.012280930658170467,
+            "sample_standard_deviation": 0.014232197212477392,
+            "standard_error": 0.006364832087256493,
+            "upper": 0.0053906755663323865
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8,
+          "status": "estimated"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            0.0052736500567969755,
+            0.0033199157001176857,
+            0.0028205874484028537,
+            -0.00695032215631768,
+            0.0018512386173679595
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.004644585803439108,
+            "mean": 0.0012630139332735588,
+            "sample_standard_deviation": 0.00475780885094046,
+            "standard_error": 0.0021277568029306063,
+            "upper": 0.0071706136699862255
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            -0.007894791519630026,
+            -0.008448185582688733,
+            -0.0027066920954405267,
+            -0.021824945108852835,
+            -0.00857656731029602
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.018710150806226726,
+            "mean": -0.009890236323381627,
+            "sample_standard_deviation": 0.007103302366651075,
+            "standard_error": 0.0031766933913133875,
+            "upper": -0.00107032184053653
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "paired_seed_effects_bpb": [
+            -0.003988835545631672,
+            -0.02210397871738007,
+            -0.02542821255680635,
+            -0.012783893161327855,
+            -0.010938027323178192
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.02583497680859513,
+            "mean": -0.015048589460864828,
+            "sample_standard_deviation": 0.00868704236574779,
+            "standard_error": 0.00388496345064653,
+            "upper": -0.004262202113134524
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31,
+          "status": "estimated"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            0.013559769984673304,
+            0.0067620910209755785,
+            0.007145312013753267,
+            -0.001971243177933781,
+            0.011762698936772646
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -3.063957815746532e-05,
+            "mean": 0.007451725755648203,
+            "sample_standard_deviation": 0.006026079219605424,
+            "standard_error": 0.002694944554567322,
+            "upper": 0.014934091089453871
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "empty_in_primary_test"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            -0.0072108325843993105,
+            -0.008865782119601965,
+            -0.002140150892311926,
+            -0.021873924868753357,
+            -0.008300667327797082
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.018764575654749246,
+            "mean": -0.009678271558572728,
+            "sample_standard_deviation": 0.007317844806320846,
+            "standard_error": 0.0032726396871454386,
+            "upper": -0.0005919674623962121
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            -0.008106316040659084,
+            -0.007970058747097887,
+            -0.003026237204495305,
+            -0.02156463326266621,
+            -0.008759411022872412
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.0184778370435722,
+            "mean": -0.00988533125555818,
+            "sample_standard_deviation": 0.006920154023962206,
+            "standard_error": 0.00309478696246964,
+            "upper": -0.0012928254675441606
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            -0.007996171264249513,
+            -0.007723284873768618,
+            -0.006584161414441192,
+            -0.018843435637815632,
+            -0.008146631758980076
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.01614136843276414,
+            "mean": -0.009858736989851005,
+            "sample_standard_deviation": 0.005059848469510961,
+            "standard_error": 0.002262833026734956,
+            "upper": -0.0035761055469378704
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            -0.008604043164008679,
+            -0.009793320946280852,
+            -0.003989109583968248,
+            -0.02236624860354822,
+            -0.010378459721084178
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.019491519905517986,
+            "mean": -0.011026236403778035,
+            "sample_standard_deviation": 0.0068176928981838235,
+            "standard_error": 0.003048964954011316,
+            "upper": -0.0025609529020380866
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            -0.008617951281723405,
+            -0.008020800451805631,
+            -0.0003600922879300338,
+            -0.022816501583395776,
+            -0.008552075701677124
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.01977190834397236,
+            "mean": -0.009673484261306394,
+            "sample_standard_deviation": 0.008132976779465128,
+            "standard_error": 0.003637177787662268,
+            "upper": 0.0004249398213595698
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            -0.005764385772749716,
+            -0.007783915451424315,
+            0.00026022643489687287,
+            -0.022732476311000463,
+            -0.007220567731374563
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.01919923363680854,
+            "mean": -0.008648223766330437,
+            "sample_standard_deviation": 0.00849747619767735,
+            "standard_error": 0.003800186883038599,
+            "upper": 0.0019027861041476662
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        }
+      },
+      "entropy_codepoint_minus_entropy_full": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "paired_seed_effects_bpb": [
+            0.017229861334232318,
+            -0.004570125331256978,
+            0.014689147469758917,
+            -0.006327537130737153,
+            0.0096204963656668
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007449730518693806,
+            "mean": 0.006128368541532782,
+            "sample_standard_deviation": 0.010935405709060566,
+            "standard_error": 0.004890462105399743,
+            "upper": 0.01970646760175937
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8,
+          "status": "estimated"
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "paired_seed_effects_bpb": [
+            -0.0007849918448947638,
+            0.0021594454329833175,
+            -0.0032186976232918244,
+            -0.00915366860997211,
+            0.0008896463772501971
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.007567081454111221,
+            "mean": -0.0020216532535850366,
+            "sample_standard_deviation": 0.004466126438924915,
+            "standard_error": 0.001997312462709034,
+            "upper": 0.0035237749469411474
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745,
+          "status": "estimated"
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "paired_seed_effects_bpb": [
+            0.012709262326227717,
+            0.014354496501362873,
+            0.013532131922575165,
+            0.0044111657087018055,
+            0.015219064693148765
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0066209611390501705,
+            "mean": 0.012045224230403266,
+            "sample_standard_deviation": 0.004368543587252287,
+            "standard_error": 0.0019536720847533793,
+            "upper": 0.017469487321756363
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892,
+          "status": "estimated"
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "paired_seed_effects_bpb": [
+            -0.03651584446595739,
+            -0.04108602758164457,
+            -0.055655200650359546,
+            -0.05167763237241794,
+            -0.04905907591849231
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.05653063412851005,
+            "mean": -0.04679875619777435,
+            "sample_standard_deviation": 0.007837771179279626,
+            "standard_error": 0.003505157829791587,
+            "upper": -0.037066878267038646
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31,
+          "status": "estimated"
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "paired_seed_effects_bpb": [
+            -0.01356593875960538,
+            -0.011867938580141223,
+            -0.012847365095413583,
+            -0.016517948546272206,
+            -0.0031223022775257983
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": -0.017840516141690545,
+            "mean": -0.011584298651791638,
+            "sample_standard_deviation": 0.005038575440693787,
+            "standard_error": 0.0022533194390304536,
+            "upper": -0.00532808116189273
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151,
+          "status": "estimated"
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0,
+          "status": "empty_in_primary_test"
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "paired_seed_effects_bpb": [
+            0.01304616047902254,
+            0.014297070121419397,
+            0.013061410647377952,
+            0.004816227203495037,
+            0.015357948117660948
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.0069099112850195855,
+            "mean": 0.012115763313795175,
+            "sample_standard_deviation": 0.004192641675649045,
+            "standard_error": 0.0018750063584099777,
+            "upper": 0.017321615342570765
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572,
+          "status": "estimated"
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "paired_seed_effects_bpb": [
+            0.012104348364844595,
+            0.013967583223977065,
+            0.013535705252659217,
+            0.0039119376120902,
+            0.014723763071563336
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.006149514319652401,
+            "mean": 0.011648667505026883,
+            "sample_standard_deviation": 0.004428857888840529,
+            "standard_error": 0.0019806454604267263,
+            "upper": 0.017147820690401366
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334,
+          "status": "estimated"
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "paired_seed_effects_bpb": [
+            0.00463895765695294,
+            0.008287532493806989,
+            0.004159131226013266,
+            -0.0006109659431345815,
+            0.006772936762392037
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.00045454347041177113,
+            "mean": 0.00464951843920613,
+            "sample_standard_deviation": 0.003378510719331464,
+            "standard_error": 0.0015109159262273733,
+            "upper": 0.00884449340800049
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "paired_seed_effects_bpb": [
+            0.0135436931325539,
+            0.012939383235209337,
+            0.01321654399324342,
+            0.0048306068530515455,
+            0.014185531294869711
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.00691053010222391,
+            "mean": 0.011743151701785585,
+            "sample_standard_deviation": 0.003892052753126273,
+            "standard_error": 0.0017405789056011106,
+            "upper": 0.01657577330134726
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977,
+          "status": "estimated"
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "paired_seed_effects_bpb": [
+            0.015893480400534666,
+            0.017794523795585795,
+            0.0180530565634695,
+            0.006234856890865442,
+            0.017650552192912346
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.008864318378923819,
+            "mean": 0.01512529396867355,
+            "sample_standard_deviation": 0.005042407475799894,
+            "standard_error": 0.0022550331772283375,
+            "upper": 0.021386269558423283
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "paired_seed_effects_bpb": [
+            0.015864371582275306,
+            0.017386456540874055,
+            0.01796009805555813,
+            0.00665344472954834,
+            0.02131618362475888
+          ],
+          "paired_t_95_interval": {
+            "count": 5,
+            "lower": 0.008999393539832444,
+            "mean": 0.01583611090660294,
+            "sample_standard_deviation": 0.005506093142508564,
+            "standard_error": 0.002462399711418917,
+            "upper": 0.022672828273373434
+          },
+          "seed_order": [
+            1729,
+            2718,
+            31415,
+            57721,
+            65537
+          ],
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976,
+          "status": "estimated"
+        }
+      }
+    },
+    "definitions_and_counts": {
+      "classification_decode_errors": "ignored only at incomplete chunk edges",
+      "sequence_count": 3906,
+      "strata": {
+        "compatibility_jamo_present": {
+          "definition": "contains U+3130–U+318F compatibility jamo",
+          "name": "compatibility_jamo_present",
+          "sequence_fraction": 0.002048131080389145,
+          "sequences": 8
+        },
+        "digit_mixed": {
+          "definition": "contains an ASCII digit",
+          "name": "digit_mixed",
+          "sequence_fraction": 0.19073220686123912,
+          "sequences": 745
+        },
+        "hangul_heavy": {
+          "definition": "letter codepoints are at least 80% precomposed Hangul",
+          "name": "hangul_heavy",
+          "sequence_fraction": 0.996415770609319,
+          "sequences": 3892
+        },
+        "hanja_mixed": {
+          "definition": "contains a CJK ideograph",
+          "name": "hanja_mixed",
+          "sequence_fraction": 0.007936507936507936,
+          "sequences": 31
+        },
+        "latin_mixed": {
+          "definition": "contains an ASCII Latin letter",
+          "name": "latin_mixed",
+          "sequence_fraction": 0.03865847414234511,
+          "sequences": 151
+        },
+        "modern_jamo_present": {
+          "definition": "contains a modern or extended Hangul Jamo codepoint",
+          "name": "modern_jamo_present",
+          "sequence_fraction": 0.0,
+          "sequences": 0
+        },
+        "starts_at_codepoint_boundary": {
+          "definition": "global UTF-8 parser is complete at byte-window start",
+          "name": "starts_at_codepoint_boundary",
+          "sequence_fraction": 0.402457757296467,
+          "sequences": 1572
+        },
+        "starts_inside_codepoint": {
+          "definition": "byte window starts inside a global UTF-8 codepoint",
+          "name": "starts_inside_codepoint",
+          "sequence_fraction": 0.5975422427035331,
+          "sequences": 2334
+        },
+        "whitespace_density_q1": {
+          "definition": "stable-rank whitespace-density quartile 1",
+          "name": "whitespace_density_q1",
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977
+        },
+        "whitespace_density_q2": {
+          "definition": "stable-rank whitespace-density quartile 2",
+          "name": "whitespace_density_q2",
+          "sequence_fraction": 0.25012800819252434,
+          "sequences": 977
+        },
+        "whitespace_density_q3": {
+          "definition": "stable-rank whitespace-density quartile 3",
+          "name": "whitespace_density_q3",
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976
+        },
+        "whitespace_density_q4": {
+          "definition": "stable-rank whitespace-density quartile 4",
+          "name": "whitespace_density_q4",
+          "sequence_fraction": 0.24987199180747569,
+          "sequences": 976
+        }
+      },
+      "whitespace_density": {
+        "maximum": 0.30275229357798167,
+        "median": 0.2336448598130841,
+        "minimum": 0.13675213675213677,
+        "quartile_assignment": "stable rank by (density, sequence index)"
+      }
+    },
+    "guardrail": "Strata overlap and do not replace the full-test primary endpoint; no multiplicity-adjusted discovery claim is made from these slices."
+  },
+  "patch_diagnostics": {
+    "by_split_policy": {
+      "calibration": {
+        "causal_codepoint_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 8.0,
+            "mean": 8.0,
+            "minimum": 8.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              8.0,
+              8.0,
+              8.0,
+              8.0,
+              8.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 7.0,
+            "mean": 7.0,
+            "minimum": 7.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        },
+        "causal_eojeol_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 12.0,
+            "mean": 12.0,
+            "minimum": 12.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              12.0,
+              12.0,
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 9.0,
+            "mean": 9.0,
+            "minimum": 9.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              9.0,
+              9.0,
+              9.0,
+              9.0,
+              9.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        },
+        "entropy_threshold_codepoint": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167984.0,
+            "mean": 167864.6,
+            "minimum": 167644.0,
+            "sample_standard_deviation": 134.33465673458952,
+            "values": [
+              167960.0,
+              167984.0,
+              167644.0,
+              167859.0,
+              167876.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 117.0,
+            "mean": 112.0,
+            "minimum": 109.0,
+            "sample_standard_deviation": 3.0,
+            "values": [
+              111.0,
+              109.0,
+              111.0,
+              117.0,
+              112.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 26.0,
+            "mean": 26.0,
+            "minimum": 26.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              26.0,
+              26.0,
+              26.0,
+              26.0,
+              26.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.9646393548233165,
+            "mean": 5.956803951761046,
+            "minimum": 5.952566911134395,
+            "sample_standard_deviation": 0.00477018446416352,
+            "values": [
+              5.953417480352465,
+              5.952566911134395,
+              5.9646393548233165,
+              5.956999624685003,
+              5.9563963878100505
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.00665642601126,
+            "mean": 42.976088069636454,
+            "minimum": 42.919610855094724,
+            "sample_standard_deviation": 0.0343918732039397,
+            "values": [
+              43.0005120327701,
+              43.00665642601126,
+              42.919610855094724,
+              42.974654377880185,
+              42.97900665642601
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 4.4,
+            "minimum": 4.0,
+            "sample_standard_deviation": 0.8944271909999157,
+            "values": [
+              6.0,
+              4.0,
+              4.0,
+              4.0,
+              4.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 24.0,
+            "mean": 21.2,
+            "minimum": 19.0,
+            "sample_standard_deviation": 2.588435821108957,
+            "values": [
+              24.0,
+              19.0,
+              19.0,
+              20.0,
+              24.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 17.0,
+            "mean": 16.2,
+            "minimum": 16.0,
+            "sample_standard_deviation": 0.4472135954999579,
+            "values": [
+              16.0,
+              16.0,
+              16.0,
+              17.0,
+              16.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 117.0,
+            "mean": 112.0,
+            "minimum": 109.0,
+            "sample_standard_deviation": 3.0,
+            "values": [
+              111.0,
+              109.0,
+              111.0,
+              117.0,
+              112.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.6326952617275198,
+            "mean": 0.6160684977484114,
+            "minimum": 0.6054435190274196,
+            "sample_standard_deviation": 0.010109558595085015,
+            "values": [
+              0.6126079997047739,
+              0.6054435190274196,
+              0.6133368391432907,
+              0.6326952617275198,
+              0.6162588691390535
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 289143.0,
+            "mean": 269607.4,
+            "minimum": 257770.0,
+            "sample_standard_deviation": 11740.498405093373,
+            "values": [
+              265606.0,
+              257770.0,
+              265922.0,
+              289143.0,
+              269596.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164078.0,
+            "mean": 163958.6,
+            "minimum": 163738.0,
+            "sample_standard_deviation": 134.33465673458952,
+            "values": [
+              164054.0,
+              164078.0,
+              163738.0,
+              163953.0,
+              163970.0
+            ]
+          }
+        },
+        "entropy_threshold_full": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 168346.0,
+            "mean": 167817.8,
+            "minimum": 167616.0,
+            "sample_standard_deviation": 303.1067468731107,
+            "values": [
+              168346.0,
+              167771.0,
+              167616.0,
+              167621.0,
+              167735.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 157392.0,
+            "mean": 156787.0,
+            "minimum": 156440.0,
+            "sample_standard_deviation": 390.77551100344044,
+            "values": [
+              156811.0,
+              156851.0,
+              157392.0,
+              156440.0,
+              156441.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.9614073666849917,
+            "mean": 0.9565354475861205,
+            "minimum": 0.9536061785453661,
+            "sample_standard_deviation": 0.00301495242912922,
+            "values": [
+              0.9536061785453661,
+              0.9571964727061911,
+              0.9614073666849917,
+              0.9555630211037474,
+              0.9549041988903063
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 94.0,
+            "mean": 91.0,
+            "minimum": 88.0,
+            "sample_standard_deviation": 2.23606797749979,
+            "values": [
+              90.0,
+              91.0,
+              94.0,
+              92.0,
+              88.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 24.0,
+            "mean": 24.0,
+            "minimum": 24.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              24.0,
+              24.0,
+              24.0,
+              24.0,
+              24.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.965635738831614,
+            "mean": 5.958477611455988,
+            "minimum": 5.939766908628657,
+            "sample_standard_deviation": 0.010739222910401273,
+            "values": [
+              5.939766908628657,
+              5.960124216938565,
+              5.965635738831614,
+              5.965457788701894,
+              5.961403404179211
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.099334357398874,
+            "mean": 42.96410650281618,
+            "minimum": 42.91244239631337,
+            "sample_standard_deviation": 0.07760029361830806,
+            "values": [
+              43.099334357398874,
+              42.952124935995904,
+              42.91244239631337,
+              42.913722478238604,
+              42.94290834613415
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 4.2,
+            "minimum": 4.0,
+            "sample_standard_deviation": 0.4472135954999579,
+            "values": [
+              4.0,
+              4.0,
+              4.0,
+              4.0,
+              5.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 28.0,
+            "mean": 25.6,
+            "minimum": 23.0,
+            "sample_standard_deviation": 1.949358868961793,
+            "values": [
+              23.0,
+              25.0,
+              25.0,
+              28.0,
+              27.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 15.0,
+            "mean": 14.2,
+            "minimum": 14.0,
+            "sample_standard_deviation": 0.4472135954999579,
+            "values": [
+              15.0,
+              14.0,
+              14.0,
+              14.0,
+              14.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 94.0,
+            "mean": 91.0,
+            "minimum": 88.0,
+            "sample_standard_deviation": 2.23606797749979,
+            "values": [
+              90.0,
+              91.0,
+              94.0,
+              92.0,
+              88.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.5434846553583684,
+            "mean": 0.5276321379069339,
+            "minimum": 0.5120124051575664,
+            "sample_standard_deviation": 0.011966825793297763,
+            "values": [
+              0.5211185071400125,
+              0.5279986270769681,
+              0.5434846553583684,
+              0.5335464948017543,
+              0.5120124051575664
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 199548.0,
+            "mean": 187628.2,
+            "minimum": 175993.0,
+            "sample_standard_deviation": 8859.413056179286,
+            "values": [
+              183194.0,
+              187675.0,
+              199548.0,
+              191731.0,
+              175993.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164440.0,
+            "mean": 163911.8,
+            "minimum": 163710.0,
+            "sample_standard_deviation": 303.1067468731107,
+            "values": [
+              164440.0,
+              163865.0,
+              163710.0,
+              163715.0,
+              163829.0
+            ]
+          }
+        },
+        "fixed_byte_6": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 97035.0,
+            "mean": 97035.0,
+            "minimum": 97035.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              97035.0,
+              97035.0,
+              97035.0,
+              97035.0,
+              97035.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.5914892838855973,
+            "mean": 0.5914892838855973,
+            "minimum": 0.5914892838855973,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.5914892838855973,
+              0.5914892838855973,
+              0.5914892838855973,
+              0.5914892838855973,
+              0.5914892838855973
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        }
+      },
+      "test": {
+        "causal_codepoint_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 8.0,
+            "mean": 8.0,
+            "minimum": 8.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              8.0,
+              8.0,
+              8.0,
+              8.0,
+              8.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 7.0,
+            "mean": 7.0,
+            "minimum": 7.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        },
+        "causal_eojeol_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 12.0,
+            "mean": 12.0,
+            "minimum": 12.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              12.0,
+              12.0,
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 9.0,
+            "mean": 9.0,
+            "minimum": 9.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              9.0,
+              9.0,
+              9.0,
+              9.0,
+              9.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        },
+        "entropy_threshold_codepoint": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 169023.0,
+            "mean": 168740.2,
+            "minimum": 168315.0,
+            "sample_standard_deviation": 269.77991029726434,
+            "values": [
+              168889.0,
+              168801.0,
+              168673.0,
+              169023.0,
+              168315.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 132.0,
+            "mean": 126.6,
+            "minimum": 119.0,
+            "sample_standard_deviation": 4.722287581247038,
+            "values": [
+              127.0,
+              128.0,
+              127.0,
+              132.0,
+              119.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 26.0,
+            "mean": 26.0,
+            "minimum": 26.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              26.0,
+              26.0,
+              26.0,
+              26.0,
+              26.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.940860885839052,
+            "mean": 5.925902937791224,
+            "minimum": 5.915975932269572,
+            "sample_standard_deviation": 0.009484143799590204,
+            "values": [
+              5.920669789033034,
+              5.9237563758508545,
+              5.92825170596361,
+              5.915975932269572,
+              5.940860885839052
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.27265745007681,
+            "mean": 43.20025601638504,
+            "minimum": 43.09139784946237,
+            "sample_standard_deviation": 0.06906807739305217,
+            "values": [
+              43.238351254480285,
+              43.215821812596005,
+              43.18305171530978,
+              43.27265745007681,
+              43.09139784946237
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 4.4,
+            "minimum": 4.0,
+            "sample_standard_deviation": 0.8944271909999157,
+            "values": [
+              6.0,
+              4.0,
+              4.0,
+              4.0,
+              4.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 23.0,
+            "mean": 21.6,
+            "minimum": 20.0,
+            "sample_standard_deviation": 1.3416407864998738,
+            "values": [
+              23.0,
+              23.0,
+              20.0,
+              21.0,
+              21.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 17.0,
+            "mean": 16.0,
+            "minimum": 15.0,
+            "sample_standard_deviation": 0.7071067811865476,
+            "values": [
+              15.0,
+              16.0,
+              16.0,
+              17.0,
+              16.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 132.0,
+            "mean": 126.6,
+            "minimum": 119.0,
+            "sample_standard_deviation": 4.722287581247038,
+            "values": [
+              127.0,
+              128.0,
+              127.0,
+              132.0,
+              119.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.6721768374994181,
+            "mean": 0.6583914309334273,
+            "minimum": 0.6378874130297281,
+            "sample_standard_deviation": 0.012551527007256412,
+            "values": [
+              0.6595405413033049,
+              0.6623763920890937,
+              0.6599759707455923,
+              0.6721768374994181,
+              0.6378874130297281
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 346569.0,
+            "mean": 325759.4,
+            "minimum": 296499.0,
+            "sample_standard_deviation": 18187.265181989293,
+            "values": [
+              327173.0,
+              331167.0,
+              327389.0,
+              346569.0,
+              296499.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 165117.0,
+            "mean": 164834.2,
+            "minimum": 164409.0,
+            "sample_standard_deviation": 269.77991029726434,
+            "values": [
+              164983.0,
+              164895.0,
+              164767.0,
+              165117.0,
+              164409.0
+            ]
+          }
+        },
+        "entropy_threshold_full": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 168703.0,
+            "mean": 167921.6,
+            "minimum": 167315.0,
+            "sample_standard_deviation": 536.5135599404734,
+            "values": [
+              168703.0,
+              168129.0,
+              167315.0,
+              167562.0,
+              167899.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 156823.0,
+            "mean": 156359.2,
+            "minimum": 155925.0,
+            "sample_standard_deviation": 370.33120311418537,
+            "values": [
+              156391.0,
+              156823.0,
+              156595.0,
+              155925.0,
+              156062.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.9583009503760502,
+            "mean": 0.9533261817975486,
+            "minimum": 0.948991789899088,
+            "sample_standard_deviation": 0.003510934619485429,
+            "values": [
+              0.948991789899088,
+              0.9549393203144505,
+              0.9583009503760502,
+              0.9527606687197536,
+              0.9516381796784009
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 115.0,
+            "mean": 111.6,
+            "minimum": 108.0,
+            "sample_standard_deviation": 3.049590136395381,
+            "values": [
+              112.0,
+              115.0,
+              109.0,
+              114.0,
+              108.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 24.0,
+            "mean": 24.0,
+            "minimum": 24.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              24.0,
+              24.0,
+              24.0,
+              24.0,
+              24.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.976367928757135,
+            "mean": 5.954827473157267,
+            "minimum": 5.927197500933593,
+            "sample_standard_deviation": 0.01900474861685791,
+            "values": [
+              5.927197500933593,
+              5.947433220919651,
+              5.976367928757135,
+              5.967558276936297,
+              5.955580438239656
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.19073220686124,
+            "mean": 42.99068100358423,
+            "minimum": 42.83538146441372,
+            "sample_standard_deviation": 0.1373562621455391,
+            "values": [
+              43.19073220686124,
+              43.04377880184332,
+              42.83538146441372,
+              42.89861751152074,
+              42.98489503328213
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 5.0,
+            "mean": 4.2,
+            "minimum": 4.0,
+            "sample_standard_deviation": 0.4472135954999579,
+            "values": [
+              4.0,
+              4.0,
+              4.0,
+              4.0,
+              5.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 27.0,
+            "mean": 25.0,
+            "minimum": 23.0,
+            "sample_standard_deviation": 1.5811388300841898,
+            "values": [
+              26.0,
+              24.0,
+              25.0,
+              27.0,
+              23.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 15.0,
+            "mean": 14.4,
+            "minimum": 14.0,
+            "sample_standard_deviation": 0.5477225575051662,
+            "values": [
+              15.0,
+              14.0,
+              15.0,
+              14.0,
+              14.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 115.0,
+            "mean": 111.6,
+            "minimum": 108.0,
+            "sample_standard_deviation": 3.049590136395381,
+            "values": [
+              112.0,
+              115.0,
+              109.0,
+              114.0,
+              108.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.625706271288319,
+            "mean": 0.614555526590085,
+            "minimum": 0.6019917126547951,
+            "sample_standard_deviation": 0.010279102179198092,
+            "values": [
+              0.6143684624387389,
+              0.625706271288319,
+              0.6070148489503329,
+              0.6236963376182392,
+              0.6019917126547951
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 281061.0,
+            "mean": 267988.0,
+            "minimum": 253949.0,
+            "sample_standard_deviation": 11774.346775936234,
+            "values": [
+              268769.0,
+              281061.0,
+              258439.0,
+              277722.0,
+              253949.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164797.0,
+            "mean": 164015.6,
+            "minimum": 163409.0,
+            "sample_standard_deviation": 536.5135599404734,
+            "values": [
+              164797.0,
+              164223.0,
+              163409.0,
+              163656.0,
+              163993.0
+            ]
+          }
+        },
+        "fixed_byte_6": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 167958.0,
+            "mean": 167958.0,
+            "minimum": 167958.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0,
+              167958.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 3906.0,
+            "mean": 3906.0,
+            "minimum": 3906.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0,
+              3906.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 96701.0,
+            "mean": 96701.0,
+            "minimum": 96701.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              96701.0,
+              96701.0,
+              96701.0,
+              96701.0,
+              96701.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.589453344061639,
+            "mean": 0.589453344061639,
+            "minimum": 0.589453344061639,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.589453344061639,
+              0.589453344061639,
+              0.589453344061639,
+              0.589453344061639,
+              0.589453344061639
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 164052.0,
+            "mean": 164052.0,
+            "minimum": 164052.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0,
+              164052.0
+            ]
+          }
+        }
+      },
+      "train": {
+        "causal_codepoint_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 1847624.0,
+            "mean": 1847624.0,
+            "minimum": 1847624.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 42968.0,
+            "mean": 42968.0,
+            "minimum": 42968.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 8.0,
+            "mean": 8.0,
+            "minimum": 8.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              8.0,
+              8.0,
+              8.0,
+              8.0,
+              8.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 7.0,
+            "mean": 7.0,
+            "minimum": 7.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              7.0,
+              7.0,
+              7.0,
+              7.0,
+              7.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 1804656.0,
+            "mean": 1804656.0,
+            "minimum": 1804656.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0
+            ]
+          }
+        },
+        "causal_eojeol_grid": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 1847624.0,
+            "mean": 1847624.0,
+            "minimum": 1847624.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 42968.0,
+            "mean": 42968.0,
+            "minimum": 42968.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 12.0,
+            "mean": 12.0,
+            "minimum": 12.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              12.0,
+              12.0,
+              12.0,
+              12.0,
+              12.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 9.0,
+            "mean": 9.0,
+            "minimum": 9.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              9.0,
+              9.0,
+              9.0,
+              9.0,
+              9.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 1804656.0,
+            "mean": 1804656.0,
+            "minimum": 1804656.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0
+            ]
+          }
+        },
+        "entropy_threshold_codepoint": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 2087173.0,
+            "mean": 2077717.8,
+            "minimum": 2059723.0,
+            "sample_standard_deviation": 10834.981919689575,
+            "values": [
+              2076725.0,
+              2080253.0,
+              2084715.0,
+              2087173.0,
+              2059723.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 42968.0,
+            "mean": 42968.0,
+            "minimum": 42968.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 190.0,
+            "mean": 186.6,
+            "minimum": 184.0,
+            "sample_standard_deviation": 2.408318915758459,
+            "values": [
+              190.0,
+              188.0,
+              186.0,
+              184.0,
+              185.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 26.0,
+            "mean": 26.0,
+            "minimum": 26.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              26.0,
+              26.0,
+              26.0,
+              26.0,
+              26.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.340430727821168,
+            "mean": 5.2942937950629,
+            "minimum": 5.270194660433035,
+            "sample_standard_deviation": 0.02774092675383149,
+            "values": [
+              5.296709000951017,
+              5.287726060243633,
+              5.276408525865645,
+              5.270194660433035,
+              5.340430727821168
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 48.57505585552039,
+            "mean": 48.35500372370136,
+            "minimum": 47.936208341091046,
+            "sample_standard_deviation": 0.25216398062952905,
+            "values": [
+              48.33189815676783,
+              48.41400577173711,
+              48.51785049339043,
+              48.57505585552039,
+              47.936208341091046
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 4.0,
+            "mean": 3.8,
+            "minimum": 3.0,
+            "sample_standard_deviation": 0.4472135954999579,
+            "values": [
+              4.0,
+              4.0,
+              4.0,
+              3.0,
+              4.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 21.0,
+            "mean": 19.6,
+            "minimum": 18.0,
+            "sample_standard_deviation": 1.140175425099138,
+            "values": [
+              20.0,
+              18.0,
+              21.0,
+              20.0,
+              19.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 16.0,
+            "mean": 14.4,
+            "minimum": 14.0,
+            "sample_standard_deviation": 0.8944271909999159,
+            "values": [
+              14.0,
+              14.0,
+              14.0,
+              16.0,
+              14.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 190.0,
+            "mean": 186.6,
+            "minimum": 184.0,
+            "sample_standard_deviation": 2.408318915758459,
+            "values": [
+              190.0,
+              188.0,
+              186.0,
+              184.0,
+              185.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.7456215886485904,
+            "mean": 0.7408284228647852,
+            "minimum": 0.7360051312199979,
+            "sample_standard_deviation": 0.0035978401529094197,
+            "values": [
+              0.7456215886485904,
+              0.7424786927035261,
+              0.7391513414333848,
+              0.7360051312199979,
+              0.7408853603184268
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 6087195.0,
+            "mean": 5940111.0,
+            "minimum": 5818939.0,
+            "sample_standard_deviation": 104027.38442352571,
+            "values": [
+              6087195.0,
+              5997731.0,
+              5907333.0,
+              5818939.0,
+              5889357.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 2044205.0,
+            "mean": 2034749.8,
+            "minimum": 2016755.0,
+            "sample_standard_deviation": 10834.981919689575,
+            "values": [
+              2033757.0,
+              2037285.0,
+              2041747.0,
+              2044205.0,
+              2016755.0
+            ]
+          }
+        },
+        "entropy_threshold_full": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 2001608.0,
+            "mean": 1983654.0,
+            "minimum": 1971736.0,
+            "sample_standard_deviation": 11104.106154932057,
+            "values": [
+              2001608.0,
+              1978653.0,
+              1971736.0,
+              1984416.0,
+              1981857.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 42968.0,
+            "mean": 42968.0,
+            "minimum": 42968.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 1715194.0,
+            "mean": 1711101.2,
+            "minimum": 1705167.0,
+            "sample_standard_deviation": 3691.3161203018094,
+            "values": [
+              1712652.0,
+              1711459.0,
+              1715194.0,
+              1705167.0,
+              1711034.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.8892692122639945,
+            "mean": 0.8817236200829974,
+            "minimum": 0.8744087734346281,
+            "sample_standard_deviation": 0.0056724788565835306,
+            "values": [
+              0.8744087734346281,
+              0.8841619375053276,
+              0.8892692122639945,
+              0.8782965085853446,
+              0.8824816686256923
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 203.0,
+            "mean": 179.2,
+            "minimum": 153.0,
+            "sample_standard_deviation": 20.129580224137808,
+            "values": [
+              194.0,
+              203.0,
+              167.0,
+              179.0,
+              153.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 24.0,
+            "mean": 24.0,
+            "minimum": 24.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              24.0,
+              24.0,
+              24.0,
+              24.0,
+              24.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.578742793152836,
+            "mean": 5.545363580088453,
+            "minimum": 5.495485629553839,
+            "sample_standard_deviation": 0.030917643216122358,
+            "values": [
+              5.495485629553839,
+              5.559240554053692,
+              5.578742793152836,
+              5.543095802493026,
+              5.550253121188865
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 46.583690188046916,
+            "mean": 46.165844349283184,
+            "minimum": 45.88847514429343,
+            "sample_standard_deviation": 0.2584273448829821,
+            "values": [
+              46.583690188046916,
+              46.049455408676224,
+              45.88847514429343,
+              46.183578477006144,
+              46.124022528393226
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 4.0,
+            "mean": 4.0,
+            "minimum": 4.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              4.0,
+              4.0,
+              4.0,
+              4.0,
+              4.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 23.0,
+            "mean": 22.0,
+            "minimum": 21.0,
+            "sample_standard_deviation": 0.7071067811865476,
+            "values": [
+              23.0,
+              21.0,
+              22.0,
+              22.0,
+              22.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 14.0,
+            "mean": 14.0,
+            "minimum": 14.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              14.0,
+              14.0,
+              14.0,
+              14.0,
+              14.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 203.0,
+            "mean": 179.2,
+            "minimum": 153.0,
+            "sample_standard_deviation": 20.129580224137808,
+            "values": [
+              194.0,
+              203.0,
+              167.0,
+              179.0,
+              153.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.7731553920754866,
+            "mean": 0.7397557943151299,
+            "minimum": 0.6985358004680181,
+            "sample_standard_deviation": 0.029308033495573205,
+            "values": [
+              0.7598778856286241,
+              0.7731553920754866,
+              0.7252187117108178,
+              0.7419911816927031,
+              0.6985358004680181
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 6743851.0,
+            "mean": 5716211.6,
+            "minimum": 4592247.0,
+            "sample_standard_deviation": 860778.6092151105,
+            "values": [
+              6334184.0,
+              6743851.0,
+              5203920.0,
+              5706856.0,
+              4592247.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 1958640.0,
+            "mean": 1940686.0,
+            "minimum": 1928768.0,
+            "sample_standard_deviation": 11104.106154932057,
+            "values": [
+              1958640.0,
+              1935685.0,
+              1928768.0,
+              1941448.0,
+              1938889.0
+            ]
+          }
+        },
+        "fixed_byte_6": {
+          "data_patches": {
+            "count": 5,
+            "maximum": 1847624.0,
+            "mean": 1847624.0,
+            "minimum": 1847624.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0,
+              1847624.0
+            ]
+          },
+          "examples": {
+            "count": 5,
+            "maximum": 42968.0,
+            "mean": 42968.0,
+            "minimum": 42968.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0,
+              42968.0
+            ]
+          },
+          "internal_codepoint_boundaries": {
+            "count": 5,
+            "maximum": 1044876.0,
+            "mean": 1044876.0,
+            "minimum": 1044876.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1044876.0,
+              1044876.0,
+              1044876.0,
+              1044876.0,
+              1044876.0
+            ]
+          },
+          "internal_codepoint_boundary_rate": {
+            "count": 5,
+            "maximum": 0.5789890150809905,
+            "mean": 0.5789890150809905,
+            "minimum": 0.5789890150809905,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.5789890150809905,
+              0.5789890150809905,
+              0.5789890150809905,
+              0.5789890150809905,
+              0.5789890150809905
+            ]
+          },
+          "maximum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "maximum_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "mean_bytes_per_patch": {
+            "count": 5,
+            "maximum": 5.953488372093023,
+            "mean": 5.953488372093023,
+            "minimum": 5.953488372093023,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023,
+              5.953488372093023
+            ]
+          },
+          "mean_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "median_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "minimum_data_patches": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "p95_patch_length": {
+            "count": 5,
+            "maximum": 6.0,
+            "mean": 6.0,
+            "minimum": 6.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              6.0
+            ]
+          },
+          "padded_data_width": {
+            "count": 5,
+            "maximum": 43.0,
+            "mean": 43.0,
+            "minimum": 43.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              43.0,
+              43.0,
+              43.0,
+              43.0,
+              43.0
+            ]
+          },
+          "padding_slot_rate": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "padding_slots": {
+            "count": 5,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "total_noninitial_boundaries": {
+            "count": 5,
+            "maximum": 1804656.0,
+            "mean": 1804656.0,
+            "minimum": 1804656.0,
+            "sample_standard_deviation": 0.0,
+            "values": [
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0,
+              1804656.0
+            ]
+          }
+        }
+      }
+    },
+    "seed_independent_structural_diagnostics": {
+      "calibration": {
+        "causal_codepoint_grid": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "ed1fa12d392c065fdfa85027245bb2a36d176d16491d887d161f708e20389e2a",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        },
+        "causal_eojeol_grid": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "7e4c631968a049972bc5c3dcff8d04fd1011633570fc3afcb6f0c2dc87647848",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        },
+        "fixed_byte_6": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 97035,
+          "internal_codepoint_boundary_rate": 0.5914892838855973,
+          "matrix_sha256": "ae10394869e16642afd6843fbd42baff2da3a1ec84d470936c2a06a0ea584206",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        }
+      },
+      "test": {
+        "causal_codepoint_grid": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "c9206c1418e1cf6f41b1155b48c94f48dfd18c7196c52f6caba95efada516a3b",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        },
+        "causal_eojeol_grid": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "8e8784b9538736246a275d4b952263f8a1b3e5195c8841e54a5fac21be5fefec",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        },
+        "fixed_byte_6": {
+          "data_patches": 167958,
+          "examples": 3906,
+          "internal_codepoint_boundaries": 96701,
+          "internal_codepoint_boundary_rate": 0.589453344061639,
+          "matrix_sha256": "ae10394869e16642afd6843fbd42baff2da3a1ec84d470936c2a06a0ea584206",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164052
+        }
+      },
+      "train": {
+        "causal_codepoint_grid": {
+          "data_patches": 1847624,
+          "examples": 42968,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "26356120447588ea51f7290486f3f119d1cd1000e8e15b690eff4de72a2f7a4a",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 1804656
+        },
+        "causal_eojeol_grid": {
+          "data_patches": 1847624,
+          "examples": 42968,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "matrix_sha256": "b7393abb6254a083fcdcac0ecab764726db639fb1d7da4ccdb3909c08047088a",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 1804656
+        },
+        "fixed_byte_6": {
+          "data_patches": 1847624,
+          "examples": 42968,
+          "internal_codepoint_boundaries": 1044876,
+          "internal_codepoint_boundary_rate": 0.5789890150809905,
+          "matrix_sha256": "db685008bb35d24beafc8066e17e18d4c62c2a4f3c64f6655dade8bc56e40661",
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 1804656
+        }
+      }
+    },
+    "threshold_calibration": {
+      "entropy_threshold_codepoint": {
+        "absolute_error": {
+          "count": 5,
+          "maximum": 0.0803891449052756,
+          "mean": 0.02677931387608794,
+          "minimum": 0.0005120327700964822,
+          "sample_standard_deviation": 0.03164035232139634,
+          "values": [
+            0.0005120327700964822,
+            0.006656426011261374,
+            0.0803891449052756,
+            0.025345622119814948,
+            0.020993343573991297
+          ]
+        },
+        "iterations": {
+          "count": 5,
+          "maximum": 13.0,
+          "mean": 11.6,
+          "minimum": 11.0,
+          "sample_standard_deviation": 0.8944271909999159,
+          "values": [
+            11.0,
+            13.0,
+            11.0,
+            11.0,
+            12.0
+          ]
+        },
+        "mean_data_patches": {
+          "count": 5,
+          "maximum": 43.00665642601126,
+          "mean": 42.976088069636454,
+          "minimum": 42.919610855094724,
+          "sample_standard_deviation": 0.0343918732039397,
+          "values": [
+            43.0005120327701,
+            43.00665642601126,
+            42.919610855094724,
+            42.974654377880185,
+            42.97900665642601
+          ]
+        },
+        "target_mean_patches": {
+          "count": 5,
+          "maximum": 43.0,
+          "mean": 43.0,
+          "minimum": 43.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            43.0,
+            43.0,
+            43.0,
+            43.0,
+            43.0
+          ]
+        },
+        "threshold_nats": {
+          "count": 5,
+          "maximum": 1.6863775101955985,
+          "mean": 1.6614539790665734,
+          "minimum": 1.647258454933763,
+          "sample_standard_deviation": 0.016585850230727416,
+          "values": [
+            1.647258454933763,
+            1.6692727530607958,
+            1.6474613919854169,
+            1.6568997851572935,
+            1.6863775101955985
+          ]
+        }
+      },
+      "entropy_threshold_full": {
+        "absolute_error": {
+          "count": 5,
+          "maximum": 0.09933435739887386,
+          "mean": 0.07562724014336908,
+          "minimum": 0.04787506400409569,
+          "sample_standard_deviation": 0.021974648577967736,
+          "values": [
+            0.09933435739887386,
+            0.04787506400409569,
+            0.08755760368663346,
+            0.0862775217613958,
+            0.05709165386584658
+          ]
+        },
+        "iterations": {
+          "count": 5,
+          "maximum": 11.0,
+          "mean": 9.0,
+          "minimum": 3.0,
+          "sample_standard_deviation": 3.391164991562634,
+          "values": [
+            10.0,
+            3.0,
+            10.0,
+            11.0,
+            11.0
+          ]
+        },
+        "mean_data_patches": {
+          "count": 5,
+          "maximum": 43.099334357398874,
+          "mean": 42.96410650281618,
+          "minimum": 42.91244239631337,
+          "sample_standard_deviation": 0.07760029361830806,
+          "values": [
+            43.099334357398874,
+            42.952124935995904,
+            42.91244239631337,
+            42.913722478238604,
+            42.94290834613415
+          ]
+        },
+        "target_mean_patches": {
+          "count": 5,
+          "maximum": 43.0,
+          "mean": 43.0,
+          "minimum": 43.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            43.0,
+            43.0,
+            43.0,
+            43.0,
+            43.0
+          ]
+        },
+        "threshold_nats": {
+          "count": 5,
+          "maximum": 3.131797909736634,
+          "mean": 3.115364329703153,
+          "minimum": 3.0874610473401853,
+          "sample_standard_deviation": 0.017697617961744534,
+          "values": [
+            3.1172334887087354,
+            3.131797909736634,
+            3.128956303000451,
+            3.1113728997297594,
+            3.0874610473401853
+          ]
+        }
+      }
+    }
+  },
+  "pending_controls": [
+    "exact duplicate",
+    "aligned packing",
+    "normalization and Hangul-unit robustness",
+    "generation UTF-8 validity",
+    "padding-aware analytical and measured cost",
+    "read-only ecological Korean diagnostic"
+  ],
+  "quality": {
+    "causal_codepoint_grid": {
+      "count": 5,
+      "maximum": 2.3918495902976664,
+      "mean": 2.3742143674150964,
+      "minimum": 2.3560319572345523,
+      "sample_standard_deviation": 0.016547258292049782,
+      "values": [
+        2.3918495902976664,
+        2.3718119495633703,
+        2.390580848959087,
+        2.360797491020805,
+        2.3560319572345523
+      ]
+    },
+    "causal_eojeol_grid": {
+      "count": 5,
+      "maximum": 2.386638781560848,
+      "mean": 2.367134902192307,
+      "minimum": 2.349282354934341,
+      "sample_standard_deviation": 0.01748317777622586,
+      "values": [
+        2.3839761013624763,
+        2.3637588333342414,
+        2.386638781560848,
+        2.3520184397696284,
+        2.349282354934341
+      ]
+    },
+    "entropy_threshold_codepoint": {
+      "count": 5,
+      "maximum": 2.4042054046420995,
+      "mean": 2.3887735502244016,
+      "minimum": 2.372836155768755,
+      "sample_standard_deviation": 0.014211725111039205,
+      "values": [
+        2.4042054046420995,
+        2.3861895478740047,
+        2.402653234176505,
+        2.377983408660643,
+        2.372836155768755
+      ]
+    },
+    "entropy_threshold_full": {
+      "count": 5,
+      "maximum": 2.391722013414963,
+      "mean": 2.3769368970154185,
+      "minimum": 2.3578571619507627,
+      "sample_standard_deviation": 0.013870992712903953,
+      "values": [
+        2.391722013414963,
+        2.3720893640704985,
+        2.3893084136604674,
+        2.373707531980401,
+        2.3578571619507627
+      ]
+    },
+    "fixed_byte_6": {
+      "count": 5,
+      "maximum": 2.398347487200395,
+      "mean": 2.380751628632041,
+      "minimum": 2.362843272289542,
+      "sample_standard_deviation": 0.016159143583827067,
+      "values": [
+        2.398347487200395,
+        2.3784812781619245,
+        2.3962848605049443,
+        2.3678012450034,
+        2.362843272289542
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scope": "Phase 2 primary Korean-only compact-BLT experiment",
+  "source": {
+    "artifact_root": "artifacts/phase2",
+    "git_commit_at_run_start": "4ee60edb5c406ecb38f70578cce0f98ce96c2889",
+    "run_manifest": "runs/phase2/manifest.json",
+    "run_manifest_sha256": "f95f67301fbc98aa7355c53955ce16b40960d8a8b7de4d4f9460bcf10d221cfa"
+  },
+  "training_and_router": {
+    "main_by_policy": {
+      "causal_codepoint_grid": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 186006.8359911053,
+          "mean": 185885.10838861027,
+          "minimum": 185756.40039132265,
+          "sample_standard_deviation": 98.62216460677746,
+          "values": [
+            186006.8359911053,
+            185954.98766122828,
+            185871.83476432116,
+            185835.48313507403,
+            185756.40039132265
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 58.984993124962784,
+          "mean": 58.944164825230835,
+          "minimum": 58.90557699999772,
+          "sample_standard_deviation": 0.03127357775262644,
+          "values": [
+            58.90557699999772,
+            58.92200116708409,
+            58.94836091704201,
+            58.95989191706758,
+            58.984993124962784
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 1.782789707183838,
+          "mean": 1.7270010948181151,
+          "minimum": 1.6653499603271484,
+          "sample_standard_deviation": 0.042193129693736744,
+          "values": [
+            1.6653499603271484,
+            1.7300939559936523,
+            1.782789707183838,
+            1.7382451295852661,
+            1.7185267210006714
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.1474038162970093,
+          "mean": 2.1394047847563855,
+          "minimum": 2.135435394969117,
+          "sample_standard_deviation": 0.005384865976766144,
+          "values": [
+            2.1425904404670915,
+            2.1359813972860935,
+            2.1474038162970093,
+            2.135612874762614,
+            2.135435394969117
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 1343.0,
+          "mean": 1343.0,
+          "minimum": 1343.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0
+          ]
+        }
+      },
+      "causal_eojeol_grid": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 186496.88152222347,
+          "mean": 186144.36881174362,
+          "minimum": 185697.92935933152,
+          "sample_standard_deviation": 296.8061546299894,
+          "values": [
+            186227.14874751194,
+            186045.3297524335,
+            186254.55467721765,
+            185697.92935933152,
+            186496.88152222347
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 59.00356583297253,
+          "mean": 58.86217440001201,
+          "minimum": 58.7507947080303,
+          "sample_standard_deviation": 0.09391904255027052,
+          "values": [
+            58.83588979206979,
+            58.89338912500534,
+            58.827232541982085,
+            59.00356583297253,
+            58.7507947080303
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 1.7777867317199707,
+          "mean": 1.7214523792266845,
+          "minimum": 1.6576493978500366,
+          "sample_standard_deviation": 0.04302973178279717,
+          "values": [
+            1.6576493978500366,
+            1.7259039878845215,
+            1.7777867317199707,
+            1.7312519550323486,
+            1.7146698236465454
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.143853257430863,
+          "mean": 2.134685528973054,
+          "minimum": 2.130509856514726,
+          "sample_standard_deviation": 0.0059434617047628945,
+          "values": [
+            2.1376016726597706,
+            2.1308759238506423,
+            2.143853257430863,
+            2.130509856514726,
+            2.1305869344092687
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 1343.0,
+          "mean": 1343.0,
+          "minimum": 1343.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0
+          ]
+        }
+      },
+      "entropy_threshold_codepoint": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 134064.959557236,
+          "mean": 132194.57863580371,
+          "minimum": 130569.36118926197,
+          "sample_standard_deviation": 1304.0397690335,
+          "values": [
+            132486.1272420542,
+            131460.71651672604,
+            130569.36118926197,
+            132391.7286737404,
+            134064.959557236
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 83.91585820901673,
+          "mean": 82.89062549995724,
+          "minimum": 81.72784324991517,
+          "sample_standard_deviation": 0.8160656554058755,
+          "values": [
+            82.70179095794447,
+            83.34687570796814,
+            83.91585820901673,
+            82.7607593749417,
+            81.72784324991517
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 1.7773144245147705,
+          "mean": 1.7279326438903808,
+          "minimum": 1.6612502336502075,
+          "sample_standard_deviation": 0.04197928124036862,
+          "values": [
+            1.6612502336502075,
+            1.7312068939208984,
+            1.7773144245147705,
+            1.7401825189590454,
+            1.7297091484069824
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.1450293292281923,
+          "mean": 2.138007258374561,
+          "minimum": 2.1341305852402437,
+          "sample_standard_deviation": 0.0045901754362870995,
+          "values": [
+            2.1401588553002684,
+            2.1341305852402437,
+            2.1450293292281923,
+            2.136159486664982,
+            2.1345580354391185
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 1343.0,
+          "mean": 1343.0,
+          "minimum": 1343.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0
+          ]
+        }
+      },
+      "entropy_threshold_full": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 141626.10363268005,
+          "mean": 139949.78223443832,
+          "minimum": 137871.06955127255,
+          "sample_standard_deviation": 1510.6058042975585,
+          "values": [
+            137871.06955127255,
+            141626.10363268005,
+            139520.2048218685,
+            139509.6132603635,
+            141221.91990600704
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 79.47163995797746,
+          "mean": 78.29853784958831,
+          "minimum": 77.36455158307217,
+          "sample_standard_deviation": 0.846809186657303,
+          "values": [
+            79.47163995797746,
+            77.36455158307217,
+            78.53228149993811,
+            78.5382436660584,
+            77.58597254089545
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 1.7775566577911377,
+          "mean": 1.7252131462097169,
+          "minimum": 1.6615476608276367,
+          "sample_standard_deviation": 0.04206404656721698,
+          "values": [
+            1.6615476608276367,
+            1.7222455739974976,
+            1.7775566577911377,
+            1.7416718006134033,
+            1.7230440378189087
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.145739081939757,
+          "mean": 2.1388362739632596,
+          "minimum": 2.1336672011533278,
+          "sample_standard_deviation": 0.004944895076604597,
+          "values": [
+            2.1407491328485007,
+            2.1344505538267478,
+            2.145739081939757,
+            2.139575400047963,
+            2.1336672011533278
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 1343.0,
+          "mean": 1343.0,
+          "minimum": 1343.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0
+          ]
+        }
+      },
+      "fixed_byte_6": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 186659.66574217792,
+          "mean": 185904.75378929902,
+          "minimum": 185285.78290386053,
+          "sample_standard_deviation": 552.0299089470343,
+          "values": [
+            185455.54993607834,
+            186148.21887277818,
+            185974.55149160014,
+            185285.78290386053,
+            186659.66574217792
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 59.13481233303901,
+          "mean": 58.93833819180727,
+          "minimum": 58.699558667023666,
+          "sample_standard_deviation": 0.1749236927085488,
+          "values": [
+            59.08068000001367,
+            58.860837167012505,
+            58.9158027919475,
+            59.13481233303901,
+            58.699558667023666
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 1.7828834056854248,
+          "mean": 1.731619119644165,
+          "minimum": 1.6717345714569092,
+          "sample_standard_deviation": 0.040102522503368446,
+          "values": [
+            1.6717345714569092,
+            1.7354735136032104,
+            1.7828834056854248,
+            1.7438114881515503,
+            1.7241926193237305
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.1502941742309134,
+          "mean": 2.1428143450765944,
+          "minimum": 2.1389324158801863,
+          "sample_standard_deviation": 0.004950577349611733,
+          "values": [
+            2.145466180603235,
+            2.1389324158801863,
+            2.1502941742309134,
+            2.1401658267021357,
+            2.1392131279665008
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 1343.0,
+          "mean": 1343.0,
+          "minimum": 1343.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0,
+            1343.0
+          ]
+        }
+      }
+    },
+    "router": {
+      "calibration": {
+        "bpb": {
+          "count": 5,
+          "maximum": 2.7756899443522802,
+          "mean": 2.7406690621879757,
+          "minimum": 2.7177460698851306,
+          "sample_standard_deviation": 0.024780503078525654,
+          "values": [
+            2.7177460698851306,
+            2.7756899443522802,
+            2.7182980294145365,
+            2.7371126557991303,
+            2.7544986114888013
+          ]
+        },
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 1162423.6853007956,
+          "mean": 1151250.401423836,
+          "minimum": 1134547.3602776388,
+          "sample_standard_deviation": 10224.044842975478,
+          "values": [
+            1162423.6853007956,
+            1134547.3602776388,
+            1154315.9604075428,
+            1151518.98429787,
+            1153446.0168353326
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 0.8779095830395818,
+          "mean": 0.8652273000450805,
+          "minimum": 0.8568562500877306,
+          "sample_standard_deviation": 0.0077364696778771365,
+          "values": [
+            0.8568562500877306,
+            0.8779095830395818,
+            0.8628746670437977,
+            0.864970542024821,
+            0.8635254580294713
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 3906.0,
+          "mean": 3906.0,
+          "minimum": 3906.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            3906.0,
+            3906.0,
+            3906.0,
+            3906.0,
+            3906.0
+          ]
+        },
+        "nll_nats": {
+          "count": 5,
+          "maximum": 1.9239616590363744,
+          "mean": 1.8996870333034646,
+          "minimum": 1.8837980258187503,
+          "sample_standard_deviation": 0.017176535841737076,
+          "values": [
+            1.8837980258187503,
+            1.9239616590363744,
+            1.884180615010341,
+            1.8972219202421112,
+            1.9092729464097467
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 996030.0,
+          "mean": 996030.0,
+          "minimum": 996030.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            996030.0,
+            996030.0,
+            996030.0,
+            996030.0,
+            996030.0
+          ]
+        }
+      },
+      "parameters": {
+        "count": 5,
+        "maximum": 139584.0,
+        "mean": 139584.0,
+        "minimum": 139584.0,
+        "sample_standard_deviation": 0.0,
+        "values": [
+          139584.0,
+          139584.0,
+          139584.0,
+          139584.0,
+          139584.0
+        ]
+      },
+      "test": {
+        "bpb": {
+          "count": 5,
+          "maximum": 2.7787464243484057,
+          "mean": 2.7437206152066507,
+          "minimum": 2.720544902003255,
+          "sample_standard_deviation": 0.024831680489269075,
+          "values": [
+            2.720544902003255,
+            2.7787464243484057,
+            2.7216685674461982,
+            2.7397608043349604,
+            2.757882377900435
+          ]
+        },
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 1196918.68903826,
+          "mean": 1188584.8416202154,
+          "minimum": 1175412.6085698018,
+          "sample_standard_deviation": 8314.716913691858,
+          "values": [
+            1194119.4981640554,
+            1175412.6085698018,
+            1189399.1418505134,
+            1187074.270478447,
+            1196918.68903826
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 0.8473875409690663,
+          "mean": 0.838029516581446,
+          "minimum": 0.8321617910405621,
+          "sample_standard_deviation": 0.005890284839243113,
+          "values": [
+            0.8341125000733882,
+            0.8473875409690663,
+            0.8374228338943794,
+            0.8390629169298336,
+            0.8321617910405621
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 3906.0,
+          "mean": 3906.0,
+          "minimum": 3906.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            3906.0,
+            3906.0,
+            3906.0,
+            3906.0,
+            3906.0
+          ]
+        },
+        "nll_nats": {
+          "count": 5,
+          "maximum": 1.9260802495281266,
+          "mean": 1.9018022086746886,
+          "minimum": 1.885738028410289,
+          "sample_standard_deviation": 0.017212009319702213,
+          "values": [
+            1.885738028410289,
+            1.9260802495281266,
+            1.8865168939439576,
+            1.8990574769334256,
+            1.911618394557644
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 996030.0,
+          "mean": 996030.0,
+          "minimum": 996030.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            996030.0,
+            996030.0,
+            996030.0,
+            996030.0,
+            996030.0
+          ]
+        }
+      },
+      "training": {
+        "bytes_per_second": {
+          "count": 5,
+          "maximum": 489067.63289121207,
+          "mean": 485720.7361829358,
+          "minimum": 481824.38694792264,
+          "sample_standard_deviation": 2702.6328424818726,
+          "values": [
+            489067.63289121207,
+            484687.36641539115,
+            487018.6677659307,
+            481824.38694792264,
+            486005.62689422263
+          ]
+        },
+        "elapsed_seconds": {
+          "count": 5,
+          "maximum": 22.74031845794525,
+          "mean": 22.558459975011647,
+          "minimum": 22.40352716704365,
+          "sample_standard_deviation": 0.12570596683703641,
+          "values": [
+            22.40352716704365,
+            22.605994625017047,
+            22.497782375081442,
+            22.74031845794525,
+            22.544677249970846
+          ]
+        },
+        "examples": {
+          "count": 5,
+          "maximum": 42968.0,
+          "mean": 42968.0,
+          "minimum": 42968.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0,
+            42968.0
+          ]
+        },
+        "final_learning_rate": {
+          "count": 5,
+          "maximum": 3e-05,
+          "mean": 3.0000000000000004e-05,
+          "minimum": 3e-05,
+          "sample_standard_deviation": 3.788046498485219e-21,
+          "values": [
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05,
+            3e-05
+          ]
+        },
+        "final_loss_nats": {
+          "count": 5,
+          "maximum": 2.0344078540802,
+          "mean": 1.9821057319641113,
+          "minimum": 1.9086674451828003,
+          "sample_standard_deviation": 0.04824559177725036,
+          "values": [
+            1.9086674451828003,
+            2.0344078540802,
+            2.0130012035369873,
+            1.9867050647735596,
+            1.9677470922470093
+          ]
+        },
+        "mean_loss_nats": {
+          "count": 5,
+          "maximum": 2.6704017475671864,
+          "mean": 2.6380364481951353,
+          "minimum": 2.615355529414056,
+          "sample_standard_deviation": 0.023886542908574667,
+          "values": [
+            2.619905847629518,
+            2.65560015516116,
+            2.6289189612037576,
+            2.615355529414056,
+            2.6704017475671864
+          ]
+        },
+        "predicted_bytes": {
+          "count": 5,
+          "maximum": 10956840.0,
+          "mean": 10956840.0,
+          "minimum": 10956840.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0,
+            10956840.0
+          ]
+        },
+        "steps": {
+          "count": 5,
+          "maximum": 672.0,
+          "mean": 672.0,
+          "minimum": 672.0,
+          "sample_standard_deviation": 0.0,
+          "values": [
+            672.0,
+            672.0,
+            672.0,
+            672.0,
+            672.0
+          ]
+        }
+      }
+    }
+  }
+}

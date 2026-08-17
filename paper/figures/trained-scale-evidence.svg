@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="610" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+<title id="title">Quality retention and actual inference at two trained scales</title>
+<desc id="desc">Generated from tracked aggregate evidence. results/phase3-inference-final-v2/summary.json=4cdbcbb071a9b30619e0d2b1aeab510ac3551f1e93423c0b8e05c575ab8b7abd; results/phase3-inference-actual-v5r3/summary.json=ea9b61ea50ce790039c51f499c7fef65512f73245cf32d8719191b66500e7248; results/balanced-200m-trained-screen-v1/training-summary.json=35a64094debad853c0600809bd23d5fef9013a13d1d2fd3c4abfad7821d9d826; results/balanced-200m-w80-rescue-v1/training-summary.json=702d978270e4ca92a315be0bc2a61e0456756e82b11446f63381b0f16f46ae6b; results/balanced-200m-w80-rescue-v1/actual-summary.json=9b24c3f46ff2b8c68c2eb84844e200b00e35f34d25ecec6ac497288d6aa7dd76</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40.00" y="42.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="24.00" font-weight="700" fill="#18212f" text-anchor="start">Quality-qualified boundary schedules at two trained scales</text>
+<text x="40.00" y="68.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.00" font-weight="400" fill="#5f6b7a" text-anchor="start">Error bars are the protocol-specific 95% intervals; lower latency reduction is not inferred from patch count.</text>
+<text x="75.00" y="102.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="700" fill="#18212f" text-anchor="start">A  Calibration BPB difference from C86</text>
+<text x="75.00" y="122.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="400" fill="#5f6b7a" text-anchor="start">Lower is better; dashed line is the +0.010 noninferiority margin</text>
+<line x1="75.00" y1="520.00" x2="520.00" y2="520.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="525.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.000</text>
+<line x1="75.00" y1="450.77" x2="520.00" y2="450.77" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="455.77" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.005</text>
+<line x1="75.00" y1="381.54" x2="520.00" y2="381.54" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="386.54" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.010</text>
+<line x1="75.00" y1="312.31" x2="520.00" y2="312.31" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="317.31" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.015</text>
+<line x1="75.00" y1="243.08" x2="520.00" y2="243.08" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="248.08" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.020</text>
+<line x1="75.00" y1="173.85" x2="520.00" y2="173.85" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="65.00" y="178.85" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0.025</text>
+<line x1="75.00" y1="381.54" x2="520.00" y2="381.54" stroke="#c43d4b" stroke-width="1.50" stroke-dasharray="6 5"/>
+<line x1="160.00" y1="453.82" x2="160.00" y2="484.21" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="154.00" y1="453.82" x2="166.00" y2="453.82" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="154.00" y1="484.21" x2="166.00" y2="484.21" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="160.00" cy="469.02" r="7.00" fill="#2563eb" stroke="#ffffff" stroke-width="2.00"/>
+<text x="160.00" y="548.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.00" font-weight="600" fill="#18212f" text-anchor="middle">19.6M W72</text>
+<text x="160.00" y="456.02" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#2563eb" text-anchor="middle">+0.0037</text>
+<circle cx="300.00" cy="184.92" r="7.00" fill="#c43d4b" stroke="#ffffff" stroke-width="2.00"/>
+<text x="300.00" y="548.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.00" font-weight="600" fill="#18212f" text-anchor="middle">188.6M W72</text>
+<text x="300.00" y="171.92" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#c43d4b" text-anchor="middle">+0.0242</text>
+<line x1="440.00" y1="449.19" x2="440.00" y2="477.50" stroke="#e97918" stroke-width="2.00"/>
+<line x1="434.00" y1="449.19" x2="446.00" y2="449.19" stroke="#e97918" stroke-width="2.00"/>
+<line x1="434.00" y1="477.50" x2="446.00" y2="477.50" stroke="#e97918" stroke-width="2.00"/>
+<circle cx="440.00" cy="463.82" r="7.00" fill="#e97918" stroke="#ffffff" stroke-width="2.00"/>
+<text x="440.00" y="548.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="13.00" font-weight="600" fill="#18212f" text-anchor="middle">188.6M W80</text>
+<text x="440.00" y="450.82" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#e97918" text-anchor="middle">+0.0041</text>
+<text x="300.00" y="574.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">W72 fails at 188.6M; the single W80 rescue restores quality.</text>
+<text x="625.00" y="102.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="700" fill="#18212f" text-anchor="start">B  End-to-end latency reduction</text>
+<text x="625.00" y="122.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="400" fill="#5f6b7a" text-anchor="start">Five fresh-process sessions at each scale; positive means faster</text>
+<line x1="625.00" y1="520.00" x2="1080.00" y2="520.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="615.00" y="525.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0%</text>
+<line x1="625.00" y1="430.00" x2="1080.00" y2="430.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="615.00" y="435.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">1%</text>
+<line x1="625.00" y1="340.00" x2="1080.00" y2="340.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="615.00" y="345.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">2%</text>
+<line x1="625.00" y1="250.00" x2="1080.00" y2="250.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="615.00" y="255.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">3%</text>
+<line x1="625.00" y1="160.00" x2="1080.00" y2="160.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="615.00" y="165.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="end">4%</text>
+<line x1="690.00" y1="202.64" x2="690.00" y2="337.69" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="684.00" y1="202.64" x2="696.00" y2="202.64" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="684.00" y1="337.69" x2="696.00" y2="337.69" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="690.00" cy="283.45" r="7.00" fill="#2563eb" stroke="#ffffff" stroke-width="2.00"/>
+<text x="690.00" y="270.45" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#2563eb" text-anchor="middle">2.628%</text>
+<text x="690.00" y="544.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#18212f" text-anchor="middle">19.6M</text>
+<text x="690.00" y="563.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">controlled</text>
+<line x1="790.00" y1="238.54" x2="790.00" y2="368.16" stroke="#0f9d8a" stroke-width="2.00"/>
+<line x1="784.00" y1="238.54" x2="796.00" y2="238.54" stroke="#0f9d8a" stroke-width="2.00"/>
+<line x1="784.00" y1="368.16" x2="796.00" y2="368.16" stroke="#0f9d8a" stroke-width="2.00"/>
+<circle cx="790.00" cy="292.25" r="7.00" fill="#0f9d8a" stroke="#ffffff" stroke-width="2.00"/>
+<text x="790.00" y="279.25" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#0f9d8a" text-anchor="middle">2.531%</text>
+<text x="790.00" y="544.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#18212f" text-anchor="middle">19.6M</text>
+<text x="790.00" y="563.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">free</text>
+<line x1="915.00" y1="231.20" x2="915.00" y2="329.33" stroke="#e97918" stroke-width="2.00"/>
+<line x1="909.00" y1="231.20" x2="921.00" y2="231.20" stroke="#e97918" stroke-width="2.00"/>
+<line x1="909.00" y1="329.33" x2="921.00" y2="329.33" stroke="#e97918" stroke-width="2.00"/>
+<circle cx="915.00" cy="260.19" r="7.00" fill="#e97918" stroke="#ffffff" stroke-width="2.00"/>
+<text x="915.00" y="247.19" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#e97918" text-anchor="middle">2.887%</text>
+<text x="915.00" y="544.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#18212f" text-anchor="middle">188.6M</text>
+<text x="915.00" y="563.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">controlled</text>
+<line x1="1015.00" y1="245.32" x2="1015.00" y2="344.70" stroke="#9b6bdb" stroke-width="2.00"/>
+<line x1="1009.00" y1="245.32" x2="1021.00" y2="245.32" stroke="#9b6bdb" stroke-width="2.00"/>
+<line x1="1009.00" y1="344.70" x2="1021.00" y2="344.70" stroke="#9b6bdb" stroke-width="2.00"/>
+<circle cx="1015.00" cy="297.29" r="7.00" fill="#9b6bdb" stroke="#ffffff" stroke-width="2.00"/>
+<text x="1015.00" y="284.29" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#9b6bdb" text-anchor="middle">2.475%</text>
+<text x="1015.00" y="544.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="600" fill="#18212f" text-anchor="middle">188.6M</text>
+<text x="1015.00" y="563.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="11.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">free</text>
+<text x="852.00" y="590.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="12.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">The larger trained screen replicates the small effect; it does not amplify it.</text>
+</svg>

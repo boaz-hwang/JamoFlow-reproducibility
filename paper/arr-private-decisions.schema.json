@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:jamoflow:arr-private-decisions-v1",
+  "title": "Private author and submission decisions for JamoFlow ARR handoff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "authors",
+    "affiliations",
+    "acknowledgments",
+    "funding",
+    "conflicts_of_interest",
+    "author_order_confirmed",
+    "paper_approved_by_all_authors",
+    "checklist_approved_by_all_authors",
+    "approved_anonymous_pdf_sha256",
+    "approved_checklist_sha256",
+    "approved_public_metadata_sha256",
+    "preferred_venue",
+    "preprint_policy",
+    "existing_preprints",
+    "software_archive_choice",
+    "public_code_release_choice",
+    "code_license",
+    "consent_to_share_anonymized_metadata",
+    "consent_to_review"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "email",
+          "openreview_profile",
+          "orcid",
+          "affiliation_ids",
+          "contribution",
+          "authorship_confirmed",
+          "reviewer_registration_ready"
+        ],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "email": {"type": "string", "format": "email"},
+          "openreview_profile": {"type": "string", "minLength": 1},
+          "orcid": {"type": ["string", "null"]},
+          "affiliation_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "contribution": {"type": "string", "minLength": 1},
+          "authorship_confirmed": {"const": true},
+          "reviewer_registration_ready": {"const": true}
+        }
+      }
+    },
+    "affiliations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "address"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "address": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "acknowledgments": {"type": ["string", "null"]},
+    "funding": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "conflicts_of_interest": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "author_order_confirmed": {"const": true},
+    "paper_approved_by_all_authors": {"const": true},
+    "checklist_approved_by_all_authors": {"const": true},
+    "approved_anonymous_pdf_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "approved_checklist_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "approved_public_metadata_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "preferred_venue": {"type": "string", "minLength": 1},
+    "preprint_policy": {
+      "enum": [
+        "arr_anonymous_only_until_meta_review",
+        "named_preprint",
+        "no_preprint"
+      ]
+    },
+    "existing_preprints": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "format": "uri"}
+    },
+    "software_archive_choice": {
+      "enum": ["none_for_anonymous_review", "deidentified_anonymous_archive"]
+    },
+    "public_code_release_choice": {
+      "enum": ["after_review", "with_named_preprint", "no_public_release"]
+    },
+    "code_license": {"type": ["string", "null"]},
+    "consent_to_share_anonymized_metadata": {"type": "boolean"},
+    "consent_to_review": {"const": true}
+  }
+}

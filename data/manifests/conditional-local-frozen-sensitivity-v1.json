@@ -1,0 +1,196 @@
+{
+  "baseline": {
+    "calibration_nll_array_sha256": "245a6b6d17c3d7ea3a4157f1397d8e3bad5f0a15ca50dbbfbd75031cb2fbb268",
+    "calibration_nll_path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72-calibration-nll.npz",
+    "calibration_nll_sha256": "308c4dd0bc05b3e73d8e7dce317e0d68699b2d5c75b42d66c6b3b2c83020b3f2",
+    "checkpoint_path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.pt",
+    "checkpoint_sha256": "ace22440cbddd319d07666c71299972a6b4c4792711431eba209e6b1ddebebb6",
+    "parameter_count": 19596096,
+    "report_path": "runs/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.json",
+    "report_sha256": "9fb009875615a6c1744a0f8a0ab30c155c7036a82434639eb48d50cc3dddc119",
+    "state_sha256": "774191164214fd993685b52012c729821f8efc679d492d2db69c86507909745f"
+  },
+  "candidates": {
+    "candidate_order": [
+      "utf8_incomplete__encoder_decoder__second_layer_kv",
+      "hangul_prefix__encoder_decoder__second_layer_kv",
+      "utf8_incomplete__decoder__second_layer_kv",
+      "hangul_prefix__decoder__second_layer_kv",
+      "utf8_incomplete__encoder_decoder__second_mlp",
+      "hangul_prefix__encoder_decoder__second_mlp",
+      "utf8_incomplete__decoder__second_mlp",
+      "hangul_prefix__decoder__second_mlp"
+    ],
+    "definitions": {
+      "hangul_prefix__decoder__second_layer_kv": {
+        "components": "decoder",
+        "operator": "second_layer_kv",
+        "route_policy": "hangul_prefix"
+      },
+      "hangul_prefix__decoder__second_mlp": {
+        "components": "decoder",
+        "operator": "second_mlp",
+        "route_policy": "hangul_prefix"
+      },
+      "hangul_prefix__encoder_decoder__second_layer_kv": {
+        "components": "encoder_decoder",
+        "operator": "second_layer_kv",
+        "route_policy": "hangul_prefix"
+      },
+      "hangul_prefix__encoder_decoder__second_mlp": {
+        "components": "encoder_decoder",
+        "operator": "second_mlp",
+        "route_policy": "hangul_prefix"
+      },
+      "utf8_incomplete__decoder__second_layer_kv": {
+        "components": "decoder",
+        "operator": "second_layer_kv",
+        "route_policy": "utf8_incomplete"
+      },
+      "utf8_incomplete__decoder__second_mlp": {
+        "components": "decoder",
+        "operator": "second_mlp",
+        "route_policy": "utf8_incomplete"
+      },
+      "utf8_incomplete__encoder_decoder__second_layer_kv": {
+        "components": "encoder_decoder",
+        "operator": "second_layer_kv",
+        "route_policy": "utf8_incomplete"
+      },
+      "utf8_incomplete__encoder_decoder__second_mlp": {
+        "components": "encoder_decoder",
+        "operator": "second_mlp",
+        "route_policy": "utf8_incomplete"
+      }
+    },
+    "pair_order": [
+      "encoder_decoder__second_layer_kv",
+      "decoder__second_layer_kv",
+      "encoder_decoder__second_mlp",
+      "decoder__second_mlp"
+    ],
+    "route_order": [
+      "utf8_incomplete",
+      "hangul_prefix"
+    ]
+  },
+  "claim_boundary": {
+    "calibration_only": true,
+    "frozen_failure_falsifies_trained_conditional_models": false,
+    "frozen_checkpoint_sensitivity_not_trained_quality": true,
+    "hangul_specific_effect_claimed": false,
+    "publication_quality_or_efficiency_claimed": false,
+    "static_failure_is_not_reclassified_as_pass": true,
+    "test_final_downstream_or_latency_read": false,
+    "this_stream_reused_as_confirmatory_trained_evaluation": false
+  },
+  "data": {
+    "calibration_document_map": {
+      "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+      "document_count": 386,
+      "eligible_document_count": 386,
+      "eligible_sequence_count": 15240,
+      "eligible_sequence_fraction": 0.97536,
+      "eligible_sequence_fraction_pass": true,
+      "excluded_index": -1,
+      "excluded_sequence_count": 385,
+      "layout_sha256": "1c060b3b79c9bdc28366a15fb26d0eea86eab5f273a1323dfbfbbc9d80be0aed",
+      "minimum_required_eligible_sequence_fraction": 0.95,
+      "sequence_count": 15625,
+      "sequence_length": 512
+    },
+    "calibration_stream": {
+      "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+      "byte_limit": 8000000,
+      "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+      "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+      "sequence_count": 15625,
+      "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+      "whitespace_sha256": "3e689ac27d96acf3a8e72d322685581fe05c9c0e581065f5ba4908da41be4ae1"
+    },
+    "preoutcome_route_geometry": {
+      "hangul_is_subset_of_utf8_incomplete": true,
+      "hangul_prefix_easy_positions": 4602889,
+      "total_positions": 8000000,
+      "utf8_incomplete_easy_positions": 4664439
+    },
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+  },
+  "decision_rule": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20261101,
+    "minimum_document_coverage": 0.95,
+    "minimum_easy_rate": 0.3,
+    "pair_requirement": "both utf8_incomplete and hangul_prefix variants must pass",
+    "risk_margin_bpb": 0.02,
+    "selection": "first passing pair in fixed descending expected-savings order"
+  },
+  "implementation_sha256": {
+    "docs/108-conditional-local-frozen-sensitivity-protocol.md": "2c8824d0b9017b522d4cd29533635d58d2015a96a69eac6bfdee41d29f93d32f",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/conditional_local.py": "51ca3c1c122f97827de25f03798b3ef338d0713b10ac41bb00dcc83fdd2e3ddc",
+    "scripts/conditional_local_sensitivity_core.py": "cb5b4462a035dd933f416e9fef55fb103239ad2edbe0bb0df27b4c4cd35b4a43",
+    "scripts/run_conditional_local_frozen_sensitivity.py": "e0a14d0189e29f1bb47fa3cbc7391a5f282a3c4145579ece368fab3feb9082a4",
+    "scripts/run_static_geometry_one_seed.py": "0d8e710f1be7e536aa988539b4236ad9a5f06f80260b6f066157dc801fc6bf13",
+    "scripts/static_geometry_one_seed_core.py": "e10af2330b63c2b2e00823c6f995bdc1b8f965e215485c8cd3a517538ebbfb35",
+    "scripts/static_geometry_preflight_core.py": "dd05577b51c71ea223151531a41cf4ef8383394574447e017794949b113d95f4",
+    "src/jamoflow/compute_conversion.py": "10136ecdb97ac1af084b66d9715c228e0f61b7745bd6f0d2f3ce4beb2dd2d08a",
+    "src/jamoflow/document_inference.py": "390cf3e8784c15cac99d56bbd59e7701ecf148d1235573467694622f6451c312",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/neural_training.py": "8834d32f9d5647d5a121f9bbc631349590c6333d6cfec6b9d8878b7fb65a6549",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "src/jamoflow/phase3.py": "c17d76e959d7402f4bc6b010e5eefc5d19757d4a6b7ab3b04291ee063ba593a2",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_conditional_local.py": "a3b68cb501e6c7b7c1035f6a7e08b271c07e798de8dcbb4f8992a4255a65cd5e",
+    "tests/test_conditional_local_sensitivity.py": "59087e003ba69a741130efa065c5d563a759d3b3b55d4ba4fca118cce2cbd04a"
+  },
+  "kind": "conditional_local_frozen_sensitivity_plan_v1",
+  "output": {
+    "artifact_root": "artifacts/conditional-local-frozen-sensitivity-v1",
+    "summary_path": "results/conditional-local-frozen-sensitivity-v1/summary.json"
+  },
+  "protocol_id": "jamoflow-conditional-local-frozen-sensitivity-v1",
+  "runtime_environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "mac_ver": "26.5.2",
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python_implementation": "CPython",
+    "python_version": "3.13.11",
+    "sys_version_info": [
+      3,
+      13,
+      11
+    ],
+    "torch_runtime": {
+      "git_version": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+      "mps_available": true,
+      "mps_built": true,
+      "version": "2.13.0"
+    }
+  },
+  "schema_version": 1,
+  "static_result": {
+    "actual_latency_pass": true,
+    "artifact_path": "results/static-geometry-one-seed-v1/summary.json",
+    "artifact_sha256": "f8a5276dc2c907ed477462633d3798fb2115a399288bfd24647b84e73cd65be0",
+    "quality_pass": false,
+    "status": "one_seed_static_control_stopped"
+  },
+  "status": "sealed_before_frozen_evaluation"
+}

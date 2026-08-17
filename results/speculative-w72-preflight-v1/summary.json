@@ -1,0 +1,121 @@
+{
+  "aggregate": {
+    "bootstrap": {
+      "repetitions": 10000,
+      "seed": 20260831,
+      "unit": "calibration prompt after within-prompt repetition median"
+    },
+    "correctness": {
+      "all_outputs_exact": true,
+      "cache_comparisons": 128,
+      "output_comparisons": 128,
+      "output_hash_root_sha256": "e3313874e0dba7d60f453a73b255ea41d61db6818e16585a3ea8be7fe9566714"
+    },
+    "end_to_end": {
+      "baseline_ar_median_ms": 364.94247900000005,
+      "positive_prompt_count": 110,
+      "prompt_bootstrap_95_interval": {
+        "lower": 0.07578744221158429,
+        "upper": 0.11695498351917256
+      },
+      "prompt_count": 128,
+      "reduction": 0.09983097363680726,
+      "speculative_hangul_median_ms": 328.509916
+    },
+    "gates": {
+      "multi_seed_generic_comparator_authorized": false,
+      "passes": {
+        "bootstrap_lower_bound": false,
+        "exact_output_and_cache": true,
+        "point_reduction": false,
+        "prompt_direction": true
+      },
+      "thresholds": {
+        "minimum_bootstrap_lower_bound": 0.1,
+        "minimum_point_reduction": 0.2,
+        "minimum_positive_prompts": 96
+      }
+    },
+    "mechanism": {
+      "baseline_target_calls": 16369,
+      "complete_pair_acceptance": 0.25097716519234725,
+      "counter_totals": {
+        "bonus_bytes": 1657,
+        "complete_pair_accepts": 1220,
+        "correction_bytes": 5896,
+        "cropped_speculative_bytes": 8634,
+        "draft_head_calls": 4861,
+        "emitted_bytes": 16497,
+        "first_draft_accepts": 2146,
+        "first_mismatches": 2715,
+        "retry_block_calls": 2715,
+        "retry_third_accepts": 460,
+        "retry_third_mismatches": 2255,
+        "second_mismatches": 926,
+        "sequential_target_calls": 4990,
+        "target_block_calls": 7576
+      },
+      "first_acceptance": 0.44147294795309605,
+      "retry_third_acceptance": 0.1694290976058932,
+      "speculative_target_invocations": 12566,
+      "target_invocation_reduction": 0.23232940314008188
+    }
+  },
+  "claim_boundary": {
+    "calibration_only": true,
+    "exact_same_target_greedy_output": true,
+    "final_or_publication_efficiency_claimed": false,
+    "generic_all_byte_comparator_run": false,
+    "pass_authorizes": "multi-seed target heads and same-cost generic all-byte comparator",
+    "single_target_seed": true
+  },
+  "elapsed_seconds": 384.75666999816895,
+  "kind": "speculative_w72_preflight_summary_v1",
+  "protocol_id": "jamoflow-speculative-w72-preflight-v1",
+  "provenance": {
+    "authorization_artifact_sha256": "bdedf1cb11a412887687b500d9e76118522d96bde30d0c244e891792a6369474",
+    "block_result_artifact_sha256": "d47dd7d312492cdeb602d48a69656e82e7ae6b9c83eb8d4e7073976eda1b113d",
+    "git_commit": "296ff29efbd715d5ad2477c0a07e254348ffeeb7",
+    "head_checkpoint_artifact_sha256": "843447d455e36119e9c4cd80094966fc7107ff445cd256058c2bb13220b05c00",
+    "plan_artifact_sha256": "574fb00e1486f3497d3e8f633cc6a5c16ff00b476be770e851bca709eea425e9",
+    "power_snapshot_sha256": "4332fd075cf3d1c199e021550e386fa5091b08a4c7e9217dd73140b411bc9b01",
+    "runtime": {
+      "mps_available": true,
+      "numpy": "2.5.2",
+      "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+      "python": "3.13.11",
+      "python_torch": "2.13.0",
+      "torch_inference_mode": true,
+      "transformers": "5.14.1"
+    }
+  },
+  "raw_evidence": {
+    "array_sha256": {
+      "output_lengths": "513dc973d4103befc5e4ac05dd0bd00e9fc0a710ce9cac33495a18787c12f210",
+      "output_sha256": "2896ae5ef0436772aa825a05e77cf3b80e9290c93febd3b1754d24b5b4e4f94e",
+      "speculative_counters": "7d61058c72e06f8dbd5429cc37a2b1a504e698bdd10ce3157e0501625210b277",
+      "timings_ms": "a53591db107d41bb95019a3b196f8b6fdf5f2a55eb7a22ad50c0976da2723846"
+    },
+    "artifact_path": "artifacts/speculative-w72-preflight-v1/raw.npz",
+    "artifact_sha256": "cd7f260b9fb2e37e5ee8d24dd9731cd581d3916ec0da126f286545804a6a89f5",
+    "counter_order": [
+      "emitted_bytes",
+      "sequential_target_calls",
+      "target_block_calls",
+      "draft_head_calls",
+      "first_draft_accepts",
+      "complete_pair_accepts",
+      "first_mismatches",
+      "second_mismatches",
+      "cropped_speculative_bytes",
+      "correction_bytes",
+      "bonus_bytes",
+      "retry_block_calls",
+      "retry_third_accepts",
+      "retry_third_mismatches"
+    ]
+  },
+  "schema_version": 1,
+  "status": "multi_byte_branch_stopped",
+  "summary_sha256": "22ca3c5492cd3a1b7d6c2c8f7462880ea3cd50ceb10c2bf02a0de54ff6b3cf72"
+}

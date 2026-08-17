@@ -1,0 +1,40 @@
+{
+  "allowed_post_evaluator_files": {
+    "docs/86-publication-actual-inference-v5-protocol.md": {
+      "current_blob_sha256": "0107b7bf8ecd38b3935d224132594beffd4eb0e430a6da06efc2cb001f8b3f57",
+      "diff_sha256": "4ff61c5baead0fc366aec167657639286fffde33e738f4fff29ae32be2ef9847",
+      "evaluator_blob_sha256": "bf930bfd9c0b35f31cf22d1061517a4e76fbda28f25299e04401212a2f33ed11"
+    },
+    "scripts/seal_inference_actual_plan_v5.py": {
+      "current_blob_sha256": "e7955c002cbc3f5d938c42fb6241d4d9e66baab11d4b3a25a430cfc0647fdf2e",
+      "diff_sha256": "67ba374d24698f5a311dea52d0905f23adda313057aa4a32ac6f9fc152c97c7b",
+      "evaluator_blob_sha256": "76c0c224a53b634f698e60c54ac65169d3e212c88ee079771ad27089648862cc"
+    },
+    "scripts/summarize_inference_actual_v5.py": {
+      "current_blob_sha256": "903c7d559d49218f4b27e6d3d0837726a766a66ff39e6bc936c974669687c53f",
+      "diff_sha256": "5430ce1cdec009d3cef5d7c975c835ff2abe802f5f714390b18d8880c9d345a3",
+      "evaluator_blob_sha256": "3c86c1778328268ee455aa15e7d70fc44e03695bd7e2f61a4e8ffdffe1812f2e"
+    },
+    "src/jamoflow/inference_actual_v5.py": {
+      "current_blob_sha256": "9d1b42f1a835c16a3b4724c42b596700dc6f5f651ac0044ef850ed881645a1f2",
+      "diff_sha256": "b30c208139518b2c76f202c1416099d7f4987a0a9deae2a9c466f18775020cba",
+      "evaluator_blob_sha256": "f6c4ff780684e5f8f58ea7eded7902509f513030ca1256e2c03d75f76b9ddfd2"
+    },
+    "src/jamoflow/inference_quality.py": {
+      "current_blob_sha256": "029b5fdf5eeff5e3e229cbddd6faa3f28da87c70e24ed9802008afbbef77464a",
+      "diff_sha256": "ed644e7757f400162e7a866b6601072f88d674d6119ae204df62a63c806268de",
+      "evaluator_blob_sha256": "857926921da68bb231442d821b51ac33e5599efc54f19770db69af8b79a3a971"
+    }
+  },
+  "canonical_quality_lock_hash_unchanged": true,
+  "case_selection_changed": false,
+  "discovered_stage": "post-final-quality-pre-timing",
+  "efficiency_gate_changed": false,
+  "evaluator_git_commit": "7fba052b622ea33db327c50791638dfafb760aad",
+  "kind": "actual_inference_v5_post_final_serialization_erratum_v1",
+  "quality_lock_sha256": "748537ac0aa47ec4a3c6db9c016d145ad16fed4edfbda0823f27042119c00fdc",
+  "quality_values_changed": false,
+  "role_set_changed": false,
+  "schema_version": 1,
+  "timing_protocol_changed": false
+}

@@ -1,0 +1,267 @@
+{
+  "claim_boundary": {
+    "actual_optimizer_state_required": true,
+    "gradient_checkpointing_is_resource_fallback_only": true,
+    "lower_target_fallback_authorized": false,
+    "quality_claimed": false,
+    "resource_measurement_only": true,
+    "training_directly_authorized": false
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin"
+  },
+  "git_commit_before_plan": "5394c9b340832e3b7e0d3190102d2e20e77a0354",
+  "implementation_sha256": {
+    "docs/190-scale-schedule-extrapolation-result-and-research-pivot.md": "aa94b321e29326354ebee2994fc2f78d015e4c198ecf993ae41c5a4c3c9770b1",
+    "docs/191-large-scale-training-feasibility-protocol.md": "b06cd6507241de4f237f27e772baa89840472f1b4dcf8d9265649258f24efadc",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/large_scale_training_feasibility_core.py": "f74677f8e83d002fa8b69976ac5344f5cc2415b359eb35cd2f40fc498ca84dba",
+    "scripts/run_large_scale_training_feasibility.py": "4828770c574ee57cc2e50db8f1c949f2afdcaa89288c1eea15a3ecd4593fc9e0",
+    "scripts/scale_schedule_extrapolation_core.py": "feef965a3167daf633317e7ed49e29a3f37680e7dcd7b1db00b0e10f61818d81",
+    "scripts/seal_large_scale_training_feasibility_plan.py": "f03c1194278cf4ac7ba1e38e9d8253c7c21422718a381d1eea1bebc74f018448",
+    "scripts/verify_large_scale_training_feasibility.py": "b968425345abd323e15cc28f6275091a3d5f0dbedef5da1a1dadc223be9db3f5",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/neural_training.py": "8834d32f9d5647d5a121f9bbc631349590c6333d6cfec6b9d8878b7fb65a6549",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "tests/test_large_scale_training_feasibility.py": "0d36c646047f221c4279230fccd3ae0d5fcf06ac91c330d8112ceb8015760815"
+  },
+  "kind": "large_scale_training_feasibility_plan_v1",
+  "models": {
+    "1600": {
+      "expected_parameter_count": 1617558528,
+      "model_state_sha256": "a026fae8dc73e3302c38b7201b825d1deddf59622709e819da9fc26aafc3ae2f",
+      "spec": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 2,
+        "global_ffn": 6144,
+        "global_heads": 32,
+        "global_layers": 28,
+        "global_width": 2048,
+        "hash_group_size": 3,
+        "hash_vocabulary": 16384,
+        "local_ffn": 3072,
+        "local_heads": 32,
+        "local_width": 1024,
+        "patch_count": 86,
+        "patch_stride": 6,
+        "router_ffn": 3072,
+        "router_heads": 32,
+        "router_layers": 4,
+        "router_width": 1024,
+        "sequence_length": 512,
+        "vocab_size": 256
+      }
+    },
+    "200": {
+      "expected_parameter_count": 188639808,
+      "model_state_sha256": "24d36d42d527646091d878f18cbcef4b02db40fe15fcf37b45f4003cb070c9b9",
+      "spec": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 2,
+        "global_ffn": 2688,
+        "global_heads": 14,
+        "global_layers": 16,
+        "global_width": 896,
+        "hash_group_size": 3,
+        "hash_vocabulary": 16384,
+        "local_ffn": 1344,
+        "local_heads": 14,
+        "local_width": 448,
+        "patch_count": 86,
+        "patch_stride": 6,
+        "router_ffn": 1344,
+        "router_heads": 14,
+        "router_layers": 4,
+        "router_width": 448,
+        "sequence_length": 512,
+        "vocab_size": 256
+      }
+    },
+    "400": {
+      "expected_parameter_count": 378058176,
+      "model_state_sha256": "e4b3fda00cc1b9858c91a7d7bc727b065918abca68b81612e795e16e0761ca6b",
+      "spec": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 2,
+        "global_ffn": 3456,
+        "global_heads": 18,
+        "global_layers": 20,
+        "global_width": 1152,
+        "hash_group_size": 3,
+        "hash_vocabulary": 16384,
+        "local_ffn": 1728,
+        "local_heads": 18,
+        "local_width": 576,
+        "patch_count": 86,
+        "patch_stride": 6,
+        "router_ffn": 1728,
+        "router_heads": 18,
+        "router_layers": 4,
+        "router_width": 576,
+        "sequence_length": 512,
+        "vocab_size": 256
+      }
+    },
+    "800": {
+      "expected_parameter_count": 790449408,
+      "model_state_sha256": "f98825868aa6714d99da7356566be03115ab09e92aa8c5686adee15b249916f9",
+      "spec": {
+        "cross_attention_k": 2,
+        "decoder_layers": 2,
+        "encoder_layers": 2,
+        "global_ffn": 4608,
+        "global_heads": 24,
+        "global_layers": 24,
+        "global_width": 1536,
+        "hash_group_size": 3,
+        "hash_vocabulary": 16384,
+        "local_ffn": 2304,
+        "local_heads": 24,
+        "local_width": 768,
+        "patch_count": 86,
+        "patch_stride": 6,
+        "router_ffn": 2304,
+        "router_heads": 24,
+        "router_layers": 4,
+        "router_width": 768,
+        "sequence_length": 512,
+        "vocab_size": 256
+      }
+    }
+  },
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "effective_batch_sequences": 4,
+    "epsilon": 1e-08,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.00015,
+    "loss_divisor": 4,
+    "measurement_updates": 2,
+    "microbatch_size": 1,
+    "name": "torch.optim.AdamW",
+    "parameter_dtype": "float32",
+    "source_bytes_per_update": 2048,
+    "warmup_updates": 1,
+    "weight_decay": 0.1
+  },
+  "outputs": {
+    "active_path": "artifacts/large-scale-training-feasibility-v1/.active",
+    "artifact_root": "artifacts/large-scale-training-feasibility-v1",
+    "summary_path": "results/large-scale-training-feasibility-v1/summary.json"
+  },
+  "plan_sha256": "2b49d798410591ac4d5ca436557a3cbebc49951554a6904c09a40996a767ee7f",
+  "projection": {
+    "maximum_64m_hours_per_model": 120.0,
+    "maximum_64m_hours_per_pair": 240.0,
+    "maximum_recommended_memory_fraction": 0.75,
+    "selection_rule": "standard regime preferred; 1600M checkpointed may rescue only the 1600M resource endpoint; lower targets are diagnostic and cannot replace the fixed 1600M systems endpoint",
+    "source_byte_budgets": [
+      64000000,
+      256000000
+    ]
+  },
+  "protocol_id": "jamoflow-large-scale-training-feasibility-v1",
+  "regimes": {
+    "gradient_checkpointed_targets": [
+      1600
+    ],
+    "order": [
+      "standard",
+      "gradient_checkpointed"
+    ],
+    "standard_targets": [
+      200,
+      400,
+      800,
+      1600
+    ]
+  },
+  "roles": {
+    "c86": {
+      "patch_count": 86,
+      "policy": "causal_codepoint_grid"
+    },
+    "order": [
+      "c86",
+      "w72"
+    ],
+    "w72": {
+      "patch_count": 72,
+      "policy": "causal_whitespace_grid"
+    }
+  },
+  "schema_version": 1,
+  "status": "sealed_before_first_large_scale_optimizer_step",
+  "training_data": {
+    "examples": 32,
+    "inputs_array_sha256": "3cd9c374d49de942bf8f380f3e15e9925a435e0e8bda276df1a62af9269b6e83",
+    "patch_matrix_sha256": {
+      "c86": "d76133839804e73ea84649b3bc188c8cbc6695ba82ac6a0499396e6b2f9ca503",
+      "w72": "811cc56a879d2ed94ec58e5c555aa157638291d7581007e3569564c8f38e8aa2"
+    },
+    "patch_matrix_shape": {
+      "c86": [
+        32,
+        87
+      ],
+      "w72": [
+        32,
+        73
+      ]
+    },
+    "selection": "first 32 complete 512-byte sequences in canonical train stream",
+    "sequence_length": 512,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "split": "train",
+    "stream_sha256": "88c557654f922c9fcb27552b0e99f717f3e345578de3062a7c2f878d41e410c8"
+  },
+  "upstream": {
+    "scale_plan_artifact_sha256": "fb160915e76389c2712d6d5b9b05869235f10f792cb7e899cfc84e236d9d8203",
+    "scale_plan_path": "data/manifests/scale-schedule-extrapolation-v1.json",
+    "scale_plan_sha256": "4d74456b8f01666b661ecfa76deb1aa86f47dfd8a5116b71e4000ea10e6c5bb5",
+    "scale_summary_artifact_sha256": "5ac4338ed9e55e985697d70b5b0ea47b48c4d1a1760d0bb7151690dac3edc1f4",
+    "scale_summary_path": "results/scale-schedule-extrapolation-v1/summary.json",
+    "scale_summary_sha256": "9ef1ff5b126727d42ed40962f4e410e7504ff5b04d4e9d226353bf39ddb60e70"
+  },
+  "worker_order": [
+    "target-200-standard-c86",
+    "target-200-standard-w72",
+    "target-400-standard-c86",
+    "target-400-standard-w72",
+    "target-800-standard-c86",
+    "target-800-standard-w72",
+    "target-1600-standard-c86",
+    "target-1600-standard-w72",
+    "target-1600-gradient_checkpointed-c86",
+    "target-1600-gradient_checkpointed-w72"
+  ]
+}

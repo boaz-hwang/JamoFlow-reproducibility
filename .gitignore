@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Human identity, affiliation, funding, and preprint author metadata.
+paper/private/
+
+# Local/private corpus runs are not committed by default.
+results/private/
+
+# Downloaded or derived corpora are reproducible from tracked manifests.
+data/raw/
+data/processed/
+data/cache/
+
+# Neural checkpoints and machine-specific experiment artifacts.
+runs/
+artifacts/

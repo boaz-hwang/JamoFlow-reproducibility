@@ -1,0 +1,23 @@
+{
+  "aggregate": {
+    "candidate_preflight_pass": true,
+    "projected_hours": 4.117853165849229,
+    "training_authorized": true
+  },
+  "claim_boundary": {
+    "quality_claimed": false,
+    "resource_only": true
+  },
+  "kind": "balanced_200m_w80_preflight_summary_v1",
+  "plan_artifact_sha256": "1561f15be5a6ceb70a667de042cbcfed18f66b0225e7b7ef26d22c6dbbf405ab",
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "schema_version": 1,
+  "status": "w80_preflight_pass",
+  "summary_base_git_commit": "e022e2af179f8557b60eaa72401cb396d2b9231b",
+  "summary_sha256": "6655ebd8530fceb4cbdeefe8e3480ff498b83957fff30e43a9352183cf8d4b5d",
+  "worker_evidence": {
+    "path": "artifacts/balanced-200m-w80-rescue-v1/preflight-w80.json",
+    "sha256": "d060c90a21d8c89e4aa02f4a7b93926ad06cd0a3f432979aa7f811bfc8cdf37d"
+  }
+}

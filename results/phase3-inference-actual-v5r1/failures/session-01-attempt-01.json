@@ -1,0 +1,22 @@
+{
+  "active_sentinel_sha256": "fcc2c16aee42fe8e34926986481465a583527f0569c4cccd0172087a18502970",
+  "disposition": "environmentally_ineligible_attempt_never_reused_as_evidence",
+  "environment_after_failure": {
+    "battery_percent": 100,
+    "performance_warning": false,
+    "power_source": "Battery Power",
+    "thermal_warning": false
+  },
+  "exception": "RuntimeError: actual timing environment became ineligible",
+  "failure_stage": "periodic_environment_gate",
+  "kind": "phase3_inference_actual_environment_failure_v5r1",
+  "latency_metrics_inspected": false,
+  "output_artifact_published": false,
+  "plan_artifact_sha256": "ec828b72e9b328178a109595d2e4601e7d94e2a2401645c88ba451ee2adda048",
+  "plan_sha256": "840887bd917c4754428dc180a51ceb1c7bab51b904035e3232a0ba525e06402f",
+  "receipt_published": false,
+  "run_git_commit": "7a30409ee8b5c6e53d7f8bcb5bbfa6479f3b5301",
+  "schema_version": 1,
+  "session_id": "session-01",
+  "timing_artifact_published": false
+}

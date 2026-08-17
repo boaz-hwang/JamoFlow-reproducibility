@@ -1,0 +1,74 @@
+{
+  "complete": true,
+  "completion_sha256": "e5f87cd89046c5f9340ed3a31712ba27f1259ff7d701ce31e1f3f18fb7a9933f",
+  "device": "mps",
+  "environment_sha256": "1cddad295d8e9d77d5502fe9adbb542ea93c3007c5a5075370915cf4aa03fd36",
+  "family": "compute_conversion",
+  "git_worktree_clean_at_end": true,
+  "git_worktree_clean_at_start": true,
+  "implementation_manifest_sha256": "837b6bb908054f6c646c0779b6b8b65ee91c5844d4611071bc67347ed66af79a",
+  "kind": "phase3_inference_confirmation_training_completion_v2",
+  "policy_order": [
+    "causal_codepoint_grid_72",
+    "causal_whitespace_grid_72"
+  ],
+  "protocol": "jamoflow-confirmation-training-completion-v2",
+  "run_git_commit": "aac5a6dda5ab63361d54cad00af298fa137bcfc5",
+  "run_manifest": {
+    "artifact_sha256": "71eaa5b82ce8a7836914248d8a45b063e1bbe5e669647e37603f9a8d51f6e74c",
+    "path": "runs/phase3-compute-conversion/manifest.json"
+  },
+  "schema_version": 2,
+  "seed_order": [
+    57721,
+    65537
+  ],
+  "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+  "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+  "units": {
+    "57721": {
+      "causal_codepoint_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "checkpoint_artifact_sha256": "d6056117da39497c90ad6759280f5b5887394e5f89ebfd236ffd4bd1ab9697c7",
+        "checkpoint_path": "artifacts/phase3-compute-conversion/seed-57721/causal_codepoint_grid_72.pt",
+        "checkpoint_state_sha256": "bcc19af57a4cfa8e24699d55c8336602ec588b9815f79665b4b3682920443078",
+        "training_report_artifact_sha256": "225f50ba94b1b4b8f51dbbe7e26b47da83641dd1a46050fb3786b0f8f44aa029",
+        "training_report_path": "runs/phase3-compute-conversion/seed-57721/causal_codepoint_grid_72.json"
+      },
+      "causal_whitespace_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "checkpoint_artifact_sha256": "c242e8391f3d66f35418924372283bcf562d2e297dd26aace5e15c685e512aba",
+        "checkpoint_path": "artifacts/phase3-compute-conversion/seed-57721/causal_whitespace_grid_72.pt",
+        "checkpoint_state_sha256": "c661b949e84c0dd973d9e39f2f100957056b9f04837020e93c4f9d76ab77fe64",
+        "training_report_artifact_sha256": "9aced996c9d2f8e21a1965cbfd7d0ac989139760201f51360bdd3ffecc9db9f6",
+        "training_report_path": "runs/phase3-compute-conversion/seed-57721/causal_whitespace_grid_72.json"
+      }
+    },
+    "65537": {
+      "causal_codepoint_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "checkpoint_artifact_sha256": "dd5760e4bb55ff2909f236b355043df2190b11676c12e91163ad3bd36678c646",
+        "checkpoint_path": "artifacts/phase3-compute-conversion/seed-65537/causal_codepoint_grid_72.pt",
+        "checkpoint_state_sha256": "3245df8672a01a36f8460a071419548290ca9167dbb192dee7e1332b541d36df",
+        "training_report_artifact_sha256": "5c4737ff2ba1382ffe26334b9226a6e0068843afb8eb363cd88a3c54306c0d34",
+        "training_report_path": "runs/phase3-compute-conversion/seed-65537/causal_codepoint_grid_72.json"
+      },
+      "causal_whitespace_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "checkpoint_artifact_sha256": "3a7eaa76a2fa485173ef39da8884b3e633b0b20173a9f3a7f8eee180b4b95806",
+        "checkpoint_path": "artifacts/phase3-compute-conversion/seed-65537/causal_whitespace_grid_72.pt",
+        "checkpoint_state_sha256": "c590c829adf67972e5dd66322b047640d9adc133e10836d5c00f59c65a45cac7",
+        "training_report_artifact_sha256": "ac8f474c8168d29032816511849fed872977b532a231728e48f014ea6b0e6b6b",
+        "training_report_path": "runs/phase3-compute-conversion/seed-65537/causal_whitespace_grid_72.json"
+      }
+    }
+  }
+}

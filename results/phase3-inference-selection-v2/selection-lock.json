@@ -1,0 +1,233 @@
+{
+  "calibration_evidence_manifest_sha256": "7f6e80e79778892a6b6f8f818d4062d4bd6a9a2114d91444a0dec439703e05e1",
+  "decision": {
+    "algorithm_id": "jamoflow-inference-selection-v2",
+    "broad_reference_calibration_screen": {
+      "candidate_minus_reference_effects_bpb": [
+        0.10427069393110955,
+        0.10625012928585176,
+        0.1013303631027287
+      ],
+      "margin_bpb": 0.01,
+      "mean_candidate_minus_reference_bpb": 0.10395039543989666,
+      "minimum_seed_count_within_margin": 2,
+      "pass": false,
+      "seed_count_within_margin": 0
+    },
+    "broad_reference_evaluation_status": "not_authorized_calibration_futility",
+    "calibration_bpb_by_seed_policy": {
+      "1729": {
+        "causal_codepoint_grid": 1.6328873663590224,
+        "causal_codepoint_grid_64": 1.6607724030810587,
+        "causal_codepoint_grid_72": 1.6481048582710602,
+        "causal_whitespace_grid": 1.6240038244041857,
+        "causal_whitespace_grid_64": 1.6498980375035663,
+        "causal_whitespace_grid_72": 1.6379348855475488,
+        "entropy_threshold_codepoint": 1.6472743587190972,
+        "entropy_threshold_full": 1.64105862073928,
+        "fixed_byte_6": 1.6385637561019208,
+        "spacebyte_spacelike": 1.5336641916164393
+      },
+      "2718": {
+        "causal_codepoint_grid": 1.6312696792340657,
+        "causal_codepoint_grid_64": 1.656217740554985,
+        "causal_codepoint_grid_72": 1.6445542181212462,
+        "causal_whitespace_grid": 1.6203075488186258,
+        "causal_whitespace_grid_64": 1.6460849723929811,
+        "causal_whitespace_grid_72": 1.6334812938085663,
+        "entropy_threshold_codepoint": 1.6436737048618124,
+        "entropy_threshold_full": 1.6381948002695692,
+        "fixed_byte_6": 1.635461225445396,
+        "spacebyte_spacelike": 1.5272311645227146
+      },
+      "31415": {
+        "causal_codepoint_grid": 1.6289677870601138,
+        "causal_codepoint_grid_64": 1.6568419258961142,
+        "causal_codepoint_grid_72": 1.6443076886124501,
+        "causal_whitespace_grid": 1.619912477149505,
+        "causal_whitespace_grid_64": 1.6452267324504048,
+        "causal_whitespace_grid_72": 1.6326863808399679,
+        "entropy_threshold_codepoint": 1.6399329642997875,
+        "entropy_threshold_full": 1.636156827700847,
+        "fixed_byte_6": 1.6346691190963212,
+        "spacebyte_spacelike": 1.5313560177372392
+      }
+    },
+    "calibration_policy_order": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_whitespace_grid",
+      "spacebyte_spacelike",
+      "entropy_threshold_full",
+      "entropy_threshold_codepoint",
+      "causal_codepoint_grid_64",
+      "causal_whitespace_grid_64",
+      "causal_codepoint_grid_72",
+      "causal_whitespace_grid_72"
+    ],
+    "candidate": {
+      "initial_mean_calibration_bpb": 1.6347008533986944,
+      "model_family": "compute_conversion",
+      "patch_count": 72,
+      "policy": "causal_whitespace_grid_72",
+      "requires_entropy_router": false,
+      "runtime_policy": "causal_whitespace_grid"
+    },
+    "confirmation_plan": {
+      "compute_conversion": {
+        "authorization_kind": "compute_conversion_confirmation_v2",
+        "policies": [
+          "causal_codepoint_grid_72",
+          "causal_whitespace_grid_72"
+        ],
+        "seeds": [
+          57721,
+          65537
+        ],
+        "selected_rate": 72
+      },
+      "phase3_reference": null
+    },
+    "confirmation_seed_order": [
+      57721,
+      65537
+    ],
+    "decision_sha256": "dfe5a8a172879a169852340135315375a85c0fbcc7aee182f87617ada7e52b98",
+    "initial_candidate_minus_c86_mean_calibration_bpb": 0.0036592425142938367,
+    "initial_candidate_minus_reference_mean_calibration_bpb": 0.10395039543989681,
+    "matched_efficiency_baseline": {
+      "initial_mean_calibration_bpb": 1.6310416108844006,
+      "model_family": "phase3",
+      "patch_count": 86,
+      "policy": "causal_codepoint_grid",
+      "requires_entropy_router": false,
+      "runtime_policy": "causal_codepoint_grid"
+    },
+    "rate_order": [
+      64,
+      72
+    ],
+    "rate_selection": {
+      "by_rate": {
+        "64": {
+          "margin_bpb": 0.01,
+          "mean_whitespace_minus_primary_codepoint_bpb": 0.016028303231250113,
+          "pass": false,
+          "required_seed_count_within_margin": 2,
+          "seed_count_within_margin": 0
+        },
+        "72": {
+          "margin_bpb": 0.01,
+          "mean_whitespace_minus_primary_codepoint_bpb": 0.003659242514293689,
+          "pass": true,
+          "required_seed_count_within_margin": 2,
+          "seed_count_within_margin": 3
+        }
+      },
+      "selected_policy": "causal_whitespace_grid_72",
+      "selected_rate": 72,
+      "status": "selected"
+    },
+    "reference": {
+      "initial_mean_calibration_bpb": 1.5307504579587976,
+      "model_family": "phase3",
+      "patch_count": 86,
+      "policy": "spacebyte_spacelike",
+      "requires_entropy_router": false,
+      "runtime_policy": "spacebyte_spacelike"
+    },
+    "reference_selection": {
+      "candidate_order": [
+        "fixed_byte_6",
+        "causal_codepoint_grid",
+        "causal_whitespace_grid",
+        "spacebyte_spacelike",
+        "entropy_threshold_full",
+        "entropy_threshold_codepoint",
+        "causal_codepoint_grid_72"
+      ],
+      "criterion": "lowest initial-three-seed mean calibration BPB",
+      "mean_calibration_bpb": {
+        "causal_codepoint_grid": 1.6310416108844006,
+        "causal_codepoint_grid_72": 1.6456555883349189,
+        "causal_whitespace_grid": 1.6214079501241054,
+        "entropy_threshold_codepoint": 1.6436270092935656,
+        "entropy_threshold_full": 1.638470082903232,
+        "fixed_byte_6": 1.6362313668812127,
+        "spacebyte_spacelike": 1.5307504579587976
+      },
+      "selected_policy": "spacebyte_spacelike",
+      "tie_break": "first policy in fixed candidate order on exact tie"
+    },
+    "schema_version": 2,
+    "seed_order": [
+      1729,
+      2718,
+      31415
+    ],
+    "selection_uses": {
+      "calibration": true,
+      "final_test": false,
+      "historical_screening_test": false,
+      "latency": false
+    },
+    "status": "locked_pending_confirmation_and_new_final_test"
+  },
+  "final_test_seal_sha256": "ce42e8a0b2d8161cc59e0b30d5d121b547e22d28709fe48284aa777df4a2290b",
+  "independent_calibration_recomputation": {
+    "bpb_matrix_sha256": "850da0a7e9b0f2b4ecfa2d7e8059cec3f72faf945deaa41b54c97f77df6aea57",
+    "comparison": "bitwise_float32_array_equal",
+    "device": "mps",
+    "environment_sha256": "1cddad295d8e9d77d5502fe9adbb542ea93c3007c5a5075370915cf4aa03fd36",
+    "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+    "implementation_manifest_sha256": "837b6bb908054f6c646c0779b6b8b65ee91c5844d4611071bc67347ed66af79a",
+    "nll_array_sha256_by_seed_policy": {
+      "1729": {
+        "causal_codepoint_grid": "70aa71aa03735c40c0679a67b36feae00db491ec91094c5ba5ab53a90552a448",
+        "causal_codepoint_grid_64": "411a3019e59ef9b2f64fd654bd4c527b037b03c86cfa6e6e7dcd4f47da7ee040",
+        "causal_codepoint_grid_72": "313cdc4391ea6399b5c7adc83985255750e8c25720d0483670f6749a9b69a42c",
+        "causal_whitespace_grid": "485807b381afb235205f7696da87421ca772328dcf4ffcba69ba4c302d846bdd",
+        "causal_whitespace_grid_64": "b1e58f8aa47856b99b2d2db89d89ebcaf19bec6bd671add666f4db27f4ca16aa",
+        "causal_whitespace_grid_72": "245a6b6d17c3d7ea3a4157f1397d8e3bad5f0a15ca50dbbfbd75031cb2fbb268",
+        "entropy_threshold_codepoint": "38913b11222f9c7829fba29e3598eb152501043acd43d4a1fe0cb6bfdbdbf3b2",
+        "entropy_threshold_full": "6b71914cb6431f12a3683d2454fcf4e6e59a0395ea7f1c616cda297f01e7d653",
+        "fixed_byte_6": "440346f009d297c1e21a6e6ae2456066dbef8b113d1bcd2b17a397c98c478c37",
+        "spacebyte_spacelike": "6c4eed04e3836523010e3ffc806d2d8d496e5705ea664acadad8b9f58627d31f"
+      },
+      "2718": {
+        "causal_codepoint_grid": "b513bccdd7e00ed94aa5ca3a3ccd4b7a877ee126c5abe8bba74fe1e640ccc04f",
+        "causal_codepoint_grid_64": "319651ad3c8b903c7073c93961efe444c28f67bb003ac9080dbc05f55c0cd205",
+        "causal_codepoint_grid_72": "dbde16b7c9f33a5fad30a28b190e8540fa95e6af3cdcc4f3f567f21bc60c2506",
+        "causal_whitespace_grid": "e449e3cf3e9685fc92018b6dffec6c411217bf9c93d2cc7b1f08c8332d40b641",
+        "causal_whitespace_grid_64": "ee4455583e9f3af2b7e3a6a4a9bae9906632666439da1c2cf87ae37d4c48bfcc",
+        "causal_whitespace_grid_72": "0a7a9f116e121ec9b839b599a0b82a82fbb25fa6e3b5e0ea5c1ae9f932785bc6",
+        "entropy_threshold_codepoint": "3f6d4a295969806ba9082d61a77a547242c23debf8d802f4e657d2de96f29786",
+        "entropy_threshold_full": "2c87b5dd492c306a361a9973b655ff17f1252bea9c98a72c66c1cf07db614bf6",
+        "fixed_byte_6": "5d93ff7793fc9b5ed01275e649a1ec1acc9a2049879bcee8b214299c43934fa3",
+        "spacebyte_spacelike": "5f05a85a7c9859a10e19c654461b82e4095e43deca6a1a00589a534887edc810"
+      },
+      "31415": {
+        "causal_codepoint_grid": "ff6f12f8d8d31565b600db103b84a4d125bf7be51f345d3f879840a6cc92e117",
+        "causal_codepoint_grid_64": "8476ddd42fb4f878717fafdcdc7931944875a701b364195266068ef529406374",
+        "causal_codepoint_grid_72": "990ea6a532a3083922bde879444c05d3ff2e8c951ab8c881f4d6dc89026e766d",
+        "causal_whitespace_grid": "670a248b9abda15750415527d48cefb874eaad1334650a508313553fb8715489",
+        "causal_whitespace_grid_64": "c375439750f845f74d394b7193b98cfdb69d19a4d9c5a8924684b0adae528f92",
+        "causal_whitespace_grid_72": "78c28af68a0e4bc158b0a3e01b044436503de5ecf687465db3e056d7a2fe0ce9",
+        "entropy_threshold_codepoint": "e0820f9495f65590ee7380a1c754d1e77366553aaacebec08847f2c51f13a11e",
+        "entropy_threshold_full": "81fea3d93b4a406e85d5c2051687fcebcfb7eb0038d96a21b572f8d2fe868069",
+        "fixed_byte_6": "66d7604cc988bfc459d0ce4f508e4f04bf9853286a82ec52b7f33ea976bd4e0c",
+        "spacebyte_spacelike": "9721ef5a8140e3190fb717ba51fd404a640d8409ecad635894259036f3fead3d"
+      }
+    },
+    "receipt_count": 30,
+    "recomputation_protocol": "jamoflow-selection-lock-calibration-replay-v1",
+    "status": "pass",
+    "verification_git_commit": "21ec3e71230809b4b1a4ff01975d19b4bb8fb418",
+    "verification_sha256": "a937642b049221cfc7c63e5f437cbdac512de8b0fa2d36c3b2159bb0442d3855"
+  },
+  "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+  "kind": "phase3_inference_selection_lock_v2",
+  "lock_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+  "plan_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+  "schema_version": 2
+}

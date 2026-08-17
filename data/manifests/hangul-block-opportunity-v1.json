@@ -1,0 +1,61 @@
+{
+  "byte_limit": 8000000,
+  "decision_rule": {
+    "minimum_hangul_share_of_scalar_savings": 0.9,
+    "minimum_hangul_target_call_reduction": 0.2,
+    "pass_authorizes": "learned-draft acceptance preflight only"
+  },
+  "fixed_block_sizes": [
+    2,
+    3,
+    4,
+    8
+  ],
+  "input": {
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "integrity_path": "data/processed/hplt3-korean-phase3/integrity.json",
+    "integrity_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "selection_plan_path": "data/manifests/phase3-inference-selection-plan-v2.json",
+    "selection_plan_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "split": "calibration"
+  },
+  "kind": "hangul_block_opportunity_plan_v1",
+  "metrics": {
+    "call_oracles": [
+      "one_target_call_per_complete_utf8_scalar",
+      "one_target_call_per_hangul_scalar_and_one_per_nonhangul_byte",
+      "perfect_fixed_byte_blocks"
+    ],
+    "distribution_diagnostics": [
+      "hangul_jamo_component_entropy",
+      "hangul_component_total_correlation",
+      "continuation_pair_conditional_entropy",
+      "continuation_pair_conditional_mutual_information",
+      "context_free_joint_and_independent_top1_pair_accuracy"
+    ],
+    "unicode_categories": [
+      "ascii",
+      "precomposed_hangul_syllable",
+      "jamo_blocks",
+      "other"
+    ]
+  },
+  "output_path": "results/hangul-block-opportunity-v1/summary.json",
+  "profile_context": {
+    "artifact_path": "results/exploratory-component-profile-v1/summary.json",
+    "artifact_sha256": "5ae4a3ec315fefec22058f9fa802c1646b8574373017ff5d07e0de446e495477",
+    "role": "motivation_only_not_numeric_input"
+  },
+  "protocol_id": "jamoflow-hangul-block-opportunity-v1",
+  "schema_version": 1,
+  "sequence_length": 512,
+  "status": "post_v5r3_exploratory_calibration_only",
+  "threat_model": {
+    "final_test_read": false,
+    "model_checkpoint_read": false,
+    "model_metric_read": false,
+    "raw_text_promoted": false
+  }
+}

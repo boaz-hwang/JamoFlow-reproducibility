@@ -1,0 +1,445 @@
+{
+  "aggregate": {
+    "all_target_evidence_valid": true,
+    "bootstrap": {
+      "base_seed": 20260816,
+      "repetitions": 10000,
+      "seed_rule": "BOOTSTRAP_SEED + target_millions",
+      "unit": "crossed fresh-process session and prompt after within-cell repetition median"
+    },
+    "one_seed_100m_training_authorized": false,
+    "primary_100m_pass": false,
+    "protocol_id": "jamoflow-scale-schedule-preflight-v1",
+    "rows": {
+      "100": {
+        "c86_median_ms": 461.916667,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.1264968067407608,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13605065643787384,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.1264968067407608,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13605065643787384,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.1264968067407608,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13605065643787384,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": false,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.050709386926022594,
+        "median_reduction": 0.04460062381771557,
+        "median_session_reduction": 0.04334341480088655,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.038455664900451825,
+          "upper": 0.04892533288487089
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.04334341480088655,
+          "session-1": 0.04299753955307217,
+          "session-2": 0.046451507427878846
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 441.31489550000003
+      },
+      "50": {
+        "c86_median_ms": 411.77166650000004,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.10237770527601242,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13181400299072266,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.10237770527601242,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13181400299072266,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.10237770527601242,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13181400299072266,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": false,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.04233661603770355,
+        "median_reduction": 0.035717306936173254,
+        "median_session_reduction": 0.035139868279751574,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.027712614360493496,
+          "upper": 0.04501850414301405
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.037350886947455475,
+          "session-1": 0.03379673178984166,
+          "session-2": 0.035139868279751574
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 397.06429149999997
+      },
+      "75": {
+        "c86_median_ms": 435.57718750000004,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16961297392845154,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13305306434631348,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16961297392845154,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13305306434631348,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16961297392845154,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.13305306434631348,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": false,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.020247238012640667,
+        "median_reduction": 0.03758021303629466,
+        "median_session_reduction": 0.038438079318379836,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.03301585283071351,
+          "upper": 0.042528561779753726
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.040392028655965806,
+          "session-1": 0.038438079318379836,
+          "session-2": 0.03815533700408602
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 419.208104
+      }
+    },
+    "schedule_order": [
+      "c86",
+      "w72"
+    ],
+    "status": "publication_scale_training_stopped",
+    "target_order": [
+      50,
+      75,
+      100
+    ],
+    "thresholds": {
+      "maximum_memory_fraction": 0.75,
+      "minimum_bootstrap_lower_bound": 0.08,
+      "minimum_point_reduction": 0.1,
+      "minimum_positive_prompts": 15,
+      "minimum_positive_sessions": 3,
+      "minimum_sessions_at_point_target": 2,
+      "primary_target_millions": 100
+    }
+  },
+  "claim_boundary": {
+    "confirmatory_or_final_claimed": false,
+    "quality_or_matched_quality_claimed": false,
+    "random_weight_runtime_preflight": true,
+    "retrieval_result_changed": false,
+    "training_authorized": false
+  },
+  "kind": "scale_schedule_preflight_summary_v1",
+  "plan_artifact_sha256": "51060cc5859a253480b11b68d6fb315c20324bad528375742c42f00f330f9d65",
+  "plan_sha256": "77d8a7ba6b7397124a388dc4ced74a8ac2c6ba6a097dd69f7e3915c65388b83d",
+  "protocol_id": "jamoflow-scale-schedule-preflight-v1",
+  "schema_version": 1,
+  "status": "publication_scale_training_stopped",
+  "summary_base_git_commit": "e57fcf204299880d9937fa81ff892636dec60f75",
+  "summary_sha256": "d77b990d1542a59bdc405e474556a9be3bd07f9c50287356f620c526684b9600",
+  "worker_evidence": {
+    "100": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-100-session-0-report.json",
+        "report_sha256": "b56c627e44f66250cce7925b1d1d03a1aa21f4bb91b9196ab08fb7217f61cb6f",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-100-session-0-timings.npz",
+        "timing_sha256": "383fc6436b17e5fdacfb21054b4bcdf1a93536254b3f1a464beb19e314505fcd"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-100-session-1-report.json",
+        "report_sha256": "59520d98b892799679271bcf501e5357a4580d87d843c658f30e7f9c1632d688",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-100-session-1-timings.npz",
+        "timing_sha256": "817bc9c70b29cb783e1459e44738bdca5ba4ca29a9f74bf110ec36fb6283f104"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-100-session-2-report.json",
+        "report_sha256": "480b3bc690b37f5155a0bc568d754347c99e74535960c2553029d54e102f35a3",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-100-session-2-timings.npz",
+        "timing_sha256": "bd45a7fddbc6d7f8ddea2040d0cb3f27a9ad4b9c0eaab974e0bd7c9e378e8b50"
+      }
+    },
+    "50": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-50-session-0-report.json",
+        "report_sha256": "c0738877a8659756ec24e045659ced483c0ecb2ca6c7261938dc5e483124830e",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-50-session-0-timings.npz",
+        "timing_sha256": "7a8e32b62cb227c1d5f470eafaf5a0cdd90a9c814445881a8527e9e95cc98b83"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-50-session-1-report.json",
+        "report_sha256": "20c3022217f891c91f76214fac821086ef1664c4329d7362deaeeb6c37cd8a82",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-50-session-1-timings.npz",
+        "timing_sha256": "55d7774adfb19554712e2ad6065a8e88e5a7be7a414a40e26a3b1c36d4e9acd7"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-50-session-2-report.json",
+        "report_sha256": "39e57ea8f4f922c42a867edd4234e3694b13cee54f66e0188d202a3d837167a6",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-50-session-2-timings.npz",
+        "timing_sha256": "654bf4ba9a32e71d26e1674c0a39d1e8a33eec8a24f79f90d433c9ba864289cb"
+      }
+    },
+    "75": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-75-session-0-report.json",
+        "report_sha256": "1f58f2aea2fdd3ef19e02bd1f230e9ceca27c8e3f94082d5b122ecda0393c3ba",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-75-session-0-timings.npz",
+        "timing_sha256": "5d46b786d61adcc369cf6334b69c347fc6312e79df22585e1074e25060ae676b"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-75-session-1-report.json",
+        "report_sha256": "d7b969bf378357663bb41b58a9bafe16cdd40edeaabb59d5b79a6db15a85645c",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-75-session-1-timings.npz",
+        "timing_sha256": "cfb84ae4cb0c4f6657d4f5ba4eebb1a8d6888ad0c402e0749e305e33d9037f5a"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-preflight-v1/target-75-session-2-report.json",
+        "report_sha256": "011620631b6243027db84bcf941f47a95139797aa126e1b7f28182c41f9db908",
+        "timing_path": "artifacts/scale-schedule-preflight-v1/target-75-session-2-timings.npz",
+        "timing_sha256": "2bd146524e738428e20ee8d946b4c4cabf35908a1f33210b0d1aed84741bb115"
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "claim_scope": {
+    "acceptance_or_speed_evidence": false,
+    "calibration_only": true,
+    "confirmatory": false,
+    "perfect_oracle_is_implementation_bound": false,
+    "raw_text_promoted": false
+  },
+  "complete": true,
+  "decision": {
+    "authorizes": "learned-draft acceptance preflight only",
+    "minimum_hangul_share_of_scalar_savings": 0.9,
+    "minimum_hangul_target_call_reduction": 0.2,
+    "observed_hangul_share_of_scalar_savings": 0.9868085892915927,
+    "observed_hangul_target_call_reduction": 0.5759290719911341,
+    "pass": true
+  },
+  "git_commit": "d720d696765c6495a87a28cbdd0884262f3d1f7a",
+  "kind": "hangul_block_opportunity_result_v1",
+  "metrics": {
+    "composition": {
+      "precomposed_hangul_byte_rate": 0.863893607986701,
+      "precomposed_hangul_scalar_rate": 0.6916039022796922,
+      "unicode_category_counts": {
+        "ascii": 994596,
+        "jamo_blocks": 802,
+        "other": 31862,
+        "precomposed_hangul_syllable": 2303716
+      },
+      "utf8_length_counts": {
+        "1": 994596,
+        "2": 3848,
+        "3": 2332421,
+        "4": 111
+      },
+      "whitespace_scalar_count": 719648
+    },
+    "hangul_distribution": {
+      "component_logit_reduction": 0.9939133548156105,
+      "component_logits": {
+        "coda": 28,
+        "onset": 19,
+        "total": 68,
+        "vowel": 21
+      },
+      "context_free_factorized_component_mode_exact_syllable_rate": 0.005629600176410634,
+      "entropy_bits": {
+        "coda": 2.3369485574019047,
+        "component_total_correlation": 1.2635426661096716,
+        "joint_syllable": 8.098151591956483,
+        "onset": 3.506724784071639,
+        "vowel": 3.518020916592611
+      },
+      "flat_syllable_logits": 11172,
+      "observed_distinct_syllables": 1673,
+      "utf8_continuation_pair": {
+        "conditional_joint_entropy_bits_given_lead": 6.304561548910828,
+        "conditional_mutual_information_bits": 2.4086815168924742,
+        "conditional_second_entropy_bits_given_lead": 4.244154714686776,
+        "conditional_third_entropy_bits_given_lead": 4.469088351116526,
+        "context_free_independent_byte_modes_exact_pair_rate": 0.06951941992849812,
+        "context_free_joint_pair_mode_exact_rate": 0.0837486044286709,
+        "empirical_distinct_pairs_by_lead": {
+          "0xea": 177,
+          "0xeb": 605,
+          "0xec": 610,
+          "0xed": 281
+        },
+        "theoretical_valid_pairs_by_lead": {
+          "0xea": 1024,
+          "0xeb": 4096,
+          "0xec": 4096,
+          "0xed": 1956
+        }
+      },
+      "valid_precomposed_syllables": 11172
+    },
+    "stream": {
+      "complete_scalar_bytes": 7999999,
+      "complete_scalars": 3330976,
+      "input_bytes": 8000000,
+      "trailing_incomplete_bytes": 1
+    },
+    "target_call_oracles": {
+      "byte_autoregressive_calls": 7999999,
+      "fixed_byte_blocks": {
+        "2": {
+          "calls": 4000000,
+          "reduction": 0.49999993749999216
+        },
+        "3": {
+          "calls": 2666667,
+          "reduction": 0.666666583333323
+        },
+        "4": {
+          "calls": 2000000,
+          "reduction": 0.7499999687499961
+        },
+        "8": {
+          "calls": 1000000,
+          "reduction": 0.874999984374998
+        }
+      },
+      "hangul_only_adaptive": {
+        "calls": 3392567,
+        "reduction": 0.5759290719911341,
+        "saved_calls": 4607432
+      },
+      "hangul_share_of_scalar_savings": 0.9868085892915927,
+      "one_call_per_scalar": {
+        "calls": 3330976,
+        "reduction": 0.5836279479534935
+      }
+    }
+  },
+  "plan_artifact_sha256": "3f0db684775603d0342b3cc2d13240e99e56b4dfc2a18d0e57931a9f4a8ca9c5",
+  "protocol_id": "jamoflow-hangul-block-opportunity-v1",
+  "schema_version": 1,
+  "source": {
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "source_artifact_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+  },
+  "summary_sha256": "3d97d4e026779d2e1ac7d6fd8e29b752b0c8207a9ea4c8d0ad83971b1f5be8ad"
+}

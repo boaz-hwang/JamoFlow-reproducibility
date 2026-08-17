@@ -1,0 +1,60 @@
+{
+  "candidate_evidence": {
+    "calibration_nll_array_sha256": "618b6a312b01990fe0347a0c3463afb2ee535647f95f66f810e8e38f02646b04",
+    "calibration_nll_path": "artifacts/balanced-200m-w80-rescue-v1/calibration-w80-nll.npz",
+    "calibration_nll_sha256": "24026977bc82eadf550aafd4fb570b39dfa96f64106545d374c3a26be6dcbcb0",
+    "checkpoint_path": "artifacts/balanced-200m-w80-rescue-v1/trained-w80.pt",
+    "checkpoint_sha256": "ab83640d5ab8fe26de7d9893f2adf827a12a4e31620233f0c00334a31942fd96",
+    "checkpoint_state_sha256": "045c57003d443bf90591e5fe169c14c5d967cf0e6be1ce8f0ba67b62098b7704",
+    "report_path": "artifacts/balanced-200m-w80-rescue-v1/training-w80.json",
+    "report_sha256": "fb0efed8f26f9aac08dc2e30ee763b8195b04e9700884cece1584ac3efb97e2c"
+  },
+  "claim_boundary": {
+    "actual_timing_requires_independent_replay": true,
+    "one_seed_mechanism_screen": true,
+    "pure_scale_effect_claimed": false,
+    "sufficiently_trained_llm_claimed": false
+  },
+  "kind": "balanced_200m_w80_training_summary_v1",
+  "plan_artifact_sha256": "1561f15be5a6ceb70a667de042cbcfed18f66b0225e7b7ef26d22c6dbbf405ab",
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "preflight_artifact_sha256": "f28ee62b58d715a68cce2393d57e208c16ed7010dd7740682ee73d130d05ca06",
+  "preflight_summary_sha256": "6655ebd8530fceb4cbdeefe8e3480ff498b83957fff30e43a9352183cf8d4b5d",
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "quality": {
+    "actual_timing_authorized": false,
+    "block_bootstrap": {
+      "block_count": 244,
+      "block_size_sequences": 64,
+      "dropped_tail_sequences": 9,
+      "lower": 0.0030696087841403435,
+      "repetitions": 10000,
+      "seed": 20260904,
+      "upper": 0.005114194283782461,
+      "used_sequences": 15616
+    },
+    "candidate_bpb": 1.4451835724492714,
+    "clauses": {
+      "bootstrap_upper_at_most_margin": true,
+      "mean_delta_at_most_margin": true
+    },
+    "maximum_allowed_delta_bpb": 0.01,
+    "quality_gate_pass_pending_independent_replay": true,
+    "reference_bpb": 1.4411260692502428,
+    "w80_minus_c86_bpb": 0.004057503199028645
+  },
+  "reference_evidence": {
+    "calibration_nll_array_sha256": "c6976aef9ddf703c69dbaf10d0c00029078fee1f00f779c8f05323ee52226814",
+    "calibration_nll_path": "artifacts/balanced-200m-trained-screen-v1/calibration-c86-nll.npz",
+    "calibration_nll_sha256": "6bdd3d3280bf61bc94a1405a12470a9298b2c4f162770c0045ee9c416a9fb7f1",
+    "checkpoint_path": "artifacts/balanced-200m-trained-screen-v1/trained-c86.pt",
+    "checkpoint_sha256": "dcaec8935cd60a40b194e6df5e82a4815fcd4591cb5c79c322bfa7994d110a2f",
+    "checkpoint_state_sha256": "c43423ee4cf645e0c76e1630b2c507a75fd2533e32f7119e26f816c51b926cc6",
+    "report_path": "artifacts/balanced-200m-trained-screen-v1/training-c86.json",
+    "report_sha256": "df25da47a2625298e6cab9a677dbc13d6189b922c3c3315247f43fe49a62a211"
+  },
+  "schema_version": 1,
+  "status": "w80_quality_pass_pending_replay",
+  "summary_base_git_commit": "3a0d9ac5d4d4c0dd72c722717db7b94a42f579e8",
+  "summary_sha256": "022d9f7ce86ab75a589eba47dc76ee5024d61d6e1233735b5e9f6ef1d711030d"
+}

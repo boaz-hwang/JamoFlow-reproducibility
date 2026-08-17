@@ -1,0 +1,37 @@
+{
+  "active_sentinel_sha256": "acf1ba409e708bee54cb4c1b163f8f6cc0058b913ca11c0a9de4b6b5902d8152",
+  "diagnostic": {
+    "case_index": 46,
+    "generated_byte": 130,
+    "generated_length": 128,
+    "generated_sha256": "4394ce4b23b852422af06b0b59299c508e2778a8e8c3a69fc6fb4de014fcfdb5",
+    "maximum_absolute_logit_error": 2.86102294921875e-06,
+    "maximum_normalized_tolerance_ratio": 0.05935319885611534,
+    "output_index": 20,
+    "parallel_argmax": 130,
+    "parallel_top_margin": 9.5367431640625e-07,
+    "prompt_sha256": "b26daab1a9b8ba304e0ec0b12683ab714740153f2061962219ac97237da9f8a7",
+    "reference_argmax": 160,
+    "reference_top_margin": 4.76837158203125e-07,
+    "role": "reference",
+    "seed": 2718,
+    "utf8_allowed_byte_range": [
+      128,
+      191
+    ],
+    "utf8_remaining_continuations": 2
+  },
+  "disposition": "failed_v5_session_never_reused_as_evidence",
+  "exception": "AssertionError: actual timing equivalence argmax differs",
+  "failure_stage": "free_path_parallel_vs_sequential_correctness",
+  "kind": "phase3_inference_actual_failure_v5",
+  "latency_metrics_inspected": false,
+  "output_artifact_published": false,
+  "plan_artifact_sha256": "b1ed924d561b1cc376a5ce53304fdcf7a41912aea44b5b178763b3722e0ef524",
+  "plan_sha256": "0a404c22010d83026869a07f3e29b772ef5c5b2081fcc6c757cb61b42b66c8f1",
+  "receipt_published": false,
+  "run_git_commit": "075e39d1c671e3f0b8167dbe6c4cc18b0b9458b0",
+  "schema_version": 1,
+  "session_id": "session-01",
+  "timing_artifact_published": false
+}

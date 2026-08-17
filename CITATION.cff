@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use JamoFlow, please cite the paper and this software release."
+title: "JamoFlow: Reproducible Korean Byte-Latent Patching Research"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Hwang
+    given-names: Gyeongchan
+    orcid: "https://orcid.org/0009-0007-5840-3274"
+    email: support@boaz.page
+repository-code: "https://github.com/boaz-hwang/JamoFlow-reproducibility"
+url: "https://github.com/boaz-hwang/JamoFlow-reproducibility"
+license: Apache-2.0
+keywords:
+  - Korean
+  - byte-latent language models
+  - causal patching
+  - inference efficiency
+  - reproducibility
+abstract: >-
+  Code, executable protocols, aggregate evidence, and paper materials for a
+  controlled study of causal whitespace-informed patching in Korean
+  byte-latent language models.

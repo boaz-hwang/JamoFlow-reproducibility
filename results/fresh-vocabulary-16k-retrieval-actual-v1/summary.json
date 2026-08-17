@@ -1,0 +1,579 @@
+{
+  "actual_retrieval": {
+    "comparisons": {
+      "corpus_ngram_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 580,
+          "accepted_tokens_per_proposal_cycle": 1.183673469387755,
+          "baseline_forward_calls_median": 25.0,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 64.49295849999999,
+              "candidate_median_ms": 61.1139165,
+              "median_reduction": 0.05239396793992612
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0195215,
+              "candidate_median_ms": 0.438268,
+              "median_reduction": -21.45052890402889
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 65.94,
+              "candidate_median_ms": 62.6392505,
+              "median_reduction": 0.0500568622990597
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 65.89806250000001,
+              "candidate_median_ms": 62.573708499999995,
+              "median_reduction": 0.05044691564338499
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0455415,
+              "candidate_median_ms": 0.0472495,
+              "median_reduction": -0.037504254361406586
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.4649165,
+              "candidate_median_ms": 1.4660004999999998,
+              "median_reduction": -0.0007399739166020769
+            }
+          },
+          "corpus_ngram_proposals": 490,
+          "draft_token_acceptance_rate": 0.8656716417910447,
+          "end_to_end_reduction": 0.0500568622990597,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.003945022111281116,
+            "upper": 0.09855755722799109
+          },
+          "positive_prompt_count": 51,
+          "prompt_lookup_proposals": 0,
+          "proposal_attempts": 490,
+          "proposal_tokens": 670,
+          "target_forward_calls_median": 23.0
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 600,
+          "accepted_tokens_per_proposal_cycle": 1.0434782608695652,
+          "baseline_forward_calls_median": 32.5,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 86.722104,
+              "candidate_median_ms": 79.8031665,
+              "median_reduction": 0.07978286020366843
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0259355,
+              "candidate_median_ms": 0.5189554999999999,
+              "median_reduction": -19.009465790133213
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 88.189416,
+              "candidate_median_ms": 81.23727099999999,
+              "median_reduction": 0.07883196550479488
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 88.15025,
+              "candidate_median_ms": 81.183979,
+              "median_reduction": 0.07902724042189335
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0454165,
+              "candidate_median_ms": 0.0462915,
+              "median_reduction": -0.019266125747250396
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.471667,
+              "candidate_median_ms": 1.466104,
+              "median_reduction": 0.0037800670939824865
+            }
+          },
+          "corpus_ngram_proposals": 575,
+          "draft_token_acceptance_rate": 0.6976744186046512,
+          "end_to_end_reduction": 0.07883196550479488,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": -0.00307568816614201,
+            "upper": 0.15425243905610045
+          },
+          "positive_prompt_count": 41,
+          "prompt_lookup_proposals": 0,
+          "proposal_attempts": 575,
+          "proposal_tokens": 860,
+          "target_forward_calls_median": 29.5
+        }
+      },
+      "hybrid_retrieval_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 855,
+          "accepted_tokens_per_proposal_cycle": 0.684,
+          "baseline_forward_calls_median": 25.0,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 64.49295849999999,
+              "candidate_median_ms": 60.9701875,
+              "median_reduction": 0.0546225678265323
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0195215,
+              "candidate_median_ms": 0.597145,
+              "median_reduction": -29.58909407576262
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 65.94,
+              "candidate_median_ms": 62.4385415,
+              "median_reduction": 0.05310067485592962
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 65.89806250000001,
+              "candidate_median_ms": 62.3853335,
+              "median_reduction": 0.053305497411248015
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0455415,
+              "candidate_median_ms": 0.043354000000000004,
+              "median_reduction": 0.04803311265548993
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.4649165,
+              "candidate_median_ms": 1.462812,
+              "median_reduction": 0.0014366006526651542
+            }
+          },
+          "corpus_ngram_proposals": 470,
+          "draft_token_acceptance_rate": 0.2893401015228426,
+          "end_to_end_reduction": 0.05310067485592962,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.006834641607889824,
+            "upper": 0.10189273535135418
+          },
+          "positive_prompt_count": 45,
+          "prompt_lookup_proposals": 780,
+          "proposal_attempts": 1250,
+          "proposal_tokens": 2955,
+          "target_forward_calls_median": 22.0
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 4600,
+          "accepted_tokens_per_proposal_cycle": 1.4024390243902438,
+          "baseline_forward_calls_median": 32.5,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 86.722104,
+              "candidate_median_ms": 63.5722495,
+              "median_reduction": 0.2669429526294703
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0259355,
+              "candidate_median_ms": 0.528644,
+              "median_reduction": -19.38302712498313
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 88.189416,
+              "candidate_median_ms": 65.045333,
+              "median_reduction": 0.2624360614883763
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 88.15025,
+              "candidate_median_ms": 64.995875,
+              "median_reduction": 0.26266941954220213
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0454165,
+              "candidate_median_ms": 0.048604,
+              "median_reduction": -0.0701837437935553
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.471667,
+              "candidate_median_ms": 1.4626875,
+              "median_reduction": 0.006101584121951609
+            }
+          },
+          "corpus_ngram_proposals": 460,
+          "draft_token_acceptance_rate": 0.5165637282425604,
+          "end_to_end_reduction": 0.2624360614883763,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.1387684739496439,
+            "upper": 0.32094624110372855
+          },
+          "positive_prompt_count": 61,
+          "prompt_lookup_proposals": 2820,
+          "proposal_attempts": 3280,
+          "proposal_tokens": 8905,
+          "target_forward_calls_median": 22.0
+        }
+      },
+      "prompt_lookup_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 320,
+          "accepted_tokens_per_proposal_cycle": 0.3404255319148936,
+          "baseline_forward_calls_median": 25.0,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 64.49295849999999,
+              "candidate_median_ms": 65.33337449999999,
+              "median_reduction": -0.013031128041676165
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0195215,
+              "candidate_median_ms": 0.4336235,
+              "median_reduction": -21.2126117357785
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 65.94,
+              "candidate_median_ms": 66.941729,
+              "median_reduction": -0.015191522596299523
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 65.89806250000001,
+              "candidate_median_ms": 66.88202100000001,
+              "median_reduction": -0.014931523973106264
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0455415,
+              "candidate_median_ms": 0.044583,
+              "median_reduction": 0.021046737590988407
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.4649165,
+              "candidate_median_ms": 1.4586875,
+              "median_reduction": 0.0042521194894044045
+            }
+          },
+          "corpus_ngram_proposals": 0,
+          "draft_token_acceptance_rate": 0.11490125673249552,
+          "end_to_end_reduction": -0.015191522596299523,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": -0.03647420123121581,
+            "upper": 0.03174963724548707
+          },
+          "positive_prompt_count": 19,
+          "prompt_lookup_proposals": 940,
+          "proposal_attempts": 940,
+          "proposal_tokens": 2785,
+          "target_forward_calls_median": 24.0
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 4275,
+          "accepted_tokens_per_proposal_cycle": 1.4108910891089108,
+          "baseline_forward_calls_median": 32.5,
+          "component_metrics": {
+            "decode_ms": {
+              "baseline_median_ms": 86.722104,
+              "candidate_median_ms": 66.849125,
+              "median_reduction": 0.229157020913607
+            },
+            "draft_lookup_ms": {
+              "baseline_median_ms": 0.0259355,
+              "candidate_median_ms": 0.348248,
+              "median_reduction": -12.427464286402808
+            },
+            "end_to_end_ms": {
+              "baseline_median_ms": 88.189416,
+              "candidate_median_ms": 68.27825,
+              "median_reduction": 0.2257772746788571
+            },
+            "model_loop_ms": {
+              "baseline_median_ms": 88.15025,
+              "candidate_median_ms": 68.2419375,
+              "median_reduction": 0.22584521881673614
+            },
+            "tokenizer_ms": {
+              "baseline_median_ms": 0.0454165,
+              "candidate_median_ms": 0.049146,
+              "median_reduction": -0.08211773254213783
+            },
+            "ttft_ms": {
+              "baseline_median_ms": 1.471667,
+              "candidate_median_ms": 1.4711875,
+              "median_reduction": 0.00032582099075395554
+            }
+          },
+          "corpus_ngram_proposals": 0,
+          "draft_token_acceptance_rate": 0.4830508474576271,
+          "end_to_end_reduction": 0.2257772746788571,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.11260218619040119,
+            "upper": 0.30137390359119054
+          },
+          "positive_prompt_count": 61,
+          "prompt_lookup_proposals": 3030,
+          "proposal_attempts": 3030,
+          "proposal_tokens": 8850,
+          "target_forward_calls_median": 24.0
+        }
+      }
+    },
+    "correctness_overall_pass": true,
+    "generic_retrieval_is_novel_claimed": false,
+    "korean_specific_followup_authorized": false,
+    "primary_gate": {
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 20260841,
+      "by_mode": {
+        "controlled_replay": {
+          "bootstrap_lower_positive": true,
+          "correctness": true,
+          "overall_pass": false,
+          "point_reduction": false,
+          "prompt_direction": false
+        },
+        "free_running_utf8_greedy": {
+          "bootstrap_lower_positive": true,
+          "correctness": true,
+          "overall_pass": true,
+          "point_reduction": true,
+          "prompt_direction": true
+        }
+      },
+      "minimum_bootstrap_lower_reduction": 0.0,
+      "minimum_end_to_end_reduction": 0.1,
+      "minimum_positive_prompts": 48,
+      "overall_pass": false,
+      "requires_both_modes": true,
+      "role": "hybrid_retrieval_block_4"
+    },
+    "publication_claim": false,
+    "status": "fail_16k_retrieval_actual_development"
+  },
+  "claim_boundary": {
+    "actual_draft_compute_inside_timing": true,
+    "actual_generic_retrieval_measured": true,
+    "actual_rejection_and_rollback_inside_timing": true,
+    "confirmatory_or_final_blind": false,
+    "development_one_seed_one_session": true,
+    "existing_development_cases_reused": true,
+    "general_hardware_claim": false,
+    "generic_retrieval_is_prior_work": true,
+    "korean_specific_method_tested": false,
+    "one_seed_one_session": true,
+    "output_exact": true,
+    "publication_claim": false,
+    "trained_target": true
+  },
+  "decision": {
+    "diagnostic_role_fallback_allowed": false,
+    "generic_retrieval_novelty_claimed": false,
+    "korean_specific_disjoint_followup_authorized": false,
+    "learned_draft_training_authorized": false
+  },
+  "free_output_evidence": {
+    "exact_across_roles_and_repetitions": true,
+    "output_root_sha256": "8580425204b6fd73acf9cf1bcec7e450fd2b65a7da0b1c6c18af6e17bc787175",
+    "strict_valid_trace_count": 1280,
+    "token_trace_root_sha256": "1d53a322a9af1af8f63ba030c7b764a418ec1cb636f6237c422599db2b42a037"
+  },
+  "git_commit": "69e76924b3c49968a26050becec35da3f61b5e8e",
+  "independent_correctness": {
+    "by_role_mode": {
+      "baseline_ar": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 0,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 0,
+          "target_forward_calls": 1634
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 0,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 0,
+          "target_forward_calls": 2330
+        }
+      },
+      "corpus_ngram_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 116,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 98,
+          "target_forward_calls": 1522
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 120,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 115,
+          "target_forward_calls": 2212
+        }
+      },
+      "hybrid_retrieval_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 171,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 250,
+          "target_forward_calls": 1468
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 920,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 656,
+          "target_forward_calls": 1440
+        }
+      },
+      "prompt_lookup_block_4": {
+        "controlled_replay": {
+          "accepted_draft_tokens": 64,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 188,
+          "target_forward_calls": 1572
+        },
+        "free_running_utf8_greedy": {
+          "accepted_draft_tokens": 855,
+          "cache_lag_exact": true,
+          "cases": 64,
+          "outputs_exact": true,
+          "proposal_attempts": 606,
+          "target_forward_calls": 1505
+        }
+      }
+    },
+    "overall_pass": true,
+    "target_cache_full": {
+      "argmax_exact": 3964,
+      "comparisons": 3964,
+      "maximum_normalized_tolerance_ratio": 0.16690541803836823,
+      "pass": true
+    }
+  },
+  "kind": "fresh_vocabulary_16k_retrieval_actual_result_v1",
+  "plan": {
+    "artifact_sha256": "90853e45305c735262258fbf546c17aadcc57e34d1354b10c2bc6ea684646995",
+    "plan_sha256": "77e9d7e3589e5622c2f91af8ab960b2abc8cd24a13d9ce0ade3ec95794e0f929"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-retrieval-actual-v1",
+  "runtime": {
+    "report_artifact_sha256": "89317adf66324666d9198677bb5c98949b82acedcea186c19d9ece9b98fa6f76",
+    "report_sha256": "dd306ff27713a66c6273b61f751a9b23e1b5b763e35f795758d31d84eb8fda52",
+    "session_state": {
+      "end": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      },
+      "start": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      }
+    },
+    "timed_scope": "raw-prompt UTF-8 decode and 16K tokenizer encode; fresh target KV-cache; parallel prefill; train-only compact token n-gram lookup; prompt+self-output suffix lookup; target block verification; every verifier argmax and device-host readback; rejection and DynamicCache crop; correction/bonus; token-byte reconstruction; strict UTF-8 transition/stop/decode; final MPS synchronization",
+    "timing_artifact_sha256": "f95f4865cd762c64d8b7782b9a1b76a090e8ace9ff6511f01fbfa316031705bd"
+  },
+  "schema_version": 1,
+  "status": "fail_16k_retrieval_actual_development",
+  "summary_sha256": "3083986fc9fe3d2da8800143bd6d2aee89817206d24dcd51d31cd97e8967281b",
+  "table": {
+    "artifact_sha256": "8aa1026bb282d68463b392e5b0d180b902e67d96ea50e7ea1e0ef9811a32f81a",
+    "contract": {
+      "entry_count": 200000,
+      "maximum_entries": 200000,
+      "minimum_context_count": 5,
+      "minimum_next_token_probability": 0.8,
+      "orders": {
+        "1": {
+          "best_count_sha256": "3be31a7cd6498e30ed3c6dd68f8ed7076680268b4114c316295ae6909b59b1e3",
+          "context_sha256": "d4be88f41f6ee5d21aa0969c6c2f2dee6003886bc6634fb61825f78e6b9bb361",
+          "entries": 454,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8003714020427113,
+          "next_sha256": "c95239aa5e77fce2646f6888fa30688c5b65ab4092b61c401ba35c159965f7da",
+          "total_count_sha256": "ecbd6df505f2f925fcc8ed84d1380accff12c9d338e817fed6241d509d031fc7"
+        },
+        "2": {
+          "best_count_sha256": "41f651766d0dbb3cb8470892ff27ecef2712fdbb602dae87f9fd8f85249cef31",
+          "context_sha256": "0fe7b43d0663549bd8efb4c0209ea981e702d19b6500066acd9019ed70a76e94",
+          "entries": 73364,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8,
+          "next_sha256": "788c2a50e7edcd68f45fd637fe5950a23bee81b61da8a88cfe79546b7b3c1c9b",
+          "total_count_sha256": "75964bdec9aa021d6e734918567c27c1738ae8834655392c4b86b5e9b187b9dd"
+        },
+        "3": {
+          "best_count_sha256": "502aa22e7d7b751c783c249a22a5db982ab531c561c0ca80968068cb6d0f0a03",
+          "context_sha256": "035d936549691fef5d09628321ef7b208e5135387a43c611f2b600c25e5b9f1e",
+          "entries": 126182,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8,
+          "next_sha256": "2fde16faed408e90be97cf2da05158add3230d4a809609f515238d5f93018066",
+          "total_count_sha256": "8c14cb396e7eb3c455918ae128bd1cb555f34b8c59fabc192005a5a02fce3a52"
+        }
+      }
+    },
+    "seal_artifact_sha256": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825",
+    "seal_sha256": "aacd1aede2372cba929a20ef7874c11a39175098de5ee521abec81da8f83cb19"
+  },
+  "target": {
+    "checkpoint_artifact_sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6",
+    "checkpoint_bytes": 124699202,
+    "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+    "checkpoint_state_sha256": "7efa2ead8a6cc60e81b513c724c9b1b554d6ca0d674dbd8ef1ceff1cc6a05902",
+    "document_bpb": 1.3934744560965184,
+    "parameter_count": 31168896,
+    "quality_role": "dense16k_update_geometry",
+    "vocabulary_size": 16000
+  }
+}

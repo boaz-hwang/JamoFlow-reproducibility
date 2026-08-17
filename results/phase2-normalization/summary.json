@@ -1,0 +1,1828 @@
+{
+  "causality_guardrail": {
+    "oracle_hangul_unit_grid_is_prefix_causal": false,
+    "reason": "After L+V, optional T cannot be known without observing a future codepoint; candidate boundaries use full-sequence lookahead."
+  },
+  "condition_diagnostics": {
+    "compatibility_jamo": {
+      "condition": "compatibility_jamo",
+      "nfc_equal_to_source": false,
+      "oracle_equals_codepoint_matrix": true,
+      "packed_stream_sha256": "282afb3756b2ee4e469a9cf081f88262ea0980b7a7caad9f2b590087a20a0b13",
+      "packing": {
+        "boundary_mask_bytes": 2283520,
+        "dropped_tail_bytes": 104,
+        "inserted_fraction_of_packed_bytes": 0.0037735601177130043,
+        "inserted_newline_bytes": 8617,
+        "inserted_per_raw_byte": 0.003787853811788898,
+        "packed_bytes": 2283520,
+        "raw_bytes_used": 2274903,
+        "sequence_count": 8920,
+        "sequence_length": 256,
+        "source_bytes": 2275007
+      },
+      "packing_end_alignment": "oracle Hangul-unit candidates",
+      "packing_maximum_newline_padding_per_row": 8,
+      "policies": {
+        "causal_codepoint_grid_rate28": {
+          "data_patches": 249760,
+          "examples": 8920,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 9.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 240840
+        },
+        "causal_codepoint_grid_rate43": {
+          "data_patches": 383560,
+          "examples": 8920,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 374640
+        },
+        "causal_whitespace_grid_rate43": {
+          "data_patches": 383560,
+          "examples": 8920,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 374640
+        },
+        "fixed_byte_6_rate43": {
+          "data_patches": 383560,
+          "examples": 8920,
+          "inside_oracle_hangul_unit_boundaries": 236253,
+          "inside_oracle_hangul_unit_boundary_rate": 0.6306133888532992,
+          "internal_codepoint_boundaries": 236253,
+          "internal_codepoint_boundary_rate": 0.6306133888532992,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 374640
+        },
+        "oracle_hangul_unit_grid_rate28": {
+          "data_patches": 249760,
+          "examples": 8920,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 9.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 240840
+        }
+      },
+      "represented_precomposed_hangul_syllables": 293493,
+      "represented_source_codepoints": 410553,
+      "source_codepoints_total": 410576,
+      "transformed_bytes_before_packing": 2275007
+    },
+    "nfc": {
+      "condition": "nfc",
+      "nfc_equal_to_source": true,
+      "oracle_equals_codepoint_matrix": true,
+      "packed_stream_sha256": "e6af6a62f9e266ec1093ea0b05e3dd28634cf3146035bd6585e7992d767a895e",
+      "packing": {
+        "boundary_mask_bytes": 1003264,
+        "dropped_tail_bytes": 193,
+        "inserted_fraction_of_packed_bytes": 0.003510541592242919,
+        "inserted_newline_bytes": 3522,
+        "inserted_per_raw_byte": 0.003522908910498909,
+        "packed_bytes": 1003264,
+        "raw_bytes_used": 999742,
+        "sequence_count": 3919,
+        "sequence_length": 256,
+        "source_bytes": 999935
+      },
+      "packing_end_alignment": "oracle Hangul-unit candidates",
+      "packing_maximum_newline_padding_per_row": 8,
+      "policies": {
+        "causal_codepoint_grid_rate28": {
+          "data_patches": 109732,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 10.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 105813
+        },
+        "causal_codepoint_grid_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "causal_whitespace_grid_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "fixed_byte_6_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 97442,
+          "inside_oracle_hangul_unit_boundary_rate": 0.5919999027934726,
+          "internal_codepoint_boundaries": 97442,
+          "internal_codepoint_boundary_rate": 0.5919999027934726,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "oracle_hangul_unit_grid_rate28": {
+          "data_patches": 109732,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 10.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 105813
+        }
+      },
+      "represented_precomposed_hangul_syllables": 293452,
+      "represented_source_codepoints": 410489,
+      "source_codepoints_total": 410576,
+      "transformed_bytes_before_packing": 999935
+    },
+    "nfd": {
+      "condition": "nfd",
+      "nfc_equal_to_source": false,
+      "oracle_equals_codepoint_matrix": false,
+      "packed_stream_sha256": "ed120d682a4b33b8dc706d90d77c37755d77d50a72eb48cefadcbe9652530a63",
+      "packing": {
+        "boundary_mask_bytes": 2302976,
+        "dropped_tail_bytes": 86,
+        "inserted_fraction_of_packed_bytes": 0.012174247582258782,
+        "inserted_newline_bytes": 28037,
+        "inserted_per_raw_byte": 0.012324286497352236,
+        "packed_bytes": 2302976,
+        "raw_bytes_used": 2274939,
+        "sequence_count": 8996,
+        "sequence_length": 256,
+        "source_bytes": 2275025
+      },
+      "packing_end_alignment": "oracle Hangul-unit candidates",
+      "packing_maximum_newline_padding_per_row": 8,
+      "policies": {
+        "causal_codepoint_grid_rate28": {
+          "data_patches": 251888,
+          "examples": 8996,
+          "inside_oracle_hangul_unit_boundaries": 137403,
+          "inside_oracle_hangul_unit_boundary_rate": 0.5656958648288128,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 9.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 242892
+        },
+        "causal_codepoint_grid_rate43": {
+          "data_patches": 386828,
+          "examples": 8996,
+          "inside_oracle_hangul_unit_boundaries": 211892,
+          "inside_oracle_hangul_unit_boundary_rate": 0.5608100954921764,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 377832
+        },
+        "causal_whitespace_grid_rate43": {
+          "data_patches": 386828,
+          "examples": 8996,
+          "inside_oracle_hangul_unit_boundaries": 176388,
+          "inside_oracle_hangul_unit_boundary_rate": 0.46684240614876454,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 377832
+        },
+        "fixed_byte_6_rate43": {
+          "data_patches": 386828,
+          "examples": 8996,
+          "inside_oracle_hangul_unit_boundaries": 306393,
+          "inside_oracle_hangul_unit_boundary_rate": 0.8109239026869085,
+          "internal_codepoint_boundaries": 233563,
+          "internal_codepoint_boundary_rate": 0.6181662749581824,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 377832
+        },
+        "oracle_hangul_unit_grid_rate28": {
+          "data_patches": 251888,
+          "examples": 8996,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 18,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 9.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 16.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 242892
+        }
+      },
+      "represented_precomposed_hangul_syllables": 293495,
+      "represented_source_codepoints": 410558,
+      "source_codepoints_total": 410576,
+      "transformed_bytes_before_packing": 2275025
+    },
+    "original": {
+      "condition": "original",
+      "nfc_equal_to_source": false,
+      "oracle_equals_codepoint_matrix": true,
+      "packed_stream_sha256": "e6af6a62f9e266ec1093ea0b05e3dd28634cf3146035bd6585e7992d767a895e",
+      "packing": {
+        "boundary_mask_bytes": 1003264,
+        "dropped_tail_bytes": 193,
+        "inserted_fraction_of_packed_bytes": 0.003510541592242919,
+        "inserted_newline_bytes": 3522,
+        "inserted_per_raw_byte": 0.003522908910498909,
+        "packed_bytes": 1003264,
+        "raw_bytes_used": 999742,
+        "sequence_count": 3919,
+        "sequence_length": 256,
+        "source_bytes": 999935
+      },
+      "packing_end_alignment": "oracle Hangul-unit candidates",
+      "packing_maximum_newline_padding_per_row": 8,
+      "policies": {
+        "causal_codepoint_grid_rate28": {
+          "data_patches": 109732,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 10.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 105813
+        },
+        "causal_codepoint_grid_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 8,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 7.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "causal_whitespace_grid_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 9.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "fixed_byte_6_rate43": {
+          "data_patches": 168517,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 97442,
+          "inside_oracle_hangul_unit_boundary_rate": 0.5919999027934726,
+          "internal_codepoint_boundaries": 97442,
+          "internal_codepoint_boundary_rate": 0.5919999027934726,
+          "maximum_data_patches": 43,
+          "maximum_patch_length": 6,
+          "mean_bytes_per_patch": 5.953488372093023,
+          "mean_data_patches": 43.0,
+          "median_patch_length": 6.0,
+          "minimum_data_patches": 43,
+          "p95_patch_length": 6.0,
+          "padded_data_width": 43,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 164598
+        },
+        "oracle_hangul_unit_grid_rate28": {
+          "data_patches": 109732,
+          "examples": 3919,
+          "inside_oracle_hangul_unit_boundaries": 0,
+          "inside_oracle_hangul_unit_boundary_rate": 0.0,
+          "internal_codepoint_boundaries": 0,
+          "internal_codepoint_boundary_rate": 0.0,
+          "maximum_data_patches": 28,
+          "maximum_patch_length": 12,
+          "mean_bytes_per_patch": 9.142857142857142,
+          "mean_data_patches": 28.0,
+          "median_patch_length": 10.0,
+          "minimum_data_patches": 28,
+          "p95_patch_length": 11.0,
+          "padded_data_width": 28,
+          "padding_slot_rate": 0.0,
+          "padding_slots": 0,
+          "total_noninitial_boundaries": 105813
+        }
+      },
+      "represented_precomposed_hangul_syllables": 293452,
+      "represented_source_codepoints": 410489,
+      "source_codepoints_total": 410576,
+      "transformed_bytes_before_packing": 999935
+    }
+  },
+  "decision_gate_g_opportunity": {
+    "exact_rate": true,
+    "interpretation": "This gate only opens a future causal-architecture research opportunity; it never promotes the non-causal oracle itself.",
+    "matrix_identity": true,
+    "mean_relative_improvement_at_least_1_percent": false,
+    "oracle_unit_safe": true,
+    "pass": false,
+    "required_seeds": 4,
+    "seeds_at_least_1_percent": 0,
+    "status": "fail"
+  },
+  "design": {
+    "conditions": [
+      "original",
+      "nfc",
+      "nfd",
+      "compatibility_jamo"
+    ],
+    "oracle_is_non_causal": true,
+    "policies": [
+      "fixed_byte_6_rate43",
+      "causal_codepoint_grid_rate43",
+      "causal_whitespace_grid_rate43",
+      "causal_codepoint_grid_rate28",
+      "oracle_hangul_unit_grid_rate28"
+    ],
+    "rate28_pair_is_opportunity_diagnostic_only": true,
+    "rate43_policies_are_deployable_diagnostics": true,
+    "seeds": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ]
+  },
+  "generated_at": "2026-08-10T06:46:57.840814+00:00",
+  "integrity": {
+    "all_policy_condition_rates_exact": true,
+    "nfc_and_original_rate28_matrix_identity": true,
+    "nfd_oracle_has_zero_unit_internal_boundaries": true
+  },
+  "nfd_oracle_contrast": {
+    "definition": "oracle_hangul_unit_grid_rate28 minus causal_codepoint_grid_rate28",
+    "paired_differences_bits_per_source_codepoint": [
+      0.2545750492351644,
+      0.38570742353498133,
+      0.021487886777883602,
+      0.07132710630020966,
+      -0.01807665747047338
+    ],
+    "paired_t_95_interval": {
+      "count": 5,
+      "lower": -0.06953789129739141,
+      "mean": 0.14300416167555313,
+      "sample_standard_deviation": 0.1711751821213333,
+      "standard_error": 0.07655186865684159,
+      "upper": 0.35554621464849767
+    },
+    "relative_improvement_positive_favors_oracle": [
+      -0.0041838908043246355,
+      -0.006321852552960738,
+      -0.0003824083636046815,
+      -0.00118624089966862,
+      0.00027469396829242547
+    ],
+    "relative_improvement_summary": {
+      "count": 5,
+      "maximum": 0.00027469396829242547,
+      "mean": -0.00235993973045325,
+      "minimum": -0.006321852552960738,
+      "sample_standard_deviation": 0.002795221132211516,
+      "values": [
+        -0.0041838908043246355,
+        -0.006321852552960738,
+        -0.0003824083636046815,
+        -0.00118624089966862,
+        0.00027469396829242547
+      ]
+    },
+    "seed_order": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ]
+  },
+  "normalization_degradation": {
+    "causal_codepoint_grid_rate28": {
+      "compatibility_jamo_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 7.193054945295422,
+        "mean": 6.849536071381971,
+        "minimum": 6.479799034929175,
+        "sample_standard_deviation": 0.29739829367213433,
+        "values": [
+          7.193054945295422,
+          6.906680847498705,
+          7.0523942412116,
+          6.615751287974949,
+          6.479799034929175
+        ]
+      },
+      "nfd_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 10.138774491955981,
+        "mean": 9.217319395731192,
+        "minimum": 8.382063973717822,
+        "sample_standard_deviation": 0.6243206374073536,
+        "values": [
+          9.136432485819142,
+          9.268594052335446,
+          8.382063973717822,
+          9.160731974827577,
+          10.138774491955981
+        ]
+      }
+    },
+    "causal_codepoint_grid_rate43": {
+      "compatibility_jamo_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 7.3107157143314545,
+        "mean": 6.955146325518633,
+        "minimum": 6.577945482941228,
+        "sample_standard_deviation": 0.309034938498072,
+        "values": [
+          7.3107157143314545,
+          6.996666025278098,
+          7.181188060482754,
+          6.709216344559631,
+          6.577945482941228
+        ]
+      },
+      "nfd_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 10.300051796393541,
+        "mean": 9.350307394285235,
+        "minimum": 8.499382810298535,
+        "sample_standard_deviation": 0.6402373096973039,
+        "values": [
+          9.298807385930887,
+          9.396491389944389,
+          8.499382810298535,
+          9.256803588858826,
+          10.300051796393541
+        ]
+      }
+    },
+    "causal_whitespace_grid_rate43": {
+      "compatibility_jamo_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 7.333108966721326,
+        "mean": 6.941542716069887,
+        "minimum": 6.605125620549962,
+        "sample_standard_deviation": 0.33059654584365517,
+        "values": [
+          7.333108966721326,
+          6.81724595075441,
+          7.25255397504861,
+          6.699679067275127,
+          6.605125620549962
+        ]
+      },
+      "nfd_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 10.202355530748468,
+        "mean": 9.265602791081264,
+        "minimum": 8.418764653312175,
+        "sample_standard_deviation": 0.6326872643990574,
+        "values": [
+          9.285402803957192,
+          9.218539148410711,
+          8.418764653312175,
+          9.202951818977775,
+          10.202355530748468
+        ]
+      }
+    },
+    "fixed_byte_6_rate43": {
+      "compatibility_jamo_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 7.285866448582656,
+        "mean": 6.969100977020483,
+        "minimum": 6.670041442926119,
+        "sample_standard_deviation": 0.2698720116101598,
+        "values": [
+          7.285866448582656,
+          7.020315791604251,
+          7.154354789693086,
+          6.670041442926119,
+          6.7149264122963
+        ]
+      },
+      "nfd_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 10.366936863975983,
+        "mean": 9.2531817192841,
+        "minimum": 8.635748796355022,
+        "sample_standard_deviation": 0.6572477497494157,
+        "values": [
+          9.174230128505751,
+          8.964209399651454,
+          8.635748796355022,
+          9.124783407932291,
+          10.366936863975983
+        ]
+      }
+    },
+    "oracle_hangul_unit_grid_rate28": {
+      "compatibility_jamo_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 7.193054945295422,
+        "mean": 6.849536071381971,
+        "minimum": 6.479799034929175,
+        "sample_standard_deviation": 0.29739829367213433,
+        "values": [
+          7.193054945295422,
+          6.906680847498705,
+          7.0523942412116,
+          6.615751287974949,
+          6.479799034929175
+        ]
+      },
+      "nfd_relative_increase_vs_nfc": {
+        "count": 5,
+        "maximum": 10.135714737788872,
+        "mean": 9.241300868850109,
+        "minimum": 8.385651753449245,
+        "sample_standard_deviation": 0.6223362658927559,
+        "values": [
+          9.178842212485218,
+          9.33351058986052,
+          8.385651753449245,
+          9.172785050666688,
+          10.135714737788872
+        ]
+      }
+    }
+  },
+  "quality": {
+    "compatibility_jamo": {
+      "causal_codepoint_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 49.18087264526962,
+          "mean": 46.72885952481362,
+          "minimum": 44.189747841771144,
+          "sample_standard_deviation": 2.0931453058401686,
+          "values": [
+            49.18087264526962,
+            46.97825260973233,
+            48.22730175728137,
+            45.068122770013645,
+            44.189747841771144
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 68.79671681141758,
+          "mean": 65.36671560988101,
+          "minimum": 61.814876490010555,
+          "sample_standard_deviation": 2.927998571511413,
+          "values": [
+            68.79671681141758,
+            65.715579396045,
+            67.46281314497156,
+            63.04359220696035,
+            61.814876490010555
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 8.876881564729349,
+          "mean": 8.43430645585633,
+          "minimum": 7.976010527425775,
+          "sample_standard_deviation": 0.3778014089284262,
+          "values": [
+            8.876881564729349,
+            8.47932055908003,
+            8.704767175924179,
+            8.134552452122312,
+            7.976010527425775
+          ]
+        }
+      },
+      "causal_codepoint_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 49.179728279848085,
+          "mean": 46.6977143641502,
+          "minimum": 44.08783845517819,
+          "sample_standard_deviation": 2.15922455923066,
+          "values": [
+            49.179728279848085,
+            46.914427388105636,
+            48.33052551416279,
+            44.97605218345632,
+            44.08783845517819
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 68.79511601461184,
+          "mean": 65.32314816825259,
+          "minimum": 61.67232043452066,
+          "sample_standard_deviation": 3.020433606477246,
+          "values": [
+            68.79511601461184,
+            65.62629741584615,
+            67.6072078087589,
+            62.91479916752543,
+            61.67232043452066
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 8.87667501295897,
+          "mean": 8.428684922775414,
+          "minimum": 7.957616434225258,
+          "sample_standard_deviation": 0.3897283568389281,
+          "values": [
+            8.87667501295897,
+            8.467800451714119,
+            8.723398505854249,
+            8.11793420912448,
+            7.957616434225258
+          ]
+        }
+      },
+      "causal_whitespace_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 49.150795839938915,
+          "mean": 46.477847666866936,
+          "minimum": 44.122835106643635,
+          "sample_standard_deviation": 2.2911828980451787,
+          "values": [
+            49.150795839938915,
+            45.7106959375954,
+            48.654111542466396,
+            44.750799907690315,
+            44.122835106643635
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 68.75464383980007,
+          "mean": 65.01558740131865,
+          "minimum": 61.7212755382168,
+          "sample_standard_deviation": 3.205023671232849,
+          "values": [
+            68.75464383980007,
+            63.942456376361974,
+            68.05985647389957,
+            62.59970477831492,
+            61.7212755382168
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 8.871452864008813,
+          "mean": 8.389000172854665,
+          "minimum": 7.963933140568831,
+          "sample_standard_deviation": 0.4135461234244011,
+          "values": [
+            8.871452864008813,
+            8.250533434128025,
+            8.781804034157304,
+            8.07727739141035,
+            7.963933140568831
+          ]
+        }
+      },
+      "fixed_byte_6_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 49.16542567499333,
+          "mean": 46.906875328545254,
+          "minimum": 44.885632119725706,
+          "sample_standard_deviation": 1.9229794879505224,
+          "values": [
+            49.16542567499333,
+            47.1892384367049,
+            48.288711482223555,
+            44.885632119725706,
+            45.005368929078784
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 68.77510880036503,
+          "mean": 65.61573320917446,
+          "minimum": 62.78831496372911,
+          "sample_standard_deviation": 2.6899619333904066,
+          "values": [
+            68.77510880036503,
+            66.01071714795414,
+            67.54871620502475,
+            62.78831496372911,
+            62.955808928799264
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 8.874093470124652,
+          "mean": 8.466437345801564,
+          "minimum": 8.101613876571593,
+          "sample_standard_deviation": 0.3470873989785242,
+          "values": [
+            8.874093470124652,
+            8.517402359933397,
+            8.715851299200443,
+            8.101613876571593,
+            8.123225723177738
+          ]
+        }
+      },
+      "oracle_hangul_unit_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 49.18087264526962,
+          "mean": 46.72885952481362,
+          "minimum": 44.189747841771144,
+          "sample_standard_deviation": 2.0931453058401686,
+          "values": [
+            49.18087264526962,
+            46.97825260973233,
+            48.22730175728137,
+            45.068122770013645,
+            44.189747841771144
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 68.79671681141758,
+          "mean": 65.36671560988101,
+          "minimum": 61.814876490010555,
+          "sample_standard_deviation": 2.927998571511413,
+          "values": [
+            68.79671681141758,
+            65.715579396045,
+            67.46281314497156,
+            63.04359220696035,
+            61.814876490010555
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 8.876881564729349,
+          "mean": 8.43430645585633,
+          "minimum": 7.976010527425775,
+          "sample_standard_deviation": 0.3778014089284262,
+          "values": [
+            8.876881564729349,
+            8.47932055908003,
+            8.704767175924179,
+            8.134552452122312,
+            7.976010527425775
+          ]
+        }
+      }
+    },
+    "nfc": {
+      "causal_codepoint_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 6.002751473491586,
+          "mean": 5.951831865991523,
+          "minimum": 5.9078790266174,
+          "sample_standard_deviation": 0.042386646413072944,
+          "values": [
+            6.002751473491586,
+            5.9415895893400075,
+            5.989187850547276,
+            5.917751389961343,
+            5.9078790266174
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.396819410336573,
+          "mean": 8.325591615797453,
+          "minimum": 8.264109134567663,
+          "sample_standard_deviation": 0.05929164599135779,
+          "values": [
+            8.396819410336573,
+            8.311264428044758,
+            8.377846228968625,
+            8.277918877069647,
+            8.264109134567663
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.4656784689992826,
+          "mean": 2.444762830492967,
+          "minimum": 2.426708848052624,
+          "sample_standard_deviation": 0.017410656079187885,
+          "values": [
+            2.4656784689992826,
+            2.4405557329436682,
+            2.460107101734937,
+            2.4307640007343227,
+            2.426708848052624
+          ]
+        }
+      },
+      "causal_codepoint_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.917628513635698,
+          "mean": 5.868774661694758,
+          "minimum": 5.8179144405861285,
+          "sample_standard_deviation": 0.04382813041683064,
+          "values": [
+            5.917628513635698,
+            5.866748372359855,
+            5.907519196094719,
+            5.834062785797388,
+            5.8179144405861285
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.277746994172144,
+          "mean": 8.209408837235458,
+          "minimum": 8.138264114068942,
+          "sample_standard_deviation": 0.06130803479504118,
+          "values": [
+            8.277746994172144,
+            8.20657440610943,
+            8.263605793403094,
+            8.160852878423674,
+            8.138264114068942
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.430713528294837,
+          "mean": 2.410646415506576,
+          "minimum": 2.3897551704383964,
+          "sample_standard_deviation": 0.01800275723266173,
+          "values": [
+            2.430713528294837,
+            2.4098141008576865,
+            2.426561044770049,
+            2.3963882331719115,
+            2.3897551704383964
+          ]
+        }
+      },
+      "causal_whitespace_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.8982543053529,
+          "mean": 5.851014387837657,
+          "minimum": 5.801723378167277,
+          "sample_standard_deviation": 0.045236321618171246,
+          "values": [
+            5.8982543053529,
+            5.847416881284649,
+            5.89564293545621,
+            5.812034438927253,
+            5.801723378167277
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.250645800846497,
+          "mean": 8.184565261266211,
+          "minimum": 8.115615595669844,
+          "sample_standard_deviation": 0.06327785268023915,
+          "values": [
+            8.250645800846497,
+            8.17953296682815,
+            8.24699294239768,
+            8.130039000588884,
+            8.115615595669844
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.422755416347714,
+          "mean": 2.403351240111365,
+          "minimum": 2.383104561268138,
+          "sample_standard_deviation": 0.018581183099651826,
+          "values": [
+            2.422755416347714,
+            2.4018735353473066,
+            2.4216827751502077,
+            2.3873399124434593,
+            2.383104561268138
+          ]
+        }
+      },
+      "fixed_byte_6_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.93364930271153,
+          "mean": 5.884962019392906,
+          "minimum": 5.833544809623558,
+          "sample_standard_deviation": 0.043176506232763985,
+          "values": [
+            5.93364930271153,
+            5.8837132680116015,
+            5.921831061760932,
+            5.852071654856906,
+            5.833544809623558
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.30015732937841,
+          "mean": 8.232052173365915,
+          "minimum": 8.160128318626436,
+          "sample_standard_deviation": 0.060396524361670804,
+          "values": [
+            8.30015732937841,
+            8.230305384433619,
+            8.283625637961858,
+            8.18604419642925,
+            8.160128318626436
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.437294196319342,
+          "mean": 2.4172955029329954,
+          "minimum": 2.396175470290605,
+          "sample_standard_deviation": 0.017735097355748967,
+          "values": [
+            2.437294196319342,
+            2.4167825682550212,
+            2.4324397587531665,
+            2.4037855210468426,
+            2.396175470290605
+          ]
+        }
+      },
+      "oracle_hangul_unit_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 6.002751473491586,
+          "mean": 5.951831865991523,
+          "minimum": 5.9078790266174,
+          "sample_standard_deviation": 0.042386646413072944,
+          "values": [
+            6.002751473491586,
+            5.9415895893400075,
+            5.989187850547276,
+            5.917751389961343,
+            5.9078790266174
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.396819410336573,
+          "mean": 8.325591615797453,
+          "minimum": 8.264109134567663,
+          "sample_standard_deviation": 0.05929164599135779,
+          "values": [
+            8.396819410336573,
+            8.311264428044758,
+            8.377846228968625,
+            8.277918877069647,
+            8.264109134567663
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.4656784689992826,
+          "mean": 2.444762830492967,
+          "minimum": 2.426708848052624,
+          "sample_standard_deviation": 0.017410656079187885,
+          "values": [
+            2.4656784689992826,
+            2.4405557329436682,
+            2.460107101734937,
+            2.4307640007343227,
+            2.426708848052624
+          ]
+        }
+      }
+    },
+    "nfd": {
+      "causal_codepoint_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 65.80653220324763,
+          "mean": 60.79688361869402,
+          "minimum": 56.190943564448084,
+          "sample_standard_deviation": 3.420759718376145,
+          "values": [
+            60.846485040198836,
+            61.011771518515005,
+            56.190943564448084,
+            60.12868576706055,
+            65.80653220324763
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 92.05403243087936,
+          "mean": 85.04624250744912,
+          "minimum": 78.60318372692099,
+          "sample_standard_deviation": 4.785159094557225,
+          "values": [
+            85.11562788168095,
+            85.34684029063011,
+            78.60318372692099,
+            84.11152820713419,
+            92.05403243087936
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 11.777521272330596,
+          "mean": 10.880934857637723,
+          "minimum": 10.056600932847138,
+          "sample_standard_deviation": 0.6122199271384552,
+          "values": [
+            10.889812119170156,
+            10.919393757181181,
+            10.056600932847138,
+            10.761346206659537,
+            11.777521272330596
+          ]
+        }
+      },
+      "causal_codepoint_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 65.74273452560921,
+          "mean": 60.72749442622607,
+          "minimum": 56.11778630289079,
+          "sample_standard_deviation": 3.439101114583544,
+          "values": [
+            60.94451624342654,
+            60.993598940209495,
+            56.11778630289079,
+            59.83883611899437,
+            65.74273452560921
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 91.96478850189975,
+          "mean": 84.94917683995477,
+          "minimum": 78.50084706363732,
+          "sample_standard_deviation": 4.810816114077554,
+          "values": [
+            85.25275967177878,
+            85.3214194234809,
+            78.50084706363732,
+            83.70606953897712,
+            91.96478850189975
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 11.76610327961232,
+          "mean": 10.868516140786985,
+          "minimum": 10.043507837445066,
+          "sample_standard_deviation": 0.6155025219928657,
+          "values": [
+            10.90735695161628,
+            10.916141375990431,
+            10.043507837445066,
+            10.709471259270826,
+            11.76610327961232
+          ]
+        }
+      },
+      "causal_whitespace_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 64.99296797328488,
+          "mean": 60.04810566042759,
+          "minimum": 55.529673289024586,
+          "sample_standard_deviation": 3.3873675390867066,
+          "values": [
+            60.66592137072929,
+            59.75205831848485,
+            55.529673289024586,
+            59.29990735061429,
+            64.99296797328488
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 90.91597112446854,
+          "mean": 83.99880803330151,
+          "minimum": 77.67816012605107,
+          "sample_standard_deviation": 4.738448157932368,
+          "values": [
+            84.8630448427533,
+            83.58467966786658,
+            77.67816012605107,
+            82.95218440536807,
+            90.91597112446854
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 11.631916121838854,
+          "mean": 10.746924630438725,
+          "minimum": 9.938252123468974,
+          "sample_standard_deviation": 0.6062436647714281,
+          "values": [
+            10.85749629295978,
+            10.693940469890975,
+            9.938252123468974,
+            10.61301814403504,
+            11.631916121838854
+          ]
+        }
+      },
+      "fixed_byte_6_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 66.30953554416578,
+          "mean": 60.323726924096505,
+          "minimum": 57.06127652558069,
+          "sample_standard_deviation": 3.5534102238410505,
+          "values": [
+            60.37031350763479,
+            58.62655104997518,
+            57.06127652558069,
+            59.250957993126065,
+            66.30953554416578
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 92.75766297191302,
+          "mean": 84.3843632038134,
+          "minimum": 79.82065646021007,
+          "sample_standard_deviation": 4.970718392748539,
+          "values": [
+            84.44953124607753,
+            82.01025416438341,
+            79.82065646021007,
+            82.8837111764829,
+            92.75766297191302
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 11.867544744915655,
+          "mean": 10.796253096584632,
+          "minimum": 10.21236609202755,
+          "sample_standard_deviation": 0.6359606424989463,
+          "values": [
+            10.804590786784335,
+            10.49250627554543,
+            10.21236609202755,
+            10.604257583650186,
+            11.867544744915655
+          ]
+        }
+      },
+      "oracle_hangul_unit_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 65.78845554577715,
+          "mean": 60.939887780369574,
+          "minimum": 56.21243145122597,
+          "sample_standard_deviation": 3.4146827737795746,
+          "values": [
+            61.101060089434,
+            61.397478942049986,
+            56.21243145122597,
+            60.20001287336076,
+            65.78845554577715
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 92.02874574341361,
+          "mean": 85.24628510650257,
+          "minimum": 78.63324224178413,
+          "sample_standard_deviation": 4.776658308446119,
+          "values": [
+            85.47174237447945,
+            85.88639043080856,
+            78.63324224178413,
+            84.21130474202712,
+            92.02874574341361
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 11.77428605827565,
+          "mean": 10.906528586706498,
+          "minimum": 10.060446661153295,
+          "sample_standard_deviation": 0.6111323247096279,
+          "values": [
+            10.935373903956375,
+            10.9884245544818,
+            10.060446661153295,
+            10.774111755665372,
+            11.77428605827565
+          ]
+        }
+      }
+    },
+    "original": {
+      "causal_codepoint_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 6.002751473491586,
+          "mean": 5.951831865991523,
+          "minimum": 5.9078790266174,
+          "sample_standard_deviation": 0.042386646413072944,
+          "values": [
+            6.002751473491586,
+            5.9415895893400075,
+            5.989187850547276,
+            5.917751389961343,
+            5.9078790266174
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.396819410336573,
+          "mean": 8.325591615797453,
+          "minimum": 8.264109134567663,
+          "sample_standard_deviation": 0.05929164599135779,
+          "values": [
+            8.396819410336573,
+            8.311264428044758,
+            8.377846228968625,
+            8.277918877069647,
+            8.264109134567663
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.4656784689992826,
+          "mean": 2.444762830492967,
+          "minimum": 2.426708848052624,
+          "sample_standard_deviation": 0.017410656079187885,
+          "values": [
+            2.4656784689992826,
+            2.4405557329436682,
+            2.460107101734937,
+            2.4307640007343227,
+            2.426708848052624
+          ]
+        }
+      },
+      "causal_codepoint_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.917628513635698,
+          "mean": 5.868774661694758,
+          "minimum": 5.8179144405861285,
+          "sample_standard_deviation": 0.04382813041683064,
+          "values": [
+            5.917628513635698,
+            5.866748372359855,
+            5.907519196094719,
+            5.834062785797388,
+            5.8179144405861285
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.277746994172144,
+          "mean": 8.209408837235458,
+          "minimum": 8.138264114068942,
+          "sample_standard_deviation": 0.06130803479504118,
+          "values": [
+            8.277746994172144,
+            8.20657440610943,
+            8.263605793403094,
+            8.160852878423674,
+            8.138264114068942
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.430713528294837,
+          "mean": 2.410646415506576,
+          "minimum": 2.3897551704383964,
+          "sample_standard_deviation": 0.01800275723266173,
+          "values": [
+            2.430713528294837,
+            2.4098141008576865,
+            2.426561044770049,
+            2.3963882331719115,
+            2.3897551704383964
+          ]
+        }
+      },
+      "causal_whitespace_grid_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.8982543053529,
+          "mean": 5.851014387837657,
+          "minimum": 5.801723378167277,
+          "sample_standard_deviation": 0.045236321618171246,
+          "values": [
+            5.8982543053529,
+            5.847416881284649,
+            5.89564293545621,
+            5.812034438927253,
+            5.801723378167277
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.250645800846497,
+          "mean": 8.184565261266211,
+          "minimum": 8.115615595669844,
+          "sample_standard_deviation": 0.06327785268023915,
+          "values": [
+            8.250645800846497,
+            8.17953296682815,
+            8.24699294239768,
+            8.130039000588884,
+            8.115615595669844
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.422755416347714,
+          "mean": 2.403351240111365,
+          "minimum": 2.383104561268138,
+          "sample_standard_deviation": 0.018581183099651826,
+          "values": [
+            2.422755416347714,
+            2.4018735353473066,
+            2.4216827751502077,
+            2.3873399124434593,
+            2.383104561268138
+          ]
+        }
+      },
+      "fixed_byte_6_rate43": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 5.93364930271153,
+          "mean": 5.884962019392906,
+          "minimum": 5.833544809623558,
+          "sample_standard_deviation": 0.043176506232763985,
+          "values": [
+            5.93364930271153,
+            5.8837132680116015,
+            5.921831061760932,
+            5.852071654856906,
+            5.833544809623558
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.30015732937841,
+          "mean": 8.232052173365915,
+          "minimum": 8.160128318626436,
+          "sample_standard_deviation": 0.060396524361670804,
+          "values": [
+            8.30015732937841,
+            8.230305384433619,
+            8.283625637961858,
+            8.18604419642925,
+            8.160128318626436
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.437294196319342,
+          "mean": 2.4172955029329954,
+          "minimum": 2.396175470290605,
+          "sample_standard_deviation": 0.017735097355748967,
+          "values": [
+            2.437294196319342,
+            2.4167825682550212,
+            2.4324397587531665,
+            2.4037855210468426,
+            2.396175470290605
+          ]
+        }
+      },
+      "oracle_hangul_unit_grid_rate28": {
+        "bits_per_represented_source_codepoint": {
+          "count": 5,
+          "maximum": 6.002751473491586,
+          "mean": 5.951831865991523,
+          "minimum": 5.9078790266174,
+          "sample_standard_deviation": 0.042386646413072944,
+          "values": [
+            6.002751473491586,
+            5.9415895893400075,
+            5.989187850547276,
+            5.917751389961343,
+            5.9078790266174
+          ]
+        },
+        "bits_per_represented_source_hangul_syllable": {
+          "count": 5,
+          "maximum": 8.396819410336573,
+          "mean": 8.325591615797453,
+          "minimum": 8.264109134567663,
+          "sample_standard_deviation": 0.05929164599135779,
+          "values": [
+            8.396819410336573,
+            8.311264428044758,
+            8.377846228968625,
+            8.277918877069647,
+            8.264109134567663
+          ]
+        },
+        "bpb": {
+          "count": 5,
+          "maximum": 2.4656784689992826,
+          "mean": 2.444762830492967,
+          "minimum": 2.426708848052624,
+          "sample_standard_deviation": 0.017410656079187885,
+          "values": [
+            2.4656784689992826,
+            2.4405557329436682,
+            2.460107101734937,
+            2.4307640007343227,
+            2.426708848052624
+          ]
+        }
+      }
+    }
+  },
+  "rate43_policy_contrasts": {
+    "compatibility_jamo/fixed_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.01430260485475543,
+        0.2748110485992612,
+        -0.041814031939232166,
+        -0.09042006373061184,
+        0.917530473900591
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.3135082187860366,
+        "mean": 0.20916096439505055,
+        "sample_standard_deviation": 0.4209425446343078,
+        "standard_error": 0.1882512288848103,
+        "upper": 0.7318301475761377
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "compatibility_jamo/whitespace_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.028932439909169716,
+        -1.203731450510233,
+        0.32358602830360894,
+        -0.22525227576600315,
+        0.034996651465441175
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.945143788650698,
+        "mean": -0.21986669728327116,
+        "sample_standard_deviation": 0.5841170557388649,
+        "standard_error": 0.2612250886898271,
+        "upper": 0.5054103940841558
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "nfc/fixed_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        0.016020789075831487,
+        0.016964895651746303,
+        0.014311865666213563,
+        0.018008869059517707,
+        0.01563036903742976
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": 0.014455924128007887,
+        "mean": 0.016187357698147765,
+        "sample_standard_deviation": 0.0013944461933724302,
+        "standard_error": 0.0006236152958693141,
+        "upper": 0.017918791268287642
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "nfc/whitespace_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.019374208282798122,
+        -0.019331491075206486,
+        -0.011876260638508995,
+        -0.022028346870134996,
+        -0.016191062418851487
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.02258418190186122,
+        "mean": -0.017760273857100016,
+        "sample_standard_deviation": 0.0038850351097515544,
+        "standard_error": 0.0017374405200755662,
+        "upper": -0.01293636581233881
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "nfd/fixed_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.5742027357917507,
+        -2.3670478902343177,
+        0.9434902226898956,
+        -0.5878781258683077,
+        0.5668010185565748
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -2.0076928169684765,
+        "mean": -0.4037675021295811,
+        "sample_standard_deviation": 1.2917547564646599,
+        "standard_error": 0.577690289142733,
+        "upper": 1.200157812709314
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "nfd/whitespace_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.2785948726972478,
+        -1.2415406217246456,
+        -0.5881130138662058,
+        -0.5389287683800816,
+        -0.7497665523243313
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -1.1226053006663674,
+        "mean": -0.6793887657985025,
+        "sample_standard_deviation": 0.35695369464061133,
+        "standard_error": 0.15963454520722184,
+        "upper": -0.2361722309306375
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "original/fixed_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        0.016020789075831487,
+        0.016964895651746303,
+        0.014311865666213563,
+        0.018008869059517707,
+        0.01563036903742976
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": 0.014455924128007887,
+        "mean": 0.016187357698147765,
+        "sample_standard_deviation": 0.0013944461933724302,
+        "standard_error": 0.0006236152958693141,
+        "upper": 0.017918791268287642
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "original/whitespace_minus_codepoint": {
+      "paired_differences_bits_per_source_codepoint": [
+        -0.019374208282798122,
+        -0.019331491075206486,
+        -0.011876260638508995,
+        -0.022028346870134996,
+        -0.016191062418851487
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.02258418190186122,
+        "mean": -0.017760273857100016,
+        "sample_standard_deviation": 0.0038850351097515544,
+        "standard_error": 0.0017374405200755662,
+        "upper": -0.01293636581233881
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    }
+  },
+  "schema_version": 1,
+  "scope": "NFC-trained compact Korean BLT checkpoints evaluated without retraining; oracle Hangul-unit policy is non-causal",
+  "source": {
+    "run_result": "runs/phase2-normalization/normalization-results.json",
+    "run_result_sha256": "2acb572d9740a75ce23e978490b1bcb5e6f5af8c1c50f530db55e52dbbb9f501",
+    "source_stream": {
+      "discarded_incomplete_tail_bytes": 1,
+      "primary_selected_bytes": 999936,
+      "source_text_sha256": "df7229754028c7ad1f4b6aaa1659527f5c3f758659ef690aea7a40582cfe013b",
+      "strict_decodable_prefix_bytes": 999935
+    }
+  }
+}

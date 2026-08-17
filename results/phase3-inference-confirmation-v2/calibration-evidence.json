@@ -1,0 +1,374 @@
+{
+  "calibration": {
+    "predicted_bytes_per_sequence": 511,
+    "sequence_count": 15625,
+    "sequence_length": 512,
+    "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+  },
+  "complete": true,
+  "device": "mps",
+  "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+  "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+  "initial_calibration_evidence_artifact_sha256": "7f6e80e79778892a6b6f8f818d4062d4bd6a9a2114d91444a0dec439703e05e1",
+  "initial_calibration_evidence_payload_sha256": "dfc1192affaba7c19905b31e242637c499009c07c57cc78cc3364557ee080dfa",
+  "integrity_pass": true,
+  "kind": "phase3_confirmation_calibration_evidence_v2",
+  "manifest_sha256": "0e9e5a4dbdf0139a1ad7bd4add3b59515ade24448ed6547c8839cfe91269d65c",
+  "model_artifact_role_order": [
+    "candidate",
+    "matched_efficiency_baseline",
+    "same_rate_codepoint_control"
+  ],
+  "models": [
+    {
+      "artifact_role": "candidate",
+      "descriptor": {
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "policy": "causal_whitespace_grid_72",
+        "requires_entropy_router": false,
+        "runtime_policy": "causal_whitespace_grid"
+      }
+    },
+    {
+      "artifact_role": "matched_efficiency_baseline",
+      "descriptor": {
+        "model_family": "phase3",
+        "patch_count": 86,
+        "policy": "causal_codepoint_grid",
+        "requires_entropy_router": false,
+        "runtime_policy": "causal_codepoint_grid"
+      }
+    },
+    {
+      "artifact_role": "same_rate_codepoint_control",
+      "descriptor": {
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "policy": "causal_codepoint_grid_72",
+        "requires_entropy_router": false,
+        "runtime_policy": "causal_codepoint_grid"
+      }
+    }
+  ],
+  "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+  "plan_payload_sha256": "3f315167cc394c6bb1d108573cca653b188b9703892a71f850cf02126ca9fddd",
+  "receipts": {
+    "57721": {
+      "candidate": {
+        "artifact_role": "candidate",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6390278414278936,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+          "nll_array_sha256": "d7ca254ca5948910a4d9cf9a99f3f64ea7eb732215cbffb3884e27720b037630",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-57721/candidate-nll.npz",
+          "nll_artifact_sha256": "88edd3d0fa5eaf5b97c04d59e2b7889e5b4864468e2507fc0fd54a3d9d1fd8e5",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "c242e8391f3d66f35418924372283bcf562d2e297dd26aace5e15c685e512aba",
+          "path": "artifacts/phase3-compute-conversion/seed-57721/causal_whitespace_grid_72.pt",
+          "state_sha256": "c661b949e84c0dd973d9e39f2f100957056b9f04837020e93c4f9d76ab77fe64"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "compute_conversion",
+          "patch_count": 72,
+          "policy": "causal_whitespace_grid_72",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_whitespace_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "receipt_sha256": "9f6fb442c2db1266f9c8909580d2ce6c98c27bfa89c7c89568d27ed27446ca07",
+        "schema_version": 2,
+        "seed": 57721,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "9aced996c9d2f8e21a1965cbfd7d0ac989139760201f51360bdd3ffecc9db9f6",
+          "path": "runs/phase3-compute-conversion/seed-57721/causal_whitespace_grid_72.json"
+        }
+      },
+      "matched_efficiency_baseline": {
+        "artifact_role": "matched_efficiency_baseline",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.634344180590965,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+          "nll_array_sha256": "5b3031752045da6ecee34329820b6903cbe907332b7024dbe2638f8db2c72b94",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-57721/matched_efficiency_baseline-nll.npz",
+          "nll_artifact_sha256": "7048e75627a643544c4c6d934f46da6829f01b8db192795728cd3ca43402756c",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "6648ddec7565540d8f0306be3d15ca552c88f77527cc0c15a71c438a12ebc87d",
+          "path": "artifacts/phase3/seed-57721/causal_codepoint_grid.pt",
+          "state_sha256": "adcbccb7a12d9be08466795f0d34aca935f9a063cc7a78086a210dc5e3249e76"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "phase3",
+          "patch_count": 86,
+          "policy": "causal_codepoint_grid",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_codepoint_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "receipt_sha256": "45b5014e9be0ed9c967a059f4fba2504a2c4fb9a0f746eb038918e77cc7559be",
+        "schema_version": 2,
+        "seed": 57721,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "85246dd31883cfe94909bcc5a9d1057d59d858f96f7edcddaec0c635d7469c58",
+          "path": "runs/phase3/seed-57721/causal_codepoint_grid.json"
+        }
+      },
+      "same_rate_codepoint_control": {
+        "artifact_role": "same_rate_codepoint_control",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6503158536323264,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "f2b8041fcb12776ca219c0e16e672fff0005060d53f11d556d2cb26e8aee0314",
+          "nll_array_sha256": "8ef4a347f774edc3d5007c3a4e618ce90e2bed30bd0593e5444af494c087089d",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-57721/same_rate_codepoint_control-nll.npz",
+          "nll_artifact_sha256": "9b1835f75c49865386eb885a9acefc953d4e66f0038b32349c050195dd856323",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "d6056117da39497c90ad6759280f5b5887394e5f89ebfd236ffd4bd1ab9697c7",
+          "path": "artifacts/phase3-compute-conversion/seed-57721/causal_codepoint_grid_72.pt",
+          "state_sha256": "bcc19af57a4cfa8e24699d55c8336602ec588b9815f79665b4b3682920443078"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "compute_conversion",
+          "patch_count": 72,
+          "policy": "causal_codepoint_grid_72",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_codepoint_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "receipt_sha256": "bc5bfc0520d31263d4b26409728fab224a3231b9889a296427c6552719aa6493",
+        "schema_version": 2,
+        "seed": 57721,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "225f50ba94b1b4b8f51dbbe7e26b47da83641dd1a46050fb3786b0f8f44aa029",
+          "path": "runs/phase3-compute-conversion/seed-57721/causal_codepoint_grid_72.json"
+        }
+      }
+    },
+    "65537": {
+      "candidate": {
+        "artifact_role": "candidate",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6339113824785074,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+          "nll_array_sha256": "6d015e165b05f05b823474c20e00ca73eb0ee02b3e89ad8fad284efb78801666",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-65537/candidate-nll.npz",
+          "nll_artifact_sha256": "f1fc48d626a49dc7e97b6d040353d81059d6ab5070300fca236d2687ebb3099a",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "3a7eaa76a2fa485173ef39da8884b3e633b0b20173a9f3a7f8eee180b4b95806",
+          "path": "artifacts/phase3-compute-conversion/seed-65537/causal_whitespace_grid_72.pt",
+          "state_sha256": "c590c829adf67972e5dd66322b047640d9adc133e10836d5c00f59c65a45cac7"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "compute_conversion",
+          "patch_count": 72,
+          "policy": "causal_whitespace_grid_72",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_whitespace_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "receipt_sha256": "6c03f5d6d28166076f738669bbdcf5c17bd42b4062924598dac04976722f2bb4",
+        "schema_version": 2,
+        "seed": 65537,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "ac8f474c8168d29032816511849fed872977b532a231728e48f014ea6b0e6b6b",
+          "path": "runs/phase3-compute-conversion/seed-65537/causal_whitespace_grid_72.json"
+        }
+      },
+      "matched_efficiency_baseline": {
+        "artifact_role": "matched_efficiency_baseline",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6301584868087766,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+          "nll_array_sha256": "180e2c3281fb840e54a026610a842615ae0fb9f9d8befea63297201019dbe865",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-65537/matched_efficiency_baseline-nll.npz",
+          "nll_artifact_sha256": "d447fcdbe864275d78c6eaf9686f44a75baa0bf66d84360b713ee16926f8bff1",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "3086814b42b7c23649540e6867b493e38abd9d882853e22f843abf2b567f739a",
+          "path": "artifacts/phase3/seed-65537/causal_codepoint_grid.pt",
+          "state_sha256": "f258c961885968cfb6373d26cf4308aa6d26f8ee29571b2974dba9e55f6805cc"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "phase3",
+          "patch_count": 86,
+          "policy": "causal_codepoint_grid",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_codepoint_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "receipt_sha256": "0a7edb23f9cacdf49f70e2f3412a5d912add2d0893af30a1b175c16c911b76f0",
+        "schema_version": 2,
+        "seed": 65537,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "a18b96d28c4516ea7a3838587d5dc9d5b43b64325cc6fb529eefb04cdbab107f",
+          "path": "runs/phase3/seed-65537/causal_codepoint_grid.json"
+        }
+      },
+      "same_rate_codepoint_control": {
+        "artifact_role": "same_rate_codepoint_control",
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6465212533551776,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "f2b8041fcb12776ca219c0e16e672fff0005060d53f11d556d2cb26e8aee0314",
+          "nll_array_sha256": "d96eab4f63fc3cedc3ca45c08c0ae84c1f17030a3e99a3b4a728c40b149d74fe",
+          "nll_artifact_path": "artifacts/phase3-inference-confirmation-v2/calibration/seed-65537/same_rate_codepoint_control-nll.npz",
+          "nll_artifact_sha256": "02a74739f6c2670e57aa78997f28c5138144a05bf4833ae5dd110e94e4fff6c4",
+          "predicted_bytes": 7984375,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "dd5760e4bb55ff2909f236b355043df2190b11676c12e91163ad3bd36678c646",
+          "path": "artifacts/phase3-compute-conversion/seed-65537/causal_codepoint_grid_72.pt",
+          "state_sha256": "3245df8672a01a36f8460a071419548290ca9167dbb192dee7e1332b541d36df"
+        },
+        "complete": true,
+        "descriptor": {
+          "model_family": "compute_conversion",
+          "patch_count": 72,
+          "policy": "causal_codepoint_grid_72",
+          "requires_entropy_router": false,
+          "runtime_policy": "causal_codepoint_grid"
+        },
+        "device": "mps",
+        "evaluator_git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "evaluator_protocol": "jamoflow-confirmation-calibration-v2",
+        "kind": "phase3_confirmation_calibration_receipt_v2",
+        "model": {
+          "parameter_count": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "receipt_sha256": "9f283a272f88baecc71563cacbd1744fd03da7da09573a53f61ef203d5d19af2",
+        "schema_version": 2,
+        "seed": 65537,
+        "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+        "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+        "training_report": {
+          "artifact_sha256": "5c4737ff2ba1382ffe26334b9226a6e0068843afb8eb363cd88a3c54306c0d34",
+          "path": "runs/phase3-compute-conversion/seed-65537/causal_codepoint_grid_72.json"
+        }
+      }
+    }
+  },
+  "schema_version": 2,
+  "seed_order": [
+    57721,
+    65537
+  ],
+  "selection_lock_artifact_sha256": "28513ca90422ffde33b68ac22afbebb8fbccb9b28b325a64ff3d9e44d2dc5251",
+  "selection_lock_payload_sha256": "4ed33252db7bec28fe74966e7e56add0e00dae347d9a3014cc823e757ba5e945",
+  "training_completions": {
+    "compute_conversion": {
+      "artifact": {
+        "git_commit": "c9cde167a19222d4147f3ac510a1e44c3734ff87",
+        "path": "results/phase3-inference-confirmation-v2/compute-conversion-training-completion.json",
+        "sha256": "a21bb56269c26ac694efe8d78bb4153872b3caf41971195b9e7398e7c985f987"
+      },
+      "completion_sha256": "e5f87cd89046c5f9340ed3a31712ba27f1259ff7d701ce31e1f3f18fb7a9933f",
+      "run_git_commit": "aac5a6dda5ab63361d54cad00af298fa137bcfc5"
+    }
+  }
+}

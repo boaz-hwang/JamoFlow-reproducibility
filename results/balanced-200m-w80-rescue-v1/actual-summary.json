@@ -1,0 +1,104 @@
+{
+  "actual_timing": {
+    "by_mode": {
+      "controlled_replay": {
+        "actual_primary_pass": true,
+        "candidate_median_end_to_end_ms": 518.231104,
+        "clauses": {
+          "all_sessions_positive": true,
+          "bootstrap_lower_positive": true,
+          "correctness": true,
+          "point_exceeds_compact_reference": true,
+          "positive_prompts": true
+        },
+        "compact_reference_reduction": 0.026283464474602614,
+        "crossed_bootstrap_95_interval": {
+          "lower": 0.021185082932162775,
+          "upper": 0.03208876777391841
+        },
+        "end_to_end_reduction": 0.028867986788240207,
+        "positive_prompt_count": 16,
+        "positive_session_count": 5,
+        "reference_median_end_to_end_ms": 533.6361039999999,
+        "strong_scale_amplification_support": false
+      },
+      "free_running_utf8_greedy": {
+        "actual_primary_pass": false,
+        "candidate_median_end_to_end_ms": 547.1397710000001,
+        "clauses": {
+          "all_sessions_positive": true,
+          "bootstrap_lower_positive": true,
+          "correctness": true,
+          "point_exceeds_compact_reference": false,
+          "positive_prompts": true
+        },
+        "compact_reference_reduction": 0.025305234146383637,
+        "crossed_bootstrap_95_interval": {
+          "lower": 0.019477937303322708,
+          "upper": 0.030519791651259065
+        },
+        "end_to_end_reduction": 0.02474565797184003,
+        "positive_prompt_count": 16,
+        "positive_session_count": 5,
+        "reference_median_end_to_end_ms": 561.0226455,
+        "strong_scale_amplification_support": false
+      }
+    },
+    "overall_actual_primary_pass": false,
+    "strong_scale_amplification_support": false
+  },
+  "claim_boundary": {
+    "observed_larger_than_compact_requires_primary_pass": true,
+    "one_seed_mechanism_screen": true,
+    "pure_model_scale_causal_effect_claimed": false,
+    "quality_matched": true,
+    "statistically_larger_requires_strong_scale_amplification_support": true
+  },
+  "kind": "balanced_200m_w80_actual_summary_v1",
+  "plan_artifact_sha256": "1561f15be5a6ceb70a667de042cbcfed18f66b0225e7b7ef26d22c6dbbf405ab",
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "schema_version": 1,
+  "session_evidence": {
+    "session-0": {
+      "receipt_git_commit": "f12c171c0ba1ff28f6894f5b5906127b574302d2",
+      "receipt_path": "results/balanced-200m-w80-rescue-v1/sessions/session-0.json",
+      "receipt_sha256": "2df7b8e5de520ebee494f9e7aa3f3c6b844bcf036f06c4145c646fc65f16d27d",
+      "timing_path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-0.npz",
+      "timing_sha256": "cae4844d0748fdd84598217fc61116958d33d57c904f6f08147c78561f313140"
+    },
+    "session-1": {
+      "receipt_git_commit": "ea1810af9d178b9abb719ec8eac5e7829ab6bb54",
+      "receipt_path": "results/balanced-200m-w80-rescue-v1/sessions/session-1.json",
+      "receipt_sha256": "94f4e4bd2d543a959e6247ec1b58b9b38523fc5e177e07f9846b2e14f6b9373d",
+      "timing_path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-1.npz",
+      "timing_sha256": "28b93c5bfc1914f656b9d98350a5aac57f229b33a597142c89a7b7cc5b33ca34"
+    },
+    "session-2": {
+      "receipt_git_commit": "445f6179f95645771a13fb835dde6fa3084e2b41",
+      "receipt_path": "results/balanced-200m-w80-rescue-v1/sessions/session-2.json",
+      "receipt_sha256": "cc18a10edf0b07554bf2a66c74043d140921435c23f31d033895ec1f77769717",
+      "timing_path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-2.npz",
+      "timing_sha256": "517ba628a94489524a333f876f82e6f6091040b347391dafb8883021bc9c1e1f"
+    },
+    "session-3": {
+      "receipt_git_commit": "ffac0b3e690620ab0aa0448bfb2af973850072e4",
+      "receipt_path": "results/balanced-200m-w80-rescue-v1/sessions/session-3.json",
+      "receipt_sha256": "3d3fb1b4407dd903ce32ce89be5156e6cbdb35d532738c5438f566838e88545a",
+      "timing_path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-3.npz",
+      "timing_sha256": "f3f247feaef0329aee5352aacf684d5ff0f284e1c879a0e82dbede2d57f32264"
+    },
+    "session-4": {
+      "receipt_git_commit": "1453d4b737a96ffa57817ffeb3b200fab3d411a0",
+      "receipt_path": "results/balanced-200m-w80-rescue-v1/sessions/session-4.json",
+      "receipt_sha256": "3856cb92fea578519d3dc74b4facd22a1406d529eb15a947c5a93fb4b12ba9d2",
+      "timing_path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-4.npz",
+      "timing_sha256": "a02c16593fcc886da32de0b5bc8e91edf4195878ee2f00b585c435f1c9a5882b"
+    }
+  },
+  "status": "w80_actual_primary_fail",
+  "summary_base_git_commit": "1453d4b737a96ffa57817ffeb3b200fab3d411a0",
+  "summary_sha256": "fba0445549308d84630352dc0637b4115ee2d7c3fc703ccb2d831b7a8003423e",
+  "verification_artifact_sha256": "d9db37cd7f6624799a7529531a2368bbbc4b02dbcdf8e821a78ae72cd5776142",
+  "verification_receipt_sha256": "55542e304c28eb5276d4aeaee69360a63fd87459791a4283db8660456d562ef6"
+}

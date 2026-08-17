@@ -1,0 +1,250 @@
+{
+  "actual_timing_gate": {
+    "atol": 2e-05,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260905,
+    "compact_reference_reduction_exclusive": {
+      "controlled_replay": 0.026283464474602614,
+      "free_running_utf8_greedy": 0.025305234146383637
+    },
+    "controlled_continuation_bytes": 128,
+    "correctness_prompts": 4,
+    "maximum_free_output_bytes": 131,
+    "measured_prompts": 16,
+    "minimum_positive_prompts": 15,
+    "minimum_positive_sessions": 5,
+    "mode_order": [
+      "controlled_replay",
+      "free_running_utf8_greedy"
+    ],
+    "prompt_bytes": 128,
+    "repetitions": 3,
+    "repetitions_are_independent_samples": false,
+    "rtol": 0.0001,
+    "session_order": [
+      "session-0",
+      "session-1",
+      "session-2",
+      "session-3",
+      "session-4"
+    ],
+    "strong_amplification_requires_lower_over_compact_point": true,
+    "timing_scope": "runtime construction + structural selector + parallel prefill + cached incremental decode + argmax/UTF8 DFA/stop + final MPS sync",
+    "warmup_prompts": 4
+  },
+  "cases": {
+    "case_count": 20,
+    "continuations_array_sha256": "311b3f35f77f1d1f40ddd4a0cf3471ffc7dd699e8baedf049b53be1e9197b7c4",
+    "prompts_array_sha256": "33da0417271d3e5de450dd1ad6e6be2297b90f3c988e13640aa34e3fbfa11500",
+    "selection_uses_w80_output_quality_or_latency": false,
+    "upstream_scale_plan_artifact_sha256": "fb160915e76389c2712d6d5b9b05869235f10f792cb7e899cfc84e236d9d8203",
+    "upstream_scale_plan_path": "data/manifests/scale-schedule-extrapolation-v1.json",
+    "upstream_scale_plan_sha256": "4d74456b8f01666b661ecfa76deb1aa86f47dfd8a5116b71e4000ea10e6c5bb5"
+  },
+  "claim_boundary": {
+    "actual_timing_requires_quality_and_independent_replay_pass": true,
+    "one_seed_mechanism_screen": true,
+    "pure_model_scale_causal_effect_claimed": false,
+    "single_candidate_no_fallback": true,
+    "sufficiently_trained_llm_claimed": false,
+    "w82_or_w84_automatic_followup_authorized": false
+  },
+  "data": {
+    "c86_calibration_patch_matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+    "c86_training_patch_matrix_sha256": "2939af18c59b120555fb30b0a71105608650bc23469e26dd4fff16f6b628538f",
+    "calibration_bytes": 8000000,
+    "calibration_examples": 15625,
+    "calibration_inputs_array_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+    "historical_test_or_final_metric_used": false,
+    "inputs_array_sha256": "f8a25025aa8763ef7a8b0f5c63568cda6dda99d4af71a579b3f845d5d2ea21be",
+    "integrity_path": "data/processed/hplt3-korean-phase3/integrity.json",
+    "integrity_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "preflight_examples": 96,
+    "preflight_inputs_array_sha256": "74a6aa01e054eb0337fc143edd4bd546c419375f529e34b759c934f05d933acc",
+    "sequence_length": 512,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "training_order_array_sha256": "b63c5ba8138f01e4458ad93a635f8062f98c75a784467399d20303f5a4988575",
+    "training_order_seed": 20260901,
+    "used_train_bytes": 127991808,
+    "used_train_sequences": 249984,
+    "w80_calibration_patch_matrix_sha256": "8bba2d8d4f2ee0ea614e20bad9c89f02892cee252bdbede529144a4b566edf3c",
+    "w80_preflight_patch_matrix_sha256": "7e1cb2aaf33c4d8ec23a471eb56ba4da3e2f613cf6d8f56a135e50aba8194463",
+    "w80_training_patch_matrix_sha256": "08f6cc3c92ca72fe746973f0401f1a8b5381960c51d7ccd9077d398172f48087"
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin"
+  },
+  "git_commit_before_plan": "6dc60d3e1fe5422732d23cefcda907a40ce6a888",
+  "implementation_sha256": {
+    "docs/197-balanced-200m-quality-failure-result-and-w80-pivot.md": "6b889adc163bb5bfee41e1467f41020b0599dead380b9c51c0e75606bb37a802",
+    "docs/198-balanced-200m-w80-rescue-protocol.md": "d338c4722c14e18e7eceb73a457da155e8032bd84a9b2748954141d0d44935ea",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/balanced_200m_failure_analysis_core.py": "0908b9a6cc0adc3feacf500e7ff23db79df093ff509a1d10057765964e79b3ef",
+    "scripts/balanced_200m_trained_core.py": "95558a467d68ab910fbeab1859608fd578635b50e113b88e9202740c2e9986da",
+    "scripts/balanced_200m_w80_core.py": "8650181f4ab39136f29132a8193830cad0a31f8ca36cdf3cc88c0970130da85a",
+    "scripts/benchmark_balanced_200m_w80_actual.py": "d59e6357bf6769e6f9c669d30a76d462971146b5bc397728dd8bfaa33050f8d0",
+    "scripts/run_balanced_200m_preflight.py": "3fa6b0e2839c4cf4f9d95de934f3206852079b70f0951f6c0025b47305ae5a18",
+    "scripts/run_balanced_200m_training.py": "82aa0d4f4fa0d39908af8bc104a59770e8f5c2fbd46a65575cb547c5fc31c3c9",
+    "scripts/run_balanced_200m_w80_preflight.py": "1340f6045ef4ef5fe39813b2526f15b7eb7f680534ec53901872607794e17dfd",
+    "scripts/run_balanced_200m_w80_training.py": "f2ddd3ab3549c6792020ba6b654ee1837d7c6e1e39c755efc878667f6c23a67e",
+    "scripts/scale_schedule_extrapolation_core.py": "feef965a3167daf633317e7ed49e29a3f37680e7dcd7b1db00b0e10f61818d81",
+    "scripts/seal_balanced_200m_w80_plan.py": "a8ec16bb829323ba2b2acdfaf68af8d8c0a68e21699a1dbbf97aee1d906a9c15",
+    "scripts/summarize_balanced_200m_w80_actual.py": "083712e08ff83416a6554b33a572cd7efd4378db0159aa57d245186d68e61296",
+    "scripts/verify_balanced_200m_w80_preflight.py": "4f5692d52e993026504c45b5e997a0e788ed365e5277338fda5a75d7ee7d0d92",
+    "scripts/verify_balanced_200m_w80_training.py": "070b2d4e3f2fb0371a62cd7e73a50ce4e872b0dca3ec64d29a66a8847aeafe08",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/incremental_blt.py": "d82ca95a6509490e443258c84788bab17817e47bd62481880bd8ed08f64e0ef7",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/neural_training.py": "8834d32f9d5647d5a121f9bbc631349590c6333d6cfec6b9d8878b7fb65a6549",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_balanced_200m_w80_rescue.py": "4a1ee541c97e3ac7311910ff34a0fa9646a2f7b4845c1163ce542b2020603cba"
+  },
+  "kind": "balanced_200m_w80_rescue_plan_v1",
+  "model": {
+    "expected_parameter_count": 188639808,
+    "global_position_limit": 1032,
+    "initial_state_sha256": "24d36d42d527646091d878f18cbcef4b02db40fe15fcf37b45f4003cb070c9b9",
+    "model_seed": 20260816,
+    "spec": {
+      "cross_attention_k": 2,
+      "decoder_layers": 2,
+      "encoder_layers": 2,
+      "global_ffn": 2688,
+      "global_heads": 14,
+      "global_layers": 16,
+      "global_width": 896,
+      "hash_group_size": 3,
+      "hash_vocabulary": 16384,
+      "local_ffn": 1344,
+      "local_heads": 14,
+      "local_width": 448,
+      "patch_count": 86,
+      "patch_stride": 6,
+      "router_ffn": 1344,
+      "router_heads": 14,
+      "router_layers": 4,
+      "router_width": 448,
+      "sequence_length": 512,
+      "vocab_size": 256
+    },
+    "target_millions": 200
+  },
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "effective_batch_sequences": 32,
+    "epsilon": 1e-08,
+    "evaluation_batch_sequences": 8,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.0003,
+    "microbatch_sequences": 8,
+    "minimum_learning_rate": 3e-05,
+    "name": "torch.optim.AdamW",
+    "parameter_dtype": "float32",
+    "source_bytes_per_update": 16384,
+    "total_updates": 7812,
+    "training_log_every_updates": 100,
+    "warmup_lr_updates": 100,
+    "weight_decay": 0.1
+  },
+  "outputs": {
+    "artifact_root": "artifacts/balanced-200m-w80-rescue-v1",
+    "candidate_checkpoint_path": "artifacts/balanced-200m-w80-rescue-v1/trained-w80.pt",
+    "candidate_nll_path": "artifacts/balanced-200m-w80-rescue-v1/calibration-w80-nll.npz",
+    "candidate_report_path": "artifacts/balanced-200m-w80-rescue-v1/training-w80.json",
+    "preflight_summary_path": "results/balanced-200m-w80-rescue-v1/preflight.json",
+    "timing_receipt_root": "results/balanced-200m-w80-rescue-v1/sessions",
+    "timing_summary_path": "results/balanced-200m-w80-rescue-v1/actual-summary.json",
+    "training_summary_path": "results/balanced-200m-w80-rescue-v1/training-summary.json",
+    "verification_path": "results/balanced-200m-w80-rescue-v1/verification.json"
+  },
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "preflight": {
+    "maximum_hours_candidate": 12.0,
+    "maximum_memory_fraction": 0.75,
+    "measurement_updates": 2,
+    "warmup_updates": 1
+  },
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "quality_gate": {
+    "block_size_sequences": 64,
+    "bootstrap_97_5_percent_upper_must_be_at_most_margin": true,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260904,
+    "historical_test_or_final_metric_used": false,
+    "independent_full_checkpoint_replay_required": true,
+    "margin_bpb": 0.01,
+    "mean_delta_must_be_at_most_margin": true
+  },
+  "roles": {
+    "candidate": {
+      "patch_count": 80,
+      "policy": "causal_whitespace_grid",
+      "role": "w80"
+    },
+    "reference": {
+      "immutable_training_evidence": {
+        "calibration_nll_array_sha256": "c6976aef9ddf703c69dbaf10d0c00029078fee1f00f779c8f05323ee52226814",
+        "calibration_nll_path": "artifacts/balanced-200m-trained-screen-v1/calibration-c86-nll.npz",
+        "calibration_nll_sha256": "6bdd3d3280bf61bc94a1405a12470a9298b2c4f162770c0045ee9c416a9fb7f1",
+        "checkpoint_path": "artifacts/balanced-200m-trained-screen-v1/trained-c86.pt",
+        "checkpoint_sha256": "dcaec8935cd60a40b194e6df5e82a4815fcd4591cb5c79c322bfa7994d110a2f",
+        "checkpoint_state_sha256": "c43423ee4cf645e0c76e1630b2c507a75fd2533e32f7119e26f816c51b926cc6",
+        "report_path": "artifacts/balanced-200m-trained-screen-v1/training-c86.json",
+        "report_sha256": "df25da47a2625298e6cab9a677dbc13d6189b922c3c3315247f43fe49a62a211"
+      },
+      "patch_count": 86,
+      "policy": "causal_codepoint_grid",
+      "role": "c86"
+    }
+  },
+  "schema_version": 1,
+  "status": "sealed_before_w80_preflight_training_quality_and_timing",
+  "upstream": {
+    "base_plan": {
+      "artifact_sha256": "31ee5ea7cc13f29919d5cdabdf642f92a4b612aab48b90571f86fd7b26c20238",
+      "path": "data/manifests/balanced-200m-trained-screen-v1.json",
+      "plan_sha256": "9879890b664d6fdc31e558833e9e3285911837c8f7b2b9b722cd1b8cf48a6558"
+    },
+    "base_training_summary": {
+      "artifact_sha256": "35a64094debad853c0600809bd23d5fef9013a13d1d2fd3c4abfad7821d9d826",
+      "path": "results/balanced-200m-trained-screen-v1/training-summary.json",
+      "summary_sha256": "4467484d5bfae7303d0665d2aca46d1d7bdd17f084c5e436436f046456060d10"
+    },
+    "base_verification": {
+      "artifact_sha256": "3b80aed5a667cf4aab027f0bc88b09ebf1df49ebd1105cc9057b67822741082a",
+      "path": "results/balanced-200m-trained-screen-v1/verification.json",
+      "receipt_sha256": "e110078aae244dc5a2c814cb6f63555612d609118a4c66ec92bc9ce6ebd7bcc8"
+    },
+    "failure_analysis": {
+      "analysis_sha256": "ef8be87e1d9a300b7c64a90bda094d33f67f4bb520c152eb9b0ceca2e8196f7f",
+      "artifact_sha256": "3722c82ea718b719d8d4d2d7b28fb4f484ba8a388c45ea5953a22e53ac6bf350",
+      "path": "results/balanced-200m-trained-screen-v1/quality-failure-analysis.json"
+    }
+  }
+}

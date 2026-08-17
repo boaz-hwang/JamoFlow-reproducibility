@@ -1,0 +1,1500 @@
+{
+  "calibration": {
+    "predicted_bytes_per_sequence": 511,
+    "sequence_count": 15625,
+    "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+  },
+  "complete": true,
+  "device": "mps",
+  "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+  "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+  "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+  "kind": "phase3_calibration_evidence_manifest_v2",
+  "manifest_sha256": "dfc1192affaba7c19905b31e242637c499009c07c57cc78cc3364557ee080dfa",
+  "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+  "plan_payload_sha256": "3f315167cc394c6bb1d108573cca653b188b9703892a71f850cf02126ca9fddd",
+  "policy_order": [
+    "fixed_byte_6",
+    "causal_codepoint_grid",
+    "causal_whitespace_grid",
+    "spacebyte_spacelike",
+    "entropy_threshold_full",
+    "entropy_threshold_codepoint",
+    "causal_codepoint_grid_64",
+    "causal_whitespace_grid_64",
+    "causal_codepoint_grid_72",
+    "causal_whitespace_grid_72"
+  ],
+  "receipts": {
+    "1729": {
+      "causal_codepoint_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6328873663590224,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+          "nll_array_sha256": "70aa71aa03735c40c0679a67b36feae00db491ec91094c5ba5ab53a90552a448",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_codepoint_grid-nll.npz",
+          "nll_artifact_sha256": "84c3729a76c8c6d1c2152c0d3a0a510003714dbc08203b5685f0231dd7f9d7df",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6328873630835787,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "acf5c3bbfe06a6886c7ae3862d256f3eb9dbc54b5e73255c2f494accb9e50c48",
+          "path": "artifacts/phase3/seed-1729/causal_codepoint_grid.pt",
+          "state_sha256": "3c8b3a0524be32c1a19243ab69613c1cfd47f8334e6ae74dbf9e1d5ef72872d6"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid",
+        "receipt_sha256": "94a974b507438e3416f3e66c4b4e4e487d68722912fd2bac7c52edc008a68bca",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "383e472da72f6707ef6aca7480148079446cac1cfa7dfe38383d1689cb756cee",
+          "path": "runs/phase3/seed-1729/causal_codepoint_grid.json"
+        }
+      },
+      "causal_codepoint_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6607724030810587,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "52df02ef1e4f6a0e9d85e89de0e8d45dd9b260dcb75ec8c194448d4f9b8f204b",
+          "nll_array_sha256": "411a3019e59ef9b2f64fd654bd4c527b037b03c86cfa6e6e7dcd4f47da7ee040",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_codepoint_grid_64-nll.npz",
+          "nll_artifact_sha256": "74c4f40f77925f58e08d26b82ad2dc8aeef40b12b2d20e38e2f410f52744105b",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.660772403748279,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "8b057a685b4ca49f9d9b6f52ba325fe4d45ddc69553d2b45465e02ac4a08a75d",
+          "path": "artifacts/phase3-compute-conversion/seed-1729/causal_codepoint_grid_64.pt",
+          "state_sha256": "2cd2018195c4fe6964a6123d95d5dc7ce1733a3c7656ee3b111ae93686c928c6"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_64",
+        "receipt_sha256": "173b90821372b4473a60d92b56292f64d0e9f2ca9327277d59c24d8006eed614",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "bc464d910aac9942201aee23d6e006720b79ba448cf6a085bcd5117807c29486",
+          "path": "runs/phase3-compute-conversion/seed-1729/causal_codepoint_grid_64.json"
+        }
+      },
+      "causal_codepoint_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6481048582710602,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "f2b8041fcb12776ca219c0e16e672fff0005060d53f11d556d2cb26e8aee0314",
+          "nll_array_sha256": "313cdc4391ea6399b5c7adc83985255750e8c25720d0483670f6749a9b69a42c",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_codepoint_grid_72-nll.npz",
+          "nll_artifact_sha256": "425f61a5567a62549c0a6531fa78e8fe51d5c24f101b8772aeece41ba2506ec8",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.648104860967511,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "0cbac8e44c97a11cae88315371cf9eb6c5b6536c0c8de2ab0c463593287d94d3",
+          "path": "artifacts/phase3-compute-conversion/seed-1729/causal_codepoint_grid_72.pt",
+          "state_sha256": "0e37fe565163748f33e0411b5751f9c8339065fbe823fa83bb1481b3425c808a"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_72",
+        "receipt_sha256": "939e4683bf63c5e47b46f74c0300634fdf33415750bef9775cf3484afe2e3852",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "f54747ca0da13cab367d7effae806cd0cf343d7dc1902e79302e119d0408990c",
+          "path": "runs/phase3-compute-conversion/seed-1729/causal_codepoint_grid_72.json"
+        }
+      },
+      "causal_whitespace_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6240038244041857,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "4826bb4554c2ca26dda42f50bb9cc7a506314a06a28e271ee44b9e60f60a4bca",
+          "nll_array_sha256": "485807b381afb235205f7696da87421ca772328dcf4ffcba69ba4c302d846bdd",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_whitespace_grid-nll.npz",
+          "nll_artifact_sha256": "d97d3a9e97526efabb034c498e6e366c0d80970ddb003038e87150213bfb7495",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6240038285288183,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "96f09e69e0b92d2af6477dc27b32393ab18cee6fcbc1c811031b7c653bb5f120",
+          "path": "artifacts/phase3/seed-1729/causal_whitespace_grid.pt",
+          "state_sha256": "44c2200e9917a378979bb92a0489fbc47e7f4a2b5f40c591267c424df6fcffdb"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid",
+        "receipt_sha256": "f63b9763f6613c4f56143cb55fb157896f01a13a8dbbbf5e36c0416fadcf7127",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "9f682273cdf228b81c18558efecb6e950348467ffa00349ce81c98e9e38699ff",
+          "path": "runs/phase3/seed-1729/causal_whitespace_grid.json"
+        }
+      },
+      "causal_whitespace_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6498980375035663,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "3954be7e20d11ad7dc2e8ea405ce2c1d5c86602895c57566d87c901690d967b2",
+          "nll_array_sha256": "b1e58f8aa47856b99b2d2db89d89ebcaf19bec6bd671add666f4db27f4ca16aa",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_whitespace_grid_64-nll.npz",
+          "nll_artifact_sha256": "9f7d64d631ff73c8e134f4800a517a775070950f2007fc9b3ccf448193cadc95",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6498980367646616,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "5e4313a9a6e0c26e7b693909dfb4d8a13a775c1b842ed2ee004e29cefb6a2fe0",
+          "path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_64.pt",
+          "state_sha256": "6bbdb820f952f236985243262106051c809d267cf90dee1f75e9404617a2d175"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_64",
+        "receipt_sha256": "c7e5046fbe507985867c72396790d02c3bda51a106b04d8e1453400c205575da",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "86bc6f6fa5256915c8757a2f838b36768edd90002e8d0c5af7febcc9450f9ffa",
+          "path": "runs/phase3-compute-conversion/seed-1729/causal_whitespace_grid_64.json"
+        }
+      },
+      "causal_whitespace_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6379348855475488,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+          "nll_array_sha256": "245a6b6d17c3d7ea3a4157f1397d8e3bad5f0a15ca50dbbfbd75031cb2fbb268",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/causal_whitespace_grid_72-nll.npz",
+          "nll_artifact_sha256": "308c4dd0bc05b3e73d8e7dce317e0d68699b2d5c75b42d66c6b3b2c83020b3f2",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6379348832205503,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "ace22440cbddd319d07666c71299972a6b4c4792711431eba209e6b1ddebebb6",
+          "path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.pt",
+          "state_sha256": "774191164214fd993685b52012c729821f8efc679d492d2db69c86507909745f"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_72",
+        "receipt_sha256": "088eda9ba124f79548c5170f8b4dc5f9544ade060096453c8b0f13a8632ca41b",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "9fb009875615a6c1744a0f8a0ab30c155c7036a82434639eb48d50cc3dddc119",
+          "path": "runs/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.json"
+        }
+      },
+      "entropy_threshold_codepoint": {
+        "auxiliary": {
+          "cache_artifact_sha256": "851ff6c1d1c7db69b87a8b1d2df69ee3a466961124cd9e32136ec5a6fc6fbc9f",
+          "cache_path": "artifacts/phase3/seed-1729/threshold-patches.npz",
+          "candidate_mask": "codepoint",
+          "diagnostics_artifact_sha256": "c5dfe21743b28a914fdce9b6e109e912624f0b756627c93c6cce8ebed4c11bba",
+          "diagnostics_path": "runs/phase3/seed-1729/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "a43fc129c1766fb889b6c42c0073bdf245f374b4cab4dc3bfa3767dc5694cb86",
+          "router_checkpoint_path": "artifacts/phase3/seed-1729/router.pt",
+          "router_report_artifact_sha256": "ae7b92318acb3bc5d1e5d408dd93978fdf5e0bd90bc34006adf4d449bed490e6",
+          "router_report_path": "runs/phase3/seed-1729/router.json",
+          "router_scores_sha256": "931b1d1ec350bcf1b7dded0f5f7cf5d3abbb30a1deb1959661bc9613e6d88dc4",
+          "router_state_sha256": "856fc1b9b5d58beeafaa0bafc690ed9f7668440c8964b345310dbea3ad412dc4",
+          "threshold_nats": 1.402737482450903
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6472743587190972,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "95081434148d59c6d24d890f7c518c85bc77e3f16faf0ce7c709959968f3ca16",
+          "nll_array_sha256": "38913b11222f9c7829fba29e3598eb152501043acd43d4a1fe0cb6bfdbdbf3b2",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/entropy_threshold_codepoint-nll.npz",
+          "nll_artifact_sha256": "22d4012594c936c1fb60c09dcc57f62ae9939a83d7f7602d389c234ba3e435c8",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6472743565216827,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "a3132d323f1102465ec4d51aab2ecf5ed97f72cbfd2ab2fcb46c1804a328b5d4",
+          "path": "artifacts/phase3/seed-1729/entropy_threshold_codepoint.pt",
+          "state_sha256": "4b73c328a998f373638bd6ef5b9d2705382c475f2b99dd69f9c0cbac6e61b6dd"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_codepoint",
+        "receipt_sha256": "6813907434b114bad9cd1c8b0e0b4e91ed2268c8bbe36d1c7bf14ccfd156e5ea",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "9a972030321f1aba384143a6190a1072a8b7e62fca5c0929c2d64b9deefd091b",
+          "path": "runs/phase3/seed-1729/entropy_threshold_codepoint.json"
+        }
+      },
+      "entropy_threshold_full": {
+        "auxiliary": {
+          "cache_artifact_sha256": "851ff6c1d1c7db69b87a8b1d2df69ee3a466961124cd9e32136ec5a6fc6fbc9f",
+          "cache_path": "artifacts/phase3/seed-1729/threshold-patches.npz",
+          "candidate_mask": "none",
+          "diagnostics_artifact_sha256": "c5dfe21743b28a914fdce9b6e109e912624f0b756627c93c6cce8ebed4c11bba",
+          "diagnostics_path": "runs/phase3/seed-1729/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "a43fc129c1766fb889b6c42c0073bdf245f374b4cab4dc3bfa3767dc5694cb86",
+          "router_checkpoint_path": "artifacts/phase3/seed-1729/router.pt",
+          "router_report_artifact_sha256": "ae7b92318acb3bc5d1e5d408dd93978fdf5e0bd90bc34006adf4d449bed490e6",
+          "router_report_path": "runs/phase3/seed-1729/router.json",
+          "router_scores_sha256": "931b1d1ec350bcf1b7dded0f5f7cf5d3abbb30a1deb1959661bc9613e6d88dc4",
+          "router_state_sha256": "856fc1b9b5d58beeafaa0bafc690ed9f7668440c8964b345310dbea3ad412dc4",
+          "threshold_nats": 2.119400869123638
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.64105862073928,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "537435b22b1ed3bccb7f17d40b915789b2452f9dea01e28a8bf1c534d7770078",
+          "nll_array_sha256": "6b71914cb6431f12a3683d2454fcf4e6e59a0395ea7f1c616cda297f01e7d653",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/entropy_threshold_full-nll.npz",
+          "nll_artifact_sha256": "9440789de29f350cbc838041619d62bf7f2a4b5258c0d6c17df4a762f1047ee3",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6410586203394995,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "53cc95e64fe709b8780924f6c596daf44cc8158b3cdf635ee44a66f88c416b29",
+          "path": "artifacts/phase3/seed-1729/entropy_threshold_full.pt",
+          "state_sha256": "252db30952cca2be06242ca30af76b358dddaf24f53b85f1cc7f44cd9ddc7b2e"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_full",
+        "receipt_sha256": "e5f24b0a4763563f59c7ea8c4030c750b191719691ef6d0e5bf23d1ca4666683",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "dff41d31f841943c7dbbbd28a9fea580218abbda2c5650d2de8066070dcab7e0",
+          "path": "runs/phase3/seed-1729/entropy_threshold_full.json"
+        }
+      },
+      "fixed_byte_6": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6385637561019208,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "c93d9c66d1e79988a7c42f04b65046317c1eba4a0483e803b76b40d5c2cdeb00",
+          "nll_array_sha256": "440346f009d297c1e21a6e6ae2456066dbef8b113d1bcd2b17a397c98c478c37",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/fixed_byte_6-nll.npz",
+          "nll_artifact_sha256": "4442c8d84def51ae8e9b3b67dc60383b1308a989b6a5f91a06f228337b044357",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6385637559475228,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "5b0c71e2c4c486a3b4838096215a827a702fd16486f7f39c08ed3b66a6e4f077",
+          "path": "artifacts/phase3/seed-1729/fixed_byte_6.pt",
+          "state_sha256": "f2e4e3d4b8e821db8844f2fa1272bfb27036de1bd4bb90ef0d76b3f12b0d0418"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "fixed_byte_6",
+        "receipt_sha256": "470f63385ab781d8d7775d61a58fc69c6fccb464503dcb1765d1167542f0117c",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "50b7bf27b448bfffd4dfd9535b00a49459d9d25c8c7abba7ef3eb92590317292",
+          "path": "runs/phase3/seed-1729/fixed_byte_6.json"
+        }
+      },
+      "spacebyte_spacelike": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.5336641916164393,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "93e2531b38891d08819937346cfbab973a1ceaf2986a628d391fca8eb339074a",
+          "nll_array_sha256": "6c4eed04e3836523010e3ffc806d2d8d496e5705ea664acadad8b9f58627d31f",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-1729/spacebyte_spacelike-nll.npz",
+          "nll_artifact_sha256": "b9d94866af0d800dacc7a975aa11e8db0c5df36d6ab2d95b2ee5e43858b15e87",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.5336641971609823,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "3e0338df6c80bd07b8353ea269b7f7460616ed9795811ad391fac4a3dd923b98",
+          "path": "artifacts/phase3/seed-1729/spacebyte_spacelike.pt",
+          "state_sha256": "faefb5597eb86780700f21af00c439d528bd302f07650d8286b633dc87ef68bd"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "spacebyte_spacelike",
+        "receipt_sha256": "dcca449407b3b81e91794906c030ddc9275922ed5b5fae2367dcca405a2c16bd",
+        "schema_version": 2,
+        "seed": 1729,
+        "training_report": {
+          "artifact_sha256": "20a9bc889d98c953bf776e1db418c03405cba9dcfe18789b5a318a9d4816548e",
+          "path": "runs/phase3/seed-1729/spacebyte_spacelike.json"
+        }
+      }
+    },
+    "2718": {
+      "causal_codepoint_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6312696792340657,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+          "nll_array_sha256": "b513bccdd7e00ed94aa5ca3a3ccd4b7a877ee126c5abe8bba74fe1e640ccc04f",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_codepoint_grid-nll.npz",
+          "nll_artifact_sha256": "f240ac8a59a5936e34f8a90c32e1ac27b41bd6ffd4ba013f398fa03936d0222a",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6312696732456284,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "a4dca503266806702a0221eab92dcb73eca85ed75f49a42184a385af16c098dc",
+          "path": "artifacts/phase3/seed-2718/causal_codepoint_grid.pt",
+          "state_sha256": "0dac534e6ed7adc444254a3cad199ae18e10e8c0f2686752ca1327c46abd5981"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid",
+        "receipt_sha256": "fd1cb373134dc56ac52b887e4907afab9c475228bbb6256ec703cd97d048bbfd",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "0f36bb0aa8a811f18833e2f2bd0b3370909f22e226aeba9342fbd9c21e0a1d85",
+          "path": "runs/phase3/seed-2718/causal_codepoint_grid.json"
+        }
+      },
+      "causal_codepoint_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.656217740554985,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "52df02ef1e4f6a0e9d85e89de0e8d45dd9b260dcb75ec8c194448d4f9b8f204b",
+          "nll_array_sha256": "319651ad3c8b903c7073c93961efe444c28f67bb003ac9080dbc05f55c0cd205",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_codepoint_grid_64-nll.npz",
+          "nll_artifact_sha256": "cc6fab213a418522b8a7ceaa0ac0ea871feb0e168939e1dd86934e9ffe6d3c76",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.656217740599099,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "cfe7e5d25ae9df6bfb8034eec59b1632b8ed49ee5546f6fc98533a184b7f5c2f",
+          "path": "artifacts/phase3-compute-conversion/seed-2718/causal_codepoint_grid_64.pt",
+          "state_sha256": "8edccb98b88e1ca9bce35d0711fb4e4f47bcb4391cf1864e20d19162a9eb1b24"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_64",
+        "receipt_sha256": "9fecfcbb5fd3689ac565d352aae53508fd32c052f77113986aaf625273f1abeb",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "76edbe6823be9f11d9e5d90f5c9dcf894747b4fe986240698d37670953aebd79",
+          "path": "runs/phase3-compute-conversion/seed-2718/causal_codepoint_grid_64.json"
+        }
+      },
+      "causal_codepoint_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6445542181212462,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "f2b8041fcb12776ca219c0e16e672fff0005060d53f11d556d2cb26e8aee0314",
+          "nll_array_sha256": "dbde16b7c9f33a5fad30a28b190e8540fa95e6af3cdcc4f3f567f21bc60c2506",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_codepoint_grid_72-nll.npz",
+          "nll_artifact_sha256": "7dc7e3de51783ada151f7a05e026a9879d04d7eef1139ddd7f50a39efbc11b06",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6445542195163427,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "8eaf437ff67e60dbd4fdc6d0a876250632dce52867051af68ac0a9b41e7a72c3",
+          "path": "artifacts/phase3-compute-conversion/seed-2718/causal_codepoint_grid_72.pt",
+          "state_sha256": "c3198c63c579b12c8c448a0c7340736ac74986b3ed4a2493ea58980e5975c48a"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_72",
+        "receipt_sha256": "eaa109f4741079928234326e83a1b89d698329566e0ee807822e11c7e22c4034",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "d40369d5a36e36a96d1066e954b02e4d977022c1751f71c3e719adafa127ce3c",
+          "path": "runs/phase3-compute-conversion/seed-2718/causal_codepoint_grid_72.json"
+        }
+      },
+      "causal_whitespace_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6203075488186258,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "4826bb4554c2ca26dda42f50bb9cc7a506314a06a28e271ee44b9e60f60a4bca",
+          "nll_array_sha256": "e449e3cf3e9685fc92018b6dffec6c411217bf9c93d2cc7b1f08c8332d40b641",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_whitespace_grid-nll.npz",
+          "nll_artifact_sha256": "351bc927696161c2b75a2ebf8548395963dd5ca8adb5ee7dfa54b6ef34f6fda7",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6203075468721082,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "f2b502cc311ecdf4d5b204a135665d430dea187cd684c3fd239bbc0528f79297",
+          "path": "artifacts/phase3/seed-2718/causal_whitespace_grid.pt",
+          "state_sha256": "6e193a89ca02687184d0781c87720cfd87e21e445866b596b277cbb96e23831e"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid",
+        "receipt_sha256": "40259837f752bfbd915cf92a6feff0d03bc317fb3f1f2ab877faac486f990f37",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "76387949e96149c809f1788cb63fd9ad6678d5dd277058f5d3330b73f7d6e7a8",
+          "path": "runs/phase3/seed-2718/causal_whitespace_grid.json"
+        }
+      },
+      "causal_whitespace_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6460849723929811,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "3954be7e20d11ad7dc2e8ea405ce2c1d5c86602895c57566d87c901690d967b2",
+          "nll_array_sha256": "ee4455583e9f3af2b7e3a6a4a9bae9906632666439da1c2cf87ae37d4c48bfcc",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_whitespace_grid_64-nll.npz",
+          "nll_artifact_sha256": "4ed8908401e3dc3f9601b6f8fb7f854b876858b4d85cc75404616bbfaff756c5",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6460849725087798,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "9945f647362cb1fd597d7ed52b068cf9f75144ff17aa95bab7c752e35f6d9da1",
+          "path": "artifacts/phase3-compute-conversion/seed-2718/causal_whitespace_grid_64.pt",
+          "state_sha256": "c49b81571ee8af5e17350a2b1c69e74844e627d3be54969df26245674b58b26a"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_64",
+        "receipt_sha256": "58330da40b938fc95e617313574a813265ea5a936e567b9edb9153558ef773a8",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "b5ccdf243b23314a70e7483a07e6b3bcb7a903db8ee3aa871161f635c86896fd",
+          "path": "runs/phase3-compute-conversion/seed-2718/causal_whitespace_grid_64.json"
+        }
+      },
+      "causal_whitespace_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6334812938085663,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+          "nll_array_sha256": "0a7a9f116e121ec9b839b599a0b82a82fbb25fa6e3b5e0ea5c1ae9f932785bc6",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/causal_whitespace_grid_72-nll.npz",
+          "nll_artifact_sha256": "07ce481c59650f19f54ac8df7338ae3ccab3b8431a2f39c5aa893a430f19818e",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6334812928932068,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "9cfb89987c46cb1e0cce0b2de8a2b55a5e0b300d3f79218a1774028206ab2709",
+          "path": "artifacts/phase3-compute-conversion/seed-2718/causal_whitespace_grid_72.pt",
+          "state_sha256": "205481be712cf62675cf5c17843d84989392481eadb4900985444c23404bf10a"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_72",
+        "receipt_sha256": "75193e3ece1b4950478e2c6bf6af71f342810c483289613f3bbcfef41a1582f8",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "ef38a04ff8624e2c157ffe50f94b1e6230d8d2a47fcbefe96fd846a8f6135000",
+          "path": "runs/phase3-compute-conversion/seed-2718/causal_whitespace_grid_72.json"
+        }
+      },
+      "entropy_threshold_codepoint": {
+        "auxiliary": {
+          "cache_artifact_sha256": "6d4a51dcacbf561985e4c29b2ee6527687abc205f5b845379ae1898cbd0e21a8",
+          "cache_path": "artifacts/phase3/seed-2718/threshold-patches.npz",
+          "candidate_mask": "codepoint",
+          "diagnostics_artifact_sha256": "beedffeb665b5d30f8a5b40b90c7cb0926e913352b195bfb8865795e25509bee",
+          "diagnostics_path": "runs/phase3/seed-2718/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "cd9d61511079ca0d6a5ed6e8084e4bab1beddc968a289f947c91a5eaf180a77d",
+          "router_checkpoint_path": "artifacts/phase3/seed-2718/router.pt",
+          "router_report_artifact_sha256": "9588e45f96229e1c928175621d55757dacb0ffbfaf1d8ecf89b0d7f4ee14eb2c",
+          "router_report_path": "runs/phase3/seed-2718/router.json",
+          "router_scores_sha256": "b374a733cc58b51eab4269a01e9c148faad419fcfb54fd19bdde68da7ec311c5",
+          "router_state_sha256": "007a0d75c2dee5859b8bb1ad9e14f3961090e909238475de5c9f892904fd8b96",
+          "threshold_nats": 1.4023742452263837
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6436737048618124,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "daccb6364776bab278b5ee387024412dde77568265ea6867c790ec70e81d6a47",
+          "nll_array_sha256": "3f6d4a295969806ba9082d61a77a547242c23debf8d802f4e657d2de96f29786",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/entropy_threshold_codepoint-nll.npz",
+          "nll_artifact_sha256": "a175a5ec26b65e2f0ba97ece39f789836bc4b9358b64bfd3217a5110cdf44eb7",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.643673711729767,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "5613b66f42566fa430bacbae6820a48429fcd2048198e0f5b15a60b3434637ca",
+          "path": "artifacts/phase3/seed-2718/entropy_threshold_codepoint.pt",
+          "state_sha256": "ba43aab9a9210d1d82f6a72699c6f72349c1e2c289bc1df4a017a8f4b25fdf16"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_codepoint",
+        "receipt_sha256": "41ec9abb4a27bf48123f22f33ba749460e6435b237d06480e2ce8326b4e0471c",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "2d151892e181979ad8581b79e1cb6bb87509ba89ee218c6ad37f056eb6118efc",
+          "path": "runs/phase3/seed-2718/entropy_threshold_codepoint.json"
+        }
+      },
+      "entropy_threshold_full": {
+        "auxiliary": {
+          "cache_artifact_sha256": "6d4a51dcacbf561985e4c29b2ee6527687abc205f5b845379ae1898cbd0e21a8",
+          "cache_path": "artifacts/phase3/seed-2718/threshold-patches.npz",
+          "candidate_mask": "none",
+          "diagnostics_artifact_sha256": "beedffeb665b5d30f8a5b40b90c7cb0926e913352b195bfb8865795e25509bee",
+          "diagnostics_path": "runs/phase3/seed-2718/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "cd9d61511079ca0d6a5ed6e8084e4bab1beddc968a289f947c91a5eaf180a77d",
+          "router_checkpoint_path": "artifacts/phase3/seed-2718/router.pt",
+          "router_report_artifact_sha256": "9588e45f96229e1c928175621d55757dacb0ffbfaf1d8ecf89b0d7f4ee14eb2c",
+          "router_report_path": "runs/phase3/seed-2718/router.json",
+          "router_scores_sha256": "b374a733cc58b51eab4269a01e9c148faad419fcfb54fd19bdde68da7ec311c5",
+          "router_state_sha256": "007a0d75c2dee5859b8bb1ad9e14f3961090e909238475de5c9f892904fd8b96",
+          "threshold_nats": 2.0963077079504733
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6381948002695692,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "b07850321774fb97098de293d0997cbd812d9866964c06b1a67d5341044d2f1f",
+          "nll_array_sha256": "2c87b5dd492c306a361a9973b655ff17f1252bea9c98a72c66c1cf07db614bf6",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/entropy_threshold_full-nll.npz",
+          "nll_artifact_sha256": "16058aa755bf382cf8ccbb1f0988d538042b398f6ee71f08eb45e6e57ae06bc4",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6381948016012522,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "fe5696633042d0c81db6166078922fc1994c17c1e766338ef967f47702131392",
+          "path": "artifacts/phase3/seed-2718/entropy_threshold_full.pt",
+          "state_sha256": "35db8b09dfd47868b3b5cc1eb410e3cf69d8fcdb46a56dac47b300fae22d307d"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_full",
+        "receipt_sha256": "7142152b4ff6cbcbe7b34bc526f566f6f8ce15cf6667c130c1f324f1b95bbc04",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "c912895774b18b5f965c1ab0f17f880b922b751014bf2d22a3a271727a0eafb5",
+          "path": "runs/phase3/seed-2718/entropy_threshold_full.json"
+        }
+      },
+      "fixed_byte_6": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.635461225445396,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "c93d9c66d1e79988a7c42f04b65046317c1eba4a0483e803b76b40d5c2cdeb00",
+          "nll_array_sha256": "5d93ff7793fc9b5ed01275e649a1ec1acc9a2049879bcee8b214299c43934fa3",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/fixed_byte_6-nll.npz",
+          "nll_artifact_sha256": "6f4d2aa5189557c89028e26f8047f29999998abab6fd765dbf9e69eab92e547f",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6354612247340623,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "8b34d3daf882f191e03f6497ef45c638ecf988b87a60c7691bd6cc31d3c937ab",
+          "path": "artifacts/phase3/seed-2718/fixed_byte_6.pt",
+          "state_sha256": "ab8a4790825debcab9b4000946f6e99c82daf8ee121a0728587e400fceffc797"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "fixed_byte_6",
+        "receipt_sha256": "a24fbcd590170b968419cbf77e2deb568ad1313db47fbe2ac330e4c813b71e60",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "696dffbd395a2cf525de175c24f22a189ab6c7d8e01bbdabe1e13fd4fd4cff08",
+          "path": "runs/phase3/seed-2718/fixed_byte_6.json"
+        }
+      },
+      "spacebyte_spacelike": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.5272311645227146,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "93e2531b38891d08819937346cfbab973a1ceaf2986a628d391fca8eb339074a",
+          "nll_array_sha256": "5f05a85a7c9859a10e19c654461b82e4095e43deca6a1a00589a534887edc810",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-2718/spacebyte_spacelike-nll.npz",
+          "nll_artifact_sha256": "63460be177967084be956898052f330a5974d0a8484d3a75294bd2a7b2f607c5",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.5272311631551894,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "7c8ecdf4bc76cd05756a284eb7e68f64eef4addf832b7fac8bd8db75b560c811",
+          "path": "artifacts/phase3/seed-2718/spacebyte_spacelike.pt",
+          "state_sha256": "ade79646f163bddb82657f8879741bf5bcd3244cf631c4acaa2ad367d189b7a6"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "spacebyte_spacelike",
+        "receipt_sha256": "480f5d4d3e59f1879a1491d2f03986dd18b361fa0f0c0c086ba50d2cc3c8222e",
+        "schema_version": 2,
+        "seed": 2718,
+        "training_report": {
+          "artifact_sha256": "a8f4d9457f288b3e6c1055ceefaf06b1505f923a84399dfae861e075d33c9c81",
+          "path": "runs/phase3/seed-2718/spacebyte_spacelike.json"
+        }
+      }
+    },
+    "31415": {
+      "causal_codepoint_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6289677870601138,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "84e47623d1047a418b064d5d81c091d8e65efa43a5ac1170b8574496c2411f5c",
+          "nll_array_sha256": "ff6f12f8d8d31565b600db103b84a4d125bf7be51f345d3f879840a6cc92e117",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_codepoint_grid-nll.npz",
+          "nll_artifact_sha256": "861f2bf5606a1a9886275ea73e341b95c1578c4701d73c283989aac70c0c8b74",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.628967782108349,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "b0c3c8ba9afbf687f2585674291b43b0bde1cca9679fe17ceff766f942bb6cc9",
+          "path": "artifacts/phase3/seed-31415/causal_codepoint_grid.pt",
+          "state_sha256": "355ad8fdd8456f86fa41117d791e5e98207c7f3c3937ceb4fb07f26eb9a5415d"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid",
+        "receipt_sha256": "cdbfcaf8507bb5ee9e17b51dd70df43322aaaf8eb09f05055d6db9ca9e66b59e",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "191c4cba376aa962f53b64c5553ba0d4d8db97b67b0fccac405b474402fc2829",
+          "path": "runs/phase3/seed-31415/causal_codepoint_grid.json"
+        }
+      },
+      "causal_codepoint_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6568419258961142,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "52df02ef1e4f6a0e9d85e89de0e8d45dd9b260dcb75ec8c194448d4f9b8f204b",
+          "nll_array_sha256": "8476ddd42fb4f878717fafdcdc7931944875a701b364195266068ef529406374",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_codepoint_grid_64-nll.npz",
+          "nll_artifact_sha256": "a0f059019ba6941a7c5d4d6f95b0debc71030b09c64696800ecece4662f5d80c",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6568419273022392,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "453c878bcb43a8d54872bfaf9033d7fad8fc2892fa199c35d77302ce96213e4b",
+          "path": "artifacts/phase3-compute-conversion/seed-31415/causal_codepoint_grid_64.pt",
+          "state_sha256": "d081913114a1553af71293b20169db628c895a18edafcdd316d2f2beaa04660d"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_64",
+        "receipt_sha256": "9c48e1b8b4691da3ecea2c28f8482b0ae08f4fdf0dc8390ed82ee2f1edae302f",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "45fe8a260bf13fbc91c8de7b4c22cc390cb130dde1af3baebb972166e6e7762a",
+          "path": "runs/phase3-compute-conversion/seed-31415/causal_codepoint_grid_64.json"
+        }
+      },
+      "causal_codepoint_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6443076886124501,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "f2b8041fcb12776ca219c0e16e672fff0005060d53f11d556d2cb26e8aee0314",
+          "nll_array_sha256": "990ea6a532a3083922bde879444c05d3ff2e8c951ab8c881f4d6dc89026e766d",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_codepoint_grid_72-nll.npz",
+          "nll_artifact_sha256": "88c734b97e39acc8b5c7396b438c639ceb543b2dffda09da4e2659bb21eeabd9",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6443076885021657,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "26616b8b0450108944c5889afbf20f08850e3e76b66eb14eaebc2fab0529e4c7",
+          "path": "artifacts/phase3-compute-conversion/seed-31415/causal_codepoint_grid_72.pt",
+          "state_sha256": "7a270e3dd2d09239c97cbab6aae67e4a27b2c17e0ff7bc40c68f77fc36a42910"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_codepoint_grid_72",
+        "receipt_sha256": "ae2721c6e1356e233f248714770895a068b6e20a9f396c3424ca01c3747e1e0c",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "432926cfd6cefa5a6129a47111357cfb9379db76abd54f39e276ba4aa0eeb515",
+          "path": "runs/phase3-compute-conversion/seed-31415/causal_codepoint_grid_72.json"
+        }
+      },
+      "causal_whitespace_grid": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.619912477149505,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "4826bb4554c2ca26dda42f50bb9cc7a506314a06a28e271ee44b9e60f60a4bca",
+          "nll_array_sha256": "670a248b9abda15750415527d48cefb874eaad1334650a508313553fb8715489",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_whitespace_grid-nll.npz",
+          "nll_artifact_sha256": "20b069b5db6a99f0a43e7333f633d49ad8a36bee50d92db5d2a33947206265ca",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.619912475528326,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "4d229650f8cd55947a7d2bf42ea0d8325df9ed188c6f9474fa854aae0c9736c7",
+          "path": "artifacts/phase3/seed-31415/causal_whitespace_grid.pt",
+          "state_sha256": "cdd7cc6ac8cc832cc3f3825ce2f0da59236f4a8bf832a1b9f6cc7d234e004dbd"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid",
+        "receipt_sha256": "93b87f6b6065f0465cae5e5755bfe4844eeef8d8e151c805bc9ff6719763cd82",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "2a29fec16115061b935daa90cf0050213863a4329963cf060f3e2e8ea3c4d7f7",
+          "path": "runs/phase3/seed-31415/causal_whitespace_grid.json"
+        }
+      },
+      "causal_whitespace_grid_64": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6452267324504048,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "3954be7e20d11ad7dc2e8ea405ce2c1d5c86602895c57566d87c901690d967b2",
+          "nll_array_sha256": "c375439750f845f74d394b7193b98cfdb69d19a4d9c5a8924684b0adae528f92",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_whitespace_grid_64-nll.npz",
+          "nll_artifact_sha256": "4bd6bc7322c9d56debbe44c6902725fc9650f716812dfa125cb2fbe2f4320b74",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6452267265336522,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "9fb2026f0784deaa3f7d6e5c20616c55b374dcf91fd2cf8989fde87ffbf2ad39",
+          "path": "artifacts/phase3-compute-conversion/seed-31415/causal_whitespace_grid_64.pt",
+          "state_sha256": "e37eb604b23a437ac802be3daf8377c92bd11e539af5d8b5e6e702e0acd302ab"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "e563c84beef3588e7fb5867d830865935ccc1a15819bb0a98a2ac607ed996299"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 64,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_64",
+        "receipt_sha256": "f2e946d99a67c745dbee5c6040728c05d56d43f4907e60650750b596ca3866f3",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "48fec81a8751efdb225f8ae9a0bd0a12efa18f641455afbc15fce756eb7c6075",
+          "path": "runs/phase3-compute-conversion/seed-31415/causal_whitespace_grid_64.json"
+        }
+      },
+      "causal_whitespace_grid_72": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6326863808399679,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "ba1a70598319db11ea553e61fb62292942a5b76be41ad2be9934b0bb8f656694",
+          "nll_array_sha256": "78c28af68a0e4bc158b0a3e01b044436503de5ecf687465db3e056d7a2fe0ce9",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/causal_whitespace_grid_72-nll.npz",
+          "nll_artifact_sha256": "768793f5b76659f145e855beaca0d3e3ae4b4d12c958d5ea0d68e33be56129e0",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6326863786011967,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "6b0763c6e0d4dfe0aeb6dbdf217abe94a7b0189119d190c7be055e0e54719399",
+          "path": "artifacts/phase3-compute-conversion/seed-31415/causal_whitespace_grid_72.pt",
+          "state_sha256": "760f5f4e5236630fe3702906b8a391029f6266a41fe69fc733650241f9375574"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "7afce8ba6281120a881c51ddfdd5049c898d41b0c1cfe62c732bbc3093e9f855"
+        },
+        "model_family": "compute_conversion",
+        "patch_count": 72,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "causal_whitespace_grid_72",
+        "receipt_sha256": "77aef81e4e1561971b72bc68a87c0865eef5b937258bb0c44ffe9e5cf6248eb6",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "1b13f04a0d0c7cf1d4a3350e262edccf9cb92e435bd3a2ec02e6a6079e87f7be",
+          "path": "runs/phase3-compute-conversion/seed-31415/causal_whitespace_grid_72.json"
+        }
+      },
+      "entropy_threshold_codepoint": {
+        "auxiliary": {
+          "cache_artifact_sha256": "4e8f87f5ceb0fb53a9bca15a2d40cbf00a1bcda5ace862a62b39713acb96b898",
+          "cache_path": "artifacts/phase3/seed-31415/threshold-patches.npz",
+          "candidate_mask": "codepoint",
+          "diagnostics_artifact_sha256": "09b65f9d690d6ccfc7e1fbc97b76e8c9090c9515bcf6346d60e061c1605eded2",
+          "diagnostics_path": "runs/phase3/seed-31415/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "43985dc312f474713f334e5ed05680059ce756bc9507ad51fa2587811158898b",
+          "router_checkpoint_path": "artifacts/phase3/seed-31415/router.pt",
+          "router_report_artifact_sha256": "3da8643bf94ffae27800d7262012a8d1147edcb6f7fd72dea2c0511449311ddd",
+          "router_report_path": "runs/phase3/seed-31415/router.json",
+          "router_scores_sha256": "a30641b3e0356fc58808f5b79ef7119c35c8109a9cd37df3d4362a334949a20b",
+          "router_state_sha256": "cc870cb9c22dcd659a64d2232de846bc3013d4291142447c6f8d865a19ad0755",
+          "threshold_nats": 1.398963451967575
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6399329642997875,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "80c10e9b237d0d3f28f6ae11c87e5fc366b8789a7a3b7d4ccaf905506ea76495",
+          "nll_array_sha256": "e0820f9495f65590ee7380a1c754d1e77366553aaacebec08847f2c51f13a11e",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/entropy_threshold_codepoint-nll.npz",
+          "nll_artifact_sha256": "c98ef1f785dad36269ae8d807e26c57889cb6991525b582a0c3f37e904f42791",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6399329655625428,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "d00233606ac780e5e04d9fbd911ce3cf3d13fe0dcbd86fe7c0dc55e3910483af",
+          "path": "artifacts/phase3/seed-31415/entropy_threshold_codepoint.pt",
+          "state_sha256": "608e11c71599d30cdbea2ee8226cc3093bf58553305c69976526998de8f001a5"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_codepoint",
+        "receipt_sha256": "14cdfe8cd187f9b3a633ae858fd954581e28756ab9d0d5090ca3f67de024e6d3",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "72058e26d0bcf38f81386a167e64dfb7c4f9d466dd28d6d586711d27c40de078",
+          "path": "runs/phase3/seed-31415/entropy_threshold_codepoint.json"
+        }
+      },
+      "entropy_threshold_full": {
+        "auxiliary": {
+          "cache_artifact_sha256": "4e8f87f5ceb0fb53a9bca15a2d40cbf00a1bcda5ace862a62b39713acb96b898",
+          "cache_path": "artifacts/phase3/seed-31415/threshold-patches.npz",
+          "candidate_mask": "none",
+          "diagnostics_artifact_sha256": "09b65f9d690d6ccfc7e1fbc97b76e8c9090c9515bcf6346d60e061c1605eded2",
+          "diagnostics_path": "runs/phase3/seed-31415/threshold-patch-diagnostics.json",
+          "kind": "entropy_router",
+          "maximum_patch_length": 24,
+          "router_checkpoint_artifact_sha256": "43985dc312f474713f334e5ed05680059ce756bc9507ad51fa2587811158898b",
+          "router_checkpoint_path": "artifacts/phase3/seed-31415/router.pt",
+          "router_report_artifact_sha256": "3da8643bf94ffae27800d7262012a8d1147edcb6f7fd72dea2c0511449311ddd",
+          "router_report_path": "runs/phase3/seed-31415/router.json",
+          "router_scores_sha256": "a30641b3e0356fc58808f5b79ef7119c35c8109a9cd37df3d4362a334949a20b",
+          "router_state_sha256": "cc870cb9c22dcd659a64d2232de846bc3013d4291142447c6f8d865a19ad0755",
+          "threshold_nats": 2.111388122197241
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.636156827700847,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "60ee7527082b53c823b558cdabc7053721e0d59ec380a20a8c2a838a6a02a670",
+          "nll_array_sha256": "81fea3d93b4a406e85d5c2051687fcebcfb7eb0038d96a21b572f8d2fe868069",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/entropy_threshold_full-nll.npz",
+          "nll_artifact_sha256": "13443e798ce0d369a25f4391bfc4f88abfb9b44d02dd5c0ca8f398c5549c181a",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6361568233418602,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "660406523a58fa8ede00e474ecd31e9f78c312d6fdafee3a60e76bb4d20e6010",
+          "path": "artifacts/phase3/seed-31415/entropy_threshold_full.pt",
+          "state_sha256": "1571d66222732f2fb0fa65020b296418d41269d107f99e246434be53fb657406"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "entropy_threshold_full",
+        "receipt_sha256": "567c9282fc3d540f4002333617ca22b7db4f9cc0c2095a8376c476f3fd3c5730",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "273dae92902d351acf06c57f4469ba854b3ca33e8c98d7b90d7e737e83b905c7",
+          "path": "runs/phase3/seed-31415/entropy_threshold_full.json"
+        }
+      },
+      "fixed_byte_6": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.6346691190963212,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "c93d9c66d1e79988a7c42f04b65046317c1eba4a0483e803b76b40d5c2cdeb00",
+          "nll_array_sha256": "66d7604cc988bfc459d0ce4f508e4f04bf9853286a82ec52b7f33ea976bd4e0c",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/fixed_byte_6-nll.npz",
+          "nll_artifact_sha256": "f671ffb5330b8947ac646ece648127f92da141e198d6503fe7baf152c4f153e9",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.6346691174861705,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "6d864b9edce1bc76c83fc55acb562cf66681644db7dac5d79d476d9ff54b34cf",
+          "path": "artifacts/phase3/seed-31415/fixed_byte_6.pt",
+          "state_sha256": "ad49382cd6e72ebb3d523ddff19e3718a9b2529800d3ef25284af9cf8a9faace"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "fixed_byte_6",
+        "receipt_sha256": "755620faeb40cbd6b4038e46612f06ef4b09afa61274c0cfba4de0372eb7d3f6",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "35e05a9babbb91d35bca60b049401062886d14d431b392a32a364fa1ece24b59",
+          "path": "runs/phase3/seed-31415/fixed_byte_6.json"
+        }
+      },
+      "spacebyte_spacelike": {
+        "auxiliary": {
+          "kind": "none"
+        },
+        "calibration": {
+          "boundaries_sha256": "bca3f849210bf83756e505499134cbb36e024cabde8f24a04cd81cdc1d472b2d",
+          "bpb": 1.5313560177372392,
+          "count": 15625,
+          "dtype": "float32",
+          "inputs_sha256": "64788ea52e566f9685c1be91fe61f704a81f168f14dda5d4e89ae5bb47873eca",
+          "matrix_sha256": "93e2531b38891d08819937346cfbab973a1ceaf2986a628d391fca8eb339074a",
+          "nll_array_sha256": "9721ef5a8140e3190fb717ba51fd404a640d8409ecad635894259036f3fead3d",
+          "nll_artifact_path": "artifacts/phase3-inference-selection-v2/calibration/seed-31415/spacebyte_spacelike-nll.npz",
+          "nll_artifact_sha256": "512e815f4592dc16c9095d676e95a8bea4220c18e47933375cae99275ac2e541",
+          "predicted_bytes": 7984375,
+          "report_bpb": 1.5313560216716318,
+          "stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013"
+        },
+        "checkpoint": {
+          "artifact_sha256": "62ba1c4ce498133ca85adb97e821f9c3d107799d44ec100e131ffc937a7f7e27",
+          "path": "artifacts/phase3/seed-31415/spacebyte_spacelike.pt",
+          "state_sha256": "c828c5e6e8fbc9a6b54b69e9f5dedd6d7ef9709bd98047f66936e5bb81a55e0b"
+        },
+        "complete": true,
+        "device": "mps",
+        "evaluator_git_commit": "0518700872a80d4aabff14ee81d0f7ea0f25f25f",
+        "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+        "initial_model_identity_lock_sha256": "ab9a4799e055fcfa71a424680fc1fceef8089e5e6b14e9e7b640f800ffdcadb6",
+        "kind": "phase3_calibration_receipt_v2",
+        "model": {
+          "global_max_position_embeddings": 1032,
+          "parameters": 19596096,
+          "spec_sha256": "84c4991d99fcd96d921c03c0b128ec6687ef4432e661b050a5d4e546f8287f53"
+        },
+        "model_family": "phase3",
+        "patch_count": 86,
+        "plan_artifact_sha256": "d16980d7a86c9d3a8873062c049238664354878b58fccf80392896a50e5c3bca",
+        "policy": "spacebyte_spacelike",
+        "receipt_sha256": "8bc6c44e500b5a85740d6f5049bd8ee64945906747b07ac6bfedee080ce5a153",
+        "schema_version": 2,
+        "seed": 31415,
+        "training_report": {
+          "artifact_sha256": "6b29012a4243115dce35671604c5948a2926d2f5dceda31374d79a38a800edbc",
+          "path": "runs/phase3/seed-31415/spacebyte_spacelike.json"
+        }
+      }
+    }
+  },
+  "schema_version": 2,
+  "seed_order": [
+    1729,
+    2718,
+    31415
+  ]
+}

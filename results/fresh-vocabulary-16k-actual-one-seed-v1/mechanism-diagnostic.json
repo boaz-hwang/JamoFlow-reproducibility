@@ -1,0 +1,163 @@
+{
+  "claim_boundary": {
+    "authorizes_multiseed": false,
+    "changes_primary_gate": false,
+    "describes_token_step_dominance": true,
+    "post_hoc": true,
+    "retokenization_is_causal_explanation": false
+  },
+  "diagnostic_sha256": "7c110567c6507933fa684d39362470b796bfe73c44031b7b1a67e7fcc3f5a572",
+  "kind": "fresh_vocabulary_16k_actual_mechanism_diagnostic_v1",
+  "pairs": {
+    "candidate_vs_2k": {
+      "candidate_fewer_tokens": {
+        "case_count": 46,
+        "faster_case_count": 43,
+        "median_end_to_end_reduction": 0.2960525049457698
+      },
+      "candidate_more_tokens": {
+        "case_count": 14,
+        "faster_case_count": 0,
+        "median_end_to_end_reduction": -0.28988828153862545
+      },
+      "end_to_end_vs_token_reduction_pearson": 0.9998433897798736,
+      "equal_token_count": {
+        "case_count": 4,
+        "faster_case_count": 0,
+        "median_end_to_end_reduction": -0.04700902191517753
+      }
+    },
+    "candidate_vs_8k": {
+      "candidate_fewer_tokens": {
+        "case_count": 33,
+        "faster_case_count": 30,
+        "median_end_to_end_reduction": 0.18518782661862399
+      },
+      "candidate_more_tokens": {
+        "case_count": 26,
+        "faster_case_count": 0,
+        "median_end_to_end_reduction": -0.3108264964966535
+      },
+      "end_to_end_vs_token_reduction_pearson": 0.9998668219192604,
+      "equal_token_count": {
+        "case_count": 5,
+        "faster_case_count": 0,
+        "median_end_to_end_reduction": -0.02957879665928065
+      }
+    }
+  },
+  "roles": {
+    "baseline_2k": {
+      "canonical_reencoded_token_count": {
+        "maximum": 129,
+        "mean": 48.375,
+        "median": 38.0,
+        "minimum": 25
+      },
+      "character_count": {
+        "maximum": 128,
+        "mean": 62.609375,
+        "median": 54.5,
+        "minimum": 43
+      },
+      "emitted_token_count": {
+        "maximum": 129,
+        "mean": 48.375,
+        "median": 38.0,
+        "minimum": 25
+      },
+      "exact_canonical_trace_case_count": 64,
+      "noncanonical_trace_case_count": 0,
+      "precomposed_hangul_count": {
+        "maximum": 40,
+        "mean": 32.0625,
+        "median": 36.0,
+        "minimum": 0
+      },
+      "retokenization_gap": {
+        "maximum": 0,
+        "mean": 0.0,
+        "median": 0.0,
+        "minimum": 0
+      }
+    },
+    "candidate_16k": {
+      "canonical_reencoded_token_count": {
+        "maximum": 96,
+        "mean": 35.703125,
+        "median": 32.0,
+        "minimum": 17
+      },
+      "character_count": {
+        "maximum": 128,
+        "mean": 62.21875,
+        "median": 58.0,
+        "minimum": 43
+      },
+      "emitted_token_count": {
+        "maximum": 105,
+        "mean": 36.40625,
+        "median": 32.5,
+        "minimum": 17
+      },
+      "exact_canonical_trace_case_count": 54,
+      "noncanonical_trace_case_count": 10,
+      "precomposed_hangul_count": {
+        "maximum": 43,
+        "mean": 31.984375,
+        "median": 35.0,
+        "minimum": 0
+      },
+      "retokenization_gap": {
+        "maximum": 19,
+        "mean": 0.703125,
+        "median": 0.0,
+        "minimum": 0
+      }
+    },
+    "frontier_8k": {
+      "canonical_reencoded_token_count": {
+        "maximum": 128,
+        "mean": 39.171875,
+        "median": 31.0,
+        "minimum": 18
+      },
+      "character_count": {
+        "maximum": 128,
+        "mean": 58.859375,
+        "median": 56.0,
+        "minimum": 43
+      },
+      "emitted_token_count": {
+        "maximum": 128,
+        "mean": 39.25,
+        "median": 31.0,
+        "minimum": 18
+      },
+      "exact_canonical_trace_case_count": 60,
+      "noncanonical_trace_case_count": 4,
+      "precomposed_hangul_count": {
+        "maximum": 43,
+        "mean": 32.3125,
+        "median": 36.0,
+        "minimum": 0
+      },
+      "retokenization_gap": {
+        "maximum": 2,
+        "mean": 0.078125,
+        "median": 0.0,
+        "minimum": 0
+      }
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "end_to_end_array_sha256": "0b8a03e7781e4948d5df1a04c84438fae43f58912ccd22f141c7c4d16bd97f5e",
+    "output_token_count_array_sha256": "fb16fb99b21faa2d397037802962a7818be514a792926bc3cf81f788ebfe3887",
+    "summary_artifact_sha256": "dde3e1e6004df805bcad8499b542fd29e07739fd8df5fcdf9cf1c43fbbb04231",
+    "summary_path": "results/fresh-vocabulary-16k-actual-one-seed-v1/summary.json",
+    "summary_sha256": "56192ee9c1986106705e002b46a91cee23a6e0f7322ef25e071ba42e9f965577",
+    "timing_artifact_sha256": "ec1890623a9d1dbbcfd45e1fdf032a2861af0cf010bb328fb6bb9b63dfd1f311"
+  },
+  "status": "post_hoc_descriptive_non_authorizing"
+}

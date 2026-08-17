@@ -1,0 +1,457 @@
+{
+  "actual_inference": {
+    "correctness": {
+      "expected_cases_per_role_mode": 64,
+      "independent_measured_case_checkpoint_replay": {
+        "baseline_2k": {
+          "controlled_replay": {
+            "argmax_comparisons": 2350,
+            "argmax_exact": 2350,
+            "cases": 64,
+            "comparisons": 2350,
+            "maximum_normalized_tolerance_ratio": 0.1277827024459839,
+            "pass": true,
+            "trace_contract_exact": true
+          },
+          "free_running_utf8_greedy": {
+            "argmax_comparisons": 3096,
+            "argmax_exact": 3096,
+            "cases": 64,
+            "comparisons": 3096,
+            "maximum_normalized_tolerance_ratio": 0.11687195301055908,
+            "pass": true,
+            "trace_contract_exact": true
+          }
+        },
+        "candidate_16k": {
+          "controlled_replay": {
+            "argmax_comparisons": 1634,
+            "argmax_exact": 1634,
+            "cases": 64,
+            "comparisons": 1634,
+            "maximum_normalized_tolerance_ratio": 0.11070398986339569,
+            "pass": true,
+            "trace_contract_exact": true
+          },
+          "free_running_utf8_greedy": {
+            "argmax_comparisons": 2330,
+            "argmax_exact": 2330,
+            "cases": 64,
+            "comparisons": 2330,
+            "maximum_normalized_tolerance_ratio": 0.16690541803836823,
+            "pass": true,
+            "trace_contract_exact": true
+          }
+        },
+        "frontier_8k": {
+          "controlled_replay": {
+            "argmax_comparisons": 1798,
+            "argmax_exact": 1798,
+            "cases": 64,
+            "comparisons": 1798,
+            "maximum_normalized_tolerance_ratio": 0.12769407033920288,
+            "pass": true,
+            "trace_contract_exact": true
+          },
+          "free_running_utf8_greedy": {
+            "argmax_comparisons": 2512,
+            "argmax_exact": 2512,
+            "cases": 64,
+            "comparisons": 2512,
+            "maximum_normalized_tolerance_ratio": 0.10873737186193466,
+            "pass": true,
+            "trace_contract_exact": true
+          }
+        }
+      },
+      "overall_pass": true
+    },
+    "incremental_16k_frontier_supported": false,
+    "multiseed_confirmation_authorized": false,
+    "pairs": {
+      "candidate_vs_2k": {
+        "controlled_replay": {
+          "candidate_output_bytes_median": 128.0,
+          "candidate_output_tokens_median": 25.0,
+          "candidate_role": "candidate_16k",
+          "component_metrics": {
+            "decode_ms": {
+              "candidate_median_ms": 60.7436665,
+              "median_reduction": 0.2611486070156078,
+              "reference_median_ms": 82.2136455
+            },
+            "end_to_end_ms": {
+              "candidate_median_ms": 64.24197899999999,
+              "median_reduction": 0.24925159151948295,
+              "reference_median_ms": 85.570583
+            },
+            "model_loop_ms": {
+              "candidate_median_ms": 64.187979,
+              "median_reduction": 0.2494307453382103,
+              "reference_median_ms": 85.51906249999999
+            },
+            "tokenizer_ms": {
+              "candidate_median_ms": 0.0563955,
+              "median_reduction": -0.06911913857003382,
+              "reference_median_ms": 0.0527495
+            },
+            "ttft_ms": {
+              "candidate_median_ms": 3.5662705,
+              "median_reduction": -0.04113925159268206,
+              "reference_median_ms": 3.425354
+            }
+          },
+          "end_to_end_reduction": 0.24925159151948295,
+          "overall_pass": true,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.22007194009088926,
+            "upper": 0.28864864368317533
+          },
+          "passes": {
+            "bootstrap_lower_positive": true,
+            "correctness": true,
+            "point_reduction": true,
+            "prompt_direction": true
+          },
+          "positive_prompt_count": 64,
+          "reference_output_bytes_median": 128.0,
+          "reference_output_tokens_median": 36.0,
+          "reference_role": "baseline_2k"
+        },
+        "free_running_utf8_greedy": {
+          "candidate_output_bytes_median": 130.0,
+          "candidate_output_tokens_median": 32.5,
+          "candidate_role": "candidate_16k",
+          "component_metrics": {
+            "decode_ms": {
+              "candidate_median_ms": 77.941438,
+              "median_reduction": 0.10860888545577607,
+              "reference_median_ms": 87.4379795
+            },
+            "end_to_end_ms": {
+              "candidate_median_ms": 81.5405,
+              "median_reduction": 0.1031232841659675,
+              "reference_median_ms": 90.916063
+            },
+            "model_loop_ms": {
+              "candidate_median_ms": 81.4597085,
+              "median_reduction": 0.10326559452691064,
+              "reference_median_ms": 90.840396
+            },
+            "tokenizer_ms": {
+              "candidate_median_ms": 0.058291499999999996,
+              "median_reduction": -0.06631117777798101,
+              "reference_median_ms": 0.0546665
+            },
+            "ttft_ms": {
+              "candidate_median_ms": 3.503771,
+              "median_reduction": -0.02588794223264368,
+              "reference_median_ms": 3.4153545000000003
+            }
+          },
+          "end_to_end_reduction": 0.1031232841659675,
+          "overall_pass": false,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.010648091356295963,
+            "upper": 0.24519429824243172
+          },
+          "passes": {
+            "bootstrap_lower_positive": true,
+            "correctness": true,
+            "point_reduction": true,
+            "prompt_direction": false
+          },
+          "positive_prompt_count": 43,
+          "reference_output_bytes_median": 129.0,
+          "reference_output_tokens_median": 38.0,
+          "reference_role": "baseline_2k"
+        },
+        "overall_pass": false
+      },
+      "candidate_vs_8k": {
+        "controlled_replay": {
+          "candidate_output_bytes_median": 128.0,
+          "candidate_output_tokens_median": 25.0,
+          "candidate_role": "candidate_16k",
+          "component_metrics": {
+            "decode_ms": {
+              "candidate_median_ms": 60.7436665,
+              "median_reduction": 0.05798761343990655,
+              "reference_median_ms": 64.48287450000001
+            },
+            "end_to_end_ms": {
+              "candidate_median_ms": 64.24197899999999,
+              "median_reduction": 0.055825326834719635,
+              "reference_median_ms": 68.04035400000001
+            },
+            "model_loop_ms": {
+              "candidate_median_ms": 64.187979,
+              "median_reduction": 0.05581093559520234,
+              "reference_median_ms": 67.982125
+            },
+            "tokenizer_ms": {
+              "candidate_median_ms": 0.0563955,
+              "median_reduction": -0.050440046565774166,
+              "reference_median_ms": 0.0536875
+            },
+            "ttft_ms": {
+              "candidate_median_ms": 3.5662705,
+              "median_reduction": -0.01878277547827878,
+              "reference_median_ms": 3.500521
+            }
+          },
+          "end_to_end_reduction": 0.055825326834719635,
+          "overall_pass": true,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": 0.026024080189616553,
+            "upper": 0.10387275659786932
+          },
+          "passes": {
+            "bootstrap_lower_positive": true,
+            "correctness": true,
+            "point_positive": true,
+            "prompt_majority": true
+          },
+          "positive_prompt_count": 52,
+          "reference_output_bytes_median": 128.0,
+          "reference_output_tokens_median": 27.5,
+          "reference_role": "frontier_8k"
+        },
+        "free_running_utf8_greedy": {
+          "candidate_output_bytes_median": 130.0,
+          "candidate_output_tokens_median": 32.5,
+          "candidate_role": "candidate_16k",
+          "component_metrics": {
+            "decode_ms": {
+              "candidate_median_ms": 77.941438,
+              "median_reduction": -0.0838371354076135,
+              "reference_median_ms": 71.9125
+            },
+            "end_to_end_ms": {
+              "candidate_median_ms": 81.5405,
+              "median_reduction": -0.08291531871938718,
+              "reference_median_ms": 75.29720800000001
+            },
+            "model_loop_ms": {
+              "candidate_median_ms": 81.4597085,
+              "median_reduction": -0.08271978162104521,
+              "reference_median_ms": 75.2361875
+            },
+            "tokenizer_ms": {
+              "candidate_median_ms": 0.058291499999999996,
+              "median_reduction": -0.11031428571428559,
+              "reference_median_ms": 0.0525
+            },
+            "ttft_ms": {
+              "candidate_median_ms": 3.503771,
+              "median_reduction": -0.023160596047520965,
+              "reference_median_ms": 3.4244585
+            }
+          },
+          "end_to_end_reduction": -0.08291531871938718,
+          "overall_pass": false,
+          "paired_prompt_bootstrap_95_interval": {
+            "lower": -0.1893067273950064,
+            "upper": 0.10527161068569568
+          },
+          "passes": {
+            "bootstrap_lower_positive": false,
+            "correctness": true,
+            "point_positive": false,
+            "prompt_majority": false
+          },
+          "positive_prompt_count": 30,
+          "reference_output_bytes_median": 130.0,
+          "reference_output_tokens_median": 31.0,
+          "reference_role": "frontier_8k"
+        },
+        "overall_pass": false
+      }
+    },
+    "primary_gate": {
+      "minimum_bootstrap_lower_reduction": 0.0,
+      "minimum_end_to_end_point_reduction": 0.1,
+      "minimum_positive_prompts": 48,
+      "overall_pass": false,
+      "pair": "candidate_vs_2k",
+      "requires_both_modes": true
+    },
+    "secondary_frontier_diagnostic": {
+      "does_not_replace_or_relax_primary_gate": true,
+      "minimum_positive_prompts": 33,
+      "overall_pass": false,
+      "pair": "candidate_vs_8k",
+      "requires_positive_point_and_interval_in_both_modes": true
+    },
+    "status": "fail_16k_trained_actual_e2e_preflight"
+  },
+  "claim_boundary": {
+    "actual_end_to_end_measured": true,
+    "development_one_seed_one_session": true,
+    "general_hardware_claim": false,
+    "memory_improvement_claimed": false,
+    "multiseed_requires_primary_gate": true,
+    "one_seed_one_session": true,
+    "parameter_and_checkpoint_cost_reported": true,
+    "primary_requires_both_modes_at_least_10pct": true,
+    "publication_claim": false,
+    "secondary_frontier_is_mandatory_diagnostic": true,
+    "secondary_pair_cannot_authorize_fallback": true,
+    "trained_models": true
+  },
+  "free_output_evidence": {
+    "baseline_2k": {
+      "deterministic_across_repetitions": true,
+      "output_root_sha256": "d80e604548aba3c6ca84bd58c3a6c392799f3b8929d4e027f66eb46e1e0c1ec8",
+      "strict_valid_output_count": 320,
+      "token_trace_root_sha256": "1710f1ee841dc85fad754d95f44c89bbf44c1a85157a74f94e0e2656ed5da669"
+    },
+    "candidate_16k": {
+      "deterministic_across_repetitions": true,
+      "output_root_sha256": "2c764c7344505b90b9243f86a0da4fde55b396c3fef6d169f6425668660e8f9e",
+      "strict_valid_output_count": 320,
+      "token_trace_root_sha256": "b3908edef945f7bce3154628d98eb47e3621e190d33731e22d51b4c528563ad2"
+    },
+    "frontier_8k": {
+      "deterministic_across_repetitions": true,
+      "output_root_sha256": "868671dd73e22615a95ce0e3eeffa9462cd04a2db7d91dc7bb50853e85b7381a",
+      "strict_valid_output_count": 320,
+      "token_trace_root_sha256": "8c4a5e6b9bb1ed39b5cad753672935984221b76a6f05788299dd06bf8dd40dc0"
+    }
+  },
+  "git_commit": "347a62bd164db60724563f40e61d701007b93512",
+  "kind": "fresh_vocabulary_16k_actual_one_seed_result_v1",
+  "plan": {
+    "artifact_sha256": "371dc13701d1979b080b570ee9df4c163e3de8a91fbb50529fca5dc896f3309a",
+    "plan_sha256": "b42cab2ca057bbd3384d55c10cfcf14dde2194edd21f0d3f9b1d8a46e5870c99"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-actual-one-seed-v1",
+  "quality_selection": {
+    "actual_latency_used_for_selection": false,
+    "document_bpb_by_role": {
+      "baseline_2k": 1.4083309677934925,
+      "candidate_16k": 1.3934744560965184,
+      "frontier_8k": 1.3978824591756698
+    },
+    "quality_result_artifact_sha256": "c95d6095a88e1c04ca93df807cfcaedc992f990e07d836eb1f6bd5e51707b611",
+    "quality_result_sha256": "8d7fc2260a657713dae2fbd6c62dc617a3ace084725dec782d29cee6ead7e85f"
+  },
+  "runtime": {
+    "report_artifact_sha256": "d35cf6a2ec8a2d6877edd1135f46dffa20bcda6419218955bbef17da03fc68b3",
+    "report_sha256": "e09916c3e603d98c16620b11a899fbd6f16e5c370194b7f271b2dea9a9e28841",
+    "session_state": {
+      "end": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      },
+      "start": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      }
+    },
+    "timed_scope": "raw-prompt UTF-8 decode and tokenizer encode; runtime/cache construction; parallel prefill; every autoregressive argmax and device-host token readback; incremental KV-cache decode; token-byte reconstruction; strict UTF-8 stop/decode",
+    "timing_artifact_sha256": "ec1890623a9d1dbbcfd45e1fdf032a2861af0cf010bb328fb6bb9b63dfd1f311"
+  },
+  "schema_version": 1,
+  "status": "fail_16k_trained_actual_e2e_preflight",
+  "summary_sha256": "56192ee9c1986106705e002b46a91cee23a6e0f7322ef25e071ba42e9f965577",
+  "systems_cost": {
+    "by_role": {
+      "baseline_2k": {
+        "checkpoint_artifact_sha256": "b5c97505bfa9ebb2fa10847514466a061116b79dc6ff10845cc94f50a57124b8",
+        "checkpoint_bytes": 81838658,
+        "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense2k_joint_v2.pt",
+        "checkpoint_state_sha256": "5f9ec8aaf210c9b6bf132468383142f4658e5c1e618a9d8b66793c67aae3fffb",
+        "document_bpb": 1.4083309677934925,
+        "parameter_count": 19667328,
+        "quality_role": "dense2k_joint_v2",
+        "vocabulary_size": 2048
+      },
+      "candidate_16k": {
+        "checkpoint_artifact_sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6",
+        "checkpoint_bytes": 124699202,
+        "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+        "checkpoint_state_sha256": "7efa2ead8a6cc60e81b513c724c9b1b554d6ca0d674dbd8ef1ceff1cc6a05902",
+        "document_bpb": 1.3934744560965184,
+        "parameter_count": 31168896,
+        "quality_role": "dense16k_update_geometry",
+        "vocabulary_size": 16000
+      },
+      "frontier_8k": {
+        "checkpoint_artifact_sha256": "e40db07744a41ac81efa3488ea982b7fe2c76072eecbc8487cec8f5a9e756609",
+        "checkpoint_bytes": 100713026,
+        "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense8k_update_geometry_v2.pt",
+        "checkpoint_state_sha256": "44fd4b2551eb85dc5f3fcbe7fa364ef05e29c82db6be4fd051b991593299b4ea",
+        "document_bpb": 1.3978824591756698,
+        "parameter_count": 25172352,
+        "quality_role": "dense8k_update_geometry_v2",
+        "vocabulary_size": 8192
+      }
+    },
+    "candidate_vs_2k": {
+      "checkpoint_byte_increase": 0.5237200248322742,
+      "parameter_increase": 0.5848058261905227
+    },
+    "candidate_vs_8k": {
+      "checkpoint_byte_increase": 0.23816359166886714,
+      "parameter_increase": 0.238219456012692
+    },
+    "memory_improvement_claimed": false
+  }
+}

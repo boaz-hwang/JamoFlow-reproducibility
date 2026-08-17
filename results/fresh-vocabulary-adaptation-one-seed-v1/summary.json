@@ -1,0 +1,225 @@
+{
+  "artifact_lineage": {
+    "dense2k_joint": {
+      "checkpoint_sha256": "ea5241b0f88e5b18e9c61fa01030313d8a23a99efd0ec1495bd4eb8c7972625e",
+      "nll_sha256": "cb386558f114037da4d98eb26d5ce7a76bb4a3f1a1f0422fb2e9be58b3e2bc7c",
+      "worker_sha256": "bad5f94c33419a7e14f31aaba4386657b363e0a3cd8f072a4c7a647310902ed0"
+    },
+    "dense8k_inplace_two_stage": {
+      "checkpoint_sha256": "d37549cf74d3d0656d674a495a990b8c1fd5d79546c19a0ececf0b0cc55a7e76",
+      "nll_sha256": "9119b299c1c540e1ab533cb3b9bb25d72c42e2d930df59fa75c5f4e9f7c4fb89",
+      "worker_sha256": "cf6c68acc42e513face165045113d82edebb9dc61cd2f61a1b1c2493a2f4c00b"
+    },
+    "dense8k_standard_joint": {
+      "checkpoint_sha256": "f6e26c52e8db07a9b4d4cbd19fddcdc6726fd5a1d792131f24e1c51c03aaaf95",
+      "nll_sha256": "9092f48a3a4a06da4c44750cadc46f48ee835ea70596dd3d40c2ade0d30387cb",
+      "worker_sha256": "d2837f1d8353b513c04f9c0403c776782e2e2250e4909959b66f2c014f5f092d"
+    },
+    "dense8k_update_geometry": {
+      "checkpoint_sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565",
+      "nll_sha256": "5ab1cc42a2165396de5dd4e22d07b3eecd6336e2e9ba67c9131104468eac72cf",
+      "worker_sha256": "b787e4e917ed77d245b391d2eaf8e0aa8eecdebb85f1f0f5fdfa69fbe937dfe9"
+    }
+  },
+  "campaign_report": {
+    "artifact_sha256": "c4c82d6cf0c6439979b582b0789807f42a87cfb7410d0d26967a585c486a2ec1",
+    "path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/report.json"
+  },
+  "claim_boundary": {
+    "analytical_or_random_weight_latency_is_not_success": true,
+    "development_one_seed": true,
+    "efficiency_success_requires_trained_controlled_and_free_actual_e2e_ge_10pct": true,
+    "method_claim_requires_fresh_multiseed_confirmation": true,
+    "parameter_and_memory_increase_must_be_reported": true,
+    "publication_claim": false
+  },
+  "decision": {
+    "actual_inference_preflight_authorized": true,
+    "dense8k_noninferiority_vs_dense2k": {
+      "dense8k_inplace_two_stage": {
+        "lower_95_bpb": 0.028955947882364625,
+        "margin_bpb": 0.01,
+        "pass": false,
+        "point_bpb": 0.030655521258972848,
+        "upper_95_bpb": 0.03244600173585126
+      },
+      "dense8k_standard_joint": {
+        "lower_95_bpb": 0.006957191058219934,
+        "margin_bpb": 0.01,
+        "pass": true,
+        "point_bpb": 0.008136509760448196,
+        "upper_95_bpb": 0.00938267068058375
+      },
+      "dense8k_update_geometry": {
+        "lower_95_bpb": -0.011340130584869467,
+        "margin_bpb": 0.01,
+        "pass": true,
+        "point_bpb": -0.010215862597619306,
+        "upper_95_bpb": -0.009017704397364702
+      }
+    },
+    "deployment_tie_order": [
+      "dense8k_standard_joint",
+      "dense8k_inplace_two_stage",
+      "dense8k_update_geometry"
+    ],
+    "document_bpb_by_role": {
+      "dense2k_joint": 1.394224673604512,
+      "dense8k_inplace_two_stage": 1.4248801948634848,
+      "dense8k_standard_joint": 1.4023611833649603,
+      "dense8k_update_geometry": 1.3840088110068927
+    },
+    "fresh_multiseed_method_confirmation_authorized": true,
+    "optimizer_geometry_method_comparisons": {
+      "dense8k_inplace_two_stage": {
+        "lower_95_bpb": -0.042259752264704686,
+        "minimum_advantage_bpb": 0.002,
+        "pass": true,
+        "point_bpb": -0.040871383856592156,
+        "upper_95_bpb": -0.039564264364421634
+      },
+      "dense8k_standard_joint": {
+        "lower_95_bpb": -0.018974489563289912,
+        "minimum_advantage_bpb": 0.002,
+        "pass": true,
+        "point_bpb": -0.0183523723580675,
+        "upper_95_bpb": -0.01776823182625658
+      }
+    },
+    "optimizer_geometry_method_supported": true,
+    "publication_claim_authorized": false,
+    "quality_qualified_dense8k_roles": [
+      "dense8k_standard_joint",
+      "dense8k_update_geometry"
+    ],
+    "selected_dense8k_role_for_actual_preflight": "dense8k_update_geometry",
+    "status": "optimizer_geometry_and_deployment_opportunity"
+  },
+  "git_commit": "0bd46473459d4bbb605ffbf5743cc8a3d33b9712",
+  "independent_nll_recomputation": {
+    "by_role": {
+      "dense2k_joint": {
+        "array_sha256": {
+          "contiguous_nll_nats": "a6f7723979c14f641e624fdaa6bfff70d5fad885877256bcdcb24f84f4da9177",
+          "contiguous_raw_target_bytes": "162620f4bfca51c065866280103740536a086af0c0cc08818eb28c78c34ac16c",
+          "document_nll_nats": "b3b342090cded2a8d245a5d309ff91a8c452a4ff900628dc43655aabba679ad8",
+          "document_raw_bytes": "669ba8c3dec66c1fd30f37134f6926206bd693dcb073c42a28e804c1546e95e5"
+        },
+        "bitwise_equal_to_worker": true,
+        "checkpoint_artifact_sha256": "ea5241b0f88e5b18e9c61fa01030313d8a23a99efd0ec1495bd4eb8c7972625e",
+        "checkpoint_state_sha256": "743f167ea0769aac2229a38927e2e529085405378259167154d337c6d454f628",
+        "elapsed_seconds": 63.815876540960744,
+        "nll_artifact_sha256": "cb386558f114037da4d98eb26d5ce7a76bb4a3f1a1f0422fb2e9be58b3e2bc7c"
+      },
+      "dense8k_inplace_two_stage": {
+        "array_sha256": {
+          "contiguous_nll_nats": "5f7b033a9420741712fd1e31827e3978e7b5be339811b65c0d8a014f6c849659",
+          "contiguous_raw_target_bytes": "110cd8e7f9dee5f8568df92f422644b2fd43a9681e4359e5260e1f14e7f0c8e6",
+          "document_nll_nats": "87d11975101eba2b998fe7d421f04c060b383f97f8956a8e91f8b62b84c77229",
+          "document_raw_bytes": "669ba8c3dec66c1fd30f37134f6926206bd693dcb073c42a28e804c1546e95e5"
+        },
+        "bitwise_equal_to_worker": true,
+        "checkpoint_artifact_sha256": "d37549cf74d3d0656d674a495a990b8c1fd5d79546c19a0ececf0b0cc55a7e76",
+        "checkpoint_state_sha256": "96be89d18f7087eec6847a229e4a38ccc4d1f513f94f5fdf30d009ec04d0fe0a",
+        "elapsed_seconds": 52.74242420797236,
+        "nll_artifact_sha256": "9119b299c1c540e1ab533cb3b9bb25d72c42e2d930df59fa75c5f4e9f7c4fb89"
+      },
+      "dense8k_standard_joint": {
+        "array_sha256": {
+          "contiguous_nll_nats": "8dc6f7f75c6e1f16944fca715acac46e91812d3557fc33325c01f10ccff9dd69",
+          "contiguous_raw_target_bytes": "110cd8e7f9dee5f8568df92f422644b2fd43a9681e4359e5260e1f14e7f0c8e6",
+          "document_nll_nats": "baba18d779030fabd6dcb53ef19a399444b913fff70bd2c21bbdc45ffbf1a3f3",
+          "document_raw_bytes": "669ba8c3dec66c1fd30f37134f6926206bd693dcb073c42a28e804c1546e95e5"
+        },
+        "bitwise_equal_to_worker": true,
+        "checkpoint_artifact_sha256": "f6e26c52e8db07a9b4d4cbd19fddcdc6726fd5a1d792131f24e1c51c03aaaf95",
+        "checkpoint_state_sha256": "eefedebc25ebfed9a75a2ad1a3ba173730912db8b84d5f02f2011ea12eb8d7a6",
+        "elapsed_seconds": 52.564435124979354,
+        "nll_artifact_sha256": "9092f48a3a4a06da4c44750cadc46f48ee835ea70596dd3d40c2ade0d30387cb"
+      },
+      "dense8k_update_geometry": {
+        "array_sha256": {
+          "contiguous_nll_nats": "26c981bbb6693b1471d36052fa56c451a08b823a0bf1547794131d8e9accc72b",
+          "contiguous_raw_target_bytes": "110cd8e7f9dee5f8568df92f422644b2fd43a9681e4359e5260e1f14e7f0c8e6",
+          "document_nll_nats": "58498d31562de34820094f6a61fc0ad36f87d6ed1005f3d2a10dfee7ea75fce6",
+          "document_raw_bytes": "669ba8c3dec66c1fd30f37134f6926206bd693dcb073c42a28e804c1546e95e5"
+        },
+        "bitwise_equal_to_worker": true,
+        "checkpoint_artifact_sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565",
+        "checkpoint_state_sha256": "98c3bae9929d037718d6b94a8b1726d04f084ac11272b6fbcfd613691597698e",
+        "elapsed_seconds": 52.814503417001106,
+        "nll_artifact_sha256": "5ab1cc42a2165396de5dd4e22d07b3eecd6336e2e9ba67c9131104468eac72cf"
+      }
+    },
+    "checkpoint_count": 4,
+    "comparator": "bitwise_float_arrays",
+    "pass": true
+  },
+  "kind": "fresh_vocabulary_adaptation_one_seed_result_v1",
+  "metrics": {
+    "dense2k_joint": {
+      "checkpoint_bytes": 81838658,
+      "contiguous_bpb": 1.3954465547101593,
+      "document_bpb": 1.394224673604512,
+      "optimizer_elapsed_seconds": 2309.7292502899654,
+      "optimizer_steps": 2213,
+      "parameter_count": 19667328
+    },
+    "dense8k_inplace_two_stage": {
+      "checkpoint_bytes": 100713026,
+      "contiguous_bpb": 1.4257932118465468,
+      "document_bpb": 1.4248801948634848,
+      "optimizer_elapsed_seconds": 1641.591289106058,
+      "optimizer_steps": 1677,
+      "parameter_count": 25172352
+    },
+    "dense8k_standard_joint": {
+      "checkpoint_bytes": 100713026,
+      "contiguous_bpb": 1.4030280537100306,
+      "document_bpb": 1.4023611833649603,
+      "optimizer_elapsed_seconds": 1836.423824764439,
+      "optimizer_steps": 1677,
+      "parameter_count": 25172352
+    },
+    "dense8k_update_geometry": {
+      "checkpoint_bytes": 100713026,
+      "contiguous_bpb": 1.3847116492312486,
+      "document_bpb": 1.3840088110068927,
+      "optimizer_elapsed_seconds": 1493.1220518735936,
+      "optimizer_steps": 1677,
+      "parameter_count": 25172352
+    }
+  },
+  "plan": {
+    "artifact_sha256": "a6d810a07f7a0edcab23a82d7d9c6224953edcf64886ad0ae748184d4dde92cc",
+    "path": "data/manifests/fresh-vocabulary-adaptation-one-seed-v1.json",
+    "payload_sha256": "27e8d1e3b206d33d50703f5d751d83e57cd2f0d1bd3fc5ff08c4637791c073f2"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-adaptation-one-seed-v1",
+  "schema_version": 1,
+  "selected_checkpoint_for_actual_preflight": {
+    "artifact_sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565",
+    "path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense8k_update_geometry.pt",
+    "role": "dense8k_update_geometry",
+    "state_sha256": "98c3bae9929d037718d6b94a8b1726d04f084ac11272b6fbcfd613691597698e"
+  },
+  "status": "optimizer_geometry_and_deployment_opportunity",
+  "summary_sha256": "8817b5ff57b5edd9d3e300cae2718604efe0eaf753734bb277c1b8a4469fe625",
+  "systems_accounting": {
+    "dense8k_inplace_two_stage": {
+      "optimizer_step_reduction_vs_dense2k": 0.24220515137821963,
+      "parameter_increase_vs_dense2k": 0.2799070621082844,
+      "training_time_reduction_vs_dense2k": 0.2892711174264381
+    },
+    "dense8k_standard_joint": {
+      "optimizer_step_reduction_vs_dense2k": 0.24220515137821963,
+      "parameter_increase_vs_dense2k": 0.2799070621082844,
+      "training_time_reduction_vs_dense2k": 0.20491814158135957
+    },
+    "dense8k_update_geometry": {
+      "optimizer_step_reduction_vs_dense2k": 0.24220515137821963,
+      "parameter_increase_vs_dense2k": 0.2799070621082844,
+      "training_time_reduction_vs_dense2k": 0.35355104859751607
+    }
+  }
+}

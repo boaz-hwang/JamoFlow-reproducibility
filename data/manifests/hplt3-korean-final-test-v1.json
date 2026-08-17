@@ -1,0 +1,71 @@
+{
+  "dataset_id": "hplt3-korean-final-test-v1",
+  "predecessor": {
+    "data_summary_path": "results/phase3-data/summary.json",
+    "data_summary_sha256": "5d2890a0154c0e98fe27c4d8801d5ffacea9217e25440d2631f7354e2c37f9ba",
+    "dataset_id": "hplt3-korean-phase3",
+    "integrity_cache_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "legacy_quotas": {
+      "calibration": 8000000,
+      "test": 16000000,
+      "train": 128000000
+    },
+    "legacy_rank_order_commitments": {
+      "calibration": "7e71daa8d068abff9fc38a73beac9a4f64df9c6e57ad01d7a507dbcc9343a710",
+      "test": "f41c9d6153bc20c7d81c7a251a4866b3d92aa0491f6438e7525ffaf25489eb17",
+      "train": "ed1f805670a54a7575d263967049eb47e131df44ef90d3c11470fb91b13e25f2"
+    },
+    "legacy_salt": "JamoFlow-Phase3-v1",
+    "manifest_path": "data/manifests/hplt3-korean-phase3.json",
+    "manifest_sha256": "873a303e9762906e0046cdf59f850b8d6dbeb4483cfff8ad5a6f124e00002d9e",
+    "processed_output_bytes": 152461842,
+    "processed_output_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "split_counts": {
+      "calibration": 386,
+      "test": 734,
+      "train": 5791
+    },
+    "unique_records": 6911
+  },
+  "privacy": {
+    "tracked_individual_digests": false,
+    "tracked_model_metrics": false,
+    "tracked_text": false
+  },
+  "protocol_version": 1,
+  "purpose": "sealed disjoint Korean final held-out test",
+  "schema_version": 1,
+  "selection": {
+    "expected_rank_key_hex": "064320cfd2f1c6a21a390f07dba26c7a39852a479c12e37dbb80a6d929a4fbbc",
+    "maximum_document_bytes": 262144,
+    "minimum_document_bytes": 256,
+    "normalized_exclusion_algorithm": "unicode-nfkc-casefold-whitespace-collapse-sha256-v1",
+    "order": [
+      "rank_digest",
+      "document_digest"
+    ],
+    "quota_stream_bytes": 32000000,
+    "rank_algorithm": "sha256-domain-separated-derived-key-v1",
+    "record_digest": "sha256-exact-utf8-v1",
+    "required_split": "test",
+    "reserve_stream_bytes": 64262145,
+    "separator_hex": "0a",
+    "sequence_length": 512,
+    "split_algorithm": {
+      "calibration_cut": 9000,
+      "name": "sha256-prefix-mod-10000-v1",
+      "required_bucket_max": 9999,
+      "required_bucket_min": 9000,
+      "train_cut": 8000
+    },
+    "unicode_database_version": "15.1.0"
+  },
+  "source": {
+    "etag": "\"6f00793d-63be01a95c540\"",
+    "expected_bytes": 1862302013,
+    "expected_sha256": "de4dfa43fd9f6c62cc81781e09c1f401cc77e7a956e07ecc80ac13477e699ca4",
+    "filename": "10_1.jsonl.zst",
+    "last_modified": "Fri, 08 Aug 2025 20:06:05 GMT",
+    "url": "https://data.hplt-project.org/three/sorted/kor_Hang/10_1.jsonl.zst"
+  }
+}

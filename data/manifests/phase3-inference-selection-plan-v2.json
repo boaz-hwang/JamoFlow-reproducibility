@@ -1,0 +1,122 @@
+{
+  "calibration_evaluator": {
+    "aggregation": "float64-fsum-nats/(count*511*ln2)",
+    "batch_size": 64,
+    "device": "mps",
+    "evaluator_protocol": "jamoflow-calibration-evaluator-v2",
+    "input_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "output_dtype": "float32",
+    "predicted_bytes_per_sequence": 511,
+    "requires_checkpoint_state_reconstruction": true,
+    "sequence_count": 15625,
+    "sequence_length": 512,
+    "split": "calibration"
+  },
+  "execution_paths": {
+    "calibration_evidence": "results/phase3-inference-selection-v2/calibration-evidence.json",
+    "conversion_artifact_root": "artifacts/phase3-compute-conversion",
+    "conversion_run_root": "runs/phase3-compute-conversion",
+    "phase3_artifact_root": "artifacts/phase3",
+    "phase3_run_root": "runs/phase3",
+    "selection_lock": "results/phase3-inference-selection-v2/selection-lock.json",
+    "selection_plan": "data/manifests/phase3-inference-selection-plan-v2.json"
+  },
+  "final_test": {
+    "dataset_id": "hplt3-korean-final-test-v1",
+    "evaluated_at_plan": false,
+    "manifest_path": "data/manifests/hplt3-korean-final-test-v1.json",
+    "manifest_sha256": "ea36dbbac63be8b9370cfee029758030cdd138aa1510bc02aeb8cbe4b95590ff",
+    "seal_path": "data/seals/hplt3-korean-final-test-v1.json",
+    "seal_payload_sha256": "97cf90d1e6e7191e7f8336647f278ae6c0e82d70540bf0f5c43f9cb426e75dc8",
+    "seal_sha256": "ce42e8a0b2d8161cc59e0b30d5d121b547e22d28709fe48284aa777df4a2290b"
+  },
+  "historical_screening": {
+    "all_initial_summary": {
+      "authorizes_final_claim": false,
+      "authorizes_selection": false,
+      "authorizes_timing": false,
+      "path": "results/phase3-all-initial/summary.json",
+      "role": "development_screening_only",
+      "sha256": "f3173b8220a17dea0eb5a43c1b4b33cae893dc769c6e5b4dcd7b05bc8ba496f6"
+    },
+    "primary_summary": {
+      "authorizes_final_claim": false,
+      "authorizes_selection": false,
+      "authorizes_timing": false,
+      "path": "results/phase3-primary-five-seed/summary.json",
+      "role": "development_screening_only",
+      "sha256": "c374c06303334f06577c118d37c7e703a031c2a91af12b10ffcd384bb803bd33"
+    }
+  },
+  "initial_design": {
+    "calibration_policy_order": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_whitespace_grid",
+      "spacebyte_spacelike",
+      "entropy_threshold_full",
+      "entropy_threshold_codepoint",
+      "causal_codepoint_grid_64",
+      "causal_whitespace_grid_64",
+      "causal_codepoint_grid_72",
+      "causal_whitespace_grid_72"
+    ],
+    "confirmation_seed_order": [
+      57721,
+      65537
+    ],
+    "conversion_policy_order": [
+      "causal_codepoint_grid_64",
+      "causal_whitespace_grid_64",
+      "causal_codepoint_grid_72",
+      "causal_whitespace_grid_72"
+    ],
+    "initial_seed_order": [
+      1729,
+      2718,
+      31415
+    ],
+    "phase3_policy_order": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_whitespace_grid",
+      "spacebyte_spacelike",
+      "entropy_threshold_full",
+      "entropy_threshold_codepoint"
+    ],
+    "rate_order": [
+      64,
+      72
+    ],
+    "source_artifact_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "source_integrity_artifact_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181"
+  },
+  "kind": "phase3_inference_selection_plan_v2",
+  "plan_git_commit": "8820f947d4b839e3cf72cd7dedfc26e607c3e95f",
+  "plan_sha256": "3f315167cc394c6bb1d108573cca653b188b9703892a71f850cf02126ca9fddd",
+  "protocol_version": 2,
+  "schema_version": 2,
+  "selection_rules": {
+    "broad_reference_futility_margin_bpb": 0.01,
+    "broad_reference_futility_minimum_seed_count_within_margin": 2,
+    "candidate": "whitespace policy at selected rate",
+    "final_test_input": false,
+    "historical_screening_test_input": false,
+    "latency_input": false,
+    "rate_margin_bpb": 0.01,
+    "rate_minimum_seed_count_within_margin": 2,
+    "rate_rule": "first passing rate in fixed 64,72 order",
+    "reference_order": [
+      "fixed_byte_6",
+      "causal_codepoint_grid",
+      "causal_whitespace_grid",
+      "spacebyte_spacelike",
+      "entropy_threshold_full",
+      "entropy_threshold_codepoint",
+      "selected_rate_codepoint"
+    ],
+    "reference_rule": "lowest initial-three-seed mean calibration BPB",
+    "reference_tie_break": "first in fixed order on exact tie",
+    "terminal_no_rate": true
+  }
+}

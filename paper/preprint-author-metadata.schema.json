@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:jamoflow:preprint-author-metadata-v1",
+  "title": "Private author metadata for the JamoFlow named preprint builder",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "authors", "affiliations", "acknowledgments"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "email", "orcid", "affiliation_ids"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "email": {"type": "string", "format": "email"},
+          "orcid": {"type": ["string", "null"]},
+          "affiliation_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "affiliations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "address"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "address": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "acknowledgments": {"type": ["string", "null"]}
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "bpe": {
+    "add_prefix_space": false,
+    "byte_fallback": false,
+    "dropout": null,
+    "initial_alphabet": "complete ByteLevel alphabet",
+    "minimum_frequency": 2,
+    "normalizer": null,
+    "replicate_training_for_exact_json_determinism": true,
+    "tokenizers_version": "0.22.2",
+    "train_split_only": true,
+    "use_regex": true,
+    "vocabulary_sizes": [
+      16000,
+      32000
+    ]
+  },
+  "claim_boundary": {
+    "actual_latency_or_memory_evidence": false,
+    "bpe_counts_observed_before_plan": false,
+    "calibration_only": true,
+    "conditional_three_hot_claimed_novel": false,
+    "final_or_historical_test_read": false,
+    "matched_quality_evidence": false,
+    "model_checkpoint_or_loss_read": false,
+    "opportunity_audit_is_confirmatory": false,
+    "preseal_engineering_anchors_disclosed": true
+  },
+  "decision_rule": {
+    "failure_action": "terminate scalar-representation construction and preserve the diagnostic result",
+    "maximum_calibration_unseen_scalar_occurrence_rate": 0.001,
+    "maximum_train_scalar_vocabulary": 8192,
+    "minimum_generic_scalar_step_reduction": 0.5,
+    "minimum_hangul_hybrid_dense_flop_reduction": 0.2,
+    "minimum_hangul_hybrid_step_reduction": 0.5,
+    "pass_authorizes": "parameter-matched random-weight construction and actual-runtime feasibility only"
+  },
+  "implementation_sha256": {
+    "docs/110-scalar-representation-and-bpe-opportunity-protocol.md": "f4678c41e5f3a474d79c1dd8f73c0ac3cab7207af6cbbd0314f2c82e9a2ef1b8",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/analyze_scalar_representation_opportunity.py": "c7c2f184f6161c234a554a7aa0304267447c41c79ce95c71841643b1a94f6ff2",
+    "scripts/scalar_representation_core.py": "12bda2255c38e118ccb7d46e2c98d5d003ca4743d27a97dc3795a34d3a4f1333",
+    "src/jamoflow/compute_conversion.py": "10136ecdb97ac1af084b66d9715c228e0f61b7745bd6f0d2f3ce4beb2dd2d08a",
+    "src/jamoflow/corpus.py": "af2c69d18424266bcee4cd3067432afc10b69bac345873f7cbf4e338654b16ba",
+    "src/jamoflow/cost.py": "9d1c841ac02e64e47bdc434e783d285f626ef9c13315097f405a0fda1270974e",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/phase3.py": "c17d76e959d7402f4bc6b010e5eefc5d19757d4a6b7ab3b04291ee063ba593a2",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "tests/test_scalar_representation.py": "785bf8fd000071173f45e0c7922a74a7b1ffcc8921b4375728c5ffb41cd4f99f"
+  },
+  "input": {
+    "byte_limit": 8000000,
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "conditional_failure_path": "results/conditional-local-frozen-sensitivity-v1/summary.json",
+    "conditional_failure_sha256": "5f48ab269d44de01eef1205636784daaee88d381e81b7854b3fe8735e4c552fb",
+    "integrity_path": "data/processed/hplt3-korean-phase3/integrity.json",
+    "integrity_sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181",
+    "prior_hangul_opportunity_path": "results/hangul-block-opportunity-v1/summary.json",
+    "prior_hangul_opportunity_sha256": "53ed8285d00756a617fad7d052297f2ef2836255ced04fb403ad395a6145657e",
+    "sequence_length_bytes": 512,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "splits": {
+      "calibration_records": 386,
+      "train_records": 5791
+    }
+  },
+  "kind": "scalar_representation_opportunity_plan_v1",
+  "known_preseal_engineering_anchors": {
+    "bpe_16000_calibration_token_count": "not observed",
+    "bpe_32000_calibration_token_count": "not observed",
+    "generic_scalar_dense_flop_reduction_rough": 0.365,
+    "generic_scalar_step_reduction": 0.5836279479534935,
+    "hangul_hybrid_step_reduction": 0.5759290719911341,
+    "hangul_share_of_scalar_savings": 0.9868085892915927,
+    "manual_calibration_unseen_scalar_occurrence_rate": 0.000044713,
+    "manual_train_unique_scalars": 7006,
+    "source": "prior tracked Hangul opportunity result plus disclosed pre-plan model-free engineering exploration"
+  },
+  "output": {
+    "artifact_root": "artifacts/scalar-representation-opportunity-v1",
+    "summary_path": "results/scalar-representation-opportunity-v1/summary.json"
+  },
+  "protocol_id": "jamoflow-scalar-representation-opportunity-v1",
+  "representation": {
+    "canonicalization_requirement": "valid precomposed Hangul has exactly one Hangul-unit encoding; raw fallback must not create an alias",
+    "generic_unicode_scalar": "one main step per strict Unicode scalar; conditional UTF-8 micro-heads; raw-byte fallback for invalid or truncated bytes",
+    "generic_utf8_resident_output_rows": 448,
+    "hangul_hybrid": "one conditional L-V-T main step for canonical precomposed Hangul; one main step per raw byte otherwise",
+    "hangul_hybrid_resident_output_rows": 324
+  },
+  "schema_version": 1,
+  "status": "sealed_before_bpe_token_counts"
+}

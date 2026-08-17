@@ -1,0 +1,40 @@
+{
+  "actual_timing_authorized": false,
+  "checkpoint_replay_roles": [
+    "c86",
+    "w72"
+  ],
+  "claim_boundary": {
+    "actual_incremental_timing_executed": false,
+    "one_seed_mechanism_screen": true,
+    "sufficiently_trained_llm_claimed": false,
+    "verification_replays_full_calibration_forward": true
+  },
+  "independent_checkpoint_replay_pass": true,
+  "kind": "balanced_200m_checkpoint_replay_receipt_v1",
+  "plan_artifact_sha256": "31ee5ea7cc13f29919d5cdabdf642f92a4b612aab48b90571f86fd7b26c20238",
+  "plan_sha256": "9879890b664d6fdc31e558833e9e3285911837c8f7b2b9b722cd1b8cf48a6558",
+  "protocol_id": "jamoflow-balanced-200m-quality-failure-analysis-v1",
+  "quality": {
+    "actual_timing_authorized": false,
+    "bpb_by_role": {
+      "c86": 1.4411260692502428,
+      "w72": 1.465326547195685
+    },
+    "calibration_examples": 15625,
+    "maximum_allowed_delta_bpb": 0.01,
+    "multiseed_quality_claimed": false,
+    "predicted_bytes_per_role": 7984375,
+    "quality_screen_pass": false,
+    "w72_minus_c86_bpb": 0.02420047794544211
+  },
+  "quality_status": "balanced_200m_quality_fail",
+  "receipt_sha256": "e110078aae244dc5a2c814cb6f63555612d609118a4c66ec92bc9ce6ebd7bcc8",
+  "schema_version": 1,
+  "sealed_verifier_sha256": "d1b75b9b793c2ae7ad37e88474ab29b7d5cd0971627fa981ffd32ad02b52d47e",
+  "training_summary_artifact_sha256": "35a64094debad853c0600809bd23d5fef9013a13d1d2fd3c4abfad7821d9d826",
+  "training_summary_git_commit": "5874aa4f099cc282f7da1773c7d62e1045341f2b",
+  "training_summary_sha256": "4467484d5bfae7303d0665d2aca46d1d7bdd17f084c5e436436f046456060d10",
+  "transcript_sha256": "bb18241a4394d80f5a34eeb2ada49c27f0168aec9ee02f037be2bc061a143a74",
+  "verification_base_git_commit": "7bd628f7cd134bfa233c71bf6fea0f077fd48174"
+}

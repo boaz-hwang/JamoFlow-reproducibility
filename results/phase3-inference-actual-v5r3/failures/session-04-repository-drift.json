@@ -1,0 +1,26 @@
+{
+  "active_sentinel_sha256": "ef9f94cdc5732e61673c72f8ab77faa50efc5ae400036ea865fcc871f756552c",
+  "attempt_pid": 76611,
+  "detected_worktree_change": {
+    "artifact_sha256": "745ad4e2213b12c406a3df94aecb1a3dc8b45f0c2480224dece6497df70fae1b",
+    "bytes": 8471,
+    "git_status": "untracked",
+    "modified_at": "2026-08-13T16:59:00+0900",
+    "path": "fable5-연구-중간-검토.md"
+  },
+  "disposition": "repository_drift_attempt_never_reused_as_evidence",
+  "exception": "ValueError: repository changed during actual timing session",
+  "failure_stage": "post_run_pre_publication_repository_integrity_gate",
+  "in_memory_measurements_discarded": true,
+  "kind": "phase3_inference_actual_repository_drift_failure_v5r3",
+  "latency_metrics_inspected": false,
+  "output_artifact_published": false,
+  "plan_artifact_sha256": "ef72d5ac59408283e338461b133c1ce6bc7974592974c5afa7cad10304820d7a",
+  "plan_sha256": "14abe58686b8aaf6a565a99af1c75dc1d4985ec0503635c0b1bcf562bf4e033d",
+  "process_running_after_failure": false,
+  "receipt_published": false,
+  "run_git_commit": "ddb40dde3eeaabe1eea0458267ddfcc4ac946e2a",
+  "schema_version": 1,
+  "session_id": "session-04",
+  "timing_artifact_published": false
+}

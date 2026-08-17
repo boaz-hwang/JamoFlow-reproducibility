@@ -1,0 +1,222 @@
+{
+  "cases": {
+    "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+    "calibration_stream_sha256": "8272123a3ee9bc5bba218d43248aaf600434a35659a8c36ed47b04809bb9e630",
+    "candidate_rows": 1092,
+    "continuation_array_sha256": "490591ac2c96b35a739738c7f59dcc283d834de6ab54c321f3817694ca496946",
+    "continuation_length_bytes": 128,
+    "document_assignment_sha256": "b868f3ebdd22e64259355fe9c16a021630487b609731297dab29352c22ea5dab",
+    "measured_cases": 64,
+    "prompt_array_sha256": "0cbb14e39a2b4af82fff58bda33843e9f5c5a9fda545369cbde07dcbef9c4b96",
+    "prompt_length_bytes": 128,
+    "selected_cases": 72,
+    "selected_unique_clusters": 72,
+    "unique_candidate_clusters": 334,
+    "unique_candidate_prompts": 1092,
+    "warmup_cases": 8
+  },
+  "claim_boundary": {
+    "actual_end_to_end_measured": true,
+    "development_one_seed_one_session": true,
+    "memory_improvement_claimed": false,
+    "multiseed_requires_this_gate": true,
+    "parameter_and_checkpoint_cost_reported": true,
+    "publication_claim": false,
+    "requires_both_modes_at_least_10pct": true,
+    "trained_models": true
+  },
+  "dependencies": {
+    "adaptation_plan": {
+      "path": "data/manifests/fresh-vocabulary-adaptation-one-seed-v1.json",
+      "sha256": "a6d810a07f7a0edcab23a82d7d9c6224953edcf64886ad0ae748184d4dde92cc"
+    },
+    "adaptation_result": {
+      "path": "results/fresh-vocabulary-adaptation-one-seed-v1/summary.json",
+      "sha256": "3f4d79cdaae6885cf0a8832a886bfccf84331e6098603383e2c890dce27098b0"
+    },
+    "candidate_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense8k_update_geometry.pt",
+      "sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565"
+    },
+    "fresh_seal": {
+      "path": "data/seals/hplt3-korean-vocab-adaptation-v1.json",
+      "sha256": "2a1457b0b1cd1ffcaabde7997056b0283d5adebe925a7b228a046d0cdbe6f916"
+    },
+    "fresh_source": {
+      "path": "data/processed/hplt3-korean-vocab-adaptation-v1/ko.jsonl",
+      "sha256": "7817d3be0d67099735e6a26c741314ba27fe12b9cb7dd7d3b7022af40ea3b2c5"
+    },
+    "reference_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense2k_joint.pt",
+      "sha256": "ea5241b0f88e5b18e9c61fa01030313d8a23a99efd0ec1495bd4eb8c7972625e"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "experiment": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260841,
+    "checkpoint_loading_inside_timing": false,
+    "continuation_bytes": 128,
+    "maximum_free_tokens": 131,
+    "measured_cases": 64,
+    "minimum_bootstrap_lower_reduction": 0.0,
+    "minimum_end_to_end_point_reduction": 0.1,
+    "minimum_positive_prompts": 48,
+    "modes": [
+      "controlled_replay",
+      "free_running_utf8_greedy"
+    ],
+    "mps_atol": 0.0001,
+    "mps_rtol": 2e-05,
+    "prompt_bytes": 128,
+    "repetitions": 5,
+    "roles": [
+      "candidate",
+      "reference"
+    ],
+    "timed_scope": "raw-prompt UTF-8 decode and tokenizer encode; runtime/cache construction; parallel prefill; every autoregressive argmax and device-host token readback; incremental KV-cache decode; token-byte reconstruction; strict UTF-8 stop/decode",
+    "warmup_cases": 8
+  },
+  "git_commit_before_plan": "e24eb4cb2724faf3bca983e16065ceef6f2eea8c",
+  "implementation_sha256": {
+    "docs/154-fresh-vocabulary-adaptation-one-seed-result.md": "0c7fdaf0eb9973122ca30127955f0fbd9699dcaf07847bb772833b135986fa57",
+    "docs/155-fresh-vocabulary-trained-actual-preflight-protocol.md": "f870e0eb313f3c5983c8cd685121ac292b592c52dd8512c81cf3b11c0ead7ba4",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/benchmark_fresh_vocabulary_actual.py": "6ccb3c5658de43e3f52ee9188ebad016453a872ced64e33cf01e63828f80b08b",
+    "scripts/compositional_head_core.py": "f854870d81e5bbc66dd6ec46dd2ff4f34971631d968e80e545b43f53886e53db",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/fresh_vocabulary_actual_core.py": "c4027eea06246faaa3b0715b28d7d44b92bf52c12c683eabc62b1a389edc4b08",
+    "scripts/fresh_vocabulary_actual_protocol.py": "c7487f9b15332ee6f039993c70148d3b4d1e53bf41fff90d80ec86513a6cfa6b",
+    "scripts/fresh_vocabulary_adaptation_core.py": "49163233181eb0ff2f7f2bc89aca9cf026c484de386572b0ba6a981d069cb40f",
+    "scripts/fresh_vocabulary_adaptation_protocol.py": "9ff49b83bcf75c286e74789fdd7bec6a673b2de608220c0c41ef20fd20c7147c",
+    "scripts/scalar_runtime_core.py": "6260d9f0b974865d22af7a54d73a3e4fe892a2ed390ec49b973b95bc85534998",
+    "scripts/seal_fresh_vocabulary_actual_plan.py": "4ce112dc1021082a6729ce02de94aad5482581818f0a3380bfbe389659f598f7",
+    "scripts/summarize_fresh_vocabulary_actual.py": "3ced6d3f0bdcf90d7ba347ef8a0ce7dec661ce043719b4e89e2a4d43eca65f59",
+    "scripts/vocabulary_transfer_probe_core.py": "57a3f7390f589f73d0b8e5244d8270d02fb53e4bffa10d86dba9f5ce4b5fe430",
+    "src/jamoflow/document_inference.py": "390cf3e8784c15cac99d56bbd59e7701ecf148d1235573467694622f6451c312",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_benchmark.py": "750d33a7eb454ffbcca85d073905420e9cbde2d7a8311049f0b7b4482a0f4114",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_fresh_vocabulary_actual_core.py": "5f7bd2fee3b6db058a7a4d43f8319b16e37e2ef9d9dd493e0e71abbebba2ffa7",
+    "tests/test_fresh_vocabulary_actual_protocol.py": "f8f3b463c24717d07edf3a7a844c012be3eddc9c97a5389bc7dc03e3fc96ad0c"
+  },
+  "kind": "fresh_vocabulary_actual_one_seed_plan_v1",
+  "models": {
+    "candidate": {
+      "adaptation_role": "dense8k_update_geometry",
+      "checkpoint_artifact_sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565",
+      "checkpoint_bytes": 100713026,
+      "checkpoint_path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense8k_update_geometry.pt",
+      "checkpoint_state_sha256": "98c3bae9929d037718d6b94a8b1726d04f084ac11272b6fbcfd613691597698e",
+      "parameter_count": 25172352,
+      "vocabulary_size": 8192
+    },
+    "reference": {
+      "adaptation_role": "dense2k_joint",
+      "checkpoint_artifact_sha256": "ea5241b0f88e5b18e9c61fa01030313d8a23a99efd0ec1495bd4eb8c7972625e",
+      "checkpoint_bytes": 81838658,
+      "checkpoint_path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense2k_joint.pt",
+      "checkpoint_state_sha256": "743f167ea0769aac2229a38927e2e529085405378259167154d337c6d454f628",
+      "parameter_count": 19667328,
+      "vocabulary_size": 2048
+    }
+  },
+  "output_path": "results/fresh-vocabulary-actual-one-seed-v1/summary.json",
+  "plan_sha256": "3d322557f931c88ab6bf8bca66719a4c7f22b49eb92aaa66a869d09fb2d7ed4d",
+  "protocol_id": "jamoflow-fresh-vocabulary-actual-one-seed-v1",
+  "schema_version": 1,
+  "selection": {
+    "actual_latency_used_for_selection": false,
+    "adaptation_result_sha256": "8817b5ff57b5edd9d3e300cae2718604efe0eaf753734bb277c1b8a4469fe625",
+    "candidate": "dense8k_update_geometry",
+    "reference": "dense2k_joint",
+    "selection_metric": "fresh_calibration_document_bpb"
+  },
+  "status": "sealed_after_trained_quality_before_actual_timing",
+  "tokenizer_runtime": {
+    "candidate": {
+      "continuation_token_count": {
+        "array_sha256": "6517e4c7665241863e416ca51186240f49fbaa640834d7016e38428a0534301a",
+        "maximum": 60,
+        "median": 27.0,
+        "minimum": 19
+      },
+      "prompt_token_count": {
+        "array_sha256": "1be8a1b3b13950f21a25952195870517a7732f96a8dae5c7ec3d575736f58fbc",
+        "maximum": 61,
+        "median": 26.0,
+        "minimum": 20
+      },
+      "strict_utf8_transitions": {
+        "maximum_free_output_bytes": 146,
+        "maximum_token_bytes": 19,
+        "state_count": 8,
+        "token_bytes_sha256": "b6e2448b68149efc6eb44f3a6953c2fddc7884201de476ba18f21f206dcdd68c",
+        "transition_table_sha256": "28a3c687e145eaa9e35dbd7912349946dee98d18b8c8910a775dbdeb8cd983dc"
+      },
+      "vocabulary_size": 8192
+    },
+    "reference": {
+      "continuation_token_count": {
+        "array_sha256": "9a7fe7eee01c1b3217a1ebb33168d96f0cae6045e7747d68a08236aedcb112e8",
+        "maximum": 71,
+        "median": 35.0,
+        "minimum": 26
+      },
+      "prompt_token_count": {
+        "array_sha256": "4fb690dfd0e1e12ae1b057ed3fc405b4cd7726188b2ebcc421297e374000464b",
+        "maximum": 73,
+        "median": 35.0,
+        "minimum": 28
+      },
+      "strict_utf8_transitions": {
+        "maximum_free_output_bytes": 140,
+        "maximum_token_bytes": 13,
+        "state_count": 8,
+        "token_bytes_sha256": "ace9817a43076516944b45425ca1821628ea7fd51fc5a827ba475e922e15546f",
+        "transition_table_sha256": "0c31bb5ab1c1dce08591127147c0354129594ff64944d0eed6e90c761a780d91"
+      },
+      "vocabulary_size": 2048
+    }
+  },
+  "tokenizers": {
+    "candidate": {
+      "ordered_token_bytes_sha256": "fb2424ff1b3dbc90fa3dfe431372604ce4368c9d3e954143f4f73117f5a0b0c8",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-8192.json",
+      "sha256": "6f65d21005dfbafadbbed282a792b71d3c3ba8d1f3befc06d46e768b77f5c354",
+      "vocabulary_size": 8192
+    },
+    "reference": {
+      "ordered_token_bytes_sha256": "0f272210cf00870fcb1fecdefac9ad1e6acf1764bd47da8eabee5f525a3b4492",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054",
+      "vocabulary_size": 2048
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "claim_boundary": {
+    "actual_model_latency": false,
+    "calibration_development_only": true,
+    "korean_complete_variant_evaluated": false,
+    "matched_quality": false,
+    "publication_evidence": false,
+    "train_only_configuration_selection": true
+  },
+  "dependencies": {
+    "bpe_tokenizer": {
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054"
+    },
+    "integrity": {
+      "path": "data/processed/hplt3-korean-phase3/integrity.json",
+      "sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181"
+    },
+    "same2k_plan": {
+      "path": "data/manifests/same2k-generic-opportunity-v6.json",
+      "sha256": "154d2249694a152b17680cfb431350aca1082c222dd17232835d016659aef37d"
+    },
+    "same2k_result": {
+      "path": "results/same2k-generic-opportunity-v6/summary.json",
+      "sha256": "1e9e57e76998c8729c68cee4f5a3f8dd8eb4528eda933597bf6eb4060ab09126"
+    },
+    "source": {
+      "path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+      "sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2"
+  },
+  "experiment": {
+    "batch_size": 8,
+    "encode_repetitions": 3,
+    "maximum_piece_bytes": 48,
+    "maximum_token_arity": 8,
+    "measured_cases": 36,
+    "minimum_reduction": 0.1,
+    "primary_order": [
+      "byte_length_gain_2k_leftmost_longest",
+      "byte_length_gain_2k_minimum_token_dp"
+    ],
+    "role_order": [
+      "byte_bpe_2k",
+      "byte_length_gain_2k_leftmost_longest",
+      "byte_length_gain_2k_minimum_token_dp"
+    ],
+    "score_kind": "immediate_saving",
+    "train_bytes": 8000000,
+    "vocabulary_size": 2048,
+    "warmup_cases": 6
+  },
+  "git_commit_before_plan": "0e5937379d5fd5169008262c1f8594e6d8bf878b",
+  "implementation_sha256": {
+    "docs/121-length-max-thunder-tok-reproduction-audit.md": "442b392d6d1c7a631b99522e74a9ad0447ac9e6bc65f97e91528a9586d02e3a2",
+    "docs/129-same2k-generic-opportunity-result-and-length-gain-pivot.md": "a3817ce5f52e41e0193bab4db82811d11bb2a5b6d3bea802ed952fae65f2c182",
+    "docs/130-length-gain-opportunity-protocol.md": "1646924b94a1c7f1a4fa2f51f9dfd3312660486da1dc32c269f042275cd03a2f",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/fixed_byte_tokenizer.py": "a0b7a2fc97988067843d012bf37fe311a18408be653ecfd5a31c0500938f03f8",
+    "scripts/length_gain.py": "1fd54d62b77b8a8ddd3ad943cb8f58798294f10ab8971f8d4183338df93ec0cc",
+    "scripts/length_gain_opportunity_protocol.py": "85e64e0ee2ef9d4662f032dd908a877f0dd3eec125ab1a6b5f5d3c249f14172a",
+    "scripts/run_length_gain_opportunity.py": "d701807c70ae5eac020a03e8b92c361485e05a6b7c6289bd3fac7651d55fbfa1",
+    "scripts/same2k_opportunity_protocol.py": "becc0e68be87dc4557831444d9843dd1d1ef4a5eadfa63701ca352ce722c111a",
+    "scripts/seal_length_gain_opportunity_plan.py": "f3eafd193b084cb3f50b02e9f673ba6883c42364692c7740fc9f67ee0307dbd1",
+    "scripts/summarize_length_gain_opportunity.py": "0c6ac2bb3394ae007169f331c61a923ae0ad8c235216b6c19c0732dcbcffbcdb",
+    "tests/test_length_gain.py": "64d77f2b192a26b6a469d0675934284183dc7fe0d8ff9fe3ae124db64b767ec4",
+    "tests/test_length_gain_opportunity_protocol.py": "9daf4dd5bb181a11c6573bfd80a208ed7a8cd29d9d24b41151ee961a18def99a"
+  },
+  "kind": "length_gain_opportunity_plan_v1",
+  "known_train_only_preflight": {
+    "calibration_metrics_seen": false,
+    "exact_nonoverlap_first_round_seconds": 6.556800791993737,
+    "interpretation": "Train-only approximations selected batch=8 and immediate saving. They are disclosed engineering anchors, not gate evidence; the sealed constructor uses exact non-overlapping occurrence counts and 8M train bytes.",
+    "overlap_score_batch_256_reduction_vs_bpe": -0.0427003051823347,
+    "overlap_score_batch_32_current_length_reduction_vs_bpe": 0.04406948212683626,
+    "overlap_score_batch_32_immediate_reduction_vs_bpe": 0.0501749303701462,
+    "overlap_score_batch_8_immediate_reduction_vs_bpe": 0.06415855069017329,
+    "sample_bytes": 1999872
+  },
+  "plan_sha256": "6cefffdbcdb0df7d1ce42d9823c8fdccdb2534bfa2aff6ee4e9a582cdadd4592",
+  "protocol_id": "jamoflow-length-gain-opportunity-v1",
+  "schema_version": 1,
+  "shared_inputs": {
+    "calibration_and_cases": {
+      "calibration_bytes": 8000000,
+      "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+      "case_metadata": {
+        "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+        "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+        "candidate_document_windows": 15240,
+        "candidate_rows": 996,
+        "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+        "continuation_length_bytes": 128,
+        "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+        "measured_cases": 36,
+        "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4",
+        "prompt_length_bytes": 128,
+        "selected_cases": 42,
+        "selected_unique_clusters": 42,
+        "unique_candidate_clusters": 330,
+        "unique_candidate_prompts": 996,
+        "warmup_cases": 6
+      },
+      "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+      "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4"
+    },
+    "train": {
+      "available_bytes": 128006987,
+      "language": "ko",
+      "selected_bytes": 8000000,
+      "selected_records": 399,
+      "sequence_count": 15625,
+      "sequence_length": 512,
+      "sequence_starts_inside_codepoint": 9068,
+      "sha256": "8feb393a536ee9bddea7a0913205cc0717025142cc06289fd3ca3a04ab544435",
+      "split": "train",
+      "truncated_bytes": 0,
+      "valid_records": 5791
+    }
+  },
+  "status": "sealed_before_first_length_gain_calibration_evaluation"
+}

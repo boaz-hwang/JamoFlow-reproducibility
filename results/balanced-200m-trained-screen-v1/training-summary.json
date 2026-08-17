@@ -1,0 +1,54 @@
+{
+  "claim_boundary": {
+    "actual_timing_requires_quality_pass": true,
+    "historical_test_or_final_metric_used": false,
+    "one_seed_mechanism_screen": true,
+    "quality_independent_checkpoint_replay_pending": true,
+    "sufficiently_trained_llm_claimed": false
+  },
+  "kind": "balanced_200m_trained_screen_summary_v1",
+  "plan_artifact_sha256": "31ee5ea7cc13f29919d5cdabdf642f92a4b612aab48b90571f86fd7b26c20238",
+  "plan_sha256": "9879890b664d6fdc31e558833e9e3285911837c8f7b2b9b722cd1b8cf48a6558",
+  "preflight_artifact_sha256": "1d17a69e2acd6bb409ba00ab30bc8d942f56db5eb5de06077a079eb0d9e0e307",
+  "preflight_summary_sha256": "3e8fee689a6b7ea02dbc5e86abbb4c8fc87fdbe0119a9440fb7bdf9f69471804",
+  "protocol_id": "jamoflow-balanced-200m-trained-screen-v1",
+  "quality": {
+    "actual_timing_authorized": false,
+    "bpb_by_role": {
+      "c86": 1.4411260692502428,
+      "w72": 1.465326547195685
+    },
+    "calibration_examples": 15625,
+    "maximum_allowed_delta_bpb": 0.01,
+    "multiseed_quality_claimed": false,
+    "predicted_bytes_per_role": 7984375,
+    "quality_screen_pass": false,
+    "w72_minus_c86_bpb": 0.02420047794544211
+  },
+  "schema_version": 1,
+  "status": "balanced_200m_quality_fail",
+  "summary_base_git_commit": "bc6be24ee790235ec1a1b6dce009548a8114cee0",
+  "summary_sha256": "4467484d5bfae7303d0665d2aca46d1d7bdd17f084c5e436436f046456060d10",
+  "worker_evidence": {
+    "c86": {
+      "calibration_nll_array_sha256": "c6976aef9ddf703c69dbaf10d0c00029078fee1f00f779c8f05323ee52226814",
+      "calibration_nll_path": "artifacts/balanced-200m-trained-screen-v1/calibration-c86-nll.npz",
+      "calibration_nll_sha256": "6bdd3d3280bf61bc94a1405a12470a9298b2c4f162770c0045ee9c416a9fb7f1",
+      "checkpoint_path": "artifacts/balanced-200m-trained-screen-v1/trained-c86.pt",
+      "checkpoint_sha256": "dcaec8935cd60a40b194e6df5e82a4815fcd4591cb5c79c322bfa7994d110a2f",
+      "checkpoint_state_sha256": "c43423ee4cf645e0c76e1630b2c507a75fd2533e32f7119e26f816c51b926cc6",
+      "report_path": "artifacts/balanced-200m-trained-screen-v1/training-c86.json",
+      "report_sha256": "df25da47a2625298e6cab9a677dbc13d6189b922c3c3315247f43fe49a62a211"
+    },
+    "w72": {
+      "calibration_nll_array_sha256": "135c6b229bb95c2420f4642850e333838f8ce5ca16107ba4252440fdc57e6179",
+      "calibration_nll_path": "artifacts/balanced-200m-trained-screen-v1/calibration-w72-nll.npz",
+      "calibration_nll_sha256": "787ee93d6e6309f15cd68f9c5b7049308dadde3df1a8b7cbbd895955e22bd1d9",
+      "checkpoint_path": "artifacts/balanced-200m-trained-screen-v1/trained-w72.pt",
+      "checkpoint_sha256": "a282950afc02779ac238e012b4161c2b6587571f83560d73bb6a9c0aa645d0da",
+      "checkpoint_state_sha256": "9c1df1c57c0327c5debcfd4068a700f2a32e8b3f3ab113e58b6d1372f406ef02",
+      "report_path": "artifacts/balanced-200m-trained-screen-v1/training-w72.json",
+      "report_sha256": "0a65dd2e279d97271fa709177c74d80e59325b3c07f9766d142dc3ecd2a037c1"
+    }
+  }
+}

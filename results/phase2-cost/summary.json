@@ -1,0 +1,858 @@
+{
+  "analytical_flops": {
+    "1": {
+      "causal_codepoint_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 1,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_eojeol_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 1,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_whitespace_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 1,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "entropy_threshold_full": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 1,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 354291882.4045059,
+        "implemented_batch_max_mean_flops_per_sequence": 354291882.4045059,
+        "include_router": true,
+        "maximum_data_patches": 112,
+        "mean_batch_max_data_patches": 43.19073220686124,
+        "mean_data_patches": 43.19073220686124,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 26,
+        "patch_count_histogram": {
+          "107": 1,
+          "112": 1,
+          "26": 3,
+          "27": 3,
+          "28": 5,
+          "29": 9,
+          "30": 14,
+          "31": 21,
+          "32": 49,
+          "33": 56,
+          "34": 79,
+          "35": 128,
+          "36": 153,
+          "37": 171,
+          "38": 211,
+          "39": 236,
+          "40": 244,
+          "41": 294,
+          "42": 273,
+          "43": 268,
+          "44": 254,
+          "45": 229,
+          "46": 211,
+          "47": 200,
+          "48": 154,
+          "49": 96,
+          "50": 100,
+          "51": 88,
+          "52": 62,
+          "53": 47,
+          "54": 40,
+          "55": 42,
+          "56": 33,
+          "57": 21,
+          "58": 12,
+          "59": 17,
+          "60": 11,
+          "61": 15,
+          "62": 6,
+          "63": 10,
+          "64": 5,
+          "65": 4,
+          "66": 3,
+          "67": 3,
+          "68": 4,
+          "69": 3,
+          "70": 3,
+          "71": 1,
+          "73": 4,
+          "74": 2,
+          "76": 1,
+          "77": 2,
+          "79": 1,
+          "81": 2,
+          "83": 1
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 96468992
+      },
+      "fixed_byte_6": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 1,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      }
+    },
+    "64": {
+      "causal_codepoint_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 64,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_eojeol_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 64,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_whitespace_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 64,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "entropy_threshold_full": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.10888425606380259,
+        "batch_size": 64,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 354291882.4045059,
+        "implemented_batch_max_mean_flops_per_sequence": 392868690.44956475,
+        "include_router": true,
+        "maximum_data_patches": 112,
+        "mean_batch_max_data_patches": 58.58064516129032,
+        "mean_data_patches": 43.19073220686124,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 26,
+        "patch_count_histogram": {
+          "107": 1,
+          "112": 1,
+          "26": 3,
+          "27": 3,
+          "28": 5,
+          "29": 9,
+          "30": 14,
+          "31": 21,
+          "32": 49,
+          "33": 56,
+          "34": 79,
+          "35": 128,
+          "36": 153,
+          "37": 171,
+          "38": 211,
+          "39": 236,
+          "40": 244,
+          "41": 294,
+          "42": 273,
+          "43": 268,
+          "44": 254,
+          "45": 229,
+          "46": 211,
+          "47": 200,
+          "48": 154,
+          "49": 96,
+          "50": 100,
+          "51": 88,
+          "52": 62,
+          "53": 47,
+          "54": 40,
+          "55": 42,
+          "56": 33,
+          "57": 21,
+          "58": 12,
+          "59": 17,
+          "60": 11,
+          "61": 15,
+          "62": 6,
+          "63": 10,
+          "64": 5,
+          "65": 4,
+          "66": 3,
+          "67": 3,
+          "68": 4,
+          "69": 3,
+          "70": 3,
+          "71": 1,
+          "73": 4,
+          "74": 2,
+          "76": 1,
+          "77": 2,
+          "79": 1,
+          "81": 2,
+          "83": 1
+        },
+        "patch_slot_padding_rate": 0.26282925209305574,
+        "router_flops_per_sequence": 96468992
+      },
+      "fixed_byte_6": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 64,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      }
+    },
+    "8": {
+      "causal_codepoint_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 8,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_eojeol_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 8,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "causal_whitespace_grid": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 8,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      },
+      "entropy_threshold_full": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.056513256732455996,
+        "batch_size": 8,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 354291882.4045059,
+        "implemented_batch_max_mean_flops_per_sequence": 374314070.5130568,
+        "include_router": true,
+        "maximum_data_patches": 112,
+        "mean_batch_max_data_patches": 51.27811860940695,
+        "mean_data_patches": 43.19073220686124,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 26,
+        "patch_count_histogram": {
+          "107": 1,
+          "112": 1,
+          "26": 3,
+          "27": 3,
+          "28": 5,
+          "29": 9,
+          "30": 14,
+          "31": 21,
+          "32": 49,
+          "33": 56,
+          "34": 79,
+          "35": 128,
+          "36": 153,
+          "37": 171,
+          "38": 211,
+          "39": 236,
+          "40": 244,
+          "41": 294,
+          "42": 273,
+          "43": 268,
+          "44": 254,
+          "45": 229,
+          "46": 211,
+          "47": 200,
+          "48": 154,
+          "49": 96,
+          "50": 100,
+          "51": 88,
+          "52": 62,
+          "53": 47,
+          "54": 40,
+          "55": 42,
+          "56": 33,
+          "57": 21,
+          "58": 12,
+          "59": 17,
+          "60": 11,
+          "61": 15,
+          "62": 6,
+          "63": 10,
+          "64": 5,
+          "65": 4,
+          "66": 3,
+          "67": 3,
+          "68": 4,
+          "69": 3,
+          "70": 3,
+          "71": 1,
+          "73": 4,
+          "74": 2,
+          "76": 1,
+          "77": 2,
+          "79": 1,
+          "81": 2,
+          "83": 1
+        },
+        "patch_slot_padding_rate": 0.1575464914208098,
+        "router_flops_per_sequence": 96468992
+      },
+      "fixed_byte_6": {
+        "batch_padding_flop_overhead_relative_to_ideal": 0.0,
+        "batch_size": 8,
+        "examples": 3906,
+        "ideal_unpadded_mean_flops_per_sequence": 257261568.0,
+        "implemented_batch_max_mean_flops_per_sequence": 257261568.0,
+        "include_router": false,
+        "maximum_data_patches": 43,
+        "mean_batch_max_data_patches": 43.0,
+        "mean_data_patches": 43.0,
+        "method": "dense matmul forward FLOPs; multiply-add=2",
+        "minimum_data_patches": 43,
+        "patch_count_histogram": {
+          "43": 3906
+        },
+        "patch_slot_padding_rate": 0.0,
+        "router_flops_per_sequence": 0
+      }
+    }
+  },
+  "candidate_comparisons_vs_entropy_full": {
+    "causal_codepoint_grid": {
+      "batch1_direct_latency_reduction_vs_entropy_full": 0.3067194579023177,
+      "ideal_unpadded_flop_reduction_vs_entropy_full": 0.2738711193324024,
+      "implemented_batch_max_flop_reduction_vs_entropy_full": {
+        "1": 0.2738711193324024,
+        "64": 0.34517162030496185,
+        "8": 0.3127120023904466
+      }
+    },
+    "causal_eojeol_grid": {
+      "batch1_direct_latency_reduction_vs_entropy_full": 0.30929461830561744,
+      "ideal_unpadded_flop_reduction_vs_entropy_full": 0.2738711193324024,
+      "implemented_batch_max_flop_reduction_vs_entropy_full": {
+        "1": 0.2738711193324024,
+        "64": 0.34517162030496185,
+        "8": 0.3127120023904466
+      }
+    },
+    "causal_whitespace_grid": {
+      "batch1_direct_latency_reduction_vs_entropy_full": 0.30524086683252594,
+      "ideal_unpadded_flop_reduction_vs_entropy_full": 0.2738711193324024,
+      "implemented_batch_max_flop_reduction_vs_entropy_full": {
+        "1": 0.2738711193324024,
+        "64": 0.34517162030496185,
+        "8": 0.3127120023904466
+      }
+    }
+  },
+  "decision_gate_f": {
+    "by_candidate": {
+      "causal_codepoint_grid": {
+        "batch1_direct_latency_reduction": 0.3067194579023177,
+        "batch64_padding_aware_flop_reduction": 0.34517162030496185,
+        "gate_f_pass": true,
+        "ideal_reduction_at_least_10_percent": true,
+        "ideal_unpadded_flop_reduction": 0.2738711193324024,
+        "latency_reduction_at_least_10_percent": true,
+        "padding_aware_reduction_at_least_10_percent": true,
+        "quality_difference_vs_entropy_full_bpb": -0.0027225296003223322,
+        "quality_within_0_015_harm_margin": true
+      },
+      "causal_eojeol_grid": {
+        "batch1_direct_latency_reduction": 0.30929461830561744,
+        "batch64_padding_aware_flop_reduction": 0.34517162030496185,
+        "gate_f_pass": true,
+        "ideal_reduction_at_least_10_percent": true,
+        "ideal_unpadded_flop_reduction": 0.2738711193324024,
+        "latency_reduction_at_least_10_percent": true,
+        "padding_aware_reduction_at_least_10_percent": true,
+        "quality_difference_vs_entropy_full_bpb": -0.009801994823111481,
+        "quality_within_0_015_harm_margin": true
+      },
+      "causal_whitespace_grid": {
+        "batch1_direct_latency_reduction": 0.30524086683252594,
+        "batch64_padding_aware_flop_reduction": 0.34517162030496185,
+        "gate_f_pass": true,
+        "ideal_reduction_at_least_10_percent": true,
+        "ideal_unpadded_flop_reduction": 0.2738711193324024,
+        "latency_reduction_at_least_10_percent": true,
+        "padding_aware_reduction_at_least_10_percent": true,
+        "quality_difference_vs_entropy_full_bpb": -0.009660910798355538,
+        "quality_within_0_015_harm_margin": true
+      }
+    },
+    "status": "pass"
+  },
+  "environment": {
+    "device": "mps",
+    "mac_hardware_model": "Mac16,7",
+    "parameters": {
+      "entropy_end_to_end": 1390720,
+      "main": 1251136,
+      "router": 139584
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "seed": 1729,
+    "versions": {
+      "mps_available": true,
+      "numpy": "2.5.2",
+      "python_torch": "2.13.0",
+      "transformers": "5.14.1"
+    }
+  },
+  "generated_at": "2026-08-10T06:29:48.472898+00:00",
+  "limitations": [
+    "MPS measurements do not predict CUDA serving latency.",
+    "Teacher-forced windows do not measure sequential autoregressive decoding.",
+    "Candidate masks represent parser state already available to a streaming decoder.",
+    "The entropy path includes the preregistered MPS-to-CPU score transfer and Python/NumPy threshold selector.",
+    "Analytical FLOPs omit non-matmul operations explicitly listed in jamoflow.cost."
+  ],
+  "memory_after_benchmark": {
+    "mps_current_allocated_bytes": 26113536,
+    "mps_driver_allocated_bytes": 1329807360,
+    "mps_recommended_max_bytes": 40200896512,
+    "ru_maxrss_raw": 487702528,
+    "ru_maxrss_unit": "bytes_on_macos; kilobytes_on_linux"
+  },
+  "memory_after_model_load": {
+    "mps_current_allocated_bytes": 25589248,
+    "mps_driver_allocated_bytes": 34045952,
+    "mps_recommended_max_bytes": 40200896512,
+    "ru_maxrss_raw": 353943552,
+    "ru_maxrss_unit": "bytes_on_macos; kilobytes_on_linux"
+  },
+  "protocol": {
+    "batch_sizes": [
+      1,
+      8,
+      64
+    ],
+    "device_synchronization_around_each_measurement": true,
+    "inputs_preloaded_on_device": true,
+    "language": "ko",
+    "randomized_interleaving": true,
+    "repetitions": 100,
+    "sequence_bytes": 256,
+    "threshold_nats_from_calibration": 3.1172334887087354,
+    "warmup_rounds": 10
+  },
+  "schema_version": 1,
+  "scope": "Teacher-forced 256-byte Korean windows; selector/router/transfer/upload included in direct pipeline; not incremental generation latency",
+  "source": {
+    "benchmark": "runs/phase2/cost-benchmark.json",
+    "benchmark_sha256": "ddfea786c835fb5eda0473d7941eb9779b05d5d3cd4e2984cf40b105cf331703",
+    "controls_summary": "results/phase2-controls/summary.json",
+    "controls_summary_sha256": "4d5b67c6d05cf5052443f74edb08f29a363c2002df0425258ebdef4755285c04",
+    "primary_summary": "results/phase2-korean-primary/summary.json",
+    "primary_summary_sha256": "ebcd3834fa97f9d799c95ce95807ccebeac2fa2f0986c742e813889d822e84ba"
+  },
+  "timing_summaries_without_raw_samples": {
+    "1": {
+      "component_timings": {
+        "main_only/causal_codepoint_grid": {
+          "mean_ms": 4.877395020000001,
+          "median_ms": 4.689396,
+          "p10_ms": 4.1571378,
+          "p90_ms": 5.8863619,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.776257995237577
+        },
+        "main_only/causal_eojeol_grid": {
+          "mean_ms": 4.863282470000001,
+          "median_ms": 4.6160625,
+          "p10_ms": 4.037617,
+          "p90_ms": 5.999013100000002,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.7938827196910317
+        },
+        "main_only/causal_whitespace_grid": {
+          "mean_ms": 4.918998740000001,
+          "median_ms": 4.7205005,
+          "p10_ms": 4.124325,
+          "p90_ms": 6.0103333,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.8218694150385514
+        },
+        "main_only/entropy_threshold_full": {
+          "mean_ms": 4.84374165,
+          "median_ms": 4.6920835,
+          "p10_ms": 4.103199399999999,
+          "p90_ms": 5.986283900000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.7661890093221438
+        },
+        "main_only/fixed_byte_6": {
+          "mean_ms": 4.8631987699999994,
+          "median_ms": 4.6702295,
+          "p10_ms": 4.0140578,
+          "p90_ms": 6.050162500000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.7687959341182317
+        },
+        "router_only": {
+          "mean_ms": 2.0715633399999995,
+          "median_ms": 1.9812505,
+          "p10_ms": 1.7238833,
+          "p90_ms": 2.4118292,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.3995499917297924
+        }
+      },
+      "direct_pipeline_timings": {
+        "end_to_end/causal_codepoint_grid": {
+          "mean_ms": 5.49412787,
+          "median_ms": 5.2945835,
+          "p10_ms": 4.6167955,
+          "p90_ms": 6.6760875,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.7788169358406865
+        },
+        "end_to_end/causal_eojeol_grid": {
+          "mean_ms": 5.456296260000001,
+          "median_ms": 5.274917,
+          "p10_ms": 4.5338956,
+          "p90_ms": 6.7848084,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.8364608663001446
+        },
+        "end_to_end/causal_whitespace_grid": {
+          "mean_ms": 5.46414173,
+          "median_ms": 5.3058755,
+          "p10_ms": 4.6611047999999995,
+          "p90_ms": 6.603679500000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.7469247461710883
+        },
+        "end_to_end/entropy_threshold_full": {
+          "mean_ms": 7.870667430000001,
+          "median_ms": 7.6370000000000005,
+          "p10_ms": 6.8152291,
+          "p90_ms": 9.356683600000002,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 1.0121860092668744
+        },
+        "end_to_end/fixed_byte_6": {
+          "mean_ms": 5.24963454,
+          "median_ms": 4.9485415,
+          "p10_ms": 4.4160294,
+          "p90_ms": 6.452312200000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.8469324485505362
+        }
+      }
+    },
+    "64": {
+      "component_timings": {
+        "main_only/causal_codepoint_grid": {
+          "mean_ms": 28.23965502,
+          "median_ms": 28.210604,
+          "p10_ms": 27.8782878,
+          "p90_ms": 28.5303955,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.32908801797112136
+        },
+        "main_only/causal_eojeol_grid": {
+          "mean_ms": 28.231707129999997,
+          "median_ms": 28.211771,
+          "p10_ms": 27.917934,
+          "p90_ms": 28.545525,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.3202279103590479
+        },
+        "main_only/causal_whitespace_grid": {
+          "mean_ms": 28.271544170000006,
+          "median_ms": 28.214104499999998,
+          "p10_ms": 27.9373952,
+          "p90_ms": 28.5721247,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.3688021097545061
+        },
+        "main_only/entropy_threshold_full": {
+          "mean_ms": 30.728944530000003,
+          "median_ms": 30.7452495,
+          "p10_ms": 30.3818583,
+          "p90_ms": 30.975113099999998,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.2771058931086899
+        },
+        "main_only/fixed_byte_6": {
+          "mean_ms": 28.227939979999995,
+          "median_ms": 28.211854,
+          "p10_ms": 27.8489792,
+          "p90_ms": 28.530278499999998,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.29543865005698655
+        },
+        "router_only": {
+          "mean_ms": 13.341428269999996,
+          "median_ms": 13.263207999999999,
+          "p10_ms": 13.085529500000002,
+          "p90_ms": 13.6746253,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.29129365724538364
+        }
+      },
+      "direct_pipeline_timings": {
+        "end_to_end/causal_codepoint_grid": {
+          "mean_ms": 29.747965869999998,
+          "median_ms": 29.6168125,
+          "p10_ms": 29.3409667,
+          "p90_ms": 30.0331789,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.6446248259425068
+        },
+        "end_to_end/causal_eojeol_grid": {
+          "mean_ms": 31.136194970000002,
+          "median_ms": 31.1315625,
+          "p10_ms": 30.6133661,
+          "p90_ms": 31.4896958,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.4086439389468897
+        },
+        "end_to_end/causal_whitespace_grid": {
+          "mean_ms": 31.14358999,
+          "median_ms": 31.102249999999998,
+          "p10_ms": 30.5480166,
+          "p90_ms": 31.588758000000002,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.4797216488225857
+        },
+        "end_to_end/entropy_threshold_full": {
+          "mean_ms": 47.28452826000001,
+          "median_ms": 47.124729,
+          "p10_ms": 46.4330536,
+          "p90_ms": 48.055467,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.9261549206824065
+        },
+        "end_to_end/fixed_byte_6": {
+          "mean_ms": 28.300090440000005,
+          "median_ms": 28.243042,
+          "p10_ms": 27.9897789,
+          "p90_ms": 28.6799458,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.3436654014867615
+        }
+      }
+    },
+    "8": {
+      "component_timings": {
+        "main_only/causal_codepoint_grid": {
+          "mean_ms": 5.11201163,
+          "median_ms": 5.1291665,
+          "p10_ms": 4.9418375,
+          "p90_ms": 5.2779289,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.1610732542257774
+        },
+        "main_only/causal_eojeol_grid": {
+          "mean_ms": 5.10690212,
+          "median_ms": 5.1368335,
+          "p10_ms": 4.9572208,
+          "p90_ms": 5.2668709,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.16237234915983212
+        },
+        "main_only/causal_whitespace_grid": {
+          "mean_ms": 5.12543536,
+          "median_ms": 5.143229,
+          "p10_ms": 4.959275,
+          "p90_ms": 5.2956622,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.15955254807106684
+        },
+        "main_only/entropy_threshold_full": {
+          "mean_ms": 5.26055586,
+          "median_ms": 5.2821875,
+          "p10_ms": 5.1123547,
+          "p90_ms": 5.4142788,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.15571813737888046
+        },
+        "main_only/fixed_byte_6": {
+          "mean_ms": 5.10322838,
+          "median_ms": 5.117103999999999,
+          "p10_ms": 4.9622916,
+          "p90_ms": 5.2688747000000005,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.15539491477014233
+        },
+        "router_only": {
+          "mean_ms": 2.4372675200000002,
+          "median_ms": 2.4352289999999996,
+          "p10_ms": 2.3047542,
+          "p90_ms": 2.5640208,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.10303397810063446
+        }
+      },
+      "direct_pipeline_timings": {
+        "end_to_end/causal_codepoint_grid": {
+          "mean_ms": 5.82866086,
+          "median_ms": 5.7897704999999995,
+          "p10_ms": 5.4489791,
+          "p90_ms": 6.162279100000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.36430811258709034
+        },
+        "end_to_end/causal_eojeol_grid": {
+          "mean_ms": 5.9984274399999995,
+          "median_ms": 5.8781455000000005,
+          "p10_ms": 5.6393417,
+          "p90_ms": 6.4622664,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.47013439033332505
+        },
+        "end_to_end/causal_whitespace_grid": {
+          "mean_ms": 5.97407081,
+          "median_ms": 5.886896,
+          "p10_ms": 5.5867961,
+          "p90_ms": 6.5247,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.40409712515747903
+        },
+        "end_to_end/entropy_threshold_full": {
+          "mean_ms": 8.73131504,
+          "median_ms": 8.605062499999999,
+          "p10_ms": 8.1505381,
+          "p90_ms": 9.466799700000001,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.5801932894454168
+        },
+        "end_to_end/fixed_byte_6": {
+          "mean_ms": 5.41379289,
+          "median_ms": 5.3200835,
+          "p10_ms": 5.0566797999999995,
+          "p90_ms": 5.9446417,
+          "repetitions": 100,
+          "sample_standard_deviation_ms": 0.3723390940618319
+        }
+      }
+    }
+  }
+}

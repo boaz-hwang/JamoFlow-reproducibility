@@ -1,0 +1,259 @@
+{
+  "cases": {
+    "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+    "calibration_stream_sha256": "79a4a4de910fa6e5bbfc267ad40c5ffaf26a2959c419dd7b9e6b775320336e46",
+    "candidate_rows": 1017,
+    "continuation_array_sha256": "25568d902f76a37edcf8a23b5cbf272f3a8c9bc9cdf3213c9c57cd9930945286",
+    "continuation_length_bytes": 128,
+    "document_assignment_sha256": "e6bc909d0d0976c029d74a4ddcc0ce7bbc581becee7bad90ceca047cdbcb8a88",
+    "measured_cases": 64,
+    "prompt_array_sha256": "584967513c5f9a5a659bd97083f3cd52c3eb81064138d27c1ee2714f7eebdaa7",
+    "prompt_length_bytes": 128,
+    "selected_cases": 72,
+    "selected_unique_clusters": 72,
+    "unique_candidate_clusters": 303,
+    "unique_candidate_prompts": 1017,
+    "warmup_cases": 8
+  },
+  "claim_boundary": {
+    "actual_draft_compute_inside_timing": true,
+    "actual_rejection_and_rollback_inside_timing": true,
+    "confirmatory_or_final_blind": false,
+    "development_one_seed_one_session": true,
+    "existing_development_cases_reused": true,
+    "generic_retrieval_is_prior_work": true,
+    "korean_specific_method_tested": false,
+    "publication_claim": false,
+    "trained_target": true
+  },
+  "dependencies": {
+    "retrieval_table_artifact": {
+      "path": "artifacts/fresh-vocabulary-16k-retrieval-table-v1/compact-token-ngram.npz",
+      "sha256": "8aa1026bb282d68463b392e5b0d180b902e67d96ea50e7ea1e0ef9811a32f81a"
+    },
+    "retrieval_table_seal": {
+      "path": "data/seals/fresh-vocabulary-16k-retrieval-table-v1.json",
+      "sha256": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825"
+    },
+    "target_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+      "sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6"
+    },
+    "upper_bound_plan": {
+      "path": "data/manifests/fresh-vocabulary-16k-target-block-v1.json",
+      "sha256": "35c26841a31be032336db63d2c58a5c13b819ad093020fa5bf3fcdcb9363fc35"
+    },
+    "upper_bound_result": {
+      "path": "results/fresh-vocabulary-16k-target-block-v1/summary.json",
+      "sha256": "c751b58612f97cf68c2e509deffe404ba9cb15358cf9e607dd01898c83329914"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "experiment": {
+    "all_roles_share_one_resident_target": true,
+    "checkpoint_and_table_loading_inside_timing": false,
+    "continuation_bytes": 128,
+    "counter_names": [
+      "target_forward_calls",
+      "proposal_attempts",
+      "proposal_tokens",
+      "accepted_draft_tokens",
+      "full_accept_cycles",
+      "rejection_cycles",
+      "no_draft_steps",
+      "correction_tokens",
+      "bonus_tokens",
+      "cropped_input_tokens",
+      "corpus_ngram_proposals",
+      "prompt_lookup_proposals"
+    ],
+    "dictionary_precedence": "train_corpus_first",
+    "maximum_context_order": 3,
+    "maximum_draft_tokens": 3,
+    "maximum_free_tokens": 131,
+    "maximum_prompt_match": 4,
+    "maximum_table_entries": 200000,
+    "measured_cases": 64,
+    "minimum_context_count": 5,
+    "minimum_next_token_probability": 0.8,
+    "modes": [
+      "controlled_replay",
+      "free_running_utf8_greedy"
+    ],
+    "mps_atol": 0.0001,
+    "mps_rtol": 2e-05,
+    "primary_role": "hybrid_retrieval_block_4",
+    "prompt_bytes": 128,
+    "prompt_lookup_fallback": true,
+    "proposal_absence_falls_back_to_ar": true,
+    "repetitions": 5,
+    "roles": [
+      "baseline_ar",
+      "prompt_lookup_block_4",
+      "corpus_ngram_block_4",
+      "hybrid_retrieval_block_4"
+    ],
+    "target_block_input_tokens": 4,
+    "timed_scope": "raw-prompt UTF-8 decode and 16K tokenizer encode; fresh target KV-cache; parallel prefill; train-only compact token n-gram lookup; prompt+self-output suffix lookup; target block verification; every verifier argmax and device-host readback; rejection and DynamicCache crop; correction/bonus; token-byte reconstruction; strict UTF-8 transition/stop/decode; final MPS synchronization",
+    "timing_components": [
+      "tokenizer_ms",
+      "ttft_ms",
+      "decode_ms",
+      "model_loop_ms",
+      "draft_lookup_ms",
+      "end_to_end_ms"
+    ],
+    "warmup_cases": 8
+  },
+  "gate": {
+    "all_output_and_cache_correctness_required": true,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260841,
+    "diagnostic_roles_cannot_replace_primary": [
+      "prompt_lookup_block_4",
+      "corpus_ngram_block_4"
+    ],
+    "minimum_bootstrap_lower_reduction": 0.0,
+    "minimum_end_to_end_reduction": 0.1,
+    "minimum_positive_prompts": 48,
+    "pass_authorizes": "disjoint Korean-aware versus generic-hybrid design only",
+    "primary_role": "hybrid_retrieval_block_4",
+    "requires_both_modes": true
+  },
+  "git_commit_before_plan": "d96ed39c95dd1e406d63b8e0612901954ff647ff",
+  "implementation_sha256": {
+    "data/seals/fresh-vocabulary-16k-retrieval-table-v1.json": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825",
+    "docs/164-fresh-v2-16k-target-block-upper-bound-result.md": "a2d2f63548b857a75e8e322ace25b1bec08f37ac6cc98a14c2fb74d2ba337324",
+    "docs/165-retrieval-draft-literature-audit-and-fail-fast-direction.md": "e5bc5a4a392c8c55864dd9cbe0d3d7de88cf60c07d9db8ab9a041046c1cde056",
+    "docs/166-fresh-v2-16k-retrieval-draft-actual-protocol.md": "29c6fff76f8d1ba2aeac4daf4bc913328a4f24ac656d81ff31c863e5b2f391f9",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/benchmark_fresh_vocabulary_16k_block.py": "b993cf63ba21ae36e42b9d770f7daab31afd4600aa4aa9cee0ca70c2aee5d69e",
+    "scripts/benchmark_fresh_vocabulary_16k_retrieval.py": "246d3b5f190fd4f9914e70111c4bcbe027d3de6f6f4defbf3013915d30deccf6",
+    "scripts/benchmark_fresh_vocabulary_actual.py": "6ccb3c5658de43e3f52ee9188ebad016453a872ced64e33cf01e63828f80b08b",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/fresh_vocabulary_16k_actual_protocol.py": "5ad24a1c0030cdf5f2e90e2c2dae7914bd614e8691e2db5cbfec8a55cbce1432",
+    "scripts/fresh_vocabulary_16k_block_protocol.py": "8830470b298591e2b610c352cdb4f9d3df90385873856dfbb136a38148b93590",
+    "scripts/fresh_vocabulary_16k_block_runtime.py": "fc4b3ca8a1e82baef95602d683d34a057fbf1475b0e9dd3487691c09540c1245",
+    "scripts/fresh_vocabulary_16k_retrieval_actual_core.py": "4829270bb21fa9c3481ced6c6be3f33d36c43b45003fa4b6d56637d3034bb5cd",
+    "scripts/fresh_vocabulary_16k_retrieval_core.py": "9db4fa011480a9207af4f4bc0c9a9b0cbf157728497b1b34975864a62c71c9fe",
+    "scripts/fresh_vocabulary_16k_retrieval_protocol.py": "ae1088bf06a4da0efbcbcb2f9e0b1b7009e0f94e9255abcb10d89038183f2188",
+    "scripts/fresh_vocabulary_16k_retrieval_runtime.py": "08491a099c09dd5e46e4abd7549b3ca86ee6e4f559717765272742c355a312dc",
+    "scripts/preflight_fresh_vocabulary_16k_retrieval.py": "a53e694bbbf4134c42872dd6e3d2b0125853bcdea8074388acf2f177eeb5da7a",
+    "scripts/scalar_runtime_core.py": "6260d9f0b974865d22af7a54d73a3e4fe892a2ed390ec49b973b95bc85534998",
+    "scripts/seal_fresh_vocabulary_16k_retrieval_plan.py": "5409ba5b93e8170636ecf6245a4470ddf34865fc0836bbfd2524d10b0cfaecfa",
+    "scripts/summarize_fresh_vocabulary_16k_retrieval.py": "64d037ffd0cdb752f7efb51d2e7cf5bf2ff9f9f516ff37f6906db11ba0d4734c",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_fresh_vocabulary_16k_retrieval_actual_core.py": "f1b5195760ec1942aa4c6fb193aa85b640f345d3e09806832a6efd6b04dd1c52",
+    "tests/test_fresh_vocabulary_16k_retrieval_core.py": "f11f254a00ea2d211c534d27b99a61d1eb69f1b341dfc2bbc6cce0abc0bbd065",
+    "tests/test_fresh_vocabulary_16k_retrieval_protocol.py": "03068a8696097000b886c3782e0a344663ddcf57615e2f5d4a957eae5e45a04e",
+    "tests/test_fresh_vocabulary_16k_retrieval_runtime.py": "8418fa6a76d6fcae99f46b2dfd955ba95665e9902b7d57c41046fa45db550b75"
+  },
+  "kind": "fresh_vocabulary_16k_retrieval_actual_plan_v1",
+  "output_path": "results/fresh-vocabulary-16k-retrieval-actual-v1/summary.json",
+  "plan_sha256": "77e9d7e3589e5622c2f91af8ab960b2abc8cd24a13d9ce0ade3ec95794e0f929",
+  "prior_evidence": {
+    "table_seal_sha256": "aacd1aede2372cba929a20ef7874c11a39175098de5ee521abec81da8f83cb19",
+    "table_uses_train_only": true,
+    "upper_bound_plan_sha256": "f4be11e53a90c916695b11e105402b06a1ad6d3dda683d056491b04e7feb8fd2",
+    "upper_bound_primary_pass": true,
+    "upper_bound_summary_sha256": "ad7db5d5699735eb27d798c1b716060cb5670a5b721eec1e5f82154d8f81185e"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-retrieval-actual-v1",
+  "schema_version": 1,
+  "status": "sealed_before_retrieval_actual_timing",
+  "table": {
+    "artifact_sha256": "8aa1026bb282d68463b392e5b0d180b902e67d96ea50e7ea1e0ef9811a32f81a",
+    "contract": {
+      "entry_count": 200000,
+      "maximum_entries": 200000,
+      "minimum_context_count": 5,
+      "minimum_next_token_probability": 0.8,
+      "orders": {
+        "1": {
+          "best_count_sha256": "3be31a7cd6498e30ed3c6dd68f8ed7076680268b4114c316295ae6909b59b1e3",
+          "context_sha256": "d4be88f41f6ee5d21aa0969c6c2f2dee6003886bc6634fb61825f78e6b9bb361",
+          "entries": 454,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8003714020427113,
+          "next_sha256": "c95239aa5e77fce2646f6888fa30688c5b65ab4092b61c401ba35c159965f7da",
+          "total_count_sha256": "ecbd6df505f2f925fcc8ed84d1380accff12c9d338e817fed6241d509d031fc7"
+        },
+        "2": {
+          "best_count_sha256": "41f651766d0dbb3cb8470892ff27ecef2712fdbb602dae87f9fd8f85249cef31",
+          "context_sha256": "0fe7b43d0663549bd8efb4c0209ea981e702d19b6500066acd9019ed70a76e94",
+          "entries": 73364,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8,
+          "next_sha256": "788c2a50e7edcd68f45fd637fe5950a23bee81b61da8a88cfe79546b7b3c1c9b",
+          "total_count_sha256": "75964bdec9aa021d6e734918567c27c1738ae8834655392c4b86b5e9b187b9dd"
+        },
+        "3": {
+          "best_count_sha256": "502aa22e7d7b751c783c249a22a5db982ab531c561c0ca80968068cb6d0f0a03",
+          "context_sha256": "035d936549691fef5d09628321ef7b208e5135387a43c611f2b600c25e5b9f1e",
+          "entries": 126182,
+          "maximum_confidence": 1.0,
+          "minimum_confidence": 0.8,
+          "next_sha256": "2fde16faed408e90be97cf2da05158add3230d4a809609f515238d5f93018066",
+          "total_count_sha256": "8c14cb396e7eb3c455918ae128bd1cb555f34b8c59fabc192005a5a02fce3a52"
+        }
+      }
+    },
+    "seal_artifact_sha256": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825",
+    "seal_sha256": "aacd1aede2372cba929a20ef7874c11a39175098de5ee521abec81da8f83cb19"
+  },
+  "target": {
+    "checkpoint_artifact_sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6",
+    "checkpoint_bytes": 124699202,
+    "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+    "checkpoint_state_sha256": "7efa2ead8a6cc60e81b513c724c9b1b554d6ca0d674dbd8ef1ceff1cc6a05902",
+    "document_bpb": 1.3934744560965184,
+    "parameter_count": 31168896,
+    "quality_role": "dense16k_update_geometry",
+    "vocabulary_size": 16000
+  },
+  "tokenizer_runtime": {
+    "continuation_token_count": {
+      "array_sha256": "3b5d0e3bb9962d1e1c8b7a7f43e1740cb70311fdf086050830d5d0d5476f8410",
+      "maximum": 48,
+      "median": 25.0,
+      "minimum": 17
+    },
+    "prompt_token_count": {
+      "array_sha256": "d262bc94b4d9771c7c20125afdc1778a1c0d7696f9ddbe57b03b4dd596ad49cc",
+      "maximum": 44,
+      "median": 24.0,
+      "minimum": 15
+    },
+    "strict_utf8_transitions": {
+      "maximum_free_output_bytes": 155,
+      "maximum_token_bytes": 28,
+      "state_count": 8,
+      "token_bytes_sha256": "52ca584d6bd0c7782ac37d43544ef4b33b82edbe6363646809b0761b6192fedd",
+      "transition_table_sha256": "4ffbc2ae22abb509b5d0e73d4edcaae9ea09ba5eb7ab79654c5c9828afebc22d"
+    },
+    "vocabulary_size": 16000
+  }
+}

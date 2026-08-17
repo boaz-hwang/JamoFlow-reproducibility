@@ -1,0 +1,37 @@
+{
+  "aggregate": {
+    "overall_preflight_pass": true,
+    "pair_projected_hours": 8.12544885832991,
+    "protocol_id": "jamoflow-balanced-200m-trained-screen-v1",
+    "role_pass": {
+      "c86": true,
+      "w72": true
+    },
+    "status": "balanced_200m_batch8_preflight_pass",
+    "training_directly_started": false,
+    "training_protocol_may_be_implemented": true
+  },
+  "claim_boundary": {
+    "quality_claimed": false,
+    "resource_preflight_only": true,
+    "training_started": false
+  },
+  "kind": "balanced_200m_batch8_preflight_summary_v1",
+  "plan_artifact_sha256": "31ee5ea7cc13f29919d5cdabdf642f92a4b612aab48b90571f86fd7b26c20238",
+  "plan_sha256": "9879890b664d6fdc31e558833e9e3285911837c8f7b2b9b722cd1b8cf48a6558",
+  "protocol_id": "jamoflow-balanced-200m-trained-screen-v1",
+  "schema_version": 1,
+  "status": "balanced_200m_batch8_preflight_pass",
+  "summary_base_git_commit": "945e756baef2401ec38d710d6648fcb15084d127",
+  "summary_sha256": "3e8fee689a6b7ea02dbc5e86abbb4c8fc87fdbe0119a9440fb7bdf9f69471804",
+  "worker_evidence": {
+    "c86": {
+      "path": "artifacts/balanced-200m-trained-screen-v1/preflight-c86.json",
+      "sha256": "33537d514fef7d3e4a2fc62a17105b893d632104fdfeaf55ab24c84338496574"
+    },
+    "w72": {
+      "path": "artifacts/balanced-200m-trained-screen-v1/preflight-w72.json",
+      "sha256": "cf62592b1abcf8254c53d405f81550d76da4bf98051a36089d79853d0723b48d"
+    }
+  }
+}

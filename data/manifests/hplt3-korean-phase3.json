@@ -1,0 +1,24 @@
+{
+  "dataset_id": "hplt3-korean-phase3",
+  "dataset_card": "https://huggingface.co/datasets/HPLT/HPLT3.0",
+  "language_map": "https://data.hplt-project.org/three/sorted/kor_Hang.map",
+  "packaging_license": "CC0-1.0",
+  "source": {
+    "url": "https://data.hplt-project.org/three/sorted/kor_Hang/10_1.jsonl.zst",
+    "filename": "10_1.jsonl.zst",
+    "expected_bytes": 1862302013,
+    "etag": "\"6f00793d-63be01a95c540\"",
+    "last_modified": "Fri, 08 Aug 2025 20:06:05 GMT"
+  },
+  "selection": {
+    "salt": "JamoFlow-Phase3-v1",
+    "minimum_document_bytes": 256,
+    "maximum_document_bytes": 262144,
+    "reserve_multiplier": 2.0,
+    "quotas": {
+      "train": 128000000,
+      "calibration": 8000000,
+      "test": 16000000
+    }
+  }
+}

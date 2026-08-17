@@ -1,0 +1,146 @@
+{
+  "architecture_contract": {
+    "common_input": "frozen W72 local-decoder hidden at a UTF-8 scalar boundary plus the exact target first-byte argmax in EA..ED",
+    "eligibility": "target first-byte argmax is one of EA, EB, EC, ED; every proposal must encode a valid precomposed Hangul syllable with that same lead",
+    "order": [
+      "generic_independent_utf8",
+      "generic_joint_utf8",
+      "hangul_parallel_components",
+      "hangul_conditional_components"
+    ],
+    "parameter_budget": {
+      "generic_independent_utf8": 41728,
+      "generic_joint_utf8": 42733,
+      "hangul_conditional_components": 39604,
+      "hangul_parallel_components": 42468,
+      "maximum_to_minimum_ratio": 1.079
+    },
+    "proposal_heads": {
+      "generic_independent_utf8": "shared 196-to-128 GELU trunk and independent 64-way b2/b3 heads; valid Hangul same-lead candidates are scored by the sum",
+      "generic_joint_utf8": "196-to-9 GELU low-rank trunk and a joint 4096-way continuation-pair head; valid Hangul same-lead candidates only",
+      "hangul_conditional_components": "196-to-128 GELU state, onset top-4 beam, vowel conditioned on onset, coda conditioned on onset and vowel, with exact same-lead Hangul masks",
+      "hangul_parallel_components": "196-to-160 GELU trunk and parallel 19/21/28 component heads; valid same-lead Hangul candidates are scored by the sum"
+    },
+    "target_authority": "the draft never replaces target logits; this preflight compares its two continuation bytes with exact sequential frozen-target greedy bytes",
+    "teacher_forced_hidden_equivalence": "BltModel.last_hidden_state followed by the frozen lm_head was mechanically verified bitwise equal to BltForCausalLM.logits before sealing; no quality statistic entered the plan"
+  },
+  "calibration_free_generation": {
+    "continuation_bytes": 380,
+    "maximum_output_bytes": 383,
+    "minimum_prompt_hangul_share": 0.79,
+    "prompt_bytes": 128,
+    "prompt_count": 128,
+    "prompt_selection": "domain-separated SHA-256 bottom order over calibration-only valid 128-byte, scalar-boundary, Hangul-heavy windows; greedy non-overlap; no model output or metric input",
+    "target_decoding": "strict-UTF8-masked greedy W72 with sequential incremental cache",
+    "target_horizon": 512
+  },
+  "decision_rule": {
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260823,
+    "generic_control_if_hangul_fails": "generic_joint_exact_verifier_diagnostic_only",
+    "hangul_specificity_comparison": "hangul_conditional_components minus generic_joint_utf8 complete-pair acceptance, paired by calibration prompt and pooled within prompt over three head seeds",
+    "maximum_median_head_latency_ms": 1.0,
+    "minimum_complete_pair_acceptance": 0.4,
+    "minimum_free_attempts": 10000,
+    "minimum_mean_accepted_suffix_bytes": 0.9,
+    "minimum_per_seed_complete_pair_acceptance": 0.35,
+    "minimum_specificity_acceptance_gain": 0.01,
+    "pass_authorizes": "exact target block verifier prototype only",
+    "primary_hangul_pass": "Hangul conditional system feasibility passes, absolute complete-pair gain over generic joint is at least 0.01, and paired prompt-bootstrap 95% CI lower bound is greater than zero",
+    "stop_rule": "if neither Hangul conditional nor generic joint passes system feasibility, stop the multi-byte draft branch"
+  },
+  "implementation_sha256": {
+    "scripts/hangul_draft_acceptance_core.py": "0180a95b61d25cc29ed6052b337a7d6700eb09748d8d56351c27001efcf485a8",
+    "scripts/run_hangul_draft_acceptance_preflight.py": "7965a281f95ba89ecbd164bc7d58a238f9f8b1f068f96291a3c60d66d9d21a32"
+  },
+  "input": {
+    "byte_limit": 1000000,
+    "context_sampling_seed": 20260821,
+    "sample_count_per_split": 100000,
+    "sequence_length": 512,
+    "source_path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+    "source_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "streams": {
+      "calibration": {
+        "boundaries_array_sha256": "cf6f2e1e7f12cfa4c8dbc72736f439232d0bda090a1a9a57cc6925a38ec7f4a7",
+        "boundary_sha256": "653f189cfc001c580b0cb365e9a11ff0e62851a11eae7e8704251c04660fe73a",
+        "bytes": 999936,
+        "examples": 1953,
+        "inputs_sha256": "ba1b28ccab6c390af8c15d32ee87154c4adf7e9b4221ae139d859685abe23b79",
+        "patch_matrix_sha256": "f143ee54a3513091177d8fc84f5df05b2dc5ca955f35469c15956351e17e9a84",
+        "stream_sha256": "69f6aa9347f7e265d6df5097e4219c944b4da7cf6d8522a831a26c670a4c39ec",
+        "whitespace_sha256": "0b13ce5fe31c6bf60fc9ec72cbde34a529b95a42c5c609c7894102886644fbd4"
+      },
+      "train": {
+        "boundaries_array_sha256": "dc3ce86528d12a1b50d7a766d2f7cee3e0594b1603a792aa29cdd1e07b21a161",
+        "boundary_sha256": "8b3d961559086cdd8cbe4f402decc021022af61d0c29a8463adbaa196b668885",
+        "bytes": 999936,
+        "examples": 1953,
+        "inputs_sha256": "620503ff8934bf9171e0e35db59a43d6f88c983b6dfed166c9db8f1ca1224a58",
+        "patch_matrix_sha256": "a7af64440c29e672bac552601fb59a2e74786d31887b2f921074b4b0c5cabbaa",
+        "stream_sha256": "c46779a806a0173b1f6f2970eebfaa2a4cb03519720ba86a619a0a9c4922c9f6",
+        "whitespace_sha256": "ddf8c35eca202bfe77dadfda0be97860c210e162de357c3946809864f762ccac"
+      }
+    },
+    "target_batch_size": 64
+  },
+  "kind": "hangul_draft_acceptance_plan_v1",
+  "model": {
+    "authorization_artifact_sha256": "bdedf1cb11a412887687b500d9e76118522d96bde30d0c244e891792a6369474",
+    "authorization_path": "results/phase3-inference-final-v2/post-confirmation-authorization.json",
+    "candidate_descriptor": {
+      "model_family": "compute_conversion",
+      "patch_count": 72,
+      "policy": "causal_whitespace_grid_72",
+      "requires_entropy_router": false,
+      "runtime_policy": "causal_whitespace_grid"
+    },
+    "candidate_identity_sha256": "ccc7f076dc30a1e8db294a37a8b4edba0c0c0f92dd5f61c69b850db268c8ad16",
+    "checkpoint": {
+      "artifact_sha256": "ace22440cbddd319d07666c71299972a6b4c4792711431eba209e6b1ddebebb6",
+      "path": "artifacts/phase3-compute-conversion/seed-1729/causal_whitespace_grid_72.pt",
+      "state_sha256": "774191164214fd993685b52012c729821f8efc679d492d2db69c86507909745f"
+    },
+    "frozen": true,
+    "main_parameter_count": 19596096,
+    "seed": 1729
+  },
+  "optimization": {
+    "batch_size": 4096,
+    "epochs": 8,
+    "gradient_clip": 1.0,
+    "isolated_latency": {
+      "includes": "head proposal, valid-Hangul same-lead scoring/beam, output scalar readback, and MPS synchronization",
+      "repetitions": 500,
+      "warmups": 100
+    },
+    "learning_rate": 0.002,
+    "optimizer": "AdamW",
+    "prediction_batch_size": 4096,
+    "training_seeds": [
+      20260813,
+      20260817,
+      20260819
+    ],
+    "weight_decay": 0.01
+  },
+  "output": {
+    "calibration_cache_path": "artifacts/hangul-draft-acceptance-v1/calibration-hidden.npz",
+    "free_target_cache_path": "artifacts/hangul-draft-acceptance-v1/free-target.npz",
+    "head_root": "artifacts/hangul-draft-acceptance-v1/heads",
+    "prediction_path": "artifacts/hangul-draft-acceptance-v1/predictions.npz",
+    "summary_path": "results/hangul-draft-acceptance-v1/summary.json",
+    "train_cache_path": "artifacts/hangul-draft-acceptance-v1/train-hidden.npz"
+  },
+  "protocol_id": "jamoflow-hangul-draft-acceptance-v1",
+  "schema_version": 1,
+  "status": "post_v5r3_exploratory_calibration_only",
+  "threat_model": {
+    "calibration_split_used_for_head_comparison": true,
+    "final_test_read": false,
+    "historical_test_metric_read": false,
+    "target_weights_frozen": true,
+    "training_split_used_for_head_fit": true,
+    "v5_timing_result_numeric_input": false
+  }
+}

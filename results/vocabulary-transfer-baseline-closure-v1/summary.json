@@ -1,0 +1,2381 @@
+{
+  "artifact_lineage": {
+    "tied_random_native_all": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "08ef9ef7a707b77f822afde10dc359588af611b7a39c474cdc5426c802591ea9",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.164590804983358,
+        "checkpoint_artifact_sha256": "01187fff7ef82412229d9f533bd4a7b2c99fc80b095380de9ed0b355df8ee18c",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0000.pt",
+        "checkpoint_state_sha256": "7a9601e4eedc2f28b5776c53a38544133f8bdeb1ad4612d89820314e915df0d5",
+        "nll_artifact_sha256": "609611b95e4eb89ac835f7706cd58f033643c14cc7cae337b2d5c25919007e57",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "180beb61f24add0b80deaf7a0324912a96bfa13b3c73f0169ca47f49fca6a978",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7691493531648101,
+        "checkpoint_artifact_sha256": "f907eec8413c6e7f4f5af0db59df43c1b4d03246b09640bba57deb9a3d2328af",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0128.pt",
+        "checkpoint_state_sha256": "63fafbc59a4cb46b51c727c1cb7602333cd2993ff14f68ab9203aa046d57c07b",
+        "nll_artifact_sha256": "076da39dff4d96b845db60ef1de2fd7f52c4fcd6ab5ea7d8d069da499d229a23",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "fe59043c8bb624cf548c87b68cb562d7e96c7485da9c82988dd951c8a90328e9",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.633753396428811,
+        "checkpoint_artifact_sha256": "93fdf8a6db8bc87c93976c45f51b6a9e176cf1c8deb90731ab89016581149c0d",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0307.pt",
+        "checkpoint_state_sha256": "5c9bf6bb0fff3c1df43a791108f53c1dca6b987102acd7f42f82bebd652b93d4",
+        "nll_artifact_sha256": "cba08c576de1b252b58d3c491f4303f1dc510b5dac7917981afd1dc9deebb9d9",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "8a901613f2f40c050cd15b32f97bdf16529755b13b300bac91f2df6da392a64b",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.9960490336135248,
+        "checkpoint_artifact_sha256": "3390d70ed4f0c9f64ada9f6090561b7d25e0c88c986eba0f8254b88cb0a1f9bd",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0032.pt",
+        "checkpoint_state_sha256": "6036ca98a604302e5813e17463cbafa74846cc67b83fb40f2da5c1c9745d8945",
+        "nll_artifact_sha256": "7da5e491ebe4eae0af9a42f3f21c417fbdfbfa96a656be3bd3f735f9301f006f",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "1380f7115cd1fe1b3fcb1f891a32e32a650640d4f85e2f9d4210a02124917d63",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.9322171150912044,
+        "checkpoint_artifact_sha256": "47511190758267b0e9962fa0be584b9f2cf8781167771a121d628c9f6a113ff6",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0050.pt",
+        "checkpoint_state_sha256": "869ba3d9734aa7bda9550306c8ea7d7a66abadd2eeed03e1abb81370dd663e81",
+        "nll_artifact_sha256": "a097801897655d0fa6c5f637707f02b6d9b61bf00bb96c6e362e481ec20870bd",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "067fabcaa5a2b2c48f595567caa7c82e14a5732cff6b943cd623140498b05d54",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5911531716944325,
+        "checkpoint_artifact_sha256": "29f31ac9dc93597deda5bb0e471bad4df1386c982a40e112e2b91922af03d2ee",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_all-step-0512.pt",
+        "checkpoint_state_sha256": "30522ea995cc3d59db5209aaa00947566603177d8e2efdf0ba7d8c50aa93a379",
+        "nll_artifact_sha256": "97f9e3d01bf18172b4daa0f636bc355b2d1cf6fbed21dd2c13d764c5ed07d8b4",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_all-step-0512.npz"
+      }
+    },
+    "tied_random_native_two_stage": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "08ef9ef7a707b77f822afde10dc359588af611b7a39c474cdc5426c802591ea9",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.164590804983358,
+        "checkpoint_artifact_sha256": "01187fff7ef82412229d9f533bd4a7b2c99fc80b095380de9ed0b355df8ee18c",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0000.pt",
+        "checkpoint_state_sha256": "7a9601e4eedc2f28b5776c53a38544133f8bdeb1ad4612d89820314e915df0d5",
+        "nll_artifact_sha256": "609611b95e4eb89ac835f7706cd58f033643c14cc7cae337b2d5c25919007e57",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "be64633b705c101ee6461a7bb764826e20ef8e7da7804ae23bf977dc3f0557e4",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.906900428105471,
+        "checkpoint_artifact_sha256": "493f769fb3319b172db2a328a6a10f16d2812f7de85ff760fe390f063d2a9f58",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0128.pt",
+        "checkpoint_state_sha256": "26e80b50e039a72b747a06ff9ba3bc57662b4c81614f8b18dd95393a231d1abc",
+        "nll_artifact_sha256": "36978cc985d8e70c49e6a6925b6807693b22f0285468929a8b56b6fac2522bf1",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "35905c25bc2bf28f4d7cbac06f6c2eccdde8a0a2013d651223e9f787433fb11f",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7675387770413853,
+        "checkpoint_artifact_sha256": "fac4e1eef7a2a2832c513885681c190c20d2110cbdb0bb219c4a5622a1838369",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0307.pt",
+        "checkpoint_state_sha256": "be04a32fddc6de3d15ce46e864a9beabf592a22e0d4b97b2f8bda74d84639a69",
+        "nll_artifact_sha256": "a049319c0116691be53717dd84f70261c8b32132d75425eb1532ff4360727e1b",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "02c25d9c6c39cb6ddaafaeda794a6234f24f3f46c5cb051fa25ac6d0d5ead898",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.109437502069782,
+        "checkpoint_artifact_sha256": "9cc85c292256ba42d5233063222ffc07aa6162d6fa26bd736564e61e50bb4c20",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0032.pt",
+        "checkpoint_state_sha256": "fd3e04b09a02e52a9ecc53947889bf3fd495ef7174988f964f69416fbedca889",
+        "nll_artifact_sha256": "494f90040e9325d0b0b147f38ce1cedbbf5106798b3bd9e93f006147c88c17b5",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "d094ee0bd1e8dc955d467550eaaa2fc2bef0447abd0bc020532cc96b176ae40b",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.0612127219940573,
+        "checkpoint_artifact_sha256": "c31f1b72f2d8bbf4fe14bd3f023218094ba5ba1a16d21eed9940e2e51ea5162a",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0050.pt",
+        "checkpoint_state_sha256": "55fb60cb52395dd6f1e22f6f27fc3292acefd64ab1a27d5e68395154acd945e5",
+        "nll_artifact_sha256": "7f64f4cb6fd03f737bc8e637932906f9131e9f88597efeb00cd45b3515549b46",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "53bc43b20fffbeb1203076ef8bcad1b4452ead5f4727c4f4126e9e5d07be3be5",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6484047872100223,
+        "checkpoint_artifact_sha256": "6bc61b44255c8256aeebaf073648431a54cc71fd3b271ee69a69b52556aad0d4",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_random_native_two_stage-step-0512.pt",
+        "checkpoint_state_sha256": "1a2d690b2ed14eb8539592b23afb48931be5be7029a7893bf8cdcd319349b480",
+        "nll_artifact_sha256": "caf85ccfda8d0a7ecee28936fb8e962d5ca42e2fa62cc355b1ae63587337bed3",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_random_native_two_stage-step-0512.npz"
+      }
+    },
+    "tied_uniform_no_norm_all": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.0443395960589945,
+        "checkpoint_artifact_sha256": "39161b61ce4eb35e6be9cc55006998b7e1fdc8d8f4e443f4bebab4b3aa68bc57",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0000.pt",
+        "checkpoint_state_sha256": "fa2464030466e731e75a6bacd21d1c153373f3a6295f6a8996d463e9d9661de2",
+        "nll_artifact_sha256": "d7ff77686af3e6f1f1efbc509597052934169d2d91242a6463a0be63913253bd",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "6cf10fd110c6bc2577d11b3fd0ec59e1ab43abc97c75db177f22e856422afe2e",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5942947994129613,
+        "checkpoint_artifact_sha256": "82da3996d29f04d842213c68996f1cc4a2bbed516e0f6b1f356e02a5a7ba06e9",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0128.pt",
+        "checkpoint_state_sha256": "6347ac65816b580fe6c07df90c2f3ebac9da1c66086943b166abe49fd53d3306",
+        "nll_artifact_sha256": "85daf5d321c6badb40d8044cd7f146197fe9fe0a1ca757f0d5441276e4ddec37",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "c010752f21466ea7cea1c8fbd038a940786c279d64db892b7d5c6bf04ef7a90c",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5211581321500254,
+        "checkpoint_artifact_sha256": "491f337798298bdf3993a001f7aa33728df5e0688779c9fb21b6a1fc932cd96c",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0307.pt",
+        "checkpoint_state_sha256": "0ceec814779d84ab67f0fcac9087055bbfe30b2b1aa704adbb8d2a887f77f6f6",
+        "nll_artifact_sha256": "7c9086682c3f65a850e9d09f1b79a53ff540271bb8530d457fd1f7c75bc2610c",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "2fe02cd2c84a5b079ed7eaac1c9d17cb60ff083250410a6b886b2d1345abc061",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.773744228915719,
+        "checkpoint_artifact_sha256": "3ea3851cd1fae8a694a0a26f5dc5b18885938d0794f32febf2ade4e69b1b4db1",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0032.pt",
+        "checkpoint_state_sha256": "413bd0cf77d0b5d6cfc252b9bf510c8dabbd232ae31e4e4ad887bdd047c9dcbb",
+        "nll_artifact_sha256": "4ee066e36384d21515afc51a0b48058af489fb2fd71bb2f274a09d1482275e8b",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "dd041eccd6de364db65ef2f1b99526dec1ed31e7778201521ccac599f48bcd9b",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7046555871895162,
+        "checkpoint_artifact_sha256": "1a9683aae457ce6f984b4f4c6a9ae72980d7c3087b415b8ebf99a2c33cd8ee90",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0050.pt",
+        "checkpoint_state_sha256": "66888dc96cf2a6012c85dae2b6d5e40ab871ca4519da6b4ab57283fe5919cf85",
+        "nll_artifact_sha256": "1d5ed0864277d76edd95d9e7a472bbcec8600c4027a9dec2b7a61451758118e1",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "67845b4f3428a4625e22f696c91de707b046c89e21bed477d5ed9342a39686f7",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4952598719980221,
+        "checkpoint_artifact_sha256": "a455b00ff32ddf6221959713d277835962ffed50f41638dbc007a29e3c5d0822",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_all-step-0512.pt",
+        "checkpoint_state_sha256": "de77b192c908c771ed10ae9f81d19b3af2bb0e3e3ea8fba0773ab8fa79128d65",
+        "nll_artifact_sha256": "8ed71ff9c33d21cbe8975dce952780133fdba6f5e1e29fdf3124e914d89c6676",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_all-step-0512.npz"
+      }
+    },
+    "tied_uniform_no_norm_two_stage": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.0443395960589945,
+        "checkpoint_artifact_sha256": "39161b61ce4eb35e6be9cc55006998b7e1fdc8d8f4e443f4bebab4b3aa68bc57",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0000.pt",
+        "checkpoint_state_sha256": "fa2464030466e731e75a6bacd21d1c153373f3a6295f6a8996d463e9d9661de2",
+        "nll_artifact_sha256": "d7ff77686af3e6f1f1efbc509597052934169d2d91242a6463a0be63913253bd",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "7322b90e32beca0aaa44d8f9a515d5b552d379ec8b6e3eb6d92293b238638a33",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7230294269353752,
+        "checkpoint_artifact_sha256": "f9e6c3aa217218d5bedfc791aadcf10e46bbf8e36d116b4c79e141a5b2e575fe",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0128.pt",
+        "checkpoint_state_sha256": "8db7bb0cb5c7ba4033f3e172c78e0785e925290096b0c432459ee2827e1bedd3",
+        "nll_artifact_sha256": "2ac2cd48dc1319a9e74a563529ab5cca4f961f48bc6ab61c0f28e76388d6fcd3",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "414b7e24cf941c8b2368aab2fd80c485710858ec02030f94fbedb67a95db4c76",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6327062832850217,
+        "checkpoint_artifact_sha256": "99f29f57472950f7996329ec2cf72b6dd7ba373d9d1ed7f448e0d74a0c64b1bc",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0307.pt",
+        "checkpoint_state_sha256": "99be307d02593b90819c2b3dbc39ad93dd7d50250fe023d9d63babb4e92252d7",
+        "nll_artifact_sha256": "d820712f9bf4b0f1fb24beb2f31e85e4c0e72e54a604c8fcf431ddbd97ff0b02",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "4e6f6672e2635bf9da1ed3284de5ba98b976862ee57bdd1584c9bbb3f7d39308",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.936178046206868,
+        "checkpoint_artifact_sha256": "9089d2159e826a4e5c9b6727cb61a0e254316ec449f8b34c9f4322ed580a7ebe",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0032.pt",
+        "checkpoint_state_sha256": "30e30e000a93d0a1850690770ddddbaa197db8c405d020f0d418cc53b97cbbee",
+        "nll_artifact_sha256": "9c1cd3bb3da29bac0b0e2dd24b62dcec8e741add3b1817e29684e91f44448168",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "30abdf60d53a1cfc0cf8b64a7e04f13ff6bfb0bdd677425ba65931370775f30c",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.8683457666765035,
+        "checkpoint_artifact_sha256": "f7dc168de5caa87cbefdff3608e0fc3e772cecd82c319e6f9e034964dcd0d60d",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0050.pt",
+        "checkpoint_state_sha256": "c3ee072d1cbb3b9d3c89a40cdbdf99167c745b4027e2b2d4eeb147a45e0f8b4f",
+        "nll_artifact_sha256": "d6c350de6a074b7c4045aeacde0f47973a8ce085403d95fc7414ae9ddb37fbb7",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "d89005dbc07701d2bf9ef5919aa65b97af9dfd8a8fb4b6630c32f9258d952ddc",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5394262577507167,
+        "checkpoint_artifact_sha256": "c782603219e87416bb7e8240fc47b8c448adb7898a983e0466b898c67ec1d6c1",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/tied_uniform_no_norm_two_stage-step-0512.pt",
+        "checkpoint_state_sha256": "f6046c9d2ceafef7fa25781f1b9a71b54862b1648bc7ecfd24e8a4b5cd9b9ff4",
+        "nll_artifact_sha256": "82ba183ecc3a34fb2fd960772ae24a0d3ff0e42557dd6635f89f8c4ac02ec2ef",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/tied_uniform_no_norm_two_stage-step-0512.npz"
+      }
+    },
+    "untied_bil_global_median_char_out": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "1746c6a472cef3dffdfebba534571eeed44b6caed24005c967ea43a5fb4a1d00",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.0291498404649655,
+        "checkpoint_artifact_sha256": "4eacd931b2e92340db9e5a6be79f2d50f31af85df51734184e5cacb29adbbc0e",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0000.pt",
+        "checkpoint_state_sha256": "3d68e784d8769ab46fc490bb203fcea14659f133acda402045de6d0ef4b74980",
+        "nll_artifact_sha256": "28a6aa72937f53794212feed5f8a91d6383a190a83143078a76255d045743070",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "416b7515ca1c40437138691048397f8e8a188dc22ac3f7b88e2a2ebcf6073ad1",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5619587586190584,
+        "checkpoint_artifact_sha256": "8934cf6ce75630dfe45038a013b2d1e05ccc8892054295b32f653421dfe0a000",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0128.pt",
+        "checkpoint_state_sha256": "8df8cc95904279e5140d0dc73e2b35c96a3c12db0bd90f55d0f7ae70d6eb2f83",
+        "nll_artifact_sha256": "3bdaf110ac0ba203fe4225b19364cd64c3b8f1bc4d0904df6a0199e4db8e8a08",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "cb82a36b06762bc6905393873686f6468d7e8d26f66235d3b1122eca0d61ee0f",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4895912314417254,
+        "checkpoint_artifact_sha256": "77cef0da15a254d86d1634c974890bb019999d4d4f77600c269d01a9544a6f53",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0307.pt",
+        "checkpoint_state_sha256": "421a699f6bb6374bc2eb8887899cc24b314cff19a3b04a88d85d81a6ea7af367",
+        "nll_artifact_sha256": "021aa378ee95829fdfb305e5d7ae13a2d66297df60add8726f7fef6d132555b4",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "a494480f782bf577d861e0c904feca78669e28c93d47ce69ea50d500ebf9c84a",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7466525534043171,
+        "checkpoint_artifact_sha256": "324e2418b2330cee15b4c77666100f1b160a1870e272d8e46437da11ab5a3b59",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0032.pt",
+        "checkpoint_state_sha256": "b326a9296cb012aa54671cbe585799a6c51d4211d5631e3a73a43fecce848041",
+        "nll_artifact_sha256": "b0d316eae29be68f9dbc6889488040f75b37dfbaeb5345ae90286b3a5e2f44a6",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "47bb63333088d09742dba94bec2699089da5f2c3f6904ab0096d2b91f2d7813e",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6747717436968206,
+        "checkpoint_artifact_sha256": "7a3236a6478eef94fb01a6cbb0a5f191a8aa58fa961b45da2bddef8c3449f8fd",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0050.pt",
+        "checkpoint_state_sha256": "b48971a58606c9fe3dae4743b6fff148f97b8368ccaac2ec7e13f74c144db637",
+        "nll_artifact_sha256": "a03740edaa690a4b15e3dd263eda5c20efbeb30a5622f3d12b0667dfe4369098",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "cb7ebd25412935c056146560eb7356386823cf2dd33fd54f5f22d282d59fc7c3",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4649683967690914,
+        "checkpoint_artifact_sha256": "19eb4d1e1b9048584d14386f9e4d615f2b2e4225b8a166bae90863fcd88bddc7",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_global_median_char_out-step-0512.pt",
+        "checkpoint_state_sha256": "10c0bad742d1534741ed4eb8ce81d7c3aed8f5a7b015608ca83c063a0c9cf87f",
+        "nll_artifact_sha256": "5bdf0b5a07bc74133e9686cbd56f7747516e1a605e30aefe7c222c3537376887",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_global_median_char_out-step-0512.npz"
+      }
+    },
+    "untied_bil_hangul_median_char_out": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "fc241653e75b32c02c079f7405a3e56bf94ad44e86b6db6053dd6446ad1a99cc",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.0291149193140705,
+        "checkpoint_artifact_sha256": "949fade9b7e74883932b0645627794a3ecd16356ba7d3f75b2038be1965bfe10",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0000.pt",
+        "checkpoint_state_sha256": "902594a3f9ff8206d58f327b8c6bf3a78ddbf35d73efa42b38c723e983922bae",
+        "nll_artifact_sha256": "ff6f4db313d20103d944e5a0c337071dbd770d3701c1daa7ef860eb022cbc955",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "56a87da2bad5d3e64d0c4971ad0269a5f129dfeec52f22b12bf519b0fc4320e2",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5619169568925382,
+        "checkpoint_artifact_sha256": "7e5c7e3dbdc6b391bf8a97b5be2c750db0ee90575622e7e2075de342f98b34ae",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0128.pt",
+        "checkpoint_state_sha256": "4d22fefd3a4afcec6e2dbcbf3b7ad6346fc7a31ea8d1afc49a2b596db24973df",
+        "nll_artifact_sha256": "1d6438fcd190ad7d6ea50e1c1f07dbfbaa23fd2550f66aa368d73833221f3f73",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "ae5b079a9469e1d28c1672e7de72824e16caf8d21edf647377d4065ef04e37bf",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4895662485765364,
+        "checkpoint_artifact_sha256": "c8c21e0adcb4325fed1f68b6b22a3444badb9059559281058d69d19ddecfbe32",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0307.pt",
+        "checkpoint_state_sha256": "2c7e3a009cb662e7283d2305f2c4f60b555b60a33daa0ffb76aea346c30a233a",
+        "nll_artifact_sha256": "7808864042c4a0b739167e984155790ddfaba98af2c32f05a70a0980d6136d3c",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "f952e477adea02c623f207322b97bda00bbb0aba992e183728dbef3c09d4bbd6",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7465697794524155,
+        "checkpoint_artifact_sha256": "50390a9e4cf544474d3d86006c36551111bd2a5be39218069eae35ac68a0ed4c",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0032.pt",
+        "checkpoint_state_sha256": "1e191b1ace0eb4b30092a97e4d4f66b8f8f29d379a760ef7033dc1be3a9ddfa2",
+        "nll_artifact_sha256": "9b38955454095760f76153423af4e60ace451a8672a496d79170c8f15676b80e",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "ab6acec4253f0a470159417c43209a8dc3d7e328517f926c08c0f5aa41251643",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6746872790220093,
+        "checkpoint_artifact_sha256": "e5914e78d980d8df2f93d82f972cf8f801ceaa927e3dad2c9113b17348e47851",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0050.pt",
+        "checkpoint_state_sha256": "3f6a3e91729ec8d54a5e225ee44c9c79dac8ca335426793ed5ae3ddd2d1f47c9",
+        "nll_artifact_sha256": "f5562ec74e34b81623307feeb94604002785e4a84ab92a009040fed976918b99",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "61239c26a2da049ad7c17f39c4516aa6a8ea7d5eb9f9616c07d064179220b10e",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4649468790851314,
+        "checkpoint_artifact_sha256": "668877952534b64b78d4c30af773b546f3751afcfc6b1cbb222bff3db64e60fa",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_char_out-step-0512.pt",
+        "checkpoint_state_sha256": "b36d35d879bc6da7a31a30777f857b09eb71ef2773bff5f0b316235a2a87f8d6",
+        "nll_artifact_sha256": "b642135533419e4bab5687978f19a01546e0f5c1e1c7ddbd99532705c0a5f274",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_char_out-step-0512.npz"
+      }
+    },
+    "untied_bil_hangul_median_uniform_out": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "814bce37705d7888cccd09ef9e21d91654a9b2b3b0824f105dad80a4f8287f8c",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.044961564104264,
+        "checkpoint_artifact_sha256": "9b2cf5cdc1159a8eabfecbbdb7ea4d85c0a05f93e8ee8a4e3d8d902adcf87bfe",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0000.pt",
+        "checkpoint_state_sha256": "5dc430ebf116b43e53cdacb0bc104bfbb64c1d384546e922d8ff28f9dec54422",
+        "nll_artifact_sha256": "936858dd11452f8e4d46cc26a958cc953057c27d39d0b0093e9c352fb7d1fb21",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "9e3f0caeb49d153fcad197f91acf7f863e834b8a89c74388ece0271b4fc0db57",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5672717926282087,
+        "checkpoint_artifact_sha256": "89a0f8cc10d37cbf90ca1ed5773ebeb302128638b5766973c702d983d1526464",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0128.pt",
+        "checkpoint_state_sha256": "9ab39107488986db15fc1d6d467be19f36c964da6dab66d15db7f6a437223d9b",
+        "nll_artifact_sha256": "be1ab022a7b47539cc722ef05ed55b02617f32d2e8480d4ee04d5c183214a31d",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "9d0ed3e9f270dd327f41a611d1834d613220d5b8aad050223f0d9f8d4ee2e5ab",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4925990442853219,
+        "checkpoint_artifact_sha256": "c5958fd5d8f032eca6aad4f578e8f4717b7f03c67c496826b029feed74f1e1d6",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0307.pt",
+        "checkpoint_state_sha256": "945978f08ae7a9baac129d07097f5594826d074001a7717dbc721f306e036d18",
+        "nll_artifact_sha256": "37e578fd65ef9f832cc472a927b426e3f28a676420642a6cb6e140e5b6ea285f",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "96912a3e02fdfb0ac54a153c0de6f8b19dfdaced1240459aee547f7b1f71cf44",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7618363819166774,
+        "checkpoint_artifact_sha256": "2d7d0db0e276a8e532923354cfe782e96e61d2034a442b00d0a52d4bb84111a4",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0032.pt",
+        "checkpoint_state_sha256": "d774c80fb5fe5babcb8d3a9a4c22e7d71e7e9bb2f2ad75f2dfe04090c2649218",
+        "nll_artifact_sha256": "2f236f931656e699bc4199ab9584b8cb47a828257613480a018fed7fce22fd08",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "08fc9947e1561efe2a38d5500360930fcb8b7c8f24b7c5deae166ad48a03283f",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6859873295099477,
+        "checkpoint_artifact_sha256": "41ef2480adc8d17724312f559fb927b78071a14d1738d46db2f5ccf9acd5a858",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0050.pt",
+        "checkpoint_state_sha256": "1100c555675137df16895bb19972e6c0fff33db8e29803469ade018b70e5e1e8",
+        "nll_artifact_sha256": "1db3d718f211b3db4421677b59e79e9152340aa4d8b72a426f941f9698f306f5",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "d51fd0d9c557f56c93369b2289e56ca86bb8e1eacf10f90d3180da8f5f549f98",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4674619343917734,
+        "checkpoint_artifact_sha256": "ef677ecee15fd491ba56db02ca9295b4b22e8f1f678a40326a1339d4d79a4e79",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_bil_hangul_median_uniform_out-step-0512.pt",
+        "checkpoint_state_sha256": "2187a03fa21ff42787fc115782fa0a8251c0e6c20affe22007e5f8fe793d6f19",
+        "nll_artifact_sha256": "1eb62b4687a94b6bddf52581ef1a4c5435c7c9f67f1eddab2239037e849ba77b",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_bil_hangul_median_uniform_out-step-0512.npz"
+      }
+    },
+    "untied_eeve_uniform_in_first_out": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.1533949099619765,
+        "checkpoint_artifact_sha256": "68bea4a4e7d1ceac4c1caf05e0b703535174fe10359ee074c1f7ae0682f6bc35",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0000.pt",
+        "checkpoint_state_sha256": "001703824b1d8df92cd81026276f76306e90f7b1df664ce7b3a828b4bc2ebd5b",
+        "nll_artifact_sha256": "ab95cbfe1954f931aae4be985a551bd7c2b06caccc5ebce111ab58388062b53c",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "5d52f70edb6b983efac770b38d3583fbb82e48122d1a2991c9160ae0dbc3fcc9",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5384089539493322,
+        "checkpoint_artifact_sha256": "f638be1f141915febae3fd9d60871eab71a54dc9e826707b72704aa06c651c16",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0128.pt",
+        "checkpoint_state_sha256": "00873c3db39ddc39faf1bc043f0555e795e19d150997939bfccf79de95d76b5e",
+        "nll_artifact_sha256": "d20cd7baa4be5564eb3136a9a35c0c5eaa08ac48b8ff0accbac37896a1612460",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "f503dae913e555c4c91bf06c1fe944b35fb5047b2660078d15492176079351e2",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4768037997568877,
+        "checkpoint_artifact_sha256": "08952da1d5840f895e220b516a420cd3e1e19f3f8b5a1bf3606f7d6828f99631",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0307.pt",
+        "checkpoint_state_sha256": "0f3f98efb8a41d6f20b4b8dfcaea715ceb26a964d9dcb3b9091a38de3aef30f9",
+        "nll_artifact_sha256": "461caa30c6e2eb7450d676004790b2ac621abaac6c2ea30cfd21e87befac116f",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "582d4c107652ea03561acdd8580ee55b05bfb383ea5e8dbe9b5d1ff13613cfb5",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.7292022559266762,
+        "checkpoint_artifact_sha256": "0c8ca724409c4101587f151db6748639647f8bcacbeaf7a85a15e75f5a337553",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0032.pt",
+        "checkpoint_state_sha256": "2db0760534619f69c95be2ada1b4e22a232776922c953508cbdcfe980252db91",
+        "nll_artifact_sha256": "cc85e0a0d52b9c0f416e66ed669350e3e66ba3e2b85b8f2231ee90cc6a38ced3",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "f66ab12aba8d619912f05d599c3821a22e79f5e6666be21ab159b97a41cabe5c",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.6349747189735913,
+        "checkpoint_artifact_sha256": "5a46f2cb18f4a3ac824b8174c1f84a88c63b5422d4c4dcc5c0cd4dd526266a7d",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0050.pt",
+        "checkpoint_state_sha256": "e8ab81ddfebb797aff93986aeee6c1f88b952c99933c04aa6183bcd5279edc4f",
+        "nll_artifact_sha256": "0cbbc61af6c0197f8ce2a0bed52e62dafa8d6585cd1691c283c901e4b17d32b3",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "ebb5e4f3dbf15149859c854ee52f690ea6bc6ffeb2693235aedfd3ebb3e07367",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.4545300112144006,
+        "checkpoint_artifact_sha256": "bdaaa88ec1460f5dee60e96605bcf92f4e243f43f3893b4e4d6d9d9c910cedac",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_eeve_uniform_in_first_out-step-0512.pt",
+        "checkpoint_state_sha256": "932836cd8f473896d464268d2d26dc88dc7f5439f23499bf5a3029d6c5e65f28",
+        "nll_artifact_sha256": "ba01b4dd0aa155f858cdc2164b915bae2786f4125e05e66e128441bcf05d743d",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_eeve_uniform_in_first_out-step-0512.npz"
+      }
+    },
+    "untied_random_hangul_median_input_native_output": {
+      "0": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "46b965bee7b36d14e85bfefb48187827d3d7534957e38d1e00c1cf99744d119b",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 2.1656553164745684,
+        "checkpoint_artifact_sha256": "2ce28ac29e8c10fe35df6d7e1c407506c2fbdf161b3494ffb66484f513d66131",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0000.pt",
+        "checkpoint_state_sha256": "31fe68074270c6f5e4a296104f61847279a15c66c45da8bf90d74aae9ebf9816",
+        "nll_artifact_sha256": "894036c9e355259f82bf93b99d822885ab69cb72c1654e52b2e60711339923c5",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0000.npz"
+      },
+      "128": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "3be6fcb7b569ce0dbfed985ed9b4fec0644fe7f873a0da945b070856f5f78369",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.731052761923693,
+        "checkpoint_artifact_sha256": "42ee2891454611d4be10a2e7d35ca458f79678a91c3ea21e5564c0bd3db06891",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0128.pt",
+        "checkpoint_state_sha256": "5d9f0669b6f60ec982c3d09a8b44ad5cdff5b6e01f60023d70ac524061530519",
+        "nll_artifact_sha256": "74edcdf0b0cddf037d1a166209c7d09a39f4c2600585bcd897cac4a99a768d14",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0128.npz"
+      },
+      "307": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "9a3fde1f31275cb55b495c5c1748458e0f51870fc2829d757c04bc7b56eaee62",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.592135312094589,
+        "checkpoint_artifact_sha256": "c171f4fab9635fb3b4da8869e01fd2c70ee6071a463aab27f7ffc6f3b6658b31",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0307.pt",
+        "checkpoint_state_sha256": "c5d94a93fad8ee695d52d538833e20e5ffe1bb4e466c718a519c66574f8122f9",
+        "nll_artifact_sha256": "2ddd0aa8aa29b3f6562d0ec005caf877d7bf98e884de06096a2e05a5e43c4fe6",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0307.npz"
+      },
+      "32": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "0917aa689e1584b3910dd72ea8d959f36efae7eadfce5b861f2732337895fb9a",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.9840340026437675,
+        "checkpoint_artifact_sha256": "b85f69fc18e221b3f0d5f66f8e7abc694f351eb650f2e7dff462a3f950e20470",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0032.pt",
+        "checkpoint_state_sha256": "b5782f4483991ba4d9a89fcfa7a8948d49abf0fbd895cfcfdeaf310cd66999e1",
+        "nll_artifact_sha256": "6596c65b93f4d98b57142e2bce56ff726f458f1583e8ac77cf6e0665c28c25a5",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0032.npz"
+      },
+      "50": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "0217cd765b9679392f7f3713e8e7865de05d58d746789abb47c909d3481173c8",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.9158290742046185,
+        "checkpoint_artifact_sha256": "64130e96d7e952bf5c9e623066cb81ee55418132ad07ef3312a3d8f51d6b4052",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0050.pt",
+        "checkpoint_state_sha256": "8b109f0e3fa37abd1aafb3c0b3093fded26e766a9cc9eb771c7dc41d58acfc31",
+        "nll_artifact_sha256": "9a94a9d5465842c041b7290ef4f4ba88f488bcb92dfd2b4038fa2eaf6d36e787",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0050.npz"
+      },
+      "512": {
+        "arrays": {
+          "nll_nats": {
+            "dtype": "float32",
+            "sha256": "ec3d0706a3a1e2fb4c0f56d2648719165e12dd86b28c0e3ff0cfd662f01691cd",
+            "shape": [
+              3343
+            ]
+          },
+          "raw_target_bytes": {
+            "dtype": "int64",
+            "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+            "shape": [
+              3343
+            ]
+          }
+        },
+        "bpb": 1.5496196608734067,
+        "checkpoint_artifact_sha256": "2eb71b76ca7ac63790b3b60cb36087b8d07e2b5537ab09ba6979a49458d0df41",
+        "checkpoint_path": "artifacts/vocabulary-transfer-baseline-closure-v1/checkpoints/untied_random_hangul_median_input_native_output-step-0512.pt",
+        "checkpoint_state_sha256": "6d48d5ebbef45377feca003d7f1e0e1b7b3e97cdf0592f54c41179d685fed3e8",
+        "nll_artifact_sha256": "8c6f330fbc988a1ce43907a5bf042b38b88fa25cd2e1d28742df6b2d661859cf",
+        "nll_path": "artifacts/vocabulary-transfer-baseline-closure-v1/nll/untied_random_hangul_median_input_native_output-step-0512.npz"
+      }
+    }
+  },
+  "campaign_report_artifact_sha256": "8f21b90e1179ee6b64669ad8e46abfceb8a4935e563dda8ce465e52dbcd92e70",
+  "claim_boundary": {
+    "actual_inference_measured": false,
+    "calibration_development_only": true,
+    "eeve_full_seven_stage_reproduced": false,
+    "in_place_token_scale_reproduced": false,
+    "korean_specific_method_evaluated": false,
+    "model_seed_count": 1,
+    "publication_quality_claim": false,
+    "strong_generic_baseline_closure_only": true
+  },
+  "complete": true,
+  "decision": {
+    "best_tied_bpb": null,
+    "best_tied_pareto_role": null,
+    "best_untied_bpb": 1.4545300112144006,
+    "best_untied_pareto_role": "untied_eeve_uniform_in_first_out",
+    "candidate_diagnostics": {
+      "tied_uniform_no_norm_all": {
+        "anchor_gap_bpb": 0.06559829478015744,
+        "architecture": "tied",
+        "composed_advantage_bpb": 0.09589329969641036,
+        "final_bpb": 1.4952598719980221,
+        "initialization_advantage_pass": true,
+        "joint_pass": false,
+        "random_control": "tied_random_native_all",
+        "random_control_final_bpb": 1.5911531716944325,
+        "recovery_progress_pass": false,
+        "training_schedule": "all_parameters"
+      },
+      "tied_uniform_no_norm_two_stage": {
+        "anchor_gap_bpb": 0.10976468053285204,
+        "architecture": "tied",
+        "composed_advantage_bpb": 0.10897852945930553,
+        "final_bpb": 1.5394262577507167,
+        "initialization_advantage_pass": true,
+        "joint_pass": false,
+        "random_control": "tied_random_native_two_stage",
+        "random_control_final_bpb": 1.6484047872100223,
+        "recovery_progress_pass": false,
+        "training_schedule": "new_rows_then_all_307_205"
+      },
+      "untied_bil_global_median_char_out": {
+        "anchor_gap_bpb": 0.03530681955122672,
+        "architecture": "untied",
+        "composed_advantage_bpb": 0.08465126410431534,
+        "final_bpb": 1.4649683967690914,
+        "initialization_advantage_pass": true,
+        "joint_pass": true,
+        "random_control": "untied_random_hangul_median_input_native_output",
+        "random_control_final_bpb": 1.5496196608734067,
+        "recovery_progress_pass": true,
+        "training_schedule": "all_parameters"
+      },
+      "untied_bil_hangul_median_char_out": {
+        "anchor_gap_bpb": 0.03528530186726675,
+        "architecture": "untied",
+        "composed_advantage_bpb": 0.08467278178827531,
+        "final_bpb": 1.4649468790851314,
+        "initialization_advantage_pass": true,
+        "joint_pass": true,
+        "random_control": "untied_random_hangul_median_input_native_output",
+        "random_control_final_bpb": 1.5496196608734067,
+        "recovery_progress_pass": true,
+        "training_schedule": "all_parameters"
+      },
+      "untied_bil_hangul_median_uniform_out": {
+        "anchor_gap_bpb": 0.03780035717390873,
+        "architecture": "untied",
+        "composed_advantage_bpb": 0.08215772648163333,
+        "final_bpb": 1.4674619343917734,
+        "initialization_advantage_pass": true,
+        "joint_pass": true,
+        "random_control": "untied_random_hangul_median_input_native_output",
+        "random_control_final_bpb": 1.5496196608734067,
+        "recovery_progress_pass": true,
+        "training_schedule": "all_parameters"
+      },
+      "untied_eeve_uniform_in_first_out": {
+        "anchor_gap_bpb": 0.024868433996535932,
+        "architecture": "untied",
+        "composed_advantage_bpb": 0.09508964965900613,
+        "final_bpb": 1.4545300112144006,
+        "initialization_advantage_pass": true,
+        "joint_pass": true,
+        "random_control": "untied_random_hangul_median_input_native_output",
+        "random_control_final_bpb": 1.5496196608734067,
+        "recovery_progress_pass": true,
+        "training_schedule": "all_parameters"
+      }
+    },
+    "dense_2k_anchor_bpb": 1.4296615772178647,
+    "korean_stage_authorized": true,
+    "maximum_anchor_gap_for_full_cpt_bpb": 0.05,
+    "minimum_initialization_advantage_bpb": 0.01,
+    "no_korean_specific_initializer_evaluated": true,
+    "qualified_roles": [
+      "untied_bil_hangul_median_char_out",
+      "untied_bil_global_median_char_out",
+      "untied_bil_hangul_median_uniform_out",
+      "untied_eeve_uniform_in_first_out"
+    ],
+    "selection_uses_step_zero_or_step_fifty": false,
+    "status": "strong_generic_baseline_pass"
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit": "ef6ba4524b3d3a687c452124b5cbed9496a6ac74",
+  "independent_nll_recomputation": {
+    "array_comparison": "bitwise_equal",
+    "checkpoint_count": 54,
+    "nll_array_sha256_by_role_step": {
+      "tied_random_native_all": {
+        "0": "08ef9ef7a707b77f822afde10dc359588af611b7a39c474cdc5426c802591ea9",
+        "128": "180beb61f24add0b80deaf7a0324912a96bfa13b3c73f0169ca47f49fca6a978",
+        "307": "fe59043c8bb624cf548c87b68cb562d7e96c7485da9c82988dd951c8a90328e9",
+        "32": "8a901613f2f40c050cd15b32f97bdf16529755b13b300bac91f2df6da392a64b",
+        "50": "1380f7115cd1fe1b3fcb1f891a32e32a650640d4f85e2f9d4210a02124917d63",
+        "512": "067fabcaa5a2b2c48f595567caa7c82e14a5732cff6b943cd623140498b05d54"
+      },
+      "tied_random_native_two_stage": {
+        "0": "08ef9ef7a707b77f822afde10dc359588af611b7a39c474cdc5426c802591ea9",
+        "128": "be64633b705c101ee6461a7bb764826e20ef8e7da7804ae23bf977dc3f0557e4",
+        "307": "35905c25bc2bf28f4d7cbac06f6c2eccdde8a0a2013d651223e9f787433fb11f",
+        "32": "02c25d9c6c39cb6ddaafaeda794a6234f24f3f46c5cb051fa25ac6d0d5ead898",
+        "50": "d094ee0bd1e8dc955d467550eaaa2fc2bef0447abd0bc020532cc96b176ae40b",
+        "512": "53bc43b20fffbeb1203076ef8bcad1b4452ead5f4727c4f4126e9e5d07be3be5"
+      },
+      "tied_uniform_no_norm_all": {
+        "0": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+        "128": "6cf10fd110c6bc2577d11b3fd0ec59e1ab43abc97c75db177f22e856422afe2e",
+        "307": "c010752f21466ea7cea1c8fbd038a940786c279d64db892b7d5c6bf04ef7a90c",
+        "32": "2fe02cd2c84a5b079ed7eaac1c9d17cb60ff083250410a6b886b2d1345abc061",
+        "50": "dd041eccd6de364db65ef2f1b99526dec1ed31e7778201521ccac599f48bcd9b",
+        "512": "67845b4f3428a4625e22f696c91de707b046c89e21bed477d5ed9342a39686f7"
+      },
+      "tied_uniform_no_norm_two_stage": {
+        "0": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+        "128": "7322b90e32beca0aaa44d8f9a515d5b552d379ec8b6e3eb6d92293b238638a33",
+        "307": "414b7e24cf941c8b2368aab2fd80c485710858ec02030f94fbedb67a95db4c76",
+        "32": "4e6f6672e2635bf9da1ed3284de5ba98b976862ee57bdd1584c9bbb3f7d39308",
+        "50": "30abdf60d53a1cfc0cf8b64a7e04f13ff6bfb0bdd677425ba65931370775f30c",
+        "512": "d89005dbc07701d2bf9ef5919aa65b97af9dfd8a8fb4b6630c32f9258d952ddc"
+      },
+      "untied_bil_global_median_char_out": {
+        "0": "1746c6a472cef3dffdfebba534571eeed44b6caed24005c967ea43a5fb4a1d00",
+        "128": "416b7515ca1c40437138691048397f8e8a188dc22ac3f7b88e2a2ebcf6073ad1",
+        "307": "cb82a36b06762bc6905393873686f6468d7e8d26f66235d3b1122eca0d61ee0f",
+        "32": "a494480f782bf577d861e0c904feca78669e28c93d47ce69ea50d500ebf9c84a",
+        "50": "47bb63333088d09742dba94bec2699089da5f2c3f6904ab0096d2b91f2d7813e",
+        "512": "cb7ebd25412935c056146560eb7356386823cf2dd33fd54f5f22d282d59fc7c3"
+      },
+      "untied_bil_hangul_median_char_out": {
+        "0": "fc241653e75b32c02c079f7405a3e56bf94ad44e86b6db6053dd6446ad1a99cc",
+        "128": "56a87da2bad5d3e64d0c4971ad0269a5f129dfeec52f22b12bf519b0fc4320e2",
+        "307": "ae5b079a9469e1d28c1672e7de72824e16caf8d21edf647377d4065ef04e37bf",
+        "32": "f952e477adea02c623f207322b97bda00bbb0aba992e183728dbef3c09d4bbd6",
+        "50": "ab6acec4253f0a470159417c43209a8dc3d7e328517f926c08c0f5aa41251643",
+        "512": "61239c26a2da049ad7c17f39c4516aa6a8ea7d5eb9f9616c07d064179220b10e"
+      },
+      "untied_bil_hangul_median_uniform_out": {
+        "0": "814bce37705d7888cccd09ef9e21d91654a9b2b3b0824f105dad80a4f8287f8c",
+        "128": "9e3f0caeb49d153fcad197f91acf7f863e834b8a89c74388ece0271b4fc0db57",
+        "307": "9d0ed3e9f270dd327f41a611d1834d613220d5b8aad050223f0d9f8d4ee2e5ab",
+        "32": "96912a3e02fdfb0ac54a153c0de6f8b19dfdaced1240459aee547f7b1f71cf44",
+        "50": "08fc9947e1561efe2a38d5500360930fcb8b7c8f24b7c5deae166ad48a03283f",
+        "512": "d51fd0d9c557f56c93369b2289e56ca86bb8e1eacf10f90d3180da8f5f549f98"
+      },
+      "untied_eeve_uniform_in_first_out": {
+        "0": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+        "128": "5d52f70edb6b983efac770b38d3583fbb82e48122d1a2991c9160ae0dbc3fcc9",
+        "307": "f503dae913e555c4c91bf06c1fe944b35fb5047b2660078d15492176079351e2",
+        "32": "582d4c107652ea03561acdd8580ee55b05bfb383ea5e8dbe9b5d1ff13613cfb5",
+        "50": "f66ab12aba8d619912f05d599c3821a22e79f5e6666be21ab159b97a41cabe5c",
+        "512": "ebb5e4f3dbf15149859c854ee52f690ea6bc6ffeb2693235aedfd3ebb3e07367"
+      },
+      "untied_random_hangul_median_input_native_output": {
+        "0": "46b965bee7b36d14e85bfefb48187827d3d7534957e38d1e00c1cf99744d119b",
+        "128": "3be6fcb7b569ce0dbfed985ed9b4fec0644fe7f873a0da945b070856f5f78369",
+        "307": "9a3fde1f31275cb55b495c5c1748458e0f51870fc2829d757c04bc7b56eaee62",
+        "32": "0917aa689e1584b3910dd72ea8d959f36efae7eadfce5b861f2732337895fb9a",
+        "50": "0217cd765b9679392f7f3713e8e7865de05d58d746789abb47c909d3481173c8",
+        "512": "ec3d0706a3a1e2fb4c0f56d2648719165e12dd86b28c0e3ff0cfd662f01691cd"
+      }
+    },
+    "pass": true,
+    "replay_elapsed_seconds": 1779.3610475410242
+  },
+  "kind": "vocabulary_transfer_baseline_result_v1",
+  "metrics": {
+    "tied_random_native_all": {
+      "0": {
+        "contiguous_bpb": 2.164590804983358,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.7691493531648101,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.633753396428811,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.9960490336135248,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.9322171150912044,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.5911531716944325,
+        "optimizer_steps": 512
+      }
+    },
+    "tied_random_native_two_stage": {
+      "0": {
+        "contiguous_bpb": 2.164590804983358,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.906900428105471,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.7675387770413853,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 2.109437502069782,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 2.0612127219940573,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.6484047872100223,
+        "optimizer_steps": 512
+      }
+    },
+    "tied_uniform_no_norm_all": {
+      "0": {
+        "contiguous_bpb": 2.0443395960589945,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5942947994129613,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.5211581321500254,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.773744228915719,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.7046555871895162,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.4952598719980221,
+        "optimizer_steps": 512
+      }
+    },
+    "tied_uniform_no_norm_two_stage": {
+      "0": {
+        "contiguous_bpb": 2.0443395960589945,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.7230294269353752,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.6327062832850217,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.936178046206868,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.8683457666765035,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.5394262577507167,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_bil_global_median_char_out": {
+      "0": {
+        "contiguous_bpb": 2.0291498404649655,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5619587586190584,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.4895912314417254,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.7466525534043171,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.6747717436968206,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.4649683967690914,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_bil_hangul_median_char_out": {
+      "0": {
+        "contiguous_bpb": 2.0291149193140705,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5619169568925382,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.4895662485765364,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.7465697794524155,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.6746872790220093,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.4649468790851314,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_bil_hangul_median_uniform_out": {
+      "0": {
+        "contiguous_bpb": 2.044961564104264,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5672717926282087,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.4925990442853219,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.7618363819166774,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.6859873295099477,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.4674619343917734,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_eeve_uniform_in_first_out": {
+      "0": {
+        "contiguous_bpb": 2.1533949099619765,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5384089539493322,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.4768037997568877,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.7292022559266762,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.6349747189735913,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.4545300112144006,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_random_hangul_median_input_native_output": {
+      "0": {
+        "contiguous_bpb": 2.1656553164745684,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.731052761923693,
+        "optimizer_steps": 128
+      },
+      "307": {
+        "contiguous_bpb": 1.592135312094589,
+        "optimizer_steps": 307
+      },
+      "32": {
+        "contiguous_bpb": 1.9840340026437675,
+        "optimizer_steps": 32
+      },
+      "50": {
+        "contiguous_bpb": 1.9158290742046185,
+        "optimizer_steps": 50
+      },
+      "512": {
+        "contiguous_bpb": 1.5496196608734067,
+        "optimizer_steps": 512
+      }
+    }
+  },
+  "plan_artifact_sha256": "77205d8c8ba9b17ce99bfe6406d0654e76d22682bc0fe21accd2830161c17768",
+  "protocol_id": "jamoflow-vocabulary-transfer-baseline-closure-v1",
+  "role_specs": {
+    "tied_random_native_all": {
+      "baseline_interpretation": "tied_random_control",
+      "expected_parameters": 22026624,
+      "input_norm_scope": "none",
+      "input_strategy": "random",
+      "output_norm_scope": "none",
+      "output_strategy": "shared_with_input",
+      "tied": true,
+      "training_schedule": "all_parameters"
+    },
+    "tied_random_native_two_stage": {
+      "baseline_interpretation": "two_stage_random_control",
+      "expected_parameters": 22026624,
+      "input_norm_scope": "none",
+      "input_strategy": "random",
+      "output_norm_scope": "none",
+      "output_strategy": "shared_with_input",
+      "tied": true,
+      "training_schedule": "new_rows_then_all_307_205"
+    },
+    "tied_uniform_no_norm_all": {
+      "baseline_interpretation": "continued_bpe_mean_initializer",
+      "expected_parameters": 22026624,
+      "input_norm_scope": "none",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "shared_with_input",
+      "tied": true,
+      "training_schedule": "all_parameters"
+    },
+    "tied_uniform_no_norm_two_stage": {
+      "baseline_interpretation": "in_place_two_stage_ratio_analogue",
+      "expected_parameters": 22026624,
+      "input_norm_scope": "none",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "shared_with_input",
+      "tied": true,
+      "training_schedule": "new_rows_then_all_307_205"
+    },
+    "untied_bil_global_median_char_out": {
+      "baseline_interpretation": "bil_global_norm_ablation",
+      "expected_parameters": 25172352,
+      "input_norm_scope": "all_source_tokens",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "decoded_character_weighted",
+      "tied": false,
+      "training_schedule": "all_parameters"
+    },
+    "untied_bil_hangul_median_char_out": {
+      "baseline_interpretation": "beyond_initialization_loss_method_exact",
+      "expected_parameters": 25172352,
+      "input_norm_scope": "hangul_source_tokens",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "decoded_character_weighted",
+      "tied": false,
+      "training_schedule": "all_parameters"
+    },
+    "untied_bil_hangul_median_uniform_out": {
+      "baseline_interpretation": "bil_output_weighting_ablation",
+      "expected_parameters": 25172352,
+      "input_norm_scope": "hangul_source_tokens",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "uniform",
+      "tied": false,
+      "training_schedule": "all_parameters"
+    },
+    "untied_eeve_uniform_in_first_out": {
+      "baseline_interpretation": "eeve_initializer_only_analogue",
+      "expected_parameters": 25172352,
+      "input_norm_scope": "none",
+      "input_strategy": "uniform",
+      "output_norm_scope": "none",
+      "output_strategy": "first",
+      "tied": false,
+      "training_schedule": "all_parameters"
+    },
+    "untied_random_hangul_median_input_native_output": {
+      "baseline_interpretation": "architecture_matched_random_control",
+      "expected_parameters": 25172352,
+      "input_norm_scope": "hangul_source_tokens",
+      "input_strategy": "random",
+      "output_norm_scope": "none",
+      "output_strategy": "random",
+      "tied": false,
+      "training_schedule": "all_parameters"
+    }
+  },
+  "schema_version": 1,
+  "selection_rule": {
+    "candidate_pool": [
+      "untied_bil_hangul_median_char_out",
+      "untied_bil_global_median_char_out",
+      "untied_bil_hangul_median_uniform_out",
+      "untied_eeve_uniform_in_first_out",
+      "tied_uniform_no_norm_all",
+      "tied_uniform_no_norm_two_stage"
+    ],
+    "exact_tie_order": [
+      "untied_random_hangul_median_input_native_output",
+      "untied_bil_hangul_median_char_out",
+      "untied_bil_global_median_char_out",
+      "untied_bil_hangul_median_uniform_out",
+      "untied_eeve_uniform_in_first_out",
+      "tied_random_native_all",
+      "tied_uniform_no_norm_all",
+      "tied_random_native_two_stage",
+      "tied_uniform_no_norm_two_stage"
+    ],
+    "korean_specific_fallback": null,
+    "maximum_anchor_gap_for_full_cpt_bpb": 0.05,
+    "minimum_initialization_advantage_bpb": 0.01,
+    "preserve_best_qualified_tied_and_untied_pareto_roles": true,
+    "random_control_by_candidate": {
+      "tied_uniform_no_norm_all": "tied_random_native_all",
+      "tied_uniform_no_norm_two_stage": "tied_random_native_two_stage",
+      "untied_bil_global_median_char_out": "untied_random_hangul_median_input_native_output",
+      "untied_bil_hangul_median_char_out": "untied_random_hangul_median_input_native_output",
+      "untied_bil_hangul_median_uniform_out": "untied_random_hangul_median_input_native_output",
+      "untied_eeve_uniform_in_first_out": "untied_random_hangul_median_input_native_output"
+    },
+    "requires_both_gates": true,
+    "result_dependent_role_addition": false,
+    "selection_checkpoint_step": 512,
+    "step_zero_or_step_fifty_can_select": false
+  },
+  "session_state": {
+    "end": {
+      "power": {
+        "command": [
+          "pmset",
+          "-g",
+          "batt"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+      },
+      "settings": {
+        "command": [
+          "pmset",
+          "-g",
+          "custom"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+      },
+      "thermal": {
+        "command": [
+          "pmset",
+          "-g",
+          "therm"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+      }
+    },
+    "start": {
+      "power": {
+        "command": [
+          "pmset",
+          "-g",
+          "batt"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+      },
+      "settings": {
+        "command": [
+          "pmset",
+          "-g",
+          "custom"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+      },
+      "thermal": {
+        "command": [
+          "pmset",
+          "-g",
+          "therm"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+      }
+    }
+  },
+  "step_fifty_descriptive_rank": [
+    "untied_eeve_uniform_in_first_out",
+    "untied_bil_hangul_median_char_out",
+    "untied_bil_global_median_char_out",
+    "untied_bil_hangul_median_uniform_out",
+    "tied_uniform_no_norm_all",
+    "tied_uniform_no_norm_two_stage",
+    "untied_random_hangul_median_input_native_output",
+    "tied_random_native_all",
+    "tied_random_native_two_stage"
+  ],
+  "summary_sha256": "67ae0a35dac1575ba40664a5b602d30b91072d8b8e2cb22ba6fd166df8699b64",
+  "training_contract": {
+    "adamw_beta1": 0.9,
+    "adamw_beta2": 0.95,
+    "adamw_epsilon": 1e-08,
+    "all_parameter_schedule": "same global 512-step LR schedule as prior probe",
+    "body_learning_rate": 3e-05,
+    "checkpoint_steps": [
+      0,
+      32,
+      50,
+      128,
+      307,
+      512
+    ],
+    "effective_batch_size": 32,
+    "evaluation_batch_size": 16,
+    "final_probe_step": 512,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "head_minimum_learning_rate": 3e-05,
+    "head_peak_learning_rate": 0.0003,
+    "model_seed": 20260824,
+    "optimizer": "AdamW",
+    "optimizer_reinitialized_at_stage_two": true,
+    "order_seed": 20260827,
+    "sequence_count": 53590,
+    "stage_one_copied_rows_restored_and_checked_each_step": true,
+    "stage_one_new_rows_only_steps": 307,
+    "stage_two_all_parameter_steps": 205,
+    "train_microbatch_size": 8,
+    "training_order_prefix_sha256": "f9b65287d977cac9b3308e195c0d96892f4a9e35c899dda1ae259c6856c0185a",
+    "two_stage_interpretation": "compact 307:205 ratio analogue of 600B:400B; not an exact scale reproduction",
+    "warmup_steps": 26,
+    "weight_decay_for_matrix_parameters": 0.1,
+    "weight_decay_for_vector_parameters": 0.0
+  },
+  "worker_summaries": {
+    "tied_random_native_all": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "tied_random_control",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.39168235659599304,
+        "initialized_input_weight_sha256": "b8f9c85942bf05022d18b4930ed019d831fd7c0a68b9a57f0b5e1d24cc34ac3d",
+        "initialized_output_new_mean_row_l2": 0.39168235659599304,
+        "initialized_output_weight_sha256": "b8f9c85942bf05022d18b4930ed019d831fd7c0a68b9a57f0b5e1d24cc34ac3d",
+        "input_norm_scope": "none",
+        "input_norm_statistic": "none",
+        "input_strategy": "random",
+        "input_target_norm": null,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "shared_with_input",
+        "role": "tied_random_native_all",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": true,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 22026624,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 732.5968374160584,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "tied_random_native_two_stage": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "two_stage_random_control",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.39168235659599304,
+        "initialized_input_weight_sha256": "b8f9c85942bf05022d18b4930ed019d831fd7c0a68b9a57f0b5e1d24cc34ac3d",
+        "initialized_output_new_mean_row_l2": 0.39168235659599304,
+        "initialized_output_weight_sha256": "b8f9c85942bf05022d18b4930ed019d831fd7c0a68b9a57f0b5e1d24cc34ac3d",
+        "input_norm_scope": "none",
+        "input_norm_statistic": "none",
+        "input_strategy": "random",
+        "input_target_norm": null,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "shared_with_input",
+        "role": "tied_random_native_two_stage",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": true,
+        "training_schedule": "new_rows_then_all_307_205"
+      },
+      "parameter_count": 22026624,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": true,
+        "optimizer_reinitialized_at_step": 307,
+        "stage_one_new_rows_changed": true,
+        "training_schedule": "new_rows_then_all_307_205"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 677.3166118329391,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "tied_uniform_no_norm_all": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "continued_bpe_mean_initializer",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.5364968180656433,
+        "initialized_input_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "initialized_output_new_mean_row_l2": 0.5364968180656433,
+        "initialized_output_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "input_norm_scope": "none",
+        "input_norm_statistic": "none",
+        "input_strategy": "uniform",
+        "input_target_norm": null,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "shared_with_input",
+        "role": "tied_uniform_no_norm_all",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": true,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 22026624,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 735.3616747499909,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "tied_uniform_no_norm_two_stage": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "in_place_two_stage_ratio_analogue",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.5364968180656433,
+        "initialized_input_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "initialized_output_new_mean_row_l2": 0.5364968180656433,
+        "initialized_output_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "input_norm_scope": "none",
+        "input_norm_statistic": "none",
+        "input_strategy": "uniform",
+        "input_target_norm": null,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "shared_with_input",
+        "role": "tied_uniform_no_norm_two_stage",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": true,
+        "training_schedule": "new_rows_then_all_307_205"
+      },
+      "parameter_count": 22026624,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": true,
+        "optimizer_reinitialized_at_step": 307,
+        "stage_one_new_rows_changed": true,
+        "training_schedule": "new_rows_then_all_307_205"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 678.4424163340591,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "untied_bil_global_median_char_out": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "bil_global_norm_ablation",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.72444087266922,
+        "initialized_input_weight_sha256": "24e4145130cce26cd07392c11551f0e49ddcf2848c449b54b0b99d9f8b272d8b",
+        "initialized_output_new_mean_row_l2": 0.523811936378479,
+        "initialized_output_weight_sha256": "8426d5c8fd1b725f7e72f3e257e3c1a8b74facbeb6482b3cbd2087e631c1e110",
+        "input_norm_scope": "all_source_tokens",
+        "input_norm_statistic": "midpoint_median_l2",
+        "input_strategy": "uniform",
+        "input_target_norm": 0.7244409322738647,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "decoded_character_weighted",
+        "role": "untied_bil_global_median_char_out",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 25172352,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 724.9413258749992,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "untied_bil_hangul_median_char_out": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "beyond_initialization_loss_method_exact",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.7223048806190491,
+        "initialized_input_weight_sha256": "783a27cdb33f55d31671db2114cb15d3f0a3821b73cd1ada435c2177ccb2bba8",
+        "initialized_output_new_mean_row_l2": 0.523811936378479,
+        "initialized_output_weight_sha256": "8426d5c8fd1b725f7e72f3e257e3c1a8b74facbeb6482b3cbd2087e631c1e110",
+        "input_norm_scope": "hangul_source_tokens",
+        "input_norm_statistic": "midpoint_median_l2",
+        "input_strategy": "uniform",
+        "input_target_norm": 0.7223048210144043,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "decoded_character_weighted",
+        "role": "untied_bil_hangul_median_char_out",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 25172352,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 719.4336212499766,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "untied_bil_hangul_median_uniform_out": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "bil_output_weighting_ablation",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.7223048806190491,
+        "initialized_input_weight_sha256": "783a27cdb33f55d31671db2114cb15d3f0a3821b73cd1ada435c2177ccb2bba8",
+        "initialized_output_new_mean_row_l2": 0.5364968180656433,
+        "initialized_output_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "input_norm_scope": "hangul_source_tokens",
+        "input_norm_statistic": "midpoint_median_l2",
+        "input_strategy": "uniform",
+        "input_target_norm": 0.7223048210144043,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "uniform",
+        "role": "untied_bil_hangul_median_uniform_out",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 25172352,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 728.4448896670947,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "untied_eeve_uniform_in_first_out": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "eeve_initializer_only_analogue",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.5364968180656433,
+        "initialized_input_weight_sha256": "9d4511d96db7f3c4f2bc46b76d1961218ed53d7d1cecb390c69667299ab79581",
+        "initialized_output_new_mean_row_l2": 0.676262378692627,
+        "initialized_output_weight_sha256": "fa67fa9e5dac822976eddd6f8a0b0fe060aca19c3973054814283b08a613e9ae",
+        "input_norm_scope": "none",
+        "input_norm_statistic": "none",
+        "input_strategy": "uniform",
+        "input_target_norm": null,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "first",
+        "role": "untied_eeve_uniform_in_first_out",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 25172352,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 730.7643155830447,
+        "finite_optimizer_steps": 512
+      }
+    },
+    "untied_random_hangul_median_input_native_output": {
+      "initialization_audit": {
+        "base_vocabulary_size": 2048,
+        "baseline_interpretation": "architecture_matched_random_control",
+        "copied_rows_exact": true,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "e6462ecd6ab07483577fdf0303ecaead127216f729adeb95f06288aa4e7c042a",
+        "initialized_input_new_mean_row_l2": 0.7223048806190491,
+        "initialized_input_weight_sha256": "07620d5313cb59caba431e26e03e83e14f6f4f13536b7099b57e1fdd0cd9ea92",
+        "initialized_output_new_mean_row_l2": 0.3914579451084137,
+        "initialized_output_weight_sha256": "c9195ffe4e5a9d682e9cb69f5ce55cf7879c65b15d06b6b22dc8399e742e4225",
+        "input_norm_scope": "hangul_source_tokens",
+        "input_norm_statistic": "midpoint_median_l2",
+        "input_strategy": "random",
+        "input_target_norm": 0.7223048210144043,
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_scope": "none",
+        "output_strategy": "random",
+        "role": "untied_random_hangul_median_input_native_output",
+        "shared_token_count": 2048,
+        "source_metadata_sha256": "e4079f64015a499816e523f67f291ca0f9ae9db0776513a5bea9e8e16dc127f3",
+        "target_pieces_reconstruct_exactly": true,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false,
+        "training_schedule": "all_parameters"
+      },
+      "parameter_count": 25172352,
+      "stage_audit": {
+        "body_and_copied_rows_unchanged_through_stage_one": null,
+        "optimizer_reinitialized_at_step": null,
+        "stage_one_new_rows_changed": null,
+        "training_schedule": "all_parameters"
+      },
+      "training": {
+        "completed": true,
+        "elapsed_seconds_including_checkpoint_evaluations": 707.3522265419597,
+        "finite_optimizer_steps": 512
+      }
+    }
+  }
+}

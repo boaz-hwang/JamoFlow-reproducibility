@@ -1,0 +1,48 @@
+{
+  "adapter_contract": {
+    "input_shape": [
+      5,
+      64,
+      5
+    ],
+    "operation": "apply_original_validator_independently_to_each_seed_slice",
+    "seed_order": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ],
+    "slice_shape": [
+      64,
+      5
+    ],
+    "statistics_changed": false,
+    "timing_artifacts_changed": false
+  },
+  "correction_files_sha256": {
+    "docs/90-v5r3-summary-counter-shape-debug.md": "ae6f930662da62356002882b269ec6ba2896b271e38bbfcdbc3120cd3750225f",
+    "scripts/summarize_inference_actual_v5r3_counter_fix.py": "02b9aec2c988a86ce2b3df501985f108a5b1bb18fd05888d1303c5cfe4ff2d98",
+    "tests/test_summarize_inference_actual_v5r3_counter_fix.py": "b165ad1dff0ff2ed4b7895cb4dffada90b7c97860396edd5355c47c78f38ce73"
+  },
+  "correction_sha256": "62766563cc11fffc3e8ae3004a6c706e75f3e30c0b32b0c1c8bdd4e5d6108e65",
+  "failure": {
+    "exception": "ValueError: emitted-output counter shape differs",
+    "stage": "session_runtime_counter_validation_before_latency_summary",
+    "summary_published": false
+  },
+  "kind": "phase3_inference_actual_v5r3_summary_counter_fix_v1",
+  "original_plan_bound_files_sha256": {
+    "scripts/summarize_inference_actual_v5.py": "3f0ca24b193b3af5fe41624bf191375b9dd72d9a1cfbde313478ed2b1a267f78",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1"
+  },
+  "plan_artifact_sha256": "ef72d5ac59408283e338461b133c1ce6bc7974592974c5afa7cad10304820d7a",
+  "plan_sha256": "14abe58686b8aaf6a565a99af1c75dc1d4985ec0503635c0b1bcf562bf4e033d",
+  "result_inputs": {
+    "aggregate_latency_inspected": false,
+    "gate_result_inspected": false,
+    "individual_latency_values_inspected": false,
+    "only_array_keys_shapes_dtypes_and_exception_used": true
+  },
+  "schema_version": 1
+}

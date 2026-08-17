@@ -1,0 +1,45 @@
+{
+  "actual_timing_authorized": true,
+  "candidate_checkpoint_sha256": "ab83640d5ab8fe26de7d9893f2adf827a12a4e31620233f0c00334a31942fd96",
+  "candidate_checkpoint_state_sha256": "045c57003d443bf90591e5fe169c14c5d967cf0e6be1ce8f0ba67b62098b7704",
+  "claim_boundary": {
+    "actual_timing_executed": false,
+    "full_calibration_forward_replayed": true,
+    "one_seed_mechanism_screen": true,
+    "pure_scale_effect_claimed": false
+  },
+  "independent_full_checkpoint_replay_pass": true,
+  "kind": "balanced_200m_w80_checkpoint_replay_receipt_v1",
+  "plan_artifact_sha256": "1561f15be5a6ceb70a667de042cbcfed18f66b0225e7b7ef26d22c6dbbf405ab",
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "quality": {
+    "actual_timing_authorized": false,
+    "block_bootstrap": {
+      "block_count": 244,
+      "block_size_sequences": 64,
+      "dropped_tail_sequences": 9,
+      "lower": 0.0030696087841403435,
+      "repetitions": 10000,
+      "seed": 20260904,
+      "upper": 0.005114194283782461,
+      "used_sequences": 15616
+    },
+    "candidate_bpb": 1.4451835724492714,
+    "clauses": {
+      "bootstrap_upper_at_most_margin": true,
+      "mean_delta_at_most_margin": true
+    },
+    "maximum_allowed_delta_bpb": 0.01,
+    "quality_gate_pass_pending_independent_replay": true,
+    "reference_bpb": 1.4411260692502428,
+    "w80_minus_c86_bpb": 0.004057503199028645
+  },
+  "receipt_sha256": "55542e304c28eb5276d4aeaee69360a63fd87459791a4283db8660456d562ef6",
+  "replayed_nll_array_sha256": "618b6a312b01990fe0347a0c3463afb2ee535647f95f66f810e8e38f02646b04",
+  "schema_version": 1,
+  "status": "w80_quality_and_replay_pass",
+  "training_summary_artifact_sha256": "702d978270e4ca92a315be0bc2a61e0456756e82b11446f63381b0f16f46ae6b",
+  "training_summary_sha256": "022d9f7ce86ab75a589eba47dc76ee5024d61d6e1233735b5e9f6ef1d711030d",
+  "verification_base_git_commit": "be78805530b363c31191f306693be52fe27874f2"
+}

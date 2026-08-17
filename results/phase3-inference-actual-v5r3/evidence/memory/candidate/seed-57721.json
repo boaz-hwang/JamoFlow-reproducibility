@@ -1,0 +1,39 @@
+{
+  "backend": "isolated-process-ru_maxrss-macos",
+  "checkpoint_state_sha256": "c661b949e84c0dd973d9e39f2f100957056b9f04837020e93c4f9d76ab77fe64",
+  "measurement_git_commit": "03d3a396535c396ab244d48e603b67d3d995faed",
+  "model_identity_sha256": "ccc7f076dc30a1e8db294a37a8b4edba0c0c0f92dd5f61c69b850db268c8ad16",
+  "mps_snapshots": {
+    "after_inference_current_bytes": 78387968,
+    "after_inference_driver_bytes": 206979072,
+    "after_load_current_bytes": 78385920,
+    "after_load_driver_bytes": 101154816,
+    "after_release_current_bytes": 0,
+    "after_release_driver_bytes": 2834432,
+    "baseline_current_bytes": 0,
+    "baseline_driver_bytes": 475136
+  },
+  "parameter_bytes": 78384384,
+  "plan_sha256": "14abe58686b8aaf6a565a99af1c75dc1d4985ec0503635c0b1bcf562bf4e033d",
+  "process_rss": {
+    "after_inference_bytes": 771178496,
+    "after_model_load_bytes": 521961472,
+    "baseline_bytes": 219136000,
+    "high_water_bytes": 771178496,
+    "unit": "bytes_on_macos"
+  },
+  "receipt_sha256": "a751a04360c536f2717f8ea8fe02cc40edac1348f82202f68ffad55da42bb20d",
+  "resettable_peak_supported": false,
+  "role": "candidate",
+  "router_checkpoint_state_sha256": null,
+  "seed": 57721,
+  "workload": {
+    "case_artifact_sha256": "3a4fb5f1c1a040a1fbb2eb43e1af0ca67f65326d68e7132e90793574b49f63a8",
+    "continuation_bytes": 128,
+    "measured_cases": 64,
+    "mode": "free_running_utf8_greedy",
+    "prompt_array_sha256": "87c9df036c2b7c59d2a627de8665003ce9716fab2dcc1d3cc9aa2ad69cfe0c35",
+    "prompt_bytes": 128,
+    "repetitions": 1
+  }
+}

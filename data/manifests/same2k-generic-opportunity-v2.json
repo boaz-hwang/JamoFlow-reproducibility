@@ -1,0 +1,123 @@
+{
+  "claim_boundary": {
+    "actual_model_latency": false,
+    "calibration_development_only": true,
+    "korean_aware_method_evaluated": false,
+    "model_quality_used": false,
+    "publication_evidence": false,
+    "token_only_generic_upper_bound": true
+  },
+  "dependencies": {
+    "bpe_tokenizer": {
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054"
+    },
+    "integrity": {
+      "path": "data/processed/hplt3-korean-phase3/integrity.json",
+      "sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181"
+    },
+    "source": {
+      "path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+      "sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+    },
+    "systems_plan": {
+      "path": "data/manifests/korean-bpe-systems-frontier-v1.json",
+      "sha256": "3851b989ef36a841c72a9f2de35568a5d8188eea06b1a1cbb691e5d61b67d8ee"
+    },
+    "systems_result": {
+      "path": "results/korean-bpe-systems-frontier-v1/summary.json",
+      "sha256": "01fba62f80ddf22e0c7aeb2cf7e40b36a6c36d31eebce8863f62a9381e971b8a"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "sentencepiece": "0.2.1",
+    "system": "Darwin",
+    "tokenizers": "0.22.2"
+  },
+  "experiment": {
+    "calibration_bytes": 8000000,
+    "encode_repetitions": 3,
+    "measured_cases": 36,
+    "minimum_step_reduction": 0.1,
+    "roles": [
+      "byte_bpe_2k",
+      "byte_unigram_2k_scored",
+      "byte_unigram_vocab_2k_leftmost_longest",
+      "byte_unigram_vocab_2k_minimum_token_dp"
+    ],
+    "tokenizer_training_maximum_piece_bytes": 48,
+    "vocabulary_size": 2048,
+    "warmup_cases": 6
+  },
+  "git_commit_before_plan": "bf0170c31fee854b4d10f494170c903bf1a5420e",
+  "implementation_sha256": {
+    "docs/121-length-max-thunder-tok-reproduction-audit.md": "442b392d6d1c7a631b99522e74a9ad0447ac9e6bc65f97e91528a9586d02e3a2",
+    "docs/122-byte-unigram-exploration-and-protocol-decision.md": "6e5b7837c34c42ee7a7e859efb2edf109ca784c1656917168c028e1099b613ca",
+    "docs/123-same2k-generic-opportunity-protocol.md": "ab79722d5d38442d42378904905a8ef2c372df7d3433e7e3ed6ac3fd8ddfcbf3",
+    "docs/124-same2k-v1-nfc-assumption-invalidation.md": "0a3429b5e676343064d5f9d723a1877d497ef1e517716f19ee8135314ab0b673",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "requirements/same2k-opportunity-v1.txt": "48989718da84af38219d85e9bb60a112d115a675a750e1ae0922fd50d84497de",
+    "scripts/byte_unigram.py": "41257e3e93913681677701e6f257b4ed9e6dca12d29c37457005ae73ec6c59a0",
+    "scripts/fixed_byte_tokenizer.py": "e1be4b72d30080c2d28463da8a23fd7b45df39033f2407e59ea4e541309d4c78",
+    "scripts/run_same2k_opportunity.py": "c58acb1c2d5fa9d8ed2b25d05f7a0d90f0928eec029cb10b859496954aa8349d",
+    "scripts/same2k_opportunity.py": "8ed924ae84e46a6b3299b3ec3a654f95e0bd53d424f72a4f137b1915eebea53e",
+    "scripts/same2k_opportunity_protocol.py": "595a20bb53fa944841cfbd8f3f0c616490b651bf6d59533fde42bb1dcc29371e",
+    "scripts/seal_same2k_opportunity_plan.py": "9337ecc249bd42f8326d3ea4a274554bf5ee079c3f165a829d2b2e4fc99ee6f0",
+    "scripts/summarize_same2k_opportunity.py": "0f41e6eaac82ffdef2651d5e4e26bee43925f2c7c821858b822c5154d89bc82c",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "tests/test_byte_unigram.py": "1a4f9a48a61e813b9271055e8d006dc5144b7543d2f3950e86d4128248b17647",
+    "tests/test_fixed_byte_tokenizer.py": "c2e0dbafcc410890d2ee6d7c8b52555b2cee77cf9e1725db4e1478a29f8bc919",
+    "tests/test_same2k_opportunity.py": "a6b3335b177c4215a56b4023e9cc84cb45cc25c157b1f058a35244b31b3aa171"
+  },
+  "kind": "same2k_generic_opportunity_plan_v2",
+  "known_exploratory_anchors": {
+    "hf_unigram_no_regex_calibration_token_count": 2173590,
+    "hf_unigram_no_regex_reduction_vs_bpe": 0.03971148799457114,
+    "hf_unigram_regex_calibration_token_count": 2328984,
+    "hf_unigram_regex_reduction_vs_bpe": -0.02894132740970079,
+    "interpretation": "unsealed nondeterministic API exploration; disclosed, not selection evidence"
+  },
+  "plan_sha256": "fcc3c490d4a5256560bb7947696a542040fa50eda4725ff9908f64f00b9374fd",
+  "protocol_id": "jamoflow-same2k-generic-opportunity-v2",
+  "schema_version": 1,
+  "shared_inputs": {
+    "calibration_bytes": 8000000,
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "case_metadata": {
+      "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+      "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+      "candidate_document_windows": 15240,
+      "candidate_rows": 996,
+      "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+      "continuation_length_bytes": 128,
+      "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+      "measured_cases": 36,
+      "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4",
+      "prompt_length_bytes": 128,
+      "selected_cases": 42,
+      "selected_unique_clusters": 42,
+      "unique_candidate_clusters": 330,
+      "unique_candidate_prompts": 996,
+      "warmup_cases": 6
+    },
+    "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+    "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4"
+  },
+  "status": "sealed_before_deterministic_full_corpus_training"
+}

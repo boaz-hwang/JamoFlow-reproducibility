@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "correctness": {
+    "by_role": {
+      "c86": {
+        "controlled": {
+          "argmax_exact": 512,
+          "boundary_prefix_exact": true,
+          "cache_diagnostics_exact": true,
+          "comparisons": 512,
+          "maximum_normalized_logit_error": 0.1006815955042839
+        },
+        "free": {
+          "argmax_exact": 2065,
+          "boundary_prefix_exact": true,
+          "cache_diagnostics_exact": true,
+          "comparisons": 2065,
+          "generated_byte_exact": 2065,
+          "maximum_normalized_logit_error": 0.17146657407283783,
+          "strict_output_count": 16
+        },
+        "pass": true
+      },
+      "w80": {
+        "controlled": {
+          "argmax_exact": 512,
+          "boundary_prefix_exact": true,
+          "cache_diagnostics_exact": true,
+          "comparisons": 512,
+          "maximum_normalized_logit_error": 0.1926998347043991
+        },
+        "free": {
+          "argmax_exact": 2064,
+          "boundary_prefix_exact": true,
+          "cache_diagnostics_exact": true,
+          "comparisons": 2064,
+          "generated_byte_exact": 2064,
+          "maximum_normalized_logit_error": 0.16470029950141907,
+          "strict_output_count": 16
+        },
+        "pass": true
+      }
+    },
+    "overall_pass": true
+  },
+  "environment_end": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin"
+  },
+  "environment_start": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin"
+  },
+  "kind": "balanced_200m_w80_actual_session_v1",
+  "model_identity": {
+    "c86": {
+      "checkpoint_sha256": "dcaec8935cd60a40b194e6df5e82a4815fcd4591cb5c79c322bfa7994d110a2f",
+      "checkpoint_state_sha256": "c43423ee4cf645e0c76e1630b2c507a75fd2533e32f7119e26f816c51b926cc6"
+    },
+    "w80": {
+      "checkpoint_sha256": "ab83640d5ab8fe26de7d9893f2adf827a12a4e31620233f0c00334a31942fd96",
+      "checkpoint_state_sha256": "045c57003d443bf90591e5fe169c14c5d967cf0e6be1ce8f0ba67b62098b7704"
+    }
+  },
+  "plan_artifact_sha256": "1561f15be5a6ceb70a667de042cbcfed18f66b0225e7b7ef26d22c6dbbf405ab",
+  "plan_sha256": "340d8e6277230bdd4e309c43b61ca0115078a387822aaf06d34de0a7029a6960",
+  "protocol_id": "jamoflow-balanced-200m-w80-rescue-v1",
+  "runner_git_commit": "f12c171c0ba1ff28f6894f5b5906127b574302d2",
+  "schema_version": 1,
+  "session_id": "session-1",
+  "session_index": 1,
+  "timing_artifact": {
+    "arrays_sha256": {
+      "boundary_hashes": "0b6ab24329aa8f35d04d37cc93f49931f17255b9dda58244c23a4a6a8ad439a6",
+      "emitted_output_bytes": "1a4394e15dcb46fe644a10e6814fcbf81d3a7311805e0e7a773477748c797311",
+      "end_to_end_ms": "1ce2446694b68f9f186d54b599bd610500108875085ca6e642a9019d300e2a94",
+      "first_role": "8fe3fb031ef84795d9e73a6ec17c5942dc0081d462985aaf9c536485607f0f11",
+      "free_output_bytes": "c642b784e70b727c631f2b4ec683a9dcade81d600dd54a29fd9b2135d9e6161d",
+      "free_output_lengths": "39089c126eae2dfabeaa8fa4639774a1c160ea4fd3afc38d51ac2d3d2ee35743",
+      "patch_counts": "4dfe7b033baa9a0a99820df354060434595885f73188b44f69577868abe3cc6a"
+    },
+    "path": "artifacts/balanced-200m-w80-rescue-v1/timing/session-1.npz",
+    "sha256": "28b93c5bfc1914f656b9d98350a5aac57f229b33a597142c89a7b7cc5b33ca34"
+  },
+  "verification_artifact_sha256": "d9db37cd7f6624799a7529531a2368bbbc4b02dbcdf8e821a78ae72cd5776142",
+  "verification_receipt_sha256": "55542e304c28eb5276d4aeaee69360a63fd87459791a4283db8660456d562ef6"
+}

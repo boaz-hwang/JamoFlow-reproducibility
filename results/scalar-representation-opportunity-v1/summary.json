@@ -1,0 +1,345 @@
+{
+  "claim_boundary": {
+    "actual_latency_or_memory_evidence": false,
+    "bpe_counts_observed_before_plan": false,
+    "calibration_only": true,
+    "conditional_three_hot_claimed_novel": false,
+    "final_or_historical_test_read": false,
+    "matched_quality_evidence": false,
+    "model_checkpoint_or_loss_read": false,
+    "opportunity_audit_is_confirmatory": false,
+    "preseal_engineering_anchors_disclosed": true
+  },
+  "complete": true,
+  "decision": {
+    "authorizes": "parameter-matched random-weight construction and actual-runtime feasibility only",
+    "checks": {
+      "all_representations_reversible_on_audit_stream": true,
+      "maximum_calibration_unseen_scalar_occurrence_rate": true,
+      "maximum_train_scalar_vocabulary": true,
+      "minimum_generic_scalar_step_reduction": true,
+      "minimum_hangul_hybrid_dense_flop_reduction": true,
+      "minimum_hangul_hybrid_step_reduction": true
+    },
+    "pass": true,
+    "status": "random_weight_representation_construction_authorized"
+  },
+  "git_commit": "155c4ad1e5576358faa26fcdb051cc584fda275a",
+  "interpretation": {
+    "analytical_flops_are_not_latency": true,
+    "bpe_is_mandatory_in_later_actual_runtime_and_quality_studies": true,
+    "conditional_three_hot_precedent": "Cognetta et al., EACL 2023",
+    "hangul_advantage_over_generic_scalar_not_yet_established": true,
+    "next_stage_uses_random_weights_only": true
+  },
+  "kind": "scalar_representation_opportunity_result_v1",
+  "metrics": {
+    "bpe": {
+      "16000": {
+        "bytes_per_token": 5.215333996550056,
+        "deterministic_replicate_json_identity": true,
+        "input_bytes": 7999999,
+        "raw_token_bytes_identity": true,
+        "roundtrip_identity": true,
+        "structural_audit": {
+          "decoder_exact": true,
+          "digit_labels_single_token": true,
+          "expected_vocabulary_size": 16000,
+          "full_byte_alphabet": true,
+          "no_added_tokens": true,
+          "normalizer_absent": true,
+          "null_byte_padding_token_id": 188,
+          "overall_pass": true,
+          "pretokenizer_exact": true,
+          "roundtrip_identity": true,
+          "tokenizer_json_sha256": "98b626d6b268773d4fe599ac1ae8f2869d18edfb33566ba1d04bd84bdce3c263",
+          "tokenizers_version": "0.22.2",
+          "vocabulary_size": 16000
+        },
+        "token_byte_length_histogram": {
+          "1": 153051,
+          "10": 116081,
+          "12": 6596,
+          "13": 39240,
+          "15": 1115,
+          "16": 4967,
+          "18": 260,
+          "19": 550,
+          "2": 58991,
+          "21": 17,
+          "22": 72,
+          "24": 12,
+          "25": 30,
+          "27": 30,
+          "28": 19,
+          "3": 372582,
+          "4": 189400,
+          "5": 2813,
+          "6": 230479,
+          "7": 313851,
+          "8": 44,
+          "9": 43738
+        },
+        "token_count": 1533938,
+        "tokenizer_json_sha256": "98b626d6b268773d4fe599ac1ae8f2869d18edfb33566ba1d04bd84bdce3c263",
+        "tokens_per_unicode_scalar": 0.4605070706003285,
+        "vocabulary_size": 16000
+      },
+      "32000": {
+        "bytes_per_token": 5.760596077753656,
+        "deterministic_replicate_json_identity": true,
+        "input_bytes": 7999999,
+        "raw_token_bytes_identity": true,
+        "roundtrip_identity": true,
+        "structural_audit": {
+          "decoder_exact": true,
+          "digit_labels_single_token": true,
+          "expected_vocabulary_size": 32000,
+          "full_byte_alphabet": true,
+          "no_added_tokens": true,
+          "normalizer_absent": true,
+          "null_byte_padding_token_id": 188,
+          "overall_pass": true,
+          "pretokenizer_exact": true,
+          "roundtrip_identity": true,
+          "tokenizer_json_sha256": "a6181de532b4134ceb40d9a11a71fc1140d7b47533cd00d1d241af26069c9851",
+          "tokenizers_version": "0.22.2",
+          "vocabulary_size": 32000
+        },
+        "token_byte_length_histogram": {
+          "1": 139733,
+          "10": 149660,
+          "11": 42,
+          "12": 9457,
+          "13": 57512,
+          "14": 8,
+          "15": 1721,
+          "16": 9324,
+          "18": 652,
+          "19": 961,
+          "2": 52356,
+          "21": 55,
+          "22": 263,
+          "23": 27,
+          "24": 51,
+          "25": 39,
+          "27": 49,
+          "28": 33,
+          "3": 260131,
+          "31": 1,
+          "34": 17,
+          "4": 145740,
+          "40": 3,
+          "5": 3383,
+          "6": 203416,
+          "7": 303997,
+          "8": 260,
+          "9": 49854
+        },
+        "token_count": 1388745,
+        "tokenizer_json_sha256": "a6181de532b4134ceb40d9a11a71fc1140d7b47533cd00d1d241af26069c9851",
+        "tokens_per_unicode_scalar": 0.4169183446533388,
+        "vocabulary_size": 32000
+      }
+    },
+    "dense_matmul_opportunity": {
+      "data_patches_per_window": 72,
+      "generic_unicode_scalar": {
+        "active_output_rows_per_512_raw_bytes": {
+          "maximum": 121088,
+          "mean": 73699.045376,
+          "minimum": 65664
+        },
+        "mean_dense_matmul_flops_per_512_raw_bytes": 3574638327.988224,
+        "reduction_relative_to_w72": 0.36621631111314457,
+        "step_count_per_512_raw_bytes": {
+          "maximum": 460,
+          "mean": 213.182528,
+          "minimum": 172
+        }
+      },
+      "hangul_scalar_otherwise_raw_byte": {
+        "active_output_rows_per_512_raw_bytes": {
+          "maximum": 132283,
+          "mean": 66933.650176,
+          "minimum": 55581
+        },
+        "mean_dense_matmul_flops_per_512_raw_bytes": 3595484149.088256,
+        "reduction_relative_to_w72": 0.36252034520487064,
+        "step_count_per_512_raw_bytes": {
+          "maximum": 478,
+          "mean": 217.124352,
+          "minimum": 172
+        }
+      },
+      "method": "dense matmul opportunity estimate; multiply-add=2",
+      "omitted": [
+        "UTF-8 or Hangul transducer and raw-fallback dispatch",
+        "conditional micro-head dependencies and kernel launches",
+        "embedding lookup, hashing, normalization, RoPE, softmax, and masking",
+        "cache layout, memory movement, synchronization, and allocator effects",
+        "parameter matching or capacity changes required for equal quality"
+      ],
+      "raw_bytes_per_window": 512,
+      "raw_windows": 15625,
+      "resident_output_projection_parameters_at_local_width": {
+        "generic_unicode_scalar_conditional_utf8": 86016,
+        "hangul_scalar_otherwise_raw_byte_conditional_lvt": 62208,
+        "raw_byte": 49152
+      },
+      "resident_output_rows": {
+        "generic_unicode_scalar_conditional_utf8": 448,
+        "hangul_scalar_otherwise_raw_byte_conditional_lvt": 324,
+        "raw_byte": 256
+      },
+      "w72_baseline_dense_matmul_flops_per_512_bytes": 5640155136
+    },
+    "hangul_dependence": {
+      "calibration": {
+        "distinct_syllables": 1673,
+        "entropy_bits": {
+          "coda": 2.3369485574019047,
+          "coda_given_onset_vowel": 1.5675722388969566,
+          "conditional_chain_total": 8.098151591956483,
+          "independent_excess_total_correlation": 1.2635426661096716,
+          "joint": 8.098151591956483,
+          "onset": 3.506724784071639,
+          "vowel": 3.518020916592611,
+          "vowel_given_onset": 3.023854568987888
+        },
+        "interpretation": {
+          "conditional_chain_can_represent_joint_exactly": true,
+          "distribution_only_not_contextual_model_loss": true,
+          "independent_heads_empirically_misspecified": true
+        },
+        "observations": 2303716
+      },
+      "train": {
+        "distinct_syllables": 2298,
+        "entropy_bits": {
+          "coda": 2.3325529868440333,
+          "coda_given_onset_vowel": 1.567566519065049,
+          "conditional_chain_total": 8.08824212824208,
+          "independent_excess_total_correlation": 1.260214061763362,
+          "joint": 8.08824212824208,
+          "onset": 3.502996730352848,
+          "vowel": 3.5129064728085604,
+          "vowel_given_onset": 3.0176788788241824
+        },
+        "interpretation": {
+          "conditional_chain_can_represent_joint_exactly": true,
+          "distribution_only_not_contextual_model_loss": true,
+          "independent_heads_empirically_misspecified": true
+        },
+        "observations": 36849780
+      }
+    },
+    "output_projection_diagnostics": {
+      "byte_bpe_16000": {
+        "rows": 16000,
+        "single_projection_parameters_at_local_width_192": 3072000
+      },
+      "byte_bpe_32000": {
+        "rows": 32000,
+        "single_projection_parameters_at_local_width_192": 6144000
+      },
+      "full_flat_hangul_plus_train_non_hangul_plus_raw_fallback": {
+        "rows": 16136,
+        "single_projection_parameters_at_local_width_192": 3098112
+      },
+      "generic_conditional_utf8": {
+        "rows": 448,
+        "single_projection_parameters_at_local_width_192": 86016
+      },
+      "hangul_hybrid_conditional_lvt": {
+        "rows": 324,
+        "single_projection_parameters_at_local_width_192": 62208
+      },
+      "raw_byte": {
+        "rows": 256,
+        "single_projection_parameters_at_local_width_192": 49152
+      },
+      "train_non_hangul_plus_factorized_hangul_plus_raw_fallback": {
+        "rows": 5032,
+        "single_projection_parameters_at_local_width_192": 966144
+      },
+      "train_scalar_vocabulary_plus_raw_fallback": {
+        "rows": 7262,
+        "single_projection_parameters_at_local_width_192": 1394304
+      }
+    },
+    "representation_counts": {
+      "complete_scalar_bytes": 7999999,
+      "complete_scalars": 3330976,
+      "input_bytes": 8000000,
+      "non_hangul_complete_bytes": 1088851,
+      "precomposed_hangul_bytes": 6911148,
+      "precomposed_hangul_scalars": 2303716,
+      "reductions_relative_to_raw_byte": {
+        "generic_unicode_scalar": 0.583627875,
+        "hangul_hybrid": 0.575929
+      },
+      "sequential_steps": {
+        "generic_unicode_scalar_with_raw_suffix_fallback": 3330977,
+        "hangul_scalar_otherwise_raw_byte": 3392568,
+        "raw_byte": 8000000
+      },
+      "trailing_raw_fallback_bytes": 1,
+      "utf8_length_counts": {
+        "1": 994596,
+        "2": 3848,
+        "3": 2332421,
+        "4": 111
+      }
+    },
+    "scalar_inventory": {
+      "calibration": {
+        "scalar_occurrences": 3330976,
+        "unique_precomposed_hangul": 1673,
+        "unique_scalars": 2736,
+        "unseen_hangul_occurrence_rate": 1.6495088804349146e-05,
+        "unseen_hangul_occurrences": 38,
+        "unseen_hangul_types": 21,
+        "unseen_scalar_occurrence_rate": 4.473163421171453e-05,
+        "unseen_scalar_occurrences": 149,
+        "unseen_scalar_types": 113
+      },
+      "train": {
+        "scalar_occurrences": 53386833,
+        "unique_non_hangul": 4708,
+        "unique_precomposed_hangul": 2298,
+        "unique_scalars": 7006
+      }
+    },
+    "sequential_step_comparison": {
+      "byte_bpe_16000": 1533938,
+      "byte_bpe_32000": 1388745,
+      "generic_unicode_scalar": 3330977,
+      "hangul_hybrid": 3392568,
+      "raw_byte": 8000000
+    }
+  },
+  "plan_artifact_sha256": "c95846b5d6efca234ca19a444bdb0bc44c4892a2eb807bcc6345fbc4082d1c0c",
+  "protocol_id": "jamoflow-scalar-representation-opportunity-v1",
+  "schema_version": 1,
+  "source": {
+    "calibration_full_documents": {
+      "joined_bytes": 8004309,
+      "joined_sha256": "5d88cdbcedb877207f659fccc1e88b2552c00ed6a35f9585c170fa338a38a12b",
+      "nfc_documents": 386,
+      "non_nfc_documents": 0,
+      "records": 386
+    },
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "complete_calibration_prefix_sha256": "6cbefc6b446f4df99b0d8edac924bf8beab3d01c0517b96a7a19bf665c06cd52",
+    "source_artifact_sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5",
+    "train": {
+      "joined_bytes": 128006987,
+      "joined_sha256": "6050168ebb0c7f701a451606e7fa0935b9da62f37999f09339429fbac1713c5e",
+      "nfc_documents": 5790,
+      "non_nfc_documents": 1,
+      "records": 5791
+    }
+  },
+  "summary_sha256": "7c60212d640d1ea8521183eac5a8daea8a03584bf64c1b3ad71e480619070bcd"
+}

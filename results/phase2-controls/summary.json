@@ -1,0 +1,1240 @@
+{
+  "aligned_packing": {
+    "packing_metadata": {
+      "calibration": {
+        "boundary_mask_bytes": 1003264,
+        "dropped_tail_bytes": 93,
+        "inserted_fraction_of_packed_bytes": 0.003409870183720337,
+        "inserted_newline_bytes": 3421,
+        "inserted_per_raw_byte": 0.00342153718133747,
+        "packed_bytes": 1003264,
+        "raw_bytes_used": 999843,
+        "sequence_count": 3919,
+        "sequence_length": 256,
+        "source_bytes": 999936
+      },
+      "test": {
+        "boundary_mask_bytes": 1003264,
+        "dropped_tail_bytes": 194,
+        "inserted_fraction_of_packed_bytes": 0.003510541592242919,
+        "inserted_newline_bytes": 3522,
+        "inserted_per_raw_byte": 0.003522908910498909,
+        "packed_bytes": 1003264,
+        "raw_bytes_used": 999742,
+        "sequence_count": 3919,
+        "sequence_length": 256,
+        "source_bytes": 999936
+      },
+      "train": {
+        "boundary_mask_bytes": 11036928,
+        "dropped_tail_bytes": 205,
+        "inserted_fraction_of_packed_bytes": 0.0033818287117574745,
+        "inserted_newline_bytes": 37325,
+        "inserted_per_raw_byte": 0.0033933042856183083,
+        "packed_bytes": 11036928,
+        "raw_bytes_used": 10999603,
+        "sequence_count": 43113,
+        "sequence_length": 256,
+        "source_bytes": 10999808
+      }
+    },
+    "quality": {
+      "all_seed_directions_negative": true,
+      "mean_direction_negative": true,
+      "observations": [
+        {
+          "causal_codepoint_bpb": 2.382067168727603,
+          "difference_bpb": -0.005499305771423657,
+          "fixed_byte_bpb": 2.387566474499027,
+          "seed": 1729
+        },
+        {
+          "causal_codepoint_bpb": 2.366521008855534,
+          "difference_bpb": -0.006216775425021748,
+          "fixed_byte_bpb": 2.372737784280556,
+          "seed": 2718
+        },
+        {
+          "causal_codepoint_bpb": 2.3861614533749678,
+          "difference_bpb": -0.0067361216155319426,
+          "fixed_byte_bpb": 2.3928975749904997,
+          "seed": 31415
+        }
+      ],
+      "paired_t_95_interval": {
+        "count": 3,
+        "lower": -0.007693500755832651,
+        "mean": -0.0061507342706591155,
+        "sample_standard_deviation": 0.000621047046214282,
+        "standard_error": 0.00035856167931123766,
+        "upper": -0.00460796778548558
+      }
+    }
+  },
+  "contrasts": {
+    "delayed2_minus_codepoint": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.000462504493560262,
+        "mean": 0.0003266583543847822,
+        "median": 0.0003343342196811083,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260825,
+        "upper": 0.001077042423428737
+      },
+      "left": {
+        "policy": "causal_grid_delayed2",
+        "source": "control"
+      },
+      "negative_seed_count": 2,
+      "paired_differences_bpb": [
+        -2.2313696968812025e-05,
+        0.0006005674959252971,
+        0.0006036166219489658,
+        -0.0007326906617768358,
+        0.001137824208599536
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.0005722095021905022,
+        "mean": 0.0003174007935456302,
+        "sample_standard_deviation": 0.0007164662346092518,
+        "standard_error": 0.00032041344083391985,
+        "upper": 0.0012070110892817628
+      },
+      "right": {
+        "policy": "causal_codepoint_grid",
+        "source": "primary"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "early2_minus_codepoint": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": 0.00012246544174797434,
+        "mean": 0.0010089942756087733,
+        "median": 0.0010124104505125657,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260824,
+        "upper": 0.0019240592989939384
+      },
+      "left": {
+        "policy": "causal_grid_early2",
+        "source": "control"
+      },
+      "negative_seed_count": 1,
+      "paired_differences_bpb": [
+        0.0017898060339467392,
+        -0.00016999076497370424,
+        0.0005694706539727257,
+        0.0021424631405899675,
+        0.0007308651644364339
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.00015802105818510858,
+        "mean": 0.0010125228455944324,
+        "sample_standard_deviation": 0.0009427219842276822,
+        "standard_error": 0.0004215980881233164,
+        "upper": 0.0021830667493739735
+      },
+      "right": {
+        "policy": "causal_codepoint_grid",
+        "source": "primary"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "eojeol_minus_delayed2": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.008501478763472233,
+        "mean": -0.007409595815740062,
+        "median": -0.007456482194180849,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260820,
+        "upper": -0.005912777314255114
+      },
+      "left": {
+        "policy": "causal_eojeol_grid",
+        "source": "primary"
+      },
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.00785117523822132,
+        -0.008653683725054151,
+        -0.004545684020187846,
+        -0.008046360589399892,
+        -0.007887426508810691
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.009416023038727187,
+        "mean": -0.00739686601633478,
+        "sample_standard_deviation": 0.0016261702858567288,
+        "standard_error": 0.0007272454604331821,
+        "upper": -0.005377708993942374
+      },
+      "right": {
+        "policy": "causal_grid_delayed2",
+        "source": "control"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "eojeol_minus_placebo": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.017044744049546645,
+        "mean": -0.01561856046058906,
+        "median": -0.01566249802800376,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260821,
+        "upper": -0.013959100966928007
+      },
+      "left": {
+        "policy": "causal_eojeol_grid",
+        "source": "primary"
+      },
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.016877052401181647,
+        -0.014902877412690252,
+        -0.012681765297554382,
+        -0.017376550342630193,
+        -0.016248913432931555
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.017957617285602707,
+        "mean": -0.015617431777397606,
+        "sample_standard_deviation": 0.0018847172828226379,
+        "standard_error": 0.000842871192552023,
+        "upper": -0.013277246269192505
+      },
+      "right": {
+        "policy": "causal_placebo_grid",
+        "source": "control"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "eojeol_minus_whitespace": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.0005280293195772088,
+        "mean": -0.00014026068408507,
+        "median": -0.0001444073732085296,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260822,
+        "upper": 0.0002625535084754143
+      },
+      "left": {
+        "policy": "causal_eojeol_grid",
+        "source": "primary"
+      },
+      "negative_seed_count": 3,
+      "paired_differences_bpb": [
+        -0.0004215982085096215,
+        -0.0006252411050451379,
+        0.000431651660592447,
+        -0.0003397606031305678,
+        0.0002495281323131593
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.0007077688591209726,
+        "mean": -0.00014108402475594418,
+        "sample_standard_deviation": 0.00045639146875173556,
+        "standard_error": 0.00020410446969597036,
+        "upper": 0.0004256008096090842
+      },
+      "right": {
+        "policy": "causal_whitespace_grid",
+        "source": "control"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    },
+    "whitespace_minus_delayed2": {
+      "difference_direction": "left_minus_right; negative favors left",
+      "hierarchical_bootstrap_95_interval": {
+        "lower": -0.008175540993467078,
+        "mean": -0.007254821964957838,
+        "median": -0.007289425454922626,
+        "repetitions": 10000,
+        "resampling_design": "crossed seeds x shared test sequences",
+        "seed": 20260823,
+        "upper": -0.006058239090536989
+      },
+      "left": {
+        "policy": "causal_whitespace_grid",
+        "source": "control"
+      },
+      "negative_seed_count": 5,
+      "paired_differences_bpb": [
+        -0.007429577029711698,
+        -0.008028442620009013,
+        -0.004977335680780293,
+        -0.007706599986269325,
+        -0.00813695464112385
+      ],
+      "paired_t_95_interval": {
+        "count": 5,
+        "lower": -0.008874502865814763,
+        "mean": -0.007255781991578836,
+        "sample_standard_deviation": 0.0013036706692873153,
+        "standard_error": 0.0005830192473598168,
+        "upper": -0.005637061117342909
+      },
+      "right": {
+        "policy": "causal_grid_delayed2",
+        "source": "control"
+      },
+      "seed_order": [
+        1729,
+        2718,
+        31415,
+        57721,
+        65537
+      ]
+    }
+  },
+  "decision_gates": {
+    "gate_d_causal_replication": {
+      "aligned_direction_negative": true,
+      "duplicate_absolute_bpb_difference": 2.0927489483568706e-06,
+      "duplicate_noise_ok": true,
+      "duplicate_to_primary_effect_ratio": 0.0003201262545440866,
+      "pass": true,
+      "status": "pass"
+    },
+    "gate_e_strengthened_mechanism_component": {
+      "eojeol_vs_delayed2": {
+        "enough_negative_seeds": true,
+        "maximum_allowed_mean_bpb": -0.003,
+        "mean_at_or_below_threshold": true,
+        "mean_effect_bpb": -0.00739686601633478,
+        "negative_seed_count": 5,
+        "paired_t_upper_bpb": -0.005377708993942374,
+        "paired_t_upper_is_negative": true,
+        "primary_effect_pass": true,
+        "required_negative_seed_count": 4
+      },
+      "eojeol_vs_placebo": {
+        "enough_negative_seeds": true,
+        "maximum_allowed_mean_bpb": -0.003,
+        "mean_at_or_below_threshold": true,
+        "mean_effect_bpb": -0.015617431777397606,
+        "negative_seed_count": 5,
+        "paired_t_upper_bpb": -0.013277246269192505,
+        "paired_t_upper_is_negative": true,
+        "primary_effect_pass": true,
+        "required_negative_seed_count": 4
+      },
+      "full_gate_e_status": "pending_ecological_external_regression_check",
+      "pass": true,
+      "status": "pass"
+    }
+  },
+  "design": {
+    "aligned_seeds": [
+      1729,
+      2718,
+      31415
+    ],
+    "mechanism_seeds": [
+      1729,
+      2718,
+      31415,
+      57721,
+      65537
+    ],
+    "new_control_policies": [
+      "causal_grid_early2",
+      "causal_grid_delayed2",
+      "causal_placebo_grid",
+      "causal_whitespace_grid"
+    ],
+    "reused_primary_policies": [
+      "causal_codepoint_grid",
+      "causal_eojeol_grid"
+    ]
+  },
+  "duplicate_control": {
+    "comparison_to_primary": {
+      "duplicate_test_bpb": 2.3918516830466148,
+      "maximum_parameter_absolute_difference": 0.001240551471710205,
+      "maximum_sequence_nll_absolute_difference_nats": 0.0169677734375,
+      "mean_sequence_nll_absolute_difference_nats": 0.0033847478738639274,
+      "primary_checkpoint_sha256": "8d6e1a294cbd1e904c346b3162e875855d715d7a0e0060d3a715ae4cd046297d",
+      "primary_test_bpb": 2.3918495902976664,
+      "test_bpb_difference": 2.0927489483568706e-06
+    },
+    "evaluation": {
+      "bpb": 2.3918516830466148,
+      "bytes_per_second": 551482.1223771241,
+      "elapsed_seconds": 1.8060966250486672,
+      "examples": 3906,
+      "nll_nats": 1.657905250421321,
+      "predicted_bytes": 996030
+    },
+    "initialization_sha256": "9aea977a4b05046c17f2259d102aa284b0aedeec5b39164ee4a4a27413cc8d02",
+    "patch_matrix_sha256": {
+      "calibration": "ed1fa12d392c065fdfa85027245bb2a36d176d16491d887d161f708e20389e2a",
+      "test": "c9206c1418e1cf6f41b1155b48c94f48dfd18c7196c52f6caba95efada516a3b",
+      "train": "26356120447588ea51f7290486f3f119d1cd1000e8e15b690eff4de72a2f7a4a"
+    },
+    "policy": "causal_codepoint_grid_exact_duplicate",
+    "seed": 1729,
+    "training": {
+      "bytes_per_second": 185787.49450924,
+      "elapsed_seconds": 58.975121167022735,
+      "examples": 42968,
+      "final_learning_rate": 3e-05,
+      "final_loss_nats": 1.6653599739074707,
+      "history": [
+        {
+          "learning_rate": 2.9999999999999997e-06,
+          "loss_nats": 5.916405200958252,
+          "step": 1
+        },
+        {
+          "learning_rate": 0.0003,
+          "loss_nats": 3.4793472290039062,
+          "step": 100
+        },
+        {
+          "learning_rate": 0.00029578924445226233,
+          "loss_nats": 2.484109401702881,
+          "step": 200
+        },
+        {
+          "learning_rate": 0.000283255309892561,
+          "loss_nats": 2.1862103939056396,
+          "step": 300
+        },
+        {
+          "learning_rate": 0.00026319544161236156,
+          "loss_nats": 1.9678013324737549,
+          "step": 400
+        },
+        {
+          "learning_rate": 0.00023688627775379794,
+          "loss_nats": 1.860880732536316,
+          "step": 500
+        },
+        {
+          "learning_rate": 0.00020600217039138722,
+          "loss_nats": 1.8557190895080566,
+          "step": 600
+        },
+        {
+          "learning_rate": 0.0001725086274184953,
+          "loss_nats": 1.8190146684646606,
+          "step": 700
+        },
+        {
+          "learning_rate": 0.00013853722486927779,
+          "loss_nats": 1.793879747390747,
+          "step": 800
+        },
+        {
+          "learning_rate": 0.00010624995043130693,
+          "loss_nats": 1.7277528047561646,
+          "step": 900
+        },
+        {
+          "learning_rate": 7.770161151793683e-05,
+          "loss_nats": 1.757423758506775,
+          "step": 1000
+        },
+        {
+          "learning_rate": 5.4709064443590324e-05,
+          "loss_nats": 1.7079517841339111,
+          "step": 1100
+        },
+        {
+          "learning_rate": 3.873558714060023e-05,
+          "loss_nats": 1.6820344924926758,
+          "step": 1200
+        },
+        {
+          "learning_rate": 3.079775410001817e-05,
+          "loss_nats": 1.7318376302719116,
+          "step": 1300
+        },
+        {
+          "learning_rate": 3e-05,
+          "loss_nats": 1.6653599739074707,
+          "step": 1343
+        }
+      ],
+      "mean_loss_nats": 2.1425912100117737,
+      "predicted_bytes": 10956840,
+      "steps": 1343
+    },
+    "training_order_sha256": "b85bf2439592fa5da9065ac985641644d94ffa24cd2cc142abe2f6b8408eb9a7"
+  },
+  "generated_at": "2026-08-10T11:18:55.950197+00:00",
+  "integrity": {
+    "all_compared_rates_exactly_43": true,
+    "all_initializations_paired": true,
+    "all_training_orders_paired": true,
+    "by_seed": {
+      "1729": {
+        "all_policy_split_rates_exactly_43": true,
+        "identical_initialization": true,
+        "identical_training_order": true
+      },
+      "2718": {
+        "all_policy_split_rates_exactly_43": true,
+        "identical_initialization": true,
+        "identical_training_order": true
+      },
+      "31415": {
+        "all_policy_split_rates_exactly_43": true,
+        "identical_initialization": true,
+        "identical_training_order": true
+      },
+      "57721": {
+        "all_policy_split_rates_exactly_43": true,
+        "identical_initialization": true,
+        "identical_training_order": true
+      },
+      "65537": {
+        "all_policy_split_rates_exactly_43": true,
+        "identical_initialization": true,
+        "identical_training_order": true
+      }
+    },
+    "rebuilt_c2_matrix_matches_primary": true
+  },
+  "mechanism_patch_diagnostics": {
+    "c2_calibration_trigger_diagnostics": {
+      "deadlines": 104312,
+      "event_trigger_fraction": 0.34864436201965704,
+      "events": 55834,
+      "examples": 3906,
+      "final_boundaries": 3906,
+      "maximum_target_displacement_bytes": 4,
+      "mean_target_displacement_bytes": 2.0574208177894815,
+      "median_target_displacement_bytes": 2.0,
+      "minimum_target_displacement_bytes": -2,
+      "nonfinal_boundaries": 160146,
+      "p05_target_displacement_bytes": 0.0,
+      "p95_target_displacement_bytes": 4.0,
+      "selected_event_punctuation_count": 7721,
+      "selected_event_punctuation_rate": 0.13828491600100298,
+      "selected_event_whitespace_count": 48113,
+      "selected_event_whitespace_rate": 0.861715083998997
+    },
+    "placebo_calibration": {
+      "absolute_error": 1.873290622306234e-05,
+      "event_trigger_fraction": 0.348625629113434,
+      "hash_bits": 16,
+      "iterations": 16,
+      "low_bit_threshold": 11463,
+      "target_event_trigger_fraction": 0.34864436201965704
+    },
+    "punctuation_training_rule": {
+      "selected_event_punctuation_rate": 0.13828491600100298,
+      "threshold_strictly_above": 0.5,
+      "train_punctuation_policy": false
+    },
+    "splits": {
+      "calibration": {
+        "causal_eojeol_grid_reference": {
+          "deadlines": 104312,
+          "event_trigger_fraction": 0.34864436201965704,
+          "events": 55834,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "7e4c631968a049972bc5c3dcff8d04fd1011633570fc3afcb6f0c2dc87647848",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.0574208177894815,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 0.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 7721,
+          "selected_event_punctuation_rate": 0.13828491600100298,
+          "selected_event_whitespace_count": 48113,
+          "selected_event_whitespace_rate": 0.861715083998997
+        },
+        "causal_grid_delayed2": {
+          "matrix_sha256": "6e219be124755c405b69f807f157a518daf4d11d0dd2a2136ead916900928ec8",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.8333638114744106,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": 0,
+          "p05_target_displacement_bytes": 2.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052
+        },
+        "causal_grid_early2": {
+          "matrix_sha256": "c86e8e16fddca22d4283f66a3069f359422c74617c68d2d40189f59dda3898b0",
+          "maximum_target_displacement_bytes": 2,
+          "mean_target_displacement_bytes": -1.0664545388047693,
+          "median_target_displacement_bytes": -1.0,
+          "minimum_target_displacement_bytes": -2,
+          "p05_target_displacement_bytes": -2.0,
+          "p95_target_displacement_bytes": 0.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 7.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052
+        },
+        "causal_placebo_grid": {
+          "deadlines": 104315,
+          "event_trigger_fraction": 0.348625629113434,
+          "events": 55831,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "6a7311775dfab8e73f2201780f8ddc1ca817fa2c9c1e53d5c82537f13c760356",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.182698168873284,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": -1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 10.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 1337,
+          "selected_event_punctuation_rate": 0.023947269438125772,
+          "selected_event_whitespace_count": 8029,
+          "selected_event_whitespace_rate": 0.14380899500277625
+        },
+        "causal_punctuation_grid": {
+          "deadlines": 152149,
+          "event_trigger_fraction": 0.049935683688634123,
+          "events": 7997,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "368709eb4ff2c24583077cbf252c1662732e62927db0894db69f3fa3bc5f4a33",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.7433313827323045,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 7997,
+          "selected_event_punctuation_rate": 1.0,
+          "selected_event_whitespace_count": 0,
+          "selected_event_whitespace_rate": 0.0
+        },
+        "causal_whitespace_grid": {
+          "deadlines": 108125,
+          "event_trigger_fraction": 0.32483483821013326,
+          "events": 52021,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "15f90e004d8a8302a22ad299233b2c7bc935fb6defdbd525bce20347372858de",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.116493550825348,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 0.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 0,
+          "selected_event_punctuation_rate": 0.0,
+          "selected_event_whitespace_count": 52021,
+          "selected_event_whitespace_rate": 1.0
+        }
+      },
+      "test": {
+        "causal_eojeol_grid_reference": {
+          "deadlines": 104617,
+          "event_trigger_fraction": 0.34673984988697815,
+          "events": 55529,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "8e8784b9538736246a275d4b952263f8a1b3e5195c8841e54a5fac21be5fefec",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.062876405042304,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 0.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 7586,
+          "selected_event_punctuation_rate": 0.1366133011579535,
+          "selected_event_whitespace_count": 47943,
+          "selected_event_whitespace_rate": 0.8633866988420466
+        },
+        "causal_grid_delayed2": {
+          "matrix_sha256": "5ca0a244b92f1f2194a771e65c5e9cd2f5ec16030f7b95a5f366d6baadf29c90",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.83720405725014,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": 0,
+          "p05_target_displacement_bytes": 2.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052
+        },
+        "causal_grid_early2": {
+          "matrix_sha256": "d5a5bec037074436dafab0b53aa804965dba704ebd65f6241d0f07bf80a9564d",
+          "maximum_target_displacement_bytes": 2,
+          "mean_target_displacement_bytes": -1.0699473337722185,
+          "median_target_displacement_bytes": -1.0,
+          "minimum_target_displacement_bytes": -2,
+          "p05_target_displacement_bytes": -2.0,
+          "p95_target_displacement_bytes": 0.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 7.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052
+        },
+        "causal_placebo_grid": {
+          "deadlines": 104463,
+          "event_trigger_fraction": 0.3477014724064291,
+          "events": 55683,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "dfdba3002f446f06adb2d4a3a17ef21bda68f4b5f3b7d9c494052efc450eaef9",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.1827408382707922,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": -1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 10.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 1252,
+          "selected_event_punctuation_rate": 0.022484420738825135,
+          "selected_event_whitespace_count": 8005,
+          "selected_event_whitespace_rate": 0.1437602140689259
+        },
+        "causal_punctuation_grid": {
+          "deadlines": 152298,
+          "event_trigger_fraction": 0.04900528267955491,
+          "events": 7848,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "0a1077bf91075473cd4ea5ba6dafd5ce44db7a86f746aa74eb114b124c3aa502",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.7485370492282937,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 2.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 7848,
+          "selected_event_punctuation_rate": 1.0,
+          "selected_event_whitespace_count": 0,
+          "selected_event_whitespace_rate": 0.0
+        },
+        "causal_whitespace_grid": {
+          "deadlines": 108447,
+          "event_trigger_fraction": 0.32282417294219024,
+          "events": 51699,
+          "examples": 3906,
+          "final_boundaries": 3906,
+          "matrix_sha256": "17b6943b00b07c9d8cfc90b74f3f8679bda769f66ee375628d40d6f4190c9dd7",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.122162485065711,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 160146,
+          "p05_target_displacement_bytes": 0.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 167958,
+          "patch_examples": 3906,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 164052,
+          "selected_event_punctuation_count": 0,
+          "selected_event_punctuation_rate": 0.0,
+          "selected_event_whitespace_count": 51699,
+          "selected_event_whitespace_rate": 1.0
+        }
+      },
+      "train": {
+        "causal_eojeol_grid_reference": {
+          "deadlines": 1130536,
+          "event_trigger_fraction": 0.3582654817425106,
+          "events": 631152,
+          "examples": 42968,
+          "final_boundaries": 42968,
+          "matrix_sha256": "b7393abb6254a083fcdcac0ecab764726db639fb1d7da4ccdb3909c08047088a",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.0195987490136624,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 1761688,
+          "p05_target_displacement_bytes": -1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656,
+          "selected_event_punctuation_count": 97468,
+          "selected_event_punctuation_rate": 0.1544287271528887,
+          "selected_event_whitespace_count": 533684,
+          "selected_event_whitespace_rate": 0.8455712728471113
+        },
+        "causal_grid_delayed2": {
+          "matrix_sha256": "e546f7162033998b163a3477eab165af25fb3089b1a3793224b3250f5487c5f3",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.821000234947824,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": 0,
+          "p05_target_displacement_bytes": 2.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656
+        },
+        "causal_grid_early2": {
+          "matrix_sha256": "e6e70a6525b9a26502903c8d00a58504241801ce900a9ea364c750c351adbdc4",
+          "maximum_target_displacement_bytes": 2,
+          "mean_target_displacement_bytes": -1.083573268257219,
+          "median_target_displacement_bytes": -1.0,
+          "minimum_target_displacement_bytes": -2,
+          "p05_target_displacement_bytes": -2.0,
+          "p95_target_displacement_bytes": 0.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 10,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 7.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656
+        },
+        "causal_placebo_grid": {
+          "deadlines": 1138439,
+          "event_trigger_fraction": 0.3537794433520578,
+          "events": 623249,
+          "examples": 42968,
+          "final_boundaries": 42968,
+          "matrix_sha256": "92fd7ade74e85c85f61bf20f645dc3c0ca1fb59a7d96ddeb3f3c6d35d367aaf2",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.149519908503338,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 1761688,
+          "p05_target_displacement_bytes": -1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 10.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656,
+          "selected_event_punctuation_count": 16381,
+          "selected_event_punctuation_rate": 0.026283235111488345,
+          "selected_event_whitespace_count": 88545,
+          "selected_event_whitespace_rate": 0.1420700233774944
+        },
+        "causal_punctuation_grid": {
+          "deadlines": 1659788,
+          "event_trigger_fraction": 0.057842251295348555,
+          "events": 101900,
+          "examples": 42968,
+          "final_boundaries": 42968,
+          "matrix_sha256": "b1b86ea0d369d770891e747908429da810cc7cac6d499814529a0741ea9b7eb6",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.7129397513986047,
+          "median_target_displacement_bytes": 3.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 1761688,
+          "p05_target_displacement_bytes": 1.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 8.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656,
+          "selected_event_punctuation_count": 101900,
+          "selected_event_punctuation_rate": 1.0,
+          "selected_event_whitespace_count": 0,
+          "selected_event_whitespace_rate": 0.0
+        },
+        "causal_whitespace_grid": {
+          "deadlines": 1184122,
+          "event_trigger_fraction": 0.3278480639023482,
+          "events": 577566,
+          "examples": 42968,
+          "final_boundaries": 42968,
+          "matrix_sha256": "b48f8c2491fdaee0596d12c3e70169b76baad95702b26f8ce109e1a7efc76cf2",
+          "maximum_target_displacement_bytes": 4,
+          "mean_target_displacement_bytes": 2.0980386289686233,
+          "median_target_displacement_bytes": 2.0,
+          "minimum_target_displacement_bytes": -2,
+          "nonfinal_boundaries": 1761688,
+          "p05_target_displacement_bytes": 0.0,
+          "p95_target_displacement_bytes": 4.0,
+          "patch_data_patches": 1847624,
+          "patch_examples": 42968,
+          "patch_internal_codepoint_boundaries": 0,
+          "patch_internal_codepoint_boundary_rate": 0.0,
+          "patch_maximum_data_patches": 43,
+          "patch_maximum_patch_length": 12,
+          "patch_mean_bytes_per_patch": 5.953488372093023,
+          "patch_mean_data_patches": 43.0,
+          "patch_median_patch_length": 6.0,
+          "patch_minimum_data_patches": 43,
+          "patch_p95_patch_length": 9.0,
+          "patch_padded_data_width": 43,
+          "patch_padding_slot_rate": 0.0,
+          "patch_padding_slots": 0,
+          "patch_total_noninitial_boundaries": 1804656,
+          "selected_event_punctuation_count": 0,
+          "selected_event_punctuation_rate": 0.0,
+          "selected_event_whitespace_count": 577566,
+          "selected_event_whitespace_rate": 1.0
+        }
+      }
+    },
+    "trained_policies": [
+      "causal_grid_early2",
+      "causal_grid_delayed2",
+      "causal_placebo_grid",
+      "causal_whitespace_grid"
+    ]
+  },
+  "quality": {
+    "controls": {
+      "causal_grid_delayed2": {
+        "count": 5,
+        "maximum": 2.3918272766006976,
+        "mean": 2.3745317682086418,
+        "minimum": 2.357169781443152,
+        "sample_standard_deviation": 0.016520214200767946,
+        "values": [
+          2.3918272766006976,
+          2.3724125170592956,
+          2.391184465581036,
+          2.3600648003590283,
+          2.357169781443152
+        ]
+      },
+      "causal_grid_early2": {
+        "count": 5,
+        "maximum": 2.393639396331613,
+        "mean": 2.3752268902606906,
+        "minimum": 2.3567628223989887,
+        "sample_standard_deviation": 0.016562897666552022,
+        "values": [
+          2.393639396331613,
+          2.3716419587983966,
+          2.3911503196130597,
+          2.362939954161395,
+          2.3567628223989887
+        ]
+      },
+      "causal_placebo_grid": {
+        "count": 5,
+        "maximum": 2.400853153763658,
+        "mean": 2.3827523339697048,
+        "minimum": 2.3655312683672727,
+        "sample_standard_deviation": 0.01653679449967851,
+        "values": [
+          2.400853153763658,
+          2.3786617107469317,
+          2.3993205468584025,
+          2.3693949901122586,
+          2.3655312683672727
+        ]
+      },
+      "causal_whitespace_grid": {
+        "count": 5,
+        "maximum": 2.3862071299002556,
+        "mean": 2.367275986217063,
+        "minimum": 2.349032826802028,
+        "sample_standard_deviation": 0.0174302726814365,
+        "values": [
+          2.384397699570986,
+          2.3643840744392866,
+          2.3862071299002556,
+          2.352358200372759,
+          2.349032826802028
+        ]
+      }
+    },
+    "primary_reused": {
+      "causal_codepoint_grid": {
+        "count": 5,
+        "maximum": 2.3918495902976664,
+        "mean": 2.3742143674150964,
+        "minimum": 2.3560319572345523,
+        "sample_standard_deviation": 0.016547258292049782,
+        "values": [
+          2.3918495902976664,
+          2.3718119495633703,
+          2.390580848959087,
+          2.360797491020805,
+          2.3560319572345523
+        ]
+      },
+      "causal_eojeol_grid": {
+        "count": 5,
+        "maximum": 2.386638781560848,
+        "mean": 2.367134902192307,
+        "minimum": 2.349282354934341,
+        "sample_standard_deviation": 0.01748317777622586,
+        "values": [
+          2.3839761013624763,
+          2.3637588333342414,
+          2.386638781560848,
+          2.3520184397696284,
+          2.349282354934341
+        ]
+      }
+    }
+  },
+  "schema_version": 1,
+  "scope": "Phase 2b post-primary mechanism and artifact controls",
+  "source": {
+    "control_manifest": "runs/phase2-controls/manifest.json",
+    "control_manifest_sha256": "b71911d4e213867ad4d3e8937ec76709a175f807841f0515d9d9750df01ad742",
+    "git_commit_at_run_start": "27b732b8d87e876a3599d97478206e43357055cf"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "aggregate": {
+    "affected_time_share_proxy": 0.2409729925267516,
+    "balanced_49m_median_reduction": 0.035717306936173254,
+    "c86_median_ms": 286.971771,
+    "crossed_bootstrap_95_interval": {
+      "lower": 0.03247377961265359,
+      "upper": 0.043095509325512094
+    },
+    "gates": {
+      "all_three_sessions_positive": true,
+      "at_least_two_sessions_reach_10_percent": false,
+      "bootstrap_lower_at_least_8_percent": false,
+      "evidence_valid": true,
+      "point_reduction_at_least_10_percent": false,
+      "positive_prompts_at_least_15": true
+    },
+    "increment_over_balanced_percentage_points": 0.351085463794909,
+    "maximum_memory_fraction": 0.00832386451630783,
+    "median_reduction": 0.039228161574122344,
+    "overall_threshold_pass": false,
+    "patch_event_reduction": 0.16279069767441856,
+    "positive_prompt_count": 16,
+    "positive_session_count": 3,
+    "protocol_id": "jamoflow-global-heavy-schedule-bridge-v2",
+    "session_evidence_validity": {
+      "session-0": true,
+      "session-1": true,
+      "session-2": true
+    },
+    "session_reductions": {
+      "session-0": 0.0384104497715656,
+      "session-1": 0.03808062610678209,
+      "session-2": 0.04027396462798383
+    },
+    "sessions_at_least_10_percent": 0,
+    "status": "global_heavy_fixed_geometry_failed_10_percent_gate",
+    "trained_quality_protocol_may_be_designed": false,
+    "w72_median_ms": 275.71439599999997
+  },
+  "claim_boundary": {
+    "free_running_claimed": false,
+    "random_weight_systems_result": true,
+    "single_fixed_architecture": true,
+    "trained_quality_claimed": false,
+    "training_directly_authorized": false
+  },
+  "kind": "global_heavy_schedule_bridge_summary_v2",
+  "plan_artifact_sha256": "0c31ff066eae9c5f0d2ab8d1ae79c7b492654b7050e6240c34f9eb2f2cd520d4",
+  "plan_sha256": "7904105f4942b430c68ef981062387f7343f4715a7d15e311bcde2fbc7bd64c0",
+  "protocol_id": "jamoflow-global-heavy-schedule-bridge-v2",
+  "schema_version": 1,
+  "status": "global_heavy_fixed_geometry_failed_10_percent_gate",
+  "summary_base_git_commit": "12863d7418615dc09cd6c6a2f8a10e5eda3b1fbc",
+  "summary_sha256": "968c4a16933af7b680fdc655eef07fa46f8c3ed925916bb61656ec8534b0971a",
+  "worker_evidence": {
+    "session-0": {
+      "report_path": "artifacts/global-heavy-schedule-bridge-v2/session-0-report.json",
+      "report_sha256": "5fe42a64acf64154ab7ef5b787825244b56615114f6538134fc5cf798a638d15",
+      "timing_path": "artifacts/global-heavy-schedule-bridge-v2/session-0-timings.npz",
+      "timing_sha256": "b0464bf4e5ecd17ff489abde1d6b76ea522b596a488e6030d9bb20c0a713b998"
+    },
+    "session-1": {
+      "report_path": "artifacts/global-heavy-schedule-bridge-v2/session-1-report.json",
+      "report_sha256": "68e27b1f8e06ae36fb4e0447332da7c75d11c7a91fcc1ef7e92008e6b176a396",
+      "timing_path": "artifacts/global-heavy-schedule-bridge-v2/session-1-timings.npz",
+      "timing_sha256": "d259c48f61ae896aae3614b0185e98b01c6373159fba9112fd0da6c9008778c3"
+    },
+    "session-2": {
+      "report_path": "artifacts/global-heavy-schedule-bridge-v2/session-2-report.json",
+      "report_sha256": "cf987c6980cebcba96e9dd9f762eccf3d52d570e4e1e7c2164d877d2a4593838",
+      "timing_path": "artifacts/global-heavy-schedule-bridge-v2/session-2-timings.npz",
+      "timing_sha256": "fd09a5c2b6cbc160dcbb7c7c66bf21c8fd3beb9898a0a914a603cbe02e2f6bd5"
+    }
+  }
+}

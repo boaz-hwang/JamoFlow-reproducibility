@@ -1,0 +1,127 @@
+{
+  "claim_boundary": {
+    "actual_model_latency": false,
+    "calibration_development_only": true,
+    "korean_aware_method_evaluated": false,
+    "model_quality_used": false,
+    "publication_evidence": false,
+    "token_only_generic_upper_bound": true
+  },
+  "dependencies": {
+    "bpe_tokenizer": {
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054"
+    },
+    "integrity": {
+      "path": "data/processed/hplt3-korean-phase3/integrity.json",
+      "sha256": "472cc5da045909109718be71168e516be19043cb2a08363d573ed77650038181"
+    },
+    "source": {
+      "path": "data/processed/hplt3-korean-phase3/ko.jsonl",
+      "sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+    },
+    "systems_plan": {
+      "path": "data/manifests/korean-bpe-systems-frontier-v1.json",
+      "sha256": "3851b989ef36a841c72a9f2de35568a5d8188eea06b1a1cbb691e5d61b67d8ee"
+    },
+    "systems_result": {
+      "path": "results/korean-bpe-systems-frontier-v1/summary.json",
+      "sha256": "01fba62f80ddf22e0c7aeb2cf7e40b36a6c36d31eebce8863f62a9381e971b8a"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "sentencepiece": "0.2.1",
+    "system": "Darwin",
+    "tokenizers": "0.22.2"
+  },
+  "experiment": {
+    "calibration_bytes": 8000000,
+    "encode_repetitions": 3,
+    "measured_cases": 36,
+    "minimum_step_reduction": 0.1,
+    "roles": [
+      "byte_bpe_2k",
+      "byte_unigram_2k_scored",
+      "byte_unigram_vocab_2k_leftmost_longest",
+      "byte_unigram_vocab_2k_minimum_token_dp"
+    ],
+    "tokenizer_training_maximum_piece_bytes": 48,
+    "vocabulary_size": 2048,
+    "warmup_cases": 6
+  },
+  "git_commit_before_plan": "72b5cad16a1379fa542cee90e51dcbd0c88598eb",
+  "implementation_sha256": {
+    "docs/121-length-max-thunder-tok-reproduction-audit.md": "442b392d6d1c7a631b99522e74a9ad0447ac9e6bc65f97e91528a9586d02e3a2",
+    "docs/122-byte-unigram-exploration-and-protocol-decision.md": "6e5b7837c34c42ee7a7e859efb2edf109ca784c1656917168c028e1099b613ca",
+    "docs/123-same2k-generic-opportunity-protocol.md": "e537d060523730d38a0b2e5243cb4fa3a1b8e08aa757e5794ef8adb917d76ad2",
+    "docs/124-same2k-v1-nfc-assumption-invalidation.md": "0a3429b5e676343064d5f9d723a1877d497ef1e517716f19ee8135314ab0b673",
+    "docs/125-same2k-v2-byte-fallback-invalidation.md": "b2761dbb0b082cbd512a3b4a397daed78b3b264d60343feed872629eb58984e7",
+    "docs/126-same2k-v3-wordpiece-runtime-invalidation.md": "d1a068fb40616e90ce329e5dc4c42beb7fa79991b54298e33e041d1f96037fbd",
+    "docs/127-same2k-v4-tokenizer-json-verifier-invalidation.md": "919d0f0aff89513b9f1281f79278928f41e41088ffc22e9a3596a400c386184f",
+    "docs/128-same2k-v5-deployable-runtime-invalidation.md": "fdde2a2450c543428b7001ad458f32349003b86998b8ad4199e67cf6b1b14f38",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "requirements/same2k-opportunity-v1.txt": "48989718da84af38219d85e9bb60a112d115a675a750e1ae0922fd50d84497de",
+    "scripts/byte_unigram.py": "fbd8a51ad3aece2e68ab3a3422b6a0f5952b0cc918b3a9d5c93cb3b2d9554e3e",
+    "scripts/fixed_byte_tokenizer.py": "a0b7a2fc97988067843d012bf37fe311a18408be653ecfd5a31c0500938f03f8",
+    "scripts/run_same2k_opportunity.py": "64c112a9c2910530deb42a6f04a60d523c1c09861415452c2479f3b9fc587d2d",
+    "scripts/same2k_opportunity.py": "97ee1f1b1551337abff76334d0811fe71ced9343d7eaab1705df89c1791539bc",
+    "scripts/same2k_opportunity_protocol.py": "becc0e68be87dc4557831444d9843dd1d1ef4a5eadfa63701ca352ce722c111a",
+    "scripts/seal_same2k_opportunity_plan.py": "cb2e9c6496b9db017a890a8e1f7ddcc2cb2846fef1f78db26417793a99bbc234",
+    "scripts/summarize_same2k_opportunity.py": "4df3bc83fc9a0bee55dd4392c9d06713175d0fb94b84d945a03a2256365a033d",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "tests/test_byte_unigram.py": "9375cab216b7388e51aa286feba7b23c99a17f9a0a025174fd21b7aa39ab12e7",
+    "tests/test_fixed_byte_tokenizer.py": "2027277ef8d36a4ace70cca7b6e5d91e2bc2c57200749153cb673eedd0f3129a",
+    "tests/test_same2k_opportunity.py": "4a17c81534385caa879746498b6e956bcbaedfeb83e6cef9fd41dac55e8a2179"
+  },
+  "kind": "same2k_generic_opportunity_plan_v6",
+  "known_exploratory_anchors": {
+    "hf_unigram_no_regex_calibration_token_count": 2173590,
+    "hf_unigram_no_regex_reduction_vs_bpe": 0.03971148799457114,
+    "hf_unigram_regex_calibration_token_count": 2328984,
+    "hf_unigram_regex_reduction_vs_bpe": -0.02894132740970079,
+    "interpretation": "unsealed nondeterministic API exploration; disclosed, not selection evidence"
+  },
+  "plan_sha256": "5e12f58ba45fb3c730b32dcb8d6456a3a4dd559393080033990c9f835f9d1675",
+  "protocol_id": "jamoflow-same2k-generic-opportunity-v6",
+  "schema_version": 1,
+  "shared_inputs": {
+    "calibration_bytes": 8000000,
+    "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+    "case_metadata": {
+      "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+      "calibration_stream_sha256": "a75c239feb0eb32c8d5cee7e723f551dfa35666f6fcb650c90cd9f9bb127a013",
+      "candidate_document_windows": 15240,
+      "candidate_rows": 996,
+      "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+      "continuation_length_bytes": 128,
+      "document_assignment_sha256": "984ac3133022ad1922c33bbcbb93a56562f562b031feec1534bf1d4467d0ef4a",
+      "measured_cases": 36,
+      "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4",
+      "prompt_length_bytes": 128,
+      "selected_cases": 42,
+      "selected_unique_clusters": 42,
+      "unique_candidate_clusters": 330,
+      "unique_candidate_prompts": 996,
+      "warmup_cases": 6
+    },
+    "continuation_array_sha256": "08a72c37b19f6afe347693b709294b2ebcf1773d2abb2177719478e7cf61b4d2",
+    "prompt_array_sha256": "dcb862a4d95f38cf97f2439a9a270ce46e0905ca73c49a78af9315257de73da4"
+  },
+  "status": "sealed_before_deterministic_full_corpus_training"
+}

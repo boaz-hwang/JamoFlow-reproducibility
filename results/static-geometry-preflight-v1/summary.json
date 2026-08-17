@@ -1,0 +1,178 @@
+{
+  "aggregate": {
+    "bootstrap": {
+      "repetitions": 10000,
+      "seed": 20260901,
+      "unit": "calibration prompt after within-prompt repetition median"
+    },
+    "protocol_id": "jamoflow-static-geometry-preflight-v1",
+    "rows": {
+      "baseline_w72": {
+        "analytical_dense_matmul_flops": 5640155136,
+        "analytical_flop_reduction": 0.0,
+        "correctness": {
+          "argmax_comparisons": 128,
+          "argmax_exact": 128,
+          "boundary_trace_exact": true,
+          "cache_diagnostics_exact": true,
+          "maximum_normalized_logit_error": 0.09306923300027847
+        },
+        "end_to_end_reduction": 0.0,
+        "median_ms": 592.5241455,
+        "overall_pass": true,
+        "parameter_count": 19596096,
+        "parameter_relative_difference": 0.0,
+        "passes": {
+          "analytical_flops": true,
+          "bootstrap_lower_bound": true,
+          "correctness": true,
+          "parameter_match": true,
+          "point_reduction": true,
+          "prompt_direction": true
+        },
+        "positive_prompt_count": 0,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "thin128_e1_d1_g384x9": {
+        "analytical_dense_matmul_flops": 3587538432,
+        "analytical_flop_reduction": 0.36392912154109935,
+        "correctness": {
+          "argmax_comparisons": 128,
+          "argmax_exact": 128,
+          "boundary_trace_exact": true,
+          "cache_diagnostics_exact": true,
+          "maximum_normalized_logit_error": 0.08909524232149124
+        },
+        "end_to_end_reduction": 0.19609742300366728,
+        "median_ms": 476.33168750000004,
+        "overall_pass": false,
+        "parameter_count": 19575680,
+        "parameter_relative_difference": 0.001041840170613595,
+        "passes": {
+          "analytical_flops": true,
+          "bootstrap_lower_bound": true,
+          "correctness": true,
+          "parameter_match": true,
+          "point_reduction": false,
+          "prompt_direction": true
+        },
+        "positive_prompt_count": 31,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.15411084721483292,
+          "upper": 0.26406797006551785
+        }
+      },
+      "thin128_e1_d2_g384x9": {
+        "analytical_dense_matmul_flops": 3984926208,
+        "analytical_flop_reduction": 0.293472234023316,
+        "correctness": {
+          "argmax_comparisons": 128,
+          "argmax_exact": 128,
+          "boundary_trace_exact": true,
+          "cache_diagnostics_exact": true,
+          "maximum_normalized_logit_error": 0.11699483543634415
+        },
+        "end_to_end_reduction": 0.05772988959147818,
+        "median_ms": 558.317792,
+        "overall_pass": false,
+        "parameter_count": 19605888,
+        "parameter_relative_difference": 0.0004996913670967107,
+        "passes": {
+          "analytical_flops": true,
+          "bootstrap_lower_bound": false,
+          "correctness": true,
+          "parameter_match": true,
+          "point_reduction": false,
+          "prompt_direction": true
+        },
+        "positive_prompt_count": 24,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.022962359021859502,
+          "upper": 0.14299023449871529
+        }
+      },
+      "thin160_e1_d1_g384x9": {
+        "analytical_dense_matmul_flops": 3889040896,
+        "analytical_flop_reduction": 0.3104727082457329,
+        "correctness": {
+          "argmax_comparisons": 128,
+          "argmax_exact": 128,
+          "boundary_trace_exact": true,
+          "cache_diagnostics_exact": true,
+          "maximum_normalized_logit_error": 0.08674696832895279
+        },
+        "end_to_end_reduction": 0.24416677210329818,
+        "median_ms": 447.8494375,
+        "overall_pass": true,
+        "parameter_count": 19571872,
+        "parameter_relative_difference": 0.0012361645911511676,
+        "passes": {
+          "analytical_flops": true,
+          "bootstrap_lower_bound": true,
+          "correctness": true,
+          "parameter_match": true,
+          "point_reduction": true,
+          "prompt_direction": true
+        },
+        "positive_prompt_count": 32,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.19201726937498576,
+          "upper": 0.2911153828231464
+        }
+      }
+    },
+    "selection": {
+      "candidate_order": [
+        "thin128_e1_d2_g384x9",
+        "thin160_e1_d1_g384x9",
+        "thin128_e1_d1_g384x9"
+      ],
+      "one_seed_training_authorized": true,
+      "rule": "first passing candidate in the fixed quality-conservative order",
+      "selected_candidate": "thin160_e1_d1_g384x9"
+    },
+    "status": "one_seed_static_control_authorized",
+    "thresholds": {
+      "maximum_parameter_relative_difference": 0.0025,
+      "minimum_analytical_flop_reduction": 0.2,
+      "minimum_bootstrap_lower_bound": 0.15,
+      "minimum_point_reduction": 0.2,
+      "minimum_positive_prompts": 24
+    }
+  },
+  "claim_boundary": {
+    "calibration_only": true,
+    "pass_authorizes_only_one_seed_training": true,
+    "quality_or_publication_efficiency_claimed": false,
+    "random_weight_latency_only": true,
+    "static_geometry_is_novelty_claimed": false
+  },
+  "elapsed_seconds": 225.15021085739136,
+  "kind": "static_geometry_preflight_summary_v1",
+  "protocol_id": "jamoflow-static-geometry-preflight-v1",
+  "provenance": {
+    "git_commit": "b8ad8e999fc867bcbc7d5ba7eb6706f3bb926ac9",
+    "plan_artifact_sha256": "2d8391fc7e3aa97d0f4b9fded4b0aa619d84f252488b6c0bc354d6333388a68d",
+    "power_snapshot_sha256": "4332fd075cf3d1c199e021550e386fa5091b08a4c7e9217dd73140b411bc9b01",
+    "runtime": {
+      "mps_available": true,
+      "numpy": "2.5.2",
+      "python_torch": "2.13.0",
+      "transformers": "5.14.1"
+    },
+    "torch_inference_mode": true
+  },
+  "raw_evidence": {
+    "array_sha256": {
+      "timings_ms": "fc9fee5c4cc5297acb0b3eaa45f10e1c8bef907b270f4f0eaa576c0da86d0f2d"
+    },
+    "artifact_path": "artifacts/static-geometry-preflight-v1/raw.npz",
+    "artifact_sha256": "631c4bbc2a70ae26bb19bf2f8b3509e374dfa80af5789a4af531c63b77d7a2b1"
+  },
+  "schema_version": 1,
+  "status": "one_seed_static_control_authorized",
+  "summary_sha256": "9df5616b435cd235f4644d06cb973b1db4f021c1fe32941eb328e3aa7ed043a1"
+}

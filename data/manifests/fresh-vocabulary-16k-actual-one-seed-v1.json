@@ -1,0 +1,317 @@
+{
+  "cases": {
+    "algorithm": "outcome-independent one-case-per-document Hangul-heavy selector",
+    "calibration_stream_sha256": "79a4a4de910fa6e5bbfc267ad40c5ffaf26a2959c419dd7b9e6b775320336e46",
+    "candidate_rows": 1017,
+    "continuation_array_sha256": "25568d902f76a37edcf8a23b5cbf272f3a8c9bc9cdf3213c9c57cd9930945286",
+    "continuation_length_bytes": 128,
+    "document_assignment_sha256": "e6bc909d0d0976c029d74a4ddcc0ce7bbc581becee7bad90ceca047cdbcb8a88",
+    "measured_cases": 64,
+    "prompt_array_sha256": "584967513c5f9a5a659bd97083f3cd52c3eb81064138d27c1ee2714f7eebdaa7",
+    "prompt_length_bytes": 128,
+    "selected_cases": 72,
+    "selected_unique_clusters": 72,
+    "unique_candidate_clusters": 303,
+    "unique_candidate_prompts": 1017,
+    "warmup_cases": 8
+  },
+  "claim_boundary": {
+    "actual_end_to_end_measured": true,
+    "development_one_seed_one_session": true,
+    "memory_improvement_claimed": false,
+    "multiseed_requires_primary_gate": true,
+    "parameter_and_checkpoint_cost_reported": true,
+    "primary_requires_both_modes_at_least_10pct": true,
+    "publication_claim": false,
+    "secondary_frontier_is_mandatory_diagnostic": true,
+    "trained_models": true
+  },
+  "dependencies": {
+    "baseline_2k_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense2k_joint_v2.pt",
+      "sha256": "b5c97505bfa9ebb2fa10847514466a061116b79dc6ff10845cc94f50a57124b8"
+    },
+    "candidate_16k_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+      "sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6"
+    },
+    "fresh_v2_seal": {
+      "path": "data/seals/hplt3-korean-vocab-adaptation-v2.json",
+      "sha256": "c7ceeb3290db5e1d0b905494d15b54874f22f53da3281f155a6e2e11437bbe9e"
+    },
+    "fresh_v2_source": {
+      "path": "data/processed/hplt3-korean-vocab-adaptation-v2/ko.jsonl",
+      "sha256": "736b897a2eedeceab6e23e93bc1d4c36d849160f7acbe49029e81ce434967169"
+    },
+    "frontier_8k_checkpoint": {
+      "path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense8k_update_geometry_v2.pt",
+      "sha256": "e40db07744a41ac81efa3488ea982b7fe2c76072eecbc8487cec8f5a9e756609"
+    },
+    "quality_plan": {
+      "path": "data/manifests/fresh-vocabulary-16k-quality-one-seed-v1.json",
+      "sha256": "31eb8810a5c56e2d7b80f9b0d5bd12056c617cfb21a3401698aed6b582dbd0ae"
+    },
+    "quality_result": {
+      "path": "results/fresh-vocabulary-16k-quality-one-seed-v1/summary.json",
+      "sha256": "c95d6095a88e1c04ca93df807cfcaedc992f990e07d836eb1f6bd5e51707b611"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "experiment": {
+    "all_three_models_resident_during_timing": true,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260841,
+    "checkpoint_loading_inside_timing": false,
+    "continuation_bytes": 128,
+    "maximum_free_tokens": 131,
+    "measured_cases": 64,
+    "measured_free_greedy_traces_independently_regenerated": true,
+    "modes": [
+      "controlled_replay",
+      "free_running_utf8_greedy"
+    ],
+    "mps_atol": 0.0001,
+    "mps_rtol": 2e-05,
+    "primary_minimum_bootstrap_lower_reduction": 0.0,
+    "primary_minimum_end_to_end_point_reduction": 0.1,
+    "primary_minimum_positive_prompts": 48,
+    "prompt_bytes": 128,
+    "repetitions": 5,
+    "roles": [
+      "candidate_16k",
+      "baseline_2k",
+      "frontier_8k"
+    ],
+    "secondary_minimum_positive_prompts": 33,
+    "timed_scope": "raw-prompt UTF-8 decode and tokenizer encode; runtime/cache construction; parallel prefill; every autoregressive argmax and device-host token readback; incremental KV-cache decode; token-byte reconstruction; strict UTF-8 stop/decode",
+    "warmup_cases": 8
+  },
+  "git_commit_before_plan": "c443055b868f505ba8854669d6f2dd3d11e80ccf",
+  "implementation_sha256": {
+    "docs/155-fresh-vocabulary-trained-actual-preflight-protocol.md": "f870e0eb313f3c5983c8cd685121ac292b592c52dd8512c81cf3b11c0ead7ba4",
+    "docs/156-fresh-vocabulary-actual-result-and-16k-pivot.md": "ea6d36aea9763b8c274a028f20ef5079a227e06a0bab3ca73f1a89667a0b050b",
+    "docs/159-fresh-vocabulary-16k-quality-protocol.md": "ac2a5140cf6c3797acb919010f651d42e14f898a2d09ea445e12ecc328196937",
+    "docs/160-fresh-v2-16k-quality-result.md": "093b6a3c4280b967926c5d584b0b0bbfe9c84be4ba10635159e0180a7b1cd06a",
+    "docs/161-fresh-vocabulary-16k-trained-actual-protocol.md": "3f4858e256bfc8c3456ba615c64da17f7819860c0cb24c3d3aaf9437f157bfe2",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/benchmark_fresh_vocabulary_16k_actual.py": "3f5e3f46864e1d7c74653f22500141d29f4998d4f6ff92a74e869164a282509e",
+    "scripts/benchmark_fresh_vocabulary_actual.py": "6ccb3c5658de43e3f52ee9188ebad016453a872ced64e33cf01e63828f80b08b",
+    "scripts/bpe_quality_frontier_core.py": "757d1e1959ae91906c497c1a684415f707664f1a47ef9119788a066ee22d5578",
+    "scripts/compositional_head_core.py": "f854870d81e5bbc66dd6ec46dd2ff4f34971631d968e80e545b43f53886e53db",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/compositional_quality_core.py": "eb4253e1a360eb89e0b1e8c90a00aa4a591435ad2aa95080ff8577aebc7519e8",
+    "scripts/compositional_quality_protocol.py": "23c827c0ea2639f048e46f55dfc2e7be428f902af0f2f9e78e914e2d0c1e9e5b",
+    "scripts/compositional_token_head.py": "5777f7dd1cd39d940123e64fa92727054e3151d589596f3cdac8dca267f6705e",
+    "scripts/fresh_vocabulary_16k_actual_core.py": "c09cdc6e21ec2ff515a1ae5bca75265d90afa0c82862ec4ab1d85ddf6368f66e",
+    "scripts/fresh_vocabulary_16k_actual_protocol.py": "5ad24a1c0030cdf5f2e90e2c2dae7914bd614e8691e2db5cbfec8a55cbce1432",
+    "scripts/fresh_vocabulary_16k_core.py": "bb69e005477c6ea71e0e0f60cbed1b5c5c119dde86acb7cc40574beca970c2da",
+    "scripts/fresh_vocabulary_16k_protocol.py": "ff1b07abaa15776119bc3307e116f8b35157f4facd939f640e2555fbba1f5d00",
+    "scripts/fresh_vocabulary_actual_core.py": "c4027eea06246faaa3b0715b28d7d44b92bf52c12c683eabc62b1a389edc4b08",
+    "scripts/fresh_vocabulary_actual_protocol.py": "c7487f9b15332ee6f039993c70148d3b4d1e53bf41fff90d80ec86513a6cfa6b",
+    "scripts/hplt3_fresh_adaptation_protocol.py": "356772ae7197c256f748da13780142529416c21e4ab60cb17f11ce605877723e",
+    "scripts/hplt3_fresh_adaptation_v2_protocol.py": "007cb6fa089a239657307966d036258b443fd01bb42cf8ce524f765ad5757451",
+    "scripts/preflight_fresh_vocabulary_16k_actual.py": "e25893d43ca26dd8dcfd278303dae9a7db042f7122d04a040696e211f7820db5",
+    "scripts/scalar_representation_core.py": "12bda2255c38e118ccb7d46e2c98d5d003ca4743d27a97dc3795a34d3a4f1333",
+    "scripts/scalar_runtime_core.py": "6260d9f0b974865d22af7a54d73a3e4fe892a2ed390ec49b973b95bc85534998",
+    "scripts/seal_fresh_vocabulary_16k_actual_plan.py": "ea90fea1a0125608073eb6973216182b02de820e382df492e9128f61a6e95e47",
+    "scripts/summarize_fresh_vocabulary_16k_actual.py": "6b03fa2914bcf34c19ddb7f027c60cdc7e884ae8d49fb7a629186db347e53e42",
+    "scripts/token_frontier_core.py": "cc578b9b02206159762f6ea7adb0ef611d248e0286457e4ea1792fcc3befe4ed",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "scripts/vocabulary_transfer_probe_core.py": "57a3f7390f589f73d0b8e5244d8270d02fb53e4bffa10d86dba9f5ce4b5fe430",
+    "scripts/vocabulary_transfer_probe_protocol.py": "5f2c18a60de7e362e8d0a02c2c50a8fa36e2cc340c9036f9c4b097b58bfd024e",
+    "src/jamoflow/actual_inference_protocol.py": "ffe7cb87a2beaed149b8cc791a49d8ac992ecddde94df722e0f40dcd0b1154aa",
+    "src/jamoflow/compute_conversion.py": "10136ecdb97ac1af084b66d9715c228e0f61b7745bd6f0d2f3ce4beb2dd2d08a",
+    "src/jamoflow/corpus.py": "af2c69d18424266bcee4cd3067432afc10b69bac345873f7cbf4e338654b16ba",
+    "src/jamoflow/document_inference.py": "390cf3e8784c15cac99d56bbd59e7701ecf148d1235573467694622f6451c312",
+    "src/jamoflow/hplt3.py": "b5f3763eee78916d87e61b3081a73a845a913e47d500ed75a040f5d7407b5f00",
+    "src/jamoflow/hplt3_final_test.py": "016a3cc2659f11080814519f6839b1bab6733aa74a3127561664ea2a19f38ba5",
+    "src/jamoflow/incremental_blt.py": "d82ca95a6509490e443258c84788bab17817e47bd62481880bd8ed08f64e0ef7",
+    "src/jamoflow/inference_benchmark.py": "750d33a7eb454ffbcca85d073905420e9cbde2d7a8311049f0b7b4482a0f4114",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/neural_model.py": "280e55c3093d69aa80af320470e5ca15457c431d098fa143426f30a2c2893f24",
+    "src/jamoflow/phase1.py": "8bced72b5355dd4138770f1f8f6a4ce694b4e41d225bea8105641ae2600c9da0",
+    "src/jamoflow/phase2_patching.py": "523318a2504476d37ed0bec3fc6490432c0442ca01cb0590b2b5e5f1fe490ae5",
+    "src/jamoflow/phase3.py": "c17d76e959d7402f4bc6b010e5eefc5d19757d4a6b7ab3b04291ee063ba593a2",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "src/jamoflow/utf8.py": "2f65d90d960e263fc950b8f7f81577c952b326f3f7370afb97850a4a8162beef",
+    "tests/test_fresh_vocabulary_16k_actual_core.py": "af389fdf6d0b6bea07ad1a71749e9d9da34c0a03458251f4d5fd251b702a6b45",
+    "tests/test_fresh_vocabulary_16k_actual_protocol.py": "7e980491016ec6c4cb90719af0028e40749e952b5fc999e66a6c80723d2e7f0b"
+  },
+  "kind": "fresh_vocabulary_16k_actual_one_seed_plan_v1",
+  "models": {
+    "baseline_2k": {
+      "checkpoint_artifact_sha256": "b5c97505bfa9ebb2fa10847514466a061116b79dc6ff10845cc94f50a57124b8",
+      "checkpoint_bytes": 81838658,
+      "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense2k_joint_v2.pt",
+      "checkpoint_state_sha256": "5f9ec8aaf210c9b6bf132468383142f4658e5c1e618a9d8b66793c67aae3fffb",
+      "document_bpb": 1.4083309677934925,
+      "parameter_count": 19667328,
+      "quality_role": "dense2k_joint_v2",
+      "vocabulary_size": 2048
+    },
+    "candidate_16k": {
+      "checkpoint_artifact_sha256": "87ac6ca118c0fc60f685523b41185793f38b4daf51592cdd5d2ffff8642731c6",
+      "checkpoint_bytes": 124699202,
+      "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense16k_update_geometry.pt",
+      "checkpoint_state_sha256": "7efa2ead8a6cc60e81b513c724c9b1b554d6ca0d674dbd8ef1ceff1cc6a05902",
+      "document_bpb": 1.3934744560965184,
+      "parameter_count": 31168896,
+      "quality_role": "dense16k_update_geometry",
+      "vocabulary_size": 16000
+    },
+    "frontier_8k": {
+      "checkpoint_artifact_sha256": "e40db07744a41ac81efa3488ea982b7fe2c76072eecbc8487cec8f5a9e756609",
+      "checkpoint_bytes": 100713026,
+      "checkpoint_path": "artifacts/fresh-vocabulary-16k-quality-one-seed-v1/checkpoints/dense8k_update_geometry_v2.pt",
+      "checkpoint_state_sha256": "44fd4b2551eb85dc5f3fcbe7fa364ef05e29c82db6be4fd051b991593299b4ea",
+      "document_bpb": 1.3978824591756698,
+      "parameter_count": 25172352,
+      "quality_role": "dense8k_update_geometry_v2",
+      "vocabulary_size": 8192
+    }
+  },
+  "output_path": "results/fresh-vocabulary-16k-actual-one-seed-v1/summary.json",
+  "pairs": {
+    "order": [
+      "candidate_vs_2k",
+      "candidate_vs_8k"
+    ],
+    "primary_gate_pair": "candidate_vs_2k",
+    "roles": {
+      "candidate_vs_2k": [
+        "candidate_16k",
+        "baseline_2k"
+      ],
+      "candidate_vs_8k": [
+        "candidate_16k",
+        "frontier_8k"
+      ]
+    },
+    "secondary_does_not_replace_primary": true,
+    "secondary_frontier_pair": "candidate_vs_8k"
+  },
+  "plan_sha256": "b42cab2ca057bbd3384d55c10cfcf14dde2194edd21f0d3f9b1d8a46e5870c99",
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-actual-one-seed-v1",
+  "schema_version": 1,
+  "selection": {
+    "actual_latency_used_for_selection": false,
+    "candidate": "dense16k_update_geometry",
+    "no_result_dependent_fallback": true,
+    "primary_reference": "dense2k_joint_v2",
+    "quality_result_sha256": "8d7fc2260a657713dae2fbd6c62dc617a3ace084725dec782d29cee6ead7e85f",
+    "secondary_reference": "dense8k_update_geometry_v2",
+    "selection_metric": "fresh_v2_calibration_document_bpb_only"
+  },
+  "status": "sealed_after_16k_quality_before_actual_timing",
+  "tokenizer_runtime": {
+    "baseline_2k": {
+      "continuation_token_count": {
+        "array_sha256": "d7f5f47f23479dece6d1d5ed4377699cdd32a0abc55bfbe36153fd1606abfcfe",
+        "maximum": 78,
+        "median": 35.5,
+        "minimum": 24
+      },
+      "prompt_token_count": {
+        "array_sha256": "d00423669b09bb604eefb5f617732bc9099c8962a200d40ebc46930d3174e7c7",
+        "maximum": 52,
+        "median": 35.0,
+        "minimum": 24
+      },
+      "strict_utf8_transitions": {
+        "maximum_free_output_bytes": 140,
+        "maximum_token_bytes": 13,
+        "state_count": 8,
+        "token_bytes_sha256": "ace9817a43076516944b45425ca1821628ea7fd51fc5a827ba475e922e15546f",
+        "transition_table_sha256": "0c31bb5ab1c1dce08591127147c0354129594ff64944d0eed6e90c761a780d91"
+      },
+      "vocabulary_size": 2048
+    },
+    "candidate_16k": {
+      "continuation_token_count": {
+        "array_sha256": "3b5d0e3bb9962d1e1c8b7a7f43e1740cb70311fdf086050830d5d0d5476f8410",
+        "maximum": 48,
+        "median": 25.0,
+        "minimum": 17
+      },
+      "prompt_token_count": {
+        "array_sha256": "d262bc94b4d9771c7c20125afdc1778a1c0d7696f9ddbe57b03b4dd596ad49cc",
+        "maximum": 44,
+        "median": 24.0,
+        "minimum": 15
+      },
+      "strict_utf8_transitions": {
+        "maximum_free_output_bytes": 155,
+        "maximum_token_bytes": 28,
+        "state_count": 8,
+        "token_bytes_sha256": "52ca584d6bd0c7782ac37d43544ef4b33b82edbe6363646809b0761b6192fedd",
+        "transition_table_sha256": "4ffbc2ae22abb509b5d0e73d4edcaae9ea09ba5eb7ab79654c5c9828afebc22d"
+      },
+      "vocabulary_size": 16000
+    },
+    "frontier_8k": {
+      "continuation_token_count": {
+        "array_sha256": "b36eac1e12edc5e7150b0f175abbeda08236dd4519c4053c8354707c23413447",
+        "maximum": 55,
+        "median": 27.5,
+        "minimum": 18
+      },
+      "prompt_token_count": {
+        "array_sha256": "6abee3cb0e1cddb5f9e527c784701606f05f8d4642f74e3384b3f133be8be9fe",
+        "maximum": 45,
+        "median": 26.5,
+        "minimum": 17
+      },
+      "strict_utf8_transitions": {
+        "maximum_free_output_bytes": 146,
+        "maximum_token_bytes": 19,
+        "state_count": 8,
+        "token_bytes_sha256": "b6e2448b68149efc6eb44f3a6953c2fddc7884201de476ba18f21f206dcdd68c",
+        "transition_table_sha256": "28a3c687e145eaa9e35dbd7912349946dee98d18b8c8910a775dbdeb8cd983dc"
+      },
+      "vocabulary_size": 8192
+    }
+  },
+  "tokenizers": {
+    "baseline_2k": {
+      "ordered_token_bytes_sha256": "0f272210cf00870fcb1fecdefac9ad1e6acf1764bd47da8eabee5f525a3b4492",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054",
+      "vocabulary_size": 2048
+    },
+    "candidate_16k": {
+      "ordered_token_bytes_sha256": "d1d9cb04eb462c87ca7c13ab72b8053f30f43a8eef3bd6c9db0b4d5afd3b6efc",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-16000.json",
+      "sha256": "98b626d6b268773d4fe599ac1ae8f2869d18edfb33566ba1d04bd84bdce3c263",
+      "vocabulary_size": 16000
+    },
+    "frontier_8k": {
+      "ordered_token_bytes_sha256": "fb2424ff1b3dbc90fa3dfe431372604ce4368c9d3e954143f4f73117f5a0b0c8",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-8192.json",
+      "sha256": "6f65d21005dfbafadbbed282a792b71d3c3ba8d1f3befc06d46e768b77f5c354",
+      "vocabulary_size": 8192
+    }
+  }
+}

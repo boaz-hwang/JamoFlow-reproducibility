@@ -1,0 +1,759 @@
+{
+  "metadata": {
+    "created_at": "2026-08-10T01:52:26.156437+00:00",
+    "corpus_label": "Leipzig English Wikipedia 2016 100K",
+    "interpretation_note": "Randomized sentence corpus; snapshot year differs from language controls and n-gram entropy remains a proxy.",
+    "python": "3.14.6",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "input_files": "data/processed/leipzig-wikipedia-100k-controls/en.jsonl",
+    "included_suffixes": "default text suffixes",
+    "resolved_file_count": 1,
+    "plain_record_unit": "line",
+    "records_total": 100000,
+    "train_records": 79881,
+    "calibration_records": 9960,
+    "test_records": 10159,
+    "training_bytes": 10174791,
+    "ngram_order": 4,
+    "alpha": 0.1,
+    "fit_seconds": 11.894235708,
+    "scoring_seconds": 7.587853001,
+    "scoring_ns_per_byte": 2954.449281620384,
+    "causality_checks": 240,
+    "deduplicated": true,
+    "reference_only": true,
+    "bootstrap_repeats": 500,
+    "bootstrap_seed": 1729
+  },
+  "unicode_audit": {
+    "records_total": 100000,
+    "valid_unicode_records": 100000,
+    "invalid_records": 0,
+    "raw_bytes": 12743071,
+    "codepoints": 12723553,
+    "nfc_exact_records": 100000,
+    "nfd_exact_records": 97403,
+    "nfc_changed_records": 0,
+    "nfd_changed_records": 2597,
+    "nfc_codepoint_delta": 0,
+    "nfd_codepoint_delta": 3876,
+    "mixed_script_records": 96,
+    "categories": {
+      "ascii_latin": 10224818,
+      "cjk_ideograph": 351,
+      "combining_mark": 84,
+      "digit": 167176,
+      "hangul_syllable": 45,
+      "nonascii_latin": 4015,
+      "other": 1638,
+      "punctuation": 342597,
+      "symbol": 1825,
+      "whitespace": 1981004
+    },
+    "errors": {}
+  },
+  "calibrations": [
+    {
+      "group": "fixed_byte_6",
+      "target_average_patch_bytes": 5.885466772737364,
+      "entropy_threshold": 4.603171689279067,
+      "candidate_entropy_threshold": 4.603171689279067,
+      "entropy_calibration_average_patch_bytes": 5.769127887998259,
+      "candidate_calibration_average_patch_bytes": 5.814894530964393,
+      "orthographic_candidate_entropy_threshold": null,
+      "orthographic_candidate_calibration_average_patch_bytes": null
+    },
+    {
+      "group": "codepoint_stride_6",
+      "target_average_patch_bytes": 5.887454600134175,
+      "entropy_threshold": 4.603171689279067,
+      "candidate_entropy_threshold": 4.603171689279067,
+      "entropy_calibration_average_patch_bytes": 5.769127887998259,
+      "candidate_calibration_average_patch_bytes": 5.814894530964393,
+      "orthographic_candidate_entropy_threshold": null,
+      "orthographic_candidate_calibration_average_patch_bytes": null
+    },
+    {
+      "group": "spacebyte_compatible",
+      "target_average_patch_bytes": 5.95646231118143,
+      "entropy_threshold": 4.608713343161674,
+      "candidate_entropy_threshold": 4.603596183175609,
+      "entropy_calibration_average_patch_bytes": 5.956434429298981,
+      "candidate_calibration_average_patch_bytes": 5.95412114264324,
+      "orthographic_candidate_entropy_threshold": null,
+      "orthographic_candidate_calibration_average_patch_bytes": null
+    },
+    {
+      "group": "eojeol_cap_24",
+      "target_average_patch_bytes": 5.477765820060267,
+      "entropy_threshold": 4.53868439431757,
+      "candidate_entropy_threshold": 4.529675235181446,
+      "entropy_calibration_average_patch_bytes": 5.477765820060267,
+      "candidate_calibration_average_patch_bytes": 5.475762204961594,
+      "orthographic_candidate_entropy_threshold": null,
+      "orthographic_candidate_calibration_average_patch_bytes": null
+    }
+  ],
+  "policy_metrics": [
+    {
+      "comparison_group": "fixed_byte_6",
+      "role": "rule",
+      "policy": "fixed_byte_6",
+      "total_bytes": 1295795,
+      "patches": 220230,
+      "average_patch_bytes": 5.8838260000908145,
+      "median_patch_bytes": 6.0,
+      "p95_patch_bytes": 6.0,
+      "max_patch_bytes": 6,
+      "boundaries_per_kib": 166.0082837177177,
+      "mean_boundary_entropy_bits": 2.8984409618473994,
+      "mean_boundary_surprisal_bits": 2.330247280144263,
+      "oracle_entropy_capture_ratio": 0.49204816850267197,
+      "top_budget_overlap": 0.16414450352499868,
+      "top_decile_entropy_recall": 0.162180197063918,
+      "mean_high_entropy_patch_lag_bytes": 2.5344861856489764,
+      "p95_high_entropy_patch_lag_bytes": 5.0,
+      "boundaries_inside_codepoint": 306,
+      "boundaries_inside_codepoint_rate": 0.0014566503705889914,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 19,
+      "boundaries_inside_cjk_ideograph_rate": 9.044561124572169e-05,
+      "score_evaluations": 0,
+      "score_evaluations_per_byte": 0.0,
+      "policy_runtime_median_ns_per_byte": 11.266860112903661,
+      "policy_runtime_p95_ns_per_byte": 11.266860112903661,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.882011817226704,
+          5.885611149049944
+        ],
+        "mean_boundary_entropy_bits": [
+          2.8884456727584573,
+          2.909127757932858
+        ],
+        "top_decile_entropy_recall": [
+          0.16088223644275346,
+          0.16350199136941068
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          2.528436049466281,
+          2.5415348362309307
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0012711332538150575,
+          0.0016494854303774197
+        ],
+        "score_evaluations_per_byte": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "comparison_group": "fixed_byte_6",
+      "role": "entropy_matched",
+      "policy": "entropy_matched_fixed_byte_6_t4.603172",
+      "total_bytes": 1295795,
+      "patches": 223538,
+      "average_patch_bytes": 5.796754914153298,
+      "median_patch_bytes": 2.0,
+      "p95_patch_bytes": 22.0,
+      "max_patch_bytes": 116,
+      "boundaries_per_kib": 168.62242561516288,
+      "mean_boundary_entropy_bits": 5.870605113499963,
+      "mean_boundary_surprisal_bits": 4.420089709862223,
+      "oracle_entropy_capture_ratio": 1.0,
+      "top_budget_overlap": 1.0,
+      "top_decile_entropy_recall": 1.0,
+      "mean_high_entropy_patch_lag_bytes": 0.0,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 1810,
+      "boundaries_inside_codepoint_rate": 0.008482559202170786,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 95,
+      "boundaries_inside_cjk_ideograph_rate": 0.0004452171956940467,
+      "score_evaluations": 1285636,
+      "score_evaluations_per_byte": 0.9921600253126459,
+      "policy_runtime_median_ns_per_byte": 36.58355758434011,
+      "policy_runtime_p95_ns_per_byte": 36.58355758434011,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.740709799070115,
+          5.85205093024513
+        ],
+        "mean_boundary_entropy_bits": [
+          5.861295136358114,
+          5.8814166226958005
+        ],
+        "top_decile_entropy_recall": [
+          1.0,
+          1.0
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.0,
+          0.0
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.007747034326890421,
+          0.009180661410886831
+        ],
+        "score_evaluations_per_byte": [
+          0.9920947852068432,
+          0.9922233274464574
+        ]
+      }
+    },
+    {
+      "comparison_group": "fixed_byte_6",
+      "role": "candidate_entropy_matched",
+      "policy": "candidate_entropy_matched_fixed_byte_6_t4.603172",
+      "total_bytes": 1295795,
+      "patches": 221728,
+      "average_patch_bytes": 5.844074722182133,
+      "median_patch_bytes": 2.0,
+      "p95_patch_bytes": 22.0,
+      "max_patch_bytes": 116,
+      "boundaries_per_kib": 167.19207590706864,
+      "mean_boundary_entropy_bits": 5.86112323536017,
+      "mean_boundary_surprisal_bits": 4.422869866126172,
+      "oracle_entropy_capture_ratio": 0.9965442296737382,
+      "top_budget_overlap": 0.9914448714131088,
+      "top_decile_entropy_recall": 0.9878254820115285,
+      "mean_high_entropy_patch_lag_bytes": 0.04901042110344436,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 1283601,
+      "score_evaluations_per_byte": 0.9905895608487454,
+      "policy_runtime_median_ns_per_byte": 378.12600912953053,
+      "policy_runtime_p95_ns_per_byte": 378.12600912953053,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.7879637147970975,
+          5.899923208531686
+        ],
+        "mean_boundary_entropy_bits": [
+          5.851979235654437,
+          5.871449292172376
+        ],
+        "top_decile_entropy_recall": [
+          0.9867733016287655,
+          0.9888824876013488
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.04329465392687201,
+          0.055020871775760004
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.99043330370301,
+          0.9907333443204228
+        ]
+      }
+    },
+    {
+      "comparison_group": "codepoint_stride_6",
+      "role": "rule",
+      "policy": "codepoint_stride_6",
+      "total_bytes": 1295795,
+      "patches": 220160,
+      "average_patch_bytes": 5.885696765988372,
+      "median_patch_bytes": 6.0,
+      "p95_patch_bytes": 6.0,
+      "max_patch_bytes": 8,
+      "boundaries_per_kib": 165.95296632569196,
+      "mean_boundary_entropy_bits": 2.8964255316728234,
+      "mean_boundary_surprisal_bits": 2.3305162099689687,
+      "oracle_entropy_capture_ratio": 0.4916702046779616,
+      "top_budget_overlap": 0.1635944590740044,
+      "top_decile_entropy_recall": 0.16157679529772553,
+      "mean_high_entropy_patch_lag_bytes": 2.5426853508248857,
+      "p95_high_entropy_patch_lag_bytes": 5.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 0,
+      "score_evaluations_per_byte": 0.0,
+      "policy_runtime_median_ns_per_byte": 323.33808588549886,
+      "policy_runtime_p95_ns_per_byte": 323.33808588549886,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.88387646426683,
+          5.887471134604379
+        ],
+        "mean_boundary_entropy_bits": [
+          2.886521186368979,
+          2.907205294321645
+        ],
+        "top_decile_entropy_recall": [
+          0.16033321594381142,
+          0.16301095057800646
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          2.5364223848769303,
+          2.550050147794982
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "comparison_group": "codepoint_stride_6",
+      "role": "entropy_matched",
+      "policy": "entropy_matched_codepoint_stride_6_t4.603172",
+      "total_bytes": 1295795,
+      "patches": 223538,
+      "average_patch_bytes": 5.796754914153298,
+      "median_patch_bytes": 2.0,
+      "p95_patch_bytes": 22.0,
+      "max_patch_bytes": 116,
+      "boundaries_per_kib": 168.62242561516288,
+      "mean_boundary_entropy_bits": 5.870605113499963,
+      "mean_boundary_surprisal_bits": 4.420089709862223,
+      "oracle_entropy_capture_ratio": 1.0,
+      "top_budget_overlap": 1.0,
+      "top_decile_entropy_recall": 1.0,
+      "mean_high_entropy_patch_lag_bytes": 0.0,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 1810,
+      "boundaries_inside_codepoint_rate": 0.008482559202170786,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 95,
+      "boundaries_inside_cjk_ideograph_rate": 0.0004452171956940467,
+      "score_evaluations": 1285636,
+      "score_evaluations_per_byte": 0.9921600253126459,
+      "policy_runtime_median_ns_per_byte": 36.415707731547045,
+      "policy_runtime_p95_ns_per_byte": 36.415707731547045,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.740709799070115,
+          5.85205093024513
+        ],
+        "mean_boundary_entropy_bits": [
+          5.861295136358114,
+          5.8814166226958005
+        ],
+        "top_decile_entropy_recall": [
+          1.0,
+          1.0
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.0,
+          0.0
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.007747034326890421,
+          0.009180661410886831
+        ],
+        "score_evaluations_per_byte": [
+          0.9920947852068432,
+          0.9922233274464574
+        ]
+      }
+    },
+    {
+      "comparison_group": "codepoint_stride_6",
+      "role": "candidate_entropy_matched",
+      "policy": "candidate_entropy_matched_codepoint_stride_6_t4.603172",
+      "total_bytes": 1295795,
+      "patches": 221728,
+      "average_patch_bytes": 5.844074722182133,
+      "median_patch_bytes": 2.0,
+      "p95_patch_bytes": 22.0,
+      "max_patch_bytes": 116,
+      "boundaries_per_kib": 167.19207590706864,
+      "mean_boundary_entropy_bits": 5.86112323536017,
+      "mean_boundary_surprisal_bits": 4.422869866126172,
+      "oracle_entropy_capture_ratio": 0.9965442296737382,
+      "top_budget_overlap": 0.9914448714131088,
+      "top_decile_entropy_recall": 0.9878254820115285,
+      "mean_high_entropy_patch_lag_bytes": 0.04901042110344436,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 1283601,
+      "score_evaluations_per_byte": 0.9905895608487454,
+      "policy_runtime_median_ns_per_byte": 376.1600669859044,
+      "policy_runtime_p95_ns_per_byte": 376.1600669859044,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.7879637147970975,
+          5.899923208531686
+        ],
+        "mean_boundary_entropy_bits": [
+          5.851979235654437,
+          5.871449292172376
+        ],
+        "top_decile_entropy_recall": [
+          0.9867733016287655,
+          0.9888824876013488
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.04329465392687201,
+          0.055020871775760004
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.99043330370301,
+          0.9907333443204228
+        ]
+      }
+    },
+    {
+      "comparison_group": "spacebyte_compatible",
+      "role": "rule",
+      "policy": "spacebyte_compatible",
+      "total_bytes": 1295795,
+      "patches": 216889,
+      "average_patch_bytes": 5.974461590952054,
+      "median_patch_bytes": 5,
+      "p95_patch_bytes": 11.0,
+      "max_patch_bytes": 20,
+      "boundaries_per_kib": 163.36806362117466,
+      "mean_boundary_entropy_bits": 4.576311348583911,
+      "mean_boundary_surprisal_bits": 4.306255836369102,
+      "oracle_entropy_capture_ratio": 0.7741545630418089,
+      "top_budget_overlap": 0.38296328544478303,
+      "top_decile_entropy_recall": 0.28177442712326434,
+      "mean_high_entropy_patch_lag_bytes": 2.2405869324473975,
+      "p95_high_entropy_patch_lag_bytes": 7.0,
+      "boundaries_inside_codepoint": 971,
+      "boundaries_inside_codepoint_rate": 0.004696947709572873,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 29,
+      "boundaries_inside_cjk_ideograph_rate": 0.00014027959173801578,
+      "score_evaluations": 0,
+      "score_evaluations_per_byte": 0.0,
+      "policy_runtime_median_ns_per_byte": 163.1820619773961,
+      "policy_runtime_p95_ns_per_byte": 163.1820619773961,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.962607235776465,
+          5.986414937126915
+        ],
+        "mean_boundary_entropy_bits": [
+          4.570418009227838,
+          4.582495051197629
+        ],
+        "top_decile_entropy_recall": [
+          0.27935335936460925,
+          0.28428587091029
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          2.2210593114213593,
+          2.2585526272558543
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.004247416545707574,
+          0.0051917357329399555
+        ],
+        "score_evaluations_per_byte": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "comparison_group": "spacebyte_compatible",
+      "role": "entropy_matched",
+      "policy": "entropy_matched_spacebyte_compatible_t4.608713",
+      "total_bytes": 1295795,
+      "patches": 216257,
+      "average_patch_bytes": 5.991921648778999,
+      "median_patch_bytes": 2,
+      "p95_patch_bytes": 24.0,
+      "max_patch_bytes": 141,
+      "boundaries_per_kib": 162.86862659602792,
+      "mean_boundary_entropy_bits": 5.915368008742519,
+      "mean_boundary_surprisal_bits": 4.416287380733082,
+      "oracle_entropy_capture_ratio": 1.0,
+      "top_budget_overlap": 1.0,
+      "top_decile_entropy_recall": 1.0,
+      "mean_high_entropy_patch_lag_bytes": 0.0,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 1810,
+      "boundaries_inside_codepoint_rate": 0.008782229813001582,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 95,
+      "boundaries_inside_cjk_ideograph_rate": 0.00046094576366582886,
+      "score_evaluations": 1285636,
+      "score_evaluations_per_byte": 0.9921600253126459,
+      "policy_runtime_median_ns_per_byte": 35.70944863963821,
+      "policy_runtime_p95_ns_per_byte": 35.70944863963821,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.9302264057666365,
+          6.052700110745867
+        ],
+        "mean_boundary_entropy_bits": [
+          5.906150062474972,
+          5.926030959505872
+        ],
+        "top_decile_entropy_recall": [
+          1.0,
+          1.0
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.0,
+          0.0
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.008017937072640209,
+          0.009505002580831597
+        ],
+        "score_evaluations_per_byte": [
+          0.9920947852068432,
+          0.9922233274464574
+        ]
+      }
+    },
+    {
+      "comparison_group": "spacebyte_compatible",
+      "role": "candidate_entropy_matched",
+      "policy": "candidate_entropy_matched_spacebyte_compatible_t4.603596",
+      "total_bytes": 1295795,
+      "patches": 216407,
+      "average_patch_bytes": 5.9877684178423065,
+      "median_patch_bytes": 2,
+      "p95_patch_bytes": 23.0,
+      "max_patch_bytes": 131,
+      "boundaries_per_kib": 162.98716386465452,
+      "mean_boundary_entropy_bits": 5.893577175164181,
+      "mean_boundary_surprisal_bits": 4.419564357738624,
+      "oracle_entropy_capture_ratio": 0.9964763619135054,
+      "top_budget_overlap": 0.9912241573251619,
+      "top_decile_entropy_recall": 0.9878254820115285,
+      "mean_high_entropy_patch_lag_bytes": 0.050458585342306274,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 1283601,
+      "score_evaluations_per_byte": 0.9905895608487454,
+      "policy_runtime_median_ns_per_byte": 378.0237228882655,
+      "policy_runtime_p95_ns_per_byte": 378.0237228882655,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.9275553218506944,
+          6.047483122912626
+        ],
+        "mean_boundary_entropy_bits": [
+          5.884442247973609,
+          5.903820616105755
+        ],
+        "top_decile_entropy_recall": [
+          0.9867733016287655,
+          0.9888824876013488
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.04470161618491081,
+          0.05668161112601047
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.99043330370301,
+          0.9907333443204228
+        ]
+      }
+    },
+    {
+      "comparison_group": "eojeol_cap_24",
+      "role": "rule",
+      "policy": "eojeol_cap_24",
+      "total_bytes": 1295795,
+      "patches": 236193,
+      "average_patch_bytes": 5.486170208261887,
+      "median_patch_bytes": 5,
+      "p95_patch_bytes": 11.0,
+      "max_patch_bytes": 24,
+      "boundaries_per_kib": 178.62301984496006,
+      "mean_boundary_entropy_bits": 4.648264748416908,
+      "mean_boundary_surprisal_bits": 4.36677754048949,
+      "oracle_entropy_capture_ratio": 0.8017519963982477,
+      "top_budget_overlap": 0.48331224506047765,
+      "top_decile_entropy_recall": 0.3504486469602749,
+      "mean_high_entropy_patch_lag_bytes": 2.082453076639123,
+      "p95_high_entropy_patch_lag_bytes": 7.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 0,
+      "score_evaluations_per_byte": 0.0,
+      "policy_runtime_median_ns_per_byte": 410.1732588874012,
+      "policy_runtime_p95_ns_per_byte": 410.1732588874012,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.473312643137774,
+          5.499521463176986
+        ],
+        "mean_boundary_entropy_bits": [
+          4.642007865450215,
+          4.655857518453732
+        ],
+        "top_decile_entropy_recall": [
+          0.34792965942095383,
+          0.35298857052450955
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          2.0616749550677147,
+          2.1018696997142006
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "comparison_group": "eojeol_cap_24",
+      "role": "entropy_matched",
+      "policy": "entropy_matched_eojeol_cap_24_t4.538684",
+      "total_bytes": 1295795,
+      "patches": 235596,
+      "average_patch_bytes": 5.500072157422028,
+      "median_patch_bytes": 2.0,
+      "p95_patch_bytes": 20.0,
+      "max_patch_bytes": 114,
+      "boundaries_per_kib": 178.1512415158262,
+      "mean_boundary_entropy_bits": 5.800968949057291,
+      "mean_boundary_surprisal_bits": 4.400167834440428,
+      "oracle_entropy_capture_ratio": 1.0,
+      "top_budget_overlap": 1.0,
+      "top_decile_entropy_recall": 1.0,
+      "mean_high_entropy_patch_lag_bytes": 0.0,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 1814,
+      "boundaries_inside_codepoint_rate": 0.008046593948641972,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 95,
+      "boundaries_inside_cjk_ideograph_rate": 0.0004214037624702245,
+      "score_evaluations": 1285636,
+      "score_evaluations_per_byte": 0.9921600253126459,
+      "policy_runtime_median_ns_per_byte": 37.482684375229105,
+      "policy_runtime_p95_ns_per_byte": 37.482684375229105,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.449237374738916,
+          5.549470203411681
+        ],
+        "mean_boundary_entropy_bits": [
+          5.791808673710188,
+          5.8118126677400515
+        ],
+        "top_decile_entropy_recall": [
+          1.0,
+          1.0
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.0,
+          0.0
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.007343256766698747,
+          0.008712368453379395
+        ],
+        "score_evaluations_per_byte": [
+          0.9920947852068432,
+          0.9922233274464574
+        ]
+      }
+    },
+    {
+      "comparison_group": "eojeol_cap_24",
+      "role": "candidate_entropy_matched",
+      "policy": "candidate_entropy_matched_eojeol_cap_24_t4.529675",
+      "total_bytes": 1295795,
+      "patches": 235743,
+      "average_patch_bytes": 5.496642530212986,
+      "median_patch_bytes": 2,
+      "p95_patch_bytes": 20.0,
+      "max_patch_bytes": 110,
+      "boundaries_per_kib": 178.26740803908027,
+      "mean_boundary_entropy_bits": 5.780533600547121,
+      "mean_boundary_surprisal_bits": 4.397936928840917,
+      "oracle_entropy_capture_ratio": 0.9966185740044525,
+      "top_budget_overlap": 0.9919586495496134,
+      "top_decile_entropy_recall": 0.9878254820115285,
+      "mean_high_entropy_patch_lag_bytes": 0.04477241105148082,
+      "p95_high_entropy_patch_lag_bytes": 0.0,
+      "boundaries_inside_codepoint": 0,
+      "boundaries_inside_codepoint_rate": 0.0,
+      "boundaries_inside_hangul_syllable": 0,
+      "boundaries_inside_hangul_syllable_rate": 0.0,
+      "boundaries_inside_cjk_ideograph": 0,
+      "boundaries_inside_cjk_ideograph_rate": 0.0,
+      "score_evaluations": 1283601,
+      "score_evaluations_per_byte": 0.9905895608487454,
+      "policy_runtime_median_ns_per_byte": 377.811466319904,
+      "policy_runtime_p95_ns_per_byte": 377.811466319904,
+      "bootstrap_95": {
+        "average_patch_bytes": [
+          5.447788894005004,
+          5.545900170543674
+        ],
+        "mean_boundary_entropy_bits": [
+          5.771829939075868,
+          5.790607083727608
+        ],
+        "top_decile_entropy_recall": [
+          0.9867733016287655,
+          0.9888824876013488
+        ],
+        "mean_high_entropy_patch_lag_bytes": [
+          0.03968502603089255,
+          0.0503398581164238
+        ],
+        "boundaries_inside_codepoint_rate": [
+          0.0,
+          0.0
+        ],
+        "score_evaluations_per_byte": [
+          0.99043330370301,
+          0.9907333443204228
+        ]
+      }
+    }
+  ]
+}

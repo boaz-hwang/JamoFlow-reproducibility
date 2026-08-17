@@ -1,0 +1,1713 @@
+{
+  "artifact_lineage": {
+    "tied_generic_surface": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "63f566f9fd5d5afb28207b655e9a56ddbd20b42e739b13449236617f8a072024",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_generic_surface-step-0000.pt",
+          "checkpoint_state_sha256": "00180648718ac7bc6879613cc4297be92070466e70f695f6fa5f23dad03b96fb",
+          "contiguous_bpb": 2.0443395960589945,
+          "document_bpb": null,
+          "nll_artifact_sha256": "d883458ad137b66f55b0a01196222f5a617a57e280640a0f1389206a8445862b",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_generic_surface-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "7f4e4e611dd8a5e6ac50e85f0dc7c828a13d21ebef9210ba7560ca0ba4789a92",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "d9ae59fd372b604bea8a3630a3f124bfef5268377c63bbf5cbc1d851715279aa",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_generic_surface-step-0128.pt",
+          "checkpoint_state_sha256": "57ad49c6458a777cfa3569401c2d7bf2fe4095583fd78bedd2f8783c9528c2c1",
+          "contiguous_bpb": 1.5600493873353245,
+          "document_bpb": null,
+          "nll_artifact_sha256": "812fa46dc97829347b9596c2fe0324b3f01b08849acb012d4930a7ce9248f7eb",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_generic_surface-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "a2cb1d587ff709727caf865b278d5d2646a90e651bf59887346b4c194aeeb40b",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "d9415a3c63e39b4188b70348cdb283325ffd88de530a2cae42a9e4c1f0429fd3",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_generic_surface-step-0032.pt",
+          "checkpoint_state_sha256": "be670dff248760bbf2cd60e8dfcd1224edbffe762d5431e09ab9af770fcba645",
+          "contiguous_bpb": 1.7127404862770803,
+          "document_bpb": null,
+          "nll_artifact_sha256": "19cf96ed433d4c313e837eecced4472ca930b7f1e43e1381df9bcb9d4133de48",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_generic_surface-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "09f0def88b35c2ebfb639df5eb86e28778823c2b7fef773b4af702d2650f8129",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "93e4e8a54d13a8d80bfea7e989ba476d643cb498b5c243ac222c886a1b6d4d71",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "ba034a23f00a77c1038bce359df6ff7cac4aabf27cb877b5ef04e1d199a3c4fe",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_generic_surface-step-0512.pt",
+          "checkpoint_state_sha256": "f7d7c1100594620feb367402250a15898c2b9f503b8941e8b5a5a1e71a80b083",
+          "contiguous_bpb": 1.469789129572797,
+          "document_bpb": 1.4690982154068528,
+          "nll_artifact_sha256": "9dbb65a071e8b382a35219f802e91266d2aa0ac8db69751359455be0464d63e8",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_generic_surface-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "c08e09057e051aba5ee4a8202ca159058c7dde4776fb99f3107086164aa0fda1",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/tied_generic_surface-step-0512.pt",
+        "state_sha256": "bcb180b987623544c8f79a1c9fbd924eb0e7478d7ef4126bc0804ef9ddd7f274"
+      }
+    },
+    "tied_jamo": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "297fab02e31217f107e3f4c97d8af8a81672436cc6f8d4b857099876928436b3",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_jamo-step-0000.pt",
+          "checkpoint_state_sha256": "73452a67d7595ace633ec1376bc00b42816efa8f2ae221f769a100a60bef97af",
+          "contiguous_bpb": 2.0443395960589945,
+          "document_bpb": null,
+          "nll_artifact_sha256": "d883458ad137b66f55b0a01196222f5a617a57e280640a0f1389206a8445862b",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_jamo-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "29bb77d51e1788abdd946547f2aad1e330387cae2a9365f56a03eec25dbf8449",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "b2c519b29945a219bca4017f4d7029e7fe8a1d23aef458189bae73f67be3c348",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_jamo-step-0128.pt",
+          "checkpoint_state_sha256": "078874711a63a57df384d1d3e4eb812584e95fb712f48da9c8810ed7f57e82b2",
+          "contiguous_bpb": 1.5608019218245952,
+          "document_bpb": null,
+          "nll_artifact_sha256": "8696630eadf84252257a75112f62964ea408ebd43014cba19b42eed932a6ebba",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_jamo-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "20b3f642e58f79fe0c90f2c6ad0be1959bfd91a27caa45abc691b997077d1e33",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "9b31d748b31c8eef00c506bb290b25864ec72ca176854134417acef2890a3ee6",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_jamo-step-0032.pt",
+          "checkpoint_state_sha256": "ced3a68e5924a0f939befab8e4b28df7c18ef28a611e36908f8b35127e2e2fa1",
+          "contiguous_bpb": 1.710888008615591,
+          "document_bpb": null,
+          "nll_artifact_sha256": "c1eda1a7e100ee2255a872190ae08e6fe5d5bf0418477c81613db932b6872fc7",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_jamo-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "7d0a1d703616e0e2477867ec1882ddddfdb61fc7e6e848664f76b96b6287414e",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "31602cd8fe2f8d4f89adedcd75e7d3fa46152ea90864bb170bc1ffb72e9b7f0f",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "047c13414d0ce625d1ee878a7144e9ccfcbdec6805c0e94f4321890b2e0d6a86",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_jamo-step-0512.pt",
+          "checkpoint_state_sha256": "5d3935481494a007f6f864eb47a39e24dd216cfa799e63dddc65c3e5f033d703",
+          "contiguous_bpb": 1.471120149959392,
+          "document_bpb": 1.4704195997646747,
+          "nll_artifact_sha256": "2332196bcd692baf7972ea920912223c738fbe106cd91976056c6e70ecadaafe",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_jamo-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "5faf078d753f36e8863da8d203654ae051d316ac27a171c6120d87cd9434d289",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/tied_jamo-step-0512.pt",
+        "state_sha256": "902a9f30c1667bc3483ef39ab28cc805d645f819eddce3a69648e795ff23a086"
+      }
+    },
+    "tied_shuffled_jamo": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "ed65d0cef8556f42d4fb6160b7e37aa5e8241d18dbb700a3c373fae986ad6306",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_shuffled_jamo-step-0000.pt",
+          "checkpoint_state_sha256": "451bba939e40b6d13a2ba5ca5afbe36e96487452ca90ddf84ed30a850dc8f2d4",
+          "contiguous_bpb": 2.0443395960589945,
+          "document_bpb": null,
+          "nll_artifact_sha256": "d883458ad137b66f55b0a01196222f5a617a57e280640a0f1389206a8445862b",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_shuffled_jamo-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "6ca9f24f72cd86a66a3af6f84b30fa85eac7aaac9a744891ad599cec9d507e5e",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "500b16e4c8a50de85492f7f867ccfe60039a6e2072a07ef9f5710f7da516860c",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_shuffled_jamo-step-0128.pt",
+          "checkpoint_state_sha256": "ebb6677a9475014331f939b04a2989e64bc3890fe0a3ef2aa214ea89c4c89c6e",
+          "contiguous_bpb": 1.5621910897248625,
+          "document_bpb": null,
+          "nll_artifact_sha256": "018ab4fb11a6cfc5e356f77c0af1648e11511baaa8f534db82ad2cb35262ec3a",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_shuffled_jamo-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "99fa6d55bebbb24b28216a162f2f74f79138019f3c838db596c8dcb90ca14cde",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "ee60d7aad7bd2f75ff70dc37a9e92be7974950f99112a6cd0b59143681b25755",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_shuffled_jamo-step-0032.pt",
+          "checkpoint_state_sha256": "5e3e8349c1d0ce15f754c12674f113c1810d7149d88b80f8b1df233f4b024c83",
+          "contiguous_bpb": 1.7125707296763217,
+          "document_bpb": null,
+          "nll_artifact_sha256": "1d066b5c976c7cb686b401a2361e578c9fa0cc13ea708a4544e548716b21f4fb",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_shuffled_jamo-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "9d8744314a4aa514f3b8ac70f2eaf27fbd7d95e1bfda1ede10e531cac8be57cc",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "9c55b2f5671fa197d69c52235e9ff7a5c1f6fb385619156b96d289af0783d2e9",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "a6ebe0e0e099a392ceafe36961c1d7e26dbf107a26db3ca6ad413b492a641de6",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/tied_shuffled_jamo-step-0512.pt",
+          "checkpoint_state_sha256": "2e4de417db2a7e0a18966d0f8c3fd61528f764f4b33dec2f733d2bc50a01394d",
+          "contiguous_bpb": 1.4719515907334884,
+          "document_bpb": 1.4712216873816442,
+          "nll_artifact_sha256": "dd6973e42498fd2a0e69c78af4ea643cc3b9cfb4ba164bbca00bd8653d3c2f64",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/tied_shuffled_jamo-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "4132a6371f99d7ee5c9770aea0e00cc83b34ff6fdf6668527d7720fa3c186667",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/tied_shuffled_jamo-step-0512.pt",
+        "state_sha256": "75f5e2b988ec5122ccd10e1a4368226d24ee1e488f5fc5c376f45c5d83f100bc"
+      }
+    },
+    "untied_generic_surface": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "41ec7dfc01065a4c571f895f47029b8f2278fa94ca150ce1dc19e4fd5bedf42a",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0000.pt",
+          "checkpoint_state_sha256": "6a91bc0176ca12a902c8547b47895340f7d40c389cf37cc8663b1ef85031a709",
+          "contiguous_bpb": 2.1533949099619765,
+          "document_bpb": null,
+          "nll_artifact_sha256": "f9479fa2af85d98037cfc36ad667834eab6ca7c81e27102e800845892aeac403",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_generic_surface-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "60f0b51d44bc2062293c29b7049df4425106955c4a53b9561db4b37b45892783",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "b463160979401ce99f22460da6f8ccbfbf997deeb0100c6607bbd6772dac40de",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0128.pt",
+          "checkpoint_state_sha256": "460d11230e03369625ebc6e28ca3cf7e62b243080910fc8e6661a0d4f8c05242",
+          "contiguous_bpb": 1.5170986331195955,
+          "document_bpb": null,
+          "nll_artifact_sha256": "99dae43b5b76a5d8076d1016a639f3863a42661ebe5f589959dfa4c2ceed6f8f",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_generic_surface-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "5c07f082e3fbe6468c24aea2641fa846b0662c1f0d41a825b7f1f9ae30607e08",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "32483bc116f2a87692c2341bcd4ca31d22484483615d30e7aa8e0655b981704a",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0032.pt",
+          "checkpoint_state_sha256": "d2daafe41182327fedebcdc43fbd6112a35efbda6d2ffef83755cea17ce0133e",
+          "contiguous_bpb": 1.6546346613678933,
+          "document_bpb": null,
+          "nll_artifact_sha256": "7d2a461c8af770dbe6c37bc39d5bb572ac83ecc05c8f2f617afecb55fa906e94",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_generic_surface-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "e6267a04d30c2149b3012e920be838472a3d454337c7a2f94fd94cd862acd780",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "079188fb50d2d0da7c2e7cea6666922b500c8c4e4e61953473142e7e6af8f3fd",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "c78282568d551f7fefa680479e0cc28f0ce602c62af2f048d7fede6a4c15e741",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_generic_surface-step-0512.pt",
+          "checkpoint_state_sha256": "2706213ffc6b659b26d3daa2da160d9211c691f4a056e83177dff2a5a0528897",
+          "contiguous_bpb": 1.4389684228891788,
+          "document_bpb": 1.438180633766898,
+          "nll_artifact_sha256": "0f58af7471b7edcf3e2c634350e2375a5e9010a56c19b16ae397b3504a2ba9d0",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_generic_surface-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "f73570c09732720db9e52d60c6a5e69ab731900c90e22785105fec3a70159fe3",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/untied_generic_surface-step-0512.pt",
+        "state_sha256": "309838ed800f587c4d2bbdd9ac981c36289c1ed6491b491ebe4e8a86d0767ba1"
+      }
+    },
+    "untied_jamo": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "1223a07d3da801865b866e2de8ad8dec3eaba8995a90815a5573af1a7db49af3",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_jamo-step-0000.pt",
+          "checkpoint_state_sha256": "2a11edd1317238bc6322b4adefef32ab9d30f3211d4e878064b099b4ba79c3e7",
+          "contiguous_bpb": 2.1533949099619765,
+          "document_bpb": null,
+          "nll_artifact_sha256": "f9479fa2af85d98037cfc36ad667834eab6ca7c81e27102e800845892aeac403",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_jamo-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "5d067aea964664352f607661aca0b6e68dc41cb13e869226137269800ac8f8fd",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "61924ad920b09aa6a2cd8adaa1cf465641e081e10a86bfab3f629cff8cb16b0e",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_jamo-step-0128.pt",
+          "checkpoint_state_sha256": "73378120cefa9257d0ce084adf98da4d20cb097197ac352171dc219ac04595ac",
+          "contiguous_bpb": 1.51822040255708,
+          "document_bpb": null,
+          "nll_artifact_sha256": "7b46efdae378e873ed370cd1b1cfdd7f54d6155e43f71c4d7a16880b3af179d8",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_jamo-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "fd52c968139c7199008526b83da2fd4636145116979fd87472d497ef30beb129",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "886bee9c2913374f4c80cdd764afb9775719fe908bb675f93abfd67ab4ac5e9f",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_jamo-step-0032.pt",
+          "checkpoint_state_sha256": "3476b2cb7fbde62110ba325bed3fa6cefe28be7434f13e747641c94ff39eef09",
+          "contiguous_bpb": 1.6544471071544593,
+          "document_bpb": null,
+          "nll_artifact_sha256": "78de0fe08323758f6559bc20dbcf767f8a8dbaffe19c9e49eb91671664bd3e2b",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_jamo-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "510c0947080bf7c7758fe085bedf6b5605289fcb05601855e78bade54b594398",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "45d0619a5eba38e13a7b980b19286e0965bd040c8c556cc16a5e74500d4bae50",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "b0760f84671814490196452f09baf02b2eff57e0380f5d0362df15d9d241b4cd",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_jamo-step-0512.pt",
+          "checkpoint_state_sha256": "e3e3d7932c47fe0a1ea4fb9c96479d53e24087aada5a21d6dfd47389453a4e6c",
+          "contiguous_bpb": 1.440328348381643,
+          "document_bpb": 1.4395281663217583,
+          "nll_artifact_sha256": "9fda3241787d1019a5cc2141ea3dd0991947971883a7fa5be92da3001ce78d46",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_jamo-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "203316eb71f90f006d031d19be38ad924701af0d95d154e57a7893d6ce271b20",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/untied_jamo-step-0512.pt",
+        "state_sha256": "c27eff7be501a6530e8ecc068afd993bb3414fcb9a0b2a929bcbdb0c515e3b06"
+      }
+    },
+    "untied_shuffled_jamo": {
+      "checkpoints": {
+        "0": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "5881bed24f957b9a2f91c3c55f277dee445400ef04d64db85573aee9ac740569",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_shuffled_jamo-step-0000.pt",
+          "checkpoint_state_sha256": "ff622bd01509bf9b9b831b789cfa7830dca503f4a61874f6adec0952e97cedbd",
+          "contiguous_bpb": 2.1533949099619765,
+          "document_bpb": null,
+          "nll_artifact_sha256": "f9479fa2af85d98037cfc36ad667834eab6ca7c81e27102e800845892aeac403",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_shuffled_jamo-step-0000.npz"
+        },
+        "128": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "2bd11349d8e0bb7ca7742dc253d16613987edd5e5692cdbbe89b4566305335fc",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "bd6dd22ae3e39d6b14230e214d97f3ec8b7c587327508c8cb6131a38d7c8aa11",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_shuffled_jamo-step-0128.pt",
+          "checkpoint_state_sha256": "aaa23834674d11201b2877be3d3e4c9045cfb2bde8336811a9427a7fbd6e96fc",
+          "contiguous_bpb": 1.518748235215729,
+          "document_bpb": null,
+          "nll_artifact_sha256": "17a662aaaa75d3a7bfff88d99596ffb4669258f0d9f628109d66a143fddb1d6a",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_shuffled_jamo-step-0128.npz"
+        },
+        "32": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "3e7acabfb6bb7bf553a5a30fce15ba8ab14c648aea8beab1477d2d33b7a6aee6",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "278e2abd7ce9c352e2c418ec0386079a5083d895c5fcc2bd6025b193ea858661",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_shuffled_jamo-step-0032.pt",
+          "checkpoint_state_sha256": "1e7d15d30ce6e93fc38042fa3b4a79053e2a227528ea2ca97a33195f8b092aee",
+          "contiguous_bpb": 1.6553831732928166,
+          "document_bpb": null,
+          "nll_artifact_sha256": "d367c7e4dd3823ec1ebd01f5fa8ab74ffff98661121641c2983f089281174d89",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_shuffled_jamo-step-0032.npz"
+        },
+        "512": {
+          "arrays": {
+            "contiguous_nll_nats": {
+              "dtype": "float32",
+              "sha256": "7ad436b66fe52907e90f731ae77f77a3f128cc91278f7371377e880f22606b38",
+              "shape": [
+                3343
+              ]
+            },
+            "contiguous_raw_target_bytes": {
+              "dtype": "int64",
+              "sha256": "bf8e01346145582d0791c4d30b75d190aa4d5edb123c45679d624461c8f6c150",
+              "shape": [
+                3343
+              ]
+            },
+            "document_nll_nats": {
+              "dtype": "float64",
+              "sha256": "46c288ff42bf93af01dfd16f27916670c4270c1eb25b729140c47207867162e6",
+              "shape": [
+                385
+              ]
+            },
+            "document_raw_bytes": {
+              "dtype": "int64",
+              "sha256": "c587d643dca6c7b4fd5b672ea567591f71a049727b54e7e12bb4e30d1da80271",
+              "shape": [
+                385
+              ]
+            }
+          },
+          "checkpoint_artifact_sha256": "a955cd258a59ef4760419fa76acc040fc7f996a2985db67a4a1039ed954dcc1b",
+          "checkpoint_path": "artifacts/foldable-jamo-residual-v1/checkpoints/untied_shuffled_jamo-step-0512.pt",
+          "checkpoint_state_sha256": "f175efcc2c66f038db3540b5f28e8164c65d1bad0e4fcececc2da40b5dba7f3f",
+          "contiguous_bpb": 1.4406375969239535,
+          "document_bpb": 1.439839423800468,
+          "nll_artifact_sha256": "5fe8771bf39704e22096e6670c3e26bed2f6c9ca9dc130ba32ff292fa1650092",
+          "nll_path": "artifacts/foldable-jamo-residual-v1/nll/untied_shuffled_jamo-step-0512.npz"
+        }
+      },
+      "folded_checkpoint": {
+        "artifact_sha256": "5a48017c71407bf129af2379f3d2db34e12411810756b2aa64a24291b4d645da",
+        "path": "artifacts/foldable-jamo-residual-v1/folded-checkpoints/untied_shuffled_jamo-step-0512.pt",
+        "state_sha256": "a072afe75ccb5f5359d779ae219f5edb494548c436810c4f8de96e4e8b18e0e2"
+      }
+    }
+  },
+  "assignment_audits": {
+    "tied_generic_surface": {
+      "assignment_kind": "generic_surface",
+      "assignment_sha256": "9eb66564ff5be6c47e63d30f37c6e2e008fa379b5fc824587d833b8c2b63c879",
+      "changed_new_row_count_vs_true_jamo": 5587,
+      "changed_new_row_fraction_vs_true_jamo": 0.9093424479166666,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.9169079540770478,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": null,
+      "median_stratum_size": null,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": null,
+      "singleton_stratum_count": null,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.98376680297688,
+        6.985682913026527,
+        6.982032364628784,
+        6.9876311369142385,
+        6.985829629094051,
+        6.985731850921669,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        15
+      ],
+      "stratum_count": null,
+      "vocabulary_size": 8192
+    },
+    "tied_jamo": {
+      "assignment_kind": "jamo",
+      "assignment_sha256": "54a53657cd8c96c3c6f7a1a253007f194cecf0dc7f0a0a6475d4b4c307b08929",
+      "changed_new_row_count_vs_true_jamo": 0,
+      "changed_new_row_fraction_vs_true_jamo": 0.0,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.0,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": null,
+      "median_stratum_size": null,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": null,
+      "singleton_stratum_count": null,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.481471238400135,
+        6.449208887706378,
+        6.16914956010583,
+        4.18813950628658,
+        4.200411244251817,
+        3.1529674141365454,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        126,
+        127,
+        124,
+        15
+      ],
+      "stratum_count": null,
+      "vocabulary_size": 8192
+    },
+    "tied_shuffled_jamo": {
+      "assignment_kind": "shuffled_jamo",
+      "assignment_sha256": "9259a981e0911ffd9d06efa8c72a60cb6d0c6fbe90147c63ede2fd70e9a40ebe",
+      "changed_new_row_count_vs_true_jamo": 4231,
+      "changed_new_row_fraction_vs_true_jamo": 0.6886393229166666,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.5806358414224894,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": 15,
+      "median_stratum_size": 1.0,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": 20260829,
+      "singleton_stratum_count": 1913,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.481471238400135,
+        6.449208887706378,
+        6.16914956010583,
+        4.18813950628658,
+        4.200411244251817,
+        3.1529674141365454,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        126,
+        127,
+        124,
+        15
+      ],
+      "stratum_count": 3181,
+      "vocabulary_size": 8192
+    },
+    "untied_generic_surface": {
+      "assignment_kind": "generic_surface",
+      "assignment_sha256": "9eb66564ff5be6c47e63d30f37c6e2e008fa379b5fc824587d833b8c2b63c879",
+      "changed_new_row_count_vs_true_jamo": 5587,
+      "changed_new_row_fraction_vs_true_jamo": 0.9093424479166666,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.9169079540770478,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": null,
+      "median_stratum_size": null,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": null,
+      "singleton_stratum_count": null,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.98376680297688,
+        6.985682913026527,
+        6.982032364628784,
+        6.9876311369142385,
+        6.985829629094051,
+        6.985731850921669,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        15
+      ],
+      "stratum_count": null,
+      "vocabulary_size": 8192
+    },
+    "untied_jamo": {
+      "assignment_kind": "jamo",
+      "assignment_sha256": "54a53657cd8c96c3c6f7a1a253007f194cecf0dc7f0a0a6475d4b4c307b08929",
+      "changed_new_row_count_vs_true_jamo": 0,
+      "changed_new_row_fraction_vs_true_jamo": 0.0,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.0,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": null,
+      "median_stratum_size": null,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": null,
+      "singleton_stratum_count": null,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.481471238400135,
+        6.449208887706378,
+        6.16914956010583,
+        4.18813950628658,
+        4.200411244251817,
+        3.1529674141365454,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        126,
+        127,
+        124,
+        15
+      ],
+      "stratum_count": null,
+      "vocabulary_size": 8192
+    },
+    "untied_shuffled_jamo": {
+      "assignment_kind": "shuffled_jamo",
+      "assignment_sha256": "9259a981e0911ffd9d06efa8c72a60cb6d0c6fbe90147c63ede2fd70e9a40ebe",
+      "changed_new_row_count_vs_true_jamo": 4231,
+      "changed_new_row_fraction_vs_true_jamo": 0.6886393229166666,
+      "changed_new_token_exposure_fraction_vs_true_jamo": 0.5806358414224894,
+      "codebook_size": 128,
+      "exposure_counts_sha256": "cd19013d726596643c49174091bb6f8d5976a93188208b86d83c1c5b87dc6a73",
+      "exposure_stratum_definition": "exact(raw_token_byte_length,actual_scheduled_token_count); random-order cyclic derangement for every nonsingleton stratum",
+      "maximum_stratum_size": 15,
+      "median_stratum_size": 1.0,
+      "new_row_count": 6144,
+      "residual_scale": 0.2773500981126146,
+      "shuffle_seed": 20260829,
+      "singleton_stratum_count": 1913,
+      "slot_count": 13,
+      "slot_entropy_bits": [
+        3.742173040051515,
+        3.0744897496542123,
+        1.411180469567692,
+        6.496859974421799,
+        5.53223357495571,
+        1.4047836080626188,
+        6.481471238400135,
+        6.449208887706378,
+        6.16914956010583,
+        4.18813950628658,
+        4.200411244251817,
+        3.1529674141365454,
+        2.754325955625469
+      ],
+      "slot_unique_counts": [
+        127,
+        85,
+        5,
+        127,
+        91,
+        5,
+        128,
+        128,
+        128,
+        126,
+        127,
+        124,
+        15
+      ],
+      "stratum_count": 3181,
+      "vocabulary_size": 8192
+    }
+  },
+  "campaign_report_artifact_sha256": "6151533b30625b9dc5249ec3917122925ca1f44d608a1a8fb80d0d39d93c144e",
+  "claim_boundary": {
+    "actual_inference_measured": false,
+    "calibration_development_only": true,
+    "deployed_residual_module_present": false,
+    "fresh_equal_history_quality": false,
+    "korean_specific_method_screen": true,
+    "model_seed_count": 1,
+    "publication_quality_claim": false,
+    "training_overhead_is_measured_not_free": true
+  },
+  "complete": true,
+  "decision": {
+    "architecture_diagnostics": {
+      "tied": {
+        "anchor_gap_bpb": 0.04145857274152731,
+        "anchor_recovery_pass": true,
+        "candidate": "tied_jamo",
+        "contrasts": {
+          "tied_base": {
+            "bootstrap_95_lower": -0.024753908949875454,
+            "bootstrap_95_upper": -0.023627586309411634,
+            "contiguous_bpb_difference": -0.02413972203863013,
+            "document_bpb_difference": -0.024175298635918288,
+            "minimum_required_advantage_bpb": 0.0,
+            "pass": true
+          },
+          "tied_generic_surface": {
+            "bootstrap_95_lower": 0.001198132799033081,
+            "bootstrap_95_upper": 0.0014356279986074303,
+            "contiguous_bpb_difference": 0.0013310203865950498,
+            "document_bpb_difference": 0.001321384357821923,
+            "minimum_required_advantage_bpb": 0.002,
+            "pass": false
+          },
+          "tied_shuffled_jamo": {
+            "bootstrap_95_lower": -0.000887088106977701,
+            "bootstrap_95_upper": -0.0007176658708232623,
+            "contiguous_bpb_difference": -0.0008314407740963592,
+            "document_bpb_difference": -0.0008020876169696214,
+            "minimum_required_advantage_bpb": 0.002,
+            "pass": false
+          }
+        },
+        "joint_pass": false
+      },
+      "untied": {
+        "anchor_gap_bpb": 0.010666771163778233,
+        "anchor_recovery_pass": true,
+        "candidate": "untied_jamo",
+        "contrasts": {
+          "untied_base": {
+            "bootstrap_95_lower": -0.014657366842279435,
+            "bootstrap_95_upper": -0.01397021347837122,
+            "contiguous_bpb_difference": -0.0142016628327577,
+            "document_bpb_difference": -0.014312414472754654,
+            "minimum_required_advantage_bpb": 0.0,
+            "pass": true
+          },
+          "untied_generic_surface": {
+            "bootstrap_95_lower": 0.0012437069247276324,
+            "bootstrap_95_upper": 0.0014461990185801867,
+            "contiguous_bpb_difference": 0.001359925492464109,
+            "document_bpb_difference": 0.0013475325548603064,
+            "minimum_required_advantage_bpb": 0.002,
+            "pass": false
+          },
+          "untied_shuffled_jamo": {
+            "bootstrap_95_lower": -0.0003835088595605494,
+            "bootstrap_95_upper": -0.00024114969374024913,
+            "contiguous_bpb_difference": -0.00030924854231062504,
+            "document_bpb_difference": -0.0003112574787095491,
+            "minimum_required_advantage_bpb": 0.002,
+            "pass": false
+          }
+        },
+        "joint_pass": false
+      }
+    },
+    "fresh_equal_history_stage_authorized": false,
+    "maximum_anchor_gap_bpb": 0.05,
+    "minimum_jamo_advantage_bpb": 0.002,
+    "qualified_jamo_roles": [],
+    "status": "foldable_jamo_residual_stopped",
+    "threshold_or_role_fallback": null
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit": "847c824f98b1f2104db4ef12ae2572cb48c63362",
+  "independent_nll_recomputation": {
+    "base_control_replay": {
+      "tied_base": {
+        "checkpoint_state_sha256": "de77b192c908c771ed10ae9f81d19b3af2bb0e3e3ea8fba0773ab8fa79128d65",
+        "contiguous_nll_array_sha256": "67845b4f3428a4625e22f696c91de707b046c89e21bed477d5ed9342a39686f7",
+        "document_nll_array_sha256": "17efbfe84bc3bf56e59a22c336d79a0648ec729bbed21b64167ef6fa88a8e356"
+      },
+      "untied_base": {
+        "checkpoint_state_sha256": "932836cd8f473896d464268d2d26dc88dc7f5439f23499bf5a3029d6c5e65f28",
+        "contiguous_nll_array_sha256": "ebb5e4f3dbf15149859c854ee52f690ea6bc6ffeb2693235aedfd3ebb3e07367",
+        "document_nll_array_sha256": "503d8f1807a98549787818d26bf2d9feebdc5c56d87627d776f609d650df976c"
+      }
+    },
+    "fold_replay": {
+      "tied_generic_surface": {
+        "contiguous_nll_array_sha256": "09f0def88b35c2ebfb639df5eb86e28778823c2b7fef773b4af702d2650f8129",
+        "deployed_checkpoint_state_sha256": "bcb180b987623544c8f79a1c9fbd924eb0e7478d7ef4126bc0804ef9ddd7f274",
+        "document_nll_array_sha256": "93e4e8a54d13a8d80bfea7e989ba476d643cb498b5c243ac222c886a1b6d4d71",
+        "pass": true
+      },
+      "tied_jamo": {
+        "contiguous_nll_array_sha256": "7d0a1d703616e0e2477867ec1882ddddfdb61fc7e6e848664f76b96b6287414e",
+        "deployed_checkpoint_state_sha256": "902a9f30c1667bc3483ef39ab28cc805d645f819eddce3a69648e795ff23a086",
+        "document_nll_array_sha256": "31602cd8fe2f8d4f89adedcd75e7d3fa46152ea90864bb170bc1ffb72e9b7f0f",
+        "pass": true
+      },
+      "tied_shuffled_jamo": {
+        "contiguous_nll_array_sha256": "9d8744314a4aa514f3b8ac70f2eaf27fbd7d95e1bfda1ede10e531cac8be57cc",
+        "deployed_checkpoint_state_sha256": "75f5e2b988ec5122ccd10e1a4368226d24ee1e488f5fc5c376f45c5d83f100bc",
+        "document_nll_array_sha256": "9c55b2f5671fa197d69c52235e9ff7a5c1f6fb385619156b96d289af0783d2e9",
+        "pass": true
+      },
+      "untied_generic_surface": {
+        "contiguous_nll_array_sha256": "e6267a04d30c2149b3012e920be838472a3d454337c7a2f94fd94cd862acd780",
+        "deployed_checkpoint_state_sha256": "309838ed800f587c4d2bbdd9ac981c36289c1ed6491b491ebe4e8a86d0767ba1",
+        "document_nll_array_sha256": "079188fb50d2d0da7c2e7cea6666922b500c8c4e4e61953473142e7e6af8f3fd",
+        "pass": true
+      },
+      "untied_jamo": {
+        "contiguous_nll_array_sha256": "510c0947080bf7c7758fe085bedf6b5605289fcb05601855e78bade54b594398",
+        "deployed_checkpoint_state_sha256": "c27eff7be501a6530e8ecc068afd993bb3414fcb9a0b2a929bcbdb0c515e3b06",
+        "document_nll_array_sha256": "45d0619a5eba38e13a7b980b19286e0965bd040c8c556cc16a5e74500d4bae50",
+        "pass": true
+      },
+      "untied_shuffled_jamo": {
+        "contiguous_nll_array_sha256": "7ad436b66fe52907e90f731ae77f77a3f128cc91278f7371377e880f22606b38",
+        "deployed_checkpoint_state_sha256": "a072afe75ccb5f5359d779ae219f5edb494548c436810c4f8de96e4e8b18e0e2",
+        "document_nll_array_sha256": "46c288ff42bf93af01dfd16f27916670c4270c1eb25b729140c47207867162e6",
+        "pass": true
+      }
+    },
+    "pass": true,
+    "replay_elapsed_seconds": 1824.8023143330356,
+    "unfolded_checkpoint_count": 24,
+    "unfolded_nll_array_sha256_by_role_step": {
+      "tied_generic_surface": {
+        "0": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+        "128": "7f4e4e611dd8a5e6ac50e85f0dc7c828a13d21ebef9210ba7560ca0ba4789a92",
+        "32": "a2cb1d587ff709727caf865b278d5d2646a90e651bf59887346b4c194aeeb40b",
+        "512": "09f0def88b35c2ebfb639df5eb86e28778823c2b7fef773b4af702d2650f8129"
+      },
+      "tied_jamo": {
+        "0": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+        "128": "29bb77d51e1788abdd946547f2aad1e330387cae2a9365f56a03eec25dbf8449",
+        "32": "20b3f642e58f79fe0c90f2c6ad0be1959bfd91a27caa45abc691b997077d1e33",
+        "512": "7d0a1d703616e0e2477867ec1882ddddfdb61fc7e6e848664f76b96b6287414e"
+      },
+      "tied_shuffled_jamo": {
+        "0": "aa5cfc9273052985e08db8c6c08a5599d626c66485e671f490e508c1aaa45421",
+        "128": "6ca9f24f72cd86a66a3af6f84b30fa85eac7aaac9a744891ad599cec9d507e5e",
+        "32": "99fa6d55bebbb24b28216a162f2f74f79138019f3c838db596c8dcb90ca14cde",
+        "512": "9d8744314a4aa514f3b8ac70f2eaf27fbd7d95e1bfda1ede10e531cac8be57cc"
+      },
+      "untied_generic_surface": {
+        "0": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+        "128": "60f0b51d44bc2062293c29b7049df4425106955c4a53b9561db4b37b45892783",
+        "32": "5c07f082e3fbe6468c24aea2641fa846b0662c1f0d41a825b7f1f9ae30607e08",
+        "512": "e6267a04d30c2149b3012e920be838472a3d454337c7a2f94fd94cd862acd780"
+      },
+      "untied_jamo": {
+        "0": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+        "128": "5d067aea964664352f607661aca0b6e68dc41cb13e869226137269800ac8f8fd",
+        "32": "fd52c968139c7199008526b83da2fd4636145116979fd87472d497ef30beb129",
+        "512": "510c0947080bf7c7758fe085bedf6b5605289fcb05601855e78bade54b594398"
+      },
+      "untied_shuffled_jamo": {
+        "0": "6630fb9f0a675a5e2da1db5c558b3533a20a701e4bc3ca4c4e51724e4e8cefef",
+        "128": "2bd11349d8e0bb7ca7742dc253d16613987edd5e5692cdbbe89b4566305335fc",
+        "32": "3e7acabfb6bb7bf553a5a30fce15ba8ab14c648aea8beab1477d2d33b7a6aee6",
+        "512": "7ad436b66fe52907e90f731ae77f77a3f128cc91278f7371377e880f22606b38"
+      }
+    }
+  },
+  "kind": "foldable_jamo_residual_result_v1",
+  "metrics": {
+    "tied_base": {
+      "contiguous_bpb": 1.4952598719980221,
+      "document_bpb": 1.494594898400593
+    },
+    "tied_generic_surface": {
+      "contiguous_bpb": 1.469789129572797,
+      "document_bpb": 1.4690982154068528,
+      "optimizer_steps": 512
+    },
+    "tied_jamo": {
+      "contiguous_bpb": 1.471120149959392,
+      "document_bpb": 1.4704195997646747,
+      "optimizer_steps": 512
+    },
+    "tied_shuffled_jamo": {
+      "contiguous_bpb": 1.4719515907334884,
+      "document_bpb": 1.4712216873816442,
+      "optimizer_steps": 512
+    },
+    "untied_base": {
+      "contiguous_bpb": 1.4545300112144006,
+      "document_bpb": 1.453840580794513
+    },
+    "untied_generic_surface": {
+      "contiguous_bpb": 1.4389684228891788,
+      "document_bpb": 1.438180633766898,
+      "optimizer_steps": 512
+    },
+    "untied_jamo": {
+      "contiguous_bpb": 1.440328348381643,
+      "document_bpb": 1.4395281663217583,
+      "optimizer_steps": 512
+    },
+    "untied_shuffled_jamo": {
+      "contiguous_bpb": 1.4406375969239535,
+      "document_bpb": 1.439839423800468,
+      "optimizer_steps": 512
+    }
+  },
+  "plan_artifact_sha256": "082d3c64baae907513ecf850941528a387be62da735ce3b5ded0ec06eaa2da93",
+  "protocol_id": "jamoflow-foldable-jamo-residual-v1",
+  "recovery_curves": {
+    "tied_generic_surface": {
+      "0": {
+        "contiguous_bpb": 2.0443395960589945,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5600493873353245,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.7127404862770803,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.469789129572797,
+        "document_bpb": 1.4690982154068528,
+        "optimizer_steps": 512
+      }
+    },
+    "tied_jamo": {
+      "0": {
+        "contiguous_bpb": 2.0443395960589945,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5608019218245952,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.710888008615591,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.471120149959392,
+        "document_bpb": 1.4704195997646747,
+        "optimizer_steps": 512
+      }
+    },
+    "tied_shuffled_jamo": {
+      "0": {
+        "contiguous_bpb": 2.0443395960589945,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5621910897248625,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.7125707296763217,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.4719515907334884,
+        "document_bpb": 1.4712216873816442,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_generic_surface": {
+      "0": {
+        "contiguous_bpb": 2.1533949099619765,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.5170986331195955,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.6546346613678933,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.4389684228891788,
+        "document_bpb": 1.438180633766898,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_jamo": {
+      "0": {
+        "contiguous_bpb": 2.1533949099619765,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.51822040255708,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.6544471071544593,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.440328348381643,
+        "document_bpb": 1.4395281663217583,
+        "optimizer_steps": 512
+      }
+    },
+    "untied_shuffled_jamo": {
+      "0": {
+        "contiguous_bpb": 2.1533949099619765,
+        "document_bpb": null,
+        "optimizer_steps": 0
+      },
+      "128": {
+        "contiguous_bpb": 1.518748235215729,
+        "document_bpb": null,
+        "optimizer_steps": 128
+      },
+      "32": {
+        "contiguous_bpb": 1.6553831732928166,
+        "document_bpb": null,
+        "optimizer_steps": 32
+      },
+      "512": {
+        "contiguous_bpb": 1.4406375969239535,
+        "document_bpb": 1.439839423800468,
+        "optimizer_steps": 512
+      }
+    }
+  },
+  "role_specs": {
+    "tied_generic_surface": {
+      "architecture": "tied",
+      "assignment_kind": "generic_surface",
+      "base_initializer_role": "tied_uniform_no_norm_all",
+      "deployed": 22026624,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 638976,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 22665600
+    },
+    "tied_jamo": {
+      "architecture": "tied",
+      "assignment_kind": "jamo",
+      "base_initializer_role": "tied_uniform_no_norm_all",
+      "deployed": 22026624,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 638976,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 22665600
+    },
+    "tied_shuffled_jamo": {
+      "architecture": "tied",
+      "assignment_kind": "shuffled_jamo",
+      "base_initializer_role": "tied_uniform_no_norm_all",
+      "deployed": 22026624,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 638976,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 22665600
+    },
+    "untied_generic_surface": {
+      "architecture": "untied",
+      "assignment_kind": "generic_surface",
+      "base_initializer_role": "untied_eeve_uniform_in_first_out",
+      "deployed": 25172352,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 1277952,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 26450304
+    },
+    "untied_jamo": {
+      "architecture": "untied",
+      "assignment_kind": "jamo",
+      "base_initializer_role": "untied_eeve_uniform_in_first_out",
+      "deployed": 25172352,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 1277952,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 26450304
+    },
+    "untied_shuffled_jamo": {
+      "architecture": "untied",
+      "assignment_kind": "shuffled_jamo",
+      "base_initializer_role": "untied_eeve_uniform_in_first_out",
+      "deployed": 25172352,
+      "deployed_graph": "ordinary_dense_bpe_8192",
+      "residual_applies_to": "new_target_rows_only",
+      "residual_initialization": "exact_zero",
+      "training_only_residual": 1277952,
+      "training_schedule": "all_parameters_512_steps",
+      "training_total": 26450304
+    }
+  },
+  "schema_version": 1,
+  "selection_rule": {
+    "architecture_order": [
+      "untied",
+      "tied"
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260830,
+    "candidate_by_architecture": {
+      "tied": "tied_jamo",
+      "untied": "untied_jamo"
+    },
+    "controls_by_architecture": {
+      "tied": [
+        "tied_base",
+        "tied_generic_surface",
+        "tied_shuffled_jamo"
+      ],
+      "untied": [
+        "untied_base",
+        "untied_generic_surface",
+        "untied_shuffled_jamo"
+      ]
+    },
+    "document_bootstrap_upper_must_be_nonpositive": true,
+    "maximum_anchor_gap_bpb": 0.05,
+    "minimum_jamo_advantage_over_generic_and_shuffle_bpb": 0.002,
+    "minimum_jamo_advantage_over_no_residual_base_bpb": 0.0,
+    "requires_contiguous_and_document_point_advantage": true,
+    "selection_checkpoint_step": 512,
+    "threshold_or_role_fallback": null
+  },
+  "session_state": {
+    "end": {
+      "power": {
+        "command": [
+          "pmset",
+          "-g",
+          "batt"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+      },
+      "settings": {
+        "command": [
+          "pmset",
+          "-g",
+          "custom"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+      },
+      "thermal": {
+        "command": [
+          "pmset",
+          "-g",
+          "therm"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+      }
+    },
+    "start": {
+      "power": {
+        "command": [
+          "pmset",
+          "-g",
+          "batt"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+      },
+      "settings": {
+        "command": [
+          "pmset",
+          "-g",
+          "custom"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+      },
+      "thermal": {
+        "command": [
+          "pmset",
+          "-g",
+          "therm"
+        ],
+        "returncode": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+      }
+    }
+  },
+  "summary_sha256": "e9145e70537ec04b8df7575f98d80e4c330fb83cbdc8439cac052ea5353b34ec",
+  "training_contract": {
+    "adamw_beta1": 0.9,
+    "adamw_beta2": 0.95,
+    "adamw_epsilon": 1e-08,
+    "body_learning_rate": 3e-05,
+    "checkpoint_steps": [
+      0,
+      32,
+      128,
+      512
+    ],
+    "effective_batch_size": 32,
+    "evaluation_batch_size": 16,
+    "final_probe_step": 512,
+    "gradient_accumulation_steps": 4,
+    "gradient_clip": 1.0,
+    "head_and_residual_minimum_learning_rate": 3e-05,
+    "head_and_residual_peak_learning_rate": 0.0003,
+    "model_seed": 20260824,
+    "optimizer": "AdamW",
+    "order_seed": 20260827,
+    "residual_schedule": "all dense and residual parameters open from step zero",
+    "sequence_count": 53590,
+    "train_microbatch_size": 8,
+    "training_order_prefix_sha256": "f9b65287d977cac9b3308e195c0d96892f4a9e35c899dda1ae259c6856c0185a",
+    "training_schedule_token_count": 8388608,
+    "warmup_steps": 26,
+    "weight_decay_for_matrix_parameters": 0.1,
+    "weight_decay_for_vector_parameters": 0.0
+  },
+  "training_cost_diagnostics": {
+    "tied_generic_surface": {
+      "baseline_session_elapsed_seconds_including_evaluations": 735.3616747499909,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 690198272,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2210037760,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 662.7990805009613,
+      "residual_session_elapsed_seconds_including_evaluations": 939.0388266249793,
+      "training_only_parameter_count": 638976
+    },
+    "tied_jamo": {
+      "baseline_session_elapsed_seconds_including_evaluations": 735.3616747499909,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 690198272,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2206187520,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 663.8571466844296,
+      "residual_session_elapsed_seconds_including_evaluations": 939.6193216249812,
+      "training_only_parameter_count": 638976
+    },
+    "tied_shuffled_jamo": {
+      "baseline_session_elapsed_seconds_including_evaluations": 735.3616747499909,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 690198272,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2213183488,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 662.3777941360604,
+      "residual_session_elapsed_seconds_including_evaluations": 938.0236610419815,
+      "training_only_parameter_count": 638976
+    },
+    "untied_generic_surface": {
+      "baseline_session_elapsed_seconds_including_evaluations": 730.7643155830447,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 749377280,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2211758080,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 683.4090414706152,
+      "residual_session_elapsed_seconds_including_evaluations": 958.7685793749988,
+      "training_only_parameter_count": 1277952
+    },
+    "untied_jamo": {
+      "baseline_session_elapsed_seconds_including_evaluations": 730.7643155830447,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 749377280,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2210562048,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 662.5839712157613,
+      "residual_session_elapsed_seconds_including_evaluations": 937.1770019580144,
+      "training_only_parameter_count": 1277952
+    },
+    "untied_shuffled_jamo": {
+      "baseline_session_elapsed_seconds_including_evaluations": 730.7643155830447,
+      "comparison_is_descriptive_separate_session": true,
+      "memory_diagnostics": {
+        "interpretation": "sampled post-step allocator diagnostics; not resettable native peaks",
+        "maximum_current_allocated_bytes": 749377280,
+        "maximum_driver_allocated_bytes": 5547835392,
+        "maximum_process_rss_bytes": 2214445056,
+        "recommended_max_bytes": 40200896512,
+        "sample_count": 4
+      },
+      "residual_optimizer_step_elapsed_seconds": 662.0890172800282,
+      "residual_session_elapsed_seconds_including_evaluations": 936.2092369169695,
+      "training_only_parameter_count": 1277952
+    }
+  }
+}

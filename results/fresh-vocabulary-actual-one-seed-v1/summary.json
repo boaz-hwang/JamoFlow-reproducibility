@@ -1,0 +1,286 @@
+{
+  "actual_inference": {
+    "correctness": {
+      "independent_checkpoint_replay": {
+        "candidate": {
+          "controlled_replay": {
+            "argmax_comparisons": 206,
+            "argmax_exact": 206,
+            "cases": 8,
+            "comparisons": 206,
+            "maximum_normalized_tolerance_ratio": 0.08612915873527527,
+            "pass": true
+          },
+          "free_running_utf8_greedy": {
+            "argmax_comparisons": 292,
+            "argmax_exact": 292,
+            "cases": 8,
+            "comparisons": 292,
+            "maximum_normalized_tolerance_ratio": 0.08564159274101257,
+            "pass": true
+          }
+        },
+        "reference": {
+          "controlled_replay": {
+            "argmax_comparisons": 275,
+            "argmax_exact": 275,
+            "cases": 8,
+            "comparisons": 275,
+            "maximum_normalized_tolerance_ratio": 0.08986629545688629,
+            "pass": true
+          },
+          "free_running_utf8_greedy": {
+            "argmax_comparisons": 315,
+            "argmax_exact": 315,
+            "cases": 8,
+            "comparisons": 315,
+            "maximum_normalized_tolerance_ratio": 0.0752229318022728,
+            "pass": true
+          }
+        }
+      },
+      "overall_pass": true
+    },
+    "gate": {
+      "minimum_bootstrap_lower_reduction": 0.0,
+      "minimum_end_to_end_point_reduction": 0.1,
+      "minimum_positive_prompts": 48,
+      "overall_pass": false,
+      "requires_both_modes": true
+    },
+    "modes": {
+      "controlled_replay": {
+        "candidate_output_bytes_median": 128.0,
+        "candidate_output_tokens_median": 27.0,
+        "component_metrics": {
+          "decode_ms": {
+            "candidate_median_ms": 63.132020499999996,
+            "median_reduction": 0.2093635943813137,
+            "reference_median_ms": 79.849625
+          },
+          "end_to_end_ms": {
+            "candidate_median_ms": 66.7276875,
+            "median_reduction": 0.20131159044529678,
+            "reference_median_ms": 83.546583
+          },
+          "model_loop_ms": {
+            "candidate_median_ms": 66.6644585,
+            "median_reduction": 0.20128367749162823,
+            "reference_median_ms": 83.4645
+          },
+          "tokenizer_ms": {
+            "candidate_median_ms": 0.059584,
+            "median_reduction": 0.02221128205128209,
+            "reference_median_ms": 0.0609375
+          },
+          "ttft_ms": {
+            "candidate_median_ms": 3.491229,
+            "median_reduction": -0.013744027113478552,
+            "reference_median_ms": 3.443896
+          }
+        },
+        "end_to_end_reduction": 0.20131159044529678,
+        "overall_pass": true,
+        "paired_prompt_bootstrap_95_interval": {
+          "lower": 0.1652383492124575,
+          "upper": 0.22722901785223215
+        },
+        "passes": {
+          "bootstrap_lower_positive": true,
+          "correctness": true,
+          "point_reduction": true,
+          "prompt_direction": true
+        },
+        "positive_prompt_count": 64,
+        "reference_output_bytes_median": 128.0,
+        "reference_output_tokens_median": 35.0
+      },
+      "free_running_utf8_greedy": {
+        "candidate_output_bytes_median": 129.0,
+        "candidate_output_tokens_median": 33.5,
+        "component_metrics": {
+          "decode_ms": {
+            "candidate_median_ms": 76.5523745,
+            "median_reduction": 0.09177185176600822,
+            "reference_median_ms": 84.287604
+          },
+          "end_to_end_ms": {
+            "candidate_median_ms": 79.944208,
+            "median_reduction": 0.08842747066795764,
+            "reference_median_ms": 87.699229
+          },
+          "model_loop_ms": {
+            "candidate_median_ms": 79.873875,
+            "median_reduction": 0.08848804266623034,
+            "reference_median_ms": 87.62789599999999
+          },
+          "tokenizer_ms": {
+            "candidate_median_ms": 0.0578955,
+            "median_reduction": 0.03574194515460127,
+            "reference_median_ms": 0.0600415
+          },
+          "ttft_ms": {
+            "candidate_median_ms": 3.450917,
+            "median_reduction": -0.012846822531232815,
+            "reference_median_ms": 3.407146
+          }
+        },
+        "end_to_end_reduction": 0.08842747066795764,
+        "overall_pass": false,
+        "paired_prompt_bootstrap_95_interval": {
+          "lower": -0.0016837959603791123,
+          "upper": 0.166849279077405
+        },
+        "passes": {
+          "bootstrap_lower_positive": false,
+          "correctness": true,
+          "point_reduction": false,
+          "prompt_direction": false
+        },
+        "positive_prompt_count": 44,
+        "reference_output_bytes_median": 129.5,
+        "reference_output_tokens_median": 36.5
+      }
+    },
+    "multiseed_confirmation_authorized": false,
+    "status": "fail_trained_actual_e2e_preflight"
+  },
+  "claim_boundary": {
+    "actual_end_to_end_measured": true,
+    "development_one_seed_one_session": true,
+    "general_hardware_claim": false,
+    "memory_improvement_claimed": false,
+    "multiseed_requires_this_gate": true,
+    "one_seed_one_session": true,
+    "parameter_and_checkpoint_cost_reported": true,
+    "publication_claim": false,
+    "requires_both_modes_at_least_10pct": true,
+    "trained_models": true
+  },
+  "free_output_evidence": {
+    "candidate": {
+      "deterministic_across_repetitions": true,
+      "output_root_sha256": "8b7ae0d00fb7fd29274b463553c4e9b8e2d32207e94e370ef136c27897556138",
+      "strict_valid_output_count": 320,
+      "token_trace_root_sha256": "7b380304cee55a45b16a2115b3dda46a2642cc224f0e9a054c8add71edb1746f"
+    },
+    "reference": {
+      "deterministic_across_repetitions": true,
+      "output_root_sha256": "d4f70affe6a136d54643740ea0a88c61377b97e7377cfa12bdfb264d76205ef6",
+      "strict_valid_output_count": 320,
+      "token_trace_root_sha256": "74900b572fd3e10db96db15bd661b27cfbe778bb2735dbc0ee26c573381c2bcd"
+    }
+  },
+  "git_commit": "de82714321b6a0c4b08cf290d7ae02c123eaf61b",
+  "kind": "fresh_vocabulary_actual_one_seed_result_v1",
+  "plan": {
+    "artifact_sha256": "1e97f772f64b49acdcdd0ce188fc93e4017ad5954d1acc8ff3bee6db0da03b50",
+    "plan_sha256": "3d322557f931c88ab6bf8bca66719a4c7f22b49eb92aaa66a869d09fb2d7ed4d"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-actual-one-seed-v1",
+  "quality_selection": {
+    "actual_latency_used_for_selection": false,
+    "adaptation_result_artifact_sha256": "3f4d79cdaae6885cf0a8832a886bfccf84331e6098603383e2c890dce27098b0",
+    "adaptation_result_sha256": "8817b5ff57b5edd9d3e300cae2718604efe0eaf753734bb277c1b8a4469fe625",
+    "candidate_document_bpb": 1.3840088110068927,
+    "reference_document_bpb": 1.394224673604512
+  },
+  "runtime": {
+    "report_artifact_sha256": "da4b634afcc3af2d0cbe42ca7109264f015c030e7ec67d9da06b7df97b573141",
+    "report_sha256": "200d321c74d16c6ecb9053b60d5ae78a77adfea63b54a24c94ac3afb15e6b59e",
+    "session_state": {
+      "end": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      },
+      "start": {
+        "power": {
+          "command": [
+            "pmset",
+            "-g",
+            "batt"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22544483)\t100%; charged; 0:00 remaining present: true\n"
+        },
+        "settings": {
+          "command": [
+            "pmset",
+            "-g",
+            "custom"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n"
+        },
+        "thermal": {
+          "command": [
+            "pmset",
+            "-g",
+            "therm"
+          ],
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n"
+        }
+      }
+    },
+    "timed_scope": "raw-prompt UTF-8 decode and tokenizer encode; runtime/cache construction; parallel prefill; every autoregressive argmax and device-host token readback; incremental KV-cache decode; token-byte reconstruction; strict UTF-8 stop/decode",
+    "timing_artifact_sha256": "bbda5d498ac43a6ca7a62b6cfcbbda550e6d0e904232b56944ec3d2cbd53b72d"
+  },
+  "schema_version": 1,
+  "status": "fail_trained_actual_e2e_preflight",
+  "summary_sha256": "75e8a661706b34e054050607a31491e6fe37edd65a5425078d153e95a4b3f861",
+  "systems_cost": {
+    "candidate": {
+      "adaptation_role": "dense8k_update_geometry",
+      "checkpoint_artifact_sha256": "e99be963c8b21e5f44f8f30104796006c5b73ef44a84e219bb7a677c238d8565",
+      "checkpoint_bytes": 100713026,
+      "checkpoint_path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense8k_update_geometry.pt",
+      "checkpoint_state_sha256": "98c3bae9929d037718d6b94a8b1726d04f084ac11272b6fbcfd613691597698e",
+      "parameter_count": 25172352,
+      "vocabulary_size": 8192
+    },
+    "checkpoint_byte_increase": 0.23062900176100154,
+    "memory_improvement_claimed": false,
+    "parameter_increase": 0.2799070621082844,
+    "reference": {
+      "adaptation_role": "dense2k_joint",
+      "checkpoint_artifact_sha256": "ea5241b0f88e5b18e9c61fa01030313d8a23a99efd0ec1495bd4eb8c7972625e",
+      "checkpoint_bytes": 81838658,
+      "checkpoint_path": "artifacts/fresh-vocabulary-adaptation-one-seed-v1/checkpoints/dense2k_joint.pt",
+      "checkpoint_state_sha256": "743f167ea0769aac2229a38927e2e529085405378259167154d337c6d454f628",
+      "parameter_count": 19667328,
+      "vocabulary_size": 2048
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-08-10T07:45:11.525048+00:00",
+  "dataset_id": "hplt3-korean-phase3",
+  "git_commit": "2d8ad615317d4ab694d78584c41b94e34de9be5f",
+  "integrity": {
+    "all_neural_stream_quotas_exact": true,
+    "distinct_split_digest_set_summaries": true,
+    "raw_or_processed_text_promoted": false,
+    "scan_record_accounting_closed": true,
+    "source_line_accounting_closed": true
+  },
+  "output": {
+    "bytes": 152461842,
+    "records": 6911,
+    "sha256": "f789bc7e0ec0252c4c7c636e67a7c44f6d2c528a292ec47542af98488c8b36a5"
+  },
+  "scan": {
+    "eligible_records": 273362,
+    "eligible_text_bytes": 6107283275,
+    "empty_text": 0,
+    "exact_duplicates": 0,
+    "invalid_json": 0,
+    "invalid_utf8": 0,
+    "missing_text": 0,
+    "parsed_records": 273839,
+    "source_lines": 273839,
+    "too_long": 477,
+    "too_short": 0
+  },
+  "schema_version": 1,
+  "selection": {
+    "maximum_document_bytes": 262144,
+    "minimum_document_bytes": 256,
+    "quotas": {
+      "calibration": 8000000,
+      "test": 16000000,
+      "train": 128000000
+    },
+    "reserve_multiplier": 2.0,
+    "salt": "JamoFlow-Phase3-v1"
+  },
+  "source": {
+    "bytes": 1862302013,
+    "etag": "\"6f00793d-63be01a95c540\"",
+    "filename": "10_1.jsonl.zst",
+    "last_modified": "Fri, 08 Aug 2025 20:06:05 GMT",
+    "sha256": "de4dfa43fd9f6c62cc81781e09c1f401cc77e7a956e07ecc80ac13477e699ca4",
+    "url": "https://data.hplt-project.org/three/sorted/kor_Hang/10_1.jsonl.zst"
+  },
+  "splits": {
+    "calibration": {
+      "ascii_codepoint_rate": 0.29850439911738574,
+      "ascii_codepoints": 994728,
+      "available_stream_bytes": 8004309,
+      "codepoints": 3332373,
+      "hangul_syllable_codepoint_rate": 0.6916863748445927,
+      "hangul_syllables": 2304957,
+      "latin_mixed_document_rate": 0.9715025906735751,
+      "latin_mixed_documents": 375,
+      "neural_stream": {
+        "quota_exact": true,
+        "selected_bytes": 8000000,
+        "sequence_count": 15625,
+        "sequence_length": 512,
+        "sequence_start_inside_codepoint_rate": 0.590464,
+        "sequence_starts_inside_codepoint": 9226
+      },
+      "nfc_document_rate": 1.0,
+      "nfc_documents": 386,
+      "records": 386,
+      "selected_digest_set_sha256": "7e71daa8d068abff9fc38a73beac9a4f64df9c6e57ad01d7a507dbcc9343a710",
+      "text_bytes": 8003924,
+      "whitespace_codepoint_rate": 0.21596982090540284,
+      "whitespace_codepoints": 719692
+    },
+    "test": {
+      "ascii_codepoint_rate": 0.2987882057871561,
+      "ascii_codepoints": 1991372,
+      "available_stream_bytes": 16006020,
+      "codepoints": 6664828,
+      "hangul_syllable_codepoint_rate": 0.6919335352690272,
+      "hangul_syllables": 4611618,
+      "latin_mixed_document_rate": 0.9427792915531336,
+      "latin_mixed_documents": 692,
+      "neural_stream": {
+        "quota_exact": true,
+        "selected_bytes": 16000000,
+        "sequence_count": 31250,
+        "sequence_length": 512,
+        "sequence_start_inside_codepoint_rate": 0.579488,
+        "sequence_starts_inside_codepoint": 18109
+      },
+      "nfc_document_rate": 1.0,
+      "nfc_documents": 734,
+      "records": 734,
+      "selected_digest_set_sha256": "f41c9d6153bc20c7d81c7a251a4866b3d92aa0491f6438e7525ffaf25489eb17",
+      "text_bytes": 16005287,
+      "whitespace_codepoint_rate": 0.21988189342620695,
+      "whitespace_codepoints": 1465475
+    },
+    "train": {
+      "ascii_codepoint_rate": 0.30056389119260934,
+      "ascii_codepoints": 16044414,
+      "available_stream_bytes": 128006987,
+      "codepoints": 53381043,
+      "hangul_syllable_codepoint_rate": 0.6903158486431222,
+      "hangul_syllables": 36849780,
+      "latin_mixed_document_rate": 0.959419789328268,
+      "latin_mixed_documents": 5556,
+      "neural_stream": {
+        "quota_exact": true,
+        "selected_bytes": 128000000,
+        "sequence_count": 250000,
+        "sequence_length": 512,
+        "sequence_start_inside_codepoint_rate": 0.58332,
+        "sequence_starts_inside_codepoint": 145830
+      },
+      "nfc_document_rate": 0.9998273182524607,
+      "nfc_documents": 5790,
+      "records": 5791,
+      "selected_digest_set_sha256": "ed1f805670a54a7575d263967049eb47e131df44ef90d3c11470fb91b13e25f2",
+      "text_bytes": 128001197,
+      "whitespace_codepoint_rate": 0.2180594523040698,
+      "whitespace_codepoints": 11640241
+    }
+  }
+}

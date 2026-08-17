@@ -1,0 +1,226 @@
+{
+  "budget_projections": {
+    "128000000": {
+      "all_memory_pass": true,
+      "campaign_hour_limit": 24.0,
+      "passes": true,
+      "projected_campaign_hours": 2.922755625642778,
+      "roles": {
+        "byte_bpe_v16000_d8": {
+          "evaluation_batches": 375,
+          "evaluation_seconds": 33.6278595,
+          "optimizer_steps": 1502,
+          "projected_hours": 0.4404796372222222,
+          "train_seconds": 1552.0988345
+        },
+        "byte_bpe_v2048_d8": {
+          "evaluation_batches": 70,
+          "evaluation_seconds": 35.0555975,
+          "optimizer_steps": 2213,
+          "projected_hours": 0.5880139045186111,
+          "train_seconds": 2081.794458767
+        },
+        "byte_bpe_v32000_d8": {
+          "evaluation_batches": 678,
+          "evaluation_seconds": 24.10620525,
+          "optimizer_steps": 1358,
+          "projected_hours": 0.36978863611111107,
+          "train_seconds": 1307.13288475
+        },
+        "byte_bpe_v4096_d12": {
+          "evaluation_batches": 119,
+          "evaluation_seconds": 47.669178746,
+          "optimizer_steps": 1904,
+          "projected_hours": 0.6226896913183334,
+          "train_seconds": 2194.01371
+        },
+        "byte_bpe_v64000_d8": {
+          "evaluation_batches": 1247,
+          "evaluation_seconds": 31.399563501,
+          "optimizer_steps": 1244,
+          "projected_hours": 0.42802828291694445,
+          "train_seconds": 1509.5022549999999
+        },
+        "byte_bpe_v8192_d8": {
+          "evaluation_batches": 209,
+          "evaluation_seconds": 36.27053925,
+          "optimizer_steps": 1675,
+          "projected_hours": 0.47375547355555553,
+          "train_seconds": 1669.24916555
+        }
+      }
+    },
+    "32000000": {
+      "all_memory_pass": true,
+      "campaign_hour_limit": 24.0,
+      "passes": true,
+      "projected_campaign_hours": 0.7745914985658333,
+      "roles": {
+        "byte_bpe_v16000_d8": {
+          "evaluation_batches": 375,
+          "evaluation_seconds": 33.6278595,
+          "optimizer_steps": 376,
+          "projected_hours": 0.11726923486111111,
+          "train_seconds": 388.541386
+        },
+        "byte_bpe_v2048_d8": {
+          "evaluation_batches": 70,
+          "evaluation_seconds": 35.0555975,
+          "optimizer_steps": 554,
+          "projected_hours": 0.15450270716277778,
+          "train_seconds": 521.154148286
+        },
+        "byte_bpe_v32000_d8": {
+          "evaluation_batches": 678,
+          "evaluation_seconds": 24.10620525,
+          "optimizer_steps": 340,
+          "projected_hours": 0.09760297159722223,
+          "train_seconds": 327.2644925
+        },
+        "byte_bpe_v4096_d12": {
+          "evaluation_batches": 119,
+          "evaluation_seconds": 47.669178746,
+          "optimizer_steps": 476,
+          "projected_hours": 0.165603501735,
+          "train_seconds": 548.5034275
+        },
+        "byte_bpe_v64000_d8": {
+          "evaluation_batches": 1247,
+          "evaluation_seconds": 31.399563501,
+          "optimizer_steps": 311,
+          "projected_hours": 0.1135486464586111,
+          "train_seconds": 377.37556374999997
+        },
+        "byte_bpe_v8192_d8": {
+          "evaluation_batches": 209,
+          "evaluation_seconds": 36.27053925,
+          "optimizer_steps": 419,
+          "projected_hours": 0.12606443675111112,
+          "train_seconds": 417.561433054
+        }
+      }
+    },
+    "64000000": {
+      "all_memory_pass": true,
+      "campaign_hour_limit": 24.0,
+      "passes": true,
+      "projected_campaign_hours": 1.4905536769702779,
+      "roles": {
+        "byte_bpe_v16000_d8": {
+          "evaluation_batches": 375,
+          "evaluation_seconds": 33.6278595,
+          "optimizer_steps": 751,
+          "projected_hours": 0.22491035465277778,
+          "train_seconds": 776.04941725
+        },
+        "byte_bpe_v2048_d8": {
+          "evaluation_batches": 70,
+          "evaluation_seconds": 35.0555975,
+          "optimizer_steps": 1107,
+          "projected_hours": 0.2990064396147222,
+          "train_seconds": 1041.367585113
+        },
+        "byte_bpe_v32000_d8": {
+          "evaluation_batches": 678,
+          "evaluation_seconds": 24.10620525,
+          "optimizer_steps": 679,
+          "projected_hours": 0.18824240211805554,
+          "train_seconds": 653.566442375
+        },
+        "byte_bpe_v4096_d12": {
+          "evaluation_batches": 119,
+          "evaluation_seconds": 47.669178746,
+          "optimizer_steps": 952,
+          "projected_hours": 0.31796556492944444,
+          "train_seconds": 1097.006855
+        },
+        "byte_bpe_v64000_d8": {
+          "evaluation_batches": 1247,
+          "evaluation_seconds": 31.399563501,
+          "optimizer_steps": 622,
+          "projected_hours": 0.2183751919447222,
+          "train_seconds": 754.7511274999999
+        },
+        "byte_bpe_v8192_d8": {
+          "evaluation_batches": 209,
+          "evaluation_seconds": 36.27053925,
+          "optimizer_steps": 838,
+          "projected_hours": 0.24205372371055556,
+          "train_seconds": 835.122866108
+        }
+      }
+    }
+  },
+  "claim_boundary": {
+    "actual_mps_training_and_evaluation_steps": true,
+    "model_quality_measured": false,
+    "projection_not_full_training": true,
+    "random_weights": true,
+    "selected_budget_uses_only_time_and_memory": true
+  },
+  "complete": true,
+  "decision": {
+    "quality_or_loss_used": false,
+    "roles": [
+      "byte_bpe_v2048_d8",
+      "byte_bpe_v4096_d12",
+      "byte_bpe_v8192_d8",
+      "byte_bpe_v16000_d8",
+      "byte_bpe_v32000_d8",
+      "byte_bpe_v64000_d8"
+    ],
+    "selected_train_raw_bytes": 128000000,
+    "status": "quality_frontier_training_authorized"
+  },
+  "git_commit": "59ac861172d31bafaff08275d1c840db9cfb22c5",
+  "kind": "bpe_quality_frontier_feasibility_result_v1",
+  "plan_artifact_sha256": "607a1ee9ae0750a8e83dacda6142677df903249564798a1f49645d1e42ec9afe",
+  "protocol_id": "jamoflow-bpe-quality-frontier-feasibility-v1",
+  "report_artifact_sha256": "cd40f230b65c938a75add03ebd0c5c660cee4a8a1cb75103ec31be2e1e0e4990",
+  "role_metrics": {
+    "byte_bpe_v16000_d8": {
+      "driver_fraction": 0.11416784992916727,
+      "evaluation_batch_median_seconds": 0.089674292,
+      "process_rss_fraction": 0.040894508361816406,
+      "train_effective_step_median_seconds": 1.03335475,
+      "worker_artifact_sha256": "39c9c33f3b65527ac0ebf9c958536dfa11e0cb4f2445faff4e963ddb254683fc"
+    },
+    "byte_bpe_v2048_d8": {
+      "driver_fraction": 0.27467815531685624,
+      "evaluation_batch_median_seconds": 0.50079425,
+      "process_rss_fraction": 0.04090277353922526,
+      "train_effective_step_median_seconds": 0.940711459,
+      "worker_artifact_sha256": "88b01ba4f7063d2ad9a18677b2dd4cd872edaf92f8b8f257ae96211a23b330f0"
+    },
+    "byte_bpe_v32000_d8": {
+      "driver_fraction": 0.08557351687351344,
+      "evaluation_batch_median_seconds": 0.035554875,
+      "process_rss_fraction": 0.040929158528645836,
+      "train_effective_step_median_seconds": 0.962542625,
+      "worker_artifact_sha256": "ef2e0a25b99343e1752a0d3a5d30513568837ead57fb4d5a8641a2fc51376ab7"
+    },
+    "byte_bpe_v4096_d12": {
+      "driver_fraction": 0.2319083103337534,
+      "evaluation_batch_median_seconds": 0.400581334,
+      "process_rss_fraction": 0.04080327351888021,
+      "train_effective_step_median_seconds": 1.152318125,
+      "worker_artifact_sha256": "1354a858f8f4305dfb862f6ad552c1ac08db2403d9d2fe9b9259ab6d0f014f07"
+    },
+    "byte_bpe_v64000_d8": {
+      "driver_fraction": 0.06257488788214216,
+      "evaluation_batch_median_seconds": 0.025180083,
+      "process_rss_fraction": 0.03829479217529297,
+      "train_effective_step_median_seconds": 1.21342625,
+      "worker_artifact_sha256": "bc7ce805ab58d214d358e12b2b395360249ad36b9f9ea4b750eb61eb2f3b888c"
+    },
+    "byte_bpe_v8192_d8": {
+      "driver_fraction": 0.14426809168966626,
+      "evaluation_batch_median_seconds": 0.17354325,
+      "process_rss_fraction": 0.04082775115966797,
+      "train_effective_step_median_seconds": 0.996566666,
+      "worker_artifact_sha256": "a148fcd5710223d94c463a19f90ae0dd7c84fbd49407a84dea94202a211ccfd5"
+    }
+  },
+  "schema_version": 1,
+  "summary_sha256": "37b7f0dbd132abcace45b9977d1ab9aaacb2e906711bac51a3be857743938965"
+}

@@ -1,0 +1,122 @@
+{
+  "actual_evidence": {
+    "free_mode_gate_pass": true,
+    "independent_correctness_pass": true,
+    "joint_gate_pass": false,
+    "plan_sha256": "77e9d7e3589e5622c2f91af8ab960b2abc8cd24a13d9ce0ade3ec95794e0f929",
+    "summary_sha256": "3083986fc9fe3d2da8800143bd6d2aee89817206d24dcd51d31cd97e8967281b"
+  },
+  "claim_boundary": {
+    "development_mechanism_audit": true,
+    "efficiency_claim": false,
+    "korean_method_implemented": false,
+    "pass_authorizes_only_disjoint_design": true,
+    "publication_claim": false,
+    "raw_text_or_token_ids_published": false,
+    "same_closed_cases_reused": true
+  },
+  "dependencies": {
+    "actual_plan": {
+      "path": "data/manifests/fresh-vocabulary-16k-retrieval-actual-v1.json",
+      "sha256": "90853e45305c735262258fbf546c17aadcc57e34d1354b10c2bc6ea684646995"
+    },
+    "actual_result": {
+      "path": "results/fresh-vocabulary-16k-retrieval-actual-v1/summary.json",
+      "sha256": "2d429838a55e8b392101b22c8cc67d67a25489f7a5807fc68e46535f9252506f"
+    },
+    "retrieval_table_artifact": {
+      "path": "artifacts/fresh-vocabulary-16k-retrieval-table-v1/compact-token-ngram.npz",
+      "sha256": "8aa1026bb282d68463b392e5b0d180b902e67d96ea50e7ea1e0ef9811a32f81a"
+    },
+    "retrieval_table_seal": {
+      "path": "data/seals/fresh-vocabulary-16k-retrieval-table-v1.json",
+      "sha256": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825"
+    }
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit_before_plan": "16806456d90b58da0453f2c0c819c91330a2d86a",
+  "hypothesis": {
+    "all_conditions_required": true,
+    "bootstrap_lower_must_exceed": 0.0,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260852,
+    "boundary_order": [
+      "within_hangul_eojeol",
+      "after_whitespace"
+    ],
+    "contrast": "within_hangul_eojeol_minus_after_whitespace",
+    "minimum_cycles_each": 32,
+    "minimum_paired_cases": 16,
+    "minimum_point_gap": 0.25,
+    "mode": "free_running_utf8_greedy",
+    "no_secondary_feature_fallback": true,
+    "outcome": "accepted_tokens_per_proposal_cycle",
+    "role": "hybrid_retrieval_block_4",
+    "source": "prompt_lookup"
+  },
+  "implementation_sha256": {
+    "data/seals/fresh-vocabulary-16k-retrieval-table-v1.json": "df3012ea7d7cfa40122198ded1c5f4bdc3ff45974e634b3c7cc824a30e3ab825",
+    "docs/167-fresh-v2-16k-retrieval-actual-result-and-free-path-correction.md": "3e1a7dc111b4560e65f522308258b7628cc8b9b4ab7e46ce74391b7f93eda838",
+    "docs/168-fresh-v2-16k-retrieval-mechanism-audit-protocol.md": "1327eced83f949ea0f27ed28a1754aad9114cbfa6cf6837f8b51424807025849",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "results/fresh-vocabulary-16k-retrieval-actual-v1/summary.json": "2d429838a55e8b392101b22c8cc67d67a25489f7a5807fc68e46535f9252506f",
+    "scripts/benchmark_fresh_vocabulary_16k_block.py": "b993cf63ba21ae36e42b9d770f7daab31afd4600aa4aa9cee0ca70c2aee5d69e",
+    "scripts/benchmark_fresh_vocabulary_actual.py": "6ccb3c5658de43e3f52ee9188ebad016453a872ced64e33cf01e63828f80b08b",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/fresh_vocabulary_16k_actual_protocol.py": "5ad24a1c0030cdf5f2e90e2c2dae7914bd614e8691e2db5cbfec8a55cbce1432",
+    "scripts/fresh_vocabulary_16k_block_protocol.py": "8830470b298591e2b610c352cdb4f9d3df90385873856dfbb136a38148b93590",
+    "scripts/fresh_vocabulary_16k_retrieval_core.py": "9db4fa011480a9207af4f4bc0c9a9b0cbf157728497b1b34975864a62c71c9fe",
+    "scripts/fresh_vocabulary_16k_retrieval_mechanism_core.py": "78728e722bc5917d16b7a3242ee963bb64001c4a63b2b1229f7235fc6f0c1049",
+    "scripts/fresh_vocabulary_16k_retrieval_mechanism_protocol.py": "c483a11e3d9824324388771c10afcba539b8c31aad4baee33fecc61ba740f7b1",
+    "scripts/fresh_vocabulary_16k_retrieval_protocol.py": "ae1088bf06a4da0efbcbcb2f9e0b1b7009e0f94e9255abcb10d89038183f2188",
+    "scripts/profile_fresh_vocabulary_16k_retrieval_mechanism.py": "2c4a3ae70ccabb4c40f3c30591edaf2b0c29da4f7d48b7e6395d12d3da6f0f46",
+    "scripts/seal_fresh_vocabulary_16k_retrieval_mechanism_plan.py": "c9bc732a190c06d0c6021c5bc2347a96b58f68ede1532ac3c0b7a5dbd13f6494",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "tests/test_fresh_vocabulary_16k_retrieval_mechanism_core.py": "20b446fb808a3fb1249625eef9ce90cce270dd1df9903ec2aa9a36b770139d9f",
+    "tests/test_fresh_vocabulary_16k_retrieval_mechanism_protocol.py": "e38a53635055a79b62be020295011bed133eb46ac79ea0d08412feed41b77acd"
+  },
+  "kind": "fresh_vocabulary_16k_retrieval_mechanism_plan_v1",
+  "output_path": "results/fresh-vocabulary-16k-retrieval-mechanism-v1/summary.json",
+  "plan_sha256": "961550a73ceec8a4d79b50b5cdd49db2a3ffe28b62100d6c65ace5d3589975e6",
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-retrieval-mechanism-v1",
+  "schema_version": 1,
+  "status": "sealed_before_mechanism_replay",
+  "workload": {
+    "case_count": 64,
+    "case_source": "same closed 64-case development set",
+    "event_metrics_only": true,
+    "latency_measured": false,
+    "modes": [
+      "controlled_replay",
+      "free_running_utf8_greedy"
+    ],
+    "roles": [
+      "prompt_lookup_block_4",
+      "corpus_ngram_block_4",
+      "hybrid_retrieval_block_4"
+    ],
+    "target_outputs_regenerated_from_checkpoint": true
+  }
+}

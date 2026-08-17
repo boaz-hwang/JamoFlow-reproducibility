@@ -1,0 +1,187 @@
+{
+  "complete": true,
+  "environment": {
+    "numpy": "2.5.2",
+    "python": "3.13.11",
+    "tokenizers": "0.22.2"
+  },
+  "git_commit": "89ac1159b471f1d7d3efd263258a587f1c44762f",
+  "implementation_sha256": {
+    "docs/165-retrieval-draft-literature-audit-and-fail-fast-direction.md": "e5bc5a4a392c8c55864dd9cbe0d3d7de88cf60c07d9db8ab9a041046c1cde056",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/bpe_quality_feasibility_core.py": "4e70b302319828fc0b54b9353a98f0f737d93d746ccabf7459f65a62a9b22310",
+    "scripts/build_fresh_vocabulary_16k_retrieval_table.py": "36da2e108c13751d23ba6e1d25af0fe1928f7318af4b2d809e9a658969ca46d5",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/fresh_vocabulary_16k_protocol.py": "ff1b07abaa15776119bc3307e116f8b35157f4facd939f640e2555fbba1f5d00",
+    "scripts/fresh_vocabulary_16k_retrieval_core.py": "9db4fa011480a9207af4f4bc0c9a9b0cbf157728497b1b34975864a62c71c9fe",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "src/jamoflow/corpus.py": "af2c69d18424266bcee4cd3067432afc10b69bac345873f7cbf4e338654b16ba",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "tests/test_fresh_vocabulary_16k_retrieval_core.py": "f11f254a00ea2d211c534d27b99a61d1eb69f1b341dfc2bbc6cce0abc0bbd065"
+  },
+  "kind": "fresh_vocabulary_16k_retrieval_table_seal_v1",
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-retrieval-table-v1",
+  "result_inputs": {
+    "calibration_tokens": false,
+    "historical_test_metrics": false,
+    "latency": false,
+    "model_checkpoint_or_logits": false,
+    "sealed_final_test": false,
+    "train_split_tokens": true
+  },
+  "schema_version": 1,
+  "seal_sha256": "aacd1aede2372cba929a20ef7874c11a39175098de5ee521abec81da8f83cb19",
+  "source": {
+    "path": "data/processed/hplt3-korean-vocab-adaptation-v2/ko.jsonl",
+    "raw_stream_bytes": 128000000,
+    "seal_path": "data/seals/hplt3-korean-vocab-adaptation-v2.json",
+    "seal_sha256": "c7ceeb3290db5e1d0b905494d15b54874f22f53da3281f155a6e2e11437bbe9e",
+    "sha256": "736b897a2eedeceab6e23e93bc1d4c36d849160f7acbe49029e81ce434967169",
+    "split": "train",
+    "stream_sha256": "63ded32e267597bcfc4d07d88445f06af11474680f3fa299eb848fc081f69523"
+  },
+  "table_artifact": {
+    "arrays": {
+      "order_1_best_count": {
+        "dtype": "uint32",
+        "sha256": "3be31a7cd6498e30ed3c6dd68f8ed7076680268b4114c316295ae6909b59b1e3",
+        "shape": [
+          454
+        ]
+      },
+      "order_1_context": {
+        "dtype": "uint64",
+        "sha256": "d4be88f41f6ee5d21aa0969c6c2f2dee6003886bc6634fb61825f78e6b9bb361",
+        "shape": [
+          454
+        ]
+      },
+      "order_1_next": {
+        "dtype": "uint16",
+        "sha256": "c95239aa5e77fce2646f6888fa30688c5b65ab4092b61c401ba35c159965f7da",
+        "shape": [
+          454
+        ]
+      },
+      "order_1_total_count": {
+        "dtype": "uint32",
+        "sha256": "ecbd6df505f2f925fcc8ed84d1380accff12c9d338e817fed6241d509d031fc7",
+        "shape": [
+          454
+        ]
+      },
+      "order_2_best_count": {
+        "dtype": "uint32",
+        "sha256": "41f651766d0dbb3cb8470892ff27ecef2712fdbb602dae87f9fd8f85249cef31",
+        "shape": [
+          73364
+        ]
+      },
+      "order_2_context": {
+        "dtype": "uint64",
+        "sha256": "0fe7b43d0663549bd8efb4c0209ea981e702d19b6500066acd9019ed70a76e94",
+        "shape": [
+          73364
+        ]
+      },
+      "order_2_next": {
+        "dtype": "uint16",
+        "sha256": "788c2a50e7edcd68f45fd637fe5950a23bee81b61da8a88cfe79546b7b3c1c9b",
+        "shape": [
+          73364
+        ]
+      },
+      "order_2_total_count": {
+        "dtype": "uint32",
+        "sha256": "75964bdec9aa021d6e734918567c27c1738ae8834655392c4b86b5e9b187b9dd",
+        "shape": [
+          73364
+        ]
+      },
+      "order_3_best_count": {
+        "dtype": "uint32",
+        "sha256": "502aa22e7d7b751c783c249a22a5db982ab531c561c0ca80968068cb6d0f0a03",
+        "shape": [
+          126182
+        ]
+      },
+      "order_3_context": {
+        "dtype": "uint64",
+        "sha256": "035d936549691fef5d09628321ef7b208e5135387a43c611f2b600c25e5b9f1e",
+        "shape": [
+          126182
+        ]
+      },
+      "order_3_next": {
+        "dtype": "uint16",
+        "sha256": "2fde16faed408e90be97cf2da05158add3230d4a809609f515238d5f93018066",
+        "shape": [
+          126182
+        ]
+      },
+      "order_3_total_count": {
+        "dtype": "uint32",
+        "sha256": "8c14cb396e7eb3c455918ae128bd1cb555f34b8c59fabc192005a5a02fce3a52",
+        "shape": [
+          126182
+        ]
+      }
+    },
+    "bytes": 1341550,
+    "path": "artifacts/fresh-vocabulary-16k-retrieval-table-v1/compact-token-ngram.npz",
+    "sha256": "8aa1026bb282d68463b392e5b0d180b902e67d96ea50e7ea1e0ef9811a32f81a"
+  },
+  "table_contract": {
+    "entry_count": 200000,
+    "maximum_entries": 200000,
+    "minimum_context_count": 5,
+    "minimum_next_token_probability": 0.8,
+    "orders": {
+      "1": {
+        "best_count_sha256": "3be31a7cd6498e30ed3c6dd68f8ed7076680268b4114c316295ae6909b59b1e3",
+        "context_sha256": "d4be88f41f6ee5d21aa0969c6c2f2dee6003886bc6634fb61825f78e6b9bb361",
+        "entries": 454,
+        "maximum_confidence": 1.0,
+        "minimum_confidence": 0.8003714020427113,
+        "next_sha256": "c95239aa5e77fce2646f6888fa30688c5b65ab4092b61c401ba35c159965f7da",
+        "total_count_sha256": "ecbd6df505f2f925fcc8ed84d1380accff12c9d338e817fed6241d509d031fc7"
+      },
+      "2": {
+        "best_count_sha256": "41f651766d0dbb3cb8470892ff27ecef2712fdbb602dae87f9fd8f85249cef31",
+        "context_sha256": "0fe7b43d0663549bd8efb4c0209ea981e702d19b6500066acd9019ed70a76e94",
+        "entries": 73364,
+        "maximum_confidence": 1.0,
+        "minimum_confidence": 0.8,
+        "next_sha256": "788c2a50e7edcd68f45fd637fe5950a23bee81b61da8a88cfe79546b7b3c1c9b",
+        "total_count_sha256": "75964bdec9aa021d6e734918567c27c1738ae8834655392c4b86b5e9b187b9dd"
+      },
+      "3": {
+        "best_count_sha256": "502aa22e7d7b751c783c249a22a5db982ab531c561c0ca80968068cb6d0f0a03",
+        "context_sha256": "035d936549691fef5d09628321ef7b208e5135387a43c611f2b600c25e5b9f1e",
+        "entries": 126182,
+        "maximum_confidence": 1.0,
+        "minimum_confidence": 0.8,
+        "next_sha256": "2fde16faed408e90be97cf2da05158add3230d4a809609f515238d5f93018066",
+        "total_count_sha256": "8c14cb396e7eb3c455918ae128bd1cb555f34b8c59fabc192005a5a02fce3a52"
+      }
+    }
+  },
+  "tokenizer": {
+    "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-16000.json",
+    "sha256": "98b626d6b268773d4fe599ac1ae8f2869d18edfb33566ba1d04bd84bdce3c263",
+    "vocabulary_size": 16000
+  },
+  "training_token_inventory": {
+    "complete_utf8_bytes": 127999998,
+    "dropped_token_count": 210,
+    "first_batch_sha256": "666483c2aa8a78877e19ab28289387c6c8f3c303820cdf58be55f8a482f9422f",
+    "first_batch_token_count": 16384,
+    "full_sequence_count": 48286,
+    "predicted_target_raw_bytes": 127748353,
+    "raw_stream_bytes": 128000000,
+    "token_count": 24722642,
+    "token_ids_sha256": "60ce536414f53fca06581b50d2d29cae2a6e908e70b487af8f86736b4b79c0d4",
+    "trailing_incomplete_utf8_bytes": 2
+  }
+}

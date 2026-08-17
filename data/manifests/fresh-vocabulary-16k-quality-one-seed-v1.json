@@ -1,0 +1,615 @@
+{
+  "claim_boundary": {
+    "analytical_or_random_weight_latency_is_not_success": true,
+    "development_one_seed": true,
+    "efficiency_success_requires_trained_controlled_and_free_actual_e2e_ge_10pct": true,
+    "multiseed_requires_trained_actual_joint_gate": true,
+    "parameter_and_memory_increase_must_be_reported": true,
+    "publication_claim": false,
+    "same_raw_shard_is_not_a_new_domain": true
+  },
+  "decision": {
+    "actual_candidate_is_fixed_before_training": "dense16k_update_geometry",
+    "actual_latency_used": false,
+    "actual_requires_candidate_beats_every_16k_control": [
+      "dense16k_standard_joint",
+      "dense16k_inplace_two_stage"
+    ],
+    "actual_requires_candidate_noninferior_to_every_anchor": [
+      "dense2k_joint_v2",
+      "dense8k_update_geometry_v2"
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260841,
+    "cross_vocabulary_method_claim_also_requires_8k_replication": true,
+    "eightk_replication_candidate": "dense8k_update_geometry_v2",
+    "eightk_replication_reference": "dense2k_joint_v2",
+    "input_update_multiplier": 1.485414522979104,
+    "method_minimum_advantage_bpb": 0.002,
+    "no_result_dependent_fallback_role": true,
+    "output_update_multiplier": 2.170601418278963,
+    "quality_noninferiority_margin_bpb": 0.01,
+    "sealed_final_test_used": false,
+    "selection_uses_fresh_v2_calibration_only": true
+  },
+  "dependencies": {
+    "base_checkpoint": {
+      "path": "artifacts/compositional-head-quality-one-seed-v1/checkpoints/dense_v2048.pt",
+      "sha256": "010d6dd4a7c101e22cf99cb92e17da069a96aa162fbf4660573bf73d493ae7d7"
+    },
+    "fresh_v1_actual_plan": {
+      "path": "data/manifests/fresh-vocabulary-actual-one-seed-v1.json",
+      "sha256": "1e97f772f64b49acdcdd0ce188fc93e4017ad5954d1acc8ff3bee6db0da03b50"
+    },
+    "fresh_v1_actual_result": {
+      "path": "results/fresh-vocabulary-actual-one-seed-v1/summary.json",
+      "sha256": "33b59bc1cb4daf6e721cc5765f04a81aadfc9c4d744bfca2d6e74009410e07bc"
+    },
+    "fresh_v1_quality_plan": {
+      "path": "data/manifests/fresh-vocabulary-adaptation-one-seed-v1.json",
+      "sha256": "a6d810a07f7a0edcab23a82d7d9c6224953edcf64886ad0ae748184d4dde92cc"
+    },
+    "fresh_v1_quality_result": {
+      "path": "results/fresh-vocabulary-adaptation-one-seed-v1/summary.json",
+      "sha256": "3f4d79cdaae6885cf0a8832a886bfccf84331e6098603383e2c890dce27098b0"
+    },
+    "fresh_v2_manifest": {
+      "path": "data/manifests/hplt3-korean-vocab-adaptation-v2.json",
+      "sha256": "175dfb7b4661e1c3a68783a49562b8ce30e309b3576f1fe2c63a3cd150dbc5ad"
+    },
+    "fresh_v2_output": {
+      "path": "data/processed/hplt3-korean-vocab-adaptation-v2/ko.jsonl",
+      "sha256": "736b897a2eedeceab6e23e93bc1d4c36d849160f7acbe49029e81ce434967169"
+    },
+    "fresh_v2_seal": {
+      "path": "data/seals/hplt3-korean-vocab-adaptation-v2.json",
+      "sha256": "c7ceeb3290db5e1d0b905494d15b54874f22f53da3281f155a6e2e11437bbe9e"
+    },
+    "parent_model_plan": {
+      "path": "data/manifests/compositional-head-quality-one-seed-v1.json",
+      "sha256": "56542e3eab6a1bb0e471f5ca94330586d1a6c7cad5ca190b637b23d7556e20ef"
+    },
+    "parent_model_result": {
+      "path": "results/compositional-head-quality-one-seed-v1/summary.json",
+      "sha256": "c7be388773d5088faf5d6b8920bf56e631d9c171571902a006faccd56be4b0e9"
+    }
+  },
+  "document_common": {
+    "document_count": 356,
+    "ordered_document_commitment_sha256": "142fb40108e86be9c808c8618cf3fe97e6b47ac0023a679bbecfa6fe8263ba68",
+    "raw_bytes": 7949785,
+    "source_limit_bytes": 8000000,
+    "truncated_next_document_excluded": true
+  },
+  "environment": {
+    "hardware": {
+      "chip": "Apple M4 Pro",
+      "machine_model": "Mac16,7",
+      "memory_bytes": 51539607552,
+      "os_build": "25F84"
+    },
+    "machine": "arm64",
+    "mps_available": true,
+    "mps_built": true,
+    "packages": {
+      "numpy": "2.5.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.13.0",
+      "transformers": "5.14.1",
+      "zstandard": "0.25.0"
+    },
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.11",
+    "system": "Darwin",
+    "tokenizers": "0.22.2",
+    "transformers": "5.14.1"
+  },
+  "git_commit_before_plan": "a2c10588d667021a0eeea937390f6d8e88752588",
+  "implementation_sha256": {
+    "docs/156-fresh-vocabulary-actual-result-and-16k-pivot.md": "ea6d36aea9763b8c274a028f20ef5079a227e06a0bab3ca73f1a89667a0b050b",
+    "docs/157-fresh-v2-korean-data-protocol.md": "7a6cab22ff73f0dd65ab4a98c40e6742f816577ebb67ee219747818f402d9021",
+    "docs/158-fresh-v2-korean-data-result.md": "026d51808cab5d9b3775d0076477c6a4e2b171705a6040c1bb323ebd3e720305",
+    "docs/159-fresh-vocabulary-16k-quality-protocol.md": "ac2a5140cf6c3797acb919010f651d42e14f898a2d09ea445e12ecc328196937",
+    "pyproject.toml": "e20878d5ef8b1dd75970dcbac368de5b1ad636c6a9542b0cbc0ff0eb6a7549eb",
+    "scripts/bpe_quality_feasibility_core.py": "4e70b302319828fc0b54b9353a98f0f737d93d746ccabf7459f65a62a9b22310",
+    "scripts/bpe_quality_frontier_core.py": "757d1e1959ae91906c497c1a684415f707664f1a47ef9119788a066ee22d5578",
+    "scripts/compositional_head_core.py": "f854870d81e5bbc66dd6ec46dd2ff4f34971631d968e80e545b43f53886e53db",
+    "scripts/compositional_head_preflight_protocol.py": "1afbf64981a6b913e2ad86867171287550e01f2594ffde03de2ea0e2aaaacc66",
+    "scripts/foldable_multihash_mechanism_core.py": "5ccfd62b5807688e17059778b427ae28431b6d4c5bfd9390dc4d826490aa65e5",
+    "scripts/fresh_vocabulary_16k_core.py": "bb69e005477c6ea71e0e0f60cbed1b5c5c119dde86acb7cc40574beca970c2da",
+    "scripts/fresh_vocabulary_16k_protocol.py": "ff1b07abaa15776119bc3307e116f8b35157f4facd939f640e2555fbba1f5d00",
+    "scripts/fresh_vocabulary_adaptation_core.py": "49163233181eb0ff2f7f2bc89aca9cf026c484de386572b0ba6a981d069cb40f",
+    "scripts/fresh_vocabulary_adaptation_protocol.py": "9ff49b83bcf75c286e74789fdd7bec6a673b2de608220c0c41ef20fd20c7147c",
+    "scripts/hplt3_fresh_adaptation_v2_protocol.py": "007cb6fa089a239657307966d036258b443fd01bb42cf8ce524f765ad5757451",
+    "scripts/preflight_fresh_vocabulary_16k_training.py": "56bc2bfb758144c44e74780b8580d9b9d2231f5c2df038c6c5631cb9953e45e7",
+    "scripts/run_fresh_vocabulary_16k.py": "e9f8b66a533bd174c43963c5186350a630a00c50a91b5e751f03fe89aca566e3",
+    "scripts/run_fresh_vocabulary_adaptation.py": "b3f269a7c2781dfd1530ba5b0551ff4dd0d7432b79229f01d3cf159508b72fbf",
+    "scripts/scalar_runtime_core.py": "6260d9f0b974865d22af7a54d73a3e4fe892a2ed390ec49b973b95bc85534998",
+    "scripts/seal_fresh_vocabulary_16k_plan.py": "4388a419fece7640c6d91aa282c20b8e0b5a82ae91390d8808b0a836d096573a",
+    "scripts/summarize_fresh_vocabulary_16k.py": "93e290a7dd2ecaade6acfb5be23f88ec326c51c6fe0b49f94005a01522552ff8",
+    "scripts/token_frontier_core.py": "cc578b9b02206159762f6ea7adb0ef611d248e0286457e4ea1792fcc3befe4ed",
+    "scripts/token_frontier_protocol.py": "36bc1468a7199013a7bfc6e50132c44e6796ee148b0956f3d8a2714a984f9686",
+    "scripts/vocabulary_transfer_probe_core.py": "57a3f7390f589f73d0b8e5244d8270d02fb53e4bffa10d86dba9f5ce4b5fe430",
+    "scripts/vocabulary_transfer_probe_protocol.py": "5f2c18a60de7e362e8d0a02c2c50a8fa36e2cc340c9036f9c4b097b58bfd024e",
+    "src/jamoflow/corpus.py": "af2c69d18424266bcee4cd3067432afc10b69bac345873f7cbf4e338654b16ba",
+    "src/jamoflow/inference_actual_v5.py": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+    "src/jamoflow/inference_calibration_replay_v2.py": "e971c301a4288b836b5184c9e948b7e1f767037b057d0b4e946283e534c5636d",
+    "src/jamoflow/neural_data.py": "104e2ef492ecd15ccb9fd809abebdcd260c2899f35cfbf15ad489374378dc089",
+    "src/jamoflow/publication_bpe.py": "f62b4014ae9f9ea2a0149e5e44b2fba128c8159e1a7f88561c43b5529cb87b13",
+    "tests/test_fresh_vocabulary_16k_core.py": "d6a5e4196eb68be760615fd4e34e74495f88b068b444628535088b5f89b062d2",
+    "tests/test_fresh_vocabulary_16k_protocol.py": "1f9335accb6ae10b4d74bdaa0cbb7dcb2a853be29f494e7e60ff6f7dda9a3f04"
+  },
+  "initialization": {
+    "base_checkpoint": {
+      "artifact_sha256": "010d6dd4a7c101e22cf99cb92e17da069a96aa162fbf4660573bf73d493ae7d7",
+      "path": "artifacts/compositional-head-quality-one-seed-v1/checkpoints/dense_v2048.pt",
+      "state_sha256": "2cc8e241178b5e332a5a5067a29087a199ec7990178bd27bfac20a30ef17b9b1"
+    },
+    "dense2k_initial_state_sha256": "2cc8e241178b5e332a5a5067a29087a199ec7990178bd27bfac20a30ef17b9b1",
+    "eightk_initial_state_bitwise_matches_fresh_v1": true,
+    "fresh_v1_eightk_initial_state_sha256": "a48f42fdc2f473415b211ef6f5bc4031d3daf6b52cab2ae27b8f0a30460cb7bd",
+    "parameter_count_by_role": {
+      "dense16k_inplace_two_stage": 31168896,
+      "dense16k_standard_joint": 31168896,
+      "dense16k_update_geometry": 31168896,
+      "dense2k_joint_v2": 19667328,
+      "dense8k_update_geometry_v2": 25172352
+    },
+    "target_initial_state_sha256_by_vocabulary": {
+      "16000": "e5e5b23f3c7d977ea0a94f7dabbfc6a35ea21bd97bb6aea9c7f8700d9b0c9df0",
+      "8192": "a48f42fdc2f473415b211ef6f5bc4031d3daf6b52cab2ae27b8f0a30460cb7bd"
+    },
+    "target_initialization_audit_by_vocabulary": {
+      "16000": {
+        "base_mean_row_l2": 0.7560138702392578,
+        "base_vocabulary_size": 2048,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "fc307cdd1e7b39614e382c8d46cc4b4af947a12f3ed9d47762ec18e64d492540",
+        "exact_reconstruction": true,
+        "initialized_input_new_mean_row_l2": 0.7560138702392578,
+        "initialized_input_weight_sha256": "4adf0a85f85ebbf042801722863bc5a0569143f367f42ef8116efcfbfd9176de",
+        "initialized_output_new_mean_row_l2": 0.5174621939659119,
+        "initialized_output_weight_sha256": "9eaf7e716b234b7fa6c563f90892efa8c49675d44404f524e4b72d70e8776a8f",
+        "input_norm_calibrated": true,
+        "input_strategy": "uniform",
+        "maximum_constituent_count": 9,
+        "mean_constituent_count": 2.151625,
+        "new_token_count": 13952,
+        "output_norm_calibrated": false,
+        "output_strategy": "byte_weighted",
+        "shared_token_count": 2048,
+        "target_vocabulary_size": 16000,
+        "tied_input_output": false
+      },
+      "8192": {
+        "base_mean_row_l2": 0.7560138702392578,
+        "base_vocabulary_size": 2048,
+        "decomposition_kind": "canonical_target_merge_tree_cut_at_source_vocab",
+        "decomposition_sha256": "a55571aad1905eb1a78149022da5b2418c1c20311187f8a68f8a352182294164",
+        "exact_reconstruction": true,
+        "initialized_input_new_mean_row_l2": 0.7560138702392578,
+        "initialized_input_weight_sha256": "f41874f8da41abd4857777d1f994e4aac90978f494eeeb38291fcbb732e81cd6",
+        "initialized_output_new_mean_row_l2": 0.5307462811470032,
+        "initialized_output_weight_sha256": "965b08cbaad4a5ebdfa2edf3099547aabe89ac1861459b58f336a9f6cdbdb9ca",
+        "input_norm_calibrated": true,
+        "input_strategy": "uniform",
+        "maximum_constituent_count": 8,
+        "mean_constituent_count": 1.884033203125,
+        "new_token_count": 6144,
+        "output_norm_calibrated": false,
+        "output_strategy": "byte_weighted",
+        "shared_token_count": 2048,
+        "target_vocabulary_size": 8192,
+        "tied_input_output": false
+      }
+    }
+  },
+  "inventories": {
+    "16000": {
+      "calibration_stream": {
+        "available_bytes": 8032088,
+        "language": "ko",
+        "selected_bytes": 8000000,
+        "selected_records": 357,
+        "sequence_count": 15625,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 9099,
+        "sha256": "79a4a4de910fa6e5bbfc267ad40c5ffaf26a2959c419dd7b9e6b775320336e46",
+        "split": "calibration",
+        "truncated_bytes": 0,
+        "valid_records": 357
+      },
+      "calibration_tokens": {
+        "complete_utf8_bytes": 8000000,
+        "dropped_token_count": 391,
+        "first_batch_sha256": "45c37eca8eb952d897b5e25ccd6ced9a60041f2c25bbd7a165c2638b54b568a5",
+        "first_batch_token_count": 4096,
+        "full_sequence_count": 3010,
+        "predicted_target_raw_bytes": 7982415,
+        "raw_stream_bytes": 8000000,
+        "token_count": 1541511,
+        "token_ids_sha256": "1ab558580092d5bd247a26d2e67e96072ac87fa2338c25eae8746708c18fe907",
+        "trailing_incomplete_utf8_bytes": 0
+      },
+      "document_raw_bytes_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+      "document_tokens": {
+        "chunk_count": 3175,
+        "chunk_schedule_sha256": "8eae3b5cf1ea7ae2899945f372744313750d01934da3590955b7f8ab552703fd",
+        "document_count": 356,
+        "document_lengths_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+        "maximum_document_tokens_including_prefix": 28120,
+        "raw_bytes": 7949785,
+        "token_count_excluding_prefix": 1531993
+      },
+      "inplace_stage": {
+        "boundary_rule": "first_complete_effective_batch_reaching_60pct_raw_target_bytes",
+        "requested_stage_one_raw_fraction": 0.6,
+        "stage_one_optimizer_steps": 907,
+        "stage_one_raw_target_bytes": 76659814,
+        "stage_one_realized_raw_fraction": 0.6000845584287102,
+        "stage_two_optimizer_steps": 602,
+        "stage_two_raw_target_bytes": 51088539,
+        "total_optimizer_steps": 1509,
+        "total_raw_target_bytes": 127748353
+      },
+      "optimizer_batch_raw_target_bytes_sha256": "1dcbe63e009e462b68aae6c9c158b80bd9ebfc3b29116e17a73ee757b35f2b58",
+      "total_optimizer_steps": 1509,
+      "train_raw_target_bytes_sha256": "7b65f0e1de561c15b2168090969f55a0fa244dc4d46bb5466a76e801cdfdee9f",
+      "train_stream": {
+        "available_bytes": 128008526,
+        "language": "ko",
+        "selected_bytes": 128000000,
+        "selected_records": 5637,
+        "sequence_count": 250000,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 145711,
+        "sha256": "63ded32e267597bcfc4d07d88445f06af11474680f3fa299eb848fc081f69523",
+        "split": "train",
+        "truncated_bytes": 0,
+        "valid_records": 5637
+      },
+      "train_tokens": {
+        "complete_utf8_bytes": 127999998,
+        "dropped_token_count": 210,
+        "first_batch_sha256": "666483c2aa8a78877e19ab28289387c6c8f3c303820cdf58be55f8a482f9422f",
+        "first_batch_token_count": 16384,
+        "full_sequence_count": 48286,
+        "predicted_target_raw_bytes": 127748353,
+        "raw_stream_bytes": 128000000,
+        "token_count": 24722642,
+        "token_ids_sha256": "60ce536414f53fca06581b50d2d29cae2a6e908e70b487af8f86736b4b79c0d4",
+        "trailing_incomplete_utf8_bytes": 2
+      }
+    },
+    "2048": {
+      "calibration_stream": {
+        "available_bytes": 8032088,
+        "language": "ko",
+        "selected_bytes": 8000000,
+        "selected_records": 357,
+        "sequence_count": 15625,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 9099,
+        "sha256": "79a4a4de910fa6e5bbfc267ad40c5ffaf26a2959c419dd7b9e6b775320336e46",
+        "split": "calibration",
+        "truncated_bytes": 0,
+        "valid_records": 357
+      },
+      "calibration_tokens": {
+        "complete_utf8_bytes": 8000000,
+        "dropped_token_count": 98,
+        "first_batch_sha256": "87134055ff848a5614dc1ce65e819361d6a00eff8b468d3efe7f9f661f7d59e8",
+        "first_batch_token_count": 32768,
+        "full_sequence_count": 4448,
+        "predicted_target_raw_bytes": 7984187,
+        "raw_stream_bytes": 8000000,
+        "token_count": 2277474,
+        "token_ids_sha256": "8ed04dcd4c9b6f6fc789b69042ef44d155f5b18046a68b0c41156b2c8f1ae3ca",
+        "trailing_incomplete_utf8_bytes": 0
+      },
+      "document_raw_bytes_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+      "document_tokens": {
+        "chunk_count": 4606,
+        "chunk_schedule_sha256": "d03e641a1662c933bbb1372238420d85bf680256f607fa0a763c34a9afb1f920",
+        "document_count": 356,
+        "document_lengths_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+        "maximum_document_tokens_including_prefix": 43211,
+        "raw_bytes": 7949785,
+        "token_count_excluding_prefix": 2263664
+      },
+      "optimizer_batch_raw_target_bytes_sha256": "f6026448eebbee2a07788d0a1879bcb8a1e738526e31fb0209ed318c6b4126fe",
+      "total_optimizer_steps": 2219,
+      "train_raw_target_bytes_sha256": "6b2e2c04fcfabf27d901f2cdf05ccd460c84ecee35bd412d4c76687f86e02682",
+      "train_stream": {
+        "available_bytes": 128008526,
+        "language": "ko",
+        "selected_bytes": 128000000,
+        "selected_records": 5637,
+        "sequence_count": 250000,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 145711,
+        "sha256": "63ded32e267597bcfc4d07d88445f06af11474680f3fa299eb848fc081f69523",
+        "split": "train",
+        "truncated_bytes": 0,
+        "valid_records": 5637
+      },
+      "train_tokens": {
+        "complete_utf8_bytes": 127999998,
+        "dropped_token_count": 17,
+        "first_batch_sha256": "918b155695ccd183d45c7c041bf890a6a561d196292eea027312f7a1f6f48ead",
+        "first_batch_token_count": 16384,
+        "full_sequence_count": 70991,
+        "predicted_target_raw_bytes": 127749932,
+        "raw_stream_bytes": 128000000,
+        "token_count": 36347409,
+        "token_ids_sha256": "126adaf33501b50f616a76e0d3f1cd8b03d4eb3056761581cd7fe84196276357",
+        "trailing_incomplete_utf8_bytes": 2
+      }
+    },
+    "8192": {
+      "calibration_stream": {
+        "available_bytes": 8032088,
+        "language": "ko",
+        "selected_bytes": 8000000,
+        "selected_records": 357,
+        "sequence_count": 15625,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 9099,
+        "sha256": "79a4a4de910fa6e5bbfc267ad40c5ffaf26a2959c419dd7b9e6b775320336e46",
+        "split": "calibration",
+        "truncated_bytes": 0,
+        "valid_records": 357
+      },
+      "calibration_tokens": {
+        "complete_utf8_bytes": 8000000,
+        "dropped_token_count": 47,
+        "first_batch_sha256": "bf3fa57d2af8f4e117bda29dcfd5bb951f966e5f26cf91972f0c66a23790520d",
+        "first_batch_token_count": 8192,
+        "full_sequence_count": 3359,
+        "predicted_target_raw_bytes": 7984124,
+        "raw_stream_bytes": 8000000,
+        "token_count": 1719855,
+        "token_ids_sha256": "5d433be27a4fa9769ac3c6167a26eec96a987294f33ca918ef343a58efcba939",
+        "trailing_incomplete_utf8_bytes": 0
+      },
+      "document_raw_bytes_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+      "document_tokens": {
+        "chunk_count": 3517,
+        "chunk_schedule_sha256": "35f4a19dc52d6541d78d13501b814b00c19583312ff364e06042bb4ea913758d",
+        "document_count": 356,
+        "document_lengths_sha256": "5e9cd01b0809a627cea5820943cc6453b843892dfb693bf377b808c2c4dbe2ca",
+        "maximum_document_tokens_including_prefix": 31774,
+        "raw_bytes": 7949785,
+        "token_count_excluding_prefix": 1709330
+      },
+      "optimizer_batch_raw_target_bytes_sha256": "b331b1ec90021cb54eaff1e16c253130f1ac3de7cfc30677f94c6d6fa93b1e7c",
+      "total_optimizer_steps": 1682,
+      "train_raw_target_bytes_sha256": "56049b4e94910bbff44d9cd559514c140ff2850cb51728dc44355fd80e0f18fd",
+      "train_stream": {
+        "available_bytes": 128008526,
+        "language": "ko",
+        "selected_bytes": 128000000,
+        "selected_records": 5637,
+        "sequence_count": 250000,
+        "sequence_length": 512,
+        "sequence_starts_inside_codepoint": 145711,
+        "sha256": "63ded32e267597bcfc4d07d88445f06af11474680f3fa299eb848fc081f69523",
+        "split": "train",
+        "truncated_bytes": 0,
+        "valid_records": 5637
+      },
+      "train_tokens": {
+        "complete_utf8_bytes": 127999998,
+        "dropped_token_count": 496,
+        "first_batch_sha256": "984704cd2ab5453b881d6e9846b5ecc14f30e403d6899b14baf967b62e489e63",
+        "first_batch_token_count": 16384,
+        "full_sequence_count": 53800,
+        "predicted_target_raw_bytes": 127748229,
+        "raw_stream_bytes": 128000000,
+        "token_count": 27546096,
+        "token_ids_sha256": "dd738c08fd52b0fa94584a3e0ec7da1e90b5cb12596e90627e9195a006248a21",
+        "trailing_incomplete_utf8_bytes": 2
+      }
+    }
+  },
+  "kind": "fresh_vocabulary_16k_quality_one_seed_plan_v1",
+  "output_path": "results/fresh-vocabulary-16k-quality-one-seed-v1/summary.json",
+  "plan_sha256": "8a75b2be7371a69b6120dbab38c710e81e8c31f45468e672ec13390c587eb4f4",
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-quality-one-seed-v1",
+  "roles": {
+    "dense16k_inplace_two_stage": {
+      "initialization": "untied_uniform_input_byte_weighted_output",
+      "post_adamw_new_row_scaling": null,
+      "schedule": "new_rows_only_60pct_then_all_40pct",
+      "vocabulary_size": 16000
+    },
+    "dense16k_standard_joint": {
+      "initialization": "untied_uniform_input_byte_weighted_output",
+      "post_adamw_new_row_scaling": null,
+      "schedule": "all_parameter_joint_body_constant_head_raw_progress_cosine",
+      "vocabulary_size": 16000
+    },
+    "dense16k_update_geometry": {
+      "initialization": "untied_uniform_input_byte_weighted_output",
+      "post_adamw_new_row_scaling": {
+        "input_multiplier": 1.485414522979104,
+        "output_multiplier": 2.170601418278963,
+        "source": "fresh_v1_presealed_update_geometry_no_retuning",
+        "validation_metric_used": false
+      },
+      "schedule": "all_parameter_joint_body_constant_head_raw_progress_cosine",
+      "vocabulary_size": 16000
+    },
+    "dense2k_joint_v2": {
+      "initialization": "exact_source_checkpoint",
+      "post_adamw_new_row_scaling": null,
+      "schedule": "all_parameter_joint_body_constant_head_raw_progress_cosine",
+      "vocabulary_size": 2048
+    },
+    "dense8k_update_geometry_v2": {
+      "initialization": "untied_uniform_input_byte_weighted_output",
+      "post_adamw_new_row_scaling": {
+        "input_multiplier": 1.485414522979104,
+        "output_multiplier": 2.170601418278963,
+        "source": "fresh_v1_presealed_update_geometry",
+        "validation_metric_used": false
+      },
+      "schedule": "all_parameter_joint_body_constant_head_raw_progress_cosine",
+      "vocabulary_size": 8192
+    }
+  },
+  "schema_version": 1,
+  "status": "sealed_before_fresh_v2_training",
+  "tokenizers": {
+    "16000": {
+      "ordered_token_bytes_sha256": "d1d9cb04eb462c87ca7c13ab72b8053f30f43a8eef3bd6c9db0b4d5afd3b6efc",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-16000.json",
+      "sha256": "98b626d6b268773d4fe599ac1ae8f2869d18edfb33566ba1d04bd84bdce3c263",
+      "vocabulary_size": 16000
+    },
+    "2048": {
+      "ordered_token_bytes_sha256": "0f272210cf00870fcb1fecdefac9ad1e6acf1764bd47da8eabee5f525a3b4492",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-2048.json",
+      "sha256": "7db98d328ba1b7e7300c040a40fcdae6901d77db34cd52ea07f52bdc9fe15054",
+      "vocabulary_size": 2048
+    },
+    "8192": {
+      "ordered_token_bytes_sha256": "fb2424ff1b3dbc90fa3dfe431372604ce4368c9d3e954143f4f73117f5a0b0c8",
+      "path": "artifacts/korean-bpe-systems-frontier-v1/byte-bpe-8192.json",
+      "sha256": "6f65d21005dfbafadbbed282a792b71d3c3ba8d1f3befc06d46e768b77f5c354",
+      "vocabulary_size": 8192
+    }
+  },
+  "training": {
+    "dense16k_inplace_two_stage": {
+      "adamw_beta1": 0.9,
+      "adamw_beta2": 0.95,
+      "adamw_epsilon": 1e-08,
+      "body_learning_rate": 3e-05,
+      "copied_input_and_output_rows_restored_after_every_stage_one_step": true,
+      "effective_batch_size": 32,
+      "evaluation_batch_size": 8,
+      "gradient_clip": 1.0,
+      "head_minimum_learning_rate": 3e-05,
+      "head_peak_learning_rate": 0.0003,
+      "inplace_stage": {
+        "boundary_rule": "first_complete_effective_batch_reaching_60pct_raw_target_bytes",
+        "requested_stage_one_raw_fraction": 0.6,
+        "stage_one_optimizer_steps": 907,
+        "stage_one_raw_target_bytes": 76659814,
+        "stage_one_realized_raw_fraction": 0.6000845584287102,
+        "stage_two_optimizer_steps": 602,
+        "stage_two_raw_target_bytes": 51088539,
+        "total_optimizer_steps": 1509,
+        "total_raw_target_bytes": 127748353
+      },
+      "optimizer": "AdamW",
+      "optimizer_reinitialized_at_stage_two": true,
+      "ordering": "sealed_rank_order_contiguous_no_permutation",
+      "raw_stream_bytes": 128000000,
+      "sequence_count": 48286,
+      "stage_one_learning_rate": "raw_progress_warmup_then_constant_peak",
+      "stage_two_learning_rate": "raw_progress_rewarmup_then_cosine",
+      "target_raw_bytes": 127748353,
+      "token_ids_sha256": "60ce536414f53fca06581b50d2d29cae2a6e908e70b487af8f86736b4b79c0d4",
+      "total_optimizer_steps": 1509,
+      "train_microbatch_size": 4,
+      "vocabulary_size": 16000,
+      "warmup_raw_fraction": 0.05,
+      "weight_decay_for_matrix_parameters": 0.1,
+      "weight_decay_for_vector_parameters": 0.0
+    },
+    "dense16k_standard_joint": {
+      "adamw_beta1": 0.9,
+      "adamw_beta2": 0.95,
+      "adamw_epsilon": 1e-08,
+      "body_learning_rate": 3e-05,
+      "effective_batch_size": 32,
+      "evaluation_batch_size": 8,
+      "gradient_clip": 1.0,
+      "head_minimum_learning_rate": 3e-05,
+      "head_peak_learning_rate": 0.0003,
+      "optimizer": "AdamW",
+      "ordering": "sealed_rank_order_contiguous_no_permutation",
+      "raw_stream_bytes": 128000000,
+      "sequence_count": 48286,
+      "target_raw_bytes": 127748353,
+      "token_ids_sha256": "60ce536414f53fca06581b50d2d29cae2a6e908e70b487af8f86736b4b79c0d4",
+      "total_optimizer_steps": 1509,
+      "train_microbatch_size": 4,
+      "vocabulary_size": 16000,
+      "warmup_raw_fraction": 0.05,
+      "weight_decay_for_matrix_parameters": 0.1,
+      "weight_decay_for_vector_parameters": 0.0
+    },
+    "dense16k_update_geometry": {
+      "adamw_beta1": 0.9,
+      "adamw_beta2": 0.95,
+      "adamw_epsilon": 1e-08,
+      "body_learning_rate": 3e-05,
+      "effective_batch_size": 32,
+      "evaluation_batch_size": 8,
+      "gradient_clip": 1.0,
+      "head_minimum_learning_rate": 3e-05,
+      "head_peak_learning_rate": 0.0003,
+      "optimizer": "AdamW",
+      "ordering": "sealed_rank_order_contiguous_no_permutation",
+      "raw_stream_bytes": 128000000,
+      "sequence_count": 48286,
+      "target_raw_bytes": 127748353,
+      "token_ids_sha256": "60ce536414f53fca06581b50d2d29cae2a6e908e70b487af8f86736b4b79c0d4",
+      "total_optimizer_steps": 1509,
+      "train_microbatch_size": 4,
+      "vocabulary_size": 16000,
+      "warmup_raw_fraction": 0.05,
+      "weight_decay_for_matrix_parameters": 0.1,
+      "weight_decay_for_vector_parameters": 0.0
+    },
+    "dense2k_joint_v2": {
+      "adamw_beta1": 0.9,
+      "adamw_beta2": 0.95,
+      "adamw_epsilon": 1e-08,
+      "body_learning_rate": 3e-05,
+      "effective_batch_size": 32,
+      "evaluation_batch_size": 64,
+      "gradient_clip": 1.0,
+      "head_minimum_learning_rate": 3e-05,
+      "head_peak_learning_rate": 0.0003,
+      "optimizer": "AdamW",
+      "ordering": "sealed_rank_order_contiguous_no_permutation",
+      "raw_stream_bytes": 128000000,
+      "sequence_count": 70991,
+      "target_raw_bytes": 127749932,
+      "token_ids_sha256": "126adaf33501b50f616a76e0d3f1cd8b03d4eb3056761581cd7fe84196276357",
+      "total_optimizer_steps": 2219,
+      "train_microbatch_size": 32,
+      "vocabulary_size": 2048,
+      "warmup_raw_fraction": 0.05,
+      "weight_decay_for_matrix_parameters": 0.1,
+      "weight_decay_for_vector_parameters": 0.0
+    },
+    "dense8k_update_geometry_v2": {
+      "adamw_beta1": 0.9,
+      "adamw_beta2": 0.95,
+      "adamw_epsilon": 1e-08,
+      "body_learning_rate": 3e-05,
+      "effective_batch_size": 32,
+      "evaluation_batch_size": 16,
+      "gradient_clip": 1.0,
+      "head_minimum_learning_rate": 3e-05,
+      "head_peak_learning_rate": 0.0003,
+      "optimizer": "AdamW",
+      "ordering": "sealed_rank_order_contiguous_no_permutation",
+      "raw_stream_bytes": 128000000,
+      "sequence_count": 53800,
+      "target_raw_bytes": 127748229,
+      "token_ids_sha256": "dd738c08fd52b0fa94584a3e0ec7da1e90b5cb12596e90627e9195a006248a21",
+      "total_optimizer_steps": 1682,
+      "train_microbatch_size": 8,
+      "vocabulary_size": 8192,
+      "warmup_raw_fraction": 0.05,
+      "weight_decay_for_matrix_parameters": 0.1,
+      "weight_decay_for_vector_parameters": 0.0
+    }
+  }
+}

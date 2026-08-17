@@ -1,0 +1,84 @@
+{
+  "allowed_post_evaluator_files": {
+    "docs/86-publication-actual-inference-v5-protocol.md": {
+      "current_blob_sha256": "a9218a8612058f3037774db907ba71c94d584c483ce87323cf14952a518f014f",
+      "diff_sha256": "cbc6eace0621662a93cdad034e3bbc712c3585f22098835878299a72f476cff9",
+      "evaluator_blob_sha256": "bf930bfd9c0b35f31cf22d1061517a4e76fbda28f25299e04401212a2f33ed11"
+    },
+    "scripts/benchmark_inference_actual_v5.py": {
+      "current_blob_sha256": "064e437236e913dc572304675bc96dd0c4bebecff776452ade29d9c680d3a886",
+      "diff_sha256": "71495609410d2afc7ff1e9323b86241e44680a6168827ae730c738a9e74b6780",
+      "evaluator_blob_sha256": "5ce9670749109f99096412742760b8ad1f9d83df7f8d760a06143e41db1fbc06"
+    },
+    "scripts/measure_inference_memory_v5.py": {
+      "current_blob_sha256": "a78a5c9537b9f81e5bf2cf57c10e7f4067d7483291138cd1e44381a29d64641a",
+      "diff_sha256": "3fc0b1d76785f8988f89cc0a3708222642ec38e15d2433b17a4ddb84a0094577",
+      "evaluator_blob_sha256": "7beb38f486a448efa6499b318f3c9d3a88dabae7608a3da66ad19cfcf5c67817"
+    },
+    "scripts/seal_inference_actual_plan_v5.py": {
+      "current_blob_sha256": "37599a9804e0ff7e1fcec0bdd0f2ca96c42274adae5db2946bbbd85655780c9e",
+      "diff_sha256": "42f4c12fe4699d4010766628c5f7750205a01d94074bd0f58dd122cfe200ca36",
+      "evaluator_blob_sha256": "76c0c224a53b634f698e60c54ac65169d3e212c88ee079771ad27089648862cc"
+    },
+    "scripts/summarize_inference_actual_v5.py": {
+      "current_blob_sha256": "3f0ca24b193b3af5fe41624bf191375b9dd72d9a1cfbde313478ed2b1a267f78",
+      "diff_sha256": "062361d8abeaed2f57219faa1e0d6aade6569b4eca1e382794b9e65a7002949f",
+      "evaluator_blob_sha256": "3c86c1778328268ee455aa15e7d70fc44e03695bd7e2f61a4e8ffdffe1812f2e"
+    },
+    "src/jamoflow/inference_actual_runtime_v5.py": {
+      "current_blob_sha256": "875eb828d95a5938dc9f47c703fe07543441773f5762157421b4279a66c36697",
+      "diff_sha256": "8c0398b8c3f37267156d6a6432c096c9950807bef79e78a82d1763f0493d68c3",
+      "evaluator_blob_sha256": "98b2c8e2cb38238c682b7e65f9ebdaaf4fdabccab76cd767421f217b479b91e3"
+    },
+    "src/jamoflow/inference_actual_v5.py": {
+      "current_blob_sha256": "871d82e607abb78c768fbab67fe26ca4163e64d32a296d1addf11b954a8264c1",
+      "diff_sha256": "34863d8cbe3c8e966900bc1119768b5f0019400c3d9295275e67f95cb7951c0a",
+      "evaluator_blob_sha256": "f6c4ff780684e5f8f58ea7eded7902509f513030ca1256e2c03d75f76b9ddfd2"
+    },
+    "src/jamoflow/inference_quality.py": {
+      "current_blob_sha256": "029b5fdf5eeff5e3e229cbddd6faa3f28da87c70e24ed9802008afbbef77464a",
+      "diff_sha256": "ed644e7757f400162e7a866b6601072f88d674d6119ae204df62a63c806268de",
+      "evaluator_blob_sha256": "857926921da68bb231442d821b51ac33e5599efc54f19770db69af8b79a3a971"
+    }
+  },
+  "canonical_quality_lock_hash_unchanged": true,
+  "case_selection_changed": false,
+  "correctness_contract": {
+    "cpu_semantic": {
+      "atol": 2e-05,
+      "rtol": 2e-05
+    },
+    "mps_backend": {
+      "atol": 0.0001,
+      "maximum_probability_total_variation": 1e-05,
+      "rtol": 2e-05
+    },
+    "third_tolerance_relaxation_allowed": false
+  },
+  "correctness_contract_changed": false,
+  "device_identity_handling_changed": true,
+  "discovered_stage": "post-final-quality-pre-timing",
+  "efficiency_gate_changed": false,
+  "evaluator_git_commit": "7fba052b622ea33db327c50791638dfafb760aad",
+  "failed_v5r2_plan": {
+    "path": "results/phase3-inference-actual-v5r2/plan.json",
+    "plan_sha256": "db85c5be1de538155e06865a63e28e0f42cc2e2cfae361902f503a9f3b66cd4d",
+    "sha256": "0134e8ff3d42ba3c46d3950e86216abf1baae1eafbced0a5c469cf3e257f9401"
+  },
+  "failed_v5r2_preflight": {
+    "latency_metrics_inspected": false,
+    "path": "results/phase3-inference-actual-v5r2/failures/preflight-device-identity.json",
+    "sha256": "9425e1618f53455c82cd4865092e88750d7664228fc8faf72157b9105816bf1a"
+  },
+  "kind": "actual_inference_v5r3_post_final_device_identity_erratum_v1",
+  "predecessor_backend_correctness_revision": {
+    "path": "data/manifests/phase3-inference-actual-v5r2-backend-correctness-revision.json",
+    "sha256": "7b926cf85ea08dbe8eab91e0b61b059004f44e0ae28ef89223106cd96820d594"
+  },
+  "quality_lock_sha256": "748537ac0aa47ec4a3c6db9c016d145ad16fed4edfbda0823f27042119c00fdc",
+  "quality_values_changed": false,
+  "role_set_changed": false,
+  "schema_version": 1,
+  "statistical_protocol_changed": false,
+  "timing_workload_changed": false
+}

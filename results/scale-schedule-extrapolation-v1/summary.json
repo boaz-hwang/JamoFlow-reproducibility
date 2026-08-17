@@ -1,0 +1,598 @@
+{
+  "aggregate": {
+    "all_target_evidence_valid": true,
+    "bootstrap": {
+      "base_seed": 20260817,
+      "repetitions": 10000,
+      "seed_rule": "BOOTSTRAP_SEED + target_millions",
+      "unit": "crossed fresh-process session and prompt after within-cell repetition median"
+    },
+    "descriptive_scaling": {
+      "median_reductions_in_target_order": [
+        0.07217533845984225,
+        0.07059701584289446,
+        0.08714484605883377,
+        0.10217482339003991
+      ],
+      "out_of_range_extrapolation_claimed": false,
+      "scaling_law_fitted": false,
+      "strictly_increasing": false
+    },
+    "larger_scale_training_directly_authorized": false,
+    "primary_1600m_pass": true,
+    "protocol_id": "jamoflow-scale-schedule-extrapolation-v1",
+    "rows": {
+      "1600": {
+        "affected_time_share_proxy": 0.6276453436816739,
+        "affected_time_share_proxy_interpretation": "descriptive Amdahl ratio only: E2E reduction divided by fixed patch-event reduction; not a measured component-time share",
+        "c86_median_ms": 1355.525333,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2695108652114868,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.21687839925289154,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2695108652114868,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.21687839925289154,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2695108652114868,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.21687839925289154,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": true,
+          "bootstrap_lower_at_least_8_percent": true,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": true,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.2105484523578577,
+        "median_reduction": 0.10217482339003991,
+        "median_session_reduction": 0.10749829663778432,
+        "overall_threshold_pass": true,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.09104287129715116,
+          "upper": 0.10987015262987972
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.1075693056491337,
+          "session-1": 0.10444550413865006,
+          "session-2": 0.10749829663778432
+        },
+        "sessions_at_least_10_percent": 3,
+        "w72_median_ms": 1217.0247715
+      },
+      "200": {
+        "affected_time_share_proxy": 0.44336279339617396,
+        "affected_time_share_proxy_interpretation": "descriptive Amdahl ratio only: E2E reduction divided by fixed patch-event reduction; not a measured component-time share",
+        "c86_median_ms": 504.085208,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2196788340806961,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16695111989974976,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2196788340806961,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16695111989974976,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.2196788340806961,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.16695111989974976,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": false,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.06385541972263566,
+        "median_reduction": 0.07217533845984225,
+        "median_session_reduction": 0.06058751980795052,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 15,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.0386835067738191,
+          "upper": 0.08933648458839238
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.05465656788927031,
+          "session-1": 0.06058751980795052,
+          "session-2": 0.07560498046833075
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 467.7026875
+      },
+      "400": {
+        "affected_time_share_proxy": 0.43366738303492325,
+        "affected_time_share_proxy_interpretation": "descriptive Amdahl ratio only: E2E reduction divided by fixed patch-event reduction; not a measured component-time share",
+        "c86_median_ms": 612.7802710000001,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.20010173320770264,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.19490817189216614,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.20010173320770264,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.19490817189216614,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.20010173320770264,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.19490817189216614,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": false,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.07867079001723135,
+        "median_reduction": 0.07059701584289446,
+        "median_session_reduction": 0.07076313671573042,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.06787964403099511,
+          "upper": 0.07500278868368304
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.07000159595092215,
+          "session-1": 0.07076313671573042,
+          "session-2": 0.07216281875515795
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 569.5198125
+      },
+      "800": {
+        "affected_time_share_proxy": 0.5353183400756933,
+        "affected_time_share_proxy_interpretation": "descriptive Amdahl ratio only: E2E reduction divided by fixed patch-event reduction; not a measured component-time share",
+        "c86_median_ms": 830.625479,
+        "correctness_by_session": {
+          "session-0": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.215457484126091,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.22292858362197876,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-1": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.215457484126091,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.22292858362197876,
+              "offline_boundary_prefix_exact": true
+            }
+          },
+          "session-2": {
+            "c86": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.215457484126091,
+              "offline_boundary_prefix_exact": true
+            },
+            "w72": {
+              "argmax_comparisons": 512,
+              "argmax_exact": 512,
+              "boundary_prefix_comparisons": 512,
+              "boundary_trace_exact": true,
+              "cache_diagnostics_exact": true,
+              "maximum_normalized_logit_error": 0.22292858362197876,
+              "offline_boundary_prefix_exact": true
+            }
+          }
+        },
+        "gates": {
+          "all_three_sessions_positive": true,
+          "at_least_two_sessions_reach_10_percent": false,
+          "bootstrap_lower_at_least_8_percent": true,
+          "evidence_valid": true,
+          "point_reduction_at_least_10_percent": false,
+          "positive_prompts_at_least_15": true
+        },
+        "identity_consistent_across_sessions": true,
+        "maximum_memory_fraction": 0.12288215031536459,
+        "median_reduction": 0.08714484605883377,
+        "median_session_reduction": 0.08559852012891156,
+        "overall_threshold_pass": false,
+        "patch_count_summary": {
+          "c86": {
+            "maximum": 43,
+            "median": 43.0,
+            "minimum": 43,
+            "sum": 688
+          },
+          "w72": {
+            "maximum": 36,
+            "median": 36.0,
+            "minimum": 36,
+            "sum": 576
+          }
+        },
+        "patch_event_reduction": 0.16279069767441856,
+        "positive_prompt_count": 16,
+        "positive_session_count": 3,
+        "prompt_bootstrap_95_interval": {
+          "lower": 0.08283761388308167,
+          "upper": 0.08948337362759379
+        },
+        "session_evidence_validity": {
+          "session-0": true,
+          "session-1": true,
+          "session-2": true
+        },
+        "session_reductions": {
+          "session-0": 0.08729789471057425,
+          "session-1": 0.08458551997624086,
+          "session-2": 0.08559852012891156
+        },
+        "sessions_at_least_10_percent": 0,
+        "w72_median_ms": 758.2407495
+      }
+    },
+    "schedule_order": [
+      "c86",
+      "w72"
+    ],
+    "status": "large_scale_10_percent_headroom_detected",
+    "target_order": [
+      200,
+      400,
+      800,
+      1600
+    ],
+    "ten_percent_large_scale_headroom_detected": true,
+    "thresholds": {
+      "maximum_memory_fraction": 0.75,
+      "minimum_bootstrap_lower_bound": 0.08,
+      "minimum_point_reduction": 0.1,
+      "minimum_positive_prompts": 15,
+      "minimum_positive_sessions": 3,
+      "minimum_sessions_at_point_target": 2,
+      "primary_target_millions": 1600
+    }
+  },
+  "claim_boundary": {
+    "confirmatory_or_final_claimed": false,
+    "larger_scale_training_directly_authorized": false,
+    "quality_or_matched_quality_claimed": false,
+    "random_weight_runtime_preflight": true,
+    "retrieval_result_changed": false,
+    "ten_percent_large_scale_headroom_detected": true
+  },
+  "kind": "scale_schedule_extrapolation_summary_v1",
+  "plan_artifact_sha256": "fb160915e76389c2712d6d5b9b05869235f10f792cb7e899cfc84e236d9d8203",
+  "plan_sha256": "4d74456b8f01666b661ecfa76deb1aa86f47dfd8a5116b71e4000ea10e6c5bb5",
+  "protocol_id": "jamoflow-scale-schedule-extrapolation-v1",
+  "schema_version": 1,
+  "status": "large_scale_10_percent_headroom_detected",
+  "summary_base_git_commit": "91ebfda15785f473255856341a261e39d80db0b5",
+  "summary_sha256": "9ef1ff5b126727d42ed40962f4e410e7504ff5b04d4e9d226353bf39ddb60e70",
+  "worker_evidence": {
+    "1600": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-0-report.json",
+        "report_sha256": "a92324fcb6d338ffaf6436401614ea9997172f5ad367678ef3ec06d7bd48e159",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-0-timings.npz",
+        "timing_sha256": "2f2de4af50ed9a71ef40faf1deac1ba5acb482a743f916233eb26334e83471ca"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-1-report.json",
+        "report_sha256": "c766db4d1d2f7dcf4a294b9681e692284b3800117a06d09a90eddfd87081eb34",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-1-timings.npz",
+        "timing_sha256": "8d8173fc0a6f948f1f6b6348b8b0308560f1868dc8c0701b948a5b944badf82c"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-2-report.json",
+        "report_sha256": "c9601c862da201cadf64d2a63e2f058732c658b2be465d1e0b035334eb9203ea",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-1600-session-2-timings.npz",
+        "timing_sha256": "567d5660372db999a9f49a0b7b75242e433b1693066d9d57ceb17e9e89c2b2f3"
+      }
+    },
+    "200": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-0-report.json",
+        "report_sha256": "fd9cd73269c948e5d5eaf5ff2a4f5a6d89509a829ecc4684da6ab27c0918f1e3",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-0-timings.npz",
+        "timing_sha256": "ca0394f9436e9472cd1809ee1a122c9155d0b3ce77664e9a3387791cf357068d"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-1-report.json",
+        "report_sha256": "2a64f9e0009202cf07983d2a9a3e09b0e94923778a9c2e45d855da2f0c6cd789",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-1-timings.npz",
+        "timing_sha256": "74c966e8da393412b03fe2d78cad8a577c562246a5c621038f5f6b32ade5a84e"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-2-report.json",
+        "report_sha256": "f13bfbb0d34db4cecf256c41fba1d1e7e4b0886bb53ef614f398ccc975ed3b1d",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-200-session-2-timings.npz",
+        "timing_sha256": "27254d4cefcc0a182fac7ca01ca349c7eb29017aa64b550c06428f12db61cb9b"
+      }
+    },
+    "400": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-0-report.json",
+        "report_sha256": "156d9e6dc9b7b30a6f247e68d488529315e692432a3207dd948e421736b14784",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-0-timings.npz",
+        "timing_sha256": "56c83dbaab99c41b783b4b64db62f75a751ebc3b81db1f08309a1f8dfebfce98"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-1-report.json",
+        "report_sha256": "ae49514dfa5a03ae8960005621275eddb2ea211f6836ef862120f2864debef8a",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-1-timings.npz",
+        "timing_sha256": "862cae9365fe0cea605092c32c8d4b05c7c158f40007c4cc8f10e75e9da3b561"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-2-report.json",
+        "report_sha256": "1c582b7774d21a5b4985cd70045810b9ca06f7fb76162d6770d70318203221f9",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-400-session-2-timings.npz",
+        "timing_sha256": "888a1d761c418889aac84b41d63b81e01aa093f33555a77ee2377a6dd4345782"
+      }
+    },
+    "800": {
+      "session-0": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-0-report.json",
+        "report_sha256": "c1c1da81321dae3a1a9888b73135739a9e5f0d34824d34052ed3bfff6d0ea6fd",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-0-timings.npz",
+        "timing_sha256": "91dc9c6529153385b53c8284f860847792dd1a17a919b0a2358400b2630031cd"
+      },
+      "session-1": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-1-report.json",
+        "report_sha256": "2a2d3b45900f7315ba6964eed0b740be01d1fad21836ef94ba668b8647063ce9",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-1-timings.npz",
+        "timing_sha256": "c02077d7d2052f66f03b1deadc7895faadea4236b49255db3505ad80de7bc2b2"
+      },
+      "session-2": {
+        "report_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-2-report.json",
+        "report_sha256": "a573e7567fe4a01c6cf4a0b7accd9aa9af6bc7df462e7c18bc616fd47232afbe",
+        "timing_path": "artifacts/scale-schedule-extrapolation-v1/target-800-session-2-timings.npz",
+        "timing_sha256": "651d63ea9e63fc83d8a5254bef151816238b9a3682179c225ee04cd6064540bb"
+      }
+    }
+  }
+}

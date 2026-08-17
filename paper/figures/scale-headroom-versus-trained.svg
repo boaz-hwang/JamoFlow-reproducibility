@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="410" viewBox="0 0 560 410" role="img" aria-labelledby="title desc">
+<title id="title">Random-weight systems headroom versus trained quality-qualified reductions</title>
+<desc id="desc">Generated from tracked aggregate evidence. results/phase3-inference-actual-v5r3/summary.json=ea9b61ea50ce790039c51f499c7fef65512f73245cf32d8719191b66500e7248; results/scale-schedule-preflight-v1/summary.json=e4366ea5c83cf012985c5a7a68311fc765554562991a946bd957800ca28caa0e; data/manifests/scale-schedule-preflight-v1.json=51060cc5859a253480b11b68d6fb315c20324bad528375742c42f00f330f9d65; results/scale-schedule-extrapolation-v1/summary.json=5ac4338ed9e55e985697d70b5b0ea47b48c4d1a1760d0bb7151690dac3edc1f4; data/manifests/scale-schedule-extrapolation-v1.json=fb160915e76389c2712d6d5b9b05869235f10f792cb7e899cfc84e236d9d8203; results/balanced-200m-w80-rescue-v1/actual-summary.json=9b24c3f46ff2b8c68c2eb84844e200b00e35f34d25ecec6ac497288d6aa7dd76</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<line x1="52.00" y1="310.00" x2="542.00" y2="310.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="315.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">0%</text>
+<line x1="52.00" y1="263.00" x2="542.00" y2="263.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="268.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">2%</text>
+<line x1="52.00" y1="216.00" x2="542.00" y2="216.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="221.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">4%</text>
+<line x1="52.00" y1="169.00" x2="542.00" y2="169.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="174.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">6%</text>
+<line x1="52.00" y1="122.00" x2="542.00" y2="122.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="127.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">8%</text>
+<line x1="52.00" y1="75.00" x2="542.00" y2="75.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="80.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">10%</text>
+<line x1="52.00" y1="28.00" x2="542.00" y2="28.00" stroke="#d8dee8" stroke-width="1.00"/>
+<text x="45.00" y="33.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="end">12%</text>
+<line x1="80.81" y1="310.00" x2="80.81" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="80.81" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">20M</text>
+<line x1="172.57" y1="310.00" x2="172.57" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="172.57" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">50M</text>
+<line x1="241.99" y1="310.00" x2="241.99" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="241.99" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">100M</text>
+<line x1="311.41" y1="310.00" x2="311.41" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="311.41" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">200M</text>
+<line x1="380.82" y1="310.00" x2="380.82" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="380.82" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">400M</text>
+<line x1="450.24" y1="310.00" x2="450.24" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="450.24" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">800M</text>
+<line x1="519.65" y1="310.00" x2="519.65" y2="316.00" stroke="#18212f" stroke-width="1.00"/>
+<text x="519.65" y="333.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="400" fill="#5f6b7a" text-anchor="middle">1.6B</text>
+<line x1="52.00" y1="75.00" x2="542.00" y2="75.00" stroke="#c43d4b" stroke-width="1.50" stroke-dasharray="7 5"/>
+<text x="539.00" y="68.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="15.00" font-weight="400" fill="#c43d4b" text-anchor="end">10% threshold</text>
+<polyline points="172.22,226.06 215.15,221.69 240.38,205.19 305.55,140.39 375.17,144.10 449.03,105.21 520.75,69.89" fill="none" stroke="#2563eb" stroke-width="3"/>
+<line x1="172.22" y1="204.21" x2="172.22" y2="244.88" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="166.22" y1="204.21" x2="178.22" y2="204.21" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="166.22" y1="244.88" x2="178.22" y2="244.88" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="172.22" cy="226.06" r="6.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="215.15" y1="210.06" x2="215.15" y2="232.41" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="209.15" y1="210.06" x2="221.15" y2="210.06" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="209.15" y1="232.41" x2="221.15" y2="232.41" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="215.15" cy="221.69" r="6.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="240.38" y1="195.03" x2="240.38" y2="219.63" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="234.38" y1="195.03" x2="246.38" y2="195.03" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="234.38" y1="219.63" x2="246.38" y2="219.63" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="240.38" cy="205.19" r="6.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="305.55" y1="100.06" x2="305.55" y2="219.09" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="299.55" y1="100.06" x2="311.55" y2="100.06" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="299.55" y1="219.09" x2="311.55" y2="219.09" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="305.55" cy="140.39" r="6.00" fill="#2563eb" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="375.17" y1="133.74" x2="375.17" y2="150.48" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="369.17" y1="133.74" x2="381.17" y2="133.74" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="369.17" y1="150.48" x2="381.17" y2="150.48" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="375.17" cy="144.10" r="6.00" fill="#2563eb" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="449.03" y1="99.71" x2="449.03" y2="115.33" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="443.03" y1="99.71" x2="455.03" y2="99.71" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="443.03" y1="115.33" x2="455.03" y2="115.33" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="449.03" cy="105.21" r="6.00" fill="#2563eb" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="520.75" y1="51.81" x2="520.75" y2="96.05" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="514.75" y1="51.81" x2="526.75" y2="51.81" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="514.75" y1="96.05" x2="526.75" y2="96.05" stroke="#2563eb" stroke-width="2.00"/>
+<circle cx="520.75" cy="69.89" r="6.00" fill="#2563eb" stroke="#2563eb" stroke-width="2.00"/>
+<line x1="78.77" y1="227.13" x2="78.77" y2="262.40" stroke="#e97918" stroke-width="2.00"/>
+<line x1="72.77" y1="227.13" x2="84.77" y2="227.13" stroke="#e97918" stroke-width="2.00"/>
+<line x1="72.77" y1="262.40" x2="84.77" y2="262.40" stroke="#e97918" stroke-width="2.00"/>
+<rect x="72.77" y="242.23" width="12.00" height="12.00" rx="1.00" fill="#e97918" stroke="#ffffff"/>
+<text x="84.77" y="235.23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="600" fill="#e97918" text-anchor="start">19.6M W72: 2.628%</text>
+<line x1="305.55" y1="234.59" x2="305.55" y2="260.22" stroke="#e97918" stroke-width="2.00"/>
+<line x1="299.55" y1="234.59" x2="311.55" y2="234.59" stroke="#e97918" stroke-width="2.00"/>
+<line x1="299.55" y1="260.22" x2="311.55" y2="260.22" stroke="#e97918" stroke-width="2.00"/>
+<rect x="299.55" y="236.16" width="12.00" height="12.00" rx="1.00" fill="#e97918" stroke="#ffffff"/>
+<text x="311.55" y="262.16" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="16.00" font-weight="600" fill="#e97918" text-anchor="start">188.6M W80: 2.887%</text>
+<line x1="62.00" y1="354.00" x2="94.00" y2="354.00" stroke="#2563eb" stroke-width="3.00"/>
+<circle cx="78.00" cy="354.00" r="5.00" fill="#dbeafe" stroke="#2563eb" stroke-width="2.00"/>
+<text x="104.00" y="360.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="start">same-weight random W72 vs C86</text>
+<rect x="72.00" y="374.00" width="12.00" height="12.00" rx="1.00" fill="#e97918" stroke="#ffffff"/>
+<text x="104.00" y="386.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17.00" font-weight="400" fill="#5f6b7a" text-anchor="start">trained quality-qualified schedule vs C86</text>
+<text x="297.00" y="407.00" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18.00" font-weight="600" fill="#18212f" text-anchor="middle">Model parameters (log scale)</text>
+</svg>

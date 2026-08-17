@@ -1,0 +1,118 @@
+{
+  "aggregate": {
+    "balanced_trained_bridge_protocol_may_be_designed": true,
+    "by_target": {
+      "1600": {
+        "gradient_checkpointed": {
+          "pair_projected_hours_64m": 81.78799026912506,
+          "pair_resource_pass": true,
+          "role_pass": {
+            "c86": true,
+            "w72": true
+          }
+        },
+        "standard": {
+          "pair_projected_hours_64m": 77.31929795479826,
+          "pair_resource_pass": true,
+          "role_pass": {
+            "c86": true,
+            "w72": true
+          }
+        }
+      },
+      "200": {
+        "standard": {
+          "pair_projected_hours_64m": 10.422992990142019,
+          "pair_resource_pass": true,
+          "role_pass": {
+            "c86": true,
+            "w72": true
+          }
+        }
+      },
+      "400": {
+        "standard": {
+          "pair_projected_hours_64m": 19.383997217927472,
+          "pair_resource_pass": true,
+          "role_pass": {
+            "c86": true,
+            "w72": true
+          }
+        }
+      },
+      "800": {
+        "standard": {
+          "pair_projected_hours_64m": 38.65142234695264,
+          "pair_resource_pass": true,
+          "role_pass": {
+            "c86": true,
+            "w72": true
+          }
+        }
+      }
+    },
+    "global_heavy_architecture_pivot_required": false,
+    "largest_standard_resource_feasible_target_millions": 1600,
+    "lower_target_fallback_authorized": false,
+    "primary_1600_resource_feasible": true,
+    "primary_1600_selected_regime": "standard",
+    "protocol_id": "jamoflow-large-scale-training-feasibility-v1",
+    "status": "balanced_1600_training_pilot_resource_feasible"
+  },
+  "claim_boundary": {
+    "lower_target_fallback_authorized": false,
+    "quality_claimed": false,
+    "resource_measurement_only": true,
+    "training_directly_authorized": false
+  },
+  "kind": "large_scale_training_feasibility_summary_v1",
+  "plan_artifact_sha256": "e5e05b9c089af1db5121eab4793ed006cff85035ef922e360de2edf45beccc64",
+  "plan_sha256": "2b49d798410591ac4d5ca436557a3cbebc49951554a6904c09a40996a767ee7f",
+  "protocol_id": "jamoflow-large-scale-training-feasibility-v1",
+  "schema_version": 1,
+  "status": "balanced_1600_training_pilot_resource_feasible",
+  "summary_base_git_commit": "52176b6e3748697295756007efb99f65ecccc36a",
+  "summary_sha256": "4a9667226924e5b7179f8421a8cf2ec9d93369d8a2e2cb478b3d9fd7e543a1b7",
+  "worker_evidence": {
+    "target-1600-gradient_checkpointed-c86": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-1600-gradient_checkpointed-c86.json",
+      "sha256": "76176ca064777c2c5bdd5f46d6fe4b979d03afb0f1c741b961c4f2bacef85002"
+    },
+    "target-1600-gradient_checkpointed-w72": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-1600-gradient_checkpointed-w72.json",
+      "sha256": "419d629224f839c4b23dcc3215595cae4a0a0d13eaa3d515ba91a35fc5d3d526"
+    },
+    "target-1600-standard-c86": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-1600-standard-c86.json",
+      "sha256": "6ff04c6a7c8aff8dde49682f9cc4fe766e014558d29da332b6e1341607165dbc"
+    },
+    "target-1600-standard-w72": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-1600-standard-w72.json",
+      "sha256": "2b68ab74b2b4d0010e3e9cfaa0a6df6f7fd6ead263f1853c317f80d6d6e69294"
+    },
+    "target-200-standard-c86": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-200-standard-c86.json",
+      "sha256": "d5b864162cf89577d7c8929f1668c3dbf81bd08c12a39ea88b82186fd275ce8d"
+    },
+    "target-200-standard-w72": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-200-standard-w72.json",
+      "sha256": "faffaf5235b464154fa2ded22917353f958996ffea67abd8178ec94d40b10c55"
+    },
+    "target-400-standard-c86": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-400-standard-c86.json",
+      "sha256": "cf3eb78c66c74097b9379b1e9177021532be807369fb7309af03c25581f73997"
+    },
+    "target-400-standard-w72": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-400-standard-w72.json",
+      "sha256": "e3a818872feb6b1a4127bffbc829c29349c582dc321862876deb1630b6eef206"
+    },
+    "target-800-standard-c86": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-800-standard-c86.json",
+      "sha256": "31c85919464863e9105de6e9bd311e656d4b14b1a6c33a4d0b3e62ff42eeec4c"
+    },
+    "target-800-standard-w72": {
+      "path": "artifacts/large-scale-training-feasibility-v1/target-800-standard-w72.json",
+      "sha256": "6f193411db2ddaa6120ad52223452bd2453016e9871f2f9b84b12863df2ac27a"
+    }
+  }
+}

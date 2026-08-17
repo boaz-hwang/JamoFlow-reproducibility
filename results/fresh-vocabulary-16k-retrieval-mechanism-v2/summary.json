@@ -1,0 +1,624 @@
+{
+  "claim_boundary": {
+    "development_mechanism_audit": true,
+    "efficiency_claim": false,
+    "korean_method_implemented": false,
+    "pass_authorizes_only_disjoint_design": true,
+    "publication_claim": false,
+    "raw_text_or_token_ids_published": false,
+    "same_closed_cases_reused": true
+  },
+  "dependencies": {
+    "actual_plan_artifact_sha256": "90853e45305c735262258fbf546c17aadcc57e34d1354b10c2bc6ea684646995",
+    "actual_result_artifact_sha256": "2d429838a55e8b392101b22c8cc67d67a25489f7a5807fc68e46535f9252506f",
+    "actual_summary_sha256": "3083986fc9fe3d2da8800143bd6d2aee89817206d24dcd51d31cd97e8967281b"
+  },
+  "event_stream": {
+    "aggregate_replay_matches_timing_counters": true,
+    "commitment_sha256": "c45e02be2c9e67153d44b70dc04015e4e4ff58c18b209315275e3cc5f9681857",
+    "event_count": 9335,
+    "raw_text_or_token_ids_published": false
+  },
+  "git_commit": "0886358b66f2ac511a0d9c4e553f2cce8c58f53d",
+  "kind": "fresh_vocabulary_16k_retrieval_mechanism_result_v2",
+  "mechanism": {
+    "aggregate_rows": {
+      "controlled_replay/corpus_ngram_block_4/corpus_ngram/after_other": {
+        "accepted_tokens": 22,
+        "accepted_tokens_per_proposal_cycle": 1.5714285714285714,
+        "cycles": 14,
+        "draft_token_acceptance_rate": 0.88,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.07142857142857142,
+        "proposal_cycles": 14,
+        "proposal_tokens": 25,
+        "rejection_rate": 0.21428571428571427
+      },
+      "controlled_replay/corpus_ngram_block_4/corpus_ngram/inside_utf8_scalar": {
+        "accepted_tokens": 5,
+        "accepted_tokens_per_proposal_cycle": 1.25,
+        "cycles": 4,
+        "draft_token_acceptance_rate": 1.0,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 4,
+        "proposal_tokens": 5,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/corpus_ngram_block_4/corpus_ngram/within_hangul_eojeol": {
+        "accepted_tokens": 89,
+        "accepted_tokens_per_proposal_cycle": 1.1125,
+        "cycles": 80,
+        "draft_token_acceptance_rate": 0.8557692307692307,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.2,
+        "proposal_cycles": 80,
+        "proposal_tokens": 104,
+        "rejection_rate": 0.125
+      },
+      "controlled_replay/corpus_ngram_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 183,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 183,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/corpus_ngram_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 11,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 11,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/corpus_ngram_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 8,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 8,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/corpus_ngram_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1158,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 1158,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/corpus_ngram/after_other": {
+        "accepted_tokens": 22,
+        "accepted_tokens_per_proposal_cycle": 1.5714285714285714,
+        "cycles": 14,
+        "draft_token_acceptance_rate": 0.88,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.07142857142857142,
+        "proposal_cycles": 14,
+        "proposal_tokens": 25,
+        "rejection_rate": 0.21428571428571427
+      },
+      "controlled_replay/hybrid_retrieval_block_4/corpus_ngram/inside_utf8_scalar": {
+        "accepted_tokens": 4,
+        "accepted_tokens_per_proposal_cycle": 1.3333333333333333,
+        "cycles": 3,
+        "draft_token_acceptance_rate": 1.0,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 3,
+        "proposal_tokens": 4,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/corpus_ngram/within_hangul_eojeol": {
+        "accepted_tokens": 85,
+        "accepted_tokens_per_proposal_cycle": 1.103896103896104,
+        "cycles": 77,
+        "draft_token_acceptance_rate": 0.85,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.2077922077922078,
+        "proposal_cycles": 77,
+        "proposal_tokens": 100,
+        "rejection_rate": 0.12987012987012986
+      },
+      "controlled_replay/hybrid_retrieval_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 121,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 121,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 10,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 10,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 6,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 6,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1017,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 1017,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/prompt_lookup/after_other": {
+        "accepted_tokens": 15,
+        "accepted_tokens_per_proposal_cycle": 0.3,
+        "cycles": 50,
+        "draft_token_acceptance_rate": 0.10204081632653061,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.74,
+        "proposal_cycles": 50,
+        "proposal_tokens": 147,
+        "rejection_rate": 0.94
+      },
+      "controlled_replay/hybrid_retrieval_block_4/prompt_lookup/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 1.0,
+        "proposal_cycles": 1,
+        "proposal_tokens": 3,
+        "rejection_rate": 1.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/prompt_lookup/inside_utf8_scalar": {
+        "accepted_tokens": 3,
+        "accepted_tokens_per_proposal_cycle": 1.5,
+        "cycles": 2,
+        "draft_token_acceptance_rate": 0.5,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 2,
+        "proposal_tokens": 6,
+        "rejection_rate": 1.0
+      },
+      "controlled_replay/hybrid_retrieval_block_4/prompt_lookup/within_hangul_eojeol": {
+        "accepted_tokens": 42,
+        "accepted_tokens_per_proposal_cycle": 0.4077669902912621,
+        "cycles": 103,
+        "draft_token_acceptance_rate": 0.13725490196078433,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.8640776699029126,
+        "proposal_cycles": 103,
+        "proposal_tokens": 306,
+        "rejection_rate": 0.9320388349514563
+      },
+      "controlled_replay/prompt_lookup_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 168,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 168,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/prompt_lookup_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 11,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 11,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/prompt_lookup_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 9,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 9,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/prompt_lookup_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1132,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 1132,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "controlled_replay/prompt_lookup_block_4/prompt_lookup/after_other": {
+        "accepted_tokens": 16,
+        "accepted_tokens_per_proposal_cycle": 0.2191780821917808,
+        "cycles": 73,
+        "draft_token_acceptance_rate": 0.07441860465116279,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.7808219178082192,
+        "proposal_cycles": 73,
+        "proposal_tokens": 215,
+        "rejection_rate": 0.958904109589041
+      },
+      "controlled_replay/prompt_lookup_block_4/prompt_lookup/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 1.0,
+        "proposal_cycles": 1,
+        "proposal_tokens": 3,
+        "rejection_rate": 1.0
+      },
+      "controlled_replay/prompt_lookup_block_4/prompt_lookup/inside_utf8_scalar": {
+        "accepted_tokens": 3,
+        "accepted_tokens_per_proposal_cycle": 1.5,
+        "cycles": 2,
+        "draft_token_acceptance_rate": 0.5,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 2,
+        "proposal_tokens": 6,
+        "rejection_rate": 1.0
+      },
+      "controlled_replay/prompt_lookup_block_4/prompt_lookup/within_hangul_eojeol": {
+        "accepted_tokens": 45,
+        "accepted_tokens_per_proposal_cycle": 0.4017857142857143,
+        "cycles": 112,
+        "draft_token_acceptance_rate": 0.13513513513513514,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.8660714285714286,
+        "proposal_cycles": 112,
+        "proposal_tokens": 333,
+        "rejection_rate": 0.9375
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/corpus_ngram/after_other": {
+        "accepted_tokens": 23,
+        "accepted_tokens_per_proposal_cycle": 0.92,
+        "cycles": 25,
+        "draft_token_acceptance_rate": 0.7419354838709677,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.08,
+        "proposal_cycles": 25,
+        "proposal_tokens": 31,
+        "rejection_rate": 0.24
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/corpus_ngram/within_hangul_eojeol": {
+        "accepted_tokens": 97,
+        "accepted_tokens_per_proposal_cycle": 1.0777777777777777,
+        "cycles": 90,
+        "draft_token_acceptance_rate": 0.6879432624113475,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.4222222222222222,
+        "proposal_cycles": 90,
+        "proposal_tokens": 141,
+        "rejection_rate": 0.2111111111111111
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 724,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 724,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 214,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 214,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 40,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 40,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/corpus_ngram_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 1055,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 1055,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/corpus_ngram/after_other": {
+        "accepted_tokens": 16,
+        "accepted_tokens_per_proposal_cycle": 0.8888888888888888,
+        "cycles": 18,
+        "draft_token_acceptance_rate": 0.6956521739130435,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.1111111111111111,
+        "proposal_cycles": 18,
+        "proposal_tokens": 23,
+        "rejection_rate": 0.2777777777777778
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/corpus_ngram/within_hangul_eojeol": {
+        "accepted_tokens": 85,
+        "accepted_tokens_per_proposal_cycle": 1.1486486486486487,
+        "cycles": 74,
+        "draft_token_acceptance_rate": 0.7657657657657657,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.4189189189189189,
+        "proposal_cycles": 74,
+        "proposal_tokens": 111,
+        "rejection_rate": 0.17567567567567569
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 190,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 190,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 16,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 16,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 6,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 6,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 508,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 508,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/prompt_lookup/after_other": {
+        "accepted_tokens": 272,
+        "accepted_tokens_per_proposal_cycle": 1.326829268292683,
+        "cycles": 205,
+        "draft_token_acceptance_rate": 0.45107794361525705,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.5756097560975609,
+        "proposal_cycles": 205,
+        "proposal_tokens": 603,
+        "rejection_rate": 0.5902439024390244
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/prompt_lookup/after_whitespace": {
+        "accepted_tokens": 177,
+        "accepted_tokens_per_proposal_cycle": 1.7524752475247525,
+        "cycles": 101,
+        "draft_token_acceptance_rate": 0.6344086021505376,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.8811881188118812,
+        "proposal_cycles": 101,
+        "proposal_tokens": 279,
+        "rejection_rate": 0.5742574257425742
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/prompt_lookup/inside_utf8_scalar": {
+        "accepted_tokens": 27,
+        "accepted_tokens_per_proposal_cycle": 1.9285714285714286,
+        "cycles": 14,
+        "draft_token_acceptance_rate": 0.6428571428571429,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.7142857142857143,
+        "proposal_cycles": 14,
+        "proposal_tokens": 42,
+        "rejection_rate": 0.42857142857142855
+      },
+      "free_running_utf8_greedy/hybrid_retrieval_block_4/prompt_lookup/within_hangul_eojeol": {
+        "accepted_tokens": 343,
+        "accepted_tokens_per_proposal_cycle": 1.4057377049180328,
+        "cycles": 244,
+        "draft_token_acceptance_rate": 0.47441217150760717,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.7868852459016393,
+        "proposal_cycles": 244,
+        "proposal_tokens": 723,
+        "rejection_rate": 0.5491803278688525
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/none/after_other": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 220,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 220,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/none/after_whitespace": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 16,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 16,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/none/inside_utf8_scalar": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 6,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 6,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/none/within_hangul_eojeol": {
+        "accepted_tokens": 0,
+        "accepted_tokens_per_proposal_cycle": 0.0,
+        "cycles": 593,
+        "draft_token_acceptance_rate": 0.0,
+        "no_proposal_cycles": 593,
+        "proposal_crosses_whitespace_rate": 0.0,
+        "proposal_cycles": 0,
+        "proposal_tokens": 0,
+        "rejection_rate": 0.0
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/prompt_lookup/after_other": {
+        "accepted_tokens": 283,
+        "accepted_tokens_per_proposal_cycle": 1.1991525423728813,
+        "cycles": 236,
+        "draft_token_acceptance_rate": 0.40660919540229884,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.614406779661017,
+        "proposal_cycles": 236,
+        "proposal_tokens": 696,
+        "rejection_rate": 0.635593220338983
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/prompt_lookup/after_whitespace": {
+        "accepted_tokens": 203,
+        "accepted_tokens_per_proposal_cycle": 1.8796296296296295,
+        "cycles": 108,
+        "draft_token_acceptance_rate": 0.6789297658862876,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.8981481481481481,
+        "proposal_cycles": 108,
+        "proposal_tokens": 299,
+        "rejection_rate": 0.5185185185185185
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/prompt_lookup/inside_utf8_scalar": {
+        "accepted_tokens": 27,
+        "accepted_tokens_per_proposal_cycle": 1.9285714285714286,
+        "cycles": 14,
+        "draft_token_acceptance_rate": 0.6428571428571429,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.7142857142857143,
+        "proposal_cycles": 14,
+        "proposal_tokens": 42,
+        "rejection_rate": 0.42857142857142855
+      },
+      "free_running_utf8_greedy/prompt_lookup_block_4/prompt_lookup/within_hangul_eojeol": {
+        "accepted_tokens": 342,
+        "accepted_tokens_per_proposal_cycle": 1.3790322580645162,
+        "cycles": 248,
+        "draft_token_acceptance_rate": 0.4665757162346521,
+        "no_proposal_cycles": 0,
+        "proposal_crosses_whitespace_rate": 0.7903225806451613,
+        "proposal_cycles": 248,
+        "proposal_tokens": 733,
+        "rejection_rate": 0.5604838709677419
+      }
+    },
+    "decision": {
+      "disjoint_actual_design_authorized": false,
+      "efficiency_claim": false,
+      "hangul_boundary_router_hypothesis_supported": false
+    },
+    "event_count": 9335,
+    "primary_hangul_boundary_contrast": {
+      "accepted_tokens_per_cycle": {
+        "after_whitespace": 1.7524752475247525,
+        "within_hangul_eojeol": 1.4057377049180328
+      },
+      "bootstrap_repetitions": 10000,
+      "bootstrap_seed": 20260852,
+      "contrast": "within_hangul_eojeol_minus_after_whitespace",
+      "cycle_counts": {
+        "after_whitespace": 101,
+        "within_hangul_eojeol": 244
+      },
+      "gate": {
+        "bootstrap_lower_positive": false,
+        "minimum_cycles_each": true,
+        "minimum_effect": false,
+        "minimum_paired_cases": false,
+        "overall_pass": false
+      },
+      "minimum_accepted_tokens_per_cycle_gap": 0.25,
+      "minimum_cycles_each": 32,
+      "minimum_paired_cases": 16,
+      "mode": "free_running_utf8_greedy",
+      "paired_case_bootstrap_95_interval": {
+        "lower": null,
+        "upper": null
+      },
+      "paired_case_count": 13,
+      "paired_case_mean_difference": -0.2461538461538461,
+      "role": "hybrid_retrieval_block_4",
+      "source": "prompt_lookup"
+    }
+  },
+  "plan": {
+    "artifact_sha256": "92386afe47ccc606e831925a39e82ac753d903ab343e4bd98562349cc433b66e",
+    "plan_sha256": "dcd9a7c301bf28943cabef350a73d9821b8ceeae9587e7366071efb782734093"
+  },
+  "protocol_id": "jamoflow-fresh-vocabulary-16k-retrieval-mechanism-v2",
+  "schema_version": 2,
+  "status": "fail_hangul_boundary_mechanism_screen",
+  "summary_sha256": "73044422788ee992bc76c31e2ac25965d903d8846137cc3fa0b00e2f66fd601c"
+}
