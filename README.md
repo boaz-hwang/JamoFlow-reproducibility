@@ -4,6 +4,16 @@ JamoFlow studies where byte-latent Korean language models should place global-co
 
 The current experiment does **not** implement a Jamo-level representation, Korean morphology engine, multi-Jamo decoding, or production generation speedup. It compares prefix-causal patch schedules in one Hugging Face BLT graph and separates boundary placement, patch rate, learned-router cost, Unicode robustness, and domain transfer.
 
+## Publication and artifacts
+
+- Named preprint and immutable reproducibility deposit: [Zenodo version DOI 10.5281/zenodo.21973009](https://doi.org/10.5281/zenodo.21973009)
+- DOI representing all deposit versions: [10.5281/zenodo.21973008](https://doi.org/10.5281/zenodo.21973008)
+- Public source snapshot: [boaz-hwang/JamoFlow-reproducibility](https://github.com/boaz-hwang/JamoFlow-reproducibility)
+- Public release: [v0.1.0](https://github.com/boaz-hwang/JamoFlow-reproducibility/releases/tag/v0.1.0)
+- Author: Gyeongchan Hwang, Priming Water ([ORCID 0009-0007-5840-3274](https://orcid.org/0009-0007-5840-3274))
+
+The Zenodo record and GitHub release are public. The arXiv submission remains pending only because a first-time `cs.CL` author endorsement is required; it must not yet be cited as an arXiv identifier. The public package deliberately contains no raw corpus, model checkpoint, record identifier, raw generated output, or per-sequence loss array. The paper is CC BY 4.0 and the released code is Apache-2.0. See the [publication release record](docs/202-publication-release-record.md) for exact hashes and status boundaries.
+
 ## Current status
 
 - Phase 0 corpus/routing audits and compact Phase 1–2 mechanism studies are complete.
@@ -159,6 +169,7 @@ Start with:
 - [balanced 200M W80 quality and actual-inference result](docs/199-balanced-200m-w80-quality-and-actual-result.md)
 - [revised scale research direction](docs/200-revised-scale-research-direction.md)
 - [ARR submission package and release decision](docs/201-arr-submission-package-and-release-decision.md)
+- [publication release record](docs/202-publication-release-record.md)
 - [quality-constrained scale frontier follow-up program](docs/202-quality-constrained-scale-frontier-program.md)
 - [scalar representation and BPE opportunity protocol](docs/110-scalar-representation-and-bpe-opportunity-protocol.md)
 - [scalar representation opportunity result and BPE constraint](docs/111-scalar-representation-opportunity-result.md)

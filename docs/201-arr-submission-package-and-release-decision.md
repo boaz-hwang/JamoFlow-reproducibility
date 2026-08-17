@@ -2,7 +2,7 @@
 
 > 작성일: 2026-08-17
 >
-> 상태: **익명 8쪽 원고·재현 빌드 완성, 저자 메타데이터와 법적 선택만 대기**
+> 상태: **named preprint·공개 재현 패키지 게시 완료, arXiv endorsement와 ARR 제출 대기**
 >
 > 제출 원고: [`paper/arr-submission.md`](../paper/arr-submission.md)
 >
@@ -139,18 +139,20 @@ severely undertrained screen이다. 둘 다 positive 10% gate나 scale-amplifica
 통과하지 못했다. 재현 목적의 checkpoint 보존과 유용한 pretrained model 배포는 다른
 결정이다.
 
-## 6. 실제 업로드 전에 저자가 정해야 할 것
+## 6. 저자 결정과 현재 외부 계정 상태
 
-다음은 repository나 Git author에서 추론하면 안 되는 항목이다.
+다음 항목은 repository나 Git author에서 추론하지 않고 저자가 직접 확정했다.
 
-- 모든 저자의 full legal/publication name과 순서
-- 각 저자의 affiliation, postal address, email, ORCID
-- 구체적인 기여와 ACL authorship 기준 충족 여부
-- funding, acknowledgments, conflict-of-interest disclosure
-- code license, 문서/그림 license, 향후 checkpoint license
-- ARR review만 먼저 할지, named preprint도 동시에 공개할지
-- OpenReview author 계정과 모든 저자의 reviewer-registration 준비
-- Responsible NLP checklist의 최종 응답
+- Sole author: Gyeongchan Hwang; affiliation: Priming Water; ORCID:
+  `0009-0007-5840-3274`; contact: `support@boaz.page`.
+- 저자는 연구 설계, 구현, 실행, 분석, 검증, 원고 작성과 공개 결정을 모두 담당한다.
+- External funding과 별도 conflict of interest는 없으며, 별도 acknowledgments도 없다.
+- Code는 Apache-2.0, paper는 CC BY 4.0으로 공개한다. Checkpoint와 raw corpus는 배포하지 않는다.
+- Named preprint와 public code release를 ARR 전에 공개한다. 이후 ARR form에서 existing
+  non-anonymous preprint를 정확히 disclose한다.
+- OpenReview profile `~Gyeongchan_Hwang1`은 생성됐고 moderation 대기 중이다.
+- arXiv account와 ORCID linking은 완료됐으며 submission `7958327`은 첫 `cs.CL`
+  endorsement 대기 중이다.
 
 현재 checklist 초안은 정확한 한계를 보존하기 위해 세 항목을 자동으로 `Yes` 처리하지
 않는다. 모든 탐색 실험을 합친 총 accelerator-hour는 단일 authoritative schema로 남아
@@ -166,15 +168,15 @@ ARR는 첫 제출 뒤 author list 변경을 제한한다. 따라서 이름과 �
 
 ## 7. 남은 실행 순서
 
-1. 이 익명 패키지를 Git commit/tag 후보로 고정한다.
-2. 저자에게 위 메타데이터와 license/preprint 선택을 받는다.
-   `scripts/audit_arr_submission_readiness.py --write-private-template`로 만든 ignored 파일에만
-   기록하고, tracked source나 shell command line에 민감정보를 넣지 않는다.
-3. 익명 artifact가 필요하면 identity와 download tracking을 노출하지 않는 별도 snapshot을
-   만든다. Review PDF는 unavailable repository로 세부 내용을 떠넘기지 않는다.
-4. 최종 PDF를 다시 byte-reproducibility 및 visual inspection으로 검증한다.
-5. OpenReview에 long paper로 등록하고 모든 저자의 reviewer registration을 완료한다.
-6. Review 제출과 named preprint의 선택에 맞춰 GitHub release/archival DOI 시점을 정한다.
+1. GitHub public repository와 `v0.1.0` release는 게시 완료했다.
+2. Named preprint와 재현성 bundle은 Zenodo DOI
+   [`10.5281/zenodo.21973009`](https://doi.org/10.5281/zenodo.21973009)로 게시 완료했다.
+3. Hugging Face에는 model weights가 아니라 동일한 연구 artifact mirror만 게시한다.
+4. arXiv `cs.CL` endorsement가 승인되면 submission `7958327`에 이미 검증한 source archive를
+   올리고 generated PDF를 다시 확인한 뒤 제출한다.
+5. OpenReview moderation이 끝나면 reviewer registration과 profile completeness를 확인한다.
+6. 2026-10-12 ARR cycle에서 anonymous long paper를 제출하고 existing named preprint를
+   disclose한다.
 
 기계적으로도 이 순서를 강제한다. 현재 license가 없으므로 named reproducibility archive는
 audit만 가능하고 build는 실패해야 정상이다. 저자 JSON은 `paper/private/` 아래에서만

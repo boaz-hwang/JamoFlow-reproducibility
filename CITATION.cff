@@ -3,12 +3,15 @@ message: "If you use JamoFlow, please cite the paper and this software release."
 title: "JamoFlow: Reproducible Korean Byte-Latent Patching Research"
 type: software
 version: 0.1.0
+date-released: "2026-08-17"
+doi: "10.5281/zenodo.21973009"
 authors:
   - family-names: Hwang
     given-names: Gyeongchan
     orcid: "https://orcid.org/0009-0007-5840-3274"
     email: support@boaz.page
 repository-code: "https://github.com/boaz-hwang/JamoFlow-reproducibility"
+repository-artifact: "https://doi.org/10.5281/zenodo.21973009"
 url: "https://github.com/boaz-hwang/JamoFlow-reproducibility"
 license: Apache-2.0
 keywords:

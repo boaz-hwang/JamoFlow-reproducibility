@@ -2,7 +2,7 @@
 
 > 갱신일: 2026-08-17
 >
-> 상태: **trained extension complete; anonymous ARR package validated, author/legal metadata pending**
+> 상태: **named preprint and reproducibility deposit published; arXiv endorsement and ARR review submission pending**
 >
 > 최신 연구 판정: [Balanced 200M W80 quality and actual-inference result](./199-balanced-200m-w80-quality-and-actual-result.md)
 >
@@ -83,9 +83,11 @@ authoritative artifact로 완성되지 않았으므로 해당 positive claim과 
 
 Official ACL style의 A4/two-column PDF, tracked-evidence figure rendering, captioned table,
 embedded font, citation, abstract/page-limit, byte-reproducible build 검증은 완료했다.
-Author/affiliation, funding/conflict, license, preprint choice, OpenReview account와 외부 reviewer
-feedback은 남아 있다. 이는 과학적 결과를 바꾸는 추가 실험이 아니라 사람의 메타데이터·
-법적·제출 작업이다.
+Author/affiliation, funding/conflict, license와 preprint 공개 결정은 확정됐다. Named PDF와
+재현성 archive는 GitHub Release 및 Zenodo에 게시했다. OpenReview 계정은 생성 후 moderation
+대기 중이고, arXiv는 첫 `cs.CL` 제출자 endorsement만 남아 있다. 외부 reviewer feedback과
+ARR review submission은 아직 남아 있다. 이는 과학적 결과를 바꾸는 추가 실험이 아니라
+외부 심사·계정 절차다.
 
 ## 4. 공개할 artifact
 
@@ -99,8 +101,9 @@ feedback은 남아 있다. 이는 과학적 결과를 바꾸는 추가 실험이
 - paper draft와 references
 - raw text를 포함하지 않는 provenance/hash
 
-최종 scale preflight 직전 전체 회귀는 `956 passed, 92 subtests passed`였고, 결과 commit
-뒤 read-only full-checkpoint verifier가 통과했다.
+공개 직전 최신 전체 회귀는 `1038 passed, 92 subtests passed`였고, 결과 commit 뒤
+read-only full-checkpoint verifier가 통과했다. Public snapshot과 exact checksums는
+[publication release record](./202-publication-release-record.md)에 고정했다.
 
 ### Hugging Face
 
@@ -120,19 +123,19 @@ artifact card가 모순된다. 향후 독립된 새 mechanism이 matched-quality
 
 ## 5. 공개 전 비실험 체크리스트
 
-- [ ] Repository license 선택 및 추가 — 저자가 명시적으로 결정해야 하는 법적 범위
-- [ ] Author names, affiliations, acknowledgements와 funding disclosure
+- [x] Repository license 선택 및 추가 — Apache-2.0
+- [x] Author name, affiliation, acknowledgements와 funding/conflict disclosure
 - [x] ARR long-paper 8-page main-content 형식으로 축약하고 긴 chronology를 audit manuscript로 분리
 - [x] Main figure: random systems headroom과 two-trained-scale quality-qualified result
 - [x] Tracked aggregate만으로 figure를 재생성·byte-compare하는 script
 - [x] Official ACL style hash, A4, font, citation, visible raster와 reproducible-PDF build 검사
-- [ ] Anonymous/public artifact URL과 exact release tag
+- [x] Public artifact URL과 exact release tag
 - [ ] 최소 한 명의 외부 reviewer가 claim matrix와 statistical unit을 독립 검토
-- [ ] 필요 시 archival DOI/Zenodo; local Git chronology를 public preregistration으로 표현하지 않음
+- [x] Archival DOI/Zenodo; local Git chronology를 public preregistration으로 표현하지 않음
 
-License, 저자정보, venue와 외부 검토는 현재 repository evidence로 자동 결정할 수 없다.
-그 외 새로운 expensive training이나 결과 기반 threshold 변경은 필요하지 않으며 허가되지
-않는다.
+저자·license·preprint 공개 결정은 완료됐다. 남은 외부 절차는 arXiv endorsement, OpenReview
+moderation, 2026-10-12 ARR cycle 제출과 독립 reviewer feedback이다. 그 외 새로운 expensive
+training이나 결과 기반 threshold 변경은 필요하지 않으며 허가되지 않는다.
 
 ## 6. 최종 one-sentence claim
 
